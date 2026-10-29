@@ -26,9 +26,15 @@ export interface Word {
   reg: Register;
   cat: string;        // Themengruppe
   ex?: Example;
+  pos?: string;       // Wortart (n.m, n.f, n.n, v, adj, adv, phr …)
+  level?: Level;
+  note?: string;      // Grammatik-/Gebrauchshinweis
 }
 
-export type Politeness = 'höflich' | 'neutral' | 'locker' | 'unhöflich' | 'beleidigend';
+export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+export const LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
+export type Politeness = 'höflich' | 'neutral' | 'freundlich' | 'vertraut' | 'locker' | 'ironisch' | 'unhöflich' | 'vulgär' | 'beleidigend' | 'veraltet';
 
 export interface SlangEntry {
   id: string;
@@ -42,6 +48,19 @@ export interface SlangEntry {
   politeness: Politeness;
   formal: string;       // neutrale/formelle Alternative
   ex: Example;
+  local?: boolean;      // true = typisch für die Schwerpunktstadt, false/undefined = landesweit
+  status?: 'aktuell' | 'älter';
+  level?: Level;
+}
+
+export interface Module {
+  id: string;
+  topic: string;
+  level: Level;
+  title: string;
+  grammar?: { title: string; text: string };
+  words: string[];      // Word-IDs
+  slang: string[];      // Slang-IDs
 }
 
 export interface Cloze { t: string; answer: string; de: string }   // t enthält "___"
@@ -73,6 +92,7 @@ export interface Roleplay {
   scene: string;
   start: string;
   nodes: Record<string, RoleNode>;
+  level?: Level;
 }
 
 export interface CoachRule {
@@ -97,6 +117,9 @@ export interface LanguagePack {
   lessons: Lesson[];
   roleplays: Roleplay[];
   coachRules: CoachRule[];
+  modules?: Module[];
+  scripts?: 'sr';         // Serbisch: Latein + Kyrillisch
+  focus?: string;         // regionaler Schwerpunkt, Erklärung
 }
 
 export interface CatalogEntry { code: string; name: string; native: string; flag: string; rtl?: boolean }

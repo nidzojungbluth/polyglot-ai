@@ -1,39 +1,91 @@
-import type { Lesson, LanguagePack, Word } from '../data/types';
+import type { Cloze, LanguagePack, Lesson, OrderTask, SlangEntry, Word } from '../data/types';
 import { shuffle } from './text';
 
 export type Exercise =
-  | { kind: 'mc'; prompt: string; sub?: string; options: string[]; answer: string; wordId: string; speak?: string }
+  | { kind: 'mc'; prompt: string; sub?: string; options: string[]; answer: string; wordId: string; speak?: string; explain?: string; dir: 'zu-de' | 'zu-ziel' }
   | { kind: 'listen'; speak: string; options: string[]; answer: string; wordId: string }
   | { kind: 'cloze'; prompt: string; de: string; answer: string }
   | { kind: 'order'; de: string; tiles: string[]; answer: string }
-  | { kind: 'translate'; de: string; answer: string; wordId: string; hint?: string };
+  | { kind: 'translate'; de: string; answer: string; wordId: string; hint?: string }
+  | { kind: 'register'; prompt: string; options: string[]; answer: string; explain: string; wordId: string };
 
 const pick = <T,>(arr: T[], n: number, rnd: () => number) => shuffle(arr, rnd).slice(0, n);
 
-function distractors(pool: Word[], w: Word, field: 't' | 'de', rnd: () => number): string[] {
-  const others = pool.filter((o) => o.id !== w.id && o[field] !== w[field]);
-  return pick(others, 3, rnd).map((o) => o[field]);
-}
-
-/** Erzeugt eine abwechslungsreiche Übungsreihe für eine Lektion. */
-export function buildLessonExercises(pack: LanguagePack, lesson: Lesson, rnd = Math.random): Exercise[] {
-  const words = lesson.words.map((id) => pack.words.find((w) => w.id === id)).filter(Boolean) as Word[];
-  const pool = pack.words;
-  const out: Exercise[] = [];
-
-  for (const w of pick(words, Math.min(5, words.length), rnd)) {
-    out.push({ kind: 'mc', prompt: w.t, sub: w.tr, speak: w.t, options: shuffle([w.de, ...distractors(pool, w, 'de', rnd)], rnd), answer: w.de, wordId: w.id });
-  }
-  for (const w of pick(words, Math.min(3, words.length), rnd)) {
-    out.push({ kind: 'mc', prompt: w.de, options: shuffle([w.t, ...distractors(pool, w, 't', rnd)], rnd), answer: w.t, wordId: w.id });
-  }
-  for (const w of pick(words, Math.min(2, words.length), rnd)) {
-    out.push({ kind: 'listen', speak: w.t, options: shuffle([w.t, ...distractors(pool, w, 't', rnd)], rnd), answer: w.t, wordId: w.id });
-  }
-  for (const c of lesson.cloze) out.push({ kind: 'cloze', prompt: c.t, de: c.de, answer: c.answer });
-  for (const o of lesson.order) out.push({ kind: 'order', de: o.de, answer: o.answer, tiles: shuffle(o.answer.split(' '), rnd) });
-  for (const w of pick(words.filter((x) => x.t.length < 30), 2, rnd)) {
-    out.push({ kind: 'translate', de: w.de, answer: w.t, wordId: w.id, hint: w.t.slice(0, 2) + '…' });
+/** Drei eindeutige falsche Antworten aus dem ganzen Paket. */
+function distractors(pool: { id: string; t: string; de: string }[], item: { id: string; t: string; de: string }, field: 't' | 'de', rnd: () => number): string[] {
+  const out: string[] = [];
+  for (const o of shuffle(pool, rnd)) {
+    const v = o[field];
+    if (o.id === item.id || v === item[field] || out.includes(v)) continue;
+    out.push(v);
+    if (out.length === 3) break;
   }
   return out;
+}
+
+/** Wort als Übungseinheit – Slang wird dafür wie ein Wort behandelt. */
+export function slangAsWord(s: SlangEntry): Word {
+  return { id: s.id, t: s.t, tr: s.tr, de: s.de, reg: s.reg, cat: 'slang', ex: s.ex, level: s.level, note: `${s.situation} · ${s.effect}` };
+}
+
+export function buildExercises(pack: LanguagePack, words: Word[], cloze: Cloze[], order: OrderTask[], slang: SlangEntry[] = [], rnd = Math.random): Exercise[] {
+  const pool = [...pack.words, ...pack.slang];
+  const out: Exercise[] = [];
+  const n = words.length;
+  const small = (k: number) => Math.min(k, n);
+
+  for (const w of pick(words, small(Math.max(4, Math.ceil(n * 0.6))), rnd)) {
+    out.push({ kind: 'mc', dir: 'zu-de', prompt: w.t, sub: w.tr, speak: w.t, options: shuffle([w.de, ...distractors(pool, w, 'de', rnd)], rnd), answer: w.de, wordId: w.id, explain: w.note });
+  }
+  for (const w of pick(words, small(Math.max(3, Math.ceil(n * 0.4))), rnd)) {
+    out.push({ kind: 'mc', dir: 'zu-ziel', prompt: w.de, options: shuffle([w.t, ...distractors(pool, w, 't', rnd)], rnd), answer: w.t, wordId: w.id, explain: w.note });
+  }
+  for (const w of pick(words, small(2), rnd)) {
+    out.push({ kind: 'listen', speak: w.t, options: shuffle([w.t, ...distractors(pool, w, 't', rnd)], rnd), answer: w.t, wordId: w.id });
+  }
+  for (const s of slang) {
+    const others = pack.slang.filter((o) => o.id !== s.id && o.t !== s.t);
+    const opts = Array.from(new Set([s.t, ...pick(others, 3, rnd).map((o) => o.t)]));
+    out.push({ kind: 'register', prompt: `Unter Freunden: Wie sagt man locker „${s.de}“?`, options: shuffle(opts, rnd), answer: s.t, wordId: s.id,
+      explain: `„${s.t}“ – ${s.situation}. Wirkung: ${s.effect}. Neutral: ${s.formal}` });
+    if (s.formal && s.formal !== '–') {
+      const formals = Array.from(new Set(others.map((o) => o.formal).filter((f) => f && f !== '–' && f !== s.formal)));
+      const fopts = Array.from(new Set([s.formal, ...pick(formals, 2, rnd), s.t]));
+      out.push({ kind: 'register', prompt: `Im Job oder zu Fremden: Was sagst du statt „${s.t}“?`, options: shuffle(fopts, rnd), answer: s.formal, wordId: s.id,
+        explain: `„${s.t}“ ist ${s.politeness}. Neutral/höflich: ${s.formal}` });
+    }
+  }
+  for (const c of cloze) out.push({ kind: 'cloze', prompt: c.t, de: c.de, answer: c.answer });
+  for (const o of order) out.push({ kind: 'order', de: o.de, answer: o.answer, tiles: shuffle(o.answer.split(' '), rnd) });
+  for (const w of pick(words.filter((x) => x.t.length < 30 && !x.t.includes('…')), small(2), rnd)) {
+    out.push({ kind: 'translate', de: w.de, answer: w.t, wordId: w.id, hint: Array.from(w.t.normalize('NFC')).slice(0, 2).join('') + '…' });
+  }
+  return out;
+}
+
+/** Übungsreihe für eine handgeschriebene Einstiegslektion. */
+export function buildLessonExercises(pack: LanguagePack, lesson: Lesson, rnd = Math.random): Exercise[] {
+  const words = lesson.words.map((id) => pack.words.find((w) => w.id === id)).filter(Boolean) as Word[];
+  return buildExercises(pack, words, lesson.cloze, lesson.order, [], rnd);
+}
+
+const PUNCT = /[.,!?;:¿¡«»“”"…()–—]/g;
+
+/** Lückentext aus dem Beispielsatz: das Wort selbst wird zur Lücke. */
+export function clozeFromExample(w: Word): Cloze | null {
+  if (!w.ex) return null;
+  const target = w.t.replace(/…|\?|;|!/g, '').trim();
+  if (!target || target.includes(' ')) return null;
+  const idx = w.ex.t.toLowerCase().indexOf(target.toLowerCase());
+  if (idx < 0) return null;
+  const answer = w.ex.t.slice(idx, idx + target.length);
+  return { t: w.ex.t.slice(0, idx) + '___' + w.ex.t.slice(idx + target.length), answer, de: w.ex.de };
+}
+
+/** Satzbau aus dem Beispielsatz (3–8 Wörter). */
+export function orderFromExample(w: Word): OrderTask | null {
+  if (!w.ex) return null;
+  const parts = w.ex.t.replace(PUNCT, ' ').split(/\s+/).filter(Boolean);
+  if (parts.length < 3 || parts.length > 8) return null;
+  return { answer: parts.join(' '), de: w.ex.de };
 }

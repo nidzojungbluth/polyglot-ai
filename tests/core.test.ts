@@ -102,7 +102,7 @@ describe('Sprachpakete – Datenqualität', () => {
       });
       it('alle Register sind gültig, Slang vollständig erklärt', () => {
         for (const w of [...p.words, ...p.slang]) expect(REGISTER_INFO[w.reg]).toBeDefined();
-        for (const s of p.slang) for (const f of [s.de, s.region, s.situation, s.effect, s.formal, s.ex.t, s.ex.de]) expect(f.length).toBeGreaterThan(1);
+        for (const s of p.slang) { for (const f of [s.de, s.region, s.situation, s.effect, s.ex.t, s.ex.de]) expect(f.length).toBeGreaterThan(1); expect(s.formal.length).toBeGreaterThan(0); }
         expect(p.slang.some((s) => s.reg === 'vulgär')).toBe(true);
       });
       it('Lektionen verweisen nur auf vorhandene Wörter, Lücken sind korrekt', () => {

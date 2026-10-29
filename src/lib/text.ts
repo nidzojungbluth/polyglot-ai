@@ -1,3 +1,5 @@
+import { srCyrToLat } from './translit';
+
 // Text-Hilfen: Antworten tolerant vergleichen (Groß/klein, Akzente, Satzzeichen).
 
 export function normalize(s: string): string {
@@ -7,7 +9,7 @@ export function normalize(s: string): string {
     .replace(/[̀-ͯ]/g, '')         // Akzente entfernen (á → a, ά → α)
     .replace(/ς/g, 'σ')
     .replace(/[’']/g, "'")
-    .replace(/[.,!?;:¿¡“”"…()]/g, ' ')
+    .replace(/[.,!?;:¿¡“”"«»…()–—]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -19,10 +21,20 @@ export function variants(t: string): string[] {
   return Array.from(new Set([normalize(base), ...parts]));
 }
 
-export function matches(input: string, target: string): boolean {
-  const n = normalize(input);
+/** Serbisch: Kyrillisch und Latein gelten als gleich. */
+function forLang(s: string, lang?: string): string {
+  return lang === 'sr' ? srCyrToLat(s) : s;
+}
+
+export function matches(input: string, target: string, lang?: string): boolean {
+  const n = normalize(forLang(input, lang));
   if (!n) return false;
-  return variants(target).some((v) => v === n);
+  return variants(forLang(target, lang)).some((v) => v === n);
+}
+
+export function sameAnswer(a: string, b: string, lang?: string): boolean {
+  const x = normalize(forLang(a, lang));
+  return !!x && x === normalize(forLang(b, lang));
 }
 
 export function shuffle<T>(arr: T[], rnd = Math.random): T[] {

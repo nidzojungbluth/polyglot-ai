@@ -15,13 +15,14 @@ export function Languages({ ctx }: { ctx: Ctx }) {
               <button className={`list-btn ${state.settings.lang === p.code ? 'selected' : ''}`} onClick={() => choose(p.code)}>
                 <span className="num">{p.flag}</span>
                 <span className="grow"><b>{p.name}</b> <span className="muted">· {p.native}</span><br />
-                  <span className="small muted">{p.lessons.length} Lektionen · {p.words.length} Wörter · {p.slang.length} Slang · {p.roleplays.length} Rollenspiele · {p.city}</span></span>
+                  <span className="small muted">{p.words.length} Wörter · {p.slang.length} Slang · {(p.modules?.length ?? 0) ? `${p.modules!.length} Kursmodule · ` : `${p.lessons.length} Lektionen · `}{p.roleplays.length} Dialoge · {p.city}</span></span>
                 {state.settings.lang === p.code && <span>✓</span>}
               </button>
             </li>
           ))}
         </ul>
         <p className="fine">{PACKS.find((p) => p.code === state.settings.lang)?.note}</p>
+        <p className="fine">Griechisch, Serbisch und Russisch haben den großen Kursbereich (A1–C2). Englisch und Spanisch haben vorerst nur die Einstiegslektionen.</p>
       </section>
       <section className="card">
         <h2>Geplant – noch kein Kurs</h2>

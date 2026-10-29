@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { PACKS, packByCode } from './data';
+import { PACKS, packByCode, withScript } from './data';
 import type { LanguagePack } from './data/types';
 import type { AppState, StorageKind } from './lib/store';
 import { loadState, saveState, today } from './lib/store';
@@ -14,9 +14,10 @@ import { Dictionary } from './views/Dictionary';
 import { Progress } from './views/Progress';
 import { Settings } from './views/Settings';
 import { Languages } from './views/Languages';
+import { Courses } from './views/Courses';
 
-export type View = 'home' | 'lesson' | 'coach' | 'roleplay' | 'vocab' | 'dict' | 'progress' | 'settings' | 'langs' | 'more';
-const VIEWS: View[] = ['home', 'coach', 'roleplay', 'vocab', 'dict', 'progress', 'settings', 'langs', 'more'];
+export type View = 'home' | 'courses' | 'lesson' | 'coach' | 'roleplay' | 'vocab' | 'dict' | 'progress' | 'settings' | 'langs' | 'more';
+const VIEWS: View[] = ['home', 'courses', 'coach', 'roleplay', 'vocab', 'dict', 'progress', 'settings', 'langs', 'more'];
 
 export interface Ctx {
   state: AppState;
@@ -107,19 +108,19 @@ export default function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  const pack = useMemo(() => packByCode(state?.settings.lang ?? 'en') ?? PACKS[0], [state?.settings.lang]);
+  const pack = useMemo(() => withScript(packByCode(state?.settings.lang ?? 'en') ?? PACKS[0], state?.settings.srScript ?? 'beide'), [state?.settings.lang, state?.settings.srScript]);
 
   if (!state) return <div className="loading">Polyglot AI lädt …</div>;
   const ctx: Ctx = { state, pack, update, addActivity, go, storage, cloud, sw, claudeReady };
 
   const tabs: { v: View; icon: string; label: string }[] = [
     { v: 'home', icon: '🏠', label: 'Start' },
-    { v: 'roleplay', icon: '🎭', label: 'Rollenspiele' },
+    { v: 'courses', icon: '📚', label: 'Kurse' },
     { v: 'coach', icon: '💬', label: 'Coach' },
     { v: 'vocab', icon: '🃏', label: 'Vokabeln' },
     { v: 'more', icon: '☰', label: 'Mehr' },
   ];
-  const moreViews: View[] = ['more', 'dict', 'progress', 'settings', 'langs'];
+  const moreViews: View[] = ['more', 'dict', 'progress', 'settings', 'langs', 'roleplay'];
 
   return (
     <div className="app" dir={pack.rtl ? 'rtl' : 'ltr'}>
@@ -132,9 +133,10 @@ export default function App() {
       <main className="content">
         {view === 'home' && <Home ctx={ctx} />}
         {view === 'lesson' && arg && <LessonPlayer ctx={ctx} lessonId={arg} />}
+        {view === 'courses' && <Courses key={arg ?? 'all'} ctx={ctx} moduleId={arg} />}
         {view === 'coach' && <Coach ctx={ctx} />}
         {view === 'roleplay' && <Roleplays ctx={ctx} />}
-        {view === 'vocab' && <Vocab ctx={ctx} />}
+        {view === 'vocab' && <Vocab key={arg ?? 'v'} ctx={ctx} mode={arg} />}
         {view === 'dict' && <Dictionary ctx={ctx} />}
         {view === 'progress' && <Progress ctx={ctx} />}
         {view === 'settings' && <Settings ctx={ctx} />}
@@ -144,7 +146,7 @@ export default function App() {
       {toast && <div className="toast" role="status">{toast}</div>}
       <nav className="tabbar" aria-label="Hauptnavigation">
         {tabs.map((t) => {
-          const active = t.v === view || (t.v === 'more' && moreViews.includes(view)) || (t.v === 'home' && view === 'lesson');
+          const active = t.v === view || (t.v === 'more' && moreViews.includes(view)) || (t.v === 'courses' && view === 'lesson');
           return (
             <button key={t.v} className={`tab ${active ? 'active' : ''} ${t.v === 'coach' ? 'tab-coach' : ''}`} onClick={() => go(t.v)}>
               <span className="tab-icon">{t.icon}</span>

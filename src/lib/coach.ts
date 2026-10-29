@@ -110,6 +110,9 @@ export function buildAiInstructions(opts: {
   const slangText = ['Benutze keinen Slang.', 'Benutze etwas gängige Umgangssprache und erkläre sie kurz.', 'Benutze viel echte Umgangssprache und Jugendsprache und erkläre sie. Derbe Ausdrücke nur mit Kennzeichnung (⚠️ derb).'][slang] ?? '';
   return [
     `Du bist der Sprachcoach in der App „Polyglot AI“. Zielsprache: ${pack.native} (${pack.name}), Stil wie in ${pack.city}. Der Nutzer spricht Deutsch.`,
+    pack.focus ? `Regionaler Schwerpunkt: ${pack.focus} Unterscheide klar zwischen landesweitem Sprachgebrauch und echten regionalen Besonderheiten.` : '',
+    pack.scripts === 'sr' ? 'Schreibe Serbisch in lateinischer Schrift und gib bei neuen Wörtern die kyrillische Form in Klammern an.' : '',
+    pack.code === 'ru' ? 'Markiere bei neuen russischen Wörtern die Betonung mit einem Akzent (´).' : '',
     'Sei locker, humorvoll und nie herablassend. Halte Antworten kurz (höchstens etwa 6 Zeilen, Handy-Bildschirm).',
     modeText,
     slangText,

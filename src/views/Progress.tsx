@@ -2,6 +2,10 @@ import type { Ctx } from '../App';
 import { PACKS } from '../data';
 import { dueCards, isLearned } from '../lib/srs';
 import { streak, today } from '../lib/store';
+import { LEVELS } from '../data/types';
+import { TOPICS } from '../data/curriculum';
+import { moduleLessons } from '../lib/course';
+import { ProgressBar } from './ui';
 
 export function Progress({ ctx }: { ctx: Ctx }) {
   const { state } = ctx;
@@ -50,6 +54,35 @@ export function Progress({ ctx }: { ctx: Ctx }) {
           })}
         </ul>
       </section>
+      {(ctx.pack.modules?.length ?? 0) > 0 && (
+        <section className="card">
+          <h2>{ctx.pack.flag} Kurse nach Niveau</h2>
+          <table className="status">
+            <tbody>
+              {LEVELS.map((lv) => {
+                const mods = (ctx.pack.modules ?? []).filter((m) => m.level === lv);
+                const done = mods.filter((m) => moduleLessons(ctx.pack, m).every((l) => state.lessons[l.id])).length;
+                return <tr key={lv}><td><b>{lv}</b></td><td>{mods.length ? `${done} / ${mods.length} Module fertig` : 'noch keine Inhalte'}</td></tr>;
+              })}
+            </tbody>
+          </table>
+          <h2>{ctx.pack.flag} Wortschatz nach Thema</h2>
+          <ul className="list">
+            {TOPICS.map((t) => {
+              const ids = [...ctx.pack.words.filter((w) => w.cat === t.key).map((w) => w.id),
+                ...(ctx.pack.modules ?? []).filter((m) => m.topic === t.key).flatMap((m) => m.slang)];
+              if (!ids.length) return null;
+              const learned = ids.filter((id) => state.cards[id] && state.cards[id].reps > 0).length;
+              return (
+                <li key={t.key} className="topic-row">
+                  <div className="row between small"><span>{t.icon} {t.title}</span><span className="muted">{learned} / {ids.length}</span></div>
+                  <ProgressBar value={learned} max={ids.length} />
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
       <section className="card">
         <h2>Deine häufigsten Fehler</h2>
         {!mistakes.length ? <p className="muted small">Noch keine erfasst. Der Coach merkt sich typische Fehler, die er in deinen Nachrichten erkennt.</p> : (

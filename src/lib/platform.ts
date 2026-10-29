@@ -1,8 +1,17 @@
+import { srCyrToLat, stripStress } from './translit';
+
 // Zugriff auf Browser- und Plattformfunktionen – alles optional und fehlertolerant.
 
 // ---------- Sprachausgabe (im Gerät eingebaut, kostenlos, offline je nach Stimme) ----------
 export function speechAvailable(): boolean {
   try { return typeof window !== 'undefined' && 'speechSynthesis' in window; } catch { return false; }
+}
+
+/** Vorlesen für ein Sprachpaket: Betonungszeichen entfernen, Serbisch in Latein (Stimmen lesen oft kein serbisches Kyrillisch). */
+export function sayFor(pack: { code: string; speechLang: string; speechFallback?: string }, text: string, rate = 0.9): boolean {
+  let t = stripStress(text);
+  if (pack.code === 'sr') t = srCyrToLat(t);
+  return speak(t, pack.speechLang, pack.speechFallback, rate);
 }
 
 export function speak(text: string, lang: string, fallback?: string, rate = 0.9): boolean {

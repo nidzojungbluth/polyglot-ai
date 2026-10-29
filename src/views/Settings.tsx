@@ -67,6 +67,16 @@ export function Settings({ ctx }: { ctx: Ctx }) {
       </section>
 
       <section className="card">
+        <h2>Serbisch: Schrift</h2>
+        <div className="seg">
+          {([['beide', 'Beide'], ['latein', 'Latein'], ['kyrillisch', 'Кирилица']] as const).map(([k, l]) => (
+            <button key={k} className={s.srScript === k ? 'on' : ''} onClick={() => set({ srScript: k })}>{l}</button>
+          ))}
+        </div>
+        <p className="fine">„Beide“: lateinische Schrift mit kyrillischer Zeile darunter. Antworten darfst du in beiden Schriften eintippen. Dein Fortschritt gilt für beide Schriften.</p>
+      </section>
+
+      <section className="card">
         <h2>Sprachcoach</h2>
         <label className="row between field">
           <span>Echte KI benutzen (wenn verfügbar)</span>
@@ -107,6 +117,8 @@ export function Settings({ ctx }: { ctx: Ctx }) {
             <tr><td>Echter KI-Coach</td><td>🌐 nur online, nur auf claude.ai</td></tr>
             <tr><td>Cloud-Sicherung</td><td>🌐 nur online, nur auf claude.ai</td></tr>
             <tr><td>Sprachausgabe</td><td>{speechAvailable() ? '✅ Stimmen des iPhones' : '❌ nicht verfügbar'}</td></tr>
+            <tr><td>Kurse, Wörterbuch, Dialoge (alle Sprachen)</td><td>✅ offline</td></tr>
+            <tr><td>Aussprache prüfen (Mikrofon)</td><td>❌ nicht möglich – nachsprechen und mit 🐢 vergleichen</td></tr>
           </tbody>
         </table>
         <h2>Status dieses Geräts</h2>

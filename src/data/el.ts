@@ -1,9 +1,10 @@
 import type { LanguagePack } from './types';
 
 export const el: LanguagePack = {
-  code: 'el', name: 'Griechisch', native: 'Ελληνικά', flag: '🇬🇷', city: 'Athen',
+  code: 'el', name: 'Griechisch', native: 'Ελληνικά', flag: '🇬🇷', city: 'Thessaloniki',
   speechLang: 'el-GR', version: 1,
-  note: 'Modernes Griechisch, wie es in Athen gesprochen wird. Das griechische Fragezeichen ist „;“. Jedes Wort zeigt eine lateinische Umschrift (Aussprachehilfe) und die betonte Silbe trägt einen Akzent.',
+  focus: 'Thessaloniki: Der größte Teil des Wortschatzes und Slangs ist in ganz Griechenland gleich. Echte Besonderheiten des Nordens sind z. B. „σε λέω“ statt „σου λέω“ (Akkusativ statt Genitiv), σουβλάκι für den Fleischspieß (Athen: καλαμάκι), der Wind Βαρδάρης und die Tsipouro-Kultur. Das „dicke L“ gilt als typisch für Thessaloniki, ist aber eher ein Klischee und vor allem bei älteren Sprechern zu hören.',
+  note: 'Modernes Griechisch mit Schwerpunkt Thessaloniki. Das griechische Fragezeichen ist „;“. Jedes Wort zeigt eine lateinische Umschrift (Aussprachehilfe) und die betonte Silbe trägt einen Akzent.',
   words: [
     { id: 'el-geiasou', t: 'γεια σου', tr: 'ja su', de: 'hallo / tschüss (du)', reg: 'neutral', cat: 'Begrüßung' },
     { id: 'el-geiasas', t: 'γεια σας', tr: 'ja sas', de: 'hallo / tschüss (Sie oder mehrere)', reg: 'formell', cat: 'Begrüßung' },
@@ -50,7 +51,7 @@ export const el: LanguagePack = {
   ],
   lessons: [
     {
-      id: 'el-l1', title: 'Begrüßen wie in Athen', goal: 'Hallo sagen, du oder Sie, sich vorstellen',
+      id: 'el-l1', title: 'Begrüßen wie in Thessaloniki', goal: 'Hallo sagen, du oder Sie, sich vorstellen',
       words: ['el-geiasou', 'el-geiasas', 'el-kalimera', 'el-kalispera', 'el-tikaneis', 'el-tikanete', 'el-ela', 'el-melene', 'el-eimaiapo', 'el-xairopoly', 'el-nai', 'el-oxi'],
       grammar: { title: 'σου oder σας?', text: '„Γεια σου“ (ja su) sagt man zu einer Person, die man duzt. „Γεια σας“ (ja sas) zu Älteren, Fremden in formellen Situationen oder zu mehreren Leuten. Ganz wichtig: „ναι“ (nä) heißt JA.' },
       cloze: [
@@ -94,7 +95,7 @@ export const el: LanguagePack = {
   ],
   roleplays: [
     {
-      id: 'el-r-cafe', title: 'Kafeneío in Psirri', scene: 'Ein Café in Athen. Es ist heiß, alle trinken Freddo.', start: 'a',
+      id: 'el-r-cafe', title: 'Café an der Promenade', scene: 'Ein Café an der Nea Paralia in Thessaloniki. Es ist heiß, alle trinken Freddo.', level: 'A1', start: 'a',
       nodes: {
         a: { npc: 'Γεια σας! Τι θα πάρετε;', npcDe: 'Hallo! Was nehmen Sie?', options: [
           { t: 'Θα ήθελα έναν φρέντο εσπρέσο, παρακαλώ.', de: 'Ich hätte gern einen Freddo Espresso, bitte.', reg: 'neutral', next: 'b', note: 'Perfekt und höflich.' },
@@ -115,7 +116,7 @@ export const el: LanguagePack = {
       },
     },
     {
-      id: 'el-r-party', title: 'Freunde in Exarchia', scene: 'Du sitzt mit Freunden eines Freundes in einer Bar.', start: 'a',
+      id: 'el-r-party', title: 'Abends in Ladadika', scene: 'Du sitzt mit Freunden eines Freundes in einer Bar in Ladadika.', level: 'A1', start: 'a',
       nodes: {
         a: { npc: 'Έλα, γεια σου! Είμαι ο Γιώργος. Εσύ;', npcDe: 'Hey, hallo! Ich bin Giorgos. Und du?', options: [
           { t: 'Γεια σου! Με λένε Νίκλας, χαίρω πολύ.', de: 'Hallo! Ich heiße Niklas, freut mich.', reg: 'neutral', next: 'b', note: 'Sehr gut.' },
@@ -135,7 +136,7 @@ export const el: LanguagePack = {
       },
     },
     {
-      id: 'el-r-gym', title: 'Im Gymnastírio', scene: 'Jemand trainiert an der Bank, die du brauchst.', start: 'a',
+      id: 'el-r-gym', title: 'Im Gymnastírio', scene: 'Jemand trainiert an der Bank, die du brauchst.', level: 'A1', start: 'a',
       nodes: {
         a: { npc: '(Jemand macht gerade einen Satz.)', npcDe: '', options: [
           { t: 'Συγγνώμη φίλε, σου μένουν πολλά σετ;', de: 'Sorry, Kumpel, hast du noch viele Sätze?', reg: 'locker', next: 'b', note: 'Genau so.' },
@@ -143,6 +144,61 @@ export const el: LanguagePack = {
         ] },
         b: { npc: 'Ένα ακόμα και είναι δικός σου.', npcDe: 'Noch einer, dann gehört sie dir.', options: [
           { t: 'Κομπλέ, ευχαριστώ!', de: 'Passt, danke!', reg: 'locker', next: null },
+        ] },
+      },
+    },
+    {
+      id: 'el-r-chat', title: 'Nachricht an einen Freund', scene: 'Dein Freund Nikos schreibt dir am Freitagabend.', start: 'a', level: 'A2',
+      nodes: {
+        a: { npc: 'έλα ρε, τι λέει; ψήνεσαι για τσίπουρα απόψε;', npcDe: 'Hey, was geht? Hast du Lust auf Tsipouro heute Abend?', options: [
+          { t: 'Πάμε! Πού και τι ώρα;', de: 'Klar! Wo und wann?', reg: 'locker', next: 'b', note: 'Kurz, locker, perfekt für den Chat.' },
+          { t: 'Καλησπέρα. Θα ήθελα πολύ να έρθω.', de: 'Guten Abend. Ich würde sehr gerne kommen.', reg: 'formell', next: 'b', note: 'Richtig, aber im Chat mit Freunden viel zu steif.' },
+        ] },
+        b: { npc: 'στις 10 στην Καμάρα, μετά πάμε Λαδάδικα', npcDe: 'Um 10 an der Kamara, danach gehen wir nach Ladadika', options: [
+          { t: 'Κομπλέ, τα λέμε!', de: 'Passt, bis dann!', reg: 'slang', next: 'c', note: '„Κομπλέ“ + „τα λέμε“ – so schreiben Griechen wirklich.' },
+          { t: 'Άκυρο, δεν μπορώ απόψε 😕', de: 'Geht leider nicht, ich kann heute nicht 😕', reg: 'slang', next: 'c', note: '„Άκυρο“ = Plan abgesagt. Ehrlich und völlig okay.' },
+        ] },
+        c: { npc: 'οκ 👍', npcDe: 'Ok 👍', options: [
+          { t: 'τπτ, φιλιά!', de: 'Nix zu danken, Küsschen!', reg: 'chat', next: null, note: '„Φιλιά“ (Küsse) ist unter Freunden – auch Männern – ein normaler Gruß.' },
+        ] },
+      },
+    },
+    {
+      id: 'el-r-uni', title: 'Flirten an der Uni', scene: 'In der Mensa der Aristoteles-Universität sitzt jemand allein am Tisch.', start: 'a', level: 'A2',
+      nodes: {
+        a: { npc: '(Eine Studentin lächelt dich kurz an.)', npcDe: '', options: [
+          { t: 'Γεια! Είναι ελεύθερη η θέση;', de: 'Hi! Ist der Platz frei?', reg: 'neutral', next: 'b', note: 'Unaufdringlicher Einstieg – genau richtig.' },
+          { t: 'Είσαι πολύ όμορφη.', de: 'Du bist sehr schön.', reg: 'flirt', next: 'b', note: 'Als allererster Satz zu direkt. Erst ins Gespräch kommen.' },
+        ] },
+        b: { npc: 'Ναι, κάτσε. Δεν είσαι από εδώ, ε;', npcDe: 'Ja, setz dich. Du bist nicht von hier, oder?', options: [
+          { t: 'Όχι, είμαι από τη Γερμανία. Κάνω Erasmus.', de: 'Nein, ich bin aus Deutschland. Ich mache Erasmus.', reg: 'neutral', next: 'c' },
+          { t: 'Τόσο φαίνεται; 😄', de: 'Merkt man das so sehr? 😄', reg: 'locker', next: 'c', note: 'Humor kommt in Griechenland sehr gut an.' },
+        ] },
+        c: { npc: 'Χαχα, λίγο! Σου αρέσει η Σαλονίκη;', npcDe: 'Haha, ein bisschen! Gefällt dir Saloniki?', options: [
+          { t: 'Πολύ! Θες να πάμε για καφέ κάποια στιγμή να μου δείξεις την πόλη;', de: 'Sehr! Wollen wir irgendwann einen Kaffee trinken und du zeigst mir die Stadt?', reg: 'flirt', next: 'd', note: 'Charmant: Interesse zeigen und einen Grund für ein Treffen geben.' },
+          { t: 'Ναι, είναι ωραία.', de: 'Ja, ist schön.', reg: 'neutral', next: 'd', note: 'Höflich, aber das Gespräch schläft so schnell ein.' },
+        ] },
+        d: { npc: 'Γιατί όχι; Δώσε μου το κινητό σου.', npcDe: 'Warum nicht? Gib mir deine Nummer.', options: [
+          { t: 'Τέλεια! Χάρηκα πολύ.', de: 'Super! Hat mich sehr gefreut.', reg: 'locker', next: null },
+        ] },
+      },
+    },
+    {
+      id: 'el-r-dromos', title: 'Nach dem Weg zur Kamara', scene: 'Du stehst am Aristoteles-Platz und suchst die Kamara.', start: 'a', level: 'A1',
+      nodes: {
+        a: { npc: '(Ein älterer Herr liest Zeitung auf einer Bank.)', npcDe: '', options: [
+          { t: 'Συγγνώμη, πού είναι η Καμάρα;', de: 'Entschuldigung, wo ist die Kamara?', reg: 'neutral', next: 'b', note: 'Klar und höflich.' },
+          { t: 'Ρε, πού είναι η Καμάρα;', de: 'Hey, wo ist die Kamara?', reg: 'slang', next: 'b', note: '„Ρε“ zu einem älteren Fremden ist respektlos.' },
+        ] },
+        b: { npc: 'Ανεβείτε την Αριστοτέλους, στρίψτε δεξιά στην Εγνατία και περπατήστε δέκα λεπτά.', npcDe: 'Gehen Sie die Aristotelous hoch, biegen Sie rechts in die Egnatia ab und gehen Sie zehn Minuten.', options: [
+          { t: 'Μπορείτε να το πείτε πιο αργά;', de: 'Können Sie das langsamer sagen?', reg: 'formell', next: 'c', note: 'Gut! Bei Älteren siezen (Endung -ετε).' },
+          { t: 'Ευχαριστώ πολύ!', de: 'Vielen Dank!', reg: 'neutral', next: 'd' },
+        ] },
+        c: { npc: 'Ευθεία, μετά δεξιά. Δέκα λεπτά.', npcDe: 'Geradeaus, dann rechts. Zehn Minuten.', options: [
+          { t: 'Ευχαριστώ πολύ!', de: 'Vielen Dank!', reg: 'neutral', next: 'd' },
+        ] },
+        d: { npc: 'Παρακαλώ, καλή βόλτα!', npcDe: 'Gern, schönen Spaziergang!', options: [
+          { t: 'Ευχαριστώ, γεια σας!', de: 'Danke, auf Wiedersehen!', reg: 'neutral', next: null },
         ] },
       },
     },

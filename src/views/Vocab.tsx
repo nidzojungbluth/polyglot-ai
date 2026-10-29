@@ -1,42 +1,66 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Ctx } from '../App';
-import { dueCards, isLearned, newCard, review, type Grade } from '../lib/srs';
+import { dueCards, isLearned, newCard, review, type Card, type Grade } from '../lib/srs';
 import { explainSlang } from '../lib/coach';
-import { RegBadge, SpeakBtn } from './ui';
+import { LEVELS } from '../data/types';
+import { TOPICS } from '../data/curriculum';
+import { LevelBadge, RegBadge, SpeakBtn } from './ui';
 
-export function Vocab({ ctx }: { ctx: Ctx }) {
+interface Item { t: string; tr?: string; de: string; reg: any; level?: string; cat?: string; extra?: string }
+
+export const isHard = (c: Card) => c.lapses >= 2 || (c.reps > 0 && c.ease < 2.1);
+
+export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
   const { state, pack, update, addActivity } = ctx;
   const prefix = `${pack.code}-`;
-  const [session, setSession] = useState<string[] | null>(null);
+  const [session, setSession] = useState<{ ids: string[]; dirs: ('zu-de' | 'zu-ziel')[]; title: string } | null>(null);
   const [pos, setPos] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [tab, setTab] = useState<'karten' | 'slang' | 'alle'>('karten');
+  const [lv, setLv] = useState('');
+  const [topic, setTopic] = useState('');
 
   const due = dueCards(state.cards, prefix);
   const deck = Object.values(state.cards).filter((c) => c.id.startsWith(prefix));
+  const hard = deck.filter(isHard).sort((a, b) => b.lapses - a.lapses);
   const lookup = useMemo(() => {
-    const m = new Map<string, { t: string; tr?: string; de: string; reg: any; extra?: string }>();
-    for (const w of pack.words) m.set(w.id, { t: w.t, tr: w.tr, de: w.de, reg: w.reg, extra: w.ex ? `${w.ex.t} – ${w.ex.de}` : undefined });
-    for (const s of pack.slang) m.set(s.id, { t: s.t, tr: s.tr, de: s.de, reg: s.reg, extra: `${s.ex.t} – ${s.ex.de}\nWirkung: ${s.effect}` });
+    const m = new Map<string, Item>();
+    for (const w of pack.words) m.set(w.id, { t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, cat: w.cat, extra: [w.ex ? `${w.ex.t} – ${w.ex.de}` : '', w.note ?? ''].filter(Boolean).join('\n') });
+    for (const s of pack.slang) m.set(s.id, { t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, cat: 'slang', extra: `${s.ex.t} – ${s.ex.de}\nWirkung: ${s.effect}` });
     return m;
   }, [pack]);
 
   const slangAllowed = pack.slang.filter((s) => state.settings.slang >= 2 || s.reg !== 'vulgär');
   const slangMissing = slangAllowed.filter((s) => !state.cards[s.id]);
 
+  const start = (ids: string[], title: string) => {
+    const pref = state.settings.cardDir;
+    const dirs = ids.map((_, i) => (pref === 'gemischt' ? (i % 2 ? 'zu-ziel' : 'zu-de') : pref) as 'zu-de' | 'zu-ziel');
+    setSession({ ids, dirs, title }); setPos(0); setFlipped(false);
+  };
+
+  // Direkt aus „Schwierige Wörter“ auf der Startseite
+  useEffect(() => {
+    if (mode === 'hard' && hard.length) start(hard.slice(0, 20).map((c) => c.id), 'Schwierige Wörter');
+    // nur beim Öffnen
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode]);
+
   if (session) {
-    const id = session[pos];
+    const id = session.ids[pos];
     const item = id ? lookup.get(id) : undefined;
     if (!item) {
       return (
         <div className="stack center">
           <div className="huge">✅</div>
-          <h1>Wiederholung fertig!</h1>
-          <p className="muted">{session.length} Karten wiederholt.</p>
+          <h1>{session.title}: fertig!</h1>
+          <p className="muted">{session.ids.length} Karten wiederholt.</p>
           <button className="btn primary big-btn" onClick={() => { setSession(null); setPos(0); }}>Zurück</button>
         </div>
       );
     }
+    const dir = session.dirs[pos];
+    const front = dir === 'zu-de' ? item.t : item.de;
     const grade = (g: Grade) => {
       update((s) => ({ ...s, cards: { ...s.cards, [id]: review(s.cards[id] ?? newCard(id), g) } }));
       addActivity(1);
@@ -45,19 +69,21 @@ export function Vocab({ ctx }: { ctx: Ctx }) {
     };
     return (
       <div className="stack">
-        <div className="row between"><button className="back" onClick={() => setSession(null)}>✕</button><span className="muted small">{pos + 1} / {session.length}</span></div>
+        <div className="row between"><button className="back" onClick={() => setSession(null)}>✕</button><span className="muted small">{session.title} · {pos + 1} / {session.ids.length}</span></div>
         <button className="flashcard" onClick={() => setFlipped(true)} aria-label="Karte umdrehen">
-          <div className="prompt" lang={pack.code}>{item.t}</div>
-          {item.tr && <div className="muted">{item.tr}</div>}
+          <div className="muted small">{dir === 'zu-de' ? 'Was bedeutet das?' : 'Wie heißt das in der Zielsprache?'}</div>
+          <div className="prompt" lang={dir === 'zu-de' ? pack.code : 'de'}>{front}</div>
+          {dir === 'zu-de' && item.tr && <div className="muted">{item.tr}</div>}
           {flipped ? (
             <div className="back-side">
-              <div className="big">{item.de}</div>
-              <RegBadge reg={item.reg} />
+              <div className="big" lang={dir === 'zu-de' ? 'de' : pack.code}>{dir === 'zu-de' ? item.de : item.t}</div>
+              {dir === 'zu-ziel' && item.tr && <div className="muted">{item.tr}</div>}
+              <div><RegBadge reg={item.reg} /> <LevelBadge level={item.level} /></div>
               {item.extra && <div className="small muted pre">{item.extra}</div>}
             </div>
           ) : <div className="muted small">Tippen zum Umdrehen</div>}
         </button>
-        <SpeakBtn text={item.t} pack={pack} label="🔊 Anhören" />
+        {(flipped || dir === 'zu-de') && <SpeakBtn text={item.t} pack={pack} label="🔊 Anhören" />}
         {flipped && (
           <div className="grades">
             <button className="btn g0" onClick={() => grade(0)}>Nochmal</button>
@@ -70,6 +96,11 @@ export function Vocab({ ctx }: { ctx: Ctx }) {
     );
   }
 
+  const allIds = [...pack.words.map((w) => w.id)].filter((id) => {
+    const it = lookup.get(id)!;
+    return (!lv || it.level === lv) && (!topic || it.cat === topic);
+  });
+
   return (
     <div className="stack">
       <h1>Vokabeln</h1>
@@ -78,12 +109,21 @@ export function Vocab({ ctx }: { ctx: Ctx }) {
           <div><div className="big">{due.length}</div><div className="muted small">fällig</div></div>
           <div><div className="big">{deck.length}</div><div className="muted small">im Stapel</div></div>
           <div><div className="big">{deck.filter(isLearned).length}</div><div className="muted small">gelernt</div></div>
+          <div><div className="big">{hard.length}</div><div className="muted small">schwierig</div></div>
         </div>
-        <button className="btn primary big-btn" disabled={!due.length} onClick={() => { setSession(due.slice(0, 30).map((c) => c.id)); setPos(0); setFlipped(false); }}>
+        <button className="btn primary big-btn" disabled={!due.length} onClick={() => start(due.slice(0, 30).map((c) => c.id), 'Wiederholung')}>
           {due.length ? `Jetzt wiederholen (${Math.min(30, due.length)})` : 'Nichts fällig – super!'}
         </button>
+        {hard.length > 0 && <button className="btn big-btn" onClick={() => start(hard.slice(0, 20).map((c) => c.id), 'Schwierige Wörter')}>🎯 Schwierige Wörter üben ({Math.min(20, hard.length)})</button>}
+        <label className="field small">Abfragerichtung
+          <div className="seg">
+            {([['gemischt', 'Gemischt'], ['zu-de', 'Ziel → DE'], ['zu-ziel', 'DE → Ziel']] as const).map(([k, l]) => (
+              <button key={k} className={state.settings.cardDir === k ? 'on' : ''} onClick={() => update((s) => ({ ...s, settings: { ...s.settings, cardDir: k } }))}>{l}</button>
+            ))}
+          </div>
+        </label>
         {!deck.length && <p className="muted small">Starte eine Lektion – ihre Wörter landen automatisch hier.</p>}
-        <p className="fine">Spaced Repetition: Karten, die du gut kannst, kommen in immer größeren Abständen wieder. Schwierige kommen schnell zurück.</p>
+        <p className="fine">Spaced Repetition: Gut gekonnte Karten kommen in immer größeren Abständen wieder. Fehler aus Lektionen und „Nochmal“ holen Karten sofort zurück; oft vergessene Wörter landen bei „Schwierig“.</p>
       </section>
 
       <div className="seg">
@@ -98,7 +138,7 @@ export function Vocab({ ctx }: { ctx: Ctx }) {
             {slangAllowed.map((s) => (
               <li key={s.id} className="word-row">
                 <div className="grow">
-                  <b lang={pack.code}>{s.t}</b> <RegBadge reg={s.reg} />
+                  <b lang={pack.code}>{s.t}</b>{s.tr && <span className="muted"> · {s.tr}</span>} <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>} {s.status === 'älter' && <span className="badge">älter</span>}
                   <div className="small pre">{explainSlang(s).split('\n').slice(1).join('\n')}</div>
                 </div>
                 <SpeakBtn text={s.t} pack={pack} />
@@ -109,19 +149,27 @@ export function Vocab({ ctx }: { ctx: Ctx }) {
       )}
       {tab !== 'slang' && (
         <section className="card">
+          {tab === 'alle' && (
+            <div className="row wrap">
+              <select className="select" value={lv} onChange={(e) => setLv(e.target.value)} aria-label="Niveau"><option value="">Alle Niveaus</option>{LEVELS.map((l) => <option key={l}>{l}</option>)}</select>
+              <select className="select" value={topic} onChange={(e) => setTopic(e.target.value)} aria-label="Thema"><option value="">Alle Themen</option>{TOPICS.map((t) => <option key={t.key} value={t.key}>{t.title}</option>)}</select>
+              <span className="muted small">{allIds.length} Wörter</span>
+            </div>
+          )}
           <ul className="list">
-            {(tab === 'alle' ? pack.words.map((w) => w.id) : deck.map((c) => c.id)).map((id) => {
+            {(tab === 'alle' ? allIds.slice(0, 200) : deck.map((c) => c.id)).map((id) => {
               const it = lookup.get(id); if (!it) return null;
               const c = state.cards[id];
               return (
                 <li key={id} className="word-row">
-                  <div className="grow"><b lang={pack.code}>{it.t}</b>{it.tr && <span className="muted"> · {it.tr}</span>}<div className="small">{it.de} <RegBadge reg={it.reg} /></div></div>
-                  {c && <span className="muted small">{isLearned(c) ? '✓' : `${c.interval} T.`}</span>}
+                  <div className="grow"><b lang={pack.code}>{it.t}</b>{it.tr && <span className="muted"> · {it.tr}</span>}<div className="small">{it.de} <RegBadge reg={it.reg} /> <LevelBadge level={it.level} /></div></div>
+                  {c && <span className="muted small">{isLearned(c) ? '✓' : isHard(c) ? '🎯' : `${c.interval} T.`}</span>}
                   <SpeakBtn text={it.t} pack={pack} />
                 </li>
               );
             })}
           </ul>
+          {tab === 'alle' && allIds.length > 200 && <p className="muted small">… die ersten 200 – nutze die Filter oder das Wörterbuch.</p>}
           {tab === 'karten' && !deck.length && <p className="muted">Noch leer.</p>}
         </section>
       )}

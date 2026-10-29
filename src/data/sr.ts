@@ -2,7 +2,8 @@ import type { LanguagePack } from './types';
 
 export const sr: LanguagePack = {
   code: 'sr', name: 'Serbisch', native: 'Srpski', flag: '🇷🇸', city: 'Belgrad',
-  speechLang: 'sr-RS', speechFallback: 'hr-HR', version: 1,
+  speechLang: 'sr-RS', speechFallback: 'hr-HR', version: 1, scripts: 'sr',
+  focus: 'Belgrad: ekavische Aussprache (lepo, mleko), viel „bre“ und „brate“, Treffpunkt „kod konja“, Splavovi an Save und Donau, Kafana-Kultur, der Wind Košava und Šatrovački (Silbentausch-Slang wie „konza“). Die meisten Slangwörter sind in ganz Serbien üblich – die App zeigt, was wirklich typisch Belgrad ist.',
   note: 'Serbisch wird mit kyrillischer und lateinischer Schrift geschrieben – beide sind korrekt. Hier steht die lateinische Schrift, die im Alltag und Chat sehr verbreitet ist. Gesprochen wird die Belgrader (ekavische) Aussprache. Auf iPhones gibt es oft keine serbische Stimme; dann wird die sehr ähnliche kroatische Stimme benutzt.',
   words: [
     { id: 'sr-zdravo', t: 'zdravo', de: 'hallo', reg: 'neutral', cat: 'Begrüßung' },
@@ -93,7 +94,7 @@ export const sr: LanguagePack = {
   ],
   roleplays: [
     {
-      id: 'sr-r-kafic', title: 'Kafić in Dorćol', scene: 'Ein gemütliches Café in Belgrad. Die Kellnerin kommt an deinen Tisch.', start: 'a',
+      id: 'sr-r-kafic', title: 'Kafić in Dorćol', scene: 'Ein gemütliches Café in Belgrad. Die Kellnerin kommt an deinen Tisch.', level: 'A1', start: 'a',
       nodes: {
         a: { npc: 'Dobar dan! Izvolite?', npcDe: 'Guten Tag! Bitte schön? (Was darf es sein?)', options: [
           { t: 'Dobar dan, može jedna domaća kafa?', de: 'Guten Tag, kann ich einen Mokka haben?', reg: 'neutral', next: 'b', note: 'Perfekt – genau so bestellen Einheimische.' },
@@ -113,7 +114,7 @@ export const sr: LanguagePack = {
       },
     },
     {
-      id: 'sr-r-drustvo', title: 'Neue Leute auf einem Splav', scene: 'Ein Partyschiff (splav) an der Save. Ein Freund stellt dich vor.', start: 'a',
+      id: 'sr-r-drustvo', title: 'Neue Leute auf einem Splav', scene: 'Ein Partyschiff (splav) an der Save. Ein Freund stellt dich vor.', level: 'A1', start: 'a',
       nodes: {
         a: { npc: 'Ćao! Ja sam Marko. Kako se zoveš?', npcDe: 'Hi! Ich bin Marko. Wie heißt du?', options: [
           { t: 'Ćao, zovem se Niklas. Drago mi je!', de: 'Hi, ich heiße Niklas. Freut mich!', reg: 'locker', next: 'b', note: 'Sehr gut.' },
@@ -133,7 +134,7 @@ export const sr: LanguagePack = {
       },
     },
     {
-      id: 'sr-r-teretana', title: 'In der Teretana', scene: 'Jemand trainiert an der Bank, die du brauchst.', start: 'a',
+      id: 'sr-r-teretana', title: 'In der Teretana', scene: 'Jemand trainiert an der Bank, die du brauchst.', level: 'A1', start: 'a',
       nodes: {
         a: { npc: '(Jemand macht gerade einen Satz.)', npcDe: '', options: [
           { t: 'Izvini, koliko ti je još serija ostalo?', de: 'Entschuldige, wie viele Sätze hast du noch?', reg: 'neutral', next: 'b', note: 'Höflich und klar.' },
@@ -142,6 +143,42 @@ export const sr: LanguagePack = {
         b: { npc: 'Još jedna i tvoja je.', npcDe: 'Noch einer, dann gehört sie dir.', options: [
           { t: 'Važi, hvala!', de: 'Okay, danke!', reg: 'locker', next: null },
           { t: 'Nema frke, polako.', de: 'Kein Stress, lass dir Zeit.', reg: 'slang', next: null },
+        ] },
+      },
+    },
+    {
+      id: 'sr-r-flert', title: 'Flirt im Kafić', scene: 'Ein Café in Dorćol. Am Nachbartisch sitzt jemand, mit dem du schon Blicke getauscht hast.', start: 'a', level: 'A2',
+      nodes: {
+        a: { npc: '(Sie schaut von ihrem Handy auf.)', npcDe: '', options: [
+          { t: 'Izvini, da li je ovo mesto slobodno?', de: 'Entschuldige, ist der Platz frei?', reg: 'neutral', next: 'b', note: 'Unaufdringlicher Einstieg – genau richtig.' },
+          { t: 'Ćao lepotice!', de: 'Hallo, Schöne!', reg: 'flirt', next: 'b', note: 'Klingt nach Anmachspruch – als erster Satz eher unangenehm.' },
+        ] },
+        b: { npc: 'Jeste, sedi. Nisi odavde, a?', npcDe: 'Ja, setz dich. Du bist nicht von hier, oder?', options: [
+          { t: 'Nisam, iz Nemačke sam. Učim srpski.', de: 'Nein, ich bin aus Deutschland. Ich lerne Serbisch.', reg: 'neutral', next: 'c' },
+          { t: 'Toliko se vidi? 😄', de: 'Sieht man das so sehr? 😄', reg: 'locker', next: 'c', note: 'Selbstironie kommt in Belgrad sehr gut an.' },
+        ] },
+        c: { npc: 'Haha, malo. Ali dobro pričaš! Kako ti se sviđa Beograd?', npcDe: 'Haha, ein bisschen. Aber du sprichst gut! Wie gefällt dir Belgrad?', options: [
+          { t: 'Ludilo! Hoćeš da mi pokažeš neki dobar splav?', de: 'Wahnsinn! Zeigst du mir ein gutes Splav?', reg: 'flirt', next: 'd', note: 'Begeisterung plus ein Grund, sich wiederzusehen – charmant.' },
+          { t: 'Lep je grad.', de: 'Schöne Stadt.', reg: 'neutral', next: 'd', note: 'Höflich, aber so endet das Gespräch schnell.' },
+        ] },
+        d: { npc: 'Može. Daj mi broj, javiću ti se.', npcDe: 'Klar. Gib mir deine Nummer, ich melde mich.', options: [
+          { t: 'Važi! Drago mi je.', de: 'Abgemacht! Freut mich.', reg: 'locker', next: null },
+        ] },
+      },
+    },
+    {
+      id: 'sr-r-chat', title: 'Nachrichten von Marko', scene: 'Dein Kumpel Marko schreibt dir am Samstag.', start: 'a', level: 'A2',
+      nodes: {
+        a: { npc: 'gde si brate, šta ima? idemo večeras na splav?', npcDe: 'Was geht, Bruder? Gehen wir heute Abend aufs Splav?', options: [
+          { t: 'ajde, može! u koliko?', de: 'Komm, geht klar! Um wie viel Uhr?', reg: 'locker', next: 'b', note: 'Natürlicher Chat-Stil.' },
+          { t: 'Poštovani Marko, rado ću doći.', de: 'Sehr geehrter Marko, ich komme gerne.', reg: 'formell', next: 'b', note: 'Wie ein Geschäftsbrief – im Chat unter Freunden komisch 😄' },
+        ] },
+        b: { npc: 'u 11 kod konja, vlj će biti gužva', npcDe: 'Um 11 beim Pferd, wahrscheinlich wird es voll', options: [
+          { t: 'važi, vidimo se!', de: 'Abgemacht, wir sehen uns!', reg: 'locker', next: 'c', note: '„vlj“ = valjda (wahrscheinlich), „kod konja“ = Treffpunkt am Platz der Republik.' },
+          { t: 'nzm, imam frku na poslu sutra', de: 'Weiß nicht, ich hab morgen Stress auf der Arbeit', reg: 'chat', next: 'c', note: '„nzm“ = ne znam, „frka“ = Stress.' },
+        ] },
+        c: { npc: 'ok, javi se 👊', npcDe: 'Ok, meld dich 👊', options: [
+          { t: 'pozz!', de: 'Tschüss!', reg: 'chat', next: null },
         ] },
       },
     },

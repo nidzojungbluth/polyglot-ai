@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { Ctx } from '../App';
 import type { RoleOption, Roleplay } from '../data/types';
-import { RegBadge, SpeakBtn } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn } from './ui';
 
 interface Turn { npc: string; npcDe: string; pick?: RoleOption }
 
@@ -12,14 +12,14 @@ export function Roleplays({ ctx }: { ctx: Ctx }) {
 
   return (
     <div className="stack">
-      <h1>Rollenspiele</h1>
-      <p className="muted">Echte Situationen in {pack.city}. Jede Antwort zeigt ihr Sprachregister – und der Coach sagt dir, wie sie ankommt.</p>
+      <h1>Dialoge & Rollenspiele</h1>
+      <p className="muted">Echte Situationen in {pack.city}. Jede Antwort zeigt, was sie bedeutet, welches Register sie hat und wie sie ankommt.</p>
       <ul className="list card">
-        {pack.roleplays.map((r) => (
+        {[...pack.roleplays].sort((a, b) => (a.level ?? 'A1').localeCompare(b.level ?? 'A1')).map((r) => (
           <li key={r.id}>
             <button className="list-btn" onClick={() => setActive(r)}>
               <span className="num">🎭</span>
-              <span className="grow"><b>{r.title}</b><br /><span className="muted small">{r.scene}</span></span>
+              <span className="grow"><b>{r.title}</b> <LevelBadge level={r.level ?? 'A1'} /><br /><span className="muted small">{r.scene}</span></span>
               {state.roleplays[r.id] ? <span className="muted small">{state.roleplays[r.id]}×</span> : null}
             </button>
           </li>

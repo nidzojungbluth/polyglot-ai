@@ -19,6 +19,8 @@ export interface AppState {
     slang: number;              // 0 = keiner, 1 = etwas, 2 = viel
     interests: string;          // für personalisierte Übungen
     aiEnabled: boolean;
+    srScript: 'beide' | 'latein' | 'kyrillisch';  // Serbisch: Schriftwahl
+    cardDir: 'gemischt' | 'zu-de' | 'zu-ziel';    // Richtung der Karteikarten
   };
   cards: Record<string, Card>;
   lessons: Record<string, { best: number; doneAt: number }>;
@@ -32,7 +34,7 @@ export interface AppState {
 export function defaultState(): AppState {
   return {
     schema: SCHEMA_VERSION,
-    settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true },
+    settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true, srScript: 'beide', cardDir: 'gemischt' },
     cards: {}, lessons: {}, roleplays: {}, daily: {}, mistakes: {}, coach: {}, updatedAt: Date.now(),
   };
 }

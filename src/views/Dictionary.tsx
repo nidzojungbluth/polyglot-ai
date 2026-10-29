@@ -1,39 +1,66 @@
 import { useMemo, useState } from 'react';
 import type { Ctx } from '../App';
-import { PACKS } from '../data';
+import { PACKS, withScript } from '../data';
+import type { LanguagePack, Register } from '../data/types';
+import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
-import { RegBadge, SpeakBtn } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn } from './ui';
+
+interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: string; extra?: string; local?: boolean; search: string }
 
 export function Dictionary({ ctx }: { ctx: Ctx }) {
   const [q, setQ] = useState('');
   const [all, setAll] = useState(false);
-  const packs = all ? PACKS : [ctx.pack];
+  const [level, setLevel] = useState('');
+  const [reg, setReg] = useState('');
+
+  // Suchindex einmal pro Sprache aufbauen (schnell auch bei tausenden Einträgen)
+  const index = useMemo(() => {
+    const packs = all ? PACKS.map((p) => withScript(p, ctx.state.settings.srScript)) : [ctx.pack];
+    const out: Entry[] = [];
+    for (const p of packs) {
+      for (const w of p.words) out.push({ pack: p, id: w.id, t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, ex: w.ex ? `${w.ex.t} – ${w.ex.de}` : undefined, extra: w.note,
+        search: normalize([w.t, w.tr, w.de].join(' ')) });
+      for (const s of p.slang) out.push({ pack: p, id: s.id, t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, local: s.local, ex: `${s.ex.t} – ${s.ex.de}`,
+        extra: `${s.situation} · ${s.effect} · Neutral: ${s.formal}${s.status === 'älter' ? ' · eher veraltet' : ''}`, search: normalize([s.t, s.tr, s.de].join(' ')) });
+    }
+    return out;
+  }, [all, ctx.pack, ctx.state.settings.srScript]);
 
   const results = useMemo(() => {
     const n = normalize(q);
-    if (n.length < 2) return [];
-    const out: { pack: typeof PACKS[number]; id: string; t: string; tr?: string; de: string; reg: any; ex?: string; slang: boolean }[] = [];
-    for (const p of packs) {
-      for (const w of p.words) if ([w.t, w.de, w.tr ?? ''].some((x) => normalize(x).includes(n))) out.push({ pack: p, id: w.id, t: w.t, tr: w.tr, de: w.de, reg: w.reg, ex: w.ex ? `${w.ex.t} – ${w.ex.de}` : undefined, slang: false });
-      for (const s of p.slang) if ([s.t, s.de, s.tr ?? ''].some((x) => normalize(x).includes(n))) out.push({ pack: p, id: s.id, t: s.t, tr: s.tr, de: s.de, reg: s.reg, ex: `${s.ex.t} – ${s.ex.de} · Neutral: ${s.formal}`, slang: true });
-    }
-    return out.slice(0, 60);
-  }, [q, packs]);
+    const filtered = index.filter((e) => (!level || e.level === level) && (!reg || e.reg === reg) && (!n || e.search.includes(n)));
+    return { total: filtered.length, list: n.length >= 1 || level || reg ? filtered.slice(0, 80) : [] };
+  }, [q, index, level, reg]);
 
   return (
     <div className="stack">
       <button className="back" onClick={() => ctx.go('more')}>‹ Mehr</button>
       <h1>Wörterbuch</h1>
-      <input className="input" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Deutsch oder Zielsprache eingeben …" aria-label="Suche" autoCapitalize="off" />
+      <p className="muted small">{index.length} Einträge {all ? 'in allen Sprachen' : `in ${ctx.pack.name}`}</p>
+      <input className="input" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Deutsch, Zielsprache oder Umschrift …" aria-label="Suche" autoCapitalize="off" />
+      <div className="row wrap">
+        <select className="select" value={level} onChange={(e) => setLevel(e.target.value)} aria-label="Niveau">
+          <option value="">Alle Niveaus</option>
+          {LEVELS.map((l) => <option key={l} value={l}>{l}</option>)}
+        </select>
+        <select className="select" value={reg} onChange={(e) => setReg(e.target.value)} aria-label="Register">
+          <option value="">Alle Register</option>
+          {Object.entries(REGISTER_INFO).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+        </select>
+      </div>
       <label className="row small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> In allen Sprachen suchen</label>
-      {q.length >= 2 && !results.length && <p className="muted">Nichts gefunden. Das Wörterbuch enthält bisher nur die Wörter der Sprachpakete.</p>}
+      {results.list.length > 0 && <p className="muted small">{results.total} Treffer{results.total > 80 ? ' (die ersten 80)' : ''}</p>}
+      {(q || level || reg) && !results.total && <p className="muted">Nichts gefunden.</p>}
       <ul className="list card">
-        {results.map((r) => (
-          <li key={r.id} className="word-row">
+        {results.list.map((r) => (
+          <li key={r.pack.code + r.id} className="word-row">
             <div className="grow">
-              <span>{r.pack.flag}</span> <b lang={r.pack.code}>{r.t}</b>{r.tr && <span className="muted"> · {r.tr}</span>} <RegBadge reg={r.reg} />
+              <span>{r.pack.flag}</span> <b lang={r.pack.code}>{r.t}</b>{r.tr && <span className="muted"> · {r.tr}</span>} <RegBadge reg={r.reg} /> <LevelBadge level={r.level} />
+              {r.local && <span className="badge local">📍 {r.pack.city}</span>}
               <div className="small">{r.de}</div>
               {r.ex && <div className="small muted">{r.ex}</div>}
+              {r.extra && <div className="small note">💡 {r.extra}</div>}
             </div>
             <SpeakBtn text={r.t} pack={r.pack} />
           </li>

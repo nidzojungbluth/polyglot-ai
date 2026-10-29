@@ -6,7 +6,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', (e) => errors.push(e.message));
-  const URL = 'http://localhost:4173/';
+  const URL = 'http://localhost:4176/';
   await p.goto(URL);
   await p.waitForSelector('text=Weiterlernen');
   assert(true, 'Startseite lädt auf iPhone-Größe');
@@ -63,7 +63,8 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.screenshot({ path: '../shots/4-coach.png', fullPage: false });
 
   // Rollenspiel
-  await p.click('.tab:has-text("Rollenspiele")');
+  await p.click('.tab:has-text("Start")');
+  await p.click('.tile:has-text("Dialoge")');
   await p.click('text=Café in Shoreditch');
   for (let i = 0; i < 6 && !(await p.locator('text=Szene geschafft').count()); i++) await p.locator('.options .opt').first().click();
   assert(await p.locator('text=Szene geschafft').count() === 1, 'Rollenspiel bis zum Ende spielbar');
@@ -72,8 +73,31 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   // Sprache wechseln (Griechisch)
   await p.click('.langchip');
   await p.click('text=Griechisch');
-  await p.waitForSelector('text=Begrüßen wie in Athen');
+  await p.waitForSelector('text=Begrüßen wie in Thessaloniki');
   assert(true, 'Sprachwechsel auf Griechisch');
+
+  // Kurse (Griechisch): Modul öffnen und eine Lektion spielen
+  await p.click('.tab:has-text("Kurse")');
+  await p.waitForSelector('.levels');
+  assert(await p.locator('.planned-row').count() > 0, 'Kursübersicht zeigt verfügbare und geplante Module');
+  await p.screenshot({ path: '../shots/8-courses.png' });
+  await p.locator('.list-btn').first().click();
+  await p.waitForSelector('text=Lektion 1');
+  await p.locator('.btn.primary.big-btn').first().click();
+  await p.click('text=Übungen starten');
+  let m = 0;
+  while (!(await p.locator('h1:has-text("richtig")').count())) {
+    if (await p.locator('.options .opt').count()) await p.locator('.options .opt').first().click();
+    else if (await p.locator('.tile-word').count()) { const k = await p.locator('.tile-word').count(); for (let i = 0; i < k; i++) await p.locator('.tile-word').nth(i).click(); await p.locator('button:has-text("Prüfen")').click(); }
+    else { await p.fill('input[aria-label=Antwort]', 'x'); await p.locator('button:has-text("Prüfen")').click(); }
+    if (m === 1) await p.screenshot({ path: '../shots/9-module-ex.png' });
+    await p.locator('.feedback button:has-text("Weiter")').click();
+    if (++m > 40) throw new Error('Modul-Lektion endet nicht');
+  }
+  assert(m >= 8, `Modul-Lektion mit ${m} Übungen durchgespielt`);
+  await p.click('text=Fertig');
+  await p.waitForSelector('text=Wiederholung');
+  assert(await p.locator('.num:has-text("✓")').count() >= 1, 'Modul-Lektion als erledigt markiert');
 
   // Wörterbuch
   await p.click('.tab:has-text("Mehr")');
@@ -81,8 +105,23 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.fill('input[type=search]', 'danke');
   assert(await p.locator('text=ευχαριστώ').count() > 0, 'Wörterbuch findet „danke“ auf Griechisch');
 
+  // Russisch: Betonung + Umschrift, Kurs vorhanden
+  await p.click('.langchip'); await p.click('text=Russisch');
+  await p.waitForSelector('text=Hallo in Moskau');
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Wörterbuch');
+  await p.fill('input[type=search]', 'privet');
+  assert(await p.locator('text=privét').count() > 0, 'Russisch: Suche über Umschrift, Betonung angezeigt');
+  // Serbisch in Kyrillisch
+  await p.click('.langchip'); await p.click('text=Serbisch');
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Einstellungen');
+  await p.click('button:has-text("Кирилица")');
+  await p.click('.tab:has-text("Vokabeln")'); await p.click('button:has-text("Alle Wörter")');
+  assert(await p.locator('b:has-text("здраво")').count() > 0, 'Serbisch wird auf Kyrillisch angezeigt');
+  await p.screenshot({ path: '../shots/10-sr-cyr.png' });
+  await p.click('.langchip'); await p.click('text=Griechisch');
+
   // Sicherung: Export (Kopieren-Fallback) und Import
-  await p.click('text=‹ Mehr'); await p.click('text=Einstellungen');
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Einstellungen');
   await p.click('button:has-text("Kopieren")');
   await p.waitForTimeout(300);
   let backup = await p.locator('textarea').inputValue();
@@ -93,7 +132,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.click('button:has-text("Wiederherstellen")');
   await p.waitForSelector('text=erfolgreich wiederhergestellt');
   await p.click('.tab:has-text("Start")');
-  assert(await p.locator('text=Begrüßen wie in Athen').count() >= 1, 'Wiederherstellung bringt Einstellungen zurück');
+  assert(await p.locator('text=Begrüßen wie in Thessaloniki').count() >= 1, 'Wiederherstellung bringt Einstellungen zurück');
   await p.click('.tab:has-text("Mehr")'); await p.click('text=Einstellungen');
   await p.fill('textarea', 'Unsinn');
   await p.click('button:has-text("Wiederherstellen")');
