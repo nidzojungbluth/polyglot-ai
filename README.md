@@ -7,7 +7,7 @@ Kostenlose Sprachlern-Web-App (React + TypeScript + Vite) mit Sprachcoach, Slang
 - Interaktive Übungen: Buchstaben erkennen, Groß/klein, Laut ↔ Buchstabe, Hören, Wörter zusammensetzen, Silben trennen, Betonung, Wörter und Sätze lesen; Einstufungstest hakt Beherrschtes ab; Überspringen möglich.
 
 ## Version 2 – Griechisch, Serbisch, Russisch
-- **Großer Kursbereich** für Griechisch (Thessaloniki), Serbisch (Belgrad) und Russisch (Moskau): je ~710 Wörter + 66–70 Slang-Ausdrücke, 59 Module (A1–B2) mit je mehreren Lektionen und Wiederholung, 5–6 Dialoge.
+- **Großer Kursbereich** für Griechisch (Thessaloniki), Serbisch (Belgrad) und Russisch (Moskau): je ~795 Wörter + 75–79 Slang-Ausdrücke, 67 Module (A1–C1) mit je mehreren Lektionen und Wiederholung, 5–6 Dialoge.
 - **Lehrplan:** 20 Themen × 6 Niveaus (A1–C2) = 120 Plätze pro Sprache; nur gefüllte Module sind anklickbar, der Rest ist sichtbar als „geplant“.
 - **Kompaktes Vokabelformat** (`src/data/vocab/*.ts`, siehe `src/data/vocab.ts`) mit automatischer Umschrift (Griechisch, Russisch mit Betonung), stabilen IDs (Fortschritt bleibt bei Updates) und Duplikat-Erkennung.
 - **Serbisch** in Latein, Kyrillisch oder beiden Schriften (automatisch umgewandelt).
