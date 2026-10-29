@@ -15,9 +15,10 @@ import { Progress } from './views/Progress';
 import { Settings } from './views/Settings';
 import { Languages } from './views/Languages';
 import { Courses } from './views/Courses';
+import { Alphabet } from './views/Alphabet';
 
-export type View = 'home' | 'courses' | 'lesson' | 'coach' | 'roleplay' | 'vocab' | 'dict' | 'progress' | 'settings' | 'langs' | 'more';
-const VIEWS: View[] = ['home', 'courses', 'coach', 'roleplay', 'vocab', 'dict', 'progress', 'settings', 'langs', 'more'];
+export type View = 'home' | 'courses' | 'abc' | 'lesson' | 'coach' | 'roleplay' | 'vocab' | 'dict' | 'progress' | 'settings' | 'langs' | 'more';
+const VIEWS: View[] = ['home', 'courses', 'abc', 'coach', 'roleplay', 'vocab', 'dict', 'progress', 'settings', 'langs', 'more'];
 
 export interface Ctx {
   state: AppState;
@@ -134,6 +135,7 @@ export default function App() {
         {view === 'home' && <Home ctx={ctx} />}
         {view === 'lesson' && arg && <LessonPlayer ctx={ctx} lessonId={arg} />}
         {view === 'courses' && <Courses key={arg ?? 'all'} ctx={ctx} moduleId={arg} />}
+        {view === 'abc' && <Alphabet key={arg ?? 'abc'} ctx={ctx} arg={arg} />}
         {view === 'coach' && <Coach ctx={ctx} />}
         {view === 'roleplay' && <Roleplays ctx={ctx} />}
         {view === 'vocab' && <Vocab key={arg ?? 'v'} ctx={ctx} mode={arg} />}
@@ -146,7 +148,7 @@ export default function App() {
       {toast && <div className="toast" role="status">{toast}</div>}
       <nav className="tabbar" aria-label="Hauptnavigation">
         {tabs.map((t) => {
-          const active = t.v === view || (t.v === 'more' && moreViews.includes(view)) || (t.v === 'courses' && view === 'lesson');
+          const active = t.v === view || (t.v === 'more' && moreViews.includes(view)) || (t.v === 'courses' && (view === 'lesson' || view === 'abc'));
           return (
             <button key={t.v} className={`tab ${active ? 'active' : ''} ${t.v === 'coach' ? 'tab-coach' : ''}`} onClick={() => go(t.v)}>
               <span className="tab-icon">{t.icon}</span>

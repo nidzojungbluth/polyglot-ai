@@ -23,7 +23,7 @@ export interface AppState {
     cardDir: 'gemischt' | 'zu-de' | 'zu-ziel';    // Richtung der Karteikarten
   };
   cards: Record<string, Card>;
-  lessons: Record<string, { best: number; doneAt: number }>;
+  lessons: Record<string, { best: number; doneAt: number; via?: 'test' | 'skip' }>;
   roleplays: Record<string, number>;           // Anzahl Durchläufe
   daily: Record<string, number>;               // "YYYY-MM-DD" → Übungen
   mistakes: Record<string, { why: string; count: number; lang: string }>;

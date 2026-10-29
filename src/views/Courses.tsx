@@ -5,6 +5,7 @@ import { LEVELS } from '../data/types';
 import { LEVEL_INFO, TOPICS, topicIcon } from '../data/curriculum';
 import { itemsOf, moduleLessons } from '../lib/course';
 import { ProgressBar, RegBadge, SpeakBtn } from './ui';
+import { abcFor } from '../data/alphabet';
 
 export function moduleProgress(ctx: Ctx, m: Module): { done: number; total: number } {
   const ls = moduleLessons(ctx.pack, m);
@@ -38,6 +39,7 @@ export function Courses({ ctx, moduleId }: { ctx: Ctx; moduleId?: string }) {
   return (
     <div className="stack">
       <h1>Kurse · {pack.flag} {pack.name}</h1>
+      <AbcCard ctx={ctx} />
       <div className="levels" role="tablist" aria-label="Niveaustufe">
         {LEVELS.map((lv) => (
           <button key={lv} role="tab" aria-selected={lv === level} className={`lv ${lv === level ? 'on' : ''} ${countFor(lv) ? '' : 'empty'}`} onClick={() => setLevel(lv)}>
@@ -119,5 +121,18 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
         </ul>
       )}
     </div>
+  );
+}
+
+function AbcCard({ ctx }: { ctx: Ctx }) {
+  const c = abcFor(ctx.pack.code);
+  if (!c) return null;
+  const done = c.units.filter((u) => ctx.state.lessons[u.id]).length;
+  return (
+    <button className="card abc-card" onClick={() => ctx.go('abc')}>
+      <div className="row between"><b>🔤 Schritt 1: {c.title}</b><span className="muted small">{done}/{c.units.length}</span></div>
+      <span className="small muted">{done === c.units.length ? 'Erledigt – jederzeit wiederholbar' : c.forBeginners ? 'Buchstaben → Laute → Silben → Wörter → erste Sätze' : 'Einstufungstest und Wiederholung beider Schriften'}</span>
+      <ProgressBar value={done} max={c.units.length} />
+    </button>
   );
 }

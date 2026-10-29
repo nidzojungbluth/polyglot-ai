@@ -1,0 +1,101 @@
+import type { AbcCourse } from './types';
+
+// Serbisch – Vuks Alphabet: 30 Buchstaben, ein Buchstabe = ein Laut, in beiden Schriften.
+export const abcSr: AbcCourse = {
+  code: 'sr', title: 'Serbisch: Latinica & Ćirilica', forBeginners: false,
+  intro: 'Serbisch wird mit zwei Alphabeten geschrieben – Latinica und Ćirilica. Beide haben 30 Buchstaben, und jeder Buchstabe entspricht genau einem in der anderen Schrift. Das Umschreiben ist deshalb KEINE Übersetzung: Es ist dasselbe Wort, nur mit anderen Zeichen. Offizielle Schrift laut Verfassung ist Kyrillisch; im Alltag, in Werbung und Chats ist Latein sehr verbreitet. Mach am besten zuerst den Einstufungstest – was du sicher kannst, wird abgehakt.',
+  units: [
+    {
+      id: 'sr-abc-1', title: 'Gleiche Buchstaben', kind: 'letters',
+      intro: 'Diese sieben sehen in beiden Schriften (fast) gleich aus und klingen gleich.',
+      letters: [
+        { up: 'А', low: 'а', lat: 'A a', name: 'a', sound: 'a', hint: 'a wie in „Vater“.', ex: { t: 'мама', tr: 'mama', de: 'Mama' } },
+        { up: 'Е', low: 'е', lat: 'E e', name: 'e', sound: 'e', hint: 'e wie in „Bett“.', ex: { t: 'сестра', tr: 'sestra', de: 'Schwester' } },
+        { up: 'Ј', low: 'ј', lat: 'J j', name: 'j', sound: 'j', hint: 'j wie in „ja“.', ex: { t: 'јогурт', tr: 'jogurt', de: 'Joghurt' }, trap: 'Kyrillisches Ј gibt es nur im Serbischen/Mazedonischen – Russisch hat stattdessen й.' },
+        { up: 'К', low: 'к', lat: 'K k', name: 'k', sound: 'k', hint: 'k wie im Deutschen.', ex: { t: 'кафа', tr: 'kafa', de: 'Kaffee' } },
+        { up: 'М', low: 'м', lat: 'M m', name: 'm', sound: 'm', hint: 'm wie im Deutschen.', ex: { t: 'море', tr: 'more', de: 'Meer' } },
+        { up: 'О', low: 'о', lat: 'O o', name: 'o', sound: 'o', hint: 'o wie in „Post“.', ex: { t: 'око', tr: 'oko', de: 'Auge' } },
+        { up: 'Т', low: 'т', lat: 'T t', name: 't', sound: 't', hint: 't wie im Deutschen.', ex: { t: 'тата', tr: 'tata', de: 'Papa' } },
+      ],
+    },
+    {
+      id: 'sr-abc-2', title: 'Falsche Freunde', kind: 'letters',
+      intro: 'Sie sehen aus wie lateinische Buchstaben, sind aber andere. Typische Stolperfalle beim Lesen von Kyrillisch.',
+      letters: [
+        { up: 'В', low: 'в', lat: 'V v', name: 'v', sound: 'w (wie in Wasser)', hint: 'w wie in „Wasser“.', ex: { t: 'вода', tr: 'voda', de: 'Wasser' }, trap: 'Kyrillisches В = lateinisch V, nicht B!' },
+        { up: 'Н', low: 'н', lat: 'N n', name: 'n', sound: 'n', hint: 'n wie im Deutschen.', ex: { t: 'нос', tr: 'nos', de: 'Nase' }, trap: 'Kyrillisches Н = lateinisch N, nicht H!' },
+        { up: 'Р', low: 'р', lat: 'R r', name: 'r', sound: 'r (gerollt)', hint: 'gerolltes r. Kann sogar Silben tragen: прст (Finger), Србија.', ex: { t: 'рука', tr: 'ruka', de: 'Hand' }, trap: 'Kyrillisches Р = lateinisch R, nicht P!' },
+        { up: 'С', low: 'с', lat: 'S s', name: 's', sound: 's (scharf)', hint: 'scharfes s wie in „Haus“.', ex: { t: 'сир', tr: 'sir', de: 'Käse' }, trap: 'Kyrillisches С = lateinisch S, nicht C!' },
+        { up: 'У', low: 'у', lat: 'U u', name: 'u', sound: 'u', hint: 'u wie in „gut“.', ex: { t: 'улица', tr: 'ulica', de: 'Straße' }, trap: 'Kyrillisches У = lateinisch U, nicht Y!' },
+        { up: 'Х', low: 'х', lat: 'H h', name: 'h', sound: 'ch (wie in Bach)', hint: 'ch wie in „Bach“, oft schwach.', ex: { t: 'хлеб', tr: 'hleb', de: 'Brot' }, trap: 'Kyrillisches Х = lateinisch H, nicht X!' },
+      ],
+    },
+    {
+      id: 'sr-abc-3', title: 'Neue Formen', kind: 'letters',
+      intro: 'Kyrillische Buchstaben mit eigener Form für vertraute Laute.',
+      letters: [
+        { up: 'Б', low: 'б', lat: 'B b', name: 'b', sound: 'b', hint: 'b wie im Deutschen.', ex: { t: 'брат', tr: 'brat', de: 'Bruder' } },
+        { up: 'Г', low: 'г', lat: 'G g', name: 'g', sound: 'g', hint: 'hartes g wie in „Gast“.', ex: { t: 'град', tr: 'grad', de: 'Stadt' } },
+        { up: 'Д', low: 'д', lat: 'D d', name: 'd', sound: 'd', hint: 'd wie im Deutschen.', ex: { t: 'дан', tr: 'dan', de: 'Tag' } },
+        { up: 'З', low: 'з', lat: 'Z z', name: 'z', sound: 's (stimmhaft, wie Sonne)', hint: 'summendes s wie in „Sonne“.', ex: { t: 'зима', tr: 'zima', de: 'Winter' }, trap: 'Lateinisches z ist im Serbischen immer summend – nie „ts“ wie im Deutschen.' },
+        { up: 'И', low: 'и', lat: 'I i', name: 'i', sound: 'i', hint: 'i wie in „Kino“.', ex: { t: 'име', tr: 'ime', de: 'Name' } },
+        { up: 'Л', low: 'л', lat: 'L l', name: 'l', sound: 'l', hint: 'l wie im Deutschen.', ex: { t: 'лето', tr: 'leto', de: 'Sommer' } },
+        { up: 'П', low: 'п', lat: 'P p', name: 'p', sound: 'p', hint: 'p wie im Deutschen.', ex: { t: 'пиво', tr: 'pivo', de: 'Bier' } },
+        { up: 'Ф', low: 'ф', lat: 'F f', name: 'f', sound: 'f', hint: 'f wie im Deutschen.', ex: { t: 'филм', tr: 'film', de: 'Film' } },
+        { up: 'Ц', low: 'ц', lat: 'C c', name: 'c', sound: 'ts', hint: 'ts wie das deutsche z in „Zeit“.', ex: { t: 'цена', tr: 'cena', de: 'Preis' }, trap: 'Lateinisches c ist im Serbischen IMMER „ts“: cena = „tsena“.' },
+      ],
+    },
+    {
+      id: 'sr-abc-4', title: 'Sonderbuchstaben: љ њ ђ ћ ж ч ш џ', kind: 'letters',
+      intro: 'Die Buchstaben, die es nur im serbischen Alphabet gibt. Besonders wichtig: der Unterschied zwischen č/ć und dž/đ.',
+      letters: [
+        { up: 'Љ', low: 'љ', lat: 'Lj lj', name: 'lj', sound: 'lj (weich)', hint: 'weiches l, verschmolzen mit j – EIN Laut.', ex: { t: 'љубав', tr: 'ljubav', de: 'Liebe' } },
+        { up: 'Њ', low: 'њ', lat: 'Nj nj', name: 'nj', sound: 'nj (wie in Cognac)', hint: 'weiches n wie in „Cognac“ – EIN Laut.', ex: { t: 'коњ', tr: 'konj', de: 'Pferd' } },
+        { up: 'Ђ', low: 'ђ', lat: 'Đ đ', name: 'đ', sound: 'dj (weich)', hint: 'weiches, stimmhaftes dj – die weiche Schwester von џ.', ex: { t: 'ђак', tr: 'đak', de: 'Schüler' }, trap: 'Lateinisch oft als „dj“ geschrieben, wenn das Đ fehlt (Djoković).' },
+        { up: 'Ћ', low: 'ћ', lat: 'Ć ć', name: 'ć', sound: 'tch (weich)', hint: 'weiches tsch, Zunge vorn am Gaumen – wie in „Ćevapi“.', ex: { t: 'ћевапи', tr: 'ćevapi', de: 'Ćevapi' }, trap: 'ć (weich) ≠ č (hart). In schnellem Belgrader Sprechen verschwimmen sie oft – in der Schrift nie.' },
+        { up: 'Ж', low: 'ж', lat: 'Ž ž', name: 'ž', sound: 'zh (wie in Garage)', hint: 'stimmhaftes sch wie das „g“ in „Garage“.', ex: { t: 'жена', tr: 'žena', de: 'Frau' } },
+        { up: 'Ч', low: 'ч', lat: 'Č č', name: 'č', sound: 'tsch (hart)', hint: 'hartes tsch wie in „Tschüss“, Zunge weiter hinten.', ex: { t: 'чај', tr: 'čaj', de: 'Tee' } },
+        { up: 'Ш', low: 'ш', lat: 'Š š', name: 'š', sound: 'sch', hint: 'sch wie in „Schule“.', ex: { t: 'шума', tr: 'šuma', de: 'Wald' } },
+        { up: 'Џ', low: 'џ', lat: 'Dž dž', name: 'dž', sound: 'dsch (hart)', hint: 'hartes, stimmhaftes dsch wie in engl. „jeans“ – EIN Buchstabe.', ex: { t: 'џеп', tr: 'džep', de: 'Hosentasche' }, trap: 'Lateinisch zwei Zeichen (dž), kyrillisch eins (џ).' },
+      ],
+    },
+    {
+      id: 'sr-abc-5', title: 'Wörter in beiden Schriften', kind: 'words',
+      intro: 'Lies das kyrillische Wort und erkenne es. Gleiches Wort, gleiche Bedeutung – nur andere Schrift.',
+      words: [
+        { t: 'Београд', tr: 'Beograd', de: 'Belgrad' },
+        { t: 'добро јутро', tr: 'dobro jutro', de: 'guten Morgen' },
+        { t: 'хвала', tr: 'hvala', de: 'danke' },
+        { t: 'ћевабџиница', tr: 'ćevabdžinica', de: 'Ćevapi-Grill' },
+        { t: 'љубав', tr: 'ljubav', de: 'Liebe' },
+        { t: 'пријатељ', tr: 'prijatelj', de: 'Freund' },
+        { t: 'кафана', tr: 'kafana', de: 'Kafana' },
+        { t: 'железничка станица', tr: 'železnička stanica', de: 'Bahnhof' },
+        { t: 'улаз', tr: 'ulaz', de: 'Eingang' },
+        { t: 'излаз', tr: 'izlaz', de: 'Ausgang' },
+        { t: 'шта има?', tr: 'šta ima?', de: 'was geht?' },
+        { t: 'девојка', tr: 'devojka', de: 'Mädchen / Freundin' },
+      ],
+    },
+    {
+      id: 'sr-abc-6', title: 'Umschreiben Latein → Kyrillisch', kind: 'convert',
+      intro: 'Schreib Wörter selbst in der anderen Schrift. Denk dran: lj, nj, dž sind jeweils EIN kyrillischer Buchstabe.',
+      explain: [
+        { title: 'Umschreiben ist keine Übersetzung', text: '„Hvala“ und „хвала“ sind dasselbe Wort. Beim Umschreiben ändern sich nur die Zeichen, nie die Wörter oder die Grammatik.' },
+        { title: 'Die drei Doppelbuchstaben', text: 'lj → љ, nj → њ, dž → џ. Seltene Ausnahme: in Wörtern wie „nadživeti“ (n + dživeti) bleiben d und ž getrennt: надживети.' },
+      ],
+      words: [
+        { t: 'хвала', tr: 'hvala', de: 'danke' },
+        { t: 'љубав', tr: 'ljubav', de: 'Liebe' },
+        { t: 'коњ', tr: 'konj', de: 'Pferd' },
+        { t: 'џеп', tr: 'džep', de: 'Hosentasche' },
+        { t: 'ћевапи', tr: 'ćevapi', de: 'Ćevapi' },
+        { t: 'чај', tr: 'čaj', de: 'Tee' },
+        { t: 'шума', tr: 'šuma', de: 'Wald' },
+        { t: 'жена', tr: 'žena', de: 'Frau' },
+        { t: 'ђак', tr: 'đak', de: 'Schüler' },
+        { t: 'Србија', tr: 'Srbija', de: 'Serbien' },
+      ],
+    },
+  ],
+};

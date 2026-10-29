@@ -1,13 +1,15 @@
 import type { Cloze, LanguagePack, Lesson, OrderTask, SlangEntry, Word } from '../data/types';
 import { shuffle } from './text';
 
-export type Exercise =
-  | { kind: 'mc'; prompt: string; sub?: string; options: string[]; answer: string; wordId: string; speak?: string; explain?: string; dir: 'zu-de' | 'zu-ziel' }
-  | { kind: 'listen'; speak: string; options: string[]; answer: string; wordId: string }
+export type Exercise = (
+  | { kind: 'mc'; prompt: string; sub?: string; options: string[]; answer: string; wordId: string; speak?: string; explain?: string; dir: 'zu-de' | 'zu-ziel'; q?: string; big?: boolean }
+  | { kind: 'listen'; speak: string; options: string[]; answer: string; wordId: string; q?: string; explain?: string }
+  | { kind: 'build'; q: string; prompt: string; sub?: string; speak?: string; tiles: string[]; answer: string; joiner: string; explain?: string }
   | { kind: 'cloze'; prompt: string; de: string; answer: string }
   | { kind: 'order'; de: string; tiles: string[]; answer: string }
   | { kind: 'translate'; de: string; answer: string; wordId: string; hint?: string }
-  | { kind: 'register'; prompt: string; options: string[]; answer: string; explain: string; wordId: string };
+  | { kind: 'register'; prompt: string; options: string[]; answer: string; explain: string; wordId: string }
+) & { unit?: string };
 
 const pick = <T,>(arr: T[], n: number, rnd: () => number) => shuffle(arr, rnd).slice(0, n);
 

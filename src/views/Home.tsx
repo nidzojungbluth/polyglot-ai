@@ -4,6 +4,8 @@ import { streak, today } from '../lib/store';
 import { AiNotice, ProgressBar } from './ui';
 import { moduleLessons } from '../lib/course';
 import { LEVELS } from '../data/types';
+import { abcFor } from '../data/alphabet';
+import { abcNext } from './Alphabet';
 
 export function Home({ ctx }: { ctx: Ctx }) {
   const { state, pack, go } = ctx;
@@ -20,6 +22,10 @@ export function Home({ ctx }: { ctx: Ctx }) {
     return undefined;
   })();
   const nextLesson = baseNext ?? courseNext ?? pack.lessons[0];
+  const abc = abcFor(pack.code);
+  const abcUnit = abcNext(ctx);
+  // Lernpfad: bei neuer Schrift zuerst der Alphabetkurs
+  const startAbc = !!abc && abc.forBeginners && !!abcUnit;
   const hard = Object.values(state.cards).filter((c) => c.id.startsWith(`${pack.code}-`) && (c.lapses >= 2 || (c.reps > 0 && c.ease < 2.1))).length;
   const modCount = pack.modules?.length ?? 0;
 
@@ -38,8 +44,8 @@ export function Home({ ctx }: { ctx: Ctx }) {
       </section>
 
       <div className="grid2">
-        <button className="tile" onClick={() => go('lesson', nextLesson.id)}>
-          <span className="tile-icon">📘</span><b>Weiterlernen</b><span className="muted small">{nextLesson.title}</span>
+        <button className="tile" onClick={() => (startAbc ? go('abc', abcUnit!.id) : go('lesson', nextLesson.id))}>
+          <span className="tile-icon">{startAbc ? '🔤' : '📘'}</span><b>Weiterlernen</b><span className="muted small">{startAbc ? `Schrift: ${abcUnit!.title}` : nextLesson.title}</span>
         </button>
         <button className="tile" onClick={() => go('vocab')}>
           <span className="tile-icon">🃏</span><b>Wiederholen</b><span className="muted small">{due} Karten fällig</span>
@@ -50,6 +56,11 @@ export function Home({ ctx }: { ctx: Ctx }) {
         <button className="tile" onClick={() => go('roleplay')}>
           <span className="tile-icon">🎭</span><b>Dialoge</b><span className="muted small">{pack.roleplays.length} Szenen in {pack.city}</span>
         </button>
+        {abc && abcUnit && !abc.forBeginners && (
+          <button className="tile" onClick={() => go('abc')}>
+            <span className="tile-icon">🔤</span><b>Schrift-Check</b><span className="muted small">Latinica & Ćirilica – Einstufungstest</span>
+          </button>
+        )}
         {modCount > 0 && (
           <button className="tile" onClick={() => go('courses')}>
             <span className="tile-icon">📚</span><b>Kurse A1–C2</b><span className="muted small">{modCount} Module · {pack.words.length + pack.slang.length} Einträge</span>

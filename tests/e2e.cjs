@@ -6,7 +6,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', (e) => errors.push(e.message));
-  const URL = 'http://localhost:4178/';
+  const URL = 'http://localhost:4179/';
   await p.goto(URL);
   await p.waitForSelector('text=Weiterlernen');
   assert(true, 'Startseite lädt auf iPhone-Größe');
@@ -99,6 +99,50 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.waitForSelector('text=Wiederholung');
   assert(await p.locator('.num:has-text("✓")').count() >= 1, 'Modul-Lektion als erledigt markiert');
 
+  // Schriftkurs Griechisch: Lernpfad startet mit dem Alphabet
+  await p.click('.tab:has-text("Start")');
+  assert(await p.locator('.tile:has-text("Schrift: Buchstaben 1")').count() === 1, 'Lernpfad: Griechisch beginnt mit dem Alphabet');
+  await p.click('.tile:has-text("Weiterlernen")');
+  await p.waitForSelector('.letter-card');
+  assert(await p.locator('.letter-card').count() === 6, 'Buchstabenkarten Α–Ζ mit Name, Laut, Beispiel, Falle');
+  await p.screenshot({ path: '../shots/11-abc-cards.png' });
+  await p.click('button:has-text("Üben (")');
+  let a = 0;
+  while (!(await p.locator('h1:has-text("richtig")').count())) {
+    if (await p.locator('.options .opt').count()) await p.locator('.options .opt').first().click();
+    else if (await p.locator('.tile-word').count()) { await p.locator('.tile-word').first().click(); await p.locator('button:has-text("Prüfen")').click(); }
+    if (a === 0) await p.screenshot({ path: '../shots/12-abc-ex.png' });
+    await p.locator('.feedback button:has-text("Weiter")').click();
+    if (++a > 60) throw new Error('Alphabet-Übung endet nicht');
+  }
+  assert(a >= 10, `Alphabet-Einheit mit ${a} interaktiven Aufgaben durchgespielt`);
+  await p.click('button:has-text("Weiter: Buchstaben 2")');
+  await p.waitForSelector('text=Η η');
+  await p.click('.back');
+  assert(await p.locator('.list-btn .num:has-text("✓")').count() === 1, 'Ergebnis der Alphabet-Einheit gespeichert');
+  // Serbisch: Einstufungstest
+  await p.click('.langchip'); await p.click('text=Serbisch');
+  await p.click('.tile:has-text("Schrift-Check")');
+  await p.click('button:has-text("Einstufungstest")');
+  let bq = 0;
+  while (!(await p.locator('h2:has-text("Ergebnis")').count())) {
+    await p.locator('.options .opt').first().click();
+    await p.locator('.feedback button:has-text("Weiter")').click();
+    if (++bq > 40) throw new Error('Test endet nicht');
+  }
+  assert(bq >= 15, `Serbischer Einstufungstest mit ${bq} Fragen, Ergebnis pro Einheit`);
+  await p.screenshot({ path: '../shots/13-sr-test.png' });
+  await p.click('button:has-text("Zur Übersicht")');
+  await p.click('button:has-text("alles überspringen")');
+  assert(await p.locator('.list-btn .num:has-text("⏭")').count() + await p.locator('.list-btn .num:has-text("✓")').count() === 6, 'Bekanntes lässt sich überspringen');
+  // Russisch: falsche Freunde
+  await p.click('.langchip'); await p.click('text=Russisch');
+  await p.click('.tab:has-text("Kurse")'); await p.click('.abc-card');
+  await p.click('text=Falsche Freunde');
+  assert(await p.locator('.trap:has-text("Sieht aus wie B")').count() === 1, 'Russisch: Warnungen zu falschen Freunden');
+  await p.screenshot({ path: '../shots/14-ru-abc.png' });
+  await p.click('.langchip'); await p.click('text=Griechisch');
+
   // Wörterbuch
   await p.click('.tab:has-text("Mehr")');
   await p.click('text=Wörterbuch');
@@ -146,7 +190,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.reload();
   await p.waitForSelector('.tabbar', { timeout: 8000 }); await p.click('.tab:has-text("Start")'); await p.waitForSelector('text=Weiterlernen');
   assert(true, 'App startet OFFLINE neu');
-  await p.click('text=Weiterlernen'); await p.click('text=Übungen starten');
+  await p.click('text=Weiterlernen'); await p.locator('button:has-text("Üben ("), button:has-text("Übungen starten")').first().click();
   assert(await p.locator('.card').count() > 0, 'Lektion funktioniert offline');
   await ctx.setOffline(false);
 

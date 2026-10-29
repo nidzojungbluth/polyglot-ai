@@ -117,7 +117,7 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
   );
 }
 
-function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx: Ctx; onAnswer: (ok: boolean, right: string) => void; locked: boolean }) {
+export function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx: Ctx; onAnswer: (ok: boolean, right: string) => void; locked: boolean }) {
   const { pack } = ctx;
   const [chosen, setChosen] = useState<string | null>(null);
   const [text, setText] = useState('');
@@ -136,8 +136,8 @@ function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx: Ctx; o
   if (ex.kind === 'mc') {
     return (
       <section className="card">
-        <div className="muted small">{ex.dir === 'zu-de' ? 'Was bedeutet das?' : 'Wie sagt man das?'}</div>
-        <div className="prompt" lang={ex.dir === 'zu-de' ? pack.code : 'de'}>{ex.prompt} {ex.speak && <SpeakBtn text={ex.speak} pack={pack} />}</div>
+        <div className="muted small">{ex.q ?? (ex.dir === 'zu-de' ? 'Was bedeutet das?' : 'Wie sagt man das?')}</div>
+        <div className={`prompt ${ex.big ? 'glyph' : ''}`} lang={ex.dir === 'zu-de' ? pack.code : 'de'}>{ex.prompt} {ex.speak && <SpeakBtn text={ex.speak} pack={pack} />}</div>
         {ex.sub && <div className="muted">{ex.sub}</div>}
         {options(ex.options, ex.answer, ex.dir === 'zu-ziel')}
       </section>
@@ -146,7 +146,7 @@ function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx: Ctx; o
   if (ex.kind === 'listen') {
     return (
       <section className="card">
-        <div className="muted small">Hör zu und wähle, was du hörst</div>
+        <div className="muted small">{ex.q ?? 'Hör zu und wähle, was du hörst'}</div>
         <button className="btn big-btn" onClick={() => sayFor(pack, ex.speak)}>🔊 Abspielen</button>
         <button className="btn small-btn" onClick={() => sayFor(pack, ex.speak, 0.6)}>🐢 Langsam</button>
         {options(ex.options, ex.answer, true)}
@@ -180,6 +180,29 @@ function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx: Ctx; o
         {ex.kind === 'translate' && ex.hint && !locked && <div className="muted small">Tipp: beginnt mit „{ex.hint}“{pack.scripts === 'sr' ? ' (Latein oder Kyrillisch)' : ''}</div>}
         {!locked && <button className="btn primary big-btn" type="submit">Prüfen</button>}
       </form>
+    );
+  }
+
+  if (ex.kind === 'build') {
+    const built = tiles.map((t) => ex.tiles[t]).join(ex.joiner);
+    return (
+      <section className="card">
+        <div className="muted small">{ex.q}</div>
+        <div className="prompt">{ex.prompt} {ex.speak && <SpeakBtn text={ex.speak} pack={pack} />}</div>
+        {ex.sub && <div className="muted">{ex.sub}</div>}
+        <div className="built glyph-built" lang={pack.code}>{built || <span className="muted">Tippe die Bausteine in der richtigen Reihenfolge</span>}</div>
+        <div className="tiles">
+          {ex.tiles.map((w, idx) => (
+            <button key={idx} lang={pack.code} className="tile-word" disabled={locked || tiles.includes(idx)} onClick={() => setTiles([...tiles, idx])}>{w}</button>
+          ))}
+        </div>
+        {!locked && (
+          <div className="row">
+            <button className="btn" onClick={() => setTiles(tiles.slice(0, -1))} disabled={!tiles.length}>↩︎ Zurück</button>
+            <button className="btn primary grow" disabled={!tiles.length} onClick={() => onAnswer(sameAnswer(built, ex.answer, pack.code === 'sr' ? undefined : pack.code), ex.answer)}>Prüfen</button>
+          </div>
+        )}
+      </section>
     );
   }
 
