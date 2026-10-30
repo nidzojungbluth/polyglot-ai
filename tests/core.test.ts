@@ -178,3 +178,17 @@ describe('Sprachcoach', () => {
     expect(msgs[msgs.length - 1]).toEqual({ role: 'user', content: 'neu' });
   });
 });
+
+describe('Verweise mit „@“ in Wortlisten', () => {
+  it('übernimmt vorhandene Wörter ins Modul, ohne sie doppelt zu zählen', async () => {
+    const { enrich } = await import('../src/data');
+    const base = PACKS.find((p) => p.code === 'en')!;
+    const src = '## topic=home level=A1 title=Test\nnew word | neues Wort | n | n\n@ new word | x\n## topic=food level=A1 title=Test2\n@ new word\n@ gibt es nicht';
+    const p = enrich({ ...base, words: [], slang: [] }, src);
+    expect(p.words.filter((w) => w.t === 'new word').length).toBe(1);
+    expect(p.modules![0].words.length).toBe(1);
+    expect(p.modules![1].words).toEqual(p.modules![0].words);
+    expect(p.parseErrors.some((e) => e.includes('gibt es nicht'))).toBe(true);
+    expect(p.duplicates).toEqual([]);
+  });
+});

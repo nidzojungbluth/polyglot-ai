@@ -22,6 +22,9 @@ export function stableId(code: string, kind: 'v' | 's', t: string): string {
   return `${code}-${kind}-${(h >>> 0).toString(36)}`;
 }
 
+/** Präfix für Verweise auf vorhandene Einträge (wird in enrich() aufgelöst). */
+export const REF = 'ref:';
+
 export interface ParsedVocab { words: Word[]; slang: SlangEntry[]; modules: Module[]; errors: string[] }
 
 export function parseVocab(code: string, src: string): ParsedVocab {
@@ -47,6 +50,13 @@ export function parseVocab(code: string, src: string): ParsedVocab {
     if (line.startsWith('>')) {
       const [title, text] = line.slice(1).split('::').map((s) => s.trim());
       mod.grammar = { title, text: text ?? '' };
+      return;
+    }
+    // "@ Wort | …" = bereits vorhandenen Eintrag in dieses Modul übernehmen (zählt nicht doppelt)
+    if (line.startsWith('@')) {
+      const t = line.slice(1).split('|')[0].trim();
+      if (!t) { errors.push(`Zeile ${lineNo + 1}: leerer Verweis`); return; }
+      (kind === 'word' ? mod.words : mod.slang).push(REF + t);
       return;
     }
     const f = line.split('|').map((s) => s.trim());

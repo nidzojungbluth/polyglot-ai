@@ -6,7 +6,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', (e) => errors.push(e.message));
-  const URL = 'http://localhost:4186/';
+  const URL = 'http://localhost:4187/';
   await p.goto(URL);
   await p.waitForSelector('text=Weiterlernen');
   assert(true, 'Startseite lädt auf iPhone-Größe');
@@ -79,7 +79,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   // Kurse (Griechisch): Modul öffnen und eine Lektion spielen
   await p.click('.tab:has-text("Kurse")');
   await p.waitForSelector('.levels');
-  assert(await p.locator('.planned-row').count() > 0, 'Kursübersicht zeigt verfügbare und geplante Module');
+  assert(await p.locator('.planned-row').count() === 0, 'Kursübersicht: alle Module des Niveaus gefüllt, keine Lücken');
   await p.screenshot({ path: '../shots/8-courses.png' });
   await p.locator('.list-btn').first().click();
   await p.waitForSelector('text=Lektion 1');

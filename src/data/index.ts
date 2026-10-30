@@ -28,13 +28,16 @@ import ruVocab7 from './vocab/ru7';
 import elVocab8 from './vocab/el8';
 import elVocab9 from './vocab/el9';
 import elVocab10 from './vocab/el10';
+import elVocab11 from './vocab/el11';
 import srVocab8 from './vocab/sr8';
 import srVocab9 from './vocab/sr9';
 import srVocab10 from './vocab/sr10';
+import srVocab11 from './vocab/sr11';
 import ruVocab8 from './vocab/ru8';
 import ruVocab9 from './vocab/ru9';
 import ruVocab10 from './vocab/ru10';
-import { parseVocab } from './vocab';
+import ruVocab11 from './vocab/ru11';
+import { REF, parseVocab } from './vocab';
 import { normalize } from '../lib/text';
 import { autoTranslit, srCyrToLat, srLatToCyr } from '../lib/translit';
 
@@ -67,13 +70,22 @@ export function enrich(base: LanguagePack, vocabSrc?: string): EnrichedPack {
     slangByNorm.set(n, s.id);
     slang.push(s);
   }
-  const uniq = (ids: string[]) => Array.from(new Set(ids.map((id) => idMap.get(id) ?? id)));
-  const modules: Module[] = parsed.modules.map((m) => ({ ...m, words: uniq(m.words), slang: uniq(m.slang) }));
-  return { ...base, words, slang, modules, duplicates, parseErrors: parsed.errors };
+  const errors = [...parsed.errors];
+  const resolve = (id: string, by: Map<string, string>, m: Module) => {
+    if (!id.startsWith(REF)) return idMap.get(id) ?? id;
+    const t = id.slice(REF.length);
+    const hit = by.get(normalize(t));
+    if (!hit) errors.push(`Verweis „${t}“ in Modul ${m.id} nicht gefunden`);
+    return hit;
+  };
+  const uniq = (ids: string[], by: Map<string, string>, m: Module) =>
+    Array.from(new Set(ids.map((id) => resolve(id, by, m)).filter((x): x is string => !!x)));
+  const modules: Module[] = parsed.modules.map((m) => ({ ...m, words: uniq(m.words, wordByNorm, m), slang: uniq(m.slang, slangByNorm, m) }));
+  return { ...base, words, slang, modules, duplicates, parseErrors: errors };
 }
 
 /** Vollständige Sprachpakete. Neue Sprache: Datei anlegen und hier eintragen. */
-export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10)];
+export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11)];
 
 export const packByCode = (code: string): EnrichedPack | undefined => PACKS.find((p) => p.code === code);
 
