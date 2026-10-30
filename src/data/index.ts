@@ -26,8 +26,11 @@ import elVocab7 from './vocab/el7';
 import srVocab7 from './vocab/sr7';
 import ruVocab7 from './vocab/ru7';
 import elVocab8 from './vocab/el8';
+import elVocab9 from './vocab/el9';
 import srVocab8 from './vocab/sr8';
+import srVocab9 from './vocab/sr9';
 import ruVocab8 from './vocab/ru8';
+import ruVocab9 from './vocab/ru9';
 import { parseVocab } from './vocab';
 import { normalize } from '../lib/text';
 import { autoTranslit, srCyrToLat, srLatToCyr } from '../lib/translit';
@@ -67,7 +70,7 @@ export function enrich(base: LanguagePack, vocabSrc?: string): EnrichedPack {
 }
 
 /** Vollständige Sprachpakete. Neue Sprache: Datei anlegen und hier eintragen. */
-export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8)];
+export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9)];
 
 export const packByCode = (code: string): EnrichedPack | undefined => PACKS.find((p) => p.code === code);
 
