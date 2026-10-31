@@ -32,6 +32,7 @@ import elVocab11 from './vocab/el11';
 import elVocab12 from './vocab/el12';
 import elVocab13 from './vocab/el13';
 import elVocab14 from './vocab/el14';
+import elEx from './vocab/elEx';
 import srVocab8 from './vocab/sr8';
 import srVocab9 from './vocab/sr9';
 import srVocab10 from './vocab/sr10';
@@ -39,6 +40,7 @@ import srVocab11 from './vocab/sr11';
 import srVocab12 from './vocab/sr12';
 import srVocab13 from './vocab/sr13';
 import srVocab14 from './vocab/sr14';
+import srEx from './vocab/srEx';
 import ruVocab8 from './vocab/ru8';
 import ruVocab9 from './vocab/ru9';
 import ruVocab10 from './vocab/ru10';
@@ -46,6 +48,7 @@ import ruVocab11 from './vocab/ru11';
 import ruVocab12 from './vocab/ru12';
 import ruVocab13 from './vocab/ru13';
 import ruVocab14 from './vocab/ru14';
+import ruEx from './vocab/ruEx';
 import { REF, parseVocab } from './vocab';
 import { normalize } from '../lib/text';
 import { autoTranslit, srCyrToLat, srLatToCyr } from '../lib/translit';
@@ -53,7 +56,22 @@ import { autoTranslit, srCyrToLat, srLatToCyr } from '../lib/translit';
 export interface EnrichedPack extends LanguagePack { duplicates: string[]; parseErrors: string[] }
 
 /** Verbindet ein handgeschriebenes Grundpaket mit einem großen Wortschatz – ohne Duplikate. */
-export function enrich(base: LanguagePack, vocabSrc?: string): EnrichedPack {
+/** Ergänzt Beispielsätze aus einer eigenen Liste: „Wort | Beispiel | Übersetzung“. */
+function applyExamples(words: Word[], src: string, errors: string[]) {
+  const byNorm = new Map(words.map((w, i) => [normalize(w.t), i]));
+  for (const raw of src.split('\n')) {
+    const line = raw.trim();
+    if (!line || line.startsWith('//')) continue;
+    const [t, ext, exde] = line.split('|').map((x) => x.trim());
+    if (!t || !ext || !exde) { errors.push(`Beispiel unvollständig: „${t}“`); continue; }
+    const i = byNorm.get(normalize(t));
+    if (i === undefined) { errors.push(`Beispiel: Wort „${t}“ nicht gefunden`); continue; }
+    if (words[i].ex) { errors.push(`Beispiel: „${t}“ hat schon einen Beispielsatz`); continue; }
+    words[i] = { ...words[i], ex: { t: ext, de: exde } };
+  }
+}
+
+export function enrich(base: LanguagePack, vocabSrc?: string, exampleSrc?: string): EnrichedPack {
   const words: Word[] = base.words.map((w) => (w.tr ? w : { ...w, tr: autoTranslit(base.code, w.t) }));
   const slang: SlangEntry[] = base.slang.map((s) => (s.tr ? s : { ...s, tr: autoTranslit(base.code, s.t) }));
   if (!vocabSrc) return { ...base, words, slang, modules: [], duplicates: [], parseErrors: [] };
@@ -80,6 +98,7 @@ export function enrich(base: LanguagePack, vocabSrc?: string): EnrichedPack {
     slang.push(s);
   }
   const errors = [...parsed.errors];
+  if (exampleSrc) applyExamples(words, exampleSrc, errors);
   const resolve = (id: string, by: Map<string, string>, m: Module) => {
     if (!id.startsWith(REF)) return idMap.get(id) ?? id;
     const t = id.slice(REF.length);
@@ -94,7 +113,7 @@ export function enrich(base: LanguagePack, vocabSrc?: string): EnrichedPack {
 }
 
 /** Vollständige Sprachpakete. Neue Sprache: Datei anlegen und hier eintragen. */
-export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11 + elVocab12 + elVocab13 + elVocab14), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11 + srVocab12 + srVocab13 + srVocab14), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11 + ruVocab12 + ruVocab13 + ruVocab14)];
+export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11 + elVocab12 + elVocab13 + elVocab14, elEx), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11 + srVocab12 + srVocab13 + srVocab14, srEx), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11 + ruVocab12 + ruVocab13 + ruVocab14, ruEx)];
 
 export const packByCode = (code: string): EnrichedPack | undefined => PACKS.find((p) => p.code === code);
 

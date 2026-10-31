@@ -192,3 +192,17 @@ describe('Verweise mit „@“ in Wortlisten', () => {
     expect(p.duplicates).toEqual([]);
   });
 });
+
+describe('Zusätzliche Beispielsätze', () => {
+  it('ordnet Sätze zu und meldet unbekannte oder doppelte Einträge', async () => {
+    const { enrich } = await import('../src/data');
+    const base = PACKS.find((p) => p.code === 'en')!;
+    const src = '## topic=home level=A1 title=T\nhouse | Haus | n | n\nroom | Zimmer | n | n | The room is big. | Das Zimmer ist groß. |';
+    const ex = 'house | The house is old. | Das Haus ist alt.\nnope | x | y\nroom | Another one. | Noch einer.';
+    const p = enrich({ ...base, words: [], slang: [] }, src, ex);
+    expect(p.words.find((w) => w.t === 'house')?.ex?.t).toBe('The house is old.');
+    expect(p.words.find((w) => w.t === 'room')?.ex?.t).toBe('The room is big.');
+    expect(p.parseErrors.some((e) => e.includes('nope'))).toBe(true);
+    expect(p.parseErrors.some((e) => e.includes('schon'))).toBe(true);
+  });
+});
