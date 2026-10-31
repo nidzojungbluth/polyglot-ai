@@ -178,9 +178,9 @@ export default `
 ги́бкий гра́фик | Gleitzeit | phr | n
 @ резюме́ | Lebenslauf | n.n | n | Я отпра́вил своё резюме́. | Ich habe meinen Lebenslauf geschickt. |
 @ собесе́дование | Vorstellungsgespräch | n.n | n
-рабо́тодатель | Arbeitgeber | n.m | n
+работода́тель | Arbeitgeber | n.m | n
 @ зарпла́та | Gehalt | n.f | n
-@ тру́довой догово́р | Arbeitsvertrag | phr | n
+@ трудово́й догово́р | Arbeitsvertrag | phr | n
 @ о́пыт | Erfahrung | n.m | n
 специа́льность | Fachrichtung | n.f | n
 приём на рабо́ту | Einstellung | phr | n
