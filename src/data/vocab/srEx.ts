@@ -1,4 +1,4 @@
-// Serbisch – zusätzliche Beispielsätze (Etappe 15): Wort | Beispiel | Übersetzung
+// Serbisch – zusätzliche Beispielsätze (Etappe 15–16): Wort | Beispiel | Übersetzung
 export default `
 vino | Crno vino je odlično. | Der Rotwein ist ausgezeichnet.
 voda | Da li je voda sa česme pitka? | Ist das Leitungswasser trinkbar?
@@ -92,4 +92,97 @@ med | Stavljam med u čaj. | Ich gebe Honig in den Tee.
 sok | Sok je bez šećera. | Der Saft ist ohne Zucker.
 košulja | Ova košulja je previše skupa. | Dieses Hemd ist zu teuer.
 haljina | Haljina ti baš lepo stoji. | Das Kleid steht dir sehr gut.
+magacin | Radim u magacinu pored autoputa. | Ich arbeite in einem Lager an der Autobahn.
+kolega | Kolega mi je pomogao sa paletama. | Mein Kollege hat mir mit den Paletten geholfen.
+šef | Šef je danas dobro raspoložen. | Der Chef ist heute gut gelaunt.
+viljuškar | Vozim viljuškar u drugoj smeni. | Ich fahre Gabelstapler in der Spätschicht.
+ugovor | Sutra potpisujem ugovor. | Morgen unterschreibe ich den Vertrag.
+stan | Stan ima dve sobe i terasu. | Die Wohnung hat zwei Zimmer und eine Terrasse.
+stanodavac | Stanodavac dolazi popodne. | Der Vermieter kommt am Nachmittag.
+depozit | Depozit je jedna kirija. | Die Kaution beträgt eine Monatsmiete.
+grejanje | Grejanje ne radi od juče. | Die Heizung geht seit gestern nicht.
+namešten | Stan je potpuno namešten. | Die Wohnung ist komplett möbliert.
+terasa | Pijemo kafu na terasi. | Wir trinken Kaffee auf der Terrasse.
+opština | Moram da idem u opštinu. | Ich muss zum Gemeindeamt.
+šalter | Šalter radi do tri. | Der Schalter hat bis drei geöffnet.
+srećan | Danas sam baš srećan. | Heute bin ich richtig glücklich.
+tužan | Zašto si tužan? | Warum bist du traurig?
+nervozan | Nervozan sam pred intervju. | Ich bin vor dem Vorstellungsgespräch nervös.
+opušten | Na odmoru sam potpuno opušten. | Im Urlaub bin ich total entspannt.
+ljubomoran | Nisam ljubomoran, samo pitam. | Ich bin nicht eifersüchtig, ich frage nur.
+dečko | Njen dečko je iz Novog Sada. | Ihr Freund ist aus Novi Sad.
+devojka | Moja devojka studira medicinu. | Meine Freundin studiert Medizin.
+veza | Naša veza je ozbiljna. | Unsere Beziehung ist ernst.
+srećno | Srećno na ispitu! | Viel Glück bei der Prüfung!
+ćirilica | Ćirilica nije teška za učenje. | Kyrillisch ist nicht schwer zu lernen.
+latinica | Na ulici vidiš i latinicu i ćirilicu. | Auf der Straße siehst du lateinische und kyrillische Schrift.
+slovo | Srpska azbuka ima trideset slova. | Das serbische Alphabet hat dreißig Buchstaben.
+meso | Ne jedem meso. | Ich esse kein Fleisch.
+salata | Šopska salata je osvežavajuća. | Der Schopska-Salat ist erfrischend.
+odeća | Odeća je u ormaru. | Die Kleidung ist im Schrank.
+pantalone | Pantalone su mi preduge. | Die Hose ist mir zu lang.
+majica | Ova majica je na akciji. | Dieses T-Shirt ist im Angebot.
+cipele | Cipele su mi nove. | Meine Schuhe sind neu.
+kabina | Gde je kabina za probu? | Wo ist die Umkleidekabine?
+hotel | Hotel je blizu Kalemegdana. | Das Hotel ist nahe am Kalemegdan.
+pasoš | Ne zaboravi pasoš! | Vergiss den Pass nicht!
+let | Let kasni jedan sat. | Der Flug hat eine Stunde Verspätung.
+leto | Leto u Beogradu je vruće. | Der Sommer in Belgrad ist heiß.
+plaža | Plaža na Adi je leti puna. | Der Strand auf der Ada ist im Sommer voll.
+pirinač | Pirinač se kuva dvadeset minuta. | Reis kocht zwanzig Minuten.
+jaja | Za doručak jedem jaja. | Zum Frühstück esse ich Eier.
+jogurt | Burek i jogurt su klasičan doručak. | Burek und Joghurt sind ein klassisches Frühstück.
+leđa | Bole me leđa od posla. | Mir tut der Rücken von der Arbeit weh.
+odmaram se | Vikendom se odmaram kod kuće. | Am Wochenende ruhe ich mich zu Hause aus.
+smešno | To je baš smešno! | Das ist echt lustig!
+fudbal | Gledamo fudbal svake nedelje. | Wir schauen jeden Sonntag Fußball.
+film | Film je bio odličan. | Der Film war ausgezeichnet.
+trafika | Kupi mi novine na trafici. | Kauf mir eine Zeitung am Kiosk.
+apoteka | Apoteka radi do devet. | Die Apotheke hat bis neun offen.
+banka | Banka zatvara u četiri. | Die Bank schließt um vier.
+pošta | Idem u poštu da pošaljem paket. | Ich gehe zur Post, um ein Paket zu schicken.
+kafić | Nalazimo se u kafiću na uglu. | Wir treffen uns im Café an der Ecke.
+park | Trčim u parku svako jutro. | Ich laufe jeden Morgen im Park.
+zgrada | Naša zgrada nema lift. | Unser Gebäude hat keinen Aufzug.
+zagrljaj | Daj mi zagrljaj! | Umarme mich!
+lepa | Ova pesma je baš lepa. | Dieses Lied ist wirklich schön.
+zgodan | Njen brat je baš zgodan. | Ihr Bruder sieht echt gut aus.
+šala | To je bila samo šala. | Das war nur ein Scherz.
+igra | Ova igra je zabavna. | Dieses Spiel macht Spaß.
+radio | Slušam radio u autu. | Ich höre im Auto Radio.
+baka | Baka pravi najbolju pitu. | Oma macht den besten Strudel.
+ujak | Moj ujak živi u Švajcarskoj. | Mein Onkel lebt in der Schweiz.
+zet | Naš zet je iz Niša. | Unser Schwiegersohn ist aus Niš.
+novinar | Novinar je postavio mnogo pitanja. | Der Journalist stellte viele Fragen.
+nesreća | Na autoputu se desila nesreća. | Auf der Autobahn ist ein Unfall passiert.
+požar | Vatrogasci su ugasili požar. | Die Feuerwehr hat den Brand gelöscht.
+krompir | Pečeni krompir je gotov. | Die Ofenkartoffeln sind fertig.
+riba | Riba je sveža od jutros. | Der Fisch ist von heute Morgen frisch.
+puter | Mažem puter na hleb. | Ich streiche Butter aufs Brot.
+čarape | Čarape su mi mokre. | Meine Socken sind nass.
+crn | Moj pas je crn. | Mein Hund ist schwarz.
+beo | Zid je beo. | Die Wand ist weiß.
+zelen | Semafor je zelen, idemo! | Die Ampel ist grün, los!
+stajalište | Stajalište je preko puta. | Die Haltestelle ist gegenüber.
+semafor | Na semaforu skreni levo. | An der Ampel bieg links ab.
+voz | Voz za Novi Sad kreće u devet. | Der Zug nach Novi Sad fährt um neun ab.
+avion | Avion je sleteo na vreme. | Das Flugzeug ist pünktlich gelandet.
+polazak | Polazak je u osam. | Die Abfahrt ist um acht.
+dolazak | Dolazak voza kasni. | Die Ankunft des Zuges verspätet sich.
+čaša | Čaša vode, molim. | Ein Glas Wasser, bitte.
+ukusan | Ručak je bio baš ukusan. | Das Mittagessen war richtig lecker.
+sladak | Kolač je previše sladak. | Der Kuchen ist zu süß.
+cena | Cena je sa PDV-om. | Der Preis ist inklusive Mehrwertsteuer.
+popust | Imate li popust za studente? | Haben Sie Rabatt für Studenten?
+skup | Ovaj kauč je skup. | Dieses Sofa ist teuer.
+jeftin | Taj telefon je jeftin. | Dieses Handy ist billig.
+kartica | Mogu li da platim karticom? | Kann ich mit Karte zahlen?
+doručak | Doručak je uključen u cenu. | Das Frühstück ist im Preis inbegriffen.
+pogled | Pogled sa terase je divan. | Die Aussicht von der Terrasse ist herrlich.
+kašnjenje | Izvinite zbog kašnjenja. | Entschuldigung für die Verspätung.
+turista | Turista traži Kalemegdan. | Der Tourist sucht den Kalemegdan.
+frižider | Mleko je u frižideru. | Die Milch ist im Kühlschrank.
+veš-mašina | Veš-mašina pravi buku. | Die Waschmaschine macht Lärm.
+ogledalo | Ogledalo je u kupatilu. | Der Spiegel ist im Bad.
+peškir | Uzmi čist peškir. | Nimm ein sauberes Handtuch.
 `;

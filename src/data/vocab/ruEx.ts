@@ -1,4 +1,4 @@
-// Russisch – zusätzliche Beispielsätze (Etappe 15): Wort | Beispiel | Übersetzung
+// Russisch – zusätzliche Beispielsätze (Etappe 15–16): Wort | Beispiel | Übersetzung
 export default `
 коне́чно | Коне́чно, я помогу́ тебе́. | Natürlich helfe ich dir.
 хорошо́ | Всё бу́дет хорошо́. | Alles wird gut.
@@ -105,4 +105,98 @@ export default `
 мёд | Я добавля́ю мёд в чай. | Ich gebe Honig in den Tee.
 руба́шка | Э́та руба́шка сли́шком дорога́я. | Dieses Hemd ist zu teuer.
 пла́тье | Пла́тье тебе́ о́чень идёт. | Das Kleid steht dir sehr gut.
+склад | Я рабо́таю на большо́м скла́де. | Ich arbeite in einem großen Lager.
+резюме́ | Я отпра́вил резюме́ в три компа́нии. | Ich habe den Lebenslauf an drei Firmen geschickt.
+собесе́дование | За́втра у меня́ собесе́дование. | Morgen habe ich ein Vorstellungsgespräch.
+сме́на | Моя́ сме́на начина́ется в шесть. | Meine Schicht beginnt um sechs.
+колле́га | Колле́га помо́г мне с поддо́нами. | Der Kollege half mir mit den Paletten.
+нача́льник | Нача́льник сего́дня в хоро́шем настрое́нии. | Der Chef ist heute gut gelaunt.
+погру́зчик | Я вожу́ погру́зчик на скла́де. | Ich fahre im Lager Gabelstapler.
+догово́р | За́втра я подпишу́ догово́р. | Morgen unterschreibe ich den Vertrag.
+о́тчество | Как ва́ше и́мя и о́тчество? | Wie lauten Ihr Vor- und Vatersname?
+кварти́ра | Кварти́ра на пя́том этаже́. | Die Wohnung ist im fünften Stock.
+аре́нда | Аре́нда сто́ит со́рок ты́сяч в ме́сяц. | Die Miete kostet vierzigtausend im Monat.
+зало́г | Зало́г – одна́ ме́сячная пла́та. | Die Kaution beträgt eine Monatsmiete.
+отопле́ние | Отопле́ние включа́ют в октябре́. | Die Heizung wird im Oktober eingeschaltet.
+балко́н | Мы пьём чай на балко́не. | Wir trinken Tee auf dem Balkon.
+па́спорт | Покажи́те, пожа́луйста, ваш па́спорт. | Zeigen Sie bitte Ihren Pass.
+о́чередь | О́чередь о́чень дли́нная. | Die Schlange ist sehr lang.
+счастли́вый | Сего́дня я о́чень счастли́вый. | Heute bin ich sehr glücklich.
+споко́йный | Он всегда́ споко́йный. | Er ist immer ruhig.
+боя́ться | Не на́до боя́ться. | Du brauchst keine Angst zu haben.
+ревнова́ть | Не на́до ревнова́ть! | Du musst nicht eifersüchtig sein!
+свида́ние | У меня́ сего́дня свида́ние. | Ich habe heute ein Date.
+па́рень | Её па́рень из Петербу́рга. | Ihr Freund ist aus Petersburg.
+де́вушка | Моя́ де́вушка у́чится на врача́. | Meine Freundin studiert Medizin.
+уда́чи | Уда́чи на экза́мене! | Viel Glück bei der Prüfung!
+выздора́вливай | Выздора́вливай скоре́е! | Werd schnell gesund!
+ры́ба | Ры́ба сего́дня све́жая. | Der Fisch ist heute frisch.
+мя́со | Я не ем мя́со. | Ich esse kein Fleisch.
+ку́рица | Ку́рица с карто́шкой уже́ гото́ва. | Das Hähnchen mit Kartoffeln ist schon fertig.
+суп | Суп ещё горя́чий. | Die Suppe ist noch heiß.
+оде́жда | Оде́жда виси́т в шкафу́. | Die Kleidung hängt im Schrank.
+джи́нсы | Э́ти джи́нсы мне велики́. | Diese Jeans sind mir zu groß.
+футбо́лка | Э́та футбо́лка со ски́дкой. | Dieses T-Shirt ist reduziert.
+кроссо́вки | Мне нужны́ но́вые кроссо́вки. | Ich brauche neue Turnschuhe.
+приме́рочная | Где приме́рочная? | Wo ist die Umkleidekabine?
+распрода́жа | Сего́дня в магази́не распрода́жа. | Heute ist im Laden Ausverkauf.
+гости́ница | Гости́ница ря́дом с Кра́сной пло́щадью. | Das Hotel liegt neben dem Roten Platz.
+загранпа́спорт | Для пое́здки ну́жен загранпа́спорт. | Für die Reise braucht man einen Reisepass.
+рейс | Рейс заде́рживается на час. | Der Flug verspätet sich um eine Stunde.
+Сапса́н | «Сапса́н» идёт до Петербу́рга четы́ре часа́. | Der Sapsan fährt vier Stunden bis Petersburg.
+ле́то | Ле́то в Москве́ коро́ткое. | Der Sommer in Moskau ist kurz.
+мо́ре | Мо́ре тёплое в а́вгусте. | Das Meer ist im August warm.
+пляж | Пляж был по́лон люде́й. | Der Strand war voller Menschen.
+рис | Рис ва́рится два́дцать мину́т. | Reis kocht zwanzig Minuten.
+я́йца | На за́втрак я ем я́йца. | Zum Frühstück esse ich Eier.
+творо́г | Творо́г с мёдом – вку́сный за́втрак. | Quark mit Honig ist ein leckeres Frühstück.
+грудь | У меня́ боли́т грудь. | Mir tut die Brust weh.
+отдыха́ть | По выходны́м я люблю́ отдыха́ть. | Am Wochenende entspanne ich gern.
+си́льный | Мой брат о́чень си́льный. | Mein Bruder ist sehr stark.
+смешно́ | Э́то о́чень смешно́! | Das ist sehr lustig!
+футбо́л | По воскресе́ньям мы смо́трим футбо́л. | Sonntags schauen wir Fußball.
+фильм | Фильм был отли́чный. | Der Film war ausgezeichnet.
+кста́ти | Кста́ти, ты придёшь за́втра? | Übrigens, kommst du morgen?
+сосе́д | Сосе́д сни́зу о́чень шу́мный. | Der Nachbar von unten ist sehr laut.
+апте́ка | Апте́ка рабо́тает до девяти́. | Die Apotheke hat bis neun offen.
+банк | Банк закрыва́ется в шесть. | Die Bank schließt um sechs.
+по́чта | По́чта нахо́дится ря́дом с метро́. | Die Post ist neben der Metro.
+кафе́ | Встре́тимся в кафе́ на углу́. | Treffen wir uns im Café an der Ecke.
+стул | Возьми́ стул и сади́сь. | Nimm einen Stuhl und setz dich.
+дива́н | Дива́н о́чень удо́бный. | Das Sofa ist sehr bequem.
+краси́вая | Москва́ о́чень краси́вая но́чью. | Moskau ist nachts sehr schön.
+партнёр | Мой партнёр рабо́тает но́чью. | Mein Partner arbeitet nachts.
+игра́ | Э́та игра́ о́чень интере́сная. | Dieses Spiel ist sehr interessant.
+та́нец | Вальс – краси́вый та́нец. | Der Walzer ist ein schöner Tanz.
+ра́дио | Я слу́шаю ра́дио в маши́не. | Ich höre im Auto Radio.
+журнали́ст | Журнали́ст за́дал мно́го вопро́сов. | Der Journalist stellte viele Fragen.
+пожа́р | Пожа́рные потуши́ли пожа́р. | Die Feuerwehr hat den Brand gelöscht.
+бана́н | По́сле трениро́вки я ем бана́н. | Nach dem Training esse ich eine Banane.
+карто́фель | Карто́фель уже́ свари́лся. | Die Kartoffeln sind schon gar.
+сок | Апельси́новый сок, пожа́луйста. | Orangensaft, bitte.
+носки́ | Мои́ носки́ мо́крые. | Meine Socken sind nass.
+чёрный | Мой пёс чёрный. | Mein Hund ist schwarz.
+бе́лый | Снег бе́лый и чи́стый. | Der Schnee ist weiß und sauber.
+зелёный | Светофо́р зелёный, иди́! | Die Ampel ist grün, geh!
+напро́тив | Апте́ка напро́тив. | Die Apotheke ist gegenüber.
+ря́дом | Банк ря́дом с магази́ном. | Die Bank ist neben dem Laden.
+остано́вка | Остано́вка пря́мо у до́ма. | Die Haltestelle ist direkt am Haus.
+светофо́р | На светофо́ре поверни́ нале́во. | An der Ampel bieg links ab.
+самолёт | Самолёт приземли́лся во́время. | Das Flugzeug ist pünktlich gelandet.
+бага́ж | Мой бага́ж потеря́ли. | Mein Gepäck ist verloren gegangen.
+отправле́ние | Отправле́ние в во́семь утра́. | Abfahrt ist um acht Uhr morgens.
+таре́лка | Таре́лка горя́чая, осторо́жно. | Der Teller ist heiß, Vorsicht.
+стака́н | Стака́н воды́, пожа́луйста. | Ein Glas Wasser, bitte.
+вку́сный | Обе́д был о́чень вку́сный. | Das Mittagessen war sehr lecker.
+сла́дкий | Торт сли́шком сла́дкий. | Die Torte ist zu süß.
+цена́ | Цена́ ука́зана без ски́дки. | Der Preis ist ohne Rabatt angegeben.
+дешёвый | Тра́нспорт здесь дешёвый. | Der Nahverkehr ist hier billig.
+дорого́й | Э́тот дива́н сли́шком дорого́й. | Dieses Sofa ist zu teuer.
+чек | Возьми́те чек, пожа́луйста. | Nehmen Sie bitte den Kassenbon.
+вид | Вид из окна́ прекра́сный. | Die Aussicht aus dem Fenster ist herrlich.
+заде́ржка | Извини́те за заде́ржку. | Entschuldigen Sie die Verspätung.
+тури́ст | Тури́ст и́щет Кра́сную пло́щадь. | Der Tourist sucht den Roten Platz.
+зе́ркало | Зе́ркало виси́т в ва́нной. | Der Spiegel hängt im Bad.
+полоте́нце | Возьми́ чи́стое полоте́нце. | Nimm ein sauberes Handtuch.
+шкаф | Шкаф сли́шком большо́й для ко́мнаты. | Der Schrank ist zu groß für das Zimmer.
 `;

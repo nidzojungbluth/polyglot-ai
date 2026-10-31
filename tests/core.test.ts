@@ -206,3 +206,15 @@ describe('Zusätzliche Beispielsätze', () => {
     expect(p.parseErrors.some((e) => e.includes('schon'))).toBe(true);
   });
 });
+
+describe('Lückentext aus Beispielsatz', () => {
+  it('erkennt griechische Nomen mit Artikel, Akzentvarianten, russische Betonung und nur ganze Wörter', async () => {
+    const { clozeFromExample } = await import('../src/lib/exercises');
+    const w = (t: string, ex: string) => ({ id: 'x', t, de: '', reg: 'neutral', cat: 'food', ex: { t: ex, de: 'd' } }) as any;
+    expect(clozeFromExample(w('ο καφές', 'Ο καφές εδώ είναι καλός.'))?.t).toBe('Ο ___ εδώ είναι καλός.');
+    expect(clozeFromExample(w('η οικογένεια', 'Η οικογένειά μου μένει εδώ.'))?.answer).toBe('οικογένειά');
+    expect(clozeFromExample(w('сообще́ние', 'Твоё сообще́ние пришло́.'))?.answer).toBe('сообще́ние');
+    expect(clozeFromExample(w('sir', 'Volim sirup.'))).toBeNull();
+    expect(clozeFromExample(w('το σούπερ μάρκετ', 'Πάω στο σούπερ μάρκετ.'))?.answer).toBe('σούπερ μάρκετ');
+  });
+});

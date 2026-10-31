@@ -74,14 +74,33 @@ export function buildLessonExercises(pack: LanguagePack, lesson: Lesson, rnd = M
 const PUNCT = /[.,!?;:¿¡«»“”"…()–—]/g;
 
 /** Lückentext aus dem Beispielsatz: das Wort selbst wird zur Lücke. */
+const EL_ARTICLE = /^(ο|η|το|οι|τα)\s+/i;
+const fold = (c: string) => c.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+const isLetter = (c?: string) => !!c && /[\p{L}\p{M}]/u.test(c);
+
+/**
+ * Lückentext aus dem Beispielsatz. Sucht das Wort (ohne griechischen Artikel, max. 3 Wörter)
+ * unabhängig von Akzenten und Großschreibung und nur als ganzes Wort.
+ */
 export function clozeFromExample(w: Word): Cloze | null {
-  if (!w.ex) return null;
-  const target = w.t.replace(/…|\?|;|!/g, '').trim();
-  if (!target || target.includes(' ')) return null;
-  const idx = w.ex.t.toLowerCase().indexOf(target.toLowerCase());
-  if (idx < 0) return null;
-  const answer = w.ex.t.slice(idx, idx + target.length);
-  return { t: w.ex.t.slice(0, idx) + '___' + w.ex.t.slice(idx + target.length), answer, de: w.ex.de };
+  if (!w.ex || w.t.includes('/')) return null;
+  const target = w.t.replace(/\(.*?\)/g, '').replace(/…|\?|;|!|¿|¡/g, '').trim().replace(EL_ARTICLE, '');
+  if (!target || target.split(/\s+/).length > 3) return null;
+  const src = w.ex.t;
+  let folded = '';
+  const map: number[] = [];
+  for (let i = 0; i < src.length; i++) for (const ch of fold(src[i])) { folded += ch; map.push(i); }
+  const ft = Array.from(target).map(fold).join('');
+  if (!ft) return null;
+  for (let k = folded.indexOf(ft); k >= 0; k = folded.indexOf(ft, k + 1)) {
+    const start = map[k];
+    let end = map[k + ft.length - 1] + 1;
+    while (end < src.length && /\p{M}/u.test(src[end])) end++;
+    if (!isLetter(src[start - 1]) && !isLetter(src[end])) {
+      return { t: src.slice(0, start) + '___' + src.slice(end), answer: src.slice(start, end), de: w.ex.de };
+    }
+  }
+  return null;
 }
 
 /** Satzbau aus dem Beispielsatz (3–8 Wörter). */
