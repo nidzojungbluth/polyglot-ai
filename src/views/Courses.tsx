@@ -34,7 +34,8 @@ export function Courses({ ctx, moduleId }: { ctx: Ctx; moduleId?: string }) {
   }
 
   const byTopic = (lv: Level) => TOPICS.map((t) => ({ topic: t, mods: modules.filter((m) => m.level === lv && m.topic === t.key) }));
-  const countFor = (lv: Level) => modules.filter((m) => m.level === lv).length;
+  const countFor = (lv: Level) => new Set(modules.filter((m) => m.level === lv).map((m) => m.topic)).size;
+  const moduleCount = (lv: Level) => modules.filter((m) => m.level === lv).length;
 
   return (
     <div className="stack">
@@ -47,7 +48,7 @@ export function Courses({ ctx, moduleId }: { ctx: Ctx; moduleId?: string }) {
           </button>
         ))}
       </div>
-      <p className="muted small">{level} – {LEVEL_INFO[level]}. {countFor(level)} von {TOPICS.length} Themen mit Inhalten.</p>
+      <p className="muted small">{level} – {LEVEL_INFO[level]}. {countFor(level)} von {TOPICS.length} Themen mit Inhalten · {moduleCount(level)} Module.</p>
       <ul className="list card">
         {byTopic(level).map(({ topic, mods }) => mods.length ? mods.map((m) => {
           const p = moduleProgress(ctx, m);
@@ -70,7 +71,7 @@ export function Courses({ ctx, moduleId }: { ctx: Ctx; moduleId?: string }) {
           </li>
         ))}
       </ul>
-      <p className="fine">Lehrplan: 20 Themen × 6 Stufen. Nur Module mit echten Inhalten sind anklickbar; geplante Plätze werden schrittweise gefüllt.</p>
+      <p className="fine">Lehrplan: 20 Themen × 6 Stufen. Häufige Alltagsthemen haben zusätzlich einen zweiten Teil zum Vertiefen. Nur Module mit echten Inhalten sind anklickbar.</p>
     </div>
   );
 }

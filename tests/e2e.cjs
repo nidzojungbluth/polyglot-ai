@@ -6,7 +6,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', (e) => errors.push(e.message));
-  const URL = 'http://localhost:4187/';
+  const URL = 'http://localhost:4188/';
   await p.goto(URL);
   await p.waitForSelector('text=Weiterlernen');
   assert(true, 'Startseite lädt auf iPhone-Größe');
