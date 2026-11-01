@@ -33,6 +33,8 @@ import elVocab12 from './vocab/el12';
 import elVocab13 from './vocab/el13';
 import elVocab14 from './vocab/el14';
 import elVocab15 from './vocab/el15';
+import elVocab16 from './vocab/el16';
+import elVocab17 from './vocab/el17';
 import elEx from './vocab/elEx';
 import srVocab8 from './vocab/sr8';
 import srVocab9 from './vocab/sr9';
@@ -42,6 +44,8 @@ import srVocab12 from './vocab/sr12';
 import srVocab13 from './vocab/sr13';
 import srVocab14 from './vocab/sr14';
 import srVocab15 from './vocab/sr15';
+import srVocab16 from './vocab/sr16';
+import srVocab17 from './vocab/sr17';
 import srEx from './vocab/srEx';
 import ruVocab8 from './vocab/ru8';
 import ruVocab9 from './vocab/ru9';
@@ -51,6 +55,8 @@ import ruVocab12 from './vocab/ru12';
 import ruVocab13 from './vocab/ru13';
 import ruVocab14 from './vocab/ru14';
 import ruVocab15 from './vocab/ru15';
+import ruVocab16 from './vocab/ru16';
+import ruVocab17 from './vocab/ru17';
 import ruEx from './vocab/ruEx';
 import { REF, parseVocab } from './vocab';
 import { normalize } from '../lib/text';
@@ -116,7 +122,7 @@ export function enrich(base: LanguagePack, vocabSrc?: string, exampleSrc?: strin
 }
 
 /** Vollständige Sprachpakete. Neue Sprache: Datei anlegen und hier eintragen. */
-export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11 + elVocab12 + elVocab13 + elVocab14 + elVocab15, elEx), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11 + srVocab12 + srVocab13 + srVocab14 + srVocab15, srEx), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11 + ruVocab12 + ruVocab13 + ruVocab14 + ruVocab15, ruEx)];
+export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11 + elVocab12 + elVocab13 + elVocab14 + elVocab15 + elVocab16 + elVocab17, elEx), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11 + srVocab12 + srVocab13 + srVocab14 + srVocab15 + srVocab16 + srVocab17, srEx), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11 + ruVocab12 + ruVocab13 + ruVocab14 + ruVocab15 + ruVocab16 + ruVocab17, ruEx)];
 
 export const packByCode = (code: string): EnrichedPack | undefined => PACKS.find((p) => p.code === code);
 

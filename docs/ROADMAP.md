@@ -17,7 +17,7 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 | 1 | Projekt analysiert, Datenformat für große Wortschätze (Textformat, stabile IDs, Duplikatprüfung, @-Übernahme, Beispielsatz-Liste) | ✅ erledigt |
 | 2 | Automatische Datenprüfung (Duplikate, Übersetzung, russische Betonung, serbische Schrift, Beispielsatz-Zuordnung) | ✅ erledigt |
 | 3 | Griechisch, Serbisch, Russisch: alle 6 Niveaus × 20 Themen gefüllt, Beispielsätze für A1/A2 | ✅ erledigt |
-| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 1.830) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
+| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.010) – Etappen 19–20: Kernverben, Adjektive, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
 | 5 | Beispielsätze für B1–C2 | ⏳ geplant, verzahnt mit Paket 4 |
 | 6 | Lernsystem prüfen und verbessern (Wiederholung, schwierige Wörter, Statistik) | ⏳ geplant nach ca. 2.500 Einträgen |
 | 7 | UI/UX professionalisieren (Startseite, Navigation, Vokabeltrainer, Statistik, Animationen) | ⏳ geplant nach ca. 2.500 Einträgen |
