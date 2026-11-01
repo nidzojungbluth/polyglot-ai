@@ -396,4 +396,111 @@ lek | Lek pijem tri puta dnevno. | Das Medikament nehme ich dreimal täglich.
 povredio sam koleno | Povredio sam koleno na fudbalu. | Ich habe mir beim Fußball das Knie verletzt.
 koleno | Koleno me boli kad hodam. | Das Knie tut mir beim Gehen weh.
 dom zdravlja | Zakazao sam pregled u domu zdravlja. | Ich habe im Gesundheitszentrum einen Termin gemacht.
+nema veze | Nema veze, pokušaćemo ponovo. | Macht nichts, wir versuchen es nochmal.
+pomirili smo se | Posvađali smo se, ali smo se brzo pomirili. | Wir haben gestritten, uns aber schnell versöhnt.
+ne slažem se | Ne slažem se, mislim da je preskupo. | Ich bin anderer Meinung, ich finde es zu teuer.
+zavisi | Zavisi od vremena. | Das hängt vom Wetter ab.
+vesti | Gledam vesti u osam. | Ich schaue um acht die Nachrichten.
+vlada | Vlada je najavila nove mere. | Die Regierung hat neue Maßnahmen angekündigt.
+izbori | Izbori su u nedelju. | Die Wahlen sind am Sonntag.
+razumem te | Razumem te, i ja sam to prošao. | Ich verstehe dich, das habe ich auch durchgemacht.
+tu sam za tebe | Ne brini, tu sam za tebe. | Keine Sorge, ich bin für dich da.
+laknulo mi je | Laknulo mi je kad si se javio. | Ich war erleichtert, als du dich gemeldet hast.
+živimo zajedno | Živimo zajedno već godinu dana. | Wir wohnen schon ein Jahr zusammen.
+ali | Hteo sam da dođem, ali sam bio bolestan. | Ich wollte kommen, war aber krank.
+dok | Čekaj ovde dok se ne vratim. | Warte hier, bis ich zurückkomme.
+postao je viralan | Njegov snimak je postao viralan preko noći. | Sein Video ging über Nacht viral.
+komentar | Napisao je smešan komentar ispod slike. | Er schrieb einen lustigen Kommentar unter das Foto.
+vodoinstalater | Vodoinstalater dolazi sutra ujutru. | Der Klempner kommt morgen früh.
+električar | Moramo da zovemo električara. | Wir müssen einen Elektriker rufen.
+račun za struju | Račun za struju je ovog meseca veliki. | Die Stromrechnung ist diesen Monat hoch.
+peći | Baka voli da peče pite. | Oma backt gern Strudel.
+ukrali su mi novčanik | Ukrali su mi novčanik u tramvaju. | In der Straßenbahn wurde mir der Geldbeutel gestohlen.
+policija | Moramo da idemo u policiju. | Wir müssen zur Polizei.
+ambasada | Nemačka ambasada je u Beogradu. | Die deutsche Botschaft ist in Belgrad.
+upomoć! | Upomoć! Zovite hitnu pomoć! | Hilfe! Rufen Sie den Rettungsdienst!
+lekar | Lekar je rekao da se odmaram. | Der Arzt hat gesagt, ich soll mich ausruhen.
+poštovana | Poštovana gospođo Petrović, hvala na odgovoru. | Sehr geehrte Frau Petrović, danke für die Antwort.
+oglas | Video sam oglas za posao magacionera. | Ich habe die Anzeige für die Stelle als Lagerarbeiter gesehen.
+želeo bih da pitam | Želeo bih da pitam da li je mesto još slobodno. | Ich möchte fragen, ob die Stelle noch frei ist.
+očekujem vaš odgovor | Unapred zahvalan, očekujem vaš odgovor. | Ich danke im Voraus und freue mich auf Ihre Antwort.
+srdačan pozdrav | Srdačan pozdrav iz Hamburga, Niko | Herzliche Grüße aus Hamburg, Niko
+s poštovanjem | S poštovanjem, Nikola Miler | Mit freundlichen Grüßen, Nikola Müller
+unapred hvala | Unapred hvala na pomoći. | Danke im Voraus für die Hilfe.
+mejl | Poslao sam vam biografiju mejlom. | Ich habe Ihnen den Lebenslauf per E-Mail geschickt.
+da odložimo? | Kasnim, da odložimo za sutra? | Ich bin spät dran, sollen wir auf morgen verschieben?
+sledeće nedelje | Sledeće nedelje idem na odmor. | Nächste Woche fahre ich in den Urlaub.
+prekosutra | Prekosutra imam razgovor za posao. | Übermorgen habe ich ein Vorstellungsgespräch.
+prekjuče | Prekjuče smo bili na Adi. | Vorgestern waren wir auf der Ada.
+ujutru | Ujutru uvek pijem kafu. | Morgens trinke ich immer Kaffee.
+uveče | Uveče gledamo film. | Abends schauen wir einen Film.
+u pola deset | Intervju je u pola deset. | Das Vorstellungsgespräch ist um halb zehn.
+sinoć | Sinoć smo izašli u Savamalu. | Gestern Abend waren wir in Savamala aus.
+na početku | Na početku nisam ništa razumeo. | Am Anfang habe ich nichts verstanden.
+na kraju | Na kraju je sve bilo u redu. | Am Ende war alles in Ordnung.
+posle nekog vremena | Posle nekog vremena počela je kiša. | Nach einer Weile fing es an zu regnen.
+desilo mi se nešto | Danas mi se desilo nešto smešno. | Heute ist mir etwas Lustiges passiert.
+šta je bilo posle? | I šta je bilo posle? Pričaj! | Und was war dann? Erzähl!
+bilo je super | Putovanje je bilo super. | Die Reise war super.
+bilo je užasno | Vreme je bilo užasno celu nedelju. | Das Wetter war die ganze Woche schrecklich.
+slučajno | Slučajno sam obrisao poruku. | Ich habe die Nachricht aus Versehen gelöscht.
+drago mi je što vas vidim | Drago mi je što vas opet vidim, gospodine Jovanoviću. | Schön, Sie wiederzusehen, Herr Jovanović.
+nismo se dugo videli! | Nismo se dugo videli! Kako si? | Lange nicht gesehen! Wie geht's dir?
+gde si nestao? | Gde si nestao? Ne javljaš se mesecima! | Wo warst du? Du meldest dich seit Monaten nicht!
+čestitam | Čestitam na novom poslu! | Glückwunsch zum neuen Job!
+srećni praznici | Srećni praznici celoj porodici! | Frohe Feiertage der ganzen Familie!
+Dorćol | Na Dorćolu ima mnogo lepih kafića. | In Dorćol gibt es viele schöne Cafés.
+Slavija | Nađimo se kod fontane na Slaviji. | Treffen wir uns am Brunnen auf der Slavija.
+gradski prevoz | Gradski prevoz radi i noću. | Der Nahverkehr fährt auch nachts.
+testo | Testo treba da odmara jedan sat. | Der Teig muss eine Stunde ruhen.
+mesiti | Baka mesi hleb svake subote. | Oma knetet jeden Samstag Brotteig.
+sitno seckati | Peršun treba sitno seckati. | Die Petersilie muss fein gehackt werden.
+krčkati | Neka sos krčka pola sata. | Lass die Soße eine halbe Stunde köcheln.
+sastojak | Koji je tajni sastojak? | Was ist die geheime Zutat?
+kuvati | Volim da kuvam vikendom. | Am Wochenende koche ich gern.
+mešati | Stalno mešaj da ne zagori. | Ständig rühren, damit es nicht anbrennt.
+maslinovo ulje | Prelij salatu maslinovim uljem. | Gib Olivenöl über den Salat.
+šerpa | Stavi šerpu na šporet. | Stell den Topf auf den Herd.
+tiganj | Tiganj je veoma vruć. | Die Pfanne ist sehr heiß.
+marinirati | Meso treba marinirati preko noći. | Das Fleisch muss über Nacht mariniert werden.
+kvalifikacije | Koje su vaše kvalifikacije? | Welche Qualifikationen haben Sie?
+diploma | Dobio je diplomu prošle godine. | Er hat letztes Jahr sein Diplom bekommen.
+preporuke | Prethodni poslodavac mi je dao preporuke. | Mein vorheriger Arbeitgeber hat mir Empfehlungen gegeben.
+rok za prijavu | Rok za prijavu ističe petnaestog. | Die Bewerbungsfrist endet am Fünfzehnten.
+klizno radno vreme | Imamo klizno radno vreme. | Wir haben Gleitzeit.
+prijava | Poslao sam prijavu za posao. | Ich habe die Bewerbung abgeschickt.
+intervju za posao | Sutra imam intervju za posao. | Morgen habe ich ein Vorstellungsgespräch.
+poslodavac | Poslodavac plaća doprinose. | Der Arbeitgeber zahlt die Sozialabgaben.
+struka | Koja je vaša struka? | Was ist Ihr Fachgebiet?
+zapošljavanje | Zapošljavanje počinje od sledeće nedelje. | Die Einstellung beginnt ab nächster Woche.
+otkaz | Otkaz je bio veliki šok. | Die Kündigung war ein großer Schock.
+prekovremeni sati | Prekovremeni sati se plaćaju posebno. | Überstunden werden extra bezahlt.
+praksa | Radim praksu u jednom magacinu. | Ich mache ein Praktikum in einem Lager.
+vatrogasci | Vatrogasci su brzo stigli. | Die Feuerwehr kam schnell.
+treba mi lekar | Treba mi lekar, nije mi dobro. | Ich brauche einen Arzt, mir geht es nicht gut.
+izgubljen prtljag | Prijavili smo izgubljen prtljag na aerodromu. | Wir haben das verlorene Gepäck am Flughafen gemeldet.
+zahtevam odštetu | Zahtevam odštetu za kašnjenje. | Ich verlange eine Entschädigung für die Verspätung.
+bolnica | Baka je u bolnici. | Oma ist im Krankenhaus.
+kvar | Autobus je imao kvar. | Der Bus hatte eine Panne.
+biro za izgubljene stvari | Pitajte u birou za izgubljene stvari. | Fragen Sie im Fundbüro nach.
+hitno | Hitno je, treba mi pomoć. | Es ist dringend, ich brauche Hilfe.
+majstor | Majstor je popravio vrata. | Der Handwerker hat die Tür repariert.
+slavina curi | Slavina curi celu noć. | Der Wasserhahn tropft die ganze Nacht.
+grejanje ne radi | Grejanje ne radi i smrzavamo se. | Die Heizung geht nicht und wir frieren.
+struja | Nestalo je struje u celoj ulici. | In der ganzen Straße ist der Strom ausgefallen.
+izbacio je osigurač | Izbacio je osigurač, nemamo svetla. | Die Sicherung ist raus, wir haben kein Licht.
+buđ | U kupatilu ima buđi. | Im Bad ist Schimmel.
+bravar | Zaključao sam se napolju, moram da zovem bravara. | Ich habe mich ausgesperrt, ich muss den Schlüsseldienst rufen.
+popraviti | Mogu sam da popravim bicikl. | Ich kann das Fahrrad selbst reparieren.
+alat | Alat je u podrumu. | Das Werkzeug ist im Keller.
+čekić | Dodaj mi čekić, molim te. | Gib mir bitte den Hammer.
+šraf | Fali jedan šraf. | Es fehlt eine Schraube.
+otvoriti račun | Želim da otvorim račun u banci. | Ich möchte bei der Bank ein Konto eröffnen.
+uplatnica | Platio sam struju uplatnicom na pošti. | Ich habe den Strom mit Zahlschein bei der Post bezahlt.
+obrazac | Popunite ovaj obrazac, molim vas. | Füllen Sie bitte dieses Formular aus.
+redni broj | Uzmite redni broj i sačekajte. | Ziehen Sie eine Nummer und warten Sie.
+uverenje | Treba mi uverenje iz opštine. | Ich brauche eine Bescheinigung vom Gemeindeamt.
+korpa | Stavio sam patike u korpu. | Ich habe die Turnschuhe in den Warenkorb gelegt.
+plaćanje pouzećem | Biram plaćanje pouzećem. | Ich wähle Zahlung per Nachnahme.
+poštarina | Poštarina je besplatna iznad pet hiljada dinara. | Ab fünftausend Dinar ist der Versand kostenlos.
 `;

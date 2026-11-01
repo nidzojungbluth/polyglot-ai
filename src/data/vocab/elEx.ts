@@ -404,4 +404,104 @@ export default `
 την άλλη εβδομάδα | Την άλλη εβδομάδα πάω διακοπές. | Nächste Woche fahre ich in den Urlaub.
 μεθαύριο | Μεθαύριο έχω συνέντευξη. | Übermorgen habe ich ein Vorstellungsgespräch.
 προχθές | Προχθές πήγαμε στη θάλασσα. | Vorgestern sind wir ans Meer gefahren.
+δεν πειράζει | Δεν πειράζει, θα το ξαναπροσπαθήσουμε. | Macht nichts, wir versuchen es nochmal.
+τα βρήκαμε | Μαλώσαμε, αλλά τελικά τα βρήκαμε. | Wir haben gestritten, uns aber am Ende versöhnt.
+εξαρτάται | Εξαρτάται από τον καιρό. | Das hängt vom Wetter ab.
+οι ειδήσεις | Βλέπω τις ειδήσεις στις οκτώ. | Ich schaue um acht die Nachrichten.
+η κυβέρνηση | Η κυβέρνηση ανακοίνωσε νέα μέτρα. | Die Regierung hat neue Maßnahmen angekündigt.
+οι εκλογές | Οι εκλογές γίνονται την Κυριακή. | Die Wahlen finden am Sonntag statt.
+σε καταλαβαίνω | Σε καταλαβαίνω, κι εγώ το πέρασα αυτό. | Ich verstehe dich, das habe ich auch erlebt.
+είμαι εδώ για σένα | Μην ανησυχείς, είμαι εδώ για σένα. | Keine Sorge, ich bin für dich da.
+όμως | Ήθελα να έρθω, όμως ήμουν άρρωστος. | Ich wollte kommen, war aber krank.
+το σχόλιο | Έγραψε ένα αστείο σχόλιο κάτω από τη φωτογραφία. | Er schrieb einen lustigen Kommentar unter das Foto.
+ο υδραυλικός | Ο υδραυλικός θα έρθει αύριο το πρωί. | Der Klempner kommt morgen früh.
+ο ηλεκτρολόγος | Πρέπει να καλέσουμε ηλεκτρολόγο. | Wir müssen einen Elektriker rufen.
+ο ανιψιός | Ο ανιψιός μου μόλις έκλεισε τα δέκα. | Mein Neffe ist gerade zehn geworden.
+τα εγγόνια | Η γιαγιά λατρεύει τα εγγόνια της. | Oma liebt ihre Enkel über alles.
+το δέμα | Το δέμα δεν έφτασε ακόμα. | Das Paket ist noch nicht angekommen.
+το παράπονο | Έκανα παράπονο στον διευθυντή. | Ich habe mich beim Geschäftsführer beschwert.
+έχασα το τρένο | Έχασα το τρένο για δύο λεπτά. | Ich habe den Zug um zwei Minuten verpasst.
+μου έκλεψαν το πορτοφόλι | Μου έκλεψαν το πορτοφόλι στο λεωφορείο. | Mir wurde im Bus der Geldbeutel gestohlen.
+η αστυνομία | Πρέπει να πάμε στην αστυνομία. | Wir müssen zur Polizei gehen.
+η πρεσβεία | Η γερμανική πρεσβεία είναι στην Αθήνα. | Die deutsche Botschaft ist in Athen.
+βοήθεια! | Βοήθεια! Καλέστε ασθενοφόρο! | Hilfe! Rufen Sie einen Krankenwagen!
+το ασθενοφόρο | Το ασθενοφόρο ήρθε σε δέκα λεπτά. | Der Krankenwagen kam in zehn Minuten.
+χρειάζομαι γιατρό | Χρειάζομαι γιατρό, δεν νιώθω καλά. | Ich brauche einen Arzt, mir geht es nicht gut.
+το πρωί | Το πρωί πίνω πάντα καφέ. | Morgens trinke ich immer Kaffee.
+το απόγευμα | Το απόγευμα πάω για τρέξιμο. | Nachmittags gehe ich laufen.
+το βράδυ | Το βράδυ βλέπουμε μια ταινία. | Abends schauen wir einen Film.
+στις εννιάμισι | Η συνέντευξη είναι στις εννιάμισι. | Das Vorstellungsgespräch ist um halb zehn.
+χθες το βράδυ | Χθες το βράδυ βγήκαμε στα Λαδάδικα. | Gestern Abend waren wir in der Ladadika aus.
+στην αρχή | Στην αρχή δεν καταλάβαινα τίποτα. | Am Anfang habe ich nichts verstanden.
+στο τέλος | Στο τέλος όλα πήγαν καλά. | Am Ende ist alles gut gegangen.
+μετά από λίγο | Μετά από λίγο άρχισε να βρέχει. | Nach einer Weile fing es an zu regnen.
+μου συνέβη κάτι | Μου συνέβη κάτι αστείο σήμερα. | Mir ist heute etwas Lustiges passiert.
+τι έγινε μετά; | Και τι έγινε μετά; Πες μου! | Und was ist dann passiert? Erzähl!
+ήταν τέλειο | Το ταξίδι ήταν τέλειο. | Die Reise war super.
+ήταν χάλια | Ο καιρός ήταν χάλια όλη την εβδομάδα. | Das Wetter war die ganze Woche furchtbar.
+κατά λάθος | Έσβησα το μήνυμα κατά λάθος. | Ich habe die Nachricht aus Versehen gelöscht.
+σας συστήνω τον … | Σας συστήνω τον Γιώργο, τον συνάδελφό μου. | Ich stelle Ihnen Giorgos vor, meinen Kollegen.
+χαίρομαι που σας βλέπω | Χαίρομαι που σας βλέπω ξανά, κύριε Νίκο. | Schön, Sie wiederzusehen, Herr Nikos.
+πάει καιρός! | Πάει καιρός! Τι κάνεις; | Lange nicht gesehen! Wie geht's?
+χαθήκαμε! | Πού είσαι; Χαθήκαμε! | Wo steckst du? Wir haben uns ja ewig nicht gesehen!
+συγχαρητήρια | Συγχαρητήρια για τη νέα δουλειά! | Herzlichen Glückwunsch zum neuen Job!
+η πλατεία Αριστοτέλους | Συναντιόμαστε στην πλατεία Αριστοτέλους στις οκτώ. | Wir treffen uns um acht am Aristoteles-Platz.
+η Εγνατία | Η Εγνατία έχει πάντα κίνηση. | Auf der Egnatia ist immer Verkehr.
+η Τσιμισκή | Πάμε για ψώνια στην Τσιμισκή. | Wir gehen auf der Tsimiski einkaufen.
+η Νέα Παραλία | Κάνουμε ποδήλατο στη Νέα Παραλία. | Wir fahren an der neuen Uferpromenade Rad.
+η αγορά Μοδιάνο | Στην αγορά Μοδιάνο βρίσκεις φρέσκα ψάρια. | In der Modiano-Markthalle findest du frischen Fisch.
+το Καπάνι | Αγοράσαμε ελιές και τυρί από το Καπάνι. | Wir haben auf dem Kapani Oliven und Käse gekauft.
+το ζυμάρι | Το ζυμάρι πρέπει να ξεκουραστεί μία ώρα. | Der Teig muss eine Stunde ruhen.
+ζυμώνω | Η γιαγιά ζυμώνει ψωμί κάθε Σάββατο. | Oma knetet jeden Samstag Brotteig.
+ψιλοκόβω | Ψιλοκόβω τον μαϊντανό. | Ich hacke die Petersilie fein.
+σιγοβράζω | Σιγοβράζω τη σάλτσα για μισή ώρα. | Ich lasse die Soße eine halbe Stunde köcheln.
+το συστατικό | Ποιο είναι το μυστικό συστατικό; | Was ist die geheime Zutat?
+ανακατεύω | Ανακάτευε τη σούπα για να μην κολλήσει. | Rühr die Suppe um, damit sie nicht anbrennt.
+η κατσαρόλα | Βάλε την κατσαρόλα στη φωτιά. | Stell den Topf auf den Herd.
+το τηγάνι | Το τηγάνι είναι πολύ ζεστό. | Die Pfanne ist sehr heiß.
+μαρινάρω | Μαρινάρω το κρέας από το βράδυ. | Ich mariniere das Fleisch schon am Abend.
+τα προσόντα | Ποια είναι τα προσόντα σας; | Welche Qualifikationen haben Sie?
+το πτυχίο | Πήρε το πτυχίο του πέρσι. | Er hat letztes Jahr seinen Abschluss gemacht.
+το απολυτήριο | Έχω απολυτήριο από τη Γερμανία. | Ich habe einen Schulabschluss aus Deutschland.
+οι συστάσεις | Ο προηγούμενος εργοδότης μου έδωσε συστάσεις. | Mein vorheriger Arbeitgeber hat mir eine Empfehlung gegeben.
+η προθεσμία αιτήσεων | Η προθεσμία αιτήσεων λήγει στις δεκαπέντε. | Die Bewerbungsfrist endet am Fünfzehnten.
+ο εργοδότης | Ο εργοδότης πληρώνει τις εισφορές. | Der Arbeitgeber zahlt die Sozialabgaben.
+η ειδικότητα | Ποια είναι η ειδικότητά σας; | Was ist Ihre Fachrichtung?
+η πρόσληψη | Η πρόσληψη γίνεται από την επόμενη εβδομάδα. | Die Einstellung erfolgt ab nächster Woche.
+η απόλυση | Η απόλυση ήταν μεγάλο σοκ. | Die Kündigung war ein großer Schock.
+η πρακτική άσκηση | Κάνω πρακτική άσκηση σε μια αποθήκη. | Ich mache ein Praktikum in einem Lager.
+η πυροσβεστική | Η πυροσβεστική έσβησε τη φωτιά γρήγορα. | Die Feuerwehr hat den Brand schnell gelöscht.
+η απώλεια αποσκευών | Δηλώσαμε την απώλεια αποσκευών στο αεροδρόμιο. | Wir haben den Gepäckverlust am Flughafen gemeldet.
+ζητώ αποζημίωση | Ζητώ αποζημίωση για την καθυστέρηση. | Ich verlange eine Entschädigung für die Verspätung.
+η βλάβη | Το λεωφορείο είχε βλάβη. | Der Bus hatte eine Panne.
+το γραφείο απολεσθέντων | Ρωτήστε στο γραφείο απολεσθέντων. | Fragen Sie im Fundbüro nach.
+η ασφάλεια ταξιδιού | Έχετε ασφάλεια ταξιδιού; | Haben Sie eine Reiseversicherung?
+επείγον | Είναι επείγον, χρειάζομαι βοήθεια. | Es ist dringend, ich brauche Hilfe.
+ο μάστορας | Ο μάστορας έφτιαξε την πόρτα. | Der Handwerker hat die Tür repariert.
+η βρύση στάζει | Η βρύση στάζει όλη νύχτα. | Der Wasserhahn tropft die ganze Nacht.
+το καλοριφέρ χάλασε | Το καλοριφέρ χάλασε και κρυώνουμε. | Die Heizung ist kaputt und wir frieren.
+το ρεύμα | Κόπηκε το ρεύμα στη γειτονιά. | Im Viertel ist der Strom ausgefallen.
+έπεσε η ασφάλεια | Έπεσε η ασφάλεια, δεν έχουμε φως. | Die Sicherung ist raus, wir haben kein Licht.
+η μούχλα | Υπάρχει μούχλα στο μπάνιο. | Im Bad ist Schimmel.
+ο κλειδαράς | Κλειδώθηκα έξω, πρέπει να καλέσω κλειδαρά. | Ich habe mich ausgesperrt, ich muss den Schlüsseldienst rufen.
+επισκευάζω | Επισκευάζω το ποδήλατο μόνος μου. | Ich repariere das Fahrrad selbst.
+τα εργαλεία | Τα εργαλεία είναι στην αποθήκη. | Das Werkzeug ist im Abstellraum.
+το σφυρί | Δώσε μου το σφυρί, σε παρακαλώ. | Gib mir bitte den Hammer.
+η βίδα | Λείπει μια βίδα. | Es fehlt eine Schraube.
+ανοίγω λογαριασμό | Θέλω να ανοίξω λογαριασμό στην τράπεζα. | Ich möchte bei der Bank ein Konto eröffnen.
+το έμβασμα | Έκανα το έμβασμα για το ενοίκιο. | Ich habe die Überweisung für die Miete gemacht.
+το έντυπο | Συμπληρώστε αυτό το έντυπο, παρακαλώ. | Füllen Sie bitte dieses Formular aus.
+το χαρτάκι προτεραιότητας | Πάρτε χαρτάκι προτεραιότητας και περιμένετε. | Ziehen Sie eine Wartenummer und warten Sie.
+η θυρίδα | Πηγαίνετε στη θυρίδα τρία. | Gehen Sie zu Schalter drei.
+η ηλεκτρονική παραγγελία | Η ηλεκτρονική παραγγελία είναι πιο φθηνή. | Die Online-Bestellung ist günstiger.
+το καλάθι αγορών | Πρόσθεσα τα παπούτσια στο καλάθι αγορών. | Ich habe die Schuhe in den Warenkorb gelegt.
+τα μεταφορικά | Τα μεταφορικά είναι δωρεάν πάνω από πενήντα ευρώ. | Ab fünfzig Euro ist der Versand kostenlos.
+ο αριθμός αποστολής | Μου στείλατε τον αριθμό αποστολής; | Haben Sie mir die Sendungsnummer geschickt?
+παραλαμβάνω | Παραλαμβάνω το δέμα αύριο. | Ich bekomme das Paket morgen.
+μπορώ να μιλήσω με …; | Καλημέρα, μπορώ να μιλήσω με την κυρία Ελένη; | Guten Morgen, kann ich mit Frau Eleni sprechen?
+πήρατε λάθος αριθμό | Συγγνώμη, πήρατε λάθος αριθμό. | Entschuldigung, Sie sind falsch verbunden.
+ο τηλεφωνητής | Σου άφησα μήνυμα στον τηλεφωνητή. | Ich habe dir eine Nachricht auf dem Anrufbeantworter hinterlassen.
+κλείνω το τηλέφωνο | Πρέπει να κλείσω το τηλέφωνο, φτάνει το λεωφορείο. | Ich muss auflegen, der Bus kommt.
+ακυρώνω | Ακυρώνω το ραντεβού για αύριο. | Ich sage den Termin für morgen ab.
+είναι κατειλημμένο | Πήρα τηλέφωνο, αλλά είναι κατειλημμένο. | Ich habe angerufen, aber es ist besetzt.
 `;

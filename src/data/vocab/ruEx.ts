@@ -415,4 +415,110 @@ export default `
 поликли́ника | Я записа́лся к врачу́ в поликли́нику. | Ich habe mich in der Poliklinik beim Arzt angemeldet.
 уважа́емая | Уважа́емая А́нна Петро́вна, спаси́бо за отве́т. | Sehr geehrte Anna Petrowna, danke für die Antwort.
 вака́нсия | Я уви́дел вака́нсию кладовщика́ на са́йте. | Ich habe die Stelle als Lagerarbeiter auf der Website gesehen.
+ничего́ стра́шного | Ничего́ стра́шного, попро́буем ещё раз. | Nicht schlimm, wir versuchen es nochmal.
+мы помири́лись | Мы поссо́рились, но бы́стро помири́лись. | Wir haben gestritten, uns aber schnell versöhnt.
+по-мо́ему | По-мо́ему, фильм был отли́чный. | Meiner Meinung nach war der Film ausgezeichnet.
+я не согла́сен | Я не согла́сен, по-мо́ему, э́то до́рого. | Ich bin nicht einverstanden, ich finde es teuer.
+но́вости | Я смотрю́ но́вости в во́семь. | Ich schaue um acht die Nachrichten.
+прави́тельство | Прави́тельство объяви́ло но́вые ме́ры. | Die Regierung hat neue Maßnahmen angekündigt.
+вы́боры | Вы́боры пройду́т в воскресе́нье. | Die Wahlen finden am Sonntag statt.
+я ря́дом | Не волну́йся, я ря́дом. | Keine Sorge, ich bin für dich da.
+мы живём вме́сте | Мы живём вме́сте уже́ год. | Wir wohnen schon ein Jahr zusammen.
+но | Я хоте́л прийти́, но заболе́л. | Ich wollte kommen, bin aber krank geworden.
+поэ́тому | Шёл дождь, поэ́тому мы оста́лись до́ма. | Es regnete, deshalb blieben wir zu Hause.
+коммента́рий | Он написа́л смешно́й коммента́рий под фо́то. | Er schrieb einen lustigen Kommentar unter das Foto.
+соцсе́ти | Я провожу́ сли́шком мно́го вре́мени в соцсе́тях. | Ich verbringe zu viel Zeit in sozialen Netzwerken.
+электри́к | Ну́жно вы́звать электри́ка. | Man muss einen Elektriker rufen.
+управля́ющая компа́ния | Управля́ющая компа́ния не отвеча́ет на звонки́. | Die Hausverwaltung geht nicht ans Telefon.
+свекро́вь | Свекро́вь дала́ мне реце́пт борща́. | Meine Schwiegermutter hat mir das Borschtsch-Rezept gegeben.
+племя́нник | Моему́ племя́ннику уже́ де́сять лет. | Mein Neffe ist schon zehn.
+духо́вка | Поста́вь пиро́г в духо́вку. | Schieb den Kuchen in den Ofen.
+жа́лоба | Я написа́л жа́лобу в магази́н. | Ich habe eine Beschwerde an den Laden geschrieben.
+я опозда́л на по́езд | Я опозда́л на по́езд на две мину́ты. | Ich habe den Zug um zwei Minuten verpasst.
+у меня́ укра́ли кошелёк | В метро́ у меня́ укра́ли кошелёк. | In der Metro wurde mir der Geldbeutel gestohlen.
+поли́ция | Нам на́до пойти́ в поли́цию. | Wir müssen zur Polizei gehen.
+посо́льство | Неме́цкое посо́льство нахо́дится в Москве́. | Die deutsche Botschaft befindet sich in Moskau.
+помоги́те! | Помоги́те! Вы́зовите ско́рую! | Hilfe! Rufen Sie den Krankenwagen!
+коле́но | Я уда́рил коле́но на футбо́ле. | Ich habe mir beim Fußball das Knie gestoßen.
+хоте́л бы уточни́ть | Я хоте́л бы уточни́ть вре́мя собесе́дования. | Ich möchte die Uhrzeit des Gesprächs klären.
+жду ва́шего отве́та | Спаси́бо, жду ва́шего отве́та. | Danke, ich warte auf Ihre Antwort.
+с уваже́нием | С уваже́нием, Никола́й Мю́ллер | Mit freundlichen Grüßen, Nikolai Müller
+всего́ до́брого | Спаси́бо за всё и всего́ до́брого! | Danke für alles und alles Gute!
+зара́нее спаси́бо | Зара́нее спаси́бо за по́мощь. | Danke im Voraus für die Hilfe.
+электро́нная по́чта | Пришли́те резюме́ по электро́нной по́чте. | Schicken Sie den Lebenslauf per E-Mail.
+дава́й договори́мся | Дава́й договори́мся на суббо́ту. | Lass uns für Samstag ausmachen.
+я немно́го опа́здываю | Я немно́го опа́здываю, бу́ду че́рез де́сять мину́т. | Ich bin etwas spät, ich bin in zehn Minuten da.
+на сле́дующей неде́ле | На сле́дующей неде́ле я е́ду в о́тпуск. | Nächste Woche fahre ich in den Urlaub.
+послеза́втра | Послеза́втра у меня́ собесе́дование. | Übermorgen habe ich ein Vorstellungsgespräch.
+позавчера́ | Позавчера́ мы бы́ли на да́че. | Vorgestern waren wir auf der Datscha.
+у́тром | У́тром я всегда́ пью ко́фе. | Morgens trinke ich immer Kaffee.
+ве́чером | Ве́чером мы смо́трим фильм. | Abends schauen wir einen Film.
+в полови́не деся́того | Собесе́дование в полови́не деся́того. | Das Vorstellungsgespräch ist um halb zehn.
+вчера́ ве́чером | Вчера́ ве́чером мы гуля́ли по Арба́ту. | Gestern Abend sind wir über den Arbat spaziert.
+снача́ла | Снача́ла я ничего́ не понима́л. | Am Anfang habe ich nichts verstanden.
+в конце́ концо́в | В конце́ концо́в всё ко́нчилось хорошо́. | Am Ende ist alles gut ausgegangen.
+че́рез не́которое вре́мя | Че́рез не́которое вре́мя пошёл дождь. | Nach einer Weile fing es an zu regnen.
+со мной случи́лась исто́рия | Вчера́ со мной случи́лась смешна́я исто́рия. | Gestern ist mir eine lustige Geschichte passiert.
+а что пото́м? | А что пото́м? Расскажи́! | Und was dann? Erzähl!
+бы́ло кла́ссно | На конце́рте бы́ло кла́ссно. | Auf dem Konzert war es klasse.
+бы́ло ужа́сно | Всю неде́лю бы́ло ужа́сно хо́лодно. | Die ganze Woche war es schrecklich kalt.
+случа́йно | Я случа́йно удали́л сообще́ние. | Ich habe die Nachricht aus Versehen gelöscht.
+рад вас ви́деть | Рад вас ви́деть, Ива́н Петро́вич! | Schön, Sie zu sehen, Iwan Petrowitsch!
+ско́лько лет, ско́лько зим! | Ско́лько лет, ско́лько зим! Как ты? | Lange nicht gesehen! Wie geht's dir?
+куда́ ты пропа́л? | Куда́ ты пропа́л? Не звони́шь уже́ ме́сяц! | Wo warst du? Du rufst seit einem Monat nicht an!
+как дела́ на рабо́те? | Ну, как дела́ на рабо́те? | Na, wie läuft's bei der Arbeit?
+поздравля́ю | Поздравля́ю с но́вой рабо́той! | Glückwunsch zum neuen Job!
+проходи́те | Проходи́те, пожа́луйста, сади́тесь. | Kommen Sie bitte herein, setzen Sie sich.
+Тверска́я | На Тверско́й всегда́ мно́го люде́й. | Auf der Twerskaja sind immer viele Leute.
+ВДНХ | На ВДНХ мо́жно гуля́ть це́лый день. | Auf dem WDNCh-Gelände kann man den ganzen Tag spazieren.
+Москва́-река́ | Мы ката́лись на теплохо́де по Москве́-реке́. | Wir haben eine Schifffahrt auf der Moskwa gemacht.
+Чи́стые пруды́ | Зимо́й на Чи́стых пруда́х ката́ются на конька́х. | Im Winter läuft man an den Tschistyje Prudy Schlittschuh.
+ста́нция метро́ | Ста́нция метро́ ря́дом с до́мом. | Die U-Bahn-Station ist neben dem Haus.
+те́сто | Те́сто должно́ постоя́ть час. | Der Teig muss eine Stunde ruhen.
+меси́ть | Ба́бушка ме́сит те́сто для пирожко́в. | Oma knetet den Teig für Piroschki.
+туши́ть | Я тушу́ мя́со с овоща́ми. | Ich schmore das Fleisch mit Gemüse.
+мелко́ наре́зать | Петру́шку на́до мелко́ наре́зать. | Die Petersilie muss fein gehackt werden.
+ингредие́нт | Како́й секре́тный ингредие́нт? | Was ist die geheime Zutat?
+оли́вковое ма́сло | Запра́вь сала́т оли́вковым ма́слом. | Mach den Salat mit Olivenöl an.
+кастрю́ля | Поста́вь кастрю́лю на плиту́. | Stell den Topf auf den Herd.
+сковорода́ | Сковорода́ о́чень горя́чая. | Die Pfanne ist sehr heiß.
+маринова́ть | Мя́со на́до маринова́ть всю ночь. | Das Fleisch muss die ganze Nacht mariniert werden.
+квалифика́ция | Кака́я у вас квалифика́ция? | Welche Qualifikation haben Sie?
+дипло́м | Он получи́л дипло́м в про́шлом году́. | Er hat letztes Jahr sein Diplom bekommen.
+рекоменда́ции | Пре́жний работода́тель дал мне рекоменда́ции. | Mein früherer Arbeitgeber hat mir Empfehlungen gegeben.
+срок пода́чи заявле́ний | Срок пода́чи заявле́ний – до пятна́дцатого. | Die Bewerbungsfrist läuft bis zum Fünfzehnten.
+ги́бкий гра́фик | У нас ги́бкий гра́фик. | Wir haben Gleitzeit.
+работода́тель | Работода́тель опла́чивает страхо́вку. | Der Arbeitgeber bezahlt die Versicherung.
+специа́льность | Кака́я у вас специа́льность? | Was ist Ihre Fachrichtung?
+приём на рабо́ту | Приём на рабо́ту – со сле́дующей неде́ли. | Die Einstellung erfolgt ab nächster Woche.
+увольне́ние | Увольне́ние ста́ло для него́ шо́ком. | Die Entlassung war ein Schock für ihn.
+сверхуро́чные | Сверхуро́чные опла́чиваются отде́льно. | Überstunden werden extra bezahlt.
+пра́ктика | У меня́ пра́ктика на скла́де. | Ich mache ein Praktikum im Lager.
+пожа́рные | Пожа́рные прие́хали бы́стро. | Die Feuerwehr kam schnell.
+мне ну́жен врач | Мне ну́жен врач, мне пло́хо. | Ich brauche einen Arzt, mir ist schlecht.
+поте́рянный бага́ж | Мы заяви́ли о поте́рянном багаже́. | Wir haben das verlorene Gepäck gemeldet.
+я тре́бую компенса́цию | Я тре́бую компенса́цию за заде́ржку. | Ich verlange eine Entschädigung für die Verspätung.
+больни́ца | Ба́бушка лежи́т в больни́це. | Oma liegt im Krankenhaus.
+поло́мка | У авто́буса была́ поло́мка. | Der Bus hatte eine Panne.
+бюро́ нахо́док | Спроси́те в бюро́ нахо́док. | Fragen Sie im Fundbüro nach.
+ма́стер | Ма́стер почини́л дверь. | Der Handwerker hat die Tür repariert.
+кран течёт | Кран течёт всю ночь. | Der Wasserhahn tropft die ganze Nacht.
+отопле́ние не рабо́тает | Отопле́ние не рабо́тает, и мы мёрзнем. | Die Heizung funktioniert nicht und wir frieren.
+электри́чество | Во всём до́ме отключи́ли электри́чество. | Im ganzen Haus wurde der Strom abgeschaltet.
+вы́било про́бки | Вы́било про́бки, све́та нет. | Die Sicherung ist raus, es gibt kein Licht.
+пле́сень | В ва́нной появи́лась пле́сень. | Im Bad ist Schimmel aufgetaucht.
+вскры́тие замко́в | Я захло́пнул дверь, ну́жно вскры́тие замко́в. | Ich habe die Tür zugeschlagen, ich brauche den Schlüsseldienst.
+чини́ть | Я сам чиню́ велосипе́д. | Ich repariere das Fahrrad selbst.
+инструме́нты | Инструме́нты лежа́т в гараже́. | Das Werkzeug liegt in der Garage.
+молото́к | Пода́й мне молото́к, пожа́луйста. | Gib mir bitte den Hammer.
+шуру́п | Не хвата́ет одного́ шурупа́. | Es fehlt eine Schraube.
+откры́ть счёт | Я хочу́ откры́ть счёт в ба́нке. | Ich möchte bei der Bank ein Konto eröffnen.
+ИНН | Для рабо́ты ну́жен ИНН. | Für die Arbeit braucht man eine Steuernummer.
+бланк | Запо́лните, пожа́луйста, э́тот бланк. | Füllen Sie bitte dieses Formular aus.
+тало́н | Возьми́те тало́н и подожди́те. | Ziehen Sie eine Nummer und warten Sie.
+око́шко | Подойди́те к тре́тьему око́шку. | Gehen Sie zum dritten Schalter.
+подтвержде́ние | Я получи́л подтвержде́ние зака́за. | Ich habe die Bestellbestätigung bekommen.
+интерне́т-зака́з | Интерне́т-зака́з придёт за́втра. | Die Online-Bestellung kommt morgen.
+корзи́на | Я положи́л кроссо́вки в корзи́ну. | Ich habe die Turnschuhe in den Warenkorb gelegt.
+нало́женный платёж | Я оплачу́ нало́женным платежо́м. | Ich zahle per Nachnahme.
 `;
