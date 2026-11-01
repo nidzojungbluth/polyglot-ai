@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 2615 | 52 % | 1791 | 1407 | 216 | 698 |
-| 🇷🇸 Serbisch | 2652 | 53 % | 1782 | 1065 | 216 | 699 |
-| 🇷🇺 Russisch | 2666 | 53 % | 1798 | 1124 | 216 | 701 |
+| 🇬🇷 Griechisch | 2703 | 54 % | 1879 | 1470 | 221 | 718 |
+| 🇷🇸 Serbisch | 2739 | 55 % | 1869 | 1109 | 221 | 719 |
+| 🇷🇺 Russisch | 2755 | 55 % | 1887 | 1172 | 221 | 721 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 652 | 507 | 243 | 196 | 40 |
-| Serbisch | 441 | 546 | 663 | 518 | 245 | 200 | 39 |
-| Russisch | 451 | 549 | 659 | 512 | 250 | 203 | 42 |
+| Griechisch | 435 | 542 | 707 | 528 | 255 | 196 | 40 |
+| Serbisch | 441 | 546 | 718 | 536 | 259 | 200 | 39 |
+| Russisch | 451 | 549 | 717 | 530 | 263 | 203 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -28,13 +28,13 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 1678 / 2502 (67 %) | 74 % | 93 % | 100 % | 36 % | 22 % | 9 % |
-| Serbisch | 1666 / 2536 (66 %) | 70 % | 87 % | 100 % | 37 % | 22 % | 12 % |
-| Russisch | 1678 / 2546 (66 %) | 71 % | 87 % | 100 % | 37 % | 24 % | 11 % |
+| Griechisch | 1766 / 2590 (68 %) | 74 % | 93 % | 100 % | 38 % | 26 % | 9 % |
+| Serbisch | 1753 / 2623 (67 %) | 70 % | 87 % | 100 % | 39 % | 27 % | 12 % |
+| Russisch | 1767 / 2635 (67 %) | 71 % | 87 % | 100 % | 39 % | 28 % | 11 % |
 
 ## Ladezeit
 
-App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1430 KB.
+App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1477 KB.
 
 ## Prüfstatus
 
@@ -64,7 +64,7 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 | 1 | Projekt analysiert, Datenformat für große Wortschätze (Textformat, stabile IDs, Duplikatprüfung, @-Übernahme, Beispielsatz-Liste) | ✅ erledigt |
 | 2 | Automatische Datenprüfung (Duplikate, Übersetzung, russische Betonung, serbische Schrift, Beispielsatz-Zuordnung) | ✅ erledigt |
 | 3 | Griechisch, Serbisch, Russisch: alle 6 Niveaus × 20 Themen gefüllt, Beispielsätze für A1/A2 | ✅ erledigt |
-| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.650) – Etappen 19–28: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe, Verben 4, Lager 2, Möbel & Umzug, Apotheke, Natur & Landschaft, Bank & Behörden, Küche, Auto & Werkstatt, Kleidung kaufen, Charakter, Handwerk & Baustelle, Garten, Medien & Internet, Miete & Verträge, Wirtschaft & Geld, Krankenhaus, Sport & Fußball, Schule & Ausbildung, Wissenschaft & Umwelt, Tiere & Bauernhof, Flughafen, Elektronik & Haushaltsgeräte, Körper & Erste Hilfe, Politik & Gesellschaft, Beziehungen C1 (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
+| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.730) – Etappen 19–29: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe, Verben 4, Lager 2, Möbel & Umzug, Apotheke, Natur & Landschaft, Bank & Behörden, Küche, Auto & Werkstatt, Kleidung kaufen, Charakter, Handwerk & Baustelle, Garten, Medien & Internet, Miete & Verträge, Wirtschaft & Geld, Krankenhaus, Sport & Fußball, Schule & Ausbildung, Wissenschaft & Umwelt, Tiere & Bauernhof, Flughafen, Elektronik & Haushaltsgeräte, Körper & Erste Hilfe, Politik & Gesellschaft, Beziehungen C1, Kirche & Religion, Musik, Markt, Werkstatt & Maschinen, Recht & Behörden C1 (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
 | 5 | **Zwischenauftrag: Beispielsatz für jede Vokabel** – Anzeige im Beispielsatz-Block (Wortlisten, Slang, Lernkarten, Wörterbuch), Regel-Test für neue Wörter, Betonungsprüfung für russische Sätze, Nachtragen für alle vorhandenen Wörter | 🔄 läuft – Runden 1–2 (B1, ca. 200 Sätze pro Sprache) erledigt; noch ca. 1.150 Sätze pro Sprache, ca. 9 Runden |
 | 5b | **Zwischenauftrag: Umschrift jedes Beispielsatzes** – Griechisch und Russisch: lateinische Umschrift regelbasiert aus dem Satz erzeugt (passt immer zum Satz, keine doppelt gespeicherten Daten, Betonungszeichen im Russischen erhalten, Großschreibung bleibt); Serbisch: in kyrillischer Ansicht der lateinische Satz, in der Ansicht „beide“ die kyrillische Schreibweise; Englisch/Spanisch: keine Umschrift (kein Mehrwert). Anzeige zwischen Originalsatz und Übersetzung. | ✅ erledigt (gilt automatisch für alle vorhandenen und neuen Sätze) |
 | 6 | Lernsystem prüfen und verbessern – **Befund:** Wiederholungslogik (SM-2) und Speicherung (IndexedDB mit Ausweichlösung, Datenmigration, Sicherung) korrekt; 3 Schwachstellen behoben: sofortiges Speichern beim Verlassen der App, verwaiste Karten nach Korrekturen ignoriert (beendeten Wiederholungen vorzeitig), Tageslimit für neue Karten (Standard 20, einstellbar) + Anzeige „morgen fällig“; Geschwindigkeit mit 3.000 Karten getestet | ✅ erledigt |
