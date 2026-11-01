@@ -183,3 +183,6 @@ input[type=checkbox] { width: 24px; height: 24px; accent-color: var(--primary); 
 .read-word { font-size: 1.3rem; }
 .syl { color: var(--primary); font-weight: 600; }
 .abc-card { text-align: left; display: flex; flex-direction: column; gap: 4px; cursor: pointer; width: 100%; border-left: 4px solid var(--primary); }
+
+/* Deutsche Übersetzung direkt neben dem Wort */
+.de-inline { font-weight: 400; color: var(--text); }

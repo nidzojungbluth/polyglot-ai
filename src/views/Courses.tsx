@@ -4,7 +4,7 @@ import type { Level, Module } from '../data/types';
 import { LEVELS } from '../data/types';
 import { LEVEL_INFO, TOPICS, topicIcon } from '../data/curriculum';
 import { itemsOf, moduleLessons } from '../lib/course';
-import { ProgressBar, RegBadge, SpeakBtn } from './ui';
+import { ProgressBar, RegBadge, SpeakBtn, WordHead } from './ui';
 import { abcFor } from '../data/alphabet';
 
 export function moduleProgress(ctx: Ctx, m: Module): { done: number; total: number } {
@@ -108,14 +108,13 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
         <ul className="list card">
           {words.map((w) => (
             <li key={w.id} className="word-row">
-              <div className="grow"><b lang={pack.code}>{w.t}</b>{w.tr && <span className="muted"> · {w.tr}</span>}<div className="small">{w.de} <RegBadge reg={w.reg} /></div></div>
+              <div className="grow"><WordHead t={w.t} de={w.de} tr={w.tr} lang={pack.code} /><div className="small"><RegBadge reg={w.reg} /></div></div>
               <SpeakBtn text={w.t} pack={pack} />
             </li>
           ))}
           {slang.map((s) => (
             <li key={s.id} className="word-row">
-              <div className="grow"><b lang={pack.code}>{s.t}</b> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>}
-                <div className="small">{s.de}</div><div className="small muted">{s.situation} · {s.effect}</div></div>
+              <div className="grow"><WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>}<div className="small muted">{s.situation} · {s.effect}</div></div>
               <SpeakBtn text={s.t} pack={pack} />
             </li>
           ))}

@@ -4,7 +4,7 @@ import { PACKS, withScript } from '../data';
 import type { LanguagePack, Register } from '../data/types';
 import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
-import { LevelBadge, RegBadge, SpeakBtn } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn, WordHead } from './ui';
 
 interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: string; extra?: string; local?: boolean; search: string }
 
@@ -56,9 +56,8 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
         {results.list.map((r) => (
           <li key={r.pack.code + r.id} className="word-row">
             <div className="grow">
-              <span>{r.pack.flag}</span> <b lang={r.pack.code}>{r.t}</b>{r.tr && <span className="muted"> · {r.tr}</span>} <RegBadge reg={r.reg} /> <LevelBadge level={r.level} />
+              <span>{r.pack.flag}</span> <WordHead t={r.t} de={r.de} tr={r.tr} lang={r.pack.code} /> <RegBadge reg={r.reg} /> <LevelBadge level={r.level} />
               {r.local && <span className="badge local">📍 {r.pack.city}</span>}
-              <div className="small">{r.de}</div>
               {r.ex && <div className="small muted">{r.ex}</div>}
               {r.extra && <div className="small note">💡 {r.extra}</div>}
             </div>

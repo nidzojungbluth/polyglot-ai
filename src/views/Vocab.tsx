@@ -4,7 +4,7 @@ import { dueCards, isLearned, newCard, review, type Card, type Grade } from '../
 import { explainSlang } from '../lib/coach';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
-import { LevelBadge, RegBadge, SpeakBtn } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn, WordHead } from './ui';
 
 interface Item { t: string; tr?: string; de: string; reg: any; level?: string; cat?: string; extra?: string }
 
@@ -138,7 +138,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
             {slangAllowed.map((s) => (
               <li key={s.id} className="word-row">
                 <div className="grow">
-                  <b lang={pack.code}>{s.t}</b>{s.tr && <span className="muted"> · {s.tr}</span>} <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>} {s.status === 'älter' && <span className="badge">älter</span>}
+                  <WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>} {s.status === 'älter' && <span className="badge">älter</span>}
                   <div className="small pre">{explainSlang(s).split('\n').slice(1).join('\n')}</div>
                 </div>
                 <SpeakBtn text={s.t} pack={pack} />
@@ -162,7 +162,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
               const c = state.cards[id];
               return (
                 <li key={id} className="word-row">
-                  <div className="grow"><b lang={pack.code}>{it.t}</b>{it.tr && <span className="muted"> · {it.tr}</span>}<div className="small">{it.de} <RegBadge reg={it.reg} /> <LevelBadge level={it.level} /></div></div>
+                  <div className="grow"><WordHead t={it.t} de={it.de} tr={it.tr} lang={pack.code} /><div className="small"><RegBadge reg={it.reg} /> <LevelBadge level={it.level} /></div></div>
                   {c && <span className="muted small">{isLearned(c) ? '✓' : isHard(c) ? '🎯' : `${c.interval} T.`}</span>}
                   <SpeakBtn text={it.t} pack={pack} />
                 </li>

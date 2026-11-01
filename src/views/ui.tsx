@@ -3,6 +3,16 @@ import { REGISTER_INFO } from '../data/types';
 import { sayFor } from '../lib/platform';
 import type { LanguagePack } from '../data/types';
 
+/** Wort mit deutscher Übersetzung direkt daneben, danach die Umschrift. */
+export function WordHead({ t, de, tr, lang }: { t: string; de: string; tr?: string; lang: string }) {
+  return (
+    <>
+      <b lang={lang}>{t}</b> <span className="de-inline">– {de}</span>
+      {tr && <span className="muted"> · {tr}</span>}
+    </>
+  );
+}
+
 export function RegBadge({ reg }: { reg: Register }) {
   const r = REGISTER_INFO[reg];
   return <span className="badge" style={{ borderColor: r.color, color: r.color }}>{r.label}</span>;
