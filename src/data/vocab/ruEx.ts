@@ -923,4 +923,51 @@ export default `
 мазь | Нама́зывайте мазь два ра́за в день. | Tragen Sie die Salbe zweimal täglich auf.
 ка́пли | Капа́йте по три ка́пли в ка́ждый глаз. | Tropfen Sie drei Tropfen in jedes Auge.
 я уда́рился | Я уда́рился о край стола́. | Ich habe mich an der Tischkante gestoßen.
+ло́коть | У меня́ боли́т ло́коть, когда́ я поднима́ю тя́жести. | Mir tut der Ellbogen weh, wenn ich Schweres hebe.
+запя́стье | Часы́ я ношу́ на ле́вом запя́стье. | Die Uhr trage ich am linken Handgelenk.
+лоды́жка | Я подверну́л лоды́жку на ле́стнице. | Ich bin auf der Treppe mit dem Knöchel umgeknickt.
+пла́стырь | Накле́й пла́стырь на ра́ну. | Klebe ein Pflaster auf die Wunde.
+до́брый день | До́брый день, чем могу́ помо́чь? | Guten Tag, wie kann ich helfen?
+до́брый ве́чер | До́брый ве́чер, сто́лик на двои́х, пожа́луйста. | Guten Abend, einen Tisch für zwei, bitte.
+споко́йной но́чи | Споко́йной но́чи, до за́втра! | Gute Nacht, bis morgen!
+как вас зову́т? | Здра́вствуйте, как вас зову́т? | Guten Tag, wie heißen Sie?
+я живу́ в Москве́ | Я живу́ в Москве́ уже́ два го́да. | Ich wohne schon seit zwei Jahren in Moskau.
+я немно́го говорю́ по-ру́сски | Извини́те, я немно́го говорю́ по-ру́сски. | Entschuldigung, ich spreche nur ein bisschen Russisch.
+повтори́те, пожа́луйста | Я не по́нял, повтори́те, пожа́луйста. | Ich habe nicht verstanden, wiederholen Sie bitte.
+что зна́чит …? | Что зна́чит «тоска́»? | Was bedeutet „toska“?
+дава́й на ты | Мы же колле́ги, дава́й на ты. | Wir sind doch Kollegen, lass uns duzen.
+прия́тного аппети́та | Обе́д гото́в, прия́тного аппети́та! | Das Mittagessen ist fertig, guten Appetit!
+я хочу́ есть | Я о́чень хочу́ есть, пойдём в кафе́. | Ich habe großen Hunger, gehen wir ins Café.
+да́йте, пожа́луйста | Да́йте, пожа́луйста, буты́лку воды́. | Geben Sie mir bitte eine Flasche Wasser.
+без мя́са | Мне пи́ццу без мя́са, пожа́луйста. | Für mich eine Pizza ohne Fleisch, bitte.
+у вас есть …? | У вас есть э́то в друго́м цве́те? | Haben Sie das in einer anderen Farbe?
+я про́сто смотрю́ | Спаси́бо, я про́сто смотрю́. | Danke, ich schaue nur.
+Кра́сная пло́щадь | Мы гуля́ли по Кра́сной пло́щади. | Wir sind über den Roten Platz spaziert.
+ско́лько е́хать? | Ско́лько е́хать до аэропо́рта? | Wie lange fährt man zum Flughafen?
+я уже́ е́ду | Не волну́йся, я уже́ е́ду. | Keine Sorge, ich bin schon unterwegs.
+у тебя́ есть бра́тья и́ли сёстры? | У тебя́ есть бра́тья и́ли сёстры? У меня́ брат. | Hast du Geschwister? Ich habe einen Bruder.
+мне не нра́вится | Мне не нра́вится э́тот цвет. | Diese Farbe gefällt mir nicht.
+напиши́ мне | Когда́ прие́дешь, напиши́ мне. | Wenn du ankommst, schreib mir.
+алло́ | Алло́, кто э́то? | Hallo, wer ist da?
+кто э́то? | В дверь звоня́т. Кто э́то? | Es klingelt an der Tür. Wer ist das?
+пло́хо слы́шно | Пло́хо слы́шно, я перезвоню́. | Man hört schlecht, ich rufe zurück.
+у меня́ боли́т спина́ | У меня́ боли́т спина́ от коро́бок. | Mir tut der Rücken von den Kartons weh.
+Кем ты рабо́таешь? | Кем ты рабо́таешь? – Я води́тель погру́зчика. | Was arbeitest du? – Ich bin Staplerfahrer.
+я безрабо́тный | Сейча́с я безрабо́тный и ищу́ рабо́ту. | Im Moment bin ich arbeitslos und suche Arbeit.
+я хочу́ пить | Я хочу́ пить, у тебя́ есть вода́? | Ich habe Durst, hast du Wasser?
+я бою́сь | Я бою́сь темноты́. | Ich habe Angst vor der Dunkelheit.
+у меня́ стресс | На рабо́те у меня́ стресс. | Auf der Arbeit bin ich gestresst.
+переста́нь! | Переста́нь крича́ть! | Hör auf zu schreien!
+ты ошиба́ешься | Ты ошиба́ешься, магази́н откры́т. | Du irrst dich, der Laden ist offen.
+оста́вь меня́ в поко́е | Оста́вь меня́ в поко́е, я уста́л. | Lass mich in Ruhe, ich bin müde.
+не сейча́с | Не сейча́с, я на рабо́те. | Nicht jetzt, ich bin auf der Arbeit.
+я смею́сь | Я смею́сь, потому́ что э́то смешно́. | Ich lache, weil das lustig ist.
+я шучу́ | Не обижа́йся, я шучу́! | Sei nicht beleidigt, ich mache Spaß!
+как здо́рово! | Ты то́же придёшь? Как здо́рово! | Du kommst auch? Wie toll!
+Но́вый год | Но́вый год мы встреча́ем с семьёй. | Neujahr feiern wir mit der Familie.
+идёт дождь | Идёт дождь, возьми́ зо́нтик. | Es regnet, nimm einen Schirm mit.
+не | Я не понима́ю. | Ich verstehe nicht.
+и | Я хочу́ хлеб и сыр. | Ich möchte Brot und Käse.
+у меня́ есть | У меня́ есть соба́ка. | Ich habe einen Hund.
+у меня́ нет | У меня́ нет вре́мени. | Ich habe keine Zeit.
 `;

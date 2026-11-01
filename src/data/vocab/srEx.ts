@@ -907,4 +907,53 @@ oporaviti se | Polako se oporavlja posle operacije. | Er erholt sich langsam von
 mast | Mažite mast dva puta dnevno. | Tragen Sie die Salbe zweimal täglich auf.
 kapi | Stavi tri kapi u svako oko. | Gib drei Tropfen in jedes Auge.
 udario sam se | Udario sam se o ivicu stola. | Ich habe mich an der Tischkante gestoßen.
+lakat | Boli me lakat kad dižem teret. | Mir tut der Ellbogen weh, wenn ich Lasten hebe.
+ručni zglob | Sat nosim na levom ručnom zglobu. | Die Uhr trage ich am linken Handgelenk.
+zavoj | Lekar mi je stavio zavoj. | Der Arzt hat mir einen Verband angelegt.
+flaster | Stavi flaster na ranu. | Klebe ein Pflaster auf die Wunde.
+dobro veče | Dobro veče, sto za dvoje, molim. | Guten Abend, einen Tisch für zwei, bitte.
+laku noć | Laku noć, vidimo se sutra. | Gute Nacht, wir sehen uns morgen.
+doviđenja | Hvala i doviđenja! | Danke und auf Wiedersehen!
+kako se zovete? | Dobar dan, kako se zovete? | Guten Tag, wie heißen Sie?
+živim u Beogradu | Živim u Beogradu već dve godine. | Ich wohne schon seit zwei Jahren in Belgrad.
+govorim malo srpski | Izvinite, govorim malo srpski. | Entschuldigung, ich spreche nur ein bisschen Serbisch.
+možeš li sporije? | Ne razumem. Možeš li sporije? | Ich verstehe nicht. Kannst du langsamer sprechen?
+šta znači …? | Šta znači „merak“? | Was bedeutet „merak“?
+nema na čemu | – Hvala! – Nema na čemu. | – Danke! – Gern geschehen.
+da | Da, hoću kafu. | Ja, ich möchte einen Kaffee.
+ne | Ne, hvala. | Nein, danke.
+u redu | U redu, vidimo se u pet. | In Ordnung, wir sehen uns um fünf.
+gladan sam | Gladan sam, hajde da jedemo. | Ich habe Hunger, lass uns essen.
+žedan sam | Žedan sam, imaš li vode? | Ich habe Durst, hast du Wasser?
+prijatno | Izvolite ručak, prijatno! | Bitte schön, das Mittagessen, guten Appetit!
+ukusno je | Mama, ovo je baš ukusno! | Mama, das ist richtig lecker!
+bez mesa | Jednu pizzu bez mesa, molim. | Eine Pizza ohne Fleisch, bitte.
+imate li …? | Imate li ovo u većem broju? | Haben Sie das in einer größeren Größe?
+samo gledam | Hvala, samo gledam. | Danke, ich schaue nur.
+železnička stanica | Gde je železnička stanica? | Wo ist der Bahnhof?
+koliko traje? | Koliko traje vožnja do Novog Sada? | Wie lange dauert die Fahrt nach Novi Sad?
+imaš li braću i sestre? | Imaš li braću i sestre ili si jedinac? | Hast du Geschwister oder bist du Einzelkind?
+živim sa roditeljima | Još uvek živim sa roditeljima. | Ich wohne noch bei meinen Eltern.
+ne sviđa mi se | Ne sviđa mi se ova boja. | Diese Farbe gefällt mir nicht.
+pošalji mi poruku | Kad stigneš, pošalji mi poruku. | Wenn du ankommst, schick mir eine Nachricht.
+halo? | Halo? Ko je to? | Hallo? Wer ist da?
+ko je to? | Neko zvoni. Ko je to? | Jemand klingelt. Wer ist das?
+ne čujem te dobro | Ne čujem te dobro, buka je. | Ich höre dich schlecht, es ist laut.
+bole me leđa | Bole me leđa od kutija. | Mir tut der Rücken von den Kartons weh.
+spavaća soba | Spavaća soba je mala, ali mirna. | Das Schlafzimmer ist klein, aber ruhig.
+dnevna soba | Gledamo TV u dnevnoj sobi. | Wir schauen im Wohnzimmer fern.
+nezaposlen sam | Trenutno sam nezaposlen i tražim posao. | Im Moment bin ich arbeitslos und suche Arbeit.
+dosta! | Dosta! Ne želim više da slušam. | Es reicht! Ich will nichts mehr hören.
+prestani! | Prestani da vičeš! | Hör auf zu schreien!
+grešiš | Grešiš, prodavnica je otvorena. | Du irrst dich, der Laden ist offen.
+pusti me na miru | Pusti me na miru, umoran sam. | Lass mich in Ruhe, ich bin müde.
+ne sada | Ne sada, na poslu sam. | Nicht jetzt, ich bin auf der Arbeit.
+baš lepo! | Dolaziš i ti? Baš lepo! | Du kommst auch? Wie schön!
+toplo je | Danas je toplo, idemo napolje. | Heute ist es warm, wir gehen raus.
+pada sneg | Pada sneg od jutros. | Es schneit seit heute Morgen.
+i | Hoću hleb i sir. | Ich möchte Brot und Käse.
+ovo | Šta je ovo? | Was ist das?
+na uglu | Apoteka je na uglu. | Die Apotheke ist an der Ecke.
+preko puta | Pekara je preko puta pošte. | Die Bäckerei ist gegenüber der Post.
+pored | Banka je pored apoteke. | Die Bank ist neben der Apotheke.
 `;

@@ -900,4 +900,46 @@ export default `
 άσε με ήσυχο | Άσε με ήσυχο, είμαι κουρασμένος. | Lass mich in Ruhe, ich bin müde.
 με συγχωρείς | Με συγχωρείς, δεν σε είδα. | Entschuldige, ich habe dich nicht gesehen.
 όχι τώρα | Όχι τώρα, είμαι στη δουλειά. | Nicht jetzt, ich bin auf der Arbeit.
+ο αγκώνας | Με πονάει ο αγκώνας όταν σηκώνω βάρη. | Mir tut der Ellbogen weh, wenn ich Gewichte hebe.
+ο καρπός | Φοράει ρολόι στον αριστερό καρπό. | Er trägt die Uhr am linken Handgelenk.
+ο αστράγαλος | Γύρισε ο αστράγαλός μου στη σκάλα. | Ich bin auf der Treppe mit dem Knöchel umgeknickt.
+ο επίδεσμος | Ο γιατρός μού έβαλε επίδεσμο. | Der Arzt hat mir einen Verband angelegt.
+πλάκα κάνω | Μην θυμώνεις, πλάκα κάνω! | Sei nicht sauer, ich mache Spaß!
+τι ωραία! | Θα έρθεις κι εσύ; Τι ωραία! | Du kommst auch? Wie schön!
+δεν | Δεν καταλαβαίνω. | Ich verstehe nicht.
+και | Θέλω ψωμί και τυρί. | Ich möchte Brot und Käse.
+αλλά | Είναι ακριβό, αλλά καλό. | Es ist teuer, aber gut.
+στη γωνία | Το φαρμακείο είναι στη γωνία. | Die Apotheke ist an der Ecke.
+ο σιδηροδρομικός σταθμός | Πού είναι ο σιδηροδρομικός σταθμός; | Wo ist der Bahnhof?
+μένω στη … | Μένω στη Θεσσαλονίκη. | Ich wohne in Thessaloniki.
+πόσο χρονών είσαι; | Πόσο χρονών είσαι; Είμαι είκοσι πέντε. | Wie alt bist du? Ich bin fünfundzwanzig.
+μιλάω γερμανικά | Μιλάω γερμανικά και λίγα αγγλικά. | Ich spreche Deutsch und ein bisschen Englisch.
+πιο αργά, παρακαλώ | Πιο αργά, παρακαλώ, δεν καταλαβαίνω. | Langsamer, bitte, ich verstehe nicht.
+μπορείς να το επαναλάβεις; | Συγγνώμη, μπορείς να το επαναλάβεις; | Entschuldigung, kannst du das wiederholen?
+πώς το λένε αυτό; | Πώς το λένε αυτό στα ελληνικά; | Wie nennt man das auf Griechisch?
+ευχαριστώ πολύ | Ευχαριστώ πολύ για τη βοήθεια! | Vielen Dank für die Hilfe!
+ποιος; | Ποιος είναι στην πόρτα; | Wer ist an der Tür?
+πώς; | Πώς πάω στο κέντρο; | Wie komme ich ins Zentrum?
+πόσο; | Πόσο κάνει αυτό; | Wie viel kostet das?
+πόσοι; | Πόσοι είστε; | Wie viele seid ihr?
+από πού; | Από πού είσαι; | Woher kommst du?
+σε | Είμαι σε μια καφετέρια. | Ich bin in einem Café.
+από | Είμαι από τη Γερμανία. | Ich komme aus Deutschland.
+με | Πάω με το λεωφορείο. | Ich fahre mit dem Bus.
+για | Αυτό το δώρο είναι για σένα. | Dieses Geschenk ist für dich.
+μέχρι | Το μαγαζί είναι ανοιχτό μέχρι τις εννιά. | Der Laden hat bis neun geöffnet.
+πριν | Πλύνε τα χέρια πριν το φαγητό. | Wasch dir vor dem Essen die Hände.
+κάτω από | Η γάτα είναι κάτω από το τραπέζι. | Die Katze ist unter dem Tisch.
+πάνω σε | Τα κλειδιά είναι πάνω στο τραπέζι. | Die Schlüssel liegen auf dem Tisch.
+μέσα σε | Θα είμαι εκεί μέσα σε δέκα λεπτά. | Ich bin in zehn Minuten da.
+ανάμεσα σε | Η τράπεζα είναι ανάμεσα στο φαρμακείο και στο περίπτερο. | Die Bank liegt zwischen der Apotheke und dem Kiosk.
+κοντά σε | Μένω κοντά στο λιμάνι. | Ich wohne in der Nähe des Hafens.
+ο φούρναρης | Ο φούρναρης ανοίγει στις έξι. | Der Bäcker öffnet um sechs.
+ο κομμωτής | Πάω στον κομμωτή κάθε μήνα. | Ich gehe jeden Monat zum Friseur.
+η νοσηλεύτρια | Η νοσηλεύτρια μού έδωσε το φάρμακο. | Die Krankenpflegerin hat mir das Medikament gegeben.
+ο αστυνομικός | Ο αστυνομικός μάς έδειξε τον δρόμο. | Der Polizist hat uns den Weg gezeigt.
+ο πυροσβέστης | Ο αδερφός μου είναι πυροσβέστης. | Mein Bruder ist Feuerwehrmann.
+ο μηχανικός αυτοκινήτων | Ο μηχανικός αυτοκινήτων έφτιαξε τα φρένα. | Der Kfz-Mechaniker hat die Bremsen repariert.
+ο χειριστής κλαρκ | Ψάχνουν χειριστή κλαρκ για τη νυχτερινή βάρδια. | Sie suchen einen Staplerfahrer für die Nachtschicht.
+ο οικοδόμος | Ο οικοδόμος δουλεύει από τις επτά. | Der Bauarbeiter arbeitet ab sieben.
 `;
