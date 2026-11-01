@@ -20,7 +20,7 @@
 | Phase | Ziel | Priorität | Aufwand | Status |
 |---|---|---|---|---|
 | 0 | Werkzeuge & Doku aufräumen | hoch | 1 Runde | ✅ 01.11. |
-| 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | 🔄 freigegeben 01.11. |
+| 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | ✅ 01.11. (Start 1,5 s → 0,47 s) |
 | 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | 🔄 (laufend seit Etappe 19) |
 | 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ⏳ |
 | 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ⏳ |
@@ -29,7 +29,7 @@
 | 7 | Aussprache-Training (nur Pages) | niedrig/optional | 2 Runden | ⏳ |
 | 8 | Abschluss-QA & Release-Doku | hoch (am Ende) | 1–2 Runden | ⏳ |
 
-Abhängigkeiten: 0 → 1 → (2 läuft parallel weiter, profitiert aber von 1) → 3 → 4/5 → 6/7 → 8. Phase 2 darf vor 1 weiterlaufen, macht das Ladeproblem aber größer – **empfohlen: Phase 1 zuerst.**
+Abhängigkeiten: 0 ✅ → 1 ✅ → 2 (läuft) → 3 → 4/5 → 6/7 → 8.
 
 ---
 
@@ -49,7 +49,12 @@ Abhängigkeiten: 0 → 1 → (2 läuft parallel weiter, profitiert aber von 1) �
 8. **Abnahme:** `npm run missing B2 10`, `npm run e2e`, `npm run report` laufen; 107 + 31 Tests grün; App-Build byte-gleich zum Vorher (außer Doku).
 9. **Ergebnis:** reproduzierbare Werkzeugkette.
 
-## Phase 1 – Performance: Sprachen getrennt laden 🔄 (D-010 freigegeben 01.11.2026)
+## Phase 1 – Performance: Sprachen getrennt laden ✅ (01.11.2026)
+
+**Ergebnis:** Start (iPhone 13, CPU ×4, `npm run perf`) **1,5 s → 0,47 s**; erster Download 366 KB statt ~1,8 MB; jede Sprache eigener Chunk (el 527 KB, ru 506 KB, sr 370 KB, Kern 352 KB, Bytes ungezippt); Service Worker cacht alle Dateien beim ersten Besuch (Liste wird beim Build automatisch eingetragen), E2E prüft Sprachwechsel offline. Artefakt bleibt eine Datei (`npm run build:artifact` → `dist-artifact/index.html`), dort laufen die Daten weiter beim Start (online, weniger kritisch).
+Umsetzung: `src/data/index.ts` (BASES + `loadPack`/`getPack`/`loadAllPacks`), `src/data/core.ts` (Parser/enrich/withScript), `src/data/packs/<code>.ts` (Wortlisten je Sprache), `src/data/all.ts` (nur Tests/Skripte), `src/lib/usePacks.ts`, `vite.config.ts` (Modus `artifact`, Precache-Plugin), `tests/perf.cjs`. Rückweg: Git-Tag `vor-phase1`.
+
+Ursprünglicher Plan:
 
 1. **Ziel:** Start < 1 s (iPhone-13-Simulation, CPU ×4), erster Download < 500 KB, auch bei 5.000+ Einträgen je Sprache.
 2. **Aufgaben:**
@@ -75,7 +80,7 @@ Abhängigkeiten: 0 → 1 → (2 läuft parallel weiter, profitiert aber von 1) �
    - **Runde B – Beispielsätze nachtragen:** `npm run missing <Niveau> 80`, Sätze an `src/data/vocab/{el,sr,ru}Ex.ts` anhängen (vor dem schließenden Backtick). Reihenfolge: B2-Rest → A1-Rest (ohne Artikel/Pronomen/Zahlen) → C1 → C2.
    - Themenvorrat für Runden A: Werkzeuge & Heimwerken B1, Körperpflege & Drogerie B1, Wetter & Klima B2, Theater & Film B2, Logistik & Spedition B2, Versicherungen B2, Immobilien & Kauf C1, Gesundheitssystem C1, Medien & Journalismus C1, Umweltpolitik C1, Redewendungen C2 (je Sprache eigene), Ironie & Humor C2, Amtsdeutsch-Äquivalente C2, Fachsprache Lager/Produktion C1.
 3. **Technik:** bestehendes Format (D-004), Regeln D-006.
-4. **Dateien:** `src/data/vocab/*`, automatisch `src/data/index.ts` bzw. nach Phase 1 `src/data/packs/*`.
+4. **Dateien:** `src/data/vocab/*`, automatisch `src/data/packs/<code>.ts` (über `add-stage.py`).
 5. **Abhängigkeiten:** keine harte; empfohlen nach Phase 1.
 6. **Priorität:** hoch.
 7. **Aufwand:** ~2.000 fehlende Einträge je Sprache ÷ ~75 neue pro Runde A ≈ 27 Runden A; ~580 fehlende Beispielsätze je Sprache ÷ ~65 pro Runde B ≈ 9 Runden B → **~36 Runden**.
@@ -125,7 +130,7 @@ Vollständiger Testlauf, Leistungsmessung, Barrierefreiheits-Durchgang, README/S
 1. `PROJECT_STATUS.md`, `ROADMAP.md`, `DECISIONS.md` lesen (nichts anderes vorab).
 2. Kurzprüfung: `git log --oneline -3`, `gh run list -R nidzojungbluth/polyglot-ai -L 1`, `npx vitest run | tail -3`.
 3. Erste offene Aufgabe mit höchster Priorität wählen, deren Abhängigkeiten erfüllt sind und die **nicht** 🔒 ist.
-4. Umsetzen → Tests (`npx vitest run`, `npm run build`, `npm run e2e`) → `npm run report` → Status-/Roadmap-Zeile aktualisieren → Commit (Trailer) → Push → Artefakt veröffentlichen (`publish_files`, slug `aafed084-5356-4a9e-9b7a-4101f6b3b948`, aktuelle `base_version` per `get_artifact`).
+4. Umsetzen → Tests (`npx vitest run`, `npm run build`, `npm run e2e`) → `npm run report` → Status-/Roadmap-Zeile aktualisieren → Commit (Trailer) → Push → `npm run build:artifact` → Artefakt veröffentlichen aus `dist-artifact/index.html` (`publish_files`, slug `aafed084-5356-4a9e-9b7a-4101f6b3b948`, aktuelle `base_version` per `get_artifact`).
 5. Kurzer deutscher Bericht (Fachbegriffe einfach erklären), dann nächste Aufgabe, solange der Nutzer nicht „stopp/Pause“ sagt.
 
 ## Effizienzregeln (Claude-Nutzungsvolumen)

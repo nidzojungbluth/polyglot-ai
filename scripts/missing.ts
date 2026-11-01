@@ -1,5 +1,5 @@
 // Listet Wörter ohne Beispielsatz: npm run missing -- <Niveau> [Anzahl]
-import { PACKS } from '../src/data/index';
+import { PACKS } from '../src/data/all';
 const lvl = process.argv[2] ?? 'B2'; const n = +(process.argv[3] ?? 80);
 for (const code of ['el', 'sr', 'ru']) {
   const p = PACKS.find((x) => x.code === code)!;

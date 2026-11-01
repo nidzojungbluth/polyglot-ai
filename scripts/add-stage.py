@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
-"""Bindet src/data/vocab/{el,sr,ru}<N>.ts ein, markiert bereits vorhandene Wörter mit '@'
+"""Bindet src/data/vocab/{el,sr,ru}<N>.ts in src/data/packs/<code>.ts ein, markiert bereits vorhandene Wörter mit '@'
 (sie bleiben im Modul, zählen aber nicht doppelt) und zeigt, wie viele Einträge wirklich neu sind.
 Aufruf: python3 scripts/add-stage.py 16"""
 import json, re, subprocess, sys
 
-n = int(sys.argv[1]); prev = None
-idx = 'src/data/index.ts'; s = open(idx).read()
+n = int(sys.argv[1])
 for c in ['el', 'sr', 'ru']:
+    f = f'src/data/packs/{c}.ts'; s = open(f).read()
     if f"{c}Vocab{n} from" in s: continue
-    m = sorted(int(x) for x in re.findall(rf"import {c}Vocab(\d+) from", s))
-    last = m[-1]
-    s = s.replace(f"import {c}Vocab{last} from './vocab/{c}{last}';", f"import {c}Vocab{last} from './vocab/{c}{last}';\nimport {c}Vocab{n} from './vocab/{c}{n}';")
-    s = s.replace(f"+ {c}Vocab{last}, {c}Ex)", f"+ {c}Vocab{last} + {c}Vocab{n}, {c}Ex)")
-open(idx, 'w').write(s)
+    last = sorted(int(x) for x in re.findall(rf"import {c}Vocab(\d+) from", s))[-1]
+    s = s.replace(f"import {c}Vocab{last} from '../vocab/{c}{last}';", f"import {c}Vocab{last} from '../vocab/{c}{last}';\nimport {c}Vocab{n} from '../vocab/{c}{n}';")
+    s = s.replace(f"{c}Vocab{last},\n].join", f"{c}Vocab{last}, {c}Vocab{n},\n].join")
+    open(f, 'w').write(s)
 
 probe = 'tests/zz_probe.test.ts'
-open(probe, 'w').write("""import { PACKS } from '../src/data/index';
+open(probe, 'w').write("""import { PACKS } from '../src/data/all';
 import { it } from 'vitest';
 it('probe', () => { for (const p of PACKS as any[]) { console.log('DUP', p.code, JSON.stringify(p.duplicates ?? [])); console.log('ERR', p.code, JSON.stringify(p.parseErrors ?? [])); } });
 """)

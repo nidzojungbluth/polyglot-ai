@@ -13,7 +13,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 | Bereich | Stand |
 |---|---|
 | Frontend | React 18, TypeScript 5, Vite 5, kein Router (eigener View-State in `App.tsx`), eigenes CSS (`styles.css`), keine UI-Bibliothek |
-| Build | `vite-plugin-singlefile` → **eine** Datei `dist/index.html` (JS, CSS, alle Sprachdaten inline) |
+| Build | `npm run build` → `dist/` mit Code-Splitting (Kern + ein Chunk je Sprache, für GitHub Pages); `npm run build:artifact` → `dist-artifact/index.html` (eine Datei, für claude.ai) |
 | Speicher | IndexedDB (Schema-Version 1, Migration, Export/Import), Ausweichlösung localStorage/Speicher; sofortiges Speichern bei `visibilitychange`/`pagehide` |
 | Offline | Service Worker `public/sw.js` (Netzwerk zuerst, sonst Cache) – nur auf GitHub Pages wirksam |
 | Hosting | GitHub Pages über `.github/workflows/pages.yml` (Build + Deploy bei Push auf `main`) |
@@ -56,19 +56,19 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 
 | Messgröße | Wert | Bewertung |
 |---|---|---|
-| `dist/index.html` | **1,79 MB** (gzip 0,61 MB) | ⚠️ über der selbst gesetzten Grenze 1,2 MB |
-| Start iPhone-13-Simulation, CPU ×4 gedrosselt | ~1,0–1,4 s (warm), ~3–4 s (kalt, erster Aufruf) | ⚠️ wächst mit jedem Eintrag; Ursache: alle Sprachdaten werden beim Start geladen **und geparst** |
+| Erster Download (Pages) | 366 KB (Kern + gewählte Sprache) | ✅ (vorher ~1,8 MB) |
+| Start iPhone-13-Simulation, CPU ×4 (`npm run perf`) | **0,47 s** | ✅ (vorher 1,5 s) – wächst nur noch mit der gewählten Sprache |
 | Unit-Tests | 107/107 grün | ✅ |
-| E2E | 31/31 grün | ✅ |
+| E2E | 34/34 grün (inkl. Sprachwechsel offline) | ✅ |
 | GitHub Pages Deploy | grün | ✅ |
 
 ## 6. Offene Probleme und technische Schulden
 
-1. **Ladezeit/Dateigröße** (höchste Priorität): alles in einer Datei, alle Sprachen werden beim Start geparst → Roadmap Phase 1.
+1. ~~Ladezeit/Dateigröße~~ ✅ Phase 1 erledigt (0,47 s). Rest: Artefakt-Version lädt weiterhin alles beim Start.
 2. ~~Hilfsskript nur in /tmp~~ ✅ jetzt `scripts/missing.ts`.
 3. ~~E2E-Port per sed~~ ✅ `npm run e2e` mit `PORT`.
 4. ~~Doppelte Doku~~ ✅ erledigt (Chronik `docs/CHANGELOG.md`). Früher: `docs/ROADMAP.md` (wird von `report.ts` in `PROJECT_PROGRESS.md` eingebunden) vs. neue `ROADMAP.md`; README-Zahlen veraltet („~2.180 Wörter“).
-5. **`src/data/index.ts`** bindet 93 Dateien über eine sehr lange, von `add-stage.py` per Textersetzung gepflegte Zeile ein → fehleranfällig, blockiert getrenntes Laden.
+5. ~~Riesenzeile in index.ts~~ ✅ jetzt `src/data/packs/<code>.ts`, gepflegt von `add-stage.py`.
 6. **Alte Basis-Einträge ohne Beispielsatz** (v. a. B2-Rest, C1, C2, einige A1) – ca. 550–600 Wörter je Sprache.
 7. **Lückentext** funktioniert nicht bei gebeugten Formen (dann nur Satzbau-Übung).
 8. **Englisch/Spanisch** nur Mini-Pakete.
@@ -85,5 +85,5 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 ## 8. Letzter Fortschritt
 
 - 01.11.2026: Etappen 24–33 (je ~70–90 neue Einträge pro Sprache, alle mit Beispielsatz), Beispielsatz-Runden 3–12 (B1 und A2 vollständig, B2 auf ~80 %), 3.000-Marke überschritten, Messung Ladezeit; danach **Planungsauftrag**: diese drei Steuerdateien angelegt. Keine Code-Änderungen in dieser Sitzung nach Runde 12.
-- 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 erledigt.
+- 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 und Phase 1 erledigt (Start 1,5 s → 0,47 s). Weiter mit Phase 2 (Inhalte).
 - (alt) Arbeit pausiert auf Wunsch des Nutzers. Nächster Schritt laut Roadmap: **Phase 0, dann Phase 1 (Performance) – braucht Freigabe der Architektur-Entscheidung D-010.**

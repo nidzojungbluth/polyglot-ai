@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 import { describe, it, expect } from 'vitest';
-import { PACKS, packByCode, withScript } from '../src/data';
+import { PACKS, packByCode, withScript } from '../src/data/all';
 import { moduleLessons, findLesson, lessonItems } from '../src/lib/course';
 import { buildExercises } from '../src/lib/exercises';
 import { grTranslit, ruTranslit, srLatToCyr, srCyrToLat } from '../src/lib/translit';

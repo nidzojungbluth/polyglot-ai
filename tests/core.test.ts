@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import 'fake-indexeddb/auto';
-import { PACKS } from '../src/data';
+import { PACKS } from '../src/data/all';
 import { REGISTER_INFO } from '../src/data/types';
 import { newCard, review, dueCards, isLearned } from '../src/lib/srs';
 import { matches, normalize } from '../src/lib/text';

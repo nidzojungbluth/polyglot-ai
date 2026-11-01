@@ -192,6 +192,15 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   assert(true, 'App startet OFFLINE neu');
   await p.click('text=Weiterlernen'); await p.locator('button:has-text("Üben ("), button:has-text("Übungen starten")').first().click();
   assert(await p.locator('.card').count() > 0, 'Lektion funktioniert offline');
+  // Getrennt geladene Sprachpakete müssen offline aus dem Cache kommen
+  for (const name of ['Serbisch', 'Russisch', 'Griechisch']) {
+    await p.click('.langchip'); await p.click(`.list-btn:has-text("${name}")`);
+    await p.waitForSelector('text=Weiterlernen', { timeout: 8000 });
+    await p.click('.tab:has-text("Kurse")');
+    await p.waitForTimeout(200);
+    assert(await p.locator('.card').count() > 0, `Sprachpaket ${name} lädt offline`);
+    await p.click('.tab:has-text("Start")');
+  }
   await ctx.setOffline(false);
 
   // Dark Mode

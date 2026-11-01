@@ -1,6 +1,7 @@
 // Erzeugt PROJECT_PROGRESS.md (zentrale Fortschrittsdoku) mit echten Zahlen aus den Sprachdaten (npm run report).
-import { existsSync, readFileSync, statSync, writeFileSync } from 'fs';
-import { PACKS } from '../src/data';
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'fs';
+const kb = (re: RegExp) => { const f = readdirSync('dist/assets').find((x) => re.test(x)); return f ? (statSync('dist/assets/' + f).size / 1024).toFixed(0) : '?'; };
+import { PACKS } from '../src/data/all';
 import { LEVELS } from '../src/data/types';
 import { clozeFromExample } from '../src/lib/exercises';
 import { moduleLessons } from '../src/lib/course';
@@ -46,7 +47,7 @@ const md = [
   '',
   '## Ladezeit',
   '',
-  existsSync('dist/index.html') ? `App-Datei (alles in einer Datei, inkl. aller Sprachdaten): ${(statSync('dist/index.html').size / 1024).toFixed(0)} KB.` : 'App-Datei: noch nicht gebaut.',
+  existsSync('dist/assets') ? `App-Dateien (GitHub Pages): Kern ${kb(/^index-.*\.js$/)} KB, Sprachpakete ${['el', 'sr', 'ru'].map((c) => `${c} ${kb(new RegExp(`^${c}-.*\\.js$`))} KB`).join(', ')} (jede Sprache wird erst bei Bedarf geladen).` : 'App-Dateien: noch nicht gebaut.',
   '',
   '## Prüfstatus',
   '',

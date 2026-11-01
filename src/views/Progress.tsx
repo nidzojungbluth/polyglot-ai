@@ -1,5 +1,6 @@
 import type { Ctx } from '../App';
-import { PACKS } from '../data';
+import { BASES } from '../data';
+import { useAllPacks } from '../lib/usePacks';
 import { isLearned, knownIn, todayQueue } from '../lib/srs';
 import { newDoneToday, newLimit } from '../lib/store';
 import { streak, today } from '../lib/store';
@@ -10,6 +11,7 @@ import { ProgressBar } from './ui';
 
 export function Progress({ ctx }: { ctx: Ctx }) {
   const { state } = ctx;
+  const loaded = useAllPacks();
   const days = Array.from({ length: 7 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
   const max = Math.max(state.settings.dailyGoal, ...days.map((d) => state.daily[today(d)] ?? 0));
   const total = Object.values(state.daily).reduce((a, b) => a + b, 0);
@@ -41,14 +43,15 @@ export function Progress({ ctx }: { ctx: Ctx }) {
       <section className="card">
         <h2>Sprachen</h2>
         <ul className="list">
-          {PACKS.map((p) => {
+          {BASES.map((p, i) => {
+            const full = loaded[i];
             const cards = Object.values(state.cards).filter((c) => c.id.startsWith(`${p.code}-`));
             const lessons = p.lessons.filter((l) => state.lessons[l.id]).length;
             return (
               <li key={p.code} className="word-row">
                 <span className="num">{p.flag}</span>
                 <div className="grow"><b>{p.name}</b>
-                  <div className="small muted">{lessons}/{p.lessons.length} Lektionen · {cards.length} Karten · {cards.filter(isLearned).length} gelernt · {todayQueue(Object.fromEntries(cards.map((c) => [c.id, c])), knownIn(p), { newLimit: newLimit(state), newDoneToday: newDoneToday(state) }).length} fällig</div>
+                  <div className="small muted">{lessons}/{p.lessons.length} Lektionen · {cards.length} Karten · {cards.filter(isLearned).length} gelernt · {full ? todayQueue(Object.fromEntries(cards.map((c) => [c.id, c])), knownIn(full), { newLimit: newLimit(state), newDoneToday: newDoneToday(state) }).length : '…'} fällig</div>
                 </div>
               </li>
             );
@@ -87,7 +90,7 @@ export function Progress({ ctx }: { ctx: Ctx }) {
       <section className="card">
         <h2>Deine häufigsten Fehler</h2>
         {!mistakes.length ? <p className="muted small">Noch keine erfasst. Der Coach merkt sich typische Fehler, die er in deinen Nachrichten erkennt.</p> : (
-          <ul className="list">{mistakes.map((m, i) => <li key={i} className="small">{PACKS.find((p) => p.code === m.lang)?.flag} {m.why} <span className="muted">({m.count}×)</span></li>)}</ul>
+          <ul className="list">{mistakes.map((m, i) => <li key={i} className="small">{BASES.find((p) => p.code === m.lang)?.flag} {m.why} <span className="muted">({m.count}×)</span></li>)}</ul>
         )}
       </section>
     </div>

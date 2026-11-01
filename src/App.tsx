@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { PACKS, packByCode, withScript } from './data';
+import { withScript } from './data';
+import { usePack } from './lib/usePacks';
 import type { LanguagePack } from './data/types';
 import type { AppState, StorageKind } from './lib/store';
 import { loadState, saveState, today } from './lib/store';
@@ -125,9 +126,10 @@ export default function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  const pack = useMemo(() => withScript(packByCode(state?.settings.lang ?? 'en') ?? PACKS[0], state?.settings.srScript ?? 'beide'), [state?.settings.lang, state?.settings.srScript]);
+  const rawPack = usePack(state?.settings.lang ?? 'en');
+  const pack = useMemo(() => (rawPack ? withScript(rawPack, state?.settings.srScript ?? 'beide') : undefined), [rawPack, state?.settings.srScript]);
 
-  if (!state) return <div className="loading">Polyglot AI lädt …</div>;
+  if (!state || !pack) return <div className="loading">{state ? 'Sprache wird geladen …' : 'Polyglot AI lädt …'}</div>;
   const ctx: Ctx = { state, pack, update, addActivity, go, storage, cloud, sw, claudeReady };
 
   const tabs: { v: View; icon: string; label: string }[] = [

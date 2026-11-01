@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import type { Ctx } from '../App';
-import { PACKS, withScript } from '../data';
+import { withScript } from '../data';
+import { useAllPacks } from '../lib/usePacks';
 import type { LanguagePack, Register } from '../data/types';
 import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
@@ -14,9 +15,10 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
   const [level, setLevel] = useState('');
   const [reg, setReg] = useState('');
 
+  const allPacks = useAllPacks(all);
   // Suchindex einmal pro Sprache aufbauen (schnell auch bei tausenden Einträgen)
   const index = useMemo(() => {
-    const packs = all ? PACKS.map((p) => withScript(p, ctx.state.settings.srScript)) : [ctx.pack];
+    const packs = all ? allPacks.filter((p): p is NonNullable<typeof p> => !!p).map((p) => withScript(p, ctx.state.settings.srScript)) : [ctx.pack];
     const out: Entry[] = [];
     for (const p of packs) {
       for (const w of p.words) out.push({ pack: p, id: w.id, t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, ex: w.ex, extra: w.note,
@@ -25,7 +27,7 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
         extra: `${s.situation} · ${s.effect} · Neutral: ${s.formal}${s.status === 'älter' ? ' · eher veraltet' : ''}`, search: normalize([s.t, s.tr, s.de].join(' ')) });
     }
     return out;
-  }, [all, ctx.pack, ctx.state.settings.srScript]);
+  }, [all, allPacks, ctx.pack, ctx.state.settings.srScript]);
 
   const results = useMemo(() => {
     const n = normalize(q);

@@ -9,7 +9,9 @@
     "test": "vitest run",
     "report": "vite-node scripts/report.ts",
     "missing": "vite-node scripts/missing.ts",
-    "e2e": "sh scripts/e2e.sh"
+    "e2e": "sh scripts/e2e.sh",
+    "build:artifact": "tsc && vite build --mode artifact",
+    "perf": "sh scripts/e2e.sh tests/perf.cjs"
   },
   "keywords": [],
   "author": "",
