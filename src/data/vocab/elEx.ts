@@ -1011,4 +1011,70 @@ export default `
 ο δήμος | Ο δήμος φύτεψε νέα δέντρα. | Die Stadtverwaltung hat neue Bäume gepflanzt.
 το πρόγραμμα του ταξιδιού | Το πρόγραμμα του ταξιδιού είναι πολύ γεμάτο. | Der Reiseplan ist sehr voll.
 τα αξιοθέατα | Είδαμε όλα τα αξιοθέατα σε δύο μέρες. | Wir haben alle Sehenswürdigkeiten in zwei Tagen gesehen.
+ο πεζόδρομος | Το βράδυ περπατάμε στον πεζόδρομο. | Abends spazieren wir durch die Fußgängerzone.
+το ποδήλατο | Πηγαίνω στη δουλειά με ποδήλατο. | Ich fahre mit dem Fahrrad zur Arbeit.
+η ανακύκλωση | Ο μπλε κάδος είναι για ανακύκλωση. | Die blaue Tonne ist fürs Recycling.
+η διαμονή | Η διαμονή στο ξενοδοχείο ήταν πολύ ευχάριστη. | Der Aufenthalt im Hotel war sehr angenehm.
+η ταξιδιωτική ασφάλιση | Έκανα ταξιδιωτική ασφάλιση για τις διακοπές. | Ich habe eine Reiseversicherung für den Urlaub abgeschlossen.
+το σακίδιο | Ταξιδεύω μόνο με ένα σακίδιο. | Ich reise nur mit einem Rucksack.
+η κρουαζιέρα | Κάναμε κρουαζιέρα στα νησιά. | Wir haben eine Kreuzfahrt zu den Inseln gemacht.
+ο ξεναγός | Ο ξεναγός μάς μίλησε για την Ακρόπολη. | Der Reiseführer hat uns von der Akropolis erzählt.
+ο τουρισμός | Ο τουρισμός είναι σημαντικός για την Ελλάδα. | Der Tourismus ist wichtig für Griechenland.
+κάνω ωτοστόπ | Στα νιάτα μου έκανα ωτοστόπ σε όλη την Ευρώπη. | In meiner Jugend bin ich durch ganz Europa getrampt.
+θα σας συνδέσω | Ένα λεπτό, θα σας συνδέσω με το λογιστήριο. | Einen Moment, ich verbinde Sie mit der Buchhaltung.
+μπορώ να αφήσω μήνυμα; | Δεν είναι εδώ; Μπορώ να αφήσω μήνυμα; | Er ist nicht da? Kann ich eine Nachricht hinterlassen?
+θα σας καλέσω πίσω | Είμαι σε σύσκεψη, θα σας καλέσω πίσω. | Ich bin in einer Besprechung, ich rufe Sie zurück.
+από πού καλείτε; | Από πού καλείτε, από την εταιρεία; | Von wo rufen Sie an, von der Firma?
+μπορείτε να μου το στείλετε γραπτώς; | Μπορείτε να μου το στείλετε γραπτώς με email; | Können Sie mir das schriftlich per E-Mail schicken?
+περιμένετε στη γραμμή | Περιμένετε στη γραμμή, παρακαλώ. | Bleiben Sie bitte dran.
+η γραμμή είναι κατειλημμένη | Η γραμμή είναι κατειλημμένη, ξαναπάρτε αργότερα. | Die Leitung ist besetzt, rufen Sie später wieder an.
+το τηλεφωνικό κέντρο | Το τηλεφωνικό κέντρο λειτουργεί όλο το εικοσιτετράωρο. | Die Telefonzentrale ist rund um die Uhr besetzt.
+η βιντεοκλήση | Κάνω βιντεοκλήση με τη μαμά κάθε Κυριακή. | Ich mache jeden Sonntag einen Videoanruf mit Mama.
+συγγνώμη για την ενόχληση | Συγγνώμη για την ενόχληση, έχετε ένα λεπτό; | Entschuldigen Sie die Störung, haben Sie eine Minute?
+ο τρόπος ζωής | Άλλαξα τρόπο ζωής μετά τα τριάντα. | Nach dreißig habe ich meinen Lebensstil geändert.
+η καθιστική ζωή | Η καθιστική ζωή βλάπτει την υγεία. | Die sitzende Lebensweise schadet der Gesundheit.
+χάνω κιλά | Με το περπάτημα έχασα πέντε κιλά. | Durchs Gehen habe ich fünf Kilo abgenommen.
+παίρνω κιλά | Τα Χριστούγεννα πάντα παίρνω κιλά. | An Weihnachten nehme ich immer zu.
+η μυϊκή μάζα | Για μυϊκή μάζα χρειάζεσαι πρωτεΐνη. | Für Muskelmasse brauchst du Protein.
+η αντοχή | Το τρέξιμο βελτιώνει την αντοχή. | Laufen verbessert die Ausdauer.
+ο τραυματισμός | Μετά τον τραυματισμό σταμάτησε το ποδόσφαιρο. | Nach der Verletzung hat er mit Fußball aufgehört.
+η αποκατάσταση | Η αποκατάσταση κράτησε τρεις μήνες. | Die Reha dauerte drei Monate.
+η πειθαρχία | Για να πετύχεις χρειάζεσαι πειθαρχία. | Um Erfolg zu haben, brauchst du Disziplin.
+η συνέπεια | Η συνέπεια είναι πιο σημαντική από την ένταση. | Beständigkeit ist wichtiger als Intensität.
+ο τραπεζικός λογαριασμός | Ο μισθός μπαίνει στον τραπεζικό λογαριασμό. | Das Gehalt geht aufs Bankkonto.
+η μεταφορά χρημάτων | Η μεταφορά χρημάτων έγινε χθες. | Die Überweisung wurde gestern ausgeführt.
+το IBAN | Γράψε σωστά το IBAN. | Schreib die IBAN richtig.
+η αποταμίευση | Η αποταμίευση είναι δύσκολη με χαμηλό μισθό. | Sparen ist mit niedrigem Lohn schwierig.
+τα έξοδα | Τα έξοδα του μήνα ήταν πολλά. | Die Ausgaben in diesem Monat waren hoch.
+το ΑΤΜ | Πού είναι το πιο κοντινό ΑΤΜ; | Wo ist der nächste Geldautomat?
+τι σε κάνει ευτυχισμένο; | Πες μου, τι σε κάνει ευτυχισμένο; | Sag mir, was macht dich glücklich?
+τι θα άλλαζες στη ζωή σου; | Αν μπορούσες, τι θα άλλαζες στη ζωή σου; | Wenn du könntest, was würdest du in deinem Leben ändern?
+ποιο είναι το όνειρό σου; | Ποιο είναι το όνειρό σου για το μέλλον; | Was ist dein Traum für die Zukunft?
+το όνειρο | Το όνειρό μου είναι ένα σπίτι δίπλα στη θάλασσα. | Mein Traum ist ein Haus am Meer.
+έχω την εντύπωση ότι … | Έχω την εντύπωση ότι κάτι δεν πάει καλά. | Ich habe den Eindruck, dass etwas nicht stimmt.
+αν ήσουν στη θέση μου; | Τι θα έκανες αν ήσουν στη θέση μου; | Was würdest du tun, wenn du an meiner Stelle wärst?
+μου κάνει εντύπωση | Μου κάνει εντύπωση που δεν ήρθε. | Es überrascht mich, dass er nicht gekommen ist.
+ειλικρινά | Ειλικρινά, δεν μου άρεσε η ταινία. | Ehrlich gesagt hat mir der Film nicht gefallen.
+επιτρέψτε μου να συστηθώ | Επιτρέψτε μου να συστηθώ, είμαι ο νέος συνάδελφος. | Erlauben Sie mir, mich vorzustellen, ich bin der neue Kollege.
+χαίρω πολύ για τη γνωριμία | Χαίρω πολύ για τη γνωριμία, κύριε Παπαδόπουλε. | Sehr erfreut, Herr Papadopoulos.
+η γνωριμία | Η γνωριμία μας έγινε στη δουλειά. | Wir haben uns auf der Arbeit kennengelernt.
+μπορούμε να μιλάμε στον ενικό; | Είμαστε συνάδελφοι, μπορούμε να μιλάμε στον ενικό; | Wir sind Kollegen, können wir uns duzen?
+στον πληθυντικό | Στον γιατρό μιλάμε στον πληθυντικό. | Mit dem Arzt spricht man per Sie.
+η επαγγελματική κάρτα | Σας αφήνω την επαγγελματική μου κάρτα. | Ich lasse Ihnen meine Visitenkarte da.
+με ενδιαφέρει | Η θέση με ενδιαφέρει πολύ. | Die Stelle interessiert mich sehr.
+θα τα πούμε σύντομα | Ευχαριστώ για όλα, θα τα πούμε σύντομα! | Danke für alles, wir sprechen uns bald!
+καλή αντάμωση | Καλή αντάμωση και καλό ταξίδι! | Auf baldiges Wiedersehen und gute Reise!
+στο μεταξύ | Στο μεταξύ, πίνουμε έναν καφέ. | Inzwischen trinken wir einen Kaffee.
+μέχρι τότε | Θα γυρίσω στις έξι, μέχρι τότε ξεκουράσου. | Ich komme um sechs zurück, bis dahin ruh dich aus.
+προσωρινά | Μένω προσωρινά σε έναν φίλο. | Ich wohne vorübergehend bei einem Freund.
+κάθε τόσο | Κάθε τόσο πάω στο χωριό. | Ab und zu fahre ich ins Dorf.
+σπάνια | Σπάνια βλέπω τηλεόραση. | Ich sehe selten fern.
+συνήθως | Συνήθως τρώω στις δύο. | Normalerweise esse ich um zwei.
+αμέσως | Έλα αμέσως, είναι επείγον! | Komm sofort, es ist dringend!
+πριν από λίγο | Πριν από λίγο μίλησα με τον διευθυντή. | Vor kurzem habe ich mit dem Chef gesprochen.
+σε λίγο | Σε λίγο φτάνω. | Ich bin gleich da.
+αργά ή γρήγορα | Αργά ή γρήγορα θα το μάθει. | Früher oder später wird er es erfahren.
+η ανατροφή | Η ανατροφή των παιδιών είναι δύσκολη. | Die Erziehung der Kinder ist schwierig.
+αυστηροί γονείς | Είχα αυστηρούς γονείς. | Ich hatte strenge Eltern.
+με κακομαθαίνεις | Μου φέρνεις πάλι γλυκά; Με κακομαθαίνεις! | Du bringst mir schon wieder Süßes? Du verwöhnst mich!
 `;

@@ -1024,4 +1024,68 @@ saobraćaj | Saobraćaj je jutros užasan. | Der Verkehr ist heute Morgen furcht
 javni prevoz | Javnim prevozom stižem za četrdeset minuta. | Mit den Öffentlichen bin ich in vierzig Minuten da.
 GSP | GSP je uveo nove autobuse. | Die Verkehrsbetriebe haben neue Busse eingeführt.
 reciklaža | Reciklaža u Srbiji tek počinje. | Recycling steht in Serbien noch am Anfang.
+probni rad | Na probnom radu sam tri meseca. | Ich bin drei Monate in der Probezeit.
+izvod iz matične knjige rođenih | Za pasoš treba izvod iz matične knjige rođenih. | Für den Pass braucht man eine Geburtsurkunde.
+pešačka zona | Uveče šetamo pešačkom zonom. | Abends spazieren wir durch die Fußgängerzone.
+bicikl | Na posao idem biciklom. | Ich fahre mit dem Fahrrad zur Arbeit.
+gradska vlast | Gradska vlast je obećala nove autobuse. | Die Stadtverwaltung hat neue Busse versprochen.
+rupa na putu | Upao sam u rupu na putu i pukla mi je guma. | Ich bin in ein Schlagloch gefahren und mein Reifen ist geplatzt.
+plan puta | Plan puta je veoma pun. | Der Reiseplan ist sehr voll.
+znamenitosti | Videli smo sve znamenitosti za dva dana. | Wir haben alle Sehenswürdigkeiten in zwei Tagen gesehen.
+smeštaj | Smeštaj je bio blizu plaže. | Die Unterkunft war nahe am Strand.
+niskobudžetna avio-kompanija | Leteli smo niskobudžetnom avio-kompanijom. | Wir sind mit einem Billigflieger geflogen.
+putno osiguranje | Uplatio sam putno osiguranje za odmor. | Ich habe eine Reiseversicherung für den Urlaub abgeschlossen.
+ranac | Putujem samo sa rancem. | Ich reise nur mit einem Rucksack.
+vodič | Vodič nam je pričao o tvrđavi. | Der Reiseführer hat uns von der Festung erzählt.
+turizam | Turizam u Srbiji raste. | Der Tourismus in Serbien wächst.
+stopirati | U mladosti sam stopirao po celoj Evropi. | In meiner Jugend bin ich durch ganz Europa getrampt.
+banja | Baka ide u banju svakog leta. | Oma fährt jeden Sommer zur Kur.
+spojiću vas | Trenutak, spojiću vas sa računovodstvom. | Einen Moment, ich verbinde Sie mit der Buchhaltung.
+mogu li da ostavim poruku? | Nije tu? Mogu li da ostavim poruku? | Er ist nicht da? Kann ich eine Nachricht hinterlassen?
+pozvaću vas | Na sastanku sam, pozvaću vas. | Ich bin in einer Besprechung, ich rufe Sie zurück.
+odakle zovete? | Odakle zovete, iz firme? | Von wo rufen Sie an, von der Firma?
+možete li da mi to pošaljete pismeno? | Možete li da mi to pošaljete pismeno, mejlom? | Können Sie mir das schriftlich per Mail schicken?
+sačekajte na vezi | Sačekajte na vezi, molim vas. | Bleiben Sie bitte dran.
+linija je zauzeta | Linija je zauzeta, pozovite kasnije. | Die Leitung ist besetzt, rufen Sie später an.
+video-poziv | Nedeljom imam video-poziv sa mamom. | Sonntags habe ich einen Videoanruf mit Mama.
+izvinite što smetam | Izvinite što smetam, imate li minut? | Entschuldigen Sie die Störung, haben Sie eine Minute?
+centrala | Pozovite centralu i tražite lokal deset. | Rufen Sie die Zentrale an und verlangen Sie Durchwahl zehn.
+način života | Posle tridesete sam promenio način života. | Nach dreißig habe ich meinen Lebensstil geändert.
+sedeći način života | Sedeći način života šteti zdravlju. | Die sitzende Lebensweise schadet der Gesundheit.
+smršati | Šetnjom sam smršao pet kila. | Durch Spaziergänge habe ich fünf Kilo abgenommen.
+ugojiti se | Za praznike se uvek ugojim. | An den Feiertagen nehme ich immer zu.
+mišićna masa | Za mišićnu masu treba ti protein. | Für Muskelmasse brauchst du Protein.
+izdržljivost | Trčanje poboljšava izdržljivost. | Laufen verbessert die Ausdauer.
+povreda | Posle povrede je prestao da igra fudbal. | Nach der Verletzung hat er mit Fußball aufgehört.
+oporavak | Oporavak je trajao tri meseca. | Die Erholung dauerte drei Monate.
+disciplina | Za uspeh ti treba disciplina. | Für Erfolg brauchst du Disziplin.
+doslednost | Doslednost je važnija od intenziteta. | Beständigkeit ist wichtiger als Intensität.
+bankovni račun | Plata stiže na bankovni račun. | Der Lohn kommt aufs Bankkonto.
+štednja | Štednja je teška sa malom platom. | Sparen ist mit kleinem Lohn schwer.
+troškovi | Troškovi ovog meseca su bili veliki. | Die Ausgaben in diesem Monat waren hoch.
+šta te čini srećnim? | Reci mi, šta te čini srećnim? | Sag mir, was macht dich glücklich?
+šta bi promenio u životu? | Da možeš, šta bi promenio u životu? | Wenn du könntest, was würdest du in deinem Leben ändern?
+koji ti je san? | Koji ti je san za budućnost? | Was ist dein Traum für die Zukunft?
+imam utisak da … | Imam utisak da nešto nije u redu. | Ich habe den Eindruck, dass etwas nicht stimmt.
+da si na mom mestu? | Šta bi uradio da si na mom mestu? | Was würdest du tun, wenn du an meiner Stelle wärst?
+iznenađuje me | Iznenađuje me što nije došao. | Es überrascht mich, dass er nicht gekommen ist.
+zavisi od situacije | Da li bih se preselio? Zavisi od situacije. | Ob ich umziehen würde? Kommt auf die Situation an.
+iskreno rečeno | Iskreno rečeno, film mi se nije svideo. | Ehrlich gesagt hat mir der Film nicht gefallen.
+dozvolite da se predstavim | Dozvolite da se predstavim, ja sam novi kolega. | Erlauben Sie, dass ich mich vorstelle, ich bin der neue Kollege.
+drago mi je što smo se upoznali | Drago mi je što smo se upoznali, gospodine Petroviću. | Schön, Sie kennengelernt zu haben, Herr Petrović.
+možemo li na ti? | Kolege smo, možemo li na ti? | Wir sind Kollegen, können wir uns duzen?
+vizit-karta | Ostavljam vam svoju vizit-kartu. | Ich lasse Ihnen meine Visitenkarte da.
+zanima me | Ovo radno mesto me mnogo zanima. | Diese Stelle interessiert mich sehr.
+čujemo se uskoro | Hvala na svemu, čujemo se uskoro! | Danke für alles, wir hören uns bald!
+do skorog viđenja | Do skorog viđenja i srećan put! | Bis bald und gute Reise!
+srdačno vas pozdravljam | Srdačno vas pozdravljam, Marko. | Herzliche Grüße, Marko.
+u međuvremenu | U međuvremenu ćemo popiti kafu. | Inzwischen trinken wir einen Kaffee.
+do tada | Vraćam se u šest, do tada se odmori. | Ich komme um sechs zurück, bis dahin ruh dich aus.
+privremeno | Privremeno živim kod druga. | Ich wohne vorübergehend bei einem Freund.
+s vremena na vreme | S vremena na vreme idem na selo. | Ab und zu fahre ich aufs Land.
+retko | Retko gledam televiziju. | Ich sehe selten fern.
+obično | Obično ručam u dva. | Normalerweise esse ich um zwei zu Mittag.
+odmah | Dođi odmah, hitno je! | Komm sofort, es ist dringend!
+malopre | Malopre sam razgovarao sa šefom. | Vorhin habe ich mit dem Chef gesprochen.
+uskoro | Uskoro stižem. | Ich bin bald da.
 `;

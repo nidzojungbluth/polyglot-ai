@@ -1028,4 +1028,67 @@ export default `
 я к нему́ охладе́ла | Че́стно говоря́, я к нему́ охладе́ла. | Ehrlich gesagt sind meine Gefühle für ihn abgekühlt.
 самока́т | Сын е́здит в шко́лу на самока́те. | Mein Sohn fährt mit dem Roller zur Schule.
 перерабо́тка отхо́дов | Перерабо́тка отхо́дов в Росси́и то́лько развива́ется. | Das Abfallrecycling entwickelt sich in Russland erst.
+бессро́чный догово́р | По́сле испыта́тельного сро́ка мне да́ли бессро́чный догово́р. | Nach der Probezeit bekam ich einen unbefristeten Vertrag.
+сро́чный догово́р | У меня́ сро́чный догово́р на год. | Ich habe einen befristeten Vertrag für ein Jahr.
+испыта́тельный срок | Испыта́тельный срок – три ме́сяца. | Die Probezeit beträgt drei Monate.
+вид на жи́тельство | Он получи́л вид на жи́тельство в Герма́нии. | Er hat eine Aufenthaltserlaubnis in Deutschland bekommen.
+бюрокра́тия | Бюрокра́тия сведёт меня́ с ума́. | Die Bürokratie macht mich verrückt.
+юри́ст | Юри́ст прове́рил мой догово́р. | Der Jurist hat meinen Vertrag geprüft.
+заявле́ние | Я написа́л заявле́ние на о́тпуск. | Ich habe einen Urlaubsantrag geschrieben.
+тради́ция | В на́шей семье́ есть тради́ция печь блины́. | In unserer Familie gibt es die Tradition, Pfannkuchen zu backen.
+исто́рия | Исто́рия Москвы́ о́чень интере́сная. | Die Geschichte Moskaus ist sehr interessant.
+засто́лье | На сва́дьбе бы́ло большо́е засто́лье. | Auf der Hochzeit gab es ein großes Festessen.
+загрязне́ние во́здуха | В больши́х города́х си́льное загрязне́ние во́здуха. | In großen Städten ist die Luftverschmutzung stark.
+пешехо́дная у́лица | Ве́чером мы гуля́ем по пешехо́дной у́лице. | Abends spazieren wir durch die Fußgängerstraße.
+обще́ственный тра́нспорт | Обще́ственный тра́нспорт в Москве́ рабо́тает хорошо́. | Der öffentliche Verkehr in Moskau funktioniert gut.
+велосипе́д | Я е́зжу на рабо́ту на велосипе́де. | Ich fahre mit dem Fahrrad zur Arbeit.
+мэ́рия | Мэ́рия обеща́ла но́вые авто́бусы. | Die Stadtverwaltung hat neue Busse versprochen.
+спа́льный райо́н | Мы живём в спа́льном райо́не на окра́ине. | Wir wohnen in einem Wohnviertel am Stadtrand.
+маршру́т | Мы постро́или маршру́т по Золото́му кольцу́. | Wir haben eine Route über den Goldenen Ring geplant.
+достопримеча́тельности | Мы посмотре́ли все достопримеча́тельности за два дня. | Wir haben alle Sehenswürdigkeiten in zwei Tagen gesehen.
+жильё | Жильё бы́ло ря́дом с пля́жем. | Die Unterkunft lag nahe am Strand.
+лоуко́стер | Мы лете́ли лоуко́стером. | Wir sind mit einem Billigflieger geflogen.
+страхо́вка | Без страхо́вки ви́зу не даду́т. | Ohne Versicherung bekommt man kein Visum.
+рюкза́к | Я путеше́ствую то́лько с рюкзако́м. | Ich reise nur mit einem Rucksack.
+тури́зм | Тури́зм на Байка́ле растёт. | Der Tourismus am Baikal wächst.
+автосто́п | В мо́лодости я е́здил автосто́пом по Евро́пе. | In meiner Jugend bin ich per Anhalter durch Europa gefahren.
+Золото́е кольцо́ | Ле́том мы пое́дем по Золото́му кольцу́. | Im Sommer fahren wir über den Goldenen Ring.
+соединя́ю | Мину́точку, соединя́ю с бухгалте́рией. | Einen Moment, ich verbinde mit der Buchhaltung.
+мо́жно оста́вить сообще́ние? | Его́ нет? Мо́жно оста́вить сообще́ние? | Er ist nicht da? Kann ich eine Nachricht hinterlassen?
+я вам перезвоню́ | Я на совеща́нии, я вам перезвоню́. | Ich bin in einer Besprechung, ich rufe Sie zurück.
+отку́да вы звони́те? | Отку́да вы звони́те, из компа́нии? | Von wo rufen Sie an, von der Firma?
+пришли́те, пожа́луйста, в пи́сьменном ви́де | Пришли́те, пожа́луйста, в пи́сьменном ви́де на по́чту. | Schicken Sie es bitte schriftlich per E-Mail.
+остава́йтесь на ли́нии | Остава́йтесь на ли́нии, вам отве́тят. | Bleiben Sie dran, man wird Ihnen antworten.
+за́нято | Я звоню́ ему́, но всё вре́мя за́нято. | Ich rufe ihn an, aber es ist ständig besetzt.
+видеозвоно́к | По воскресе́ньям у меня́ видеозвоно́к с ма́мой. | Sonntags habe ich einen Videoanruf mit Mama.
+извини́те за беспоко́йство | Извини́те за беспоко́йство, у вас есть мину́та? | Entschuldigen Sie die Störung, haben Sie eine Minute?
+горя́чая ли́ния | Позвони́те на горя́чую ли́нию ба́нка. | Rufen Sie die Hotline der Bank an.
+о́браз жи́зни | По́сле тридцати́ я измени́л о́браз жи́зни. | Nach dreißig habe ich meinen Lebensstil geändert.
+сидя́чий о́браз жи́зни | Сидя́чий о́браз жи́зни вреди́т здоро́вью. | Die sitzende Lebensweise schadet der Gesundheit.
+похуде́ть | Я похуде́л на пять килогра́ммов. | Ich habe fünf Kilo abgenommen.
+попра́виться | За пра́здники я попра́вился. | Über die Feiertage habe ich zugenommen.
+мы́шечная ма́сса | Для мы́шечной ма́ссы ну́жен бело́к. | Für Muskelmasse braucht man Eiweiß.
+выно́сливость | Бег улучша́ет выно́сливость. | Laufen verbessert die Ausdauer.
+тра́вма | По́сле тра́вмы он бро́сил футбо́л. | Nach der Verletzung hat er mit Fußball aufgehört.
+восстановле́ние | Восстановле́ние за́няло три ме́сяца. | Die Regeneration dauerte drei Monate.
+дисципли́на | Для успе́ха нужна́ дисципли́на. | Für Erfolg braucht man Disziplin.
+ба́нковский счёт | Зарпла́та прихо́дит на ба́нковский счёт. | Der Lohn kommt aufs Bankkonto.
+накопле́ния | Все мои́ накопле́ния ушли́ на маши́ну. | Alle meine Ersparnisse gingen fürs Auto drauf.
+расхо́ды | Расхо́ды в э́том ме́сяце бы́ли больши́е. | Die Ausgaben in diesem Monat waren hoch.
+что де́лает тебя́ счастли́вым? | Скажи́, что де́лает тебя́ счастли́вым? | Sag, was macht dich glücklich?
+что бы ты измени́л в жи́зни? | Е́сли бы мог, что бы ты измени́л в жи́зни? | Wenn du könntest, was würdest du in deinem Leben ändern?
+о чём ты мечта́ешь? | О чём ты мечта́ешь? – О до́ме у мо́ря. | Wovon träumst du? – Von einem Haus am Meer.
+у меня́ тако́е ощуще́ние, что … | У меня́ тако́е ощуще́ние, что что́-то не так. | Ich habe das Gefühl, dass etwas nicht stimmt.
+а ты бы на моём ме́сте? | Я бы отказа́лся. А ты бы на моём ме́сте? | Ich würde ablehnen. Und du an meiner Stelle?
+меня́ удивля́ет | Меня́ удивля́ет, что он не пришёл. | Es überrascht mich, dass er nicht gekommen ist.
+смотря́ по ситуа́ции | Перее́хать? Смотря́ по ситуа́ции. | Umziehen? Kommt auf die Situation an.
+че́стно говоря́ | Че́стно говоря́, фильм мне не понра́вился. | Ehrlich gesagt hat mir der Film nicht gefallen.
+разреши́те предста́виться | Разреши́те предста́виться, я ваш но́вый колле́га. | Gestatten Sie, dass ich mich vorstelle, ich bin Ihr neuer Kollege.
+рад знако́мству | Рад знако́мству, Ива́н Петро́вич. | Freut mich, Sie kennenzulernen, Iwan Petrowitsch.
+по и́мени-о́тчеству | К нача́льнику обраща́ются по и́мени-о́тчеству. | Den Chef spricht man mit Vor- und Vatersnamen an.
+мо́жно на ты? | Мы же рове́сники, мо́жно на ты? | Wir sind doch gleich alt, darf ich du sagen?
+визи́тка | Вот моя́ визи́тка. | Hier ist meine Visitenkarte.
+мне интере́сно | Мне интере́сно узна́ть бо́льше о ва́шей компа́нии. | Es interessiert mich, mehr über Ihre Firma zu erfahren.
+до ско́рой встре́чи | Спаси́бо за всё, до ско́рой встре́чи! | Danke für alles, bis bald!
+всего́ хоро́шего | До свида́ния, всего́ хоро́шего! | Auf Wiedersehen, alles Gute!
 `;
