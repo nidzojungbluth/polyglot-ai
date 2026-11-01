@@ -34,7 +34,7 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 
 ## Ladezeit
 
-App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1101 KB.
+App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1103 KB.
 
 ## Prüfstatus
 
@@ -67,8 +67,8 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 | 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.310) – Etappen 19–23: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
 | 5 | **Zwischenauftrag: Beispielsatz für jede Vokabel** – Anzeige im Beispielsatz-Block (Wortlisten, Slang, Lernkarten, Wörterbuch), Regel-Test für neue Wörter, Betonungsprüfung für russische Sätze, Nachtragen für alle vorhandenen Wörter | 🔄 läuft – Runden 1–2 (B1, ca. 200 Sätze pro Sprache) erledigt; noch ca. 1.150 Sätze pro Sprache, ca. 9 Runden |
 | 5b | **Zwischenauftrag: Umschrift jedes Beispielsatzes** – Griechisch und Russisch: lateinische Umschrift regelbasiert aus dem Satz erzeugt (passt immer zum Satz, keine doppelt gespeicherten Daten, Betonungszeichen im Russischen erhalten, Großschreibung bleibt); Serbisch: in kyrillischer Ansicht der lateinische Satz, in der Ansicht „beide“ die kyrillische Schreibweise; Englisch/Spanisch: keine Umschrift (kein Mehrwert). Anzeige zwischen Originalsatz und Übersetzung. | ✅ erledigt (gilt automatisch für alle vorhandenen und neuen Sätze) |
-| 6 | Lernsystem prüfen und verbessern (Wiederholung, schwierige Wörter, Statistik) | ⏳ geplant nach ca. 2.500 Einträgen |
-| 7 | UI/UX professionalisieren (Startseite, Navigation, Vokabeltrainer, Statistik, Animationen) | ⏳ geplant nach ca. 2.500 Einträgen |
+| 6 | Lernsystem prüfen und verbessern – **Befund:** Wiederholungslogik (SM-2) und Speicherung (IndexedDB mit Ausweichlösung, Datenmigration, Sicherung) korrekt; 3 Schwachstellen behoben: sofortiges Speichern beim Verlassen der App, verwaiste Karten nach Korrekturen ignoriert (beendeten Wiederholungen vorzeitig), Tageslimit für neue Karten (Standard 20, einstellbar) + Anzeige „morgen fällig“; Geschwindigkeit mit 3.000 Karten getestet | ✅ erledigt |
+| 7 | UI/UX professionalisieren (Startseite, Navigation, Vokabeltrainer, Statistik, Animationen) | ⏳ nächste Runde |
 | 8 | Ladezeit bei großen Wortschätzen: Sprachdaten getrennt laden (GitHub-Pages-Version) | ⏳ geplant ab ca. 3.000 Einträgen |
 | 9 | Englisch und Spanisch ausbauen (bisher ca. 40 Einträge) | ⏳ nach den drei Schwerpunktsprachen |
 | 10 | Abschlussprüfung und Dokumentation | ⏳ am Ende |
@@ -83,6 +83,9 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 - Fehlende Betonungen in russischen Beispielsätzen (u. a. Че́рез, Споко́йной, О́тпуск, и́ли) korrigiert; wird jetzt automatisch geprüft.
 - Build-Fehler durch einen Test ohne Vite-Typen behoben.
 - Umschrift verlor die Großschreibung (Satzanfänge, Namen) – behoben.
+- Letzte Antwort konnte verloren gehen, wenn die App sofort danach geschlossen wurde – jetzt wird beim Verlassen sofort gespeichert.
+- Karten zu korrigierten Einträgen zählten als fällig und beendeten eine Wiederholungsrunde vorzeitig – werden jetzt ignoriert (nicht gelöscht).
+- „Alle Slang-Karten zum Stapel“ machte über 100 Karten auf einmal fällig – jetzt Tageslimit für neue Karten.
 
 ## Messwerte
 

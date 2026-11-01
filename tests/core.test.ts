@@ -218,3 +218,43 @@ describe('Lückentext aus Beispielsatz', () => {
     expect(clozeFromExample(w('το σούπερ μάρκετ', 'Πάω στο σούπερ μάρκετ.'))?.answer).toBe('σούπερ μάρκετ');
   });
 });
+
+describe('Lernsystem: Tageswarteschlange', () => {
+  it('Wiederholungen zuerst, neue Karten nur bis zum Tageslimit, unbekannte IDs ignoriert', async () => {
+    const { newCard, review, todayQueue } = await import('../src/lib/srs');
+    const now = Date.UTC(2026, 0, 10, 12);
+    const cards: Record<string, any> = {};
+    for (let i = 0; i < 30; i++) cards[`el-v-n${i}`] = newCard(`el-v-n${i}`, now - 1000);
+    const rev = review(newCard('el-v-r1', now - 5 * 86400000), 2, now - 5 * 86400000); // seit 4 Tagen fällig
+    cards['el-v-r1'] = rev;
+    cards['el-v-alt'] = newCard('el-v-alt', now - 1000); // Eintrag existiert nicht mehr
+    const known = (id: string) => id !== 'el-v-alt';
+    const q = todayQueue(cards, known, { newLimit: 20, newDoneToday: 5, now });
+    expect(q[0].id).toBe('el-v-r1');
+    expect(q.length).toBe(1 + 15);
+    expect(q.some((c) => c.id === 'el-v-alt')).toBe(false);
+    expect(todayQueue(cards, known, { newLimit: 20, newDoneToday: 25, now }).length).toBe(1);
+  });
+  it('„morgen fällig“ zählt nur Wiederholungen bis morgen Abend', async () => {
+    const { newCard, review, dueTomorrowCount } = await import('../src/lib/srs');
+    const now = new Date(2026, 0, 10, 12).getTime();
+    const a = review(newCard('a', now), 2, now);          // +1 Tag → morgen
+    const b = review(review(newCard('b', now), 2, now), 2, now); // +6 Tage → nicht morgen
+    expect(dueTomorrowCount({ a, b, c: newCard('c', now + 3600000) }, () => true, now)).toBe(1);
+  });
+  it('Zähler für neue Karten übersteht Speichern und Sicherung', () => {
+    const s = defaultState();
+    s.newDone = { day: '2026-01-10', n: 7 };
+    const back = importBackup(exportBackup(s));
+    expect(back.newDone).toEqual({ day: '2026-01-10', n: 7 });
+    expect(back.settings.newPerDay).toBe(20);
+  });
+  it('bleibt schnell bei 3.000 Karten', async () => {
+    const { newCard, todayQueue } = await import('../src/lib/srs');
+    const cards: Record<string, any> = {};
+    for (let i = 0; i < 3000; i++) cards[`ru-v-${i}`] = newCard(`ru-v-${i}`, Date.now() - i);
+    const t0 = performance.now();
+    for (let k = 0; k < 20; k++) todayQueue(cards, () => true, { newLimit: 20, newDoneToday: 0 });
+    expect((performance.now() - t0) / 20).toBeLessThan(20);
+  });
+});

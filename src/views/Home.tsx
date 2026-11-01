@@ -1,5 +1,6 @@
 import type { Ctx } from '../App';
-import { dueCards } from '../lib/srs';
+import { knownIn, todayQueue } from '../lib/srs';
+import { newDoneToday, newLimit } from '../lib/store';
 import { streak, today } from '../lib/store';
 import { AiNotice, ProgressBar } from './ui';
 import { moduleLessons } from '../lib/course';
@@ -11,7 +12,7 @@ export function Home({ ctx }: { ctx: Ctx }) {
   const { state, pack, go } = ctx;
   const done = state.daily[today()] ?? 0;
   const goal = state.settings.dailyGoal;
-  const due = dueCards(state.cards, `${pack.code}-`).length;
+  const due = todayQueue(state.cards, knownIn(pack), { newLimit: newLimit(state), newDoneToday: newDoneToday(state) }).length;
   const st = streak(state.daily);
   const baseNext = pack.lessons.find((l) => !state.lessons[l.id]);
   const courseNext = (() => {

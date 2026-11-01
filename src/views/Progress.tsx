@@ -1,6 +1,7 @@
 import type { Ctx } from '../App';
 import { PACKS } from '../data';
-import { dueCards, isLearned } from '../lib/srs';
+import { isLearned, knownIn, todayQueue } from '../lib/srs';
+import { newDoneToday, newLimit } from '../lib/store';
 import { streak, today } from '../lib/store';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
@@ -47,7 +48,7 @@ export function Progress({ ctx }: { ctx: Ctx }) {
               <li key={p.code} className="word-row">
                 <span className="num">{p.flag}</span>
                 <div className="grow"><b>{p.name}</b>
-                  <div className="small muted">{lessons}/{p.lessons.length} Lektionen · {cards.length} Karten · {cards.filter(isLearned).length} gelernt · {dueCards(state.cards, `${p.code}-`).length} fällig</div>
+                  <div className="small muted">{lessons}/{p.lessons.length} Lektionen · {cards.length} Karten · {cards.filter(isLearned).length} gelernt · {todayQueue(Object.fromEntries(cards.map((c) => [c.id, c])), knownIn(p), { newLimit: newLimit(state), newDoneToday: newDoneToday(state) }).length} fällig</div>
                 </div>
               </li>
             );

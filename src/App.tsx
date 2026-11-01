@@ -81,6 +81,22 @@ export default function App() {
     }
   }, [state, storage, cloud]);
 
+  // Beim Verlassen/Wegwischen der App sofort speichern (iOS beendet Web-Apps im Hintergrund ohne Vorwarnung)
+  const latest = useRef<{ state: AppState | null; storage: typeof storage }>({ state: null, storage });
+  latest.current = { state, storage };
+  useEffect(() => {
+    const flush = () => {
+      const { state: s, storage: k } = latest.current;
+      if (!s) return;
+      window.clearTimeout(saveTimer.current);
+      saveState(s, k).catch(() => undefined);
+    };
+    const onVis = () => { if (document.visibilityState === 'hidden') flush(); };
+    document.addEventListener('visibilitychange', onVis);
+    window.addEventListener('pagehide', flush);
+    return () => { document.removeEventListener('visibilitychange', onVis); window.removeEventListener('pagehide', flush); };
+  }, []);
+
   useEffect(() => {
     const t = state?.settings.theme ?? 'auto';
     document.documentElement.dataset.theme = t;

@@ -21,8 +21,11 @@ export interface AppState {
     aiEnabled: boolean;
     srScript: 'beide' | 'latein' | 'kyrillisch';  // Serbisch: Schriftwahl
     cardDir: 'gemischt' | 'zu-de' | 'zu-ziel';    // Richtung der Karteikarten
+    newPerDay: number;          // Tageslimit für neue Karten (0 = kein Limit)
   };
   cards: Record<string, Card>;
+  /** Wie viele neue Karten heute schon gelernt wurden (für das Tageslimit). */
+  newDone?: { day: string; n: number };
   lessons: Record<string, { best: number; doneAt: number; via?: 'test' | 'skip' }>;
   roleplays: Record<string, number>;           // Anzahl Durchläufe
   daily: Record<string, number>;               // "YYYY-MM-DD" → Übungen
@@ -34,7 +37,7 @@ export interface AppState {
 export function defaultState(): AppState {
   return {
     schema: SCHEMA_VERSION,
-    settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true, srScript: 'beide', cardDir: 'gemischt' },
+    settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true, srScript: 'beide', cardDir: 'gemischt', newPerDay: 20 },
     cards: {}, lessons: {}, roleplays: {}, daily: {}, mistakes: {}, coach: {}, updatedAt: Date.now(),
   };
 }
@@ -57,6 +60,7 @@ export function migrate(raw: unknown): AppState {
     schema: SCHEMA_VERSION,
     settings: { ...d.settings, ...(obj(r.settings) as AppState['settings']) },
     cards,
+    newDone: r.newDone && typeof r.newDone.day === 'string' && typeof r.newDone.n === 'number' ? { day: r.newDone.day, n: r.newDone.n } : undefined,
     lessons: obj(r.lessons) as AppState['lessons'],
     roleplays: obj(r.roleplays) as AppState['roleplays'],
     daily: obj(r.daily) as AppState['daily'],
@@ -139,3 +143,8 @@ export function streak(daily: Record<string, number>, now = new Date()): number 
   while (daily[today(d)]) { n++; d.setDate(d.getDate() - 1); }
   return n;
 }
+
+/** Neue Karten, die heute schon dran waren (zählt nur für den heutigen Tag). */
+export const newDoneToday = (s: AppState, now = new Date()) => (s.newDone?.day === today(now) ? s.newDone.n : 0);
+/** Tageslimit für neue Karten; 0 heißt „kein Limit“. */
+export const newLimit = (s: AppState) => (s.settings.newPerDay > 0 ? s.settings.newPerDay : Number.MAX_SAFE_INTEGER);

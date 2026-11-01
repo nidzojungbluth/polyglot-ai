@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Ctx } from '../App';
-import { dueCards, isLearned, newCard, review, type Card, type Grade } from '../lib/srs';
+import { dueTomorrowCount, isLearned, isNew, newCard, review, todayQueue, type Card, type Grade } from '../lib/srs';
+import { newDoneToday, newLimit, today } from '../lib/store';
 import { explainSlang } from '../lib/coach';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
@@ -20,20 +21,26 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
   const [lv, setLv] = useState('');
   const [topic, setTopic] = useState('');
 
-  const due = dueCards(state.cards, prefix);
-  const deck = Object.values(state.cards).filter((c) => c.id.startsWith(prefix));
-  const hard = deck.filter(isHard).sort((a, b) => b.lapses - a.lapses);
   const lookup = useMemo(() => {
     const m = new Map<string, Item>();
     for (const w of pack.words) m.set(w.id, { t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, cat: w.cat, ex: w.ex, extra: w.note });
     for (const s of pack.slang) m.set(s.id, { t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, cat: 'slang', ex: s.ex, extra: `Wirkung: ${s.effect}` });
     return m;
   }, [pack]);
+  // Nur Karten zu Einträgen, die es (noch) gibt – alte Karten nach Korrekturen bleiben gespeichert, stören aber nicht.
+  const known = (id: string) => lookup.has(id);
+  const due = todayQueue(state.cards, known, { newLimit: newLimit(state), newDoneToday: newDoneToday(state) });
+  const deck = Object.values(state.cards).filter((c) => c.id.startsWith(prefix) && known(c.id));
+  const hard = deck.filter(isHard).sort((a, b) => b.lapses - a.lapses);
+  const tomorrow = dueTomorrowCount(state.cards, known);
+  const newWaiting = deck.filter((c) => isNew(c)).length;
 
   const slangAllowed = pack.slang.filter((s) => state.settings.slang >= 2 || s.reg !== 'vulgär');
   const slangMissing = slangAllowed.filter((s) => !state.cards[s.id]);
 
-  const start = (ids: string[], title: string) => {
+  const start = (all: string[], title: string) => {
+    const ids = all.filter((id) => lookup.has(id));
+    if (!ids.length) return;
     const pref = state.settings.cardDir;
     const dirs = ids.map((_, i) => (pref === 'gemischt' ? (i % 2 ? 'zu-ziel' : 'zu-de') : pref) as 'zu-de' | 'zu-ziel');
     setSession({ ids, dirs, title }); setPos(0); setFlipped(false);
@@ -62,7 +69,12 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
     const dir = session.dirs[pos];
     const front = dir === 'zu-de' ? item.t : item.de;
     const grade = (g: Grade) => {
-      update((s) => ({ ...s, cards: { ...s.cards, [id]: review(s.cards[id] ?? newCard(id), g) } }));
+      update((s) => {
+        const before = s.cards[id] ?? newCard(id);
+        const day = today();
+        const newDone = isNew(before) ? { day, n: (s.newDone?.day === day ? s.newDone.n : 0) + 1 } : s.newDone;
+        return { ...s, newDone, cards: { ...s.cards, [id]: review(before, g) } };
+      });
       addActivity(1);
       setFlipped(false);
       setPos(pos + 1);
@@ -115,6 +127,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
         <button className="btn primary big-btn" disabled={!due.length} onClick={() => start(due.slice(0, 30).map((c) => c.id), 'Wiederholung')}>
           {due.length ? `Jetzt wiederholen (${Math.min(30, due.length)})` : 'Nichts fällig – super!'}
         </button>
+        <p className="muted small">Morgen fällig: {tomorrow} · Neue Karten heute: {newDoneToday(state)}{state.settings.newPerDay > 0 ? ` / ${state.settings.newPerDay}` : ''}{newWaiting > 0 ? ` · ${newWaiting} neue warten` : ''}</p>
         {hard.length > 0 && <button className="btn big-btn" onClick={() => start(hard.slice(0, 20).map((c) => c.id), 'Schwierige Wörter')}>🎯 Schwierige Wörter üben ({Math.min(20, hard.length)})</button>}
         <label className="field small">Abfragerichtung
           <div className="seg">
@@ -123,8 +136,15 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
             ))}
           </div>
         </label>
+        <label className="field small">Neue Karten pro Tag
+          <div className="seg">
+            {([[10, '10'], [20, '20'], [30, '30'], [50, '50'], [0, 'alle']] as const).map(([k, l]) => (
+              <button key={k} className={state.settings.newPerDay === k ? 'on' : ''} onClick={() => update((s) => ({ ...s, settings: { ...s.settings, newPerDay: k } }))}>{l}</button>
+            ))}
+          </div>
+        </label>
         {!deck.length && <p className="muted small">Starte eine Lektion – ihre Wörter landen automatisch hier.</p>}
-        <p className="fine">Spaced Repetition: Gut gekonnte Karten kommen in immer größeren Abständen wieder. Fehler aus Lektionen und „Nochmal“ holen Karten sofort zurück; oft vergessene Wörter landen bei „Schwierig“.</p>
+        <p className="fine">Spaced Repetition: Gut gekonnte Karten kommen in immer größeren Abständen wieder. Fehler aus Lektionen und „Nochmal“ holen Karten sofort zurück; oft vergessene Wörter landen bei „Schwierig“. Neue Karten kommen höchstens bis zum Tageslimit dazu, damit es nicht zu viel auf einmal wird.</p>
       </section>
 
       <div className="seg">
