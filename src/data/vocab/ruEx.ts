@@ -583,4 +583,74 @@ export default `
 всё бу́дет хорошо́ | Успоко́йся, всё бу́дет хорошо́. | Beruhige dich, alles wird gut.
 соболе́знования | Прими́те мои́ соболе́знования. | Mein aufrichtiges Beileid.
 кри́тика | Я норма́льно отношу́сь к кри́тике. | Ich gehe gelassen mit Kritik um.
+я хочу́ тебе́ ко́е-что сказа́ть | Сядь, я хочу́ тебе́ ко́е-что сказа́ть. | Setz dich, ich möchte dir etwas sagen.
+меня́ заде́ло, что … | Меня́ заде́ло, что ты не позвони́л. | Es hat mich gekränkt, dass du nicht angerufen hast.
+в сле́дующий раз | В сле́дующий раз предупреди́ меня́. | Sag mir nächstes Mal vorher Bescheid.
+я учту́ | Спаси́бо за сове́т, я учту́. | Danke für den Rat, ich werde es berücksichtigen.
+я не знал | Извини́, я не знал, что ты боле́ешь. | Entschuldige, ich wusste nicht, dass du krank bist.
+объясне́ние | Я жду объясне́ния. | Ich warte auf eine Erklärung.
+дава́й обсу́дим | Дава́й обсу́дим э́то споко́йно. | Lass uns das in Ruhe besprechen.
+конструкти́вный | Э́то был конструкти́вный разгово́р. | Das war ein konstruktives Gespräch.
+оскорби́ть | Я не хоте́л тебя́ оскорби́ть. | Ich wollte dich nicht beleidigen.
+я не хоте́л тебя́ оби́деть | Прости́, я не хоте́л тебя́ оби́деть. | Verzeih, ich wollte dich nicht kränken.
+конце́рт | Пойдём на конце́рт в суббо́ту? | Gehen wir am Samstag ins Konzert?
+спекта́кль | Спекта́кль начина́ется в семь. | Die Aufführung beginnt um sieben.
+фестива́ль | Ле́том мы е́дем на музыка́льный фестива́ль. | Im Sommer fahren wir zu einem Musikfestival.
+входно́й биле́т | Входно́й биле́т сто́ит пятьсо́т рубле́й. | Die Eintrittskarte kostet fünfhundert Rubel.
+премье́ра | Премье́ра фи́льма в четве́рг. | Die Filmpremiere ist am Donnerstag.
+певе́ц | У певца́ замеча́тельный го́лос. | Der Sänger hat eine wunderbare Stimme.
+гру́ппа | Гру́ппа игра́ла два часа́. | Die Band hat zwei Stunden gespielt.
+балала́йка | Де́душка игра́ет на балала́йке. | Opa spielt Balalaika.
+аплоди́ровать | Все аплоди́ровали сто́я. | Alle applaudierten im Stehen.
+сце́на | Актёр вы́шел на сце́ну. | Der Schauspieler trat auf die Bühne.
+все биле́ты распро́даны | К сожале́нию, все биле́ты распро́даны. | Leider sind alle Karten ausverkauft.
+так как | Я оста́лся до́ма, так как шёл дождь. | Ich blieb zu Hause, da es regnete.
+всё равно́ | Бы́ло до́рого, но я всё равно́ купи́л. | Es war teuer, aber ich habe es trotzdem gekauft.
+та́кже | Я та́кже говорю́ по-англи́йски. | Ich spreche ebenfalls Englisch.
+то есть | Я приду́ в пя́тницу, то есть послеза́втра. | Ich komme am Freitag, das heißt übermorgen.
+води́ть маши́ну | Я не уме́ю води́ть маши́ну. | Ich kann nicht Auto fahren.
+путеше́ствовать | Я люблю́ путеше́ствовать на по́езде. | Ich reise gern mit dem Zug.
+мыть | По́сле у́жина я мо́ю посу́ду. | Nach dem Abendessen spüle ich das Geschirr.
+убира́ть | По суббо́там я убира́ю кварти́ру. | Samstags putze ich die Wohnung.
+чита́ть | Пе́ред сном я чита́ю. | Vor dem Schlafen lese ich.
+писа́ть | Я пишу́ сообще́ние ма́ме. | Ich schreibe Mama eine Nachricht.
+слу́шать | В авто́бусе я слу́шаю му́зыку. | Im Bus höre ich Musik.
+смотре́ть | Мы смо́трим футбо́л у дру́га. | Wir schauen Fußball bei einem Freund.
+говори́ть | Я немно́го говорю́ по-ру́сски. | Ich spreche ein bisschen Russisch.
+спра́шивать | Не стесня́йся спра́шивать. | Scheu dich nicht zu fragen.
+отвеча́ть | Он не отвеча́ет на сообще́ния. | Er antwortet nicht auf Nachrichten.
+забыва́ть | Я всё вре́мя забыва́ю ключи́. | Ich vergesse ständig die Schlüssel.
+понима́ть | Извини́те, я не понима́ю. | Entschuldigung, ich verstehe nicht.
+ду́мать | Я ду́маю, что бу́дет дождь. | Ich denke, dass es regnen wird.
+ве́рить | Я не ве́рю ему́. | Ich glaube ihm nicht.
+нра́виться | Мне нра́вится э́тот го́род. | Diese Stadt gefällt mir.
+реша́ть | Ты сам реша́ешь, что де́лать. | Du entscheidest selbst, was zu tun ist.
+меня́ть | Мне на́до меня́ть авто́бус в це́нтре. | Ich muss im Zentrum den Bus wechseln.
+древеси́на | Ме́бель сде́лана из натура́льной древеси́ны. | Die Möbel sind aus Naturholz.
+мета́лл | Э́та дета́ль из мета́лла. | Dieses Teil ist aus Metall.
+пластма́сса | Игру́шка сде́лана из пластма́ссы. | Das Spielzeug ist aus Kunststoff.
+стекло́ | Осторо́жно, в коро́бке стекло́. | Vorsicht, im Karton ist Glas.
+бума́га | В при́нтере нет бума́ги. | Im Drucker ist kein Papier.
+плоскогу́бцы | Дай мне плоскогу́бцы. | Gib mir die Zange.
+пила́ | Я пилю́ доску́ пило́й. | Ich säge das Brett mit der Säge.
+стремя́нка | Держи́ стремя́нку, что́бы я не упа́л. | Halt die Leiter, damit ich nicht falle.
+клей | Я скле́ил ча́шку кле́ем. | Ich habe die Tasse mit Kleber geklebt.
+верёвка | Привяжи́ груз верёвкой. | Bind die Ladung mit einem Seil fest.
+ка́бель | Ка́бель сли́шком коро́ткий. | Das Kabel ist zu kurz.
+перча́тки | Наде́нь перча́тки для коро́бок. | Zieh für die Kartons Handschuhe an.
+защи́тные очки́ | Без защи́тных очко́в не рабо́тай с дре́лью. | Ohne Schutzbrille arbeite nicht mit der Bohrmaschine.
+противошу́мные нау́шники | На ли́нии мы но́сим противошу́мные нау́шники. | An der Linie tragen wir Gehörschutz.
+га́ечный ключ | Затяни́ болт га́ечным ключо́м. | Zieh den Bolzen mit dem Schraubenschlüssel fest.
+гвоздь | Мне ну́жен гвоздь для карти́ны. | Ich brauche einen Nagel für das Bild.
+весы́ | Положи́ посы́лку на весы́. | Leg das Paket auf die Waage.
+те́хника безопа́сности | Те́хника безопа́сности – э́то са́мое ва́жное. | Arbeitssicherheit ist das Wichtigste.
+кру́глый | Мы хоти́м кру́глый стол. | Wir wollen einen runden Tisch.
+квадра́тный | Коро́бка квадра́тная. | Der Karton ist quadratisch.
+мя́гкий | Поду́шка о́чень мя́гкая. | Das Kissen ist sehr weich.
+твёрдый | Хлеб стал твёрдым. | Das Brot ist hart geworden.
+гла́дкий | Пове́рхность должна́ быть гла́дкой. | Die Oberfläche muss glatt sein.
+шерохова́тый | Стена́ шерохова́тая. | Die Wand ist rau.
+мо́крый | Оде́жда ещё мо́края. | Die Kleidung ist noch nass.
+сухо́й | Кра́ска ещё не суха́я. | Die Farbe ist noch nicht trocken.
+тупо́й | Нож тупо́й, его́ на́до наточи́ть. | Das Messer ist stumpf, man muss es schärfen.
 `;

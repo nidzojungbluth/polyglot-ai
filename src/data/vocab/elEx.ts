@@ -566,4 +566,74 @@ export default `
 την επόμενη φορά | Την επόμενη φορά πάρε με τηλέφωνο πριν. | Ruf mich nächstes Mal vorher an.
 θα το προσέξω | Έχεις δίκιο, θα το προσέξω. | Du hast recht, ich werde darauf achten.
 δεν το ήξερα | Συγγνώμη, δεν το ήξερα ότι είσαι άρρωστος. | Entschuldige, ich wusste nicht, dass du krank bist.
+δεν μου άρεσε που … | Δεν μου άρεσε που δεν με πήρες τηλέφωνο. | Mir hat nicht gefallen, dass du mich nicht angerufen hast.
+η εξήγηση | Περιμένω μια εξήγηση για την καθυστέρηση. | Ich erwarte eine Erklärung für die Verspätung.
+ας το συζητήσουμε | Ας το συζητήσουμε ήρεμα αύριο. | Lass uns morgen in Ruhe darüber reden.
+εποικοδομητικός | Ήταν μια εποικοδομητική συζήτηση. | Es war ein konstruktives Gespräch.
+προσβάλλω | Δεν ήθελα να σε προσβάλω. | Ich wollte dich nicht beleidigen.
+δεν ήταν πρόθεσή μου | Συγγνώμη, δεν ήταν πρόθεσή μου να σε στενοχωρήσω. | Entschuldige, es war nicht meine Absicht, dich traurig zu machen.
+η συναυλία | Πάμε στη συναυλία το Σάββατο; | Gehen wir am Samstag zum Konzert?
+η παράσταση | Η παράσταση αρχίζει στις εννιά. | Die Vorstellung beginnt um neun.
+το φεστιβάλ | Το καλοκαίρι πάμε στο φεστιβάλ της Επιδαύρου. | Im Sommer gehen wir zum Festival von Epidauros.
+η πρεμιέρα | Η πρεμιέρα της ταινίας είναι την Πέμπτη. | Die Premiere des Films ist am Donnerstag.
+ο τραγουδιστής | Ο τραγουδιστής έχει υπέροχη φωνή. | Der Sänger hat eine wunderbare Stimme.
+το συγκρότημα | Το συγκρότημα έπαιξε δύο ώρες. | Die Band hat zwei Stunden gespielt.
+το μπουζούκι | Ο παππούς μου παίζει μπουζούκι. | Mein Opa spielt Bouzouki.
+χειροκροτώ | Όλοι χειροκροτούσαν όρθιοι. | Alle klatschten im Stehen Beifall.
+η σκηνή | Ο ηθοποιός βγήκε στη σκηνή. | Der Schauspieler trat auf die Bühne.
+ξεπουλήθηκε | Η συναυλία ξεπουλήθηκε σε μία ώρα. | Das Konzert war in einer Stunde ausverkauft.
+το διάλειμμα της παράστασης | Στο διάλειμμα της παράστασης ήπιαμε ένα κρασί. | In der Theaterpause haben wir einen Wein getrunken.
+αν και | Αν και ήμουν κουρασμένος, βγήκα. | Obwohl ich müde war, bin ich ausgegangen.
+γι' αυτό | Βρέχει, γι' αυτό μένω σπίτι. | Es regnet, deshalb bleibe ich zu Hause.
+παρόλα αυτά | Ήταν ακριβό, παρόλα αυτά το αγόρασα. | Es war teuer, trotzdem habe ich es gekauft.
+ενώ | Ενώ μαγείρευα, χτύπησε το τηλέφωνο. | Während ich kochte, klingelte das Telefon.
+επίσης | Θέλω επίσης ένα νερό. | Ich möchte außerdem ein Wasser.
+οδηγώ | Οδηγώ κάθε μέρα στη δουλειά. | Ich fahre jeden Tag mit dem Auto zur Arbeit.
+ταξιδεύω | Το καλοκαίρι ταξιδεύω στην Κρήτη. | Im Sommer reise ich nach Kreta.
+πλένω | Πλένω τα πιάτα μετά το φαγητό. | Ich spüle das Geschirr nach dem Essen.
+καθαρίζω | Το Σάββατο καθαρίζω το σπίτι. | Am Samstag putze ich die Wohnung.
+γράφω | Γράφω μήνυμα στη μητέρα μου. | Ich schreibe meiner Mutter eine Nachricht.
+ακούω | Ακούω μουσική στο λεωφορείο. | Ich höre Musik im Bus.
+βλέπω | Από εδώ βλέπω τη θάλασσα. | Von hier aus sehe ich das Meer.
+μιλάω | Μιλάω λίγα ελληνικά. | Ich spreche ein bisschen Griechisch.
+ρωτάω | Θα ρωτήσω τον οδηγό. | Ich frage den Fahrer.
+απαντάω | Δεν μου απαντάει στα μηνύματα. | Er antwortet nicht auf meine Nachrichten.
+ξεχνάω | Πάντα ξεχνάω τα κλειδιά μου. | Ich vergesse immer meine Schlüssel.
+καταλαβαίνω | Συγγνώμη, δεν καταλαβαίνω. | Entschuldigung, ich verstehe nicht.
+σκέφτομαι | Σκέφτομαι να αλλάξω δουλειά. | Ich denke darüber nach, die Arbeit zu wechseln.
+πιστεύω | Πιστεύω ότι θα βρέξει. | Ich glaube, dass es regnen wird.
+αποφασίζω | Αποφάσισα να μάθω ελληνικά. | Ich habe beschlossen, Griechisch zu lernen.
+αλλάζω | Πρέπει να αλλάξω λεωφορείο στο κέντρο. | Ich muss im Zentrum den Bus wechseln.
+το ξύλο | Το τραπέζι είναι από ξύλο. | Der Tisch ist aus Holz.
+το μέταλλο | Αυτό το κομμάτι είναι από μέταλλο. | Dieses Teil ist aus Metall.
+το πλαστικό | Βάλε το πλαστικό στην ανακύκλωση. | Wirf den Kunststoff in den Recyclingbehälter.
+το γυαλί | Προσοχή, το κουτί έχει γυαλί μέσα. | Vorsicht, im Karton ist Glas.
+το χαρτί | Δεν έχει χαρτί στον εκτυπωτή. | Im Drucker ist kein Papier.
+η πένσα | Δώσε μου την πένσα να κόψω το σύρμα. | Gib mir die Zange, damit ich den Draht abschneide.
+το πριόνι | Κόβω τη σανίδα με το πριόνι. | Ich schneide das Brett mit der Säge.
+η σκάλα | Κράτα τη σκάλα να μην πέσω. | Halt die Leiter, damit ich nicht falle.
+η κόλλα | Κόλλησα το φλιτζάνι με κόλλα. | Ich habe die Tasse mit Kleber geklebt.
+το σχοινί | Δέσε το φορτίο με σχοινί. | Bind die Ladung mit einem Seil fest.
+το καλώδιο | Το καλώδιο είναι πολύ κοντό. | Das Kabel ist zu kurz.
+τα γάντια | Φόρεσε γάντια για τα κουτιά. | Zieh für die Kartons Handschuhe an.
+τα γυαλιά προστασίας | Χωρίς γυαλιά προστασίας δεν δουλεύεις στο τρυπάνι. | Ohne Schutzbrille arbeitest du nicht an der Bohrmaschine.
+οι ωτοασπίδες | Στη γραμμή παραγωγής φοράμε ωτοασπίδες. | An der Produktionslinie tragen wir Gehörschutz.
+η μετροταινία | Μέτρησε τον τοίχο με τη μετροταινία. | Miss die Wand mit dem Maßband.
+το γερμανικό κλειδί | Σφίξε τη βίδα με το γερμανικό κλειδί. | Zieh die Schraube mit dem Schraubenschlüssel fest.
+το καρφί | Χρειάζομαι ένα καρφί για τον πίνακα. | Ich brauche einen Nagel für das Bild.
+η ζυγαριά | Βάλε το δέμα στη ζυγαριά. | Leg das Paket auf die Waage.
+η ασφάλεια εργασίας | Η ασφάλεια εργασίας είναι το πιο σημαντικό. | Arbeitssicherheit ist das Wichtigste.
+στρογγυλός | Θέλουμε ένα στρογγυλό τραπέζι. | Wir möchten einen runden Tisch.
+τετράγωνος | Το κουτί είναι τετράγωνο. | Der Karton ist quadratisch.
+μαλακός | Το μαξιλάρι είναι πολύ μαλακό. | Das Kissen ist sehr weich.
+σκληρός | Το ψωμί έγινε σκληρό. | Das Brot ist hart geworden.
+λείος | Η επιφάνεια πρέπει να είναι λεία. | Die Oberfläche muss glatt sein.
+τραχύς | Ο τοίχος είναι τραχύς. | Die Wand ist rau.
+βρεγμένος | Τα ρούχα είναι ακόμα βρεγμένα. | Die Kleider sind noch nass.
+στεγνός | Η μπογιά δεν είναι ακόμα στεγνή. | Die Farbe ist noch nicht trocken.
+κοφτερός | Πρόσεχε, το μαχαίρι είναι κοφτερό. | Pass auf, das Messer ist scharf.
+φαρδύς | Αυτό το παντελόνι είναι πολύ φαρδύ. | Diese Hose ist sehr weit.
+στενός | Ο δρόμος είναι στενός για φορτηγό. | Die Straße ist zu schmal für einen Lkw.
+χοντρός | Πάρε ένα χοντρό μπουφάν, κάνει κρύο. | Nimm eine dicke Jacke, es ist kalt.
+βαθύς | Εδώ η θάλασσα είναι βαθιά. | Hier ist das Meer tief.
 `;

@@ -565,4 +565,74 @@ podsetnik | Stavio sam podsetnik za lekove. | Ich habe mir eine Erinnerung für 
 mnogo mi je žao | Mnogo mi je žao što nisam došao. | Es tut mir sehr leid, dass ich nicht gekommen bin.
 proći će | Ne brini, proći će. | Keine Sorge, das geht vorbei.
 glavu gore! | Glavu gore, sledeći put će biti bolje! | Kopf hoch, nächstes Mal wird es besser!
+žao mi je što to čujem | Žao mi je što to čujem, nadam se da će biti bolje. | Es tut mir leid, das zu hören, ich hoffe, es wird besser.
+mogu li da pomognem? | Izgledaš umorno. Mogu li da pomognem? | Du siehst müde aus. Kann ich helfen?
+uteha | Tvoje reči su mi bile velika uteha. | Deine Worte waren ein großer Trost für mich.
+brinem za tebe | Ne javljaš se, brinem za tebe. | Du meldest dich nicht, ich mache mir Sorgen um dich.
+biće sve u redu | Smiri se, biće sve u redu. | Beruhige dich, alles wird gut.
+kritika | Prihvatam kritiku ako je fer. | Ich nehme Kritik an, wenn sie fair ist.
+hteo bih nešto da ti kažem | Sedi, hteo bih nešto da ti kažem. | Setz dich, ich möchte dir etwas sagen.
+nije mi se svidelo što … | Nije mi se svidelo što si kasnio. | Mir hat nicht gefallen, dass du zu spät gekommen bist.
+sledeći put | Sledeći put me pozovi pre. | Ruf mich nächstes Mal vorher an.
+paziću na to | Imaš pravo, paziću na to. | Du hast recht, ich werde darauf achten.
+nisam znao | Izvini, nisam znao da si bolestan. | Entschuldige, ich wusste nicht, dass du krank bist.
+objašnjenje | Čekam objašnjenje za kašnjenje. | Ich warte auf eine Erklärung für die Verspätung.
+hajde da razgovaramo o tome | Hajde da razgovaramo o tome sutra, mirno. | Lass uns morgen in Ruhe darüber reden.
+konstruktivan | Bio je to konstruktivan razgovor. | Das war ein konstruktives Gespräch.
+uvrediti | Nisam hteo da te uvredim. | Ich wollte dich nicht beleidigen.
+nisam imao tu nameru | Izvini, nisam imao tu nameru. | Entschuldige, das war nicht meine Absicht.
+koncert | Idemo na koncert u subotu? | Gehen wir am Samstag zum Konzert?
+predstava | Predstava počinje u osam. | Die Vorstellung beginnt um acht.
+festival | Leti idemo na Egzit festival. | Im Sommer gehen wir zum Exit-Festival.
+ulaznica | Kupio sam dve ulaznice preko interneta. | Ich habe zwei Eintrittskarten online gekauft.
+premijera | Premijera filma je u četvrtak. | Die Filmpremiere ist am Donnerstag.
+pevač | Pevač ima divan glas. | Der Sänger hat eine wunderbare Stimme.
+bend | Bend je svirao dva sata. | Die Band hat zwei Stunden gespielt.
+truba | U Guči se čuje truba na svakom ćošku. | In Guča hört man an jeder Ecke Trompeten.
+aplaudirati | Svi su aplaudirali na kraju. | Am Ende haben alle applaudiert.
+bina | Glumac je izašao na binu. | Der Schauspieler trat auf die Bühne.
+pauza u predstavi | U pauzi predstave popili smo kafu. | In der Theaterpause haben wir Kaffee getrunken.
+zato | Pada kiša, zato ostajem kod kuće. | Es regnet, deshalb bleibe ich zu Hause.
+takođe | I ja takođe volim sarmu. | Ich mag Sarma ebenfalls.
+odnosno | Dolazim u ponedeljak, odnosno u utorak ujutru. | Ich komme am Montag beziehungsweise Dienstag früh.
+voziti | Svaki dan vozim do posla. | Ich fahre jeden Tag mit dem Auto zur Arbeit.
+putovati | Volim da putujem vozom. | Ich reise gern mit dem Zug.
+prati | Peremo sudove posle večere. | Wir spülen nach dem Abendessen das Geschirr.
+čistiti | Subotom čistim stan. | Samstags putze ich die Wohnung.
+čitati | Uveče čitam pre spavanja. | Abends lese ich vor dem Schlafen.
+pisati | Pišem poruku mami. | Ich schreibe Mama eine Nachricht.
+slušati | Slušam muziku u autobusu. | Ich höre Musik im Bus.
+gledati | Gledamo utakmicu kod druga. | Wir schauen das Spiel bei einem Freund.
+govoriti | Govorim malo srpski. | Ich spreche ein bisschen Serbisch.
+pitati | Pitaću vozača gde da siđem. | Ich frage den Fahrer, wo ich aussteigen soll.
+odgovoriti | Nije mi odgovorio na poruku. | Er hat nicht auf meine Nachricht geantwortet.
+zaboraviti | Zaboravio sam ključeve kod kuće. | Ich habe die Schlüssel zu Hause vergessen.
+razumeti | Izvinite, ne razumem. | Entschuldigung, ich verstehe nicht.
+misliti | Mislim da će padati kiša. | Ich denke, dass es regnen wird.
+verovati | Ne verujem mu ni reč. | Ich glaube ihm kein Wort.
+hteti | Hoću da naučim srpski. | Ich will Serbisch lernen.
+moći | Možeš li da mi pomogneš? | Kannst du mir helfen?
+sviđati se | Sviđa mi se ovaj grad. | Diese Stadt gefällt mir.
+odlučiti | Odlučio sam da promenim posao. | Ich habe beschlossen, die Arbeit zu wechseln.
+promeniti | Moram da promenim autobus u centru. | Ich muss im Zentrum den Bus wechseln.
+daska | Iseci dasku na pola. | Säg das Brett in der Mitte durch.
+metal | Ovaj deo je od metala. | Dieses Teil ist aus Metall.
+plastika | Plastiku baci u žutu kantu. | Wirf den Kunststoff in die gelbe Tonne.
+staklo | Pazi, u kutiji je staklo. | Vorsicht, im Karton ist Glas.
+papir | Nema papira u štampaču. | Im Drucker ist kein Papier.
+klešta | Daj mi klešta da isečem žicu. | Gib mir die Zange, damit ich den Draht abschneide.
+testera | Sečem dasku testerom. | Ich schneide das Brett mit der Säge.
+merdevine | Drži merdevine da ne padnem. | Halt die Leiter, damit ich nicht falle.
+lepak | Zalepio sam šolju lepkom. | Ich habe die Tasse mit Kleber geklebt.
+konopac | Veži teret konopcem. | Bind die Ladung mit einem Seil fest.
+kabl | Kabl je prekratak. | Das Kabel ist zu kurz.
+rukavice | Stavi rukavice za kutije. | Zieh für die Kartons Handschuhe an.
+zaštitne naočare | Bez zaštitnih naočara ne radiš na bušilici. | Ohne Schutzbrille arbeitest du nicht an der Bohrmaschine.
+štitnici za uši | Na liniji nosimo štitnike za uši. | An der Linie tragen wir Gehörschutz.
+francuski ključ | Pritegni zavrtanj francuskim ključem. | Zieh die Schraube mit dem verstellbaren Schlüssel fest.
+ekser | Treba mi ekser za sliku. | Ich brauche einen Nagel für das Bild.
+vaga | Stavi paket na vagu. | Leg das Paket auf die Waage.
+bezbednost na radu | Bezbednost na radu je najvažnija. | Arbeitssicherheit ist das Wichtigste.
+okrugao | Hoćemo okrugao sto. | Wir wollen einen runden Tisch.
+četvrtast | Kutija je četvrtasta. | Der Karton ist eckig.
 `;
