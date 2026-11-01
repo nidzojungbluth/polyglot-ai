@@ -636,4 +636,70 @@ export default `
 στενός | Ο δρόμος είναι στενός για φορτηγό. | Die Straße ist zu schmal für einen Lkw.
 χοντρός | Πάρε ένα χοντρό μπουφάν, κάνει κρύο. | Nimm eine dicke Jacke, es ist kalt.
 βαθύς | Εδώ η θάλασσα είναι βαθιά. | Hier ist das Meer tief.
+ρηχός | Εδώ η θάλασσα είναι ρηχή, ιδανική για παιδιά. | Hier ist das Meer flach, ideal für Kinder.
+ελαστικός | Το ύφασμα είναι ελαστικό και άνετο. | Der Stoff ist dehnbar und bequem.
+χαμηλός | Το ταβάνι είναι πολύ χαμηλό. | Die Decke ist sehr niedrig.
+σύντομος | Η συνάντηση ήταν σύντομη. | Das Treffen war kurz.
+μακρύς | Ήταν μια μακριά μέρα. | Es war ein langer Tag.
+φωτεινός | Το διαμέρισμα είναι φωτεινό και ήσυχο. | Die Wohnung ist hell und ruhig.
+σκοτεινός | Ο δρόμος είναι σκοτεινός τη νύχτα. | Die Straße ist nachts dunkel.
+πολύχρωμος | Τα παιδιά φοράνε πολύχρωμα ρούχα. | Die Kinder tragen bunte Kleidung.
+πρακτικός | Αυτή η τσάντα είναι πολύ πρακτική. | Diese Tasche ist sehr praktisch.
+άνετος | Ο καναπές είναι πολύ άνετος. | Das Sofa ist sehr bequem.
+επικίνδυνος | Αυτή η στροφή είναι επικίνδυνη. | Diese Kurve ist gefährlich.
+ασφαλής | Η γειτονιά είναι ασφαλής. | Die Gegend ist sicher.
+μοντέρνος | Έχουν μια πολύ μοντέρνα κουζίνα. | Sie haben eine sehr moderne Küche.
+ντεμοντέ | Αυτό το σακάκι είναι λίγο ντεμοντέ. | Dieses Sakko ist etwas altmodisch.
+πλήρης απασχόληση | Ψάχνω δουλειά με πλήρη απασχόληση. | Ich suche eine Vollzeitstelle.
+μερική απασχόληση | Δουλεύω με μερική απασχόληση το πρωί. | Ich arbeite vormittags in Teilzeit.
+πότε μπορείτε να ξεκινήσετε; | Μας αρέσετε. Πότε μπορείτε να ξεκινήσετε; | Sie gefallen uns. Wann können Sie anfangen?
+είμαι καλά | Μην ανησυχείς, είμαι καλά. | Keine Sorge, mir geht's gut.
+δεν είμαι καλά | Σήμερα δεν είμαι καλά, θα μείνω σπίτι. | Heute geht's mir nicht gut, ich bleibe zu Hause.
+θες να πάμε για καφέ; | Τελειώνω στις πέντε. Θες να πάμε για καφέ; | Ich bin um fünf fertig. Wollen wir einen Kaffee trinken gehen?
+το αγόρι μου | Το αγόρι μου δουλεύει σε ξενοδοχείο. | Mein Freund arbeitet in einem Hotel.
+το κορίτσι μου | Αυτή είναι η Ελένη, το κορίτσι μου. | Das ist Eleni, meine Freundin.
+είμαι ερωτευμένος | Είμαι ερωτευμένος και δεν μπορώ να κοιμηθώ. | Ich bin verliebt und kann nicht schlafen.
+σ' αγαπώ | Σ' αγαπώ πολύ, το ξέρεις. | Ich liebe dich sehr, das weißt du.
+μου δίνεις το κινητό σου; | Ήταν ωραία απόψε. Μου δίνεις το κινητό σου; | Es war schön heute Abend. Gibst du mir deine Nummer?
+καλή χρονιά | Χρόνια πολλά και καλή χρονιά σε όλους! | Alles Gute und ein frohes neues Jahr euch allen!
+Καλό Πάσχα | Καλό Πάσχα και καλή Ανάσταση! | Frohe Ostern und eine gesegnete Auferstehung!
+στην υγειά μας | Σηκώστε τα ποτήρια, στην υγειά μας! | Hebt die Gläser, auf unsere Gesundheit!
+καλό μήνα | Καλημέρα και καλό μήνα! | Guten Morgen und einen schönen Monat!
+περαστικά | Έμαθα ότι είσαι άρρωστος, περαστικά! | Ich habe gehört, dass du krank bist, gute Besserung!
+καλή επιτυχία | Αύριο έχεις εξετάσεις; Καλή επιτυχία! | Du hast morgen Prüfung? Viel Erfolg!
+μπορούμε να πληρώσουμε χωριστά; | Συγγνώμη, μπορούμε να πληρώσουμε χωριστά; | Entschuldigung, können wir getrennt zahlen?
+μου είναι μικρό | Το παπούτσι μου είναι μικρό. | Der Schuh ist mir zu klein.
+μου είναι μεγάλο | Το μπουφάν μου είναι μεγάλο, έχετε μικρότερο; | Die Jacke ist mir zu groß, haben Sie eine kleinere?
+μου έκλεισε το τηλέφωνο | Θύμωσε και μου έκλεισε το τηλέφωνο. | Er wurde wütend und hat aufgelegt.
+δεν έχω σήμα | Είμαι στο μετρό, δεν έχω σήμα. | Ich bin in der U-Bahn, ich habe keinen Empfang.
+στείλε μου φωτό | Στείλε μου φωτό από το ξενοδοχείο. | Schick mir ein Foto vom Hotel.
+είδα το μήνυμά σου | Είδα το μήνυμά σου, αλλά ήμουν στη δουλειά. | Ich hab deine Nachricht gesehen, aber ich war auf der Arbeit.
+πάρε με όταν φτάσεις | Καλό ταξίδι, πάρε με όταν φτάσεις. | Gute Reise, ruf mich an, wenn du ankommst.
+κάνω δίαιτα | Όχι γλυκό, ευχαριστώ, κάνω δίαιτα. | Kein Dessert, danke, ich mache Diät.
+τι λες; | Παντρεύεται η Μαρία; Τι λες! | Maria heiratet? Was du nicht sagst!
+μπράβο | Πέρασες το τεστ; Μπράβο! | Du hast den Test bestanden? Bravo!
+γέλασα πολύ | Είδα την ταινία χθες, γέλασα πολύ. | Ich habe den Film gestern gesehen, ich habe sehr gelacht.
+ε, καλά | Ε, καλά, αφού επιμένεις, έρχομαι. | Na gut, wenn du darauf bestehst, komme ich.
+τι κάνεις το Σαββατοκύριακο; | Τι κάνεις το Σαββατοκύριακο; Πάμε θάλασσα; | Was machst du am Wochenende? Fahren wir ans Meer?
+πόσο καιρό μένεις εδώ; | Μιλάς καλά ελληνικά! Πόσο καιρό μένεις εδώ; | Du sprichst gut Griechisch! Wie lange wohnst du schon hier?
+τι μουσική ακούς; | Τι μουσική ακούς όταν οδηγείς; | Welche Musik hörst du beim Autofahren?
+πώς πάει η δουλειά; | Πώς πάει η δουλειά στο καινούργιο μαγαζί; | Wie läuft's mit der Arbeit im neuen Laden?
+πού είναι η πιο κοντινή στάση; | Συγγνώμη, πού είναι η πιο κοντινή στάση; | Entschuldigung, wo ist die nächste Haltestelle?
+χάρηκα πολύ | Χάρηκα πολύ που σας γνώρισα. | Es hat mich sehr gefreut, Sie kennenzulernen.
+καλή συνέχεια | Ευχαριστώ για τη βοήθεια, καλή συνέχεια! | Danke für die Hilfe, weiterhin alles Gute!
+καλή εβδομάδα | Τα λέμε αύριο, καλή εβδομάδα! | Bis morgen, eine schöne Woche!
+καλό ταξίδι | Καλό ταξίδι και στείλε φωτογραφίες! | Gute Reise und schick Fotos!
+να προσέχεις | Οδηγείς νύχτα; Να προσέχεις. | Du fährst nachts? Pass auf dich auf.
+τι γίνεται; | Γεια σου, Νίκο! Τι γίνεται; | Hallo Nikos! Wie läuft's?
+πώς τα πας; | Πώς τα πας με τη νέα δουλειά; | Wie kommst du mit der neuen Arbeit zurecht?
+το μεσημέρι | Το μεσημέρι τρώμε στο σπίτι. | Mittags essen wir zu Hause.
+νωρίς | Αύριο ξυπνάω νωρίς. | Morgen stehe ich früh auf.
+αργά | Ήρθε αργά στο σπίτι. | Er kam spät nach Hause.
+πάντα | Πάντα πίνω καφέ το πρωί. | Morgens trinke ich immer Kaffee.
+ποτέ | Δεν τρώω ποτέ κρέας. | Ich esse nie Fleisch.
+συχνά | Πηγαίνουμε συχνά στο χωριό. | Wir fahren oft ins Dorf.
+πέρσι | Πέρσι πήγαμε στη Νάξο. | Letztes Jahr waren wir auf Naxos.
+του χρόνου | Του χρόνου θα πάμε στην Κρήτη. | Nächstes Jahr fahren wir nach Kreta.
+δεν το εννοούσα | Συγγνώμη, δεν το εννοούσα έτσι. | Entschuldige, ich hab's nicht so gemeint.
+φταίω εγώ | Μη μαλώνεις το παιδί, φταίω εγώ. | Schimpf nicht mit dem Kind, es ist meine Schuld.
 `;

@@ -635,4 +635,72 @@ vaga | Stavi paket na vagu. | Leg das Paket auf die Waage.
 bezbednost na radu | Bezbednost na radu je najvažnija. | Arbeitssicherheit ist das Wichtigste.
 okrugao | Hoćemo okrugao sto. | Wir wollen einen runden Tisch.
 četvrtast | Kutija je četvrtasta. | Der Karton ist eckig.
+mekan | Jastuk je veoma mekan. | Das Kissen ist sehr weich.
+tvrd | Hleb je postao tvrd. | Das Brot ist hart geworden.
+gladak | Površina mora da bude glatka. | Die Oberfläche muss glatt sein.
+hrapav | Zid je hrapav. | Die Wand ist rau.
+mokar | Veš je još mokar. | Die Wäsche ist noch nass.
+suv | Boja još nije suva. | Die Farbe ist noch nicht trocken.
+oštar | Pazi, nož je oštar. | Pass auf, das Messer ist scharf.
+tup | Nož je tup, treba ga naoštriti. | Das Messer ist stumpf, man muss es schleifen.
+širok | Ulica je široka i prometna. | Die Straße ist breit und belebt.
+uzak | Prolaz je preuzak za kamion. | Die Durchfahrt ist zu schmal für einen Lkw.
+debeo | Ponesi debelu jaknu, hladno je. | Nimm eine dicke Jacke mit, es ist kalt.
+tanak | Led je tanak, ne idi na jezero. | Das Eis ist dünn, geh nicht auf den See.
+dubok | Ovde je reka duboka. | Hier ist der Fluss tief.
+plitak | Voda je plitka, deca mogu da se kupaju. | Das Wasser ist flach, die Kinder können baden.
+kratak | Sastanak je bio kratak. | Das Treffen war kurz.
+svetao | Stan je svetao i miran. | Die Wohnung ist hell und ruhig.
+taman | Hodnik je taman, upali svetlo. | Der Flur ist dunkel, mach das Licht an.
+šaren | Deca nose šarenu odeću. | Die Kinder tragen bunte Kleidung.
+praktičan | Ova torba je veoma praktična. | Diese Tasche ist sehr praktisch.
+udoban | Kauč je veoma udoban. | Das Sofa ist sehr bequem.
+opasan | Ova krivina je opasna. | Diese Kurve ist gefährlich.
+bezbedan | Kraj je bezbedan i noću. | Die Gegend ist auch nachts sicher.
+moderan | Imaju veoma modernu kuhinju. | Sie haben eine sehr moderne Küche.
+staromodan | Ovaj sako je malo staromodan. | Dieses Sakko ist etwas altmodisch.
+radna biografija | Pošalji radnu biografiju na mejl. | Schick den Lebenslauf per Mail.
+razgovor za posao | Sutra imam razgovor za posao u magacinu. | Morgen habe ich ein Vorstellungsgespräch im Lager.
+puno radno vreme | Tražim posao sa punim radnim vremenom. | Ich suche eine Vollzeitstelle.
+kada možete da počnete? | Odgovarate nam. Kada možete da počnete? | Sie passen zu uns. Wann können Sie anfangen?
+umoran sam od posla | Umoran sam od posla, idem ranije da spavam. | Ich bin müde von der Arbeit, ich gehe früher schlafen.
+prijava boravka | Za prijavu boravka idem u policiju. | Für die Wohnsitzanmeldung gehe ich zur Polizei.
+dosadno mi je | Dosadno mi je, hajdemo negde. | Mir ist langweilig, lass uns irgendwohin gehen.
+pod stresom sam | Ove nedelje sam pod stresom zbog ispita. | Diese Woche bin ich wegen der Prüfung gestresst.
+bojim se | Bojim se pasa. | Ich habe Angst vor Hunden.
+dobro sam | Ne brini, dobro sam. | Keine Sorge, mir geht's gut.
+nisam dobro | Danas nisam dobro, ostajem kod kuće. | Heute geht's mir nicht gut, ich bleibe zu Hause.
+šta se desilo? | Zašto plačeš? Šta se desilo? | Warum weinst du? Was ist passiert?
+smiri se | Smiri se, rešićemo to. | Beruhig dich, wir lösen das.
+hoćeš da idemo na kafu? | Završavam u pet. Hoćeš da idemo na kafu? | Ich bin um fünf fertig. Wollen wir einen Kaffee trinken gehen?
+sviđaš mi se | Moram nešto da ti kažem: sviđaš mi se. | Ich muss dir etwas sagen: Du gefällst mir.
+zgodan si | Lepo izgledaš večeras, baš si zgodan. | Du siehst heute Abend gut aus, richtig schick.
+zaljubljen sam | Zaljubljen sam i ne mogu da spavam. | Ich bin verliebt und kann nicht schlafen.
+volim te | Volim te više od svega. | Ich liebe dich mehr als alles andere.
+raskinuli smo | Raskinuli smo pre mesec dana. | Wir haben uns vor einem Monat getrennt.
+daš mi broj? | Bilo je lepo. Daš mi broj? | Es war schön. Gibst du mir deine Nummer?
+srećan rođendan | Srećan rođendan, sve najbolje! | Alles Gute zum Geburtstag!
+srećna Nova godina | Srećna Nova godina svima! | Frohes neues Jahr euch allen!
+Hristos vaskrse | – Hristos vaskrse! – Vaistinu vaskrse! | – Christus ist auferstanden! – Er ist wahrhaftig auferstanden!
+na zdravlje | Podignite čaše, na zdravlje! | Hebt die Gläser, prost!
+izvoli | Izvoli, uzmi parče pite. | Bitte, nimm ein Stück Pita.
+brzo ozdravi | Čuo sam da si bolestan, brzo ozdravi! | Ich habe gehört, dass du krank bist, gute Besserung!
+Zvezda ili Partizan? | U Beogradu te uvek pitaju: Zvezda ili Partizan? | In Belgrad fragt man dich immer: Roter Stern oder Partizan?
+čitam ćirilicu | Polako čitam ćirilicu. | Ich lese langsam Kyrillisch.
+kako se piše? | Izvinite, kako se piše vaše ime? | Entschuldigung, wie schreibt man Ihren Namen?
+šta preporučujete? | Prvi put smo ovde. Šta preporučujete? | Wir sind zum ersten Mal hier. Was empfehlen Sie?
+šopska salata | Za početak jednu šopsku salatu. | Zum Anfang einen Schopska-Salat.
+nisam ovo naručio | Izvinite, nisam ovo naručio. | Entschuldigung, das habe ich nicht bestellt.
+možemo li da platimo odvojeno? | Možemo li da platimo odvojeno, molim vas? | Können wir bitte getrennt zahlen?
+sit sam | Hvala, sit sam, ne mogu više. | Danke, ich bin satt, ich kann nicht mehr.
+koji broj nosiš? | Koji broj nosiš? Hoću da ti kupim patike. | Welche Schuhgröße hast du? Ich will dir Turnschuhe kaufen.
+mogu li da probam? | Ova haljina je lepa, mogu li da probam? | Dieses Kleid ist schön, kann ich es anprobieren?
+malo mi je | Ovo mi je malo, imate li veći broj? | Das ist mir zu klein, haben Sie eine größere Größe?
+mogu li da zamenim? | Kupio sam ovo juče. Mogu li da zamenim? | Ich habe das gestern gekauft. Kann ich es umtauschen?
+autobuska stanica | Autobuska stanica je blizu železničke. | Der Busbahnhof ist nahe am Bahnhof.
+zvaću te kasnije | Sad sam na poslu, zvaću te kasnije. | Ich bin gerade auf der Arbeit, ich ruf dich später an.
+spustio mi je slušalicu | Naljutio se i spustio mi je slušalicu. | Er wurde wütend und hat aufgelegt.
+nemam signal | U liftu sam, nemam signal. | Ich bin im Aufzug, ich habe keinen Empfang.
+pošalji mi sliku | Pošalji mi sliku stana. | Schick mir ein Bild von der Wohnung.
+glasovna poruka | Poslao sam ti glasovnu poruku. | Ich habe dir eine Sprachnachricht geschickt.
 `;

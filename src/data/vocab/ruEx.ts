@@ -653,4 +653,74 @@ export default `
 мо́крый | Оде́жда ещё мо́края. | Die Kleidung ist noch nass.
 сухо́й | Кра́ска ещё не суха́я. | Die Farbe ist noch nicht trocken.
 тупо́й | Нож тупо́й, его́ на́до наточи́ть. | Das Messer ist stumpf, man muss es schärfen.
+широ́кий | У́лица широ́кая и шу́мная. | Die Straße ist breit und laut.
+у́зкий | Прое́зд сли́шком у́зкий для грузовика́. | Die Durchfahrt ist zu schmal für einen Lkw.
+то́лстый | Возьми́ то́лстую ку́ртку, хо́лодно. | Nimm eine dicke Jacke, es ist kalt.
+то́нкий | Лёд то́нкий, не ходи́ на о́зеро. | Das Eis ist dünn, geh nicht auf den See.
+глубо́кий | Здесь река́ глубо́кая. | Hier ist der Fluss tief.
+ме́лкий | Здесь ме́лко, де́ти мо́гут купа́ться. | Hier ist es flach, die Kinder können baden.
+дли́нный | Был дли́нный день. | Es war ein langer Tag.
+коро́ткий | Разгово́р был коро́тким. | Das Gespräch war kurz.
+све́тлый | Кварти́ра све́тлая и ти́хая. | Die Wohnung ist hell und ruhig.
+тёмный | В коридо́ре темно́, включи́ свет. | Im Flur ist es dunkel, mach das Licht an.
+пёстрый | На ры́нке пёстрые ковры́. | Auf dem Markt gibt es bunte Teppiche.
+практи́чный | Э́та су́мка о́чень практи́чная. | Diese Tasche ist sehr praktisch.
+удо́бный | Дива́н о́чень удо́бный. | Das Sofa ist sehr bequem.
+опа́сный | Э́тот поворо́т опа́сный. | Diese Kurve ist gefährlich.
+безопа́сный | Райо́н безопа́сный да́же но́чью. | Die Gegend ist sogar nachts sicher.
+совреме́нный | У них о́чень совреме́нная ку́хня. | Sie haben eine sehr moderne Küche.
+старомо́дный | Э́тот пиджа́к немно́го старомо́дный. | Dieses Sakko ist etwas altmodisch.
+по́лный рабо́чий день | Я ищу́ рабо́ту на по́лный рабо́чий день. | Ich suche eine Vollzeitstelle.
+когда́ вы мо́жете нача́ть? | Вы нам подхо́дите. Когда́ вы мо́жете нача́ть? | Sie passen zu uns. Wann können Sie anfangen?
+одноко́мнатная кварти́ра | Мы снима́ем одноко́мнатную кварти́ру. | Wir mieten eine Einzimmerwohnung.
+снима́ть кварти́ру | Снима́ть кварти́ру в це́нтре до́рого. | Eine Wohnung im Zentrum zu mieten ist teuer.
+с ме́белью | Я ищу́ кварти́ру с ме́белью. | Ich suche eine möblierte Wohnung.
+мне гру́стно | Мне гру́стно без тебя́. | Ohne dich bin ich traurig.
+мне ску́чно | Мне ску́чно, пойдём погуля́ем. | Mir ist langweilig, lass uns spazieren gehen.
+я в стре́ссе | Я в стре́ссе из-за экза́мена. | Ich bin gestresst wegen der Prüfung.
+я скуча́ю по тебе́ | Я о́чень скуча́ю по тебе́. | Ich vermisse dich sehr.
+у меня́ всё хорошо́ | Не волну́йся, у меня́ всё хорошо́. | Keine Sorge, bei mir ist alles gut.
+что случи́лось? | Почему́ ты пла́чешь? Что случи́лось? | Warum weinst du? Was ist passiert?
+мне оби́дно | Мне оби́дно, что ты забы́л. | Es kränkt mich, dass du es vergessen hast.
+дава́й схо́дим на ко́фе? | Я освобожу́сь в пять. Дава́й схо́дим на ко́фе? | Ich bin um fünf frei. Wollen wir einen Kaffee trinken gehen?
+ты мне нра́вишься | Я до́лжен сказа́ть: ты мне нра́вишься. | Ich muss es sagen: Du gefällst mir.
+ты о́чень краси́вая | Ты о́чень краси́вая в э́том пла́тье. | Du bist sehr schön in diesem Kleid.
+я влюби́лся | Ка́жется, я влюби́лся. | Ich glaube, ich habe mich verliebt.
+я тебя́ люблю́ | Я тебя́ люблю́ бо́льше всего́ на све́те. | Ich liebe dich mehr als alles auf der Welt.
+мы расста́лись | Мы расста́лись ме́сяц наза́д. | Wir haben uns vor einem Monat getrennt.
+дашь свой но́мер? | Бы́ло здо́рово. Дашь свой но́мер? | Es war toll. Gibst du mir deine Nummer?
+мы встреча́емся | Мы встреча́емся уже́ полго́да. | Wir sind schon ein halbes Jahr zusammen.
+с днём рожде́ния | С днём рожде́ния, всего́ са́мого лу́чшего! | Alles Gute zum Geburtstag, nur das Beste!
+с Но́вым го́дом | С Но́вым го́дом и с но́вым сча́стьем! | Frohes neues Jahr und neues Glück!
+с пра́здником | С пра́здником, дороги́е колле́ги! | Schönen Feiertag, liebe Kollegen!
+за здоро́вье | Подни́мем бока́лы за здоро́вье! | Heben wir die Gläser auf die Gesundheit!
+бу́дьте здоро́вы | – Апчхи́! – Бу́дьте здоро́вы! | – Hatschi! – Gesundheit!
+я угоща́ю | Сего́дня я угоща́ю, убери́ де́ньги. | Heute lade ich ein, steck das Geld weg.
+нечётное число́ цвето́в | На день рожде́ния да́рят нечётное число́ цвето́в. | Zum Geburtstag schenkt man eine ungerade Zahl Blumen.
+в Москве́ | Я живу́ в Москве́ уже́ два го́да. | Ich wohne schon seit zwei Jahren in Moskau.
+в Москву́ | За́втра я лечу́ в Москву́. | Morgen fliege ich nach Moskau.
+из Москвы́ | Мой друг из Москвы́. | Mein Freund ist aus Moskau.
+у меня́ нет вре́мени | Извини́, сейча́с у меня́ нет вре́мени. | Entschuldige, gerade habe ich keine Zeit.
+мно́го люде́й | В метро́ сего́дня мно́го люде́й. | In der Metro sind heute viele Leute.
+мо́жно меню́? | До́брый ве́чер, мо́жно меню́? | Guten Abend, kann ich die Karte haben?
+что вы посове́туете? | Мы здесь впервы́е. Что вы посове́туете? | Wir sind zum ersten Mal hier. Was empfehlen Sie?
+на гри́ле | Мне ры́бу на гри́ле, пожа́луйста. | Für mich den Fisch vom Grill, bitte.
+я э́то не зака́зывал | Извини́те, я э́то не зака́зывал. | Entschuldigung, das habe ich nicht bestellt.
+мо́жно оплати́ть отде́льно? | Мо́жно оплати́ть отде́льно, пожа́луйста? | Können wir bitte getrennt zahlen?
+я нае́лся | Спаси́бо, я нае́лся, бо́льше не могу́. | Danke, ich bin satt, ich kann nicht mehr.
+ещё одно́ пи́во | Ещё одно́ пи́во, пожа́луйста! | Noch ein Bier, bitte!
+мо́жно приме́рить? | Краси́вое пла́тье. Мо́жно приме́рить? | Schönes Kleid. Kann ich es anprobieren?
+мне ма́ло | Э́ти брю́ки мне ма́лы. | Diese Hose ist mir zu klein.
+мо́жно поменя́ть? | Я купи́л э́то вчера́. Мо́жно поменя́ть? | Ich habe das gestern gekauft. Kann ich es umtauschen?
+снять маши́ну | В аэропорту́ мо́жно снять маши́ну. | Am Flughafen kann man ein Auto mieten.
+он бро́сил тру́бку | Он рассерди́лся и бро́сил тру́бку. | Er wurde wütend und hat aufgelegt.
+нет свя́зи | Я в ли́фте, тут нет свя́зи. | Ich bin im Aufzug, hier gibt es keinen Empfang.
+у меня́ сел телефо́н | Извини́, у меня́ сел телефо́н. | Entschuldige, mein Handy-Akku war leer.
+я ви́дел твоё сообще́ние | Я ви́дел твоё сообще́ние, но был за рулём. | Ich habe deine Nachricht gesehen, aber ich saß am Steuer.
+поговори́м при встре́че | Э́то до́лгая исто́рия, поговори́м при встре́че. | Das ist eine lange Geschichte, reden wir persönlich.
+напиши́, как дое́дешь | Счастли́вого пути́! Напиши́, как дое́дешь. | Gute Reise! Schreib, wenn du angekommen bist.
+но́мер телефо́на | Запиши́ мой но́мер телефо́на. | Schreib dir meine Telefonnummer auf.
+я на дие́те | Без десе́рта, спаси́бо, я на дие́те. | Ohne Dessert, danke, ich bin auf Diät.
+не мо́жет быть! | Он жени́лся? Не мо́жет быть! | Er hat geheiratet? Das kann nicht sein!
+ты шу́тишь? | Ты шу́тишь? Сто е́вро за футбо́лку? | Machst du Witze? Hundert Euro für ein T-Shirt?
 `;
