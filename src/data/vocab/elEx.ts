@@ -1077,4 +1077,68 @@ export default `
 η ανατροφή | Η ανατροφή των παιδιών είναι δύσκολη. | Die Erziehung der Kinder ist schwierig.
 αυστηροί γονείς | Είχα αυστηρούς γονείς. | Ich hatte strenge Eltern.
 με κακομαθαίνεις | Μου φέρνεις πάλι γλυκά; Με κακομαθαίνεις! | Du bringst mir schon wieder Süßes? Du verwöhnst mich!
+το δάνειο | Πήραμε δάνειο για το αυτοκίνητο. | Wir haben einen Kredit fürs Auto aufgenommen.
+ο προϋπολογισμός | Πρέπει να μείνουμε μέσα στον προϋπολογισμό. | Wir müssen im Budget bleiben.
+η φορολογική δήλωση | Ο λογιστής κάνει τη φορολογική μου δήλωση. | Der Steuerberater macht meine Steuererklärung.
+η προμήθεια | Η τράπεζα κρατάει προμήθεια ένα ευρώ. | Die Bank behält einen Euro Gebühr.
+το χάσμα γενεών | Το χάσμα γενεών φαίνεται στη μουσική. | Die Generationenkluft zeigt sich in der Musik.
+μένουν ακόμα με τους γονείς τους | Πολλοί νέοι μένουν ακόμα με τους γονείς τους. | Viele junge Leute wohnen noch bei ihren Eltern.
+η συμβουλή | Χρειάζομαι μια συμβουλή από σένα. | Ich brauche einen Rat von dir.
+ανεξάρτητος | Θέλω να είμαι ανεξάρτητος οικονομικά. | Ich möchte finanziell unabhängig sein.
+ο σεβασμός | Ο σεβασμός στους μεγαλύτερους είναι σημαντικός. | Respekt vor Älteren ist wichtig.
+η εφηβεία | Η εφηβεία είναι δύσκολη ηλικία. | Die Pubertät ist ein schwieriges Alter.
+η θεία | Η θεία μου μένει στην Κρήτη. | Meine Tante wohnt auf Kreta.
+ο θείος | Ο θείος μου έχει ταβέρνα. | Mein Onkel hat eine Taverne.
+η ελληνική κουζίνα | Η ελληνική κουζίνα χρησιμοποιεί πολύ λάδι. | Die griechische Küche verwendet viel Olivenöl.
+τα υλικά | Όλα τα υλικά είναι από τη λαϊκή. | Alle Zutaten sind vom Wochenmarkt.
+φρέσκος | Το ψωμί είναι φρέσκο από τον φούρνο. | Das Brot ist frisch aus der Bäckerei.
+νηστίσιμο | Την Παρασκευή τρώμε νηστίσιμο. | Freitags essen wir Fastenspeisen.
+η νηστεία | Η νηστεία κρατάει σαράντα μέρες. | Das Fasten dauert vierzig Tage.
+η γεύση | Η σάλτσα έχει υπέροχη γεύση. | Die Soße hat einen wunderbaren Geschmack.
+πικάντικο | Το φαγητό είναι λίγο πικάντικο. | Das Essen ist etwas scharf.
+το μεσημεριανό | Το μεσημεριανό είναι στις δύο. | Das Mittagessen ist um zwei.
+το βραδινό | Για βραδινό τρώμε κάτι ελαφρύ. | Zum Abendessen essen wir etwas Leichtes.
+η ξεκούραση | Χρειάζομαι λίγη ξεκούραση. | Ich brauche etwas Erholung.
+η αϋπνία | Από το άγχος έχω αϋπνία. | Vom Stress habe ich Schlaflosigkeit.
+το κίνητρο | Μου λείπει το κίνητρο για γυμναστική. | Mir fehlt die Motivation für Sport.
+νιώθω πιεσμένος | Στη δουλειά νιώθω πιεσμένος. | Auf der Arbeit fühle ich mich unter Druck.
+αποσυνδέομαι | Το Σαββατοκύριακο αποσυνδέομαι από όλα. | Am Wochenende schalte ich von allem ab.
+η ισορροπία | Ψάχνω ισορροπία ανάμεσα σε δουλειά και ζωή. | Ich suche ein Gleichgewicht zwischen Arbeit und Leben.
+φροντίζω τον εαυτό μου | Τώρα φροντίζω περισσότερο τον εαυτό μου. | Jetzt kümmere ich mich mehr um mich selbst.
+ο κατώτατος μισθός | Ο κατώτατος μισθός δεν φτάνει για ενοίκιο. | Der Mindestlohn reicht nicht für die Miete.
+η μισθοδοσία | Η μισθοδοσία βγαίνει στο τέλος του μήνα. | Die Lohnabrechnung kommt am Monatsende.
+η σύμβαση αορίστου χρόνου | Μετά από έναν χρόνο πήρα σύμβαση αορίστου χρόνου. | Nach einem Jahr bekam ich einen unbefristeten Vertrag.
+η σύμβαση ορισμένου χρόνου | Έχω σύμβαση ορισμένου χρόνου για έξι μήνες. | Ich habe einen befristeten Vertrag für sechs Monate.
+η μερική απασχόληση | Δουλεύει με μερική απασχόληση στο σούπερ μάρκετ. | Sie arbeitet in Teilzeit im Supermarkt.
+η πλήρης απασχόληση | Ψάχνω θέση πλήρους απασχόλησης. | Ich suche eine Vollzeitstelle.
+το επίδομα ανεργίας | Το επίδομα ανεργίας είναι για έναν χρόνο. | Das Arbeitslosengeld gibt es für ein Jahr.
+η αποζημίωση απόλυσης | Η αποζημίωση απόλυσης ήταν τρεις μισθοί. | Die Abfindung betrug drei Monatsgehälter.
+η προειδοποίηση | Με απέλυσαν χωρίς προειδοποίηση. | Man hat mich ohne Vorankündigung entlassen.
+οι ασφαλιστικές εισφορές | Οι ασφαλιστικές εισφορές κόβονται από τον μισθό. | Die Sozialabgaben werden vom Lohn abgezogen.
+ο e-ΕΦΚΑ | Έλεγξα τα ένσημα στον e-ΕΦΚΑ. | Ich habe meine Versicherungszeiten beim e-EFKA geprüft.
+η επιθεώρηση εργασίας | Η επιθεώρηση εργασίας έκανε έλεγχο στην αποθήκη. | Die Arbeitsaufsicht hat das Lager kontrolliert.
+η κυκλοφοριακή συμφόρηση | Η κυκλοφοριακή συμφόρηση στην Αθήνα είναι καθημερινή. | Der Verkehrsstau in Athen ist alltäglich.
+ο ποδηλατόδρομος | Ο νέος ποδηλατόδρομος πάει μέχρι τη θάλασσα. | Der neue Radweg führt bis zum Meer.
+η ώρα αιχμής | Αποφεύγω το μετρό την ώρα αιχμής. | Ich meide die U-Bahn zur Hauptverkehrszeit.
+η στάθμευση | Η στάθμευση στο κέντρο είναι δύσκολη. | Das Parken im Zentrum ist schwierig.
+η κλήση | Η κλήση για παράνομη στάθμευση είναι σαράντα ευρώ. | Der Strafzettel fürs Falschparken kostet vierzig Euro.
+τα μέσα μαζικής μεταφοράς | Τα μέσα μαζικής μεταφοράς λειτουργούν ως τα μεσάνυχτα. | Die öffentlichen Verkehrsmittel fahren bis Mitternacht.
+η κάρτα απεριορίστων διαδρομών | Με την κάρτα απεριορίστων διαδρομών ταξιδεύω φθηνά. | Mit der Monatskarte fahre ich günstig.
+η διάβαση πεζών | Τα αυτοκίνητα δεν σταματάνε στη διάβαση πεζών. | Die Autos halten nicht am Fußgängerüberweg.
+ο δακτύλιος | Με ζυγό αριθμό δεν μπαίνεις στον δακτύλιο σήμερα. | Mit gerader Nummer darfst du heute nicht in die Innenstadtzone.
+ο λογαριασμός ρεύματος | Ο λογαριασμός ρεύματος ήρθε διπλός. | Die Stromrechnung kam doppelt so hoch.
+η κατανάλωση | Η κατανάλωση ρεύματος ανεβαίνει το καλοκαίρι. | Der Stromverbrauch steigt im Sommer.
+ο ηλιακός θερμοσίφωνας | Με τον ηλιακό θερμοσίφωνα έχουμε ζεστό νερό δωρεάν. | Mit dem Solarboiler haben wir kostenlos warmes Wasser.
+τα φωτοβολταϊκά | Βάλαμε φωτοβολταϊκά στην ταράτσα. | Wir haben eine Photovoltaikanlage aufs Dach gesetzt.
+εξοικονομώ ενέργεια | Με λάμπες LED εξοικονομώ ενέργεια. | Mit LED-Lampen spare ich Energie.
+το πετρέλαιο θέρμανσης | Το πετρέλαιο θέρμανσης ακρίβυνε πολύ. | Heizöl ist viel teurer geworden.
+το φυσικό αέριο | Η πολυκατοικία ζεσταίνεται με φυσικό αέριο. | Das Wohnhaus wird mit Erdgas geheizt.
+η ενεργειακή κλάση | Το ψυγείο έχει ενεργειακή κλάση Α. | Der Kühlschrank hat Energieeffizienzklasse A.
+το δίπλωμα οδήγησης | Δεν έχω ακόμα δίπλωμα οδήγησης. | Ich habe noch keinen Führerschein.
+το βενζινάδικο | Σταματάμε στο επόμενο βενζινάδικο. | Wir halten an der nächsten Tankstelle.
+βάζω βενζίνη | Βάζω βενζίνη είκοσι ευρώ. | Ich tanke für zwanzig Euro.
+τα διόδια | Τα διόδια μέχρι τη Θεσσαλονίκη είναι ακριβά. | Die Maut bis Thessaloniki ist teuer.
+η εθνική οδός | Πήραμε την εθνική οδό για την Πάτρα. | Wir haben die Nationalstraße nach Patras genommen.
+το ενοικιαζόμενο αυτοκίνητο | Στο νησί νοικιάσαμε ενοικιαζόμενο αυτοκίνητο. | Auf der Insel haben wir einen Mietwagen genommen.
+έπαθα λάστιχο | Έπαθα λάστιχο στη μέση του πουθενά. | Ich hatte mitten im Nirgendwo einen Platten.
 `;

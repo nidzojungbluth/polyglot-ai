@@ -1091,4 +1091,55 @@ export default `
 мне интере́сно | Мне интере́сно узна́ть бо́льше о ва́шей компа́нии. | Es interessiert mich, mehr über Ihre Firma zu erfahren.
 до ско́рой встре́чи | Спаси́бо за всё, до ско́рой встре́чи! | Danke für alles, bis bald!
 всего́ хоро́шего | До свида́ния, всего́ хоро́шего! | Auf Wiedersehen, alles Gute!
+экску́рсия | Мы пошли́ на экску́рсию по Кремлю́. | Wir haben eine Führung durch den Kreml gemacht.
+креди́т | Мы взя́ли креди́т на маши́ну. | Wir haben einen Kredit fürs Auto aufgenommen.
+бюдже́т | На́до уложи́ться в бюдже́т. | Wir müssen im Budget bleiben.
+ке́шбэк | По ка́рте мне начи́слили ке́шбэк. | Auf die Karte wurde mir Cashback gutgeschrieben.
+о́чень рад вас ви́деть | Здра́вствуйте! О́чень рад вас ви́деть. | Guten Tag! Schön, Sie zu sehen.
+тем вре́менем | Тем вре́менем мы вы́пьем ко́фе. | Inzwischen trinken wir einen Kaffee.
+до тех пор | Я верну́сь в шесть, до тех пор отдохни́. | Ich komme um sechs zurück, bis dahin ruh dich aus.
+вре́менно | Я вре́менно живу́ у дру́га. | Ich wohne vorübergehend bei einem Freund.
+вре́мя от вре́мени | Вре́мя от вре́мени я е́зжу к роди́телям. | Ab und zu fahre ich zu meinen Eltern.
+ре́дко | Я ре́дко смотрю́ телеви́зор. | Ich sehe selten fern.
+обы́чно | Обы́чно я обе́даю в два. | Normalerweise esse ich um zwei zu Mittag.
+сра́зу | Приходи́ сра́зу, э́то сро́чно! | Komm sofort, es ist dringend!
+неда́вно | Я неда́вно перее́хал. | Ich bin vor kurzem umgezogen.
+ско́ро | Ско́ро Но́вый год. | Bald ist Neujahr.
+ра́но и́ли по́здно | Ра́но и́ли по́здно он узна́ет пра́вду. | Früher oder später erfährt er die Wahrheit.
+воспита́ние | Хоро́шее воспита́ние ви́дно сра́зу. | Eine gute Erziehung sieht man sofort.
+стро́гие роди́тели | У меня́ бы́ли стро́гие роди́тели. | Ich hatte strenge Eltern.
+ты меня́ балу́ешь | Опя́ть пиро́г? Ты меня́ балу́ешь! | Schon wieder Kuchen? Du verwöhnst mich!
+конфли́кт поколе́ний | Конфли́кт поколе́ний ви́ден в му́зыке. | Der Generationenkonflikt zeigt sich in der Musik.
+живёт с роди́телями | Мой брат ещё живёт с роди́телями. | Mein Bruder wohnt noch bei den Eltern.
+сове́т | Мне ну́жен твой сове́т. | Ich brauche deinen Rat.
+самостоя́тельный | Я хочу́ быть самостоя́тельным. | Ich möchte selbstständig sein.
+уваже́ние | Уваже́ние к ста́ршим о́чень ва́жно. | Respekt vor Älteren ist sehr wichtig.
+тётя | Моя́ тётя живёт в Каза́ни. | Meine Tante wohnt in Kasan.
+дя́дя | У дя́ди своя́ мастерска́я. | Mein Onkel hat eine eigene Werkstatt.
+семе́йный пра́здник | На семе́йный пра́здник собрали́сь все ро́дственники. | Zum Familienfest kamen alle Verwandten.
+ру́сская ку́хня | Ру́сская ку́хня – э́то не то́лько борщ. | Die russische Küche ist nicht nur Borschtsch.
+вкус | У со́уса замеча́тельный вкус. | Die Soße hat einen wunderbaren Geschmack.
+о́стрый | Э́тот суп сли́шком о́стрый. | Diese Suppe ist zu scharf.
+комплиме́нт от шеф-по́вара | Нам принесли́ комплиме́нт от шеф-по́вара. | Man hat uns einen Gruß aus der Küche gebracht.
+обе́д | Обе́д в два часа́. | Das Mittagessen ist um zwei.
+у́жин | На у́жин мы еди́м что́-то лёгкое. | Zum Abendessen essen wir etwas Leichtes.
+за́втрак | На за́втрак у меня́ ка́ша. | Zum Frühstück habe ich Brei.
+соле́нья | Ба́бушкины соле́нья са́мые вку́сные. | Omas eingelegtes Gemüse ist das leckerste.
+выгора́ние | По́сле трёх лет ночны́х смен у него́ выгора́ние. | Nach drei Jahren Nachtschicht hat er ein Burnout.
+истоще́ние | Я чу́вствую по́лное истоще́ние. | Ich fühle mich völlig erschöpft.
+бессо́нница | От стре́сса у меня́ бессо́нница. | Vom Stress habe ich Schlaflosigkeit.
+мотива́ция | Мне не хвата́ет мотива́ции для спо́рта. | Mir fehlt die Motivation für Sport.
+я под давле́нием | На рабо́те я постоя́нно под давле́нием. | Auf der Arbeit stehe ich ständig unter Druck.
+отключи́ться | В выходны́е я хочу́ по́лностью отключи́ться. | Am Wochenende will ich komplett abschalten.
+бала́нс | Я ищу́ бала́нс ме́жду рабо́той и жи́знью. | Ich suche einen Ausgleich zwischen Arbeit und Leben.
+невозмути́мость | Его́ невозмути́мость меня́ успока́ивает. | Seine Gelassenheit beruhigt mich.
+забо́титься о себе́ | Ва́жно забо́титься о себе́. | Es ist wichtig, sich um sich selbst zu kümmern.
+срок предупрежде́ния | Срок предупрежде́ния – две неде́ли. | Die Kündigungsfrist beträgt zwei Wochen.
+страховы́е взно́сы | Страховы́е взно́сы пла́тит работода́тель. | Die Sozialabgaben zahlt der Arbeitgeber.
+транспо́ртный колла́пс | По́сле снегопа́да в го́роде транспо́ртный колла́пс. | Nach dem Schneefall herrscht in der Stadt Verkehrschaos.
+велодоро́жка | Велодоро́жка идёт вдоль реки́. | Der Radweg führt am Fluss entlang.
+штраф за парко́вку | Я получи́л штраф за парко́вку. | Ich habe einen Strafzettel fürs Parken bekommen.
+ка́ршеринг | Я по́льзуюсь ка́ршерингом вме́сто свое́й маши́ны. | Ich nutze Carsharing statt eines eigenen Autos.
+потребле́ние | Потребле́ние электри́чества растёт зимо́й. | Der Stromverbrauch steigt im Winter.
+центра́льное отопле́ние | Центра́льное отопле́ние включа́ют в октябре́. | Die Zentralheizung wird im Oktober eingeschaltet.
 `;

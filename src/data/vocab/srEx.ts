@@ -1088,4 +1088,56 @@ obično | Obično ručam u dva. | Normalerweise esse ich um zwei zu Mittag.
 odmah | Dođi odmah, hitno je! | Komm sofort, es ist dringend!
 malopre | Malopre sam razgovarao sa šefom. | Vorhin habe ich mit dem Chef gesprochen.
 uskoro | Uskoro stižem. | Ich bin bald da.
+uplata | Uplata je stigla jutros. | Die Überweisung ist heute Morgen angekommen.
+kredit | Uzeli smo kredit za auto. | Wir haben einen Kredit fürs Auto aufgenommen.
+budžet | Moramo da ostanemo u okviru budžeta. | Wir müssen im Budget bleiben.
+pre ili kasnije | Pre ili kasnije će saznati istinu. | Früher oder später wird er die Wahrheit erfahren.
+vaspitanje | Dobro vaspitanje se vidi odmah. | Eine gute Erziehung sieht man sofort.
+strogi roditelji | Imao sam stroge roditelje. | Ich hatte strenge Eltern.
+razmazio si me | Opet kolači? Razmazio si me! | Schon wieder Kuchen? Du hast mich verwöhnt!
+jaz između generacija | Jaz između generacija se vidi u muzici. | Die Generationenkluft zeigt sich in der Musik.
+još žive sa roditeljima | Mnogi mladi još žive sa roditeljima. | Viele junge Leute wohnen noch bei den Eltern.
+savet | Treba mi tvoj savet. | Ich brauche deinen Rat.
+samostalan | Želim da budem finansijski samostalan. | Ich möchte finanziell selbstständig sein.
+poštovanje | Poštovanje prema starijima je važno. | Respekt vor Älteren ist wichtig.
+tetka | Moja tetka živi u Kraljevu. | Meine Tante wohnt in Kraljevo.
+stric | Stric ima kafanu na selu. | Mein Onkel hat ein Lokal im Dorf.
+porodično okupljanje | Za Božić imamo veliko porodično okupljanje. | Zu Weihnachten haben wir ein großes Familientreffen.
+srpska kuhinja | Srpska kuhinja je bogata mesom. | Die serbische Küche ist fleischreich.
+svež | Hleb je svež iz pekare. | Das Brot ist frisch aus der Bäckerei.
+posno | Petkom jedemo posno. | Freitags essen wir Fastenspeisen.
+ukus | Sos ima divan ukus. | Die Soße hat einen wunderbaren Geschmack.
+ljuto | Ovo je baš ljuto! | Das ist richtig scharf!
+ručak | Ručak je u dva. | Das Mittagessen ist um zwei.
+večera | Za večeru jedemo nešto lagano. | Zum Abendessen essen wir etwas Leichtes.
+sagorevanje | Posle tri godine noćnih smena dobio je sagorevanje. | Nach drei Jahren Nachtschicht bekam er ein Burnout.
+iscrpljenost | Osećam potpunu iscrpljenost. | Ich fühle mich völlig erschöpft.
+nesanica | Od stresa imam nesanicu. | Vom Stress habe ich Schlaflosigkeit.
+motivacija | Fali mi motivacija za vežbanje. | Mir fehlt die Motivation zum Trainieren.
+pod pritiskom sam | Na poslu sam stalno pod pritiskom. | Auf der Arbeit stehe ich ständig unter Druck.
+isključiti se | Vikendom se potpuno isključim. | Am Wochenende schalte ich komplett ab.
+balans | Tražim balans između posla i života. | Ich suche einen Ausgleich zwischen Arbeit und Leben.
+smirenost | Njegova smirenost mi pomaže. | Seine Gelassenheit hilft mir.
+brinem o sebi | Sada više brinem o sebi. | Jetzt kümmere ich mich mehr um mich.
+minimalna zarada | Minimalna zarada nije dovoljna za kiriju. | Der Mindestlohn reicht nicht für die Miete.
+ugovor na neodređeno | Posle godinu dana dobio sam ugovor na neodređeno. | Nach einem Jahr bekam ich einen unbefristeten Vertrag.
+ugovor na određeno | Imam ugovor na određeno, šest meseci. | Ich habe einen befristeten Vertrag, sechs Monate.
+nepuno radno vreme | Radi sa nepunim radnim vremenom u prodavnici. | Sie arbeitet in Teilzeit im Laden.
+Nacionalna služba za zapošljavanje | Prijavio sam se na Nacionalnu službu za zapošljavanje. | Ich habe mich beim Arbeitsamt gemeldet.
+saobraćajni kolaps | Posle snega je bio saobraćajni kolaps. | Nach dem Schnee gab es einen Verkehrskollaps.
+biciklistička staza | Biciklistička staza ide pored Dunava. | Der Radweg führt an der Donau entlang.
+parkiranje | Parkiranje u centru je skupo. | Parken im Zentrum ist teuer.
+kazna za parkiranje | Dobio sam kaznu za parkiranje. | Ich habe einen Strafzettel fürs Parken bekommen.
+parking zona | Ovo je crvena parking zona, samo sat vremena. | Das ist die rote Parkzone, nur eine Stunde.
+gradska vožnja | U gradskoj vožnji auto troši više. | Im Stadtverkehr verbraucht das Auto mehr.
+potrošnja | Potrošnja struje raste zimi. | Der Stromverbrauch steigt im Winter.
+centralno grejanje | Stan ima centralno grejanje. | Die Wohnung hat Fernwärme.
+solarni paneli | Postavili smo solarne panele na krov. | Wir haben Solarpaneele aufs Dach gesetzt.
+štedeti energiju | LED sijalicama štedimo energiju. | Mit LED-Lampen sparen wir Energie.
+drva | Deda još loži na drva. | Opa heizt noch mit Holz.
+gas | Kuvamo na gas. | Wir kochen mit Gas.
+kontejner za reciklažu | Plastiku baci u kontejner za reciklažu. | Wirf den Kunststoff in den Recyclingcontainer.
+energetski razred | Frižider ima energetski razred A. | Der Kühlschrank hat Energieeffizienzklasse A.
+vozačka dozvola | Još nemam vozačku dozvolu. | Ich habe noch keinen Führerschein.
+sipati gorivo | Moram da sipam gorivo pre puta. | Ich muss vor der Fahrt tanken.
 `;
