@@ -109,7 +109,7 @@ export default `
 транспо́ртный колла́пс | Verkehrskollaps | phr | n
 велодоро́жка | Radweg | n.f | n
 электросамока́т | E-Scooter | n.m | n
-выделенная полоса́ | Busspur | phr | n
+вы́деленная полоса́ | Busspur | phr | n
 час пик | Hauptverkehrszeit | phr | n
 @ парко́вка | Parken, Parkplatz | n.f | n
 штраф за парко́вку | Strafzettel fürs Parken | phr | n

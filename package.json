@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "report": "vite-node scripts/report.ts"
   },
   "keywords": [],
   "author": "",

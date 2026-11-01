@@ -111,3 +111,25 @@ describe('Großer Wortschatz – Datenqualität', () => {
     }
   });
 });
+
+describe('Datenqualität – automatische Sprachprüfung', () => {
+  const ALLOW_RU = new Set(['нибудь', 'либо', 'ахаха', 'хаха', 'ахах']);
+  it('Russisch: jedes mehrsilbige Wort hat ein Betonungszeichen (oder ё)', () => {
+    const ru = PACKS.find((p) => p.code === 'ru')!;
+    const missing: string[] = [];
+    for (const w of [...ru.words, ...ru.slang]) {
+      for (const x of w.t.split(/[\s\-–—/,.!?;:…()«»"]+/).filter(Boolean)) {
+        const vowels = (x.match(/[аеёиоуыэюя]/gi) || []).length;
+        if (vowels >= 2 && !/́|ё/i.test(x) && !/^[А-ЯЁ]{2,}$/.test(x) && !ALLOW_RU.has(x.toLowerCase())) missing.push(w.t);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+  it('Serbisch: lateinische Einträge enthalten keine kyrillischen Buchstaben', () => {
+    const sr = PACKS.find((p) => p.code === 'sr')!;
+    expect([...sr.words, ...sr.slang].filter((w) => /[Ѐ-ӿ]/.test(w.t)).map((w) => w.t)).toEqual([]);
+  });
+  it('alle Einträge haben eine deutsche Übersetzung', () => {
+    for (const p of PACKS) expect([...p.words, ...p.slang].filter((w) => !w.de || w.de.trim().length < 2).map((w) => w.t)).toEqual([]);
+  });
+});

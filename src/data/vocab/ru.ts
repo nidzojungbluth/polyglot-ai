@@ -298,7 +298,7 @@ export default `
 ## topic=youth level=A2 kind=slang title=Разгово́рный язы́к
 чё | was (= что) | l | locker | 0 | ganz Russland | gesprochen und im Chat | sehr informell; im Job schriftlich vermeiden | что | Чё де́лаешь? | Was machst du? | aktuell
 щас | gleich, jetzt (= сейча́с) | l | locker | 0 | ganz Russland | gesprochen und im Chat | informell | сейча́с | Щас приду́! | Bin gleich da! | aktuell
-ваще | total, überhaupt (= вообще́) | l | locker | 0 | ganz Russland | gesprochen und im Chat | informell | вообще́ | Ваще не зна́ю. | Hab keine Ahnung. | aktuell
+ваще́ | total, überhaupt (= вообще́) | l | locker | 0 | ganz Russland | gesprochen und im Chat | informell | вообще́ | Ваще́ не зна́ю. | Hab keine Ahnung. | aktuell
 го | los, lass uns (aus engl. „go“) | j | locker | 0 | Internet, Jugend | Chat, Gaming, Verabredungen | jugendlich | пошли́ | Го в кино́? | Gehen wir ins Kino? | aktuell
 прико́л | Spaß, Gag | s | locker | 0 | ganz Russland | beim Erzählen | locker | шу́тка | В чём прико́л? | Was ist daran witzig? | aktuell
 прико́льно | witzig, cool | s | freundlich | 0 | ganz Russland | Reaktion auf etwas Lustiges | positiv | интере́сно / здо́рово | Прико́льно! | Cool! | aktuell
