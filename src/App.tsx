@@ -148,6 +148,7 @@ export default function App() {
         </button>
       </header>
       <main className="content">
+        <div className="view" key={`${view}:${arg ?? ''}`}>
         {view === 'home' && <Home ctx={ctx} />}
         {view === 'lesson' && arg && <LessonPlayer ctx={ctx} lessonId={arg} />}
         {view === 'courses' && <Courses key={arg ?? 'all'} ctx={ctx} moduleId={arg} />}
@@ -160,6 +161,7 @@ export default function App() {
         {view === 'settings' && <Settings ctx={ctx} />}
         {view === 'langs' && <Languages ctx={ctx} />}
         {view === 'more' && <MorePage ctx={ctx} />}
+        </div>
       </main>
       {toast && <div className="toast" role="status">{toast}</div>}
       <nav className="tabbar" aria-label="Hauptnavigation">

@@ -30,7 +30,7 @@ p { margin: 0.4rem 0; }
 .topbar { position: sticky; top: 0; z-index: 5; display: flex; justify-content: space-between; align-items: center;
   padding: 10px max(16px, env(safe-area-inset-left)); background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
-.brand { background: none; border: 0; font-weight: 800; font-size: 1.15rem; padding: 6px 0; cursor: pointer; }
+.brand { background: none; border: 0; font-weight: 800; font-size: 1.15rem; padding: 6px 0; min-height: 44px; cursor: pointer; }
 .brand span { color: var(--primary); }
 .langchip { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 8px 14px; min-height: 44px; cursor: pointer; }
 .content { max-width: 680px; margin: 0 auto; padding: 16px max(16px, env(safe-area-inset-right)) calc(var(--tabbar) + 28px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); }
@@ -72,6 +72,8 @@ p { margin: 0.4rem 0; }
 
 .list { list-style: none; margin: 0; padding: 0; }
 .list > li + li { border-top: 1px solid var(--line); }
+/* Liste als Karte: Karten-Innenabstand behalten (sonst klebt der Inhalt am Rand und Symbole werden abgeschnitten) */
+.card.list { padding: 4px 14px; }
 .list-btn { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 2px; background: none; border: 0; text-align: left; min-height: 56px; cursor: pointer; }
 .list-btn.selected b { color: var(--primary); }
 .num { width: 36px; height: 36px; flex: none; display: grid; place-items: center; border-radius: 12px; background: var(--chip); font-weight: 700; }
@@ -152,9 +154,14 @@ input[type=checkbox] { width: 24px; height: 24px; accent-color: var(--primary); 
 .toast { position: fixed; left: 16px; right: 16px; bottom: calc(var(--tabbar) + 20px + env(safe-area-inset-bottom)); background: var(--text); color: var(--bg); padding: 12px 16px; border-radius: 14px; z-index: 20; text-align: center; }
 .planned { display: flex; flex-wrap: wrap; }
 [dir='rtl'] .bubble.assistant { border-bottom-left-radius: 18px; border-bottom-right-radius: 6px; }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+/* Dezenter Übergang beim Seitenwechsel */
+@keyframes view-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.content > .view { animation: view-in .18s ease-out; }
+/* Sichtbare Fokus-Markierung für Tastatur und Bedienungshilfen */
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 
-.levels { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+.levels { display: grid; grid-template-columns: repeat(6, minmax(44px, 1fr)); gap: 4px; }
 .lv { border: 1px solid var(--line); background: var(--card); border-radius: 12px; min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; }
 .lv span { font-size: 0.7rem; color: var(--muted); }
 .lv.on { background: var(--primary); color: var(--primary-text); border-color: var(--primary); }
