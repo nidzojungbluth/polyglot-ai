@@ -774,4 +774,74 @@ uzeti | Uzeću taksi do aerodroma. | Ich nehme ein Taxi zum Flughafen.
 doneti | Doneću vino za večeru. | Ich bringe Wein zum Abendessen mit.
 ostati | Danas ostajem kod kuće. | Heute bleibe ich zu Hause.
 otići | Moram da odem ranije. | Ich muss früher gehen.
+izgubiti | Izgubio sam ključeve. | Ich habe die Schlüssel verloren.
+doći | Hoćeš li doći na rođendan? | Kommst du zum Geburtstag?
+vratiti se | Vraćam se kući u šest. | Ich komme um sechs nach Hause zurück.
+ući | Uđi, otvoreno je. | Komm rein, es ist offen.
+izaći | Večeras izlazimo u grad. | Heute Abend gehen wir in die Stadt aus.
+sesti | Sedi, molim te. | Setz dich bitte.
+ustati | Ustajem u šest ujutru. | Ich stehe um sechs Uhr morgens auf.
+hodati | Hodam pola sata svaki dan. | Ich gehe jeden Tag eine halbe Stunde zu Fuß.
+trčati | Trčim u parku ujutru. | Morgens laufe ich im Park.
+velik | Njihova kuća je velika. | Ihr Haus ist groß.
+mali | Stan je mali, ali svetao. | Die Wohnung ist klein, aber hell.
+nov | Kupio sam nov telefon. | Ich habe ein neues Handy gekauft.
+dobar | On je veoma dobar čovek. | Er ist ein sehr guter Mensch.
+loš | Danas je loše vreme. | Heute ist schlechtes Wetter.
+lak | Test je bio lak. | Der Test war leicht.
+brz | Voz je brži od autobusa. | Der Zug ist schneller als der Bus.
+spor | Internet je danas spor. | Das Internet ist heute langsam.
+topao | Hoću topao čaj. | Ich möchte einen warmen Tee.
+hladan | Pivo je lepo hladno. | Das Bier ist schön kalt.
+pun | Autobus je pun. | Der Bus ist voll.
+prazan | Frižider je prazan. | Der Kühlschrank ist leer.
+otvoren | Apoteka je otvorena do devet. | Die Apotheke ist bis neun geöffnet.
+zatvoren | Nedeljom je pošta zatvorena. | Sonntags ist die Post geschlossen.
+čist | Soba je čista. | Das Zimmer ist sauber.
+prljav | Odeća mi je prljava od posla. | Meine Kleidung ist von der Arbeit schmutzig.
+lagan | Ova kutija je lagana. | Dieser Karton ist leicht.
+tih | Kraj je tih i miran. | Die Gegend ist still und ruhig.
+bučan | Ulica je bučna noću. | Die Straße ist nachts laut.
+tačan | Tvoj odgovor je tačan. | Deine Antwort ist richtig.
+pogrešan | Seo sam u pogrešan autobus. | Ich bin in den falschen Bus gestiegen.
+isti | Radimo u istoj firmi. | Wir arbeiten in derselben Firma.
+različit | Život ovde je potpuno različit. | Das Leben hier ist ganz anders.
+važan | To mi je veoma važno. | Das ist mir sehr wichtig.
+zanimljiv | Knjiga je veoma zanimljiva. | Das Buch ist sehr interessant.
+dosadan | Film je bio dosadan. | Der Film war langweilig.
+bogat | Komšija je bogat. | Der Nachbar ist reich.
+siromašan | Bili su siromašni, ali srećni. | Sie waren arm, aber glücklich.
+zdrav | Najvažnije je da si zdrav. | Das Wichtigste ist, dass du gesund bist.
+slobodan | Jesi li slobodan sutra uveče? | Hast du morgen Abend frei?
+zauzet | Izvini, sad sam zauzet. | Entschuldige, gerade bin ich beschäftigt.
+opet | Opet kasniš! | Du bist schon wieder zu spät!
+samo | Hoću samo vodu. | Ich möchte nur Wasser.
+skoro | Skoro je gotovo. | Es ist fast fertig.
+mnogo | Hvala ti mnogo. | Vielen Dank.
+malo | Govorim malo srpski. | Ich spreche ein bisschen Serbisch.
+zajedno | Idemo zajedno na posao. | Wir fahren zusammen zur Arbeit.
+sigurno | Sigurno ću doći. | Ich komme sicher.
+možda | Možda sutra pada kiša. | Vielleicht regnet es morgen.
+naravno | Naravno da ću ti pomoći! | Natürlich helfe ich dir!
+svakako | Svakako se javi kad stigneš. | Melde dich auf jeden Fall, wenn du ankommst.
+verovatno | Verovatno će zakasniti. | Er kommt wahrscheinlich zu spät.
+svuda | Tražio sam ključeve svuda. | Ich habe überall nach den Schlüsseln gesucht.
+nigde | Ne mogu nigde da nađem telefon. | Ich kann das Handy nirgends finden.
+negde | Ključevi su negde ovde. | Die Schlüssel sind irgendwo hier.
+nekad | Nekad smo živeli u Novom Sadu. | Früher haben wir in Novi Sad gewohnt.
+bar | Javi se bar porukom. | Melde dich wenigstens per Nachricht.
+otprilike | Stižem za otprilike deset minuta. | Ich komme in ungefähr zehn Minuten an.
+potpuno | Potpuno sam zaboravio. | Ich habe es völlig vergessen.
+uglavnom | Uglavnom radim noću. | Ich arbeite hauptsächlich nachts.
+posebno | Posebno mi se svidela hrana. | Besonders das Essen hat mir gefallen.
+pas | Naš pas se zove Žućko. | Unser Hund heißt Žućko.
+mačka | Mačka spava na kauču. | Die Katze schläft auf dem Sofa.
+ptica | Jedna ptica sedi na terasi. | Ein Vogel sitzt auf der Terrasse.
+konj | Konj trči po livadi. | Das Pferd läuft über die Wiese.
+krava | Krava jede travu. | Die Kuh frisst Gras.
+ovca | Ovca je bela. | Das Schaf ist weiß.
+koza | Koza se popela na stenu. | Die Ziege ist auf den Felsen geklettert.
+leptir | Leptir je sleteo na cvet. | Ein Schmetterling ist auf der Blume gelandet.
+pčela | Pazi, pčela! | Pass auf, eine Biene!
+zmija | Videli smo zmiju na stazi. | Wir haben eine Schlange auf dem Pfad gesehen.
 `;

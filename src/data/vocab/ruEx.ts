@@ -793,4 +793,73 @@ export default `
 уходи́ть | Уже́ уходи́шь? Посиди́ ещё. | Gehst du schon? Bleib noch ein bisschen.
 приходи́ть | Приходи́ к нам в го́сти. | Komm uns besuchen.
 возвраща́ться | Я возвраща́юсь домо́й в шесть. | Ich komme um sechs nach Hause zurück.
+догово́р аре́нды | Мы подписа́ли догово́р аре́нды на год. | Wir haben den Mietvertrag für ein Jahr unterschrieben.
+входи́ть | Входи́, дверь откры́та. | Komm rein, die Tür ist offen.
+выходи́ть | Я выхожу́ из до́ма в семь. | Ich gehe um sieben aus dem Haus.
+сади́ться | Сади́сь, пожа́луйста. | Setz dich bitte.
+встава́ть | Я встаю́ в шесть утра́. | Ich stehe um sechs Uhr morgens auf.
+ходи́ть | Я хожу́ на рабо́ту пешко́м. | Ich gehe zu Fuß zur Arbeit.
+бе́гать | По утра́м я бе́гаю в па́рке. | Morgens jogge ich im Park.
+большо́й | У них большо́й дом. | Sie haben ein großes Haus.
+ма́ленький | Кварти́ра ма́ленькая, но све́тлая. | Die Wohnung ist klein, aber hell.
+но́вый | Я купи́л но́вый телефо́н. | Ich habe ein neues Handy gekauft.
+ста́рый | Э́то о́чень ста́рый дом. | Das ist ein sehr altes Haus.
+хоро́ший | Он о́чень хоро́ший челове́к. | Er ist ein sehr guter Mensch.
+плохо́й | Сего́дня плоха́я пого́да. | Heute ist schlechtes Wetter.
+лёгкий | Тест был лёгким. | Der Test war leicht.
+бы́стрый | По́езд быстре́е авто́буса. | Der Zug ist schneller als der Bus.
+ме́дленный | Сего́дня о́чень ме́дленный интерне́т. | Heute ist das Internet sehr langsam.
+тёплый | На у́лице тёплый ве́чер. | Draußen ist ein warmer Abend.
+холо́дный | Мо́ре ещё холо́дное. | Das Meer ist noch kalt.
+по́лный | Авто́бус по́лный. | Der Bus ist voll.
+пусто́й | Холоди́льник пусто́й. | Der Kühlschrank ist leer.
+откры́тый | Апте́ка откры́та до девяти́. | Die Apotheke ist bis neun geöffnet.
+закры́тый | Музе́й закры́т по понеде́льникам. | Das Museum ist montags geschlossen.
+чи́стый | Ко́мната чи́стая. | Das Zimmer ist sauber.
+гря́зный | Оде́жда гря́зная по́сле рабо́ты. | Die Kleidung ist nach der Arbeit schmutzig.
+тяжёлый | Чемода́н о́чень тяжёлый. | Der Koffer ist sehr schwer.
+ти́хий | Райо́н ти́хий и споко́йный. | Die Gegend ist still und ruhig.
+шу́мный | У́лица шу́мная но́чью. | Die Straße ist nachts laut.
+пра́вильный | Твой отве́т пра́вильный. | Deine Antwort ist richtig.
+непра́вильный | Э́то непра́вильный а́дрес. | Das ist die falsche Adresse.
+одина́ковый | У нас одина́ковые ку́ртки. | Wir haben die gleichen Jacken.
+ра́зный | У нас ра́зные вку́сы. | Wir haben verschiedene Geschmäcker.
+ва́жный | Э́то о́чень ва́жный вопро́с. | Das ist eine sehr wichtige Frage.
+интере́сный | Кни́га о́чень интере́сная. | Das Buch ist sehr interessant.
+ску́чный | Фильм был ску́чный. | Der Film war langweilig.
+бога́тый | Сосе́д о́чень бога́тый. | Der Nachbar ist sehr reich.
+бе́дный | Они́ бы́ли бе́дными, но счастли́выми. | Sie waren arm, aber glücklich.
+здоро́вый | Гла́вное – быть здоро́вым. | Die Hauptsache ist, gesund zu sein.
+свобо́дный | Ты свобо́ден за́втра ве́чером? | Hast du morgen Abend frei?
+за́нятый | Извини́, я сейча́с за́нят. | Entschuldige, ich bin gerade beschäftigt.
+опя́ть | Ты опя́ть опозда́л! | Du bist schon wieder zu spät!
+то́лько | Мне то́лько во́ду. | Für mich nur Wasser.
+почти́ | Всё почти́ гото́во. | Alles ist fast fertig.
+доста́точно | У нас доста́точно де́нег на пое́здку. | Wir haben genug Geld für die Reise.
+мно́го | В го́роде мно́го тури́стов. | In der Stadt sind viele Touristen.
+ма́ло | У меня́ ма́ло вре́мени. | Ich habe wenig Zeit.
+вме́сте | Мы е́здим на рабо́ту вме́сте. | Wir fahren zusammen zur Arbeit.
+сам | Я сде́лал э́то сам. | Ich habe es selbst gemacht.
+постепе́нно | Постепе́нно я привыка́ю к но́вой рабо́те. | Nach und nach gewöhne ich mich an die neue Arbeit.
+мо́жет быть | Мо́жет быть, за́втра пойдёт дождь. | Vielleicht regnet es morgen.
+наве́рное | Он, наве́рное, опозда́ет. | Er kommt wahrscheinlich zu spät.
+везде́ | Я иска́л ключи́ везде́. | Ich habe überall nach den Schlüsseln gesucht.
+нигде́ | Я нигде́ не могу́ найти́ телефо́н. | Ich kann das Handy nirgends finden.
+где́-то | Ключи́ где́-то здесь. | Die Schlüssel sind irgendwo hier.
+когда́-то | Когда́-то мы жи́ли в Каза́ни. | Früher haben wir in Kasan gewohnt.
+хотя́ бы | Позвони́ хотя́ бы ве́чером. | Ruf wenigstens am Abend an.
+приблизи́тельно | Я бу́ду приблизи́тельно че́рез де́сять мину́т. | Ich bin in ungefähr zehn Minuten da.
+соверше́нно | Я соверше́нно забы́л. | Ich habe es völlig vergessen.
+в основно́м | Я рабо́таю в основно́м по ноча́м. | Ich arbeite hauptsächlich nachts.
+осо́бенно | Мне осо́бенно понра́вилась еда́. | Besonders das Essen hat mir gefallen.
+соба́ка | На́шу соба́ку зову́т Ша́рик. | Unser Hund heißt Scharik.
+ко́шка | Ко́шка спит на дива́не. | Die Katze schläft auf dem Sofa.
+пти́ца | На балко́не сиди́т пти́ца. | Auf dem Balkon sitzt ein Vogel.
+ло́шадь | Ло́шадь бежи́т по по́лю. | Das Pferd läuft über das Feld.
+коро́ва | Коро́ва ест траву́. | Die Kuh frisst Gras.
+овца́ | Овца́ бе́лая. | Das Schaf ist weiß.
+коза́ | Коза́ забрала́сь на ска́лу. | Die Ziege ist auf den Felsen geklettert.
+ба́бочка | Ба́бочка се́ла на цвето́к. | Ein Schmetterling hat sich auf die Blume gesetzt.
+пчела́ | Осторо́жно, пчела́! | Vorsicht, eine Biene!
+змея́ | Мы ви́дели змею́ на тропи́нке. | Wir haben eine Schlange auf dem Pfad gesehen.
 `;

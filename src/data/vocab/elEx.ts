@@ -770,4 +770,74 @@ export default `
 υγιής | Το σημαντικό είναι να είσαι υγιής. | Das Wichtigste ist, gesund zu sein.
 ελεύθερος | Είσαι ελεύθερος αύριο το βράδυ; | Hast du morgen Abend frei?
 απασχολημένος | Συγγνώμη, τώρα είμαι απασχολημένος. | Entschuldige, gerade bin ich beschäftigt.
+πάλι | Άργησες πάλι! | Du bist schon wieder zu spät!
+ήδη | Έφαγα ήδη, ευχαριστώ. | Ich habe schon gegessen, danke.
+μόνο | Θέλω μόνο ένα νερό. | Ich möchte nur ein Wasser.
+σχεδόν | Είναι σχεδόν έτοιμο. | Es ist fast fertig.
+αρκετά | Έχουμε αρκετά λεφτά για το ταξίδι. | Wir haben genug Geld für die Reise.
+πολύ | Σ' ευχαριστώ πολύ. | Vielen Dank.
+λίγο | Μιλάω λίγο ελληνικά. | Ich spreche ein bisschen Griechisch.
+μαζί | Πάμε μαζί στη δουλειά. | Wir fahren zusammen zur Arbeit.
+μόνος μου | Το έφτιαξα μόνος μου. | Ich habe es allein gemacht.
+σιγά σιγά | Σιγά σιγά μαθαίνω τη γλώσσα. | Nach und nach lerne ich die Sprache.
+σίγουρα | Σίγουρα θα έρθω στο πάρτι. | Ich komme sicher zur Party.
+ίσως | Ίσως βρέξει αύριο. | Vielleicht regnet es morgen.
+φυσικά | Φυσικά και σε βοηθάω! | Natürlich helfe ich dir!
+βέβαια | Βέβαια, είναι λίγο ακριβό. | Allerdings ist es etwas teuer.
+μάλλον | Μάλλον θα αργήσει. | Er kommt wahrscheinlich zu spät.
+παντού | Έψαξα παντού για τα κλειδιά. | Ich habe überall nach den Schlüsseln gesucht.
+πουθενά | Δεν βρίσκω το κινητό πουθενά. | Ich finde das Handy nirgends.
+κάπου | Τα κλειδιά είναι κάπου εδώ. | Die Schlüssel sind irgendwo hier.
+τουλάχιστον | Πάρε με τουλάχιστον τηλέφωνο. | Ruf mich wenigstens an.
+περίπου | Θα φτάσω σε περίπου δέκα λεπτά. | Ich bin in ungefähr zehn Minuten da.
+εντελώς | Το ξέχασα εντελώς. | Ich habe es völlig vergessen.
+κυρίως | Τρώμε κυρίως ψάρι και λαχανικά. | Wir essen hauptsächlich Fisch und Gemüse.
+ιδιαίτερα | Μου άρεσε ιδιαίτερα το φαγητό. | Besonders das Essen hat mir gefallen.
+ο σκύλος | Ο σκύλος μας λέγεται Μπόμπος. | Unser Hund heißt Bobos.
+η γάτα | Η γάτα κοιμάται στον καναπέ. | Die Katze schläft auf dem Sofa.
+το πουλί | Ένα πουλί κάθεται στο μπαλκόνι. | Ein Vogel sitzt auf dem Balkon.
+το άλογο | Το άλογο τρέχει στο χωράφι. | Das Pferd läuft auf dem Feld.
+η αγελάδα | Η αγελάδα τρώει χόρτο. | Die Kuh frisst Gras.
+το πρόβατο | Το πρόβατο είναι άσπρο. | Das Schaf ist weiß.
+η κατσίκα | Η κατσίκα ανέβηκε στον βράχο. | Die Ziege ist auf den Felsen geklettert.
+η πεταλούδα | Μια πεταλούδα κάθισε στο λουλούδι. | Ein Schmetterling hat sich auf die Blume gesetzt.
+η μέλισσα | Πρόσεχε, μια μέλισσα! | Pass auf, eine Biene!
+το φίδι | Είδαμε ένα φίδι στο μονοπάτι. | Wir haben eine Schlange auf dem Pfad gesehen.
+το δέντρο | Καθόμαστε κάτω από το δέντρο. | Wir sitzen unter dem Baum.
+το λουλούδι | Της πήρα ένα λουλούδι. | Ich habe ihr eine Blume gekauft.
+το βουνό | Το Σαββατοκύριακο πάμε στο βουνό. | Am Wochenende fahren wir in die Berge.
+το ποτάμι | Το ποτάμι είναι κρύο ακόμα και τον Αύγουστο. | Der Fluss ist sogar im August kalt.
+η λίμνη | Κάναμε βόλτα γύρω από τη λίμνη. | Wir sind um den See spaziert.
+το νησί | Ποιο νησί σου αρέσει περισσότερο; | Welche Insel gefällt dir am meisten?
+η ακτή | Η ακτή έχει πολλές παραλίες. | Die Küste hat viele Strände.
+η σπηλιά | Επισκεφτήκαμε μια σπηλιά με λίμνη. | Wir haben eine Höhle mit einem See besichtigt.
+ο ουρανός | Ο ουρανός είναι καθαρός σήμερα. | Der Himmel ist heute klar.
+το σύννεφο | Δεν υπάρχει ούτε ένα σύννεφο. | Es gibt keine einzige Wolke.
+το αστέρι | Στο χωριό βλέπεις πολλά αστέρια. | Im Dorf siehst du viele Sterne.
+το φεγγάρι | Απόψε το φεγγάρι είναι γεμάτο. | Heute Nacht ist Vollmond.
+το λίτρο | Ένα λίτρο γάλα, παρακαλώ. | Einen Liter Milch, bitte.
+το γραμμάριο | Διακόσια γραμμάρια φέτα, παρακαλώ. | Zweihundert Gramm Feta, bitte.
+το εκατοστό | Το κουτί έχει πενήντα εκατοστά μήκος. | Der Karton ist fünfzig Zentimeter lang.
+το μπουκάλι | Πάρε ένα μπουκάλι νερό. | Nimm eine Flasche Wasser.
+η κονσέρβα | Άνοιξε την κονσέρβα με τον τόνο. | Mach die Thunfischdose auf.
+το πακέτο | Θέλω ένα πακέτο μακαρόνια. | Ich möchte eine Packung Nudeln.
+το βάζο | Το μέλι είναι σε γυάλινο βάζο. | Der Honig ist in einem Glas.
+το κομμάτι | Θέλεις ένα κομμάτι πίτα; | Möchtest du ein Stück Pita?
+μια φέτα | Βάλε μου μια φέτα ψωμί. | Gib mir eine Scheibe Brot.
+το μισό | Φάε το μισό τώρα και το μισό αύριο. | Iss die Hälfte jetzt und die Hälfte morgen.
+το τέταρτο | Ένα τέταρτο του κέικ έμεινε. | Ein Viertel vom Kuchen ist übrig.
+η ντουζίνα | Πήρα μια ντουζίνα αυγά. | Ich habe ein Dutzend Eier gekauft.
+μισό κιλό | Μισό κιλό ντομάτες, παρακαλώ. | Ein halbes Kilo Tomaten, bitte.
+λίγο ακόμα | Θέλεις λίγο ακόμα σαλάτα; | Möchtest du noch ein bisschen Salat?
+ζυγίζω | Ο μανάβης ζυγίζει τα μήλα. | Der Gemüsehändler wiegt die Äpfel.
+διπλάσιος | Το ενοίκιο είναι διπλάσιο από πέρσι. | Die Miete ist doppelt so hoch wie letztes Jahr.
+η άνοιξη | Την άνοιξη ανθίζουν όλα. | Im Frühling blüht alles.
+το φθινόπωρο | Το φθινόπωρο πέφτουν τα φύλλα. | Im Herbst fallen die Blätter.
+ο χειμώνας | Ο χειμώνας στην Αθήνα είναι ήπιος. | Der Winter in Athen ist mild.
+η βροχή | Η βροχή δεν σταμάτησε όλη μέρα. | Der Regen hat den ganzen Tag nicht aufgehört.
+το χιόνι | Στα βουνά έπεσε χιόνι. | In den Bergen ist Schnee gefallen.
+η ομίχλη | Το πρωί είχε πυκνή ομίχλη. | Am Morgen war dichter Nebel.
+η ζέστη | Δεν αντέχω αυτή τη ζέστη. | Ich halte diese Hitze nicht aus.
+το κρύο | Το κρύο είναι τσουχτερό σήμερα. | Die Kälte ist heute beißend.
+συννεφιασμένος | Ο ουρανός είναι συννεφιασμένος. | Der Himmel ist bewölkt.
 `;
