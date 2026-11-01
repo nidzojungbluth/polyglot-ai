@@ -970,4 +970,62 @@ export default `
 и | Я хочу́ хлеб и сыр. | Ich möchte Brot und Käse.
 у меня́ есть | У меня́ есть соба́ка. | Ich habe einen Hund.
 у меня́ нет | У меня́ нет вре́мени. | Ich habe keine Zeit.
+в како́й-то сте́пени | В како́й-то сте́пени ты прав. | In gewissem Maße hast du recht.
+с то́чки зре́ния … | С то́чки зре́ния работода́теля, э́то логи́чно. | Aus Sicht des Arbeitgebers ist das logisch.
+сле́довательно | Я опозда́л на авто́бус, сле́довательно, опозда́л на рабо́ту. | Ich habe den Bus verpasst, folglich kam ich zu spät zur Arbeit.
+наприме́р | Я люблю́ го́ры, наприме́р Алта́й. | Ich mag Berge, zum Beispiel den Altai.
+други́ми слова́ми | Други́ми слова́ми, де́нег у нас нет. | Mit anderen Worten: Wir haben kein Geld.
+о́бщество | О́бщество бы́стро меня́ется. | Die Gesellschaft verändert sich schnell.
+безрабо́тица | Безрабо́тица в э́том году́ сни́зилась. | Die Arbeitslosigkeit ist dieses Jahr gesunken.
+корру́пция | Корру́пция – больша́я пробле́ма. | Korruption ist ein großes Problem.
+я соверше́нно не согла́сен | Я соверше́нно не согла́сен с э́тим реше́нием. | Mit dieser Entscheidung bin ich völlig anderer Meinung.
+СМИ | СМИ мно́го пи́шут об э́том. | Die Medien schreiben viel darüber.
+трудово́й догово́р | Прочита́й трудово́й догово́р пе́ред подписа́нием. | Lies den Arbeitsvertrag vor dem Unterschreiben.
+вы́ходное посо́бие | По́сле увольне́ния он получи́л вы́ходное посо́бие. | Nach der Kündigung bekam er eine Abfindung.
+профсою́з | Профсою́з ведёт перегово́ры с компа́нией. | Die Gewerkschaft verhandelt mit der Firma.
+обя́занности | Каки́е у меня́ обя́занности? | Was sind meine Aufgaben?
+пре́мия | В конце́ го́да всем да́ли пре́мию. | Am Jahresende haben alle eine Prämie bekommen.
+трудова́я кни́жка | Принеси́те трудову́ю кни́жку в отде́л ка́дров. | Bringen Sie das Arbeitsbuch in die Personalabteilung.
+мне сты́дно | Мне сты́дно, что я забы́л твой день рожде́ния. | Ich schäme mich, dass ich deinen Geburtstag vergessen habe.
+у меня́ чу́вство вины́ | У меня́ чу́вство вины́, что я тебе́ не позвони́л. | Ich habe Schuldgefühle, weil ich dich nicht angerufen habe.
+я тро́нут | Я о́чень тро́нут ва́шим пода́рком. | Ich bin sehr gerührt von eurem Geschenk.
+у меня́ нет настрое́ния | Сего́дня у меня́ нет настрое́ния гуля́ть. | Heute habe ich keine Lust spazieren zu gehen.
+тоска́ | Осе́нью на меня́ нахо́дит тоска́. | Im Herbst überkommt mich Schwermut.
+я в замеша́тельстве | Я в замеша́тельстве, на како́й авто́бус сади́ться? | Ich bin verwirrt, in welchen Bus soll ich steigen?
+ты меня́ оби́дел | Ты меня́ оби́дел свои́ми слова́ми. | Du hast mich mit deinen Worten gekränkt.
+мне нело́вко | Мне нело́вко проси́ть тебя́ о по́мощи. | Es ist mir unangenehm, dich um Hilfe zu bitten.
+е́сли бы у меня́ бы́ло вре́мя, я бы пришёл | Е́сли бы у меня́ бы́ло вре́мя, я бы пришёл на пра́здник. | Wenn ich Zeit hätte, würde ich zum Fest kommen.
+я бы хоте́л | Я бы хоте́л пое́хать на мо́ре. | Ich würde gern ans Meer fahren.
+кто бы ни | Кто бы ни звони́л, меня́ нет. | Wer auch immer anruft, ich bin nicht da.
+и́ли … и́ли … | И́ли сего́дня, и́ли за́втра – я э́то зако́нчу. | Entweder heute oder morgen – ich mache das fertig.
+свиде́тельство о рожде́нии | Для па́спорта ну́жно свиде́тельство о рожде́нии. | Für den Pass braucht man die Geburtsurkunde.
+подписа́ть | Где ну́жно подписа́ть? | Wo muss man unterschreiben?
+завери́ть у нота́риуса | Ко́пию ну́жно завери́ть у нота́риуса. | Die Kopie muss notariell beglaubigt werden.
+СНИЛС | Для рабо́ты вам ну́жен СНИЛС. | Für die Arbeit brauchen Sie eine Sozialversicherungsnummer.
+гостеприи́мство | Ру́сское гостеприи́мство изве́стно во всём ми́ре. | Russische Gastfreundschaft ist weltweit bekannt.
+правосла́вие | Правосла́вие игра́ет большу́ю роль в Росси́и. | Die Orthodoxie spielt in Russland eine große Rolle.
+поколе́ние | Молодо́е поколе́ние ду́мает по-друго́му. | Die junge Generation denkt anders.
+за грани́цей | Мой брат живёт за грани́цей. | Mein Bruder lebt im Ausland.
+воспомина́ние | У меня́ тёплые воспомина́ния о де́тстве. | Ich habe warme Erinnerungen an meine Kindheit.
+при всём уваже́нии | При всём уваже́нии, вы ошиба́етесь. | Bei allem Respekt, Sie irren sich.
+я не принима́ю э́то на свой счёт | Не волну́йся, я не принима́ю э́то на свой счёт. | Keine Sorge, ich nehme das nicht persönlich.
+дава́й э́то обсу́дим | Дава́й э́то обсу́дим за́втра с нача́льником. | Lass uns das morgen mit dem Chef besprechen.
+я непра́вильно по́нял | Извини́, я непра́вильно по́нял вре́мя. | Entschuldige, ich habe die Uhrzeit falsch verstanden.
+я не э́то име́л в виду́ | Я не э́то име́л в виду́, ты меня́ не так по́нял. | So habe ich das nicht gemeint, du hast mich falsch verstanden.
+дава́й че́стно | Дава́й че́стно: сего́дня мы не успе́ем. | Mal ehrlich: Heute schaffen wir es nicht.
+э́то уже́ сли́шком | Крича́ть на дете́й – э́то уже́ сли́шком. | Die Kinder anzuschreien, das geht zu weit.
+э́то несправедли́во | Э́то несправедли́во, что то́лько я рабо́таю по суббо́там. | Es ist ungerecht, dass nur ich samstags arbeite.
+приношу́ свои́ извине́ния | Приношу́ свои́ извине́ния за заде́ржку. | Ich bitte um Entschuldigung für die Verzögerung.
+не повыша́й на меня́ го́лос | Не повыша́й на меня́ го́лос, дава́й споко́йно. | Werd nicht laut mit mir, lass uns ruhig reden.
+у нас отноше́ния на расстоя́нии | У нас отноше́ния на расстоя́нии уже́ год. | Wir führen schon ein Jahr lang eine Fernbeziehung.
+совме́стная жизнь | Совме́стная жизнь тре́бует компроми́ссов. | Das Zusammenleben erfordert Kompromisse.
+ты меня́ дополня́ешь | Мы ра́зные, но ты меня́ дополня́ешь. | Wir sind verschieden, aber du ergänzt mich.
+мне ка́жется, мы отдаля́емся | В после́днее вре́мя мне ка́жется, мы отдаля́емся. | In letzter Zeit habe ich das Gefühl, wir entfernen uns.
+мы сно́ва вме́сте | Мы расстава́лись, но тепе́рь мы сно́ва вме́сте. | Wir hatten uns getrennt, aber jetzt sind wir wieder zusammen.
+предложе́ние руки́ и се́рдца | Он сде́лал ей предложе́ние руки́ и се́рдца на Не́вском. | Er hat ihr auf dem Newski einen Heiratsantrag gemacht.
+ты ревну́ешь без причи́ны | Он про́сто колле́га, ты ревну́ешь без причи́ны. | Er ist nur ein Kollege, du bist grundlos eifersüchtig.
+серьёзные отноше́ния | Я ищу́ серьёзные отноше́ния. | Ich suche eine ernsthafte Beziehung.
+я к нему́ охладе́ла | Че́стно говоря́, я к нему́ охладе́ла. | Ehrlich gesagt sind meine Gefühle für ihn abgekühlt.
+самока́т | Сын е́здит в шко́лу на самока́те. | Mein Sohn fährt mit dem Roller zur Schule.
+перерабо́тка отхо́дов | Перерабо́тка отхо́дов в Росси́и то́лько развива́ется. | Das Abfallrecycling entwickelt sich in Russland erst.
 `;

@@ -942,4 +942,73 @@ export default `
 ο μηχανικός αυτοκινήτων | Ο μηχανικός αυτοκινήτων έφτιαξε τα φρένα. | Der Kfz-Mechaniker hat die Bremsen repariert.
 ο χειριστής κλαρκ | Ψάχνουν χειριστή κλαρκ για τη νυχτερινή βάρδια. | Sie suchen einen Staplerfahrer für die Nachtschicht.
 ο οικοδόμος | Ο οικοδόμος δουλεύει από τις επτά. | Der Bauarbeiter arbeitet ab sieben.
+κατά κάποιον τρόπο | Κατά κάποιον τρόπο έχεις δίκιο. | In gewisser Weise hast du recht.
+από την άποψη … | Από την άποψη του εργοδότη, είναι λογικό. | Aus Sicht des Arbeitgebers ist es logisch.
+επομένως | Έχασα το λεωφορείο, επομένως άργησα. | Ich habe den Bus verpasst, folglich kam ich zu spät.
+για παράδειγμα | Μου αρέσουν τα νησιά, για παράδειγμα η Νάξος. | Ich mag die Inseln, zum Beispiel Naxos.
+με άλλα λόγια | Με άλλα λόγια, δεν έχουμε χρήματα. | Mit anderen Worten: Wir haben kein Geld.
+η κοινωνία | Η κοινωνία αλλάζει γρήγορα. | Die Gesellschaft verändert sich schnell.
+η ανεργία | Η ανεργία έπεσε φέτος. | Die Arbeitslosigkeit ist dieses Jahr gesunken.
+η διαφθορά | Η διαφθορά είναι μεγάλο πρόβλημα. | Korruption ist ein großes Problem.
+δεν συμφωνώ καθόλου | Δεν συμφωνώ καθόλου με αυτή την απόφαση. | Ich bin mit dieser Entscheidung überhaupt nicht einverstanden.
+η σύμβαση εργασίας | Διάβασε τη σύμβαση εργασίας πριν υπογράψεις. | Lies den Arbeitsvertrag, bevor du unterschreibst.
+ορισμένου χρόνου | Η δουλειά είναι ορισμένου χρόνου, για ένα χρόνο. | Die Stelle ist befristet, für ein Jahr.
+ο μικτός μισθός | Ο μικτός μισθός είναι χίλια διακόσια ευρώ. | Das Bruttogehalt beträgt tausendzweihundert Euro.
+η δοκιμαστική περίοδος | Στη δοκιμαστική περίοδο μαθαίνω τη δουλειά. | In der Probezeit lerne ich die Arbeit.
+η αποζημίωση | Μετά την απόλυση πήρε αποζημίωση. | Nach der Kündigung hat er eine Abfindung bekommen.
+το σωματείο | Το σωματείο διαπραγματεύεται με την εταιρεία. | Die Gewerkschaft verhandelt mit der Firma.
+οι αρμοδιότητες | Ποιες είναι οι αρμοδιότητές μου; | Was sind meine Zuständigkeiten?
+η αξιολόγηση | Η ετήσια αξιολόγηση είναι τον Δεκέμβριο. | Die jährliche Leistungsbeurteilung ist im Dezember.
+το δώρο Χριστουγέννων | Το δώρο Χριστουγέννων πληρώνεται τον Δεκέμβριο. | Das Weihnachtsgeld wird im Dezember ausgezahlt.
+νιώθω ενοχές | Νιώθω ενοχές που δεν σε πήρα τηλέφωνο. | Ich habe Schuldgefühle, weil ich dich nicht angerufen habe.
+μετανιώνω | Μετανιώνω που δεν έμαθα ελληνικά νωρίτερα. | Ich bereue, dass ich nicht früher Griechisch gelernt habe.
+είμαι συγκινημένος | Είμαι πολύ συγκινημένος από το δώρο σας. | Ich bin sehr gerührt von eurem Geschenk.
+με εκνευρίζει | Με εκνευρίζει όταν αργούν. | Es regt mich auf, wenn sie zu spät kommen.
+η νοσταλγία | Με πιάνει νοσταλγία για τα καλοκαίρια στο χωριό. | Mich packt die Sehnsucht nach den Sommern im Dorf.
+είμαι μπερδεμένος | Είμαι μπερδεμένος, ποιο λεωφορείο να πάρω; | Ich bin verwirrt, welchen Bus soll ich nehmen?
+με πληγώνεις | Με πληγώνεις όταν μιλάς έτσι. | Du verletzt mich, wenn du so redest.
+νιώθω ασφάλεια | Μαζί σου νιώθω ασφάλεια. | Mit dir fühle ich mich sicher.
+αν είχα χρόνο, θα ερχόμουν | Αν είχα χρόνο, θα ερχόμουν μαζί σας. | Wenn ich Zeit hätte, würde ich mit euch kommen.
+ο οποίος | Ο φίλος μου, ο οποίος μένει στην Αθήνα, έρχεται αύριο. | Mein Freund, der in Athen wohnt, kommt morgen.
+όποιος | Όποιος θέλει, μπορεί να έρθει. | Wer will, kann kommen.
+είτε … είτε … | Είτε σήμερα είτε αύριο, θα το τελειώσω. | Entweder heute oder morgen, ich werde es fertig machen.
+η άδεια διαμονής | Πρέπει να ανανεώσω την άδεια διαμονής. | Ich muss die Aufenthaltserlaubnis verlängern.
+η βεβαίωση | Χρειάζομαι βεβαίωση εργασίας. | Ich brauche eine Arbeitsbescheinigung.
+το πιστοποιητικό | Ζήτησα πιστοποιητικό γέννησης από τον δήμο. | Ich habe bei der Gemeinde eine Geburtsurkunde beantragt.
+υπογράφω | Υπογράφω εδώ; | Unterschreibe ich hier?
+το ΑΜΚΑ | Για τον γιατρό χρειάζεσαι ΑΜΚΑ. | Für den Arzt brauchst du eine Sozialversicherungsnummer.
+η γραφειοκρατία | Η γραφειοκρατία με τρελαίνει. | Die Bürokratie macht mich verrückt.
+ο δικηγόρος | Ο δικηγόρος μου θα σας πάρει τηλέφωνο. | Mein Anwalt wird Sie anrufen.
+η καταγγελία | Έκανα καταγγελία για τον θόρυβο. | Ich habe mich wegen des Lärms beschwert.
+το φιλότιμο | Το φιλότιμο είναι πολύ σημαντικό για τους Έλληνες. | Philotimo ist für Griechen sehr wichtig.
+η παράδοση | Στο χωριό κρατάνε ακόμα την παράδοση. | Im Dorf pflegt man noch die Tradition.
+η Ορθοδοξία | Η Ορθοδοξία παίζει μεγάλο ρόλο στην Ελλάδα. | Die Orthodoxie spielt in Griechenland eine große Rolle.
+η γενιά | Η νέα γενιά φεύγει στο εξωτερικό. | Die junge Generation geht ins Ausland.
+οι πρόσφυγες | Πολλοί πρόσφυγες ήρθαν από τη Μικρά Ασία το 1922. | Viele Flüchtlinge kamen 1922 aus Kleinasien.
+η μνήμη | Έχω κακή μνήμη για τα ονόματα. | Ich habe ein schlechtes Gedächtnis für Namen.
+η ιστορία | Η ιστορία της Ελλάδας είναι πολύ πλούσια. | Die Geschichte Griechenlands ist sehr reich.
+με όλο τον σεβασμό | Με όλο τον σεβασμό, κάνετε λάθος. | Bei allem Respekt, Sie irren sich.
+δεν το παίρνω προσωπικά | Μην ανησυχείς, δεν το παίρνω προσωπικά. | Keine Sorge, ich nehme das nicht persönlich.
+θα ήθελα να το συζητήσουμε | Θα ήθελα να το συζητήσουμε με τον υπεύθυνο. | Ich würde das gern mit dem Verantwortlichen besprechen.
+κατάλαβα λάθος | Συγγνώμη, κατάλαβα λάθος την ώρα. | Entschuldigung, ich habe die Uhrzeit falsch verstanden.
+δεν εννοούσα αυτό | Δεν εννοούσα αυτό, με παρεξήγησες. | So habe ich das nicht gemeint, du hast mich missverstanden.
+ας είμαστε ειλικρινείς | Ας είμαστε ειλικρινείς, δεν θα τελειώσουμε σήμερα. | Seien wir ehrlich, wir werden heute nicht fertig.
+δεν είναι δίκαιο | Δεν είναι δίκαιο να δουλεύω μόνο εγώ τα Σάββατα. | Es ist nicht fair, dass nur ich samstags arbeite.
+ζητώ συγγνώμη | Ζητώ συγγνώμη για την καθυστέρηση. | Ich bitte um Entschuldigung für die Verspätung.
+μην ανεβάζεις τους τόνους | Μην ανεβάζεις τους τόνους, ας μιλήσουμε ήρεμα. | Werd nicht laut, lass uns ruhig reden.
+είμαστε σε σχέση από απόσταση | Είμαστε σε σχέση από απόσταση εδώ και έναν χρόνο. | Wir führen seit einem Jahr eine Fernbeziehung.
+η κοινή ζωή | Η κοινή ζωή θέλει συμβιβασμούς. | Das Zusammenleben braucht Kompromisse.
+με συμπληρώνεις | Είμαστε διαφορετικοί, αλλά με συμπληρώνεις. | Wir sind verschieden, aber du ergänzt mich.
+νιώθω ότι απομακρυνόμαστε | Τελευταία νιώθω ότι απομακρυνόμαστε. | In letzter Zeit habe ich das Gefühl, wir entfernen uns.
+η δέσμευση | Δεν είναι έτοιμος για δέσμευση. | Er ist nicht bereit für eine feste Bindung.
+τα ξαναφτιάξαμε | Χωρίσαμε για λίγο, αλλά τα ξαναφτιάξαμε. | Wir waren kurz getrennt, aber sind wieder zusammen.
+η πρόταση γάμου | Της έκανε πρόταση γάμου στη Σαντορίνη. | Er hat ihr auf Santorini einen Heiratsantrag gemacht.
+ζηλεύεις χωρίς λόγο | Είναι απλώς συνάδελφος, ζηλεύεις χωρίς λόγο. | Er ist nur ein Kollege, du bist grundlos eifersüchtig.
+η ηχορύπανση | Η ηχορύπανση στο κέντρο είναι μεγάλη. | Die Lärmbelastung im Zentrum ist hoch.
+η ατμοσφαιρική ρύπανση | Η ατμοσφαιρική ρύπανση αυξάνεται τον χειμώνα. | Die Luftverschmutzung steigt im Winter.
+το διπλοπαρκάρισμα | Το διπλοπαρκάρισμα προκαλεί κίνηση. | Parken in zweiter Reihe verursacht Stau.
+τα ΜΜΜ | Με τα ΜΜΜ φτάνω σε σαράντα λεπτά. | Mit den Öffentlichen bin ich in vierzig Minuten da.
+ο δήμος | Ο δήμος φύτεψε νέα δέντρα. | Die Stadtverwaltung hat neue Bäume gepflanzt.
+το πρόγραμμα του ταξιδιού | Το πρόγραμμα του ταξιδιού είναι πολύ γεμάτο. | Der Reiseplan ist sehr voll.
+τα αξιοθέατα | Είδαμε όλα τα αξιοθέατα σε δύο μέρες. | Wir haben alle Sehenswürdigkeiten in zwei Tagen gesehen.
 `;

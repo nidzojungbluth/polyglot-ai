@@ -956,4 +956,72 @@ ovo | Šta je ovo? | Was ist das?
 na uglu | Apoteka je na uglu. | Die Apotheke ist an der Ecke.
 preko puta | Pekara je preko puta pošte. | Die Bäckerei ist gegenüber der Post.
 pored | Banka je pored apoteke. | Die Bank ist neben der Apotheke.
+na neki način | Na neki način si u pravu. | In gewisser Weise hast du recht.
+sa stanovišta … | Sa stanovišta poslodavca, to je logično. | Aus Sicht des Arbeitgebers ist das logisch.
+prema tome | Propustio sam autobus, prema tome sam zakasnio. | Ich habe den Bus verpasst, folglich kam ich zu spät.
+na primer | Volim planine, na primer Zlatibor. | Ich mag Berge, zum Beispiel den Zlatibor.
+drugim rečima | Drugim rečima, nemamo novca. | Mit anderen Worten: Wir haben kein Geld.
+nezaposlenost | Nezaposlenost je pala ove godine. | Die Arbeitslosigkeit ist dieses Jahr gesunken.
+ekonomska kriza | Ekonomska kriza je pogodila mnoge porodice. | Die Wirtschaftskrise hat viele Familien getroffen.
+korupcija | Korupcija je veliki problem. | Korruption ist ein großes Problem.
+uopšte se ne slažem | Uopšte se ne slažem sa tom odlukom. | Mit dieser Entscheidung bin ich überhaupt nicht einverstanden.
+ugovor o radu | Pročitaj ugovor o radu pre potpisivanja. | Lies den Arbeitsvertrag vor dem Unterschreiben.
+na određeno | Posao je na određeno, godinu dana. | Die Stelle ist befristet, ein Jahr.
+bruto plata | Bruto plata je sto hiljada dinara. | Der Bruttolohn beträgt hunderttausend Dinar.
+neto plata | Neto plata je oko sedamdeset hiljada. | Der Nettolohn liegt bei etwa siebzigtausend.
+otpremnina | Posle otkaza je dobio otpremninu. | Nach der Kündigung hat er eine Abfindung bekommen.
+sindikat | Sindikat pregovara sa firmom. | Die Gewerkschaft verhandelt mit der Firma.
+radne obaveze | Koje su moje radne obaveze? | Was sind meine Aufgaben?
+topli obrok | Topli obrok se isplaćuje uz platu. | Der Essenszuschuss wird mit dem Lohn ausgezahlt.
+regres | Regres dobijamo u junu. | Das Urlaubsgeld bekommen wir im Juni.
+krivo mi je | Krivo mi je što te nisam zvao. | Es tut mir leid, dass ich dich nicht angerufen habe.
+kajem se | Kajem se što nisam ranije učio srpski. | Ich bereue, dass ich nicht früher Serbisch gelernt habe.
+dirnut sam | Veoma sam dirnut vašim poklonom. | Ich bin sehr gerührt von eurem Geschenk.
+nervira me | Nervira me kad ljudi kasne. | Es regt mich auf, wenn Leute zu spät kommen.
+nostalgija | Hvata me nostalgija za detinjstvom. | Mich packt die Sehnsucht nach der Kindheit.
+zbunjen sam | Zbunjen sam, koji autobus da uzmem? | Ich bin verwirrt, welchen Bus soll ich nehmen?
+povređuješ me | Povređuješ me kad tako pričaš. | Du verletzt mich, wenn du so redest.
+osećam se sigurno | Sa tobom se osećam sigurno. | Mit dir fühle ich mich sicher.
+sramota me je | Sramota me je što sam zaboravio tvoj rođendan. | Es ist mir peinlich, dass ich deinen Geburtstag vergessen habe.
+da imam vremena, došao bih | Da imam vremena, došao bih s vama. | Wenn ich Zeit hätte, würde ich mit euch kommen.
+voleo bih da … | Voleo bih da odemo na more. | Ich würde gern ans Meer fahren.
+ko god | Ko god hoće, može da dođe. | Wer auch immer will, kann kommen.
+ili … ili … | Ili danas ili sutra, završiću to. | Entweder heute oder morgen, ich mache es fertig.
+boravišna dozvola | Moram da produžim boravišnu dozvolu. | Ich muss die Aufenthaltserlaubnis verlängern.
+potvrda | Treba mi potvrda o zaposlenju. | Ich brauche eine Arbeitsbescheinigung.
+potpisati | Gde treba da potpišem? | Wo muss ich unterschreiben?
+JMBG | Za otvaranje računa treba vam JMBG. | Für die Kontoeröffnung brauchen Sie die JMBG.
+birokratija | Birokratija me izluđuje. | Die Bürokratie macht mich verrückt.
+advokat | Moj advokat će vas pozvati. | Mein Anwalt wird Sie anrufen.
+žalba | Uložio sam žalbu zbog buke. | Ich habe mich wegen des Lärms beschwert.
+tradicija | Na selu se još čuva tradicija. | Auf dem Land wird die Tradition noch gepflegt.
+sabor | Na saboru u selu je bilo mnogo ljudi. | Beim Dorffest waren viele Leute.
+pravoslavlje | Pravoslavlje je važan deo srpske kulture. | Die Orthodoxie ist ein wichtiger Teil der serbischen Kultur.
+generacija | Mlada generacija odlazi u inostranstvo. | Die junge Generation geht ins Ausland.
+dijaspora | Mnogo Srba iz dijaspore dolazi leti. | Viele Serben aus der Diaspora kommen im Sommer.
+uspomena | Imam lepe uspomene na to leto. | Ich habe schöne Erinnerungen an diesen Sommer.
+istorija | Istorija Beograda je veoma burna. | Die Geschichte Belgrads ist sehr bewegt.
+uz dužno poštovanje | Uz dužno poštovanje, grešite. | Bei allem Respekt, Sie irren sich.
+ne shvatam to lično | Ne brini, ne shvatam to lično. | Keine Sorge, ich nehme das nicht persönlich.
+voleo bih da porazgovaramo o tome | Voleo bih da porazgovaramo o tome sa šefom. | Ich würde das gern mit dem Chef besprechen.
+pogrešno sam razumeo | Izvini, pogrešno sam razumeo vreme. | Entschuldige, ich habe die Uhrzeit falsch verstanden.
+nisam to tako mislio | Nisam to tako mislio, pogrešno si me shvatio. | So habe ich das nicht gemeint, du hast mich missverstanden.
+budimo iskreni | Budimo iskreni, nećemo završiti danas. | Seien wir ehrlich, wir werden heute nicht fertig.
+to je preko granice | Vikati na decu, to je preko granice. | Die Kinder anzuschreien, das geht zu weit.
+to nije fer | Nije fer da samo ja radim subotom. | Es ist nicht fair, dass nur ich samstags arbeite.
+izvinjavam se | Izvinjavam se zbog kašnjenja. | Ich entschuldige mich für die Verspätung.
+ne podiži ton | Ne podiži ton, hajde da pričamo mirno. | Werd nicht laut, lass uns ruhig reden.
+u vezi na daljinu smo | U vezi na daljinu smo već godinu dana. | Wir führen seit einem Jahr eine Fernbeziehung.
+zajednički život | Zajednički život traži kompromise. | Das Zusammenleben erfordert Kompromisse.
+dopunjavaš me | Različiti smo, ali me dopunjavaš. | Wir sind verschieden, aber du ergänzt mich.
+osećam da se udaljavamo | U poslednje vreme osećam da se udaljavamo. | In letzter Zeit habe ich das Gefühl, wir entfernen uns.
+ozbiljna veza | Tražim ozbiljnu vezu, a ne avanturu. | Ich suche eine ernsthafte Beziehung, kein Abenteuer.
+opet smo zajedno | Raskinuli smo na kratko, ali opet smo zajedno. | Wir waren kurz getrennt, aber jetzt sind wir wieder zusammen.
+prosidba | Prosidba je bila na Kalemegdanu. | Der Heiratsantrag war auf dem Kalemegdan.
+ljubomoran si bez razloga | On je samo kolega, ljubomoran si bez razloga. | Er ist nur ein Kollege, du bist grundlos eifersüchtig.
+ohladio sam se | Iskreno, ohladio sam se prema njoj. | Ehrlich gesagt habe ich das Interesse an ihr verloren.
+saobraćaj | Saobraćaj je jutros užasan. | Der Verkehr ist heute Morgen furchtbar.
+javni prevoz | Javnim prevozom stižem za četrdeset minuta. | Mit den Öffentlichen bin ich in vierzig Minuten da.
+GSP | GSP je uveo nove autobuse. | Die Verkehrsbetriebe haben neue Busse eingeführt.
+reciklaža | Reciklaža u Srbiji tek počinje. | Recycling steht in Serbien noch am Anfang.
 `;
