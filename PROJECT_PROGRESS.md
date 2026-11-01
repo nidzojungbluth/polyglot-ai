@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 2774 | 55 % | 2052 | 1608 | 226 | 738 |
-| 🇷🇸 Serbisch | 2812 | 56 % | 2054 | 1228 | 226 | 739 |
-| 🇷🇺 Russisch | 2822 | 56 % | 2062 | 1290 | 226 | 741 |
+| 🇬🇷 Griechisch | 2852 | 57 % | 2130 | 1672 | 231 | 758 |
+| 🇷🇸 Serbisch | 2889 | 58 % | 2131 | 1281 | 231 | 759 |
+| 🇷🇺 Russisch | 2898 | 58 % | 2138 | 1343 | 231 | 761 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 746 | 560 | 255 | 196 | 40 |
-| Serbisch | 441 | 546 | 756 | 571 | 259 | 200 | 39 |
-| Russisch | 451 | 549 | 756 | 558 | 263 | 203 | 42 |
+| Griechisch | 435 | 542 | 761 | 623 | 255 | 196 | 40 |
+| Serbisch | 441 | 546 | 772 | 632 | 259 | 200 | 39 |
+| Russisch | 451 | 549 | 772 | 618 | 263 | 203 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -28,13 +28,13 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 1939 / 2661 (73 %) | 90 % | 99 % | 100 % | 42 % | 26 % | 9 % |
-| Serbisch | 1938 / 2696 (72 %) | 81 % | 100 % | 100 % | 43 % | 27 % | 12 % |
-| Russisch | 1942 / 2702 (72 %) | 81 % | 100 % | 100 % | 42 % | 28 % | 11 % |
+| Griechisch | 2017 / 2739 (74 %) | 90 % | 99 % | 100 % | 48 % | 26 % | 9 % |
+| Serbisch | 2015 / 2773 (73 %) | 81 % | 100 % | 100 % | 49 % | 27 % | 12 % |
+| Russisch | 2018 / 2778 (73 %) | 81 % | 100 % | 100 % | 48 % | 28 % | 11 % |
 
 ## Ladezeit
 
-App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1557 KB.
+App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1604 KB.
 
 ## Prüfstatus
 
@@ -64,7 +64,7 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 | 1 | Projekt analysiert, Datenformat für große Wortschätze (Textformat, stabile IDs, Duplikatprüfung, @-Übernahme, Beispielsatz-Liste) | ✅ erledigt |
 | 2 | Automatische Datenprüfung (Duplikate, Übersetzung, russische Betonung, serbische Schrift, Beispielsatz-Zuordnung) | ✅ erledigt |
 | 3 | Griechisch, Serbisch, Russisch: alle 6 Niveaus × 20 Themen gefüllt, Beispielsätze für A1/A2 | ✅ erledigt |
-| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.800) – Etappen 19–30: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe, Verben 4, Lager 2, Möbel & Umzug, Apotheke, Natur & Landschaft, Bank & Behörden, Küche, Auto & Werkstatt, Kleidung kaufen, Charakter, Handwerk & Baustelle, Garten, Medien & Internet, Miete & Verträge, Wirtschaft & Geld, Krankenhaus, Sport & Fußball, Schule & Ausbildung, Wissenschaft & Umwelt, Tiere & Bauernhof, Flughafen, Elektronik & Haushaltsgeräte, Körper & Erste Hilfe, Politik & Gesellschaft, Beziehungen C1, Kirche & Religion, Musik, Markt, Werkstatt & Maschinen, Recht & Behörden C1, Bewerbung, Hotel, Feste & Bräuche, Computer & Büro, Stadtverkehr (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
+| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.880) – Etappen 19–31: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe, Verben 4, Lager 2, Möbel & Umzug, Apotheke, Natur & Landschaft, Bank & Behörden, Küche, Auto & Werkstatt, Kleidung kaufen, Charakter, Handwerk & Baustelle, Garten, Medien & Internet, Miete & Verträge, Wirtschaft & Geld, Krankenhaus, Sport & Fußball, Schule & Ausbildung, Wissenschaft & Umwelt, Tiere & Bauernhof, Flughafen, Elektronik & Haushaltsgeräte, Körper & Erste Hilfe, Politik & Gesellschaft, Beziehungen C1, Kirche & Religion, Musik, Markt, Werkstatt & Maschinen, Recht & Behörden C1, Bewerbung, Hotel, Feste & Bräuche, Computer & Büro, Stadtverkehr, Gerichte & Rezepte, Online-Banking, Hobbys, Wohnungsprobleme, Kinder & Erziehung (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
 | 5 | **Zwischenauftrag: Beispielsatz für jede Vokabel** – Anzeige im Beispielsatz-Block (Wortlisten, Slang, Lernkarten, Wörterbuch), Regel-Test für neue Wörter, Betonungsprüfung für russische Sätze, Nachtragen für alle vorhandenen Wörter | 🔄 läuft – Runden 1–2 (B1, ca. 200 Sätze pro Sprache) erledigt; noch ca. 1.150 Sätze pro Sprache, ca. 9 Runden |
 | 5b | **Zwischenauftrag: Umschrift jedes Beispielsatzes** – Griechisch und Russisch: lateinische Umschrift regelbasiert aus dem Satz erzeugt (passt immer zum Satz, keine doppelt gespeicherten Daten, Betonungszeichen im Russischen erhalten, Großschreibung bleibt); Serbisch: in kyrillischer Ansicht der lateinische Satz, in der Ansicht „beide“ die kyrillische Schreibweise; Englisch/Spanisch: keine Umschrift (kein Mehrwert). Anzeige zwischen Originalsatz und Übersetzung. | ✅ erledigt (gilt automatisch für alle vorhandenen und neuen Sätze) |
 | 6 | Lernsystem prüfen und verbessern – **Befund:** Wiederholungslogik (SM-2) und Speicherung (IndexedDB mit Ausweichlösung, Datenmigration, Sicherung) korrekt; 3 Schwachstellen behoben: sofortiges Speichern beim Verlassen der App, verwaiste Karten nach Korrekturen ignoriert (beendeten Wiederholungen vorzeitig), Tageslimit für neue Karten (Standard 20, einstellbar) + Anzeige „morgen fällig“; Geschwindigkeit mit 3.000 Karten getestet | ✅ erledigt |
