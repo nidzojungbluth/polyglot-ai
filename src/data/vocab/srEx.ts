@@ -503,4 +503,66 @@ uverenje | Treba mi uverenje iz opštine. | Ich brauche eine Bescheinigung vom G
 korpa | Stavio sam patike u korpu. | Ich habe die Turnschuhe in den Warenkorb gelegt.
 plaćanje pouzećem | Biram plaćanje pouzećem. | Ich wähle Zahlung per Nachnahme.
 poštarina | Poštarina je besplatna iznad pet hiljada dinara. | Ab fünftausend Dinar ist der Versand kostenlos.
+na vreme | Voz je stigao na vreme. | Der Zug ist pünktlich angekommen.
+popodne | Popodne idem kod bake. | Am Nachmittag gehe ich zu Oma.
+onlajn porudžbina | Onlajn porudžbina stiže za tri dana. | Die Online-Bestellung kommt in drei Tagen an.
+praćenje pošiljke | Link za praćenje pošiljke dobio sam mejlom. | Den Link zur Sendungsverfolgung habe ich per Mail bekommen.
+broj pošiljke | Možete li mi reći broj pošiljke? | Können Sie mir die Sendungsnummer sagen?
+preuzeti | Paket mogu da preuzmem u pošti do šest. | Das Paket kann ich bis sechs bei der Post abholen.
+recenzija | Pre kupovine uvek pročitam recenzije. | Vor dem Kauf lese ich immer die Bewertungen.
+onlajn prodavnica | Ova onlajn prodavnica ima dobre cene. | Dieser Onlineshop hat gute Preise.
+besplatna dostava | Iznad tri hiljade dinara dostava je besplatna. | Ab dreitausend Dinar ist die Lieferung kostenlos.
+vraćanje robe | Vraćanje robe je moguće u roku od četrnaest dana. | Eine Warenrücksendung ist innerhalb von vierzehn Tagen möglich.
+mogu li da dobijem …? | Dobar dan, mogu li da dobijem gospodina Petrovića? | Guten Tag, kann ich Herrn Petrović sprechen?
+pozvaću vas kasnije | Sada sam u autobusu, pozvaću vas kasnije. | Ich bin gerade im Bus, ich rufe Sie später zurück.
+pogrešili ste broj | Ovde nema nikakve Ane, pogrešili ste broj. | Hier gibt es keine Ana, Sie sind falsch verbunden.
+telefonska sekretarica | Javila se telefonska sekretarica. | Der Anrufbeantworter ist rangegangen.
+ostaviti poruku | Možete mu ostaviti poruku posle signala. | Sie können ihm nach dem Signalton eine Nachricht hinterlassen.
+spustiti slušalicu | Nemoj da spustiš slušalicu, odmah se vraćam. | Leg nicht auf, ich bin gleich zurück.
+loše vas čujem | Loše vas čujem, nemam dobar signal. | Ich höre Sie schlecht, ich habe keinen guten Empfang.
+otkazati | Moram da otkažem termin kod zubara. | Ich muss den Zahnarzttermin absagen.
+zauzeto je | Zovem već pola sata, a stalno je zauzeto. | Ich rufe schon seit einer halben Stunde an, aber es ist ständig besetzt.
+lokal | Pozovite centralu i tražite lokal dvesta. | Rufen Sie die Zentrale an und verlangen Sie die Durchwahl 200.
+svadba | Svadba je bila do jutra. | Die Hochzeitsfeier ging bis zum Morgen.
+venčani kum | Moj najbolji drug je venčani kum. | Mein bester Freund ist der Trauzeuge.
+mlada | Mlada je nosila belu haljinu. | Die Braut trug ein weißes Kleid.
+mladoženja | Mladoženja je bio veoma nervozan. | Der Bräutigam war sehr nervös.
+pomen | U subotu je pomen dedi u crkvi. | Am Samstag ist in der Kirche das Totengedenken für Opa.
+godišnjica | Za godišnjicu braka idemo na večeru. | Zum Hochzeitstag gehen wir essen.
+čestitka | Poslao sam joj čestitku za rođendan. | Ich habe ihr eine Glückwunschkarte zum Geburtstag geschickt.
+poklon | Kupio sam ti mali poklon. | Ich habe dir ein kleines Geschenk gekauft.
+slavljenik | Slavljenik je duvao svećice. | Das Geburtstagskind hat die Kerzen ausgeblasen.
+ponavljanja | Uradi tri serije po deset ponavljanja. | Mach drei Sätze mit je zehn Wiederholungen.
+trbušnjaci | Svako veče radim trbušnjake. | Jeden Abend mache ich Sit-ups.
+vožnja bicikla | Vožnja bicikla pored Dunava je divna. | Radfahren an der Donau ist herrlich.
+plivanje | Plivanje je najbolje za leđa. | Schwimmen ist am besten für den Rücken.
+protein | Posle treninga pijem protein. | Nach dem Training trinke ich Protein.
+potpuno se slažem | Potpuno se slažem s tobom. | Ich stimme dir völlig zu.
+nisam siguran | Nisam siguran da li radi nedeljom. | Ich bin nicht sicher, ob es sonntags geöffnet hat.
+ima nešto u tome | Ima nešto u tome što kažeš. | Da ist was dran an dem, was du sagst.
+stvar je u tome što … | Stvar je u tome što nemam vremena. | Die Sache ist die, dass ich keine Zeit habe.
+šumski požar | Šumski požar je ugašen posle tri dana. | Der Waldbrand wurde nach drei Tagen gelöscht.
+poplava | Poplava je oštetila mnogo kuća. | Die Überschwemmung hat viele Häuser beschädigt.
+šuma | Vikendom šetamo po šumi. | Am Wochenende gehen wir im Wald spazieren.
+oluja | Oluja je oborila drvo ispred zgrade. | Der Sturm hat einen Baum vor dem Haus umgeworfen.
+smog | Zimi je u gradu smog. | Im Winter gibt es in der Stadt Smog.
+vremenske prilike | Zbog loših vremenskih prilika let kasni. | Wegen schlechter Wetterlage hat der Flug Verspätung.
+smuvali smo se | Smuvali smo se na jednoj žurci. | Wir sind auf einer Party zusammengekommen.
+muž | Moj muž sprema večeru. | Mein Mann macht das Abendessen.
+supruga | Njegova supruga radi u bolnici. | Seine Frau arbeitet im Krankenhaus.
+stalo mi je do tebe | Stalo mi je do tebe, zato se brinem. | Du bist mir wichtig, deshalb mache ich mir Sorgen.
+veza na daljinu | Veza na daljinu nije laka. | Eine Fernbeziehung ist nicht leicht.
+delimo troškove | Kirija je visoka, pa delimo troškove. | Die Miete ist hoch, also teilen wir die Kosten.
+planiranje | Planiranje puta mi uzima mnogo vremena. | Die Reiseplanung kostet mich viel Zeit.
+kalendar | Upisaću to u kalendar. | Ich trage das in den Kalender ein.
+odložiti | Moramo da odložimo sastanak za sutra. | Wir müssen das Treffen auf morgen verschieben.
+zakasnio sam | Izvini, zakasnio sam zbog gužve. | Entschuldige, ich habe mich wegen des Staus verspätet.
+što pre | Javi mi se što pre. | Melde dich so bald wie möglich.
+od sada | Od sada idem peške na posao. | Von jetzt an gehe ich zu Fuß zur Arbeit.
+do petka | Ugovor mora da bude potpisan do petka. | Der Vertrag muss bis Freitag unterschrieben sein.
+čim završim | Doći ću čim završim smenu. | Ich komme, sobald ich die Schicht beendet habe.
+podsetnik | Stavio sam podsetnik za lekove. | Ich habe mir eine Erinnerung für die Medikamente gestellt.
+mnogo mi je žao | Mnogo mi je žao što nisam došao. | Es tut mir sehr leid, dass ich nicht gekommen bin.
+proći će | Ne brini, proći će. | Keine Sorge, das geht vorbei.
+glavu gore! | Glavu gore, sledeći put će biti bolje! | Kopf hoch, nächstes Mal wird es besser!
 `;

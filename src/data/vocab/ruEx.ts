@@ -521,4 +521,66 @@ export default `
 интерне́т-зака́з | Интерне́т-зака́з придёт за́втра. | Die Online-Bestellung kommt morgen.
 корзи́на | Я положи́л кроссо́вки в корзи́ну. | Ich habe die Turnschuhe in den Warenkorb gelegt.
 нало́женный платёж | Я оплачу́ нало́женным платежо́м. | Ich zahle per Nachnahme.
+я тебя́ понима́ю | Я тебя́ понима́ю, мне то́же бы́ло тру́дно. | Ich verstehe dich, mir fiel es auch schwer.
+во́время | По́езд пришёл во́время. | Der Zug ist pünktlich angekommen.
+днём | Днём я рабо́таю, а ве́чером учу́сь. | Tagsüber arbeite ich, und abends lerne ich.
+отсле́живание посы́лки | Отсле́живание посы́лки пока́зывает, что она́ уже́ в Москве́. | Die Sendungsverfolgung zeigt, dass das Paket schon in Moskau ist.
+трек-но́мер | Пришли́ мне трек-но́мер, пожа́луйста. | Schick mir bitte die Sendungsnummer.
+получи́ть | Посы́лку мо́жно получи́ть на по́чте до восьми́. | Das Paket kann man bis acht Uhr bei der Post abholen.
+о́тзыв | Я всегда́ чита́ю о́тзывы пе́ред поку́пкой. | Ich lese vor dem Kauf immer die Bewertungen.
+интерне́т-магази́н | Я заказа́л ку́ртку в интерне́т-магази́не. | Ich habe die Jacke in einem Onlineshop bestellt.
+беспла́тная доста́вка | При зака́зе от трёх ты́сяч доста́вка беспла́тная. | Bei einer Bestellung ab dreitausend ist die Lieferung kostenlos.
+возвра́т това́ра | Возвра́т това́ра возмо́жен в тече́ние четырна́дцати дней. | Eine Warenrücksendung ist innerhalb von vierzehn Tagen möglich.
+мо́жно … к телефо́ну? | Здра́вствуйте, мо́жно О́льгу к телефо́ну? | Guten Tag, kann ich Olga sprechen?
+вы оши́блись но́мером | Здесь тако́го нет, вы оши́блись но́мером. | Hier gibt es niemanden mit dem Namen, Sie sind falsch verbunden.
+автоотве́тчик | Опя́ть включи́лся автоотве́тчик. | Schon wieder ist der Anrufbeantworter angegangen.
+оста́вить сообще́ние | Вы мо́жете оста́вить сообще́ние по́сле сигна́ла. | Sie können nach dem Signalton eine Nachricht hinterlassen.
+положи́ть тру́бку | Не клади́ тру́бку, я сейча́с верну́сь. | Leg nicht auf, ich bin gleich zurück.
+вас пло́хо слы́шно | Вас пло́хо слы́шно, перезвони́те, пожа́луйста. | Ich höre Sie schlecht, rufen Sie bitte noch einmal an.
+отмени́ть | Мне на́до отмени́ть запи́сь к врачу́. | Ich muss den Arzttermin absagen.
+доба́вочный | Позвони́те и назови́те доба́вочный два́дцать два. | Rufen Sie an und nennen Sie die Durchwahl 22.
+свиде́тель | Мой брат был свиде́телем на сва́дьбе. | Mein Bruder war Trauzeuge bei der Hochzeit.
+неве́ста | Неве́ста была́ в бе́лом пла́тье. | Die Braut trug ein weißes Kleid.
+жени́х | Жени́х о́чень волнова́лся. | Der Bräutigam war sehr aufgeregt.
+имени́ны | Сего́дня у ба́бушки имени́ны. | Heute hat Oma Namenstag.
+годовщи́на | На годовщи́ну сва́дьбы мы пое́хали на мо́ре. | Zum Hochzeitstag sind wir ans Meer gefahren.
+пода́рок | Спаси́бо за пода́рок, мне о́чень нра́вится! | Danke für das Geschenk, es gefällt mir sehr!
+повторе́ния | Сде́лай три подхо́да по двена́дцать повторе́ний. | Mach drei Sätze mit je zwölf Wiederholungen.
+пресс | Ка́ждое у́тро я кача́ю пресс. | Jeden Morgen trainiere ich die Bauchmuskeln.
+езда́ на велосипе́де | Езда́ на велосипе́де – мой люби́мый спорт. | Radfahren ist mein Lieblingssport.
+пла́вание | Пла́вание поле́зно для спины́. | Schwimmen ist gut für den Rücken.
+я по́лностью согла́сен | Я по́лностью согла́сен с тобо́й. | Ich stimme dir völlig zu.
+смотря́ как | – Э́то до́рого? – Смотря́ как. | – Ist das teuer? – Es kommt darauf an.
+я не уве́рен | Я не уве́рен, что магази́н откры́т. | Ich bin nicht sicher, dass der Laden offen hat.
+в э́том что́-то есть | В э́том что́-то есть, на́до поду́мать. | Da ist was dran, man muss nachdenken.
+в при́нципе | В при́нципе я не про́тив. | Im Prinzip habe ich nichts dagegen.
+анома́льная жара́ | Из-за анома́льной жары́ все сидя́т до́ма. | Wegen der Hitzewelle sitzen alle zu Hause.
+лесно́й пожа́р | Лесно́й пожа́р туши́ли три дня. | Den Waldbrand hat man drei Tage lang gelöscht.
+гроза́ | Ве́чером начала́сь си́льная гроза́. | Am Abend begann ein heftiges Gewitter.
+снегопа́д | Из-за снегопа́да на доро́гах про́бки. | Wegen des Schneefalls gibt es Staus auf den Straßen.
+гололёд | Осторо́жно, на у́лице гололёд! | Vorsicht, draußen ist Glatteis!
+мы на́чали встреча́ться | Мы на́чали встреча́ться про́шлым ле́том. | Wir sind letzten Sommer zusammengekommen.
+ты мне до́рог | Ты мне до́рог, поэ́тому я волну́юсь. | Du bist mir wichtig, deshalb mache ich mir Sorgen.
+отноше́ния на расстоя́нии | Отноше́ния на расстоя́нии – э́то нелегко́. | Eine Fernbeziehung ist nicht leicht.
+мы де́лим расхо́ды | Мы де́лим расхо́ды попола́м. | Wir teilen die Kosten halbe-halbe.
+плани́рование | Плани́рование о́тпуска занима́ет мно́го вре́мени. | Die Urlaubsplanung kostet viel Zeit.
+календа́рь | Я запишу́ э́то в календа́рь. | Ich trage das in den Kalender ein.
+отложи́ть | Дава́й отло́жим встре́чу на за́втра. | Lass uns das Treffen auf morgen verschieben.
+я опозда́л | Извини́, я опозда́л из-за про́бки. | Entschuldige, ich habe mich wegen des Staus verspätet.
+как мо́жно скоре́е | Перезвони́ мне как мо́жно скоре́е. | Ruf mich so bald wie möglich zurück.
+с сего́дняшнего дня | С сего́дняшнего дня я не курю́. | Ab heute rauche ich nicht mehr.
+до пя́тницы | Отчёт ну́жно сдать до пя́тницы. | Der Bericht muss bis Freitag abgegeben werden.
+как то́лько зако́нчу | Я позвоню́, как то́лько зако́нчу. | Ich rufe an, sobald ich fertig bin.
+напомина́ние | Я поста́вил напомина́ние на телефо́не. | Ich habe mir eine Erinnerung im Handy gestellt.
+мне о́чень жаль | Мне о́чень жаль, что так получи́лось. | Es tut mir sehr leid, dass es so gekommen ist.
+всё пройдёт | Не грусти́, всё пройдёт. | Sei nicht traurig, das geht vorbei.
+держи́сь! | Держи́сь, ско́ро всё нала́дится! | Halte durch, bald wird alles wieder gut!
+как жаль! | Конце́рт отмени́ли? Как жаль! | Das Konzert wurde abgesagt? Wie schade!
+жаль э́то слы́шать | Жаль э́то слы́шать. Как ты сейча́с? | Es tut mir leid, das zu hören. Wie geht es dir jetzt?
+чем могу́ помо́чь? | До́брый день, чем могу́ помо́чь? | Guten Tag, wie kann ich helfen?
+утеше́ние | Твои́ слова́ бы́ли для меня́ утеше́нием. | Deine Worte waren ein Trost für mich.
+я за тебя́ волну́юсь | Ты не отвеча́ешь, я за тебя́ волну́юсь. | Du antwortest nicht, ich mache mir Sorgen um dich.
+всё бу́дет хорошо́ | Успоко́йся, всё бу́дет хорошо́. | Beruhige dich, alles wird gut.
+соболе́знования | Прими́те мои́ соболе́знования. | Mein aufrichtiges Beileid.
+кри́тика | Я норма́льно отношу́сь к кри́тике. | Ich gehe gelassen mit Kritik um.
 `;

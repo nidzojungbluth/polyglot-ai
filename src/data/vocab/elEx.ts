@@ -504,4 +504,66 @@ export default `
 κλείνω το τηλέφωνο | Πρέπει να κλείσω το τηλέφωνο, φτάνει το λεωφορείο. | Ich muss auflegen, der Bus kommt.
 ακυρώνω | Ακυρώνω το ραντεβού για αύριο. | Ich sage den Termin für morgen ab.
 είναι κατειλημμένο | Πήρα τηλέφωνο, αλλά είναι κατειλημμένο. | Ich habe angerufen, aber es ist besetzt.
+εις το επανιδείν | Σας ευχαριστούμε για την επίσκεψη, εις το επανιδείν! | Danke für Ihren Besuch, auf Wiedersehen!
+η παρακολούθηση αποστολής | Με την παρακολούθηση αποστολής βλέπω πού είναι το δέμα. | Mit der Sendungsverfolgung sehe ich, wo das Paket ist.
+το ηλεκτρονικό κατάστημα | Αγόρασα τα παπούτσια από ένα ηλεκτρονικό κατάστημα. | Ich habe die Schuhe in einem Onlineshop gekauft.
+δωρεάν αποστολή | Πάνω από τριάντα ευρώ έχεις δωρεάν αποστολή. | Ab dreißig Euro hast du kostenlosen Versand.
+η επιστροφή προϊόντος | Η επιστροφή προϊόντος γίνεται μέσα σε δεκατέσσερις μέρες. | Die Warenrücksendung erfolgt innerhalb von vierzehn Tagen.
+αφήνω μήνυμα | Δεν απαντούσε, οπότε του άφησα μήνυμα. | Er ging nicht ran, also habe ich ihm eine Nachricht hinterlassen.
+δεν σας ακούω καλά | Συγγνώμη, δεν σας ακούω καλά, έχει θόρυβο. | Entschuldigung, ich höre Sie schlecht, es ist laut.
+το εσωτερικό | Καλέστε το κέντρο και ζητήστε το εσωτερικό διακόσια δώδεκα. | Rufen Sie die Zentrale an und verlangen Sie die Durchwahl 212.
+τα στέφανα | Ο κουμπάρος αλλάζει τα στέφανα τρεις φορές. | Der Trauzeuge tauscht die Hochzeitskronen dreimal.
+η μπομπονιέρα | Στο τέλος του γάμου πήραμε μια μπομπονιέρα με κουφέτα. | Am Ende der Hochzeit bekamen wir ein Gastgeschenk mit Zuckermandeln.
+η ονομαστική γιορτή | Αύριο είναι η ονομαστική γιορτή της μητέρας μου. | Morgen ist der Namenstag meiner Mutter.
+η επέτειος | Για την επέτειό μας πήγαμε στη θάλασσα. | Zu unserem Jahrestag sind wir ans Meer gefahren.
+κάνουμε τραπέζι | Την Κυριακή κάνουμε τραπέζι στους γονείς μου. | Am Sonntag laden wir meine Eltern zum Essen ein.
+οι συγγενείς | Το Πάσχα έρχονται όλοι οι συγγενείς στο χωριό. | Zu Ostern kommen alle Verwandten ins Dorf.
+το δώρο | Το δώρο σου μου άρεσε πολύ. | Dein Geschenk hat mir sehr gefallen.
+οι επαναλήψεις | Κάνε τρία σετ με δώδεκα επαναλήψεις. | Mach drei Sätze mit zwölf Wiederholungen.
+οι κοιλιακοί | Μετά το τρέξιμο δουλεύω τους κοιλιακούς. | Nach dem Laufen trainiere ich die Bauchmuskeln.
+η ποδηλασία | Η ποδηλασία είναι καλή για τα γόνατα. | Radfahren ist gut für die Knie.
+η κολύμβηση | Το καλοκαίρι προτιμώ την κολύμβηση από το γυμναστήριο. | Im Sommer ziehe ich Schwimmen dem Fitnessstudio vor.
+η αποθεραπεία | Μην ξεχνάς την αποθεραπεία μετά την προπόνηση. | Vergiss das Abwärmen nach dem Training nicht.
+συμφωνώ απόλυτα | Συμφωνώ απόλυτα μαζί σου. | Ich stimme dir völlig zu.
+δεν είμαι σίγουρος | Δεν είμαι σίγουρος αν θα έρθω απόψε. | Ich bin nicht sicher, ob ich heute Abend komme.
+έχεις ένα δίκιο | Έχεις ένα δίκιο, είναι λίγο ακριβό. | Da hast du nicht ganz unrecht, es ist etwas teuer.
+στην ουσία | Στην ουσία, θέλουμε το ίδιο πράγμα. | Im Grunde wollen wir dasselbe.
+η πυρκαγιά | Η πυρκαγιά έκαψε μεγάλο μέρος του δάσους. | Der Waldbrand hat einen großen Teil des Waldes zerstört.
+η πλημμύρα | Μετά την πλημμύρα οι δρόμοι ήταν κλειστοί. | Nach der Überschwemmung waren die Straßen gesperrt.
+η ρύπανση | Η ρύπανση στην πόλη είναι μεγάλο πρόβλημα. | Die Verschmutzung in der Stadt ist ein großes Problem.
+η καταιγίδα | Αύριο έρχεται καταιγίδα, μείνε σπίτι. | Morgen kommt ein Unwetter, bleib zu Hause.
+τα μελτέμια | Τον Αύγουστο τα μελτέμια φυσάνε δυνατά στις Κυκλάδες. | Im August wehen die Meltemi-Winde stark auf den Kykladen.
+η θερμοκρασία | Η θερμοκρασία θα φτάσει τους σαράντα βαθμούς. | Die Temperatur wird vierzig Grad erreichen.
+ζούμε μαζί | Ζούμε μαζί εδώ και δύο χρόνια. | Wir wohnen seit zwei Jahren zusammen.
+ο καβγάς | Μετά τον καβγά δεν μιλήσαμε όλη μέρα. | Nach dem Streit haben wir den ganzen Tag nicht geredet.
+ο σύζυγος | Ο σύζυγός μου δουλεύει νύχτα. | Mein Ehemann arbeitet nachts.
+η σύζυγος | Η σύζυγός του είναι δασκάλα. | Seine Ehefrau ist Lehrerin.
+νοιάζομαι για σένα | Σου το λέω επειδή νοιάζομαι για σένα. | Ich sage es dir, weil du mir wichtig bist.
+η σχέση από απόσταση | Η σχέση από απόσταση είναι δύσκολη. | Eine Fernbeziehung ist schwierig.
+μοιραζόμαστε τα έξοδα | Στο σπίτι μοιραζόμαστε τα έξοδα στη μέση. | Zu Hause teilen wir die Kosten halbe-halbe.
+ο προγραμματισμός | Με καλό προγραμματισμό τελειώνουμε νωρίς. | Mit guter Planung werden wir früh fertig.
+το ημερολόγιο | Το γράφω στο ημερολόγιο για να μην το ξεχάσω. | Ich schreibe es in den Kalender, damit ich es nicht vergesse.
+αναβάλλω | Αναβάλλω τη συνάντηση για την Πέμπτη. | Ich verschiebe das Treffen auf Donnerstag.
+εγκαίρως | Φτάσαμε εγκαίρως στο αεροδρόμιο. | Wir sind rechtzeitig am Flughafen angekommen.
+άργησα | Συγγνώμη που άργησα, είχε κίνηση. | Entschuldige die Verspätung, es war viel Verkehr.
+το συντομότερο | Θα σου απαντήσω το συντομότερο. | Ich antworte dir so bald wie möglich.
+από εδώ και πέρα | Από εδώ και πέρα θα ξυπνάω νωρίτερα. | Von jetzt an werde ich früher aufstehen.
+μέχρι την Παρασκευή | Πρέπει να τελειώσω την αναφορά μέχρι την Παρασκευή. | Ich muss den Bericht bis Freitag fertig machen.
+μόλις τελειώσω | Θα σε πάρω τηλέφωνο μόλις τελειώσω. | Ich rufe dich an, sobald ich fertig bin.
+η υπενθύμιση | Έβαλα υπενθύμιση στο κινητό για το ραντεβού. | Ich habe im Handy eine Erinnerung für den Termin gestellt.
+λυπάμαι πολύ | Λυπάμαι πολύ για αυτό που έγινε. | Es tut mir sehr leid, was passiert ist.
+θα περάσει | Μην στενοχωριέσαι, θα περάσει. | Sei nicht traurig, das geht vorbei.
+κουράγιο! | Κουράγιο! Αύριο θα είναι καλύτερα. | Kopf hoch! Morgen wird es besser.
+τι κρίμα! | Έκλεισε το μαγαζί; Τι κρίμα! | Der Laden hat zugemacht? Wie schade!
+στενοχωρήθηκα που το άκουσα | Στενοχωρήθηκα που το άκουσα για τον παππού σου. | Es tut mir leid, das von deinem Opa zu hören.
+μπορώ να βοηθήσω; | Φαίνεσαι κουρασμένη. Μπορώ να βοηθήσω; | Du siehst müde aus. Kann ich helfen?
+η παρηγοριά | Τα λόγια σου ήταν μεγάλη παρηγοριά για μένα. | Deine Worte waren ein großer Trost für mich.
+ανησυχώ για σένα | Δεν τρως καλά, ανησυχώ για σένα. | Du isst nicht richtig, ich mache mir Sorgen um dich.
+όλα θα πάνε καλά | Ηρέμησε, όλα θα πάνε καλά. | Beruhige dich, alles wird gut.
+συλλυπητήρια | Θερμά συλλυπητήρια σε όλη την οικογένεια. | Herzliches Beileid der ganzen Familie.
+η κριτική | Δέχομαι την κριτική, αν είναι δίκαιη. | Ich nehme Kritik an, wenn sie fair ist.
+θέλω να σου πω κάτι | Κάθισε λίγο, θέλω να σου πω κάτι. | Setz dich kurz, ich möchte dir etwas sagen.
+την επόμενη φορά | Την επόμενη φορά πάρε με τηλέφωνο πριν. | Ruf mich nächstes Mal vorher an.
+θα το προσέξω | Έχεις δίκιο, θα το προσέξω. | Du hast recht, ich werde darauf achten.
+δεν το ήξερα | Συγγνώμη, δεν το ήξερα ότι είσαι άρρωστος. | Entschuldige, ich wusste nicht, dass du krank bist.
 `;
