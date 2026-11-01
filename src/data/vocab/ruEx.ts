@@ -723,4 +723,74 @@ export default `
 я на дие́те | Без десе́рта, спаси́бо, я на дие́те. | Ohne Dessert, danke, ich bin auf Diät.
 не мо́жет быть! | Он жени́лся? Не мо́жет быть! | Er hat geheiratet? Das kann nicht sein!
 ты шу́тишь? | Ты шу́тишь? Сто е́вро за футбо́лку? | Machst du Witze? Hundert Euro für ein T-Shirt?
+хозя́ин кварти́ры | Хозя́ин кварти́ры прихо́дит за де́ньгами пе́рвого числа́. | Der Vermieter kommt am Ersten wegen des Geldes.
+мне велико́ | Пальто́ краси́вое, но мне велико́. | Der Mantel ist schön, aber er ist mir zu groß.
+ни за что | Пры́гать с парашю́том? Ни за что! | Fallschirmspringen? Auf keinen Fall!
+ну да, коне́чно | Он придёт во́время? Ну да, коне́чно! | Er kommt pünktlich? Na klar!
+ну ла́дно | Ну ла́дно, е́сли ты так хо́чешь, я приду́. | Na gut, wenn du es so willst, komme ich.
+что де́лаешь на выходны́х? | Что де́лаешь на выходны́х? Пое́дем на да́чу? | Was machst du am Wochenende? Fahren wir auf die Datscha?
+ско́лько ты уже́ живёшь здесь? | Ты хорошо́ говори́шь! Ско́лько ты уже́ живёшь здесь? | Du sprichst gut! Wie lange wohnst du schon hier?
+свобо́дное вре́мя | В свобо́дное вре́мя я игра́ю в футбо́л. | In der Freizeit spiele ich Fußball.
+каку́ю му́зыку ты слу́шаешь? | Каку́ю му́зыку ты слу́шаешь в маши́не? | Welche Musik hörst du im Auto?
+как рабо́та? | Приве́т! Как рабо́та на но́вом ме́сте? | Hallo! Wie läuft die Arbeit an der neuen Stelle?
+всё норм? | Ты како́й-то гру́стный. Всё норм? | Du wirkst irgendwie traurig. Alles gut?
+что но́вого? | Давно́ не ви́делись! Что но́вого? | Lange nicht gesehen! Was gibt's Neues?
+ближа́йшая остано́вка | Где ближа́йшая остано́вка авто́буса? | Wo ist die nächste Bushaltestelle?
+я заблуди́лся | Извини́те, я заблуди́лся. Где центр? | Entschuldigung, ich habe mich verlaufen. Wo ist das Zentrum?
+счастли́вого пути́ | Счастли́вого пути́ и пиши́! | Gute Reise und schreib!
+береги́ себя́ | Ты е́дешь но́чью? Береги́ себя́. | Du fährst nachts? Pass auf dich auf.
+как жизнь? | Приве́т, Са́ша! Как жизнь? | Hallo Sascha! Wie läuft's?
+переда́й приве́т ма́ме | Переда́й приве́т ма́ме и па́пе! | Grüß Mama und Papa von mir!
+хорошо́ провести́ вре́мя | Е́дете на мо́ре? Хорошо́ провести́ вре́мя! | Ihr fahrt ans Meer? Viel Spaß!
+у́тро | Ка́ждое у́тро я пью ко́фе. | Jeden Morgen trinke ich Kaffee.
+по́лдень | Встре́тимся в по́лдень у метро́. | Treffen wir uns mittags an der Metro.
+ве́чер | Ве́чер тёплый, посиди́м на у́лице. | Der Abend ist warm, setzen wir uns draußen hin.
+ра́но | За́втра я встаю́ ра́но. | Morgen stehe ich früh auf.
+по́здно | Он пришёл домо́й по́здно. | Er kam spät nach Hause.
+всегда́ | Я всегда́ пью чай с лимо́ном. | Ich trinke Tee immer mit Zitrone.
+никогда́ | Я никогда́ не был в Сиби́ри. | Ich war noch nie in Sibirien.
+ча́сто | Мы ча́сто е́здим на да́чу. | Wir fahren oft auf die Datscha.
+в про́шлом году́ | В про́шлом году́ мы бы́ли в Пи́тере. | Letztes Jahr waren wir in Petersburg.
+в сле́дующем году́ | В сле́дующем году́ я хочу́ в Каза́нь. | Nächstes Jahr will ich nach Kasan.
+двою́родный брат | Мой двою́родный брат живёт в Новосиби́рске. | Mein Cousin wohnt in Nowosibirsk.
+двою́родная сестра́ | Двою́родная сестра́ выхо́дит за́муж в ию́не. | Meine Cousine heiratet im Juni.
+прошу́ проще́ния | Прошу́ проще́ния за опозда́ние. | Ich bitte um Verzeihung für die Verspätung.
+я винова́т | Извини́, я винова́т. | Entschuldige, es ist meine Schuld.
+ты не винова́т | Не пережива́й, ты не винова́т. | Mach dir keine Gedanken, es ist nicht deine Schuld.
+ты меня́ бе́сишь | Хва́тит, ты меня́ бе́сишь! | Hör auf, du nervst mich!
+прогно́з пого́ды | Прогно́з пого́ды обеща́ет снег. | Die Wettervorhersage kündigt Schnee an.
+второ́е блю́до | На второ́е блю́до у нас котле́ты с пюре́. | Als Hauptgericht haben wir Frikadellen mit Püree.
+план го́рода | Возьми́ план го́рода в оте́ле. | Nimm dir im Hotel einen Stadtplan.
+прямо́й рейс | Есть прямо́й рейс из Берли́на? | Gibt es einen Direktflug aus Berlin?
+пропу́щенный звоно́к | У меня́ три пропу́щенных звонка́ от ма́мы. | Ich habe drei verpasste Anrufe von Mama.
+голосово́е сообще́ние | Я отпра́вил тебе́ голосово́е сообще́ние. | Ich habe dir eine Sprachnachricht geschickt.
+моби́льный интерне́т | Включи́ моби́льный интерне́т. | Schalte die mobilen Daten ein.
+коммуна́льные платежи́ | Коммуна́льные платежи́ зимо́й вы́ше. | Die Nebenkosten sind im Winter höher.
+квадра́тные ме́тры | В кварти́ре со́рок квадра́тных ме́тров. | Die Wohnung hat vierzig Quadratmeter.
+пе́рвый эта́ж | Мы живём на пе́рвом этаже́. | Wir wohnen im Erdgeschoss.
+у́тренняя сме́на | У́тренняя сме́на начина́ется в шесть. | Die Frühschicht beginnt um sechs.
+вече́рняя сме́на | На э́той неде́ле у меня́ вече́рняя сме́на. | Diese Woche habe ich Spätschicht.
+защи́тная о́бувь | Без защи́тной о́буви на склад нельзя́. | Ohne Sicherheitsschuhe darf man nicht ins Lager.
+мне полегча́ло | Он позвони́л, и мне полегча́ло. | Er hat angerufen, und mir fiel ein Stein vom Herzen.
+в восто́рге | Де́ти в восто́рге от пода́рка. | Die Kinder sind begeistert vom Geschenk.
+реце́пт на лека́рство | Врач вы́писал реце́пт на лека́рство. | Der Arzt hat ein Rezept ausgestellt.
+головна́я боль | У меня́ с утра́ головна́я боль. | Ich habe seit dem Morgen Kopfschmerzen.
+боль в животе́ | У ребёнка боль в животе́. | Das Kind hat Bauchschmerzen.
+по́лис ОМС | Не забу́дьте по́лис ОМС. | Vergessen Sie die Krankenversicherungspolice nicht.
+что у вас боли́т? | Сади́тесь. Что у вас боли́т? | Setzen Sie sich. Was tut Ihnen weh?
+закрыва́ть | Магази́н закрыва́ют в де́вять. | Der Laden schließt um neun.
+начина́ть | Я начина́ю рабо́тать в во́семь. | Ich fange um acht an zu arbeiten.
+помога́ть | Я помога́ю ма́ме на ку́хне. | Ich helfe Mama in der Küche.
+находи́ть | Я никогда́ не нахожу́ ключи́. | Ich finde die Schlüssel nie.
+теря́ть | Не теря́й вре́мя! | Verlier keine Zeit!
+плати́ть | Я плачу́ ка́ртой. | Ich zahle mit Karte.
+покупа́ть | Я покупа́ю хлеб ка́ждое у́тро. | Ich kaufe jeden Morgen Brot.
+продава́ть | Мы продаём ста́рую маши́ну. | Wir verkaufen das alte Auto.
+дава́ть | Не дава́й ему́ де́ньги. | Gib ihm kein Geld.
+брать | Я всегда́ беру́ с собо́й зо́нтик. | Ich nehme immer einen Schirm mit.
+приноси́ть | Он всегда́ прино́сит цветы́. | Er bringt immer Blumen mit.
+остава́ться | Сего́дня я остаю́сь до́ма. | Heute bleibe ich zu Hause.
+уходи́ть | Уже́ уходи́шь? Посиди́ ещё. | Gehst du schon? Bleib noch ein bisschen.
+приходи́ть | Приходи́ к нам в го́сти. | Komm uns besuchen.
+возвраща́ться | Я возвраща́юсь домо́й в шесть. | Ich komme um sechs nach Hause zurück.
 `;

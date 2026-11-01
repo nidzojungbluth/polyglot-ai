@@ -702,4 +702,72 @@ export default `
 του χρόνου | Του χρόνου θα πάμε στην Κρήτη. | Nächstes Jahr fahren wir nach Kreta.
 δεν το εννοούσα | Συγγνώμη, δεν το εννοούσα έτσι. | Entschuldige, ich hab's nicht so gemeint.
 φταίω εγώ | Μη μαλώνεις το παιδί, φταίω εγώ. | Schimpf nicht mit dem Kind, es ist meine Schuld.
+είσαι πολύ όμορφη | Απόψε είσαι πολύ όμορφη. | Heute Abend bist du sehr schön.
+είσαι ωραίος | Με αυτό το πουκάμισο είσαι ωραίος. | Mit diesem Hemd siehst du gut aus.
+μπορώ να το δοκιμάσω; | Ωραίο φόρεμα. Μπορώ να το δοκιμάσω; | Schönes Kleid. Kann ich es anprobieren?
+δεν φταις εσύ | Μην κλαις, δεν φταις εσύ. | Weine nicht, es ist nicht deine Schuld.
+με εκνευρίζεις | Σταμάτα, με εκνευρίζεις! | Hör auf, du nervst mich!
+η πρόγνωση καιρού | Η πρόγνωση καιρού λέει βροχή για αύριο. | Die Wettervorhersage sagt Regen für morgen.
+το κυρίως πιάτο | Για κυρίως πιάτο θέλω μουσακά. | Als Hauptgericht möchte ich Moussaka.
+η αναπάντητη κλήση | Έχω τρεις αναπάντητες κλήσεις από τη μαμά. | Ich habe drei verpasste Anrufe von Mama.
+το φωνητικό μήνυμα | Σου έστειλα φωνητικό μήνυμα. | Ich habe dir eine Sprachnachricht geschickt.
+η πρωινή βάρδια | Η πρωινή βάρδια αρχίζει στις έξι. | Die Frühschicht beginnt um sechs.
+η απογευματινή βάρδια | Αυτή την εβδομάδα έχω απογευματινή βάρδια. | Diese Woche habe ich Spätschicht.
+ο ιμάντας μεταφοράς | Ο ιμάντας μεταφοράς σταμάτησε ξαφνικά. | Das Förderband hat plötzlich angehalten.
+τα παπούτσια ασφαλείας | Χωρίς παπούτσια ασφαλείας δεν μπαίνεις στην αποθήκη. | Ohne Sicherheitsschuhe kommst du nicht ins Lager.
+η ιατρική συνταγή | Για αυτό το φάρμακο χρειάζεστε ιατρική συνταγή. | Für dieses Medikament brauchen Sie ein ärztliches Rezept.
+η αίθουσα αναμονής | Η αίθουσα αναμονής ήταν γεμάτη. | Das Wartezimmer war voll.
+η αναρρωτική άδεια | Πήρα αναρρωτική άδεια τρεις μέρες. | Ich bin drei Tage krankgeschrieben.
+πού πονάτε; | Καθίστε. Πού πονάτε; | Setzen Sie sich. Wo tut es Ihnen weh?
+κλείνω | Κλείνω το παράθυρο, κάνει κρύο. | Ich schließe das Fenster, es ist kalt.
+αρχίζω | Αρχίζω δουλειά στις οχτώ. | Ich fange um acht mit der Arbeit an.
+βοηθάω | Βοηθάω τη μητέρα μου στην κουζίνα. | Ich helfe meiner Mutter in der Küche.
+βρίσκω | Δεν βρίσκω το κινητό μου. | Ich finde mein Handy nicht.
+χάνω | Πάλι έχασα το λεωφορείο. | Ich habe schon wieder den Bus verpasst.
+πληρώνω | Πληρώνω με κάρτα. | Ich zahle mit Karte.
+αγοράζω | Αγοράζω ψωμί κάθε πρωί. | Ich kaufe jeden Morgen Brot.
+πουλάω | Πουλάω το παλιό μου ποδήλατο. | Ich verkaufe mein altes Fahrrad.
+δίνω | Δώσε μου το αλάτι, σε παρακαλώ. | Gib mir bitte das Salz.
+παίρνω | Παίρνω το μετρό για τη δουλειά. | Ich nehme die U-Bahn zur Arbeit.
+φέρνω | Φέρνω κρασί για το τραπέζι. | Ich bringe Wein fürs Essen mit.
+μένω | Μένω στη Θεσσαλονίκη. | Ich wohne in Thessaloniki.
+γυρίζω | Γυρίζω σπίτι στις έξι. | Ich komme um sechs nach Hause zurück.
+μπαίνω | Μπαίνω στο μαγαζί να ρωτήσω. | Ich gehe in den Laden, um zu fragen.
+κάθομαι | Κάθομαι στο μπαλκόνι και πίνω καφέ. | Ich sitze auf dem Balkon und trinke Kaffee.
+σηκώνομαι | Σηκώνομαι στις έξι το πρωί. | Ich stehe um sechs Uhr morgens auf.
+περπατάω | Περπατάω μισή ώρα κάθε μέρα. | Ich gehe jeden Tag eine halbe Stunde zu Fuß.
+τρέχω | Τρέχω στο πάρκο τα πρωινά. | Morgens laufe ich im Park.
+μεγάλος | Το σπίτι τους είναι πολύ μεγάλο. | Ihr Haus ist sehr groß.
+μικρός | Το δωμάτιο είναι μικρό αλλά φωτεινό. | Das Zimmer ist klein, aber hell.
+καινούργιος | Αγόρασα καινούργιο κινητό. | Ich habe ein neues Handy gekauft.
+παλιός | Αυτό το αυτοκίνητο είναι πολύ παλιό. | Dieses Auto ist sehr alt.
+καλός | Είναι πολύ καλός άνθρωπος. | Er ist ein sehr guter Mensch.
+κακός | Σήμερα έχει κακό καιρό. | Heute ist schlechtes Wetter.
+εύκολος | Το τεστ ήταν εύκολο. | Der Test war leicht.
+γρήγορος | Το τρένο είναι πιο γρήγορο από το λεωφορείο. | Der Zug ist schneller als der Bus.
+αργός | Το ίντερνετ είναι πολύ αργό σήμερα. | Das Internet ist heute sehr langsam.
+ζεστός | Θέλω ένα ζεστό τσάι. | Ich möchte einen heißen Tee.
+κρύος | Το νερό της θάλασσας είναι ακόμα κρύο. | Das Meerwasser ist noch kalt.
+γεμάτος | Το λεωφορείο είναι γεμάτο. | Der Bus ist voll.
+άδειος | Το ψυγείο είναι άδειο. | Der Kühlschrank ist leer.
+ανοιχτός | Το φαρμακείο είναι ανοιχτό μέχρι τις εννιά. | Die Apotheke ist bis neun geöffnet.
+κλειστός | Την Κυριακή τα μαγαζιά είναι κλειστά. | Sonntags sind die Läden geschlossen.
+καθαρός | Το δωμάτιο είναι καθαρό. | Das Zimmer ist sauber.
+βρώμικος | Τα ρούχα μου είναι βρώμικα από τη δουλειά. | Meine Kleider sind von der Arbeit schmutzig.
+βαρύς | Η βαλίτσα είναι πολύ βαριά. | Der Koffer ist sehr schwer.
+ελαφρύς | Αυτό το κουτί είναι ελαφρύ. | Dieser Karton ist leicht.
+ήσυχος | Η γειτονιά είναι ήσυχη. | Die Gegend ist ruhig.
+θορυβώδης | Ο δρόμος είναι θορυβώδης τη νύχτα. | Die Straße ist nachts laut.
+σωστός | Η απάντησή σου είναι σωστή. | Deine Antwort ist richtig.
+λάθος | Πήρα λάθος λεωφορείο. | Ich habe den falschen Bus genommen.
+ίδιος | Δουλεύουμε στην ίδια εταιρεία. | Wir arbeiten in derselben Firma.
+διαφορετικός | Η ζωή εδώ είναι πολύ διαφορετική. | Das Leben hier ist ganz anders.
+σημαντικός | Αυτό είναι πολύ σημαντικό για μένα. | Das ist sehr wichtig für mich.
+ενδιαφέρων | Το βιβλίο είναι πολύ ενδιαφέρον. | Das Buch ist sehr interessant.
+βαρετός | Η ταινία ήταν βαρετή. | Der Film war langweilig.
+πλούσιος | Ο γείτονας είναι πλούσιος. | Der Nachbar ist reich.
+φτωχός | Ήταν φτωχοί, αλλά ευτυχισμένοι. | Sie waren arm, aber glücklich.
+υγιής | Το σημαντικό είναι να είσαι υγιής. | Das Wichtigste ist, gesund zu sein.
+ελεύθερος | Είσαι ελεύθερος αύριο το βράδυ; | Hast du morgen Abend frei?
+απασχολημένος | Συγγνώμη, τώρα είμαι απασχολημένος. | Entschuldige, gerade bin ich beschäftigt.
 `;

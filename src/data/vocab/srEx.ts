@@ -703,4 +703,75 @@ spustio mi je slušalicu | Naljutio se i spustio mi je slušalicu. | Er wurde w�
 nemam signal | U liftu sam, nemam signal. | Ich bin im Aufzug, ich habe keinen Empfang.
 pošalji mi sliku | Pošalji mi sliku stana. | Schick mir ein Bild von der Wohnung.
 glasovna poruka | Poslao sam ti glasovnu poruku. | Ich habe dir eine Sprachnachricht geschickt.
+lična karta | Zaboravio sam ličnu kartu kod kuće. | Ich habe den Personalausweis zu Hause vergessen.
+veliko mi je | Ovo je lepo, ali veliko mi je. | Das ist schön, aber es ist mir zu groß.
+video sam poruku | Video sam poruku, ali sam bio na poslu. | Ich hab die Nachricht gesehen, aber ich war auf der Arbeit.
+pričaćemo uživo | Duga je priča, pričaćemo uživo. | Das ist eine lange Geschichte, wir reden persönlich.
+javi kad stigneš | Srećan put, javi kad stigneš! | Gute Reise, sag Bescheid, wenn du ankommst!
+broj telefona | Zapiši moj broj telefona. | Schreib dir meine Telefonnummer auf.
+na dijeti sam | Bez kolača, hvala, na dijeti sam. | Ohne Kuchen, danke, ich bin auf Diät.
+ne mogu da verujem | Ne mogu da verujem da je već novembar! | Ich kann nicht glauben, dass schon November ist!
+bravo | Položio si? Bravo! | Du hast bestanden? Bravo!
+šališ se? | Šališ se? Sto evra za majicu? | Machst du Witze? Hundert Euro für ein T-Shirt?
+umro sam od smeha | Gledao sam taj video, umro sam od smeha. | Ich habe das Video gesehen, ich bin vor Lachen gestorben.
+ma nemoj! | Opet kasni? Ma nemoj! | Er kommt schon wieder zu spät? Was du nicht sagst!
+e pa dobro | E pa dobro, ako baš hoćeš, doći ću. | Na gut, wenn du unbedingt willst, komme ich.
+šta radiš vikendom? | Šta radiš vikendom? Idemo na Adu? | Was machst du am Wochenende? Gehen wir zur Ada?
+koliko dugo živiš ovde? | Dobro pričaš srpski! Koliko dugo živiš ovde? | Du sprichst gut Serbisch! Wie lange wohnst du schon hier?
+slobodno vreme | U slobodno vreme igram fudbal. | In der Freizeit spiele ich Fußball.
+izlaziš li često? | Izlaziš li često petkom? | Gehst du freitags oft aus?
+kakvu muziku slušaš? | Kakvu muziku slušaš dok voziš? | Welche Musik hörst du beim Fahren?
+gledam seriju | Uveče gledam seriju na Netfliksu. | Abends schaue ich eine Serie auf Netflix.
+kako ide posao? | Kako ide posao u novoj firmi? | Wie läuft die Arbeit in der neuen Firma?
+sve okej? | Izgledaš umorno. Sve okej? | Du siehst müde aus. Alles okay?
+šta ima novo? | Ćao, dugo se nismo videli! Šta ima novo? | Hallo, lange nicht gesehen! Was gibt's Neues?
+najbliža stanica | Gde je najbliža stanica autobusa? | Wo ist die nächste Bushaltestelle?
+izgubio sam se | Izvinite, izgubio sam se. Gde je centar? | Entschuldigung, ich habe mich verlaufen. Wo ist das Zentrum?
+srećan put | Srećan put i pošalji slike! | Gute Reise und schick Fotos!
+čuvaj se | Voziš noću? Čuvaj se. | Du fährst nachts? Pass auf dich auf.
+kako ide? | Ćao, Marko! Kako ide? | Hallo Marko! Wie läuft's?
+dobrodošao | Dobrodošao u Beograd! | Willkommen in Belgrad!
+pozdravi mamu | Pozdravi mamu i tatu! | Grüß Mama und Papa!
+lepo se provedi | Ideš na more? Lepo se provedi! | Du fährst ans Meer? Viel Spaß!
+jutro | Svako jutro pijem kafu na terasi. | Jeden Morgen trinke ich Kaffee auf der Terrasse.
+podne | Ručamo u podne. | Wir essen mittags zu Mittag.
+veče | Veče je toplo, sedimo napolju. | Der Abend ist warm, wir sitzen draußen.
+rano | Sutra ustajem rano. | Morgen stehe ich früh auf.
+kasno | Došao je kasno kući. | Er kam spät nach Hause.
+uvek | Uvek pijem kafu ujutru. | Morgens trinke ich immer Kaffee.
+nikad | Nikad ne jedem meso. | Ich esse nie Fleisch.
+često | Često idemo na selo. | Wir fahren oft aufs Land.
+prošle godine | Prošle godine smo bili u Crnoj Gori. | Letztes Jahr waren wir in Montenegro.
+sledeće godine | Sledeće godine idemo u Grčku. | Nächstes Jahr fahren wir nach Griechenland.
+brat od strica | Moj brat od strica živi u Nišu. | Mein Cousin väterlicherseits wohnt in Niš.
+sestra od tetke | Sestra od tetke se udaje u junu. | Meine Cousine heiratet im Juni.
+nisam tako mislio | Izvini, nisam tako mislio. | Entschuldige, ich hab's nicht so gemeint.
+moja greška | Izvini, moja greška. | Entschuldige, mein Fehler.
+nisi ti kriv | Ne brini, nisi ti kriv. | Keine Sorge, es ist nicht deine Schuld.
+nerviraš me | Prestani, nerviraš me! | Hör auf, du nervst mich!
+vremenska prognoza | Vremenska prognoza kaže da će padati kiša. | Die Wettervorhersage sagt Regen voraus.
+glavno jelo | Za glavno jelo uzimam ćevape. | Als Hauptgericht nehme ich Ćevapi.
+propušten poziv | Imam tri propuštena poziva od mame. | Ich habe drei verpasste Anrufe von Mama.
+mobilni podaci | Uključi mobilne podatke. | Schalte die mobilen Daten ein.
+ugovor o zakupu | Potpisali smo ugovor o zakupu na godinu dana. | Wir haben den Mietvertrag für ein Jahr unterschrieben.
+prva smena | Prva smena počinje u šest. | Die Frühschicht beginnt um sechs.
+druga smena | Ove nedelje radim drugu smenu. | Diese Woche arbeite ich Spätschicht.
+pokretna traka | Pokretna traka je stala. | Das Förderband ist stehen geblieben.
+zaštitne cipele | Bez zaštitnih cipela ne ulaziš u magacin. | Ohne Sicherheitsschuhe kommst du nicht ins Lager.
+recept za lek | Za ovaj lek treba recept. | Für dieses Medikament braucht man ein Rezept.
+bol u stomaku | Imam bol u stomaku od jutros. | Ich habe seit heute Morgen Bauchschmerzen.
+zdravstvena knjižica | Ponesite zdravstvenu knjižicu. | Bringen Sie die Krankenversicherungskarte mit.
+gde vas boli? | Sedite. Gde vas boli? | Setzen Sie sich. Wo tut es Ihnen weh?
+zatvoriti | Zatvori prozor, hladno je. | Mach das Fenster zu, es ist kalt.
+početi | Počinjem da radim u osam. | Ich fange um acht an zu arbeiten.
+pomoći | Možeš li da mi pomogneš sa kutijama? | Kannst du mir mit den Kartons helfen?
+naći | Ne mogu da nađem telefon. | Ich kann das Handy nicht finden.
+platiti | Platiću karticom. | Ich zahle mit Karte.
+kupiti | Moram da kupim hleb. | Ich muss Brot kaufen.
+prodati | Prodao sam stari bicikl. | Ich habe das alte Fahrrad verkauft.
+dati | Daj mi so, molim te. | Gib mir bitte das Salz.
+uzeti | Uzeću taksi do aerodroma. | Ich nehme ein Taxi zum Flughafen.
+doneti | Doneću vino za večeru. | Ich bringe Wein zum Abendessen mit.
+ostati | Danas ostajem kod kuće. | Heute bleibe ich zu Hause.
+otići | Moram da odem ranije. | Ich muss früher gehen.
 `;
