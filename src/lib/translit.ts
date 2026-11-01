@@ -126,8 +126,24 @@ export function grTranslit(text: string): string {
   });
 }
 
+/**
+ * Lateinische Umschrift für Griechisch und Russisch – für einzelne Wörter und ganze Sätze.
+ * Wird Wort für Wort umgeschrieben; Großschreibung am Wortanfang (Satzanfang, Namen) bleibt erhalten.
+ */
 export function autoTranslit(code: string, text: string): string | undefined {
-  if (code === 'el') return grTranslit(text).replace(/[;;]/g, '?');
-  if (code === 'ru') return ruTranslit(text);
-  return undefined;
+  const f = code === 'el' ? (t: string) => grTranslit(t).replace(/[;;]/g, '?') : code === 'ru' ? ruTranslit : null;
+  if (!f) return undefined;
+  return text
+    .split(/(\s+)/)
+    .map((tok) => {
+      if (!tok || /^\s+$/.test(tok)) return tok;
+      const out = f(tok);
+      const first = tok.match(/\p{L}/u)?.[0];
+      if (first && first !== first.toLowerCase()) {
+        const i = out.search(/\p{L}/u);
+        if (i >= 0) return out.slice(0, i) + out[i].toUpperCase() + out.slice(i + 1);
+      }
+      return out;
+    })
+    .join('');
 }

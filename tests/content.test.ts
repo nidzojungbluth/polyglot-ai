@@ -169,3 +169,26 @@ describe('Datenqualität – russische Beispielsätze', () => {
     expect(bad).toEqual([]);
   });
 });
+
+describe('Umschrift der Beispielsätze', () => {
+  it('jeder griechische und russische Beispielsatz hat eine rein lateinische Umschrift', () => {
+    for (const code of ['el', 'ru']) {
+      const p = PACKS.find((x) => x.code === code)!;
+      const exs = [...p.words.filter((w) => w.ex).map((w) => w.ex!), ...p.slang.map((s) => s.ex)];
+      expect(exs.length).toBeGreaterThan(500);
+      const bad = exs.filter((e) => !e.tr || /[Ͱ-Ͽἀ-῿Ѐ-ӿ]/.test(e.tr)).map((e) => e.t);
+      expect(bad).toEqual([]);
+    }
+  });
+  it('Großschreibung am Satzanfang bleibt erhalten', async () => {
+    const { autoTranslit } = await import('../src/lib/translit');
+    expect(autoTranslit('el', 'Ανέβασα μια φωτογραφία.')).toBe('Anévasa mia fotografía.');
+    expect(autoTranslit('ru', 'Мой брат жена́т.')).toBe('Moj brat zhenát.');
+  });
+  it('Serbisch: kyrillische Ansicht zeigt den lateinischen Satz als Umschrift', () => {
+    const sr = withScript(PACKS.find((p) => p.code === 'sr')!, 'kyrillisch');
+    const w = sr.words.find((x) => x.ex)!;
+    expect(/[Ѐ-ӿ]/.test(w.ex!.t)).toBe(true);
+    expect(/[Ѐ-ӿ]/.test(w.ex!.tr!)).toBe(false);
+  });
+});

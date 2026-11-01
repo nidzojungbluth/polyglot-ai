@@ -14,7 +14,7 @@ export function WordHead({ t, de, tr, lang }: { t: string; de: string; tr?: stri
 }
 
 /** Beispielsatz mit deutscher Übersetzung – klar von der Wortübersetzung abgesetzt. */
-export function ExampleBlock({ ex, lang, pack }: { ex?: { t: string; de: string }; lang: string; pack?: LanguagePack }) {
+export function ExampleBlock({ ex, lang, pack }: { ex?: { t: string; de: string; tr?: string }; lang: string; pack?: LanguagePack }) {
   if (!ex) return null;
   return (
     <div className="ex-block">
@@ -23,6 +23,12 @@ export function ExampleBlock({ ex, lang, pack }: { ex?: { t: string; de: string 
         {pack && <SpeakBtn text={ex.t} pack={pack} label="🔊" />}
       </div>
       <div className="ex-t" lang={lang}>{ex.t}</div>
+      {ex.tr && ex.tr !== ex.t && (
+        <>
+          <div className="ex-label">{/[\u0400-\u04FF]/.test(ex.tr) ? 'Kyrillische Schreibweise' : 'Umschrift'}</div>
+          <div className="ex-tr">{ex.tr}</div>
+        </>
+      )}
       <div className="ex-label">Deutsche Übersetzung</div>
       <div className="ex-de" lang="de">{ex.de}</div>
     </div>

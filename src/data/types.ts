@@ -16,7 +16,8 @@ export const REGISTER_INFO: Record<Register, { label: string; color: string }> =
   'vulgär': { label: 'Vulgär', color: '#b91c1c' },
 };
 
-export interface Example { t: string; de: string }
+/** Beispielsatz: Originalsatz, deutsche Übersetzung und (bei nichtlateinischer Schrift) lateinische Umschrift. */
+export interface Example { t: string; de: string; tr?: string }
 
 export interface Word {
   id: string;

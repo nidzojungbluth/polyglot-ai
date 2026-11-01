@@ -1,4 +1,4 @@
-import type { CatalogEntry, LanguagePack, Module, SlangEntry, Word } from './types';
+import type { CatalogEntry, Example, LanguagePack, Module, SlangEntry, Word } from './types';
 import { en } from './en';
 import { es } from './es';
 import { el } from './el';
@@ -36,6 +36,7 @@ import elVocab15 from './vocab/el15';
 import elVocab16 from './vocab/el16';
 import elVocab17 from './vocab/el17';
 import elVocab18 from './vocab/el18';
+import elVocab19 from './vocab/el19';
 import elEx from './vocab/elEx';
 import srVocab8 from './vocab/sr8';
 import srVocab9 from './vocab/sr9';
@@ -48,6 +49,7 @@ import srVocab15 from './vocab/sr15';
 import srVocab16 from './vocab/sr16';
 import srVocab17 from './vocab/sr17';
 import srVocab18 from './vocab/sr18';
+import srVocab19 from './vocab/sr19';
 import srEx from './vocab/srEx';
 import ruVocab8 from './vocab/ru8';
 import ruVocab9 from './vocab/ru9';
@@ -60,6 +62,7 @@ import ruVocab15 from './vocab/ru15';
 import ruVocab16 from './vocab/ru16';
 import ruVocab17 from './vocab/ru17';
 import ruVocab18 from './vocab/ru18';
+import ruVocab19 from './vocab/ru19';
 import ruEx from './vocab/ruEx';
 import { REF, parseVocab } from './vocab';
 import { normalize } from '../lib/text';
@@ -68,6 +71,14 @@ import { autoTranslit, srCyrToLat, srLatToCyr } from '../lib/translit';
 export interface EnrichedPack extends LanguagePack { duplicates: string[]; parseErrors: string[] }
 
 /** Verbindet ein handgeschriebenes Grundpaket mit einem großen Wortschatz – ohne Duplikate. */
+/** Hängt an jeden Beispielsatz die lateinische Umschrift (Griechisch, Russisch). Regelbasiert aus dem Satz abgeleitet – passt daher immer zum Satz. */
+function addExampleTranslit(code: string, words: Word[], slang: SlangEntry[]) {
+  const tr = (e?: Example) => (e ? { ...e, tr: autoTranslit(code, e.t) } : e);
+  if (code !== 'el' && code !== 'ru') return;
+  for (let i = 0; i < words.length; i++) if (words[i].ex) words[i] = { ...words[i], ex: tr(words[i].ex) };
+  for (let i = 0; i < slang.length; i++) slang[i] = { ...slang[i], ex: tr(slang[i].ex)! };
+}
+
 /** Ergänzt Beispielsätze aus einer eigenen Liste: „Wort | Beispiel | Übersetzung“. */
 function applyExamples(words: Word[], src: string, errors: string[]) {
   const byNorm = new Map(words.map((w, i) => [normalize(w.t), i]));
@@ -121,11 +132,12 @@ export function enrich(base: LanguagePack, vocabSrc?: string, exampleSrc?: strin
   const uniq = (ids: string[], by: Map<string, string>, m: Module) =>
     Array.from(new Set(ids.map((id) => resolve(id, by, m)).filter((x): x is string => !!x)));
   const modules: Module[] = parsed.modules.map((m) => ({ ...m, words: uniq(m.words, wordByNorm, m), slang: uniq(m.slang, slangByNorm, m) }));
+  addExampleTranslit(base.code, words, slang);
   return { ...base, words, slang, modules, duplicates, parseErrors: errors };
 }
 
 /** Vollständige Sprachpakete. Neue Sprache: Datei anlegen und hier eintragen. */
-export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11 + elVocab12 + elVocab13 + elVocab14 + elVocab15 + elVocab16 + elVocab17 + elVocab18, elEx), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11 + srVocab12 + srVocab13 + srVocab14 + srVocab15 + srVocab16 + srVocab17 + srVocab18, srEx), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11 + ruVocab12 + ruVocab13 + ruVocab14 + ruVocab15 + ruVocab16 + ruVocab17 + ruVocab18, ruEx)];
+export const PACKS: EnrichedPack[] = [enrich(en), enrich(es), enrich(el, elVocab + elVocab2 + elVocab3 + elVocab4 + elVocab5 + elVocab6 + elVocab7 + elVocab8 + elVocab9 + elVocab10 + elVocab11 + elVocab12 + elVocab13 + elVocab14 + elVocab15 + elVocab16 + elVocab17 + elVocab18 + elVocab19, elEx), enrich(sr, srVocab + srVocab2 + srVocab3 + srVocab4 + srVocab5 + srVocab6 + srVocab7 + srVocab8 + srVocab9 + srVocab10 + srVocab11 + srVocab12 + srVocab13 + srVocab14 + srVocab15 + srVocab16 + srVocab17 + srVocab18 + srVocab19, srEx), enrich(ru, ruVocab + ruVocab2 + ruVocab3 + ruVocab4 + ruVocab5 + ruVocab6 + ruVocab7 + ruVocab8 + ruVocab9 + ruVocab10 + ruVocab11 + ruVocab12 + ruVocab13 + ruVocab14 + ruVocab15 + ruVocab16 + ruVocab17 + ruVocab18 + ruVocab19, ruEx)];
 
 export const packByCode = (code: string): EnrichedPack | undefined => PACKS.find((p) => p.code === code);
 
@@ -137,7 +149,8 @@ export function withScript(pack: EnrichedPack, mode: SrScript): EnrichedPack {
   const cyr = mode === 'kyrillisch';
   const main = (s: string) => (cyr ? srLatToCyr(s) : s);
   const second = (s: string) => (cyr ? srCyrToLat(s) : srLatToCyr(s));
-  const ex = (e?: { t: string; de: string }) => (e ? { ...e, t: main(e.t) } : e);
+  // Kyrillisch: Satz in Kyrillisch, Umschrift = lateinischer Originalsatz. „Beide“: Satz lateinisch, darunter die kyrillische Schreibweise.
+  const ex = (e?: Example) => (e ? { ...e, t: main(e.t), tr: second(e.t) } : e);
   return {
     ...pack,
     words: pack.words.map((w) => ({ ...w, t: main(w.t), tr: second(w.t), ex: ex(w.ex) })),
