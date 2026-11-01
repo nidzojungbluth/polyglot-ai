@@ -1,4 +1,4 @@
-// Griechisch – zusätzliche Beispielsätze (Etappe 15–16): Wort | Beispiel | Übersetzung
+// Griechisch – zusätzliche Beispielsätze (Etappe 15–17): Wort | Beispiel | Übersetzung
 export default `
 ο φίλος / η φίλη | Ο Νίκος είναι καλός μου φίλος. | Nikos ist ein guter Freund von mir.
 ο καφές | Ο καφές εδώ είναι πολύ καλός. | Der Kaffee hier ist sehr gut.
@@ -198,4 +198,120 @@ export default `
 το πλυντήριο | Το πλυντήριο κάνει θόρυβο. | Die Waschmaschine macht Lärm.
 ο καθρέφτης | Ο καθρέφτης είναι στο μπάνιο. | Der Spiegel ist im Bad.
 η πετσέτα | Πάρε μια καθαρή πετσέτα. | Nimm ein sauberes Handtuch.
+ο πάγκος | Ο πάγκος είναι ελεύθερος; | Ist die Hantelbank frei?
+το σετ | Κάνω τρία σετ των δέκα. | Ich mache drei Sätze à zehn.
+η επανάληψη | Μία επανάληψη ακόμα! | Noch eine Wiederholung!
+το τρέξιμο | Το τρέξιμο στην παραλία είναι ωραίο. | Laufen an der Promenade ist schön.
+η πρωτεΐνη | Η πρωτεΐνη βοηθάει τους μύες. | Protein hilft den Muskeln.
+η διατροφή | Η σωστή διατροφή είναι σημαντική. | Richtige Ernährung ist wichtig.
+το ΚΕΠ | Πήγα στο ΚΕΠ για ένα πιστοποιητικό. | Ich war im KEP für eine Bescheinigung.
+χαλαρός | Σήμερα είμαι πολύ χαλαρός. | Heute bin ich sehr entspannt.
+χωρίσαμε | Χωρίσαμε πριν από έναν μήνα. | Wir haben uns vor einem Monat getrennt.
+οι θερμίδες | Αυτό το γλυκό έχει πολλές θερμίδες. | Diese Süßigkeit hat viele Kalorien.
+τα αυγά | Τα αυγά είναι στο ψυγείο. | Die Eier sind im Kühlschrank.
+το ζέσταμα | Το ζέσταμα κρατάει δέκα λεπτά. | Das Aufwärmen dauert zehn Minuten.
+οι διατάσεις | Μετά την προπόνηση κάνω διατάσεις. | Nach dem Training dehne ich mich.
+το στήθος | Σήμερα γυμνάζω στήθος. | Heute trainiere ich Brust.
+η πλάτη | Με πονάει η πλάτη. | Mir tut der Rücken weh.
+απίστευτο | Είναι απίστευτο! | Das ist unglaublich!
+αστείο | Δεν είναι αστείο! | Das ist nicht witzig!
+ο ελεύθερος χρόνος | Στον ελεύθερο χρόνο μου διαβάζω. | In meiner Freizeit lese ich.
+η κρεβατοκάμαρα | Η κρεβατοκάμαρα έχει μεγάλο παράθυρο. | Das Schlafzimmer hat ein großes Fenster.
+το σαλόνι | Το σαλόνι είναι φωτεινό. | Das Wohnzimmer ist hell.
+ωραίος | Ο καινούργιος συνάδελφος είναι ωραίος. | Der neue Kollege sieht gut aus.
+το αστείο | Το αστείο του δεν ήταν καλό. | Sein Witz war nicht gut.
+τα νέα | Έχεις νέα από τον Γιώργο; | Hast du Neuigkeiten von Giorgos?
+η ανιψιά | Η ανιψιά μου είναι πέντε χρονών. | Meine Nichte ist fünf Jahre alt.
+ο γαμπρός | Ο γαμπρός ήταν πολύ αγχωμένος. | Der Bräutigam war sehr nervös.
+η διαφωνία | Είχαμε μια μικρή διαφωνία. | Wir hatten eine kleine Meinungsverschiedenheit.
+το άρθρο | Διάβασα ένα ενδιαφέρον άρθρο. | Ich habe einen interessanten Artikel gelesen.
+η φωτιά | Η φωτιά έσβησε γρήγορα. | Das Feuer war schnell gelöscht.
+το αγγούρι | Κόψε το αγγούρι για τη σαλάτα. | Schneide die Gurke für den Salat.
+η φούστα | Η φούστα είναι πολύ κοντή. | Der Rock ist sehr kurz.
+μπλε | Θέλω το μπλε πουκάμισο. | Ich möchte das blaue Hemd.
+κίτρινος | Ο ήλιος είναι κίτρινος. | Die Sonne ist gelb.
+γκρι | Ο ουρανός είναι γκρι σήμερα. | Der Himmel ist heute grau.
+πίσω | Κάτσε πίσω, παρακαλώ. | Setz dich bitte nach hinten.
+μπροστά | Η στάση είναι μπροστά στην τράπεζα. | Die Haltestelle ist vor der Bank.
+η αποσκευή | Η αποσκευή μου χάθηκε. | Mein Gepäckstück ist verloren gegangen.
+το πηρούνι | Μου φέρνετε ένα πηρούνι; | Bringen Sie mir eine Gabel?
+το μαχαίρι | Το μαχαίρι δεν κόβει. | Das Messer schneidet nicht.
+το κουτάλι | Χρειάζομαι ένα κουτάλι για τη σούπα. | Ich brauche einen Löffel für die Suppe.
+το ορεκτικό | Για ορεκτικό θέλουμε τζατζίκι. | Als Vorspeise möchten wir Tzatziki.
+αλμυρός | Ο μεζές είναι λίγο αλμυρός. | Der Meze ist etwas salzig.
+η προσφορά | Η προσφορά ισχύει ως την Κυριακή. | Das Angebot gilt bis Sonntag.
+η επιστροφή | Η επιστροφή γίνεται μέσα σε δεκαπέντε μέρες. | Rückgabe ist innerhalb von fünfzehn Tagen möglich.
+η αλλαγή | Μπορώ να κάνω αλλαγή; | Kann ich das umtauschen?
+η ρεσεψιόν | Η ρεσεψιόν είναι ανοιχτή όλη νύχτα. | Die Rezeption ist die ganze Nacht offen.
+το ασανσέρ | Το ασανσέρ δεν λειτουργεί. | Der Aufzug funktioniert nicht.
+η πισίνα | Η πισίνα ανοίγει στις εννιά. | Das Schwimmbad öffnet um neun.
+ο χάρτης | Έχετε χάρτη της πόλης; | Haben Sie einen Stadtplan?
+το πρόγραμμα | Ποιο είναι το πρόγραμμα για αύριο; | Was ist das Programm für morgen?
+η ακύρωση | Η ακύρωση είναι δωρεάν. | Die Stornierung ist kostenlos.
+η ανταπόκριση | Έχασα την ανταπόκριση στην Αθήνα. | Ich habe den Anschluss in Athen verpasst.
+η λάμπα | Η λάμπα στο σαλόνι κάηκε. | Die Lampe im Wohnzimmer ist durchgebrannt.
+το ντους | Το ντους έχει μόνο κρύο νερό. | Die Dusche hat nur kaltes Wasser.
+το μαξιλάρι | Το μαξιλάρι είναι πολύ σκληρό. | Das Kissen ist zu hart.
+η κουβέρτα | Φέρε μου μια κουβέρτα, κρυώνω. | Bring mir eine Decke, mir ist kalt.
+η ντουλάπα | Η ντουλάπα είναι γεμάτη ρούχα. | Der Kleiderschrank ist voller Kleidung.
+το ράφι | Τα βιβλία είναι στο ράφι. | Die Bücher stehen im Regal.
+το χαλί | Το χαλί είναι από τη γιαγιά μου. | Der Teppich ist von meiner Oma.
+η σκούπα | Πού είναι η σκούπα; | Wo ist der Staubsauger?
+ψηλός | Ο αδερφός μου είναι πολύ ψηλός. | Mein Bruder ist sehr groß.
+κοντός | Είμαι πιο κοντός από τον πατέρα μου. | Ich bin kleiner als mein Vater.
+νέος | Ο καινούργιος δάσκαλος είναι νέος. | Der neue Lehrer ist jung.
+ηλικιωμένος | Βοήθησα έναν ηλικιωμένο κύριο. | Ich habe einem älteren Herrn geholfen.
+τα μαλλιά | Τα μαλλιά της είναι μακριά. | Ihre Haare sind lang.
+ξανθός | Ο γιος τους είναι ξανθός. | Ihr Sohn ist blond.
+καστανός | Είμαι καστανός με πράσινα μάτια. | Ich habe braune Haare und grüne Augen.
+τα γυαλιά | Πού είναι τα γυαλιά μου; | Wo ist meine Brille?
+τα γένια | Ο παππούς έχει άσπρα γένια. | Opa hat einen weißen Bart.
+λεπτός | Είναι ψηλός και λεπτός. | Er ist groß und schlank.
+ευγενικός | Ο σερβιτόρος ήταν πολύ ευγενικός. | Der Kellner war sehr höflich.
+ντροπαλός | Ο μικρός είναι λίγο ντροπαλός. | Der Kleine ist etwas schüchtern.
+έξυπνος | Είναι πολύ έξυπνος μαθητής. | Er ist ein sehr kluger Schüler.
+το χέρι | Δώσε μου το χέρι σου. | Gib mir deine Hand.
+το πόδι | Χτύπησα το πόδι μου. | Ich habe mir den Fuß gestoßen.
+η κοιλιά | Με πονάει η κοιλιά. | Mir tut der Bauch weh.
+το μάτι | Μου μπήκε κάτι στο μάτι. | Mir ist etwas ins Auge geflogen.
+το αυτί | Με πονάει το αυτί μου. | Mir tut das Ohr weh.
+η μύτη | Η μύτη μου τρέχει. | Meine Nase läuft.
+το στόμα | Μη μιλάς με γεμάτο στόμα! | Sprich nicht mit vollem Mund!
+το δόντι | Με πονάει ένα δόντι. | Mir tut ein Zahn weh.
+ο λαιμός | Έχω πονόλαιμο, με πονάει ο λαιμός. | Ich habe Halsweh, mir tut der Hals weh.
+ο ώμος | Ο ώμος μου είναι πιασμένος. | Meine Schulter ist verspannt.
+το Wi-Fi | Ποιος είναι ο κωδικός για το Wi-Fi; | Wie lautet das Passwort fürs WLAN?
+ο κωδικός | Ξέχασα τον κωδικό μου. | Ich habe mein Passwort vergessen.
+κατεβάζω | Κατεβάζω την εφαρμογή τώρα. | Ich lade die App jetzt herunter.
+η οθόνη | Η οθόνη του κινητού έσπασε. | Der Handybildschirm ist kaputt.
+φορτίζω | Φορτίζω το κινητό όλη νύχτα. | Ich lade das Handy die ganze Nacht.
+τα δεδομένα | Μου τελείωσαν τα δεδομένα. | Mein Datenvolumen ist aufgebraucht.
+στέλνω | Σου στέλνω τη διεύθυνση. | Ich schicke dir die Adresse.
+τα τετραγωνικά | Πόσα τετραγωνικά είναι το διαμέρισμα; | Wie viele Quadratmeter hat die Wohnung?
+ο όροφος | Μένω στον τρίτο όροφο. | Ich wohne im dritten Stock.
+το ισόγειο | Το μαγαζί είναι στο ισόγειο. | Der Laden ist im Erdgeschoss.
+το μισθωτήριο | Το μισθωτήριο είναι για δύο χρόνια. | Der Mietvertrag läuft zwei Jahre.
+η παλέτα | Η παλέτα είναι πολύ βαριά. | Die Palette ist sehr schwer.
+το χαρτόκουτο | Βάλε τα βιβλία στο χαρτόκουτο. | Pack die Bücher in den Karton.
+το μηχάνημα | Το μηχάνημα σταμάτησε ξαφνικά. | Die Maschine blieb plötzlich stehen.
+το κράνος | Φόρεσε το κράνος στην αποθήκη. | Setz im Lager den Helm auf.
+το διάλειμμα | Το διάλειμμα είναι στις δώδεκα. | Die Pause ist um zwölf.
+η συσκευασία | Η συσκευασία είναι σκισμένη. | Die Verpackung ist aufgerissen.
+απογοητευμένος | Είμαι απογοητευμένος από το αποτέλεσμα. | Ich bin vom Ergebnis enttäuscht.
+έκπληκτος | Έμεινα έκπληκτος με τα νέα. | Ich war von den Neuigkeiten überrascht.
+νευρικός | Είμαι νευρικός πριν από τις εξετάσεις. | Vor Prüfungen bin ich nervös.
+ανακουφισμένος | Είμαι ανακουφισμένος που τελείωσε. | Ich bin erleichtert, dass es vorbei ist.
+ερωτευμένος | Είναι τρελά ερωτευμένος. | Er ist wahnsinnig verliebt.
+ευγνώμων | Σας είμαι ευγνώμων για τη βοήθεια. | Ich bin Ihnen für die Hilfe dankbar.
+ικανοποιημένος | Είμαι ικανοποιημένος με τη δουλειά μου. | Ich bin mit meiner Arbeit zufrieden.
+ενθουσιασμένος | Είμαι ενθουσιασμένος με το ταξίδι. | Ich bin von der Reise begeistert.
+μπερδεμένος | Είμαι λίγο μπερδεμένος. | Ich bin etwas verwirrt.
+ο πόνος | Ο πόνος είναι πολύ δυνατός. | Der Schmerz ist sehr stark.
+ο πυρετός | Έχω πυρετό από χθες. | Ich habe seit gestern Fieber.
+ο βήχας | Ο βήχας δεν περνάει. | Der Husten geht nicht weg.
+το κρυολόγημα | Έχω ένα ελαφρύ κρυολόγημα. | Ich habe eine leichte Erkältung.
+η γρίπη | Η γρίπη κράτησε μια εβδομάδα. | Die Grippe dauerte eine Woche.
+ο πονοκέφαλος | Έχω τρομερό πονοκέφαλο. | Ich habe schreckliche Kopfschmerzen.
+ο κοιλόπονος | Έχω κοιλόπονο από το πρωί. | Ich habe seit heute Morgen Bauchschmerzen.
+ο ΑΜΚΑ | Ποιος είναι ο ΑΜΚΑ σας; | Wie lautet Ihre AMKA-Nummer?
 `;

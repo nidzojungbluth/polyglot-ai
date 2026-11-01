@@ -1,4 +1,4 @@
-// Russisch – zusätzliche Beispielsätze (Etappe 15–16): Wort | Beispiel | Übersetzung
+// Russisch – zusätzliche Beispielsätze (Etappe 15–17): Wort | Beispiel | Übersetzung
 export default `
 коне́чно | Коне́чно, я помогу́ тебе́. | Natürlich helfe ich dir.
 хорошо́ | Всё бу́дет хорошо́. | Alles wird gut.
@@ -199,4 +199,131 @@ export default `
 зе́ркало | Зе́ркало виси́т в ва́нной. | Der Spiegel hängt im Bad.
 полоте́нце | Возьми́ чи́стое полоте́нце. | Nimm ein sauberes Handtuch.
 шкаф | Шкаф сли́шком большо́й для ко́мнаты. | Der Schrank ist zu groß für das Zimmer.
+бордю́р | Осторо́жно, высо́кий бордю́р! | Vorsicht, hoher Bordstein!
+ганте́ли | Ганте́ли лежа́т на по́лу. | Die Kurzhanteln liegen auf dem Boden.
+шта́нга | Шта́нга сли́шком тяжёлая. | Die Langhantel ist zu schwer.
+скамья́ | Скамья́ свобо́дна? | Ist die Bank frei?
+повторе́ние | Ещё одно́ повторе́ние! | Noch eine Wiederholung!
+бег | Бег по утра́м бодри́т. | Morgens laufen macht munter.
+крепату́ра | У меня́ си́льная крепату́ра. | Ich habe starken Muskelkater.
+проте́ин | Я пью проте́ин по́сле трениро́вки. | Ich trinke nach dem Training Protein.
+пита́ние | Пра́вильное пита́ние о́чень ва́жно. | Richtige Ernährung ist sehr wichtig.
+регистра́ция | Без регистра́ции тру́дно снять кварти́ру. | Ohne Meldebestätigung ist es schwer, eine Wohnung zu mieten.
+МФЦ | Я получи́л спра́вку в МФЦ. | Ich habe die Bescheinigung im MFZ bekommen.
+успоко́йся | Успоко́йся, всё хорошо́. | Beruhige dich, alles ist gut.
+отноше́ния | У нас серьёзные отноше́ния. | Wir haben eine ernste Beziehung.
+ту́фли | Э́ти ту́фли мне малы́. | Diese Schuhe sind mir zu klein.
+кало́рии | В э́том то́рте мно́го кало́рий. | In dieser Torte sind viele Kalorien.
+разми́нка | Разми́нка дли́тся де́сять мину́т. | Das Aufwärmen dauert zehn Minuten.
+растя́жка | По́сле трениро́вки я де́лаю растя́жку. | Nach dem Training mache ich Dehnübungen.
+парк | В па́рке Го́рького всегда́ мно́го люде́й. | Im Gorki-Park sind immer viele Leute.
+ва́нная | Ва́нная спра́ва. | Das Bad ist rechts.
+спа́льня | В спа́льне большо́е окно́. | Im Schlafzimmer ist ein großes Fenster.
+гости́ная | Гости́ная све́тлая и просто́рная. | Das Wohnzimmer ist hell und geräumig.
+больно́й | Он больно́й и сего́дня до́ма. | Er ist krank und heute zu Hause.
+поцелу́й | Возду́шный поцелу́й тебе́! | Ein Luftkuss für dich!
+объя́тие | Его́ объя́тие бы́ло тёплым. | Seine Umarmung war warm.
+симпати́чный | Твой брат о́чень симпати́чный. | Dein Bruder ist sehr sympathisch.
+весели́ться | Мы лю́бим весели́ться на пра́здниках. | Wir feiern gern an Festtagen.
+племя́нница | Моя́ племя́нница хо́дит в шко́лу. | Meine Nichte geht zur Schule.
+внук | Ба́бушка о́чень лю́бит вну́ка. | Oma hat den Enkel sehr lieb.
+зять | Наш зять из Новосиби́рска. | Unser Schwiegersohn ist aus Nowosibirsk.
+неве́стка | Неве́стка помога́ет на ку́хне. | Die Schwiegertochter hilft in der Küche.
+разногла́сие | У нас бы́ло небольшо́е разногла́сие. | Wir hatten eine kleine Meinungsverschiedenheit.
+статья́ | Э́та статья́ о́чень интере́сная. | Dieser Artikel ist sehr interessant.
+забасто́вка | Забасто́вка дли́лась три дня. | Der Streik dauerte drei Tage.
+землетрясе́ние | Вчера́ бы́ло сла́бое землетрясе́ние. | Gestern gab es ein schwaches Erdbeben.
+сообща́ют | В новостя́х сообща́ют о про́бках. | In den Nachrichten wird über Staus berichtet.
+апельси́н | Апельси́н о́чень сла́дкий. | Die Orange ist sehr süß.
+огуре́ц | Наре́жь огуре́ц для сала́та. | Schneide die Gurke für den Salat.
+брю́ки | Брю́ки сли́шком дли́нные. | Die Hose ist zu lang.
+боти́нки | Зимо́й нужны́ тёплые боти́нки. | Im Winter braucht man warme Schuhe.
+ю́бка | Ю́бка сли́шком коро́ткая. | Der Rock ist zu kurz.
+ша́пка | Без ша́пки зимо́й хо́лодно. | Ohne Mütze ist es im Winter kalt.
+си́ний | Мне нра́вится си́ний цвет. | Ich mag die Farbe Dunkelblau.
+жёлтый | О́сенью ли́стья жёлтые. | Im Herbst sind die Blätter gelb.
+се́рый | Сего́дня не́бо се́рое. | Heute ist der Himmel grau.
+сза́ди | Сади́сь сза́ди, пожа́луйста. | Setz dich bitte nach hinten.
+впереди́ | Остано́вка впереди́, сле́ва. | Die Haltestelle ist vorne links.
+порт | Порт нахо́дится на берегу́ мо́ря. | Der Hafen liegt an der Meeresküste.
+кора́бль | Кора́бль отплыва́ет ве́чером. | Das Schiff legt am Abend ab.
+перро́н | По́езд стои́т у второ́го перро́на. | Der Zug steht am zweiten Bahnsteig.
+прибы́тие | Прибы́тие по́езда в шесть. | Der Zug kommt um sechs an.
+ви́лка | Принеси́те, пожа́луйста, ви́лку. | Bringen Sie bitte eine Gabel.
+нож | Нож не ре́жет. | Das Messer schneidet nicht.
+ло́жка | Мне нужна́ ло́жка для су́па. | Ich brauche einen Löffel für die Suppe.
+заку́ска | Заку́ска уже́ на столе́. | Die Vorspeise steht schon auf dem Tisch.
+солёный | Суп немно́го солёный. | Die Suppe ist etwas salzig.
+ка́рта | Мо́жно оплати́ть ка́ртой? | Kann ich mit Karte zahlen?
+возвра́т | Возвра́т возмо́жен в тече́ние двух неде́ль. | Rückgabe ist innerhalb von zwei Wochen möglich.
+обме́н | Обме́н без че́ка невозмо́жен. | Umtausch ohne Kassenbon ist nicht möglich.
+примеря́ть | Здесь мо́жно примеря́ть оде́жду? | Kann man hier Kleidung anprobieren?
+ресе́пшн | Ресе́пшн рабо́тает круглосу́точно. | Die Rezeption ist rund um die Uhr besetzt.
+бассе́йн | Бассе́йн открыва́ется в де́вять. | Das Schwimmbad öffnet um neun.
+програ́мма | Кака́я програ́мма на за́втра? | Was ist das Programm für morgen?
+отме́на | Отме́на брони беспла́тная. | Die Stornierung der Buchung ist kostenlos.
+гид | Гид пока́зывает нам Кремль. | Der Reiseführer zeigt uns den Kreml.
+микроволно́вка | Разогре́й суп в микроволно́вке. | Wärm die Suppe in der Mikrowelle auf.
+ла́мпа | Ла́мпа в гости́ной перегоре́ла. | Die Lampe im Wohnzimmer ist durchgebrannt.
+душ | Я принима́ю душ ка́ждое у́тро. | Ich dusche jeden Morgen.
+поду́шка | Поду́шка сли́шком жёсткая. | Das Kissen ist zu hart.
+одея́ло | Дай мне одея́ло, мне хо́лодно. | Gib mir eine Decke, mir ist kalt.
+по́лка | Кни́ги стоя́т на по́лке. | Die Bücher stehen im Regal.
+ковёр | Ковёр от мое́й ба́бушки. | Der Teppich ist von meiner Oma.
+пылесо́с | Где пылесо́с? | Wo ist der Staubsauger?
+высо́кий | Мой брат о́чень высо́кий. | Mein Bruder ist sehr groß.
+невысо́кий | Он невысо́кий, но си́льный. | Er ist nicht groß, aber stark.
+молодо́й | Но́вый учи́тель молодо́й. | Der neue Lehrer ist jung.
+пожило́й | Я помо́г пожило́му мужчи́не. | Ich habe einem älteren Mann geholfen.
+во́лосы | У неё дли́нные во́лосы. | Sie hat lange Haare.
+светлово́лосый | Их сын светлово́лосый. | Ihr Sohn ist blond.
+темноволо́сый | Я темноволо́сый и с зелёными глаза́ми. | Ich habe dunkle Haare und grüne Augen.
+очки́ | Где мои́ очки́? | Wo ist meine Brille?
+борода́ | У де́душки бе́лая борода́. | Opa hat einen weißen Bart.
+стро́йный | Он высо́кий и стро́йный. | Er ist groß und schlank.
+ве́жливый | Официа́нт был о́чень ве́жливый. | Der Kellner war sehr höflich.
+засте́нчивый | Ма́льчик немно́го засте́нчивый. | Der Junge ist etwas schüchtern.
+у́мный | Он о́чень у́мный учени́к. | Er ist ein sehr kluger Schüler.
+рука́ | Да́й мне ру́ку. | Gib mir die Hand.
+нога́ | У меня́ боли́т нога́. | Mir tut das Bein weh.
+спина́ | У меня́ боли́т спина́. | Mir tut der Rücken weh.
+живо́т | У меня́ боли́т живо́т. | Mir tut der Bauch weh.
+глаз | Мне что́-то попа́ло в глаз. | Mir ist etwas ins Auge geflogen.
+у́хо | У меня́ боли́т у́хо. | Mir tut das Ohr weh.
+нос | У меня́ заложи́ло нос. | Meine Nase ist verstopft.
+рот | Не говори́ с по́лным ртом! | Sprich nicht mit vollem Mund!
+зуб | У меня́ боли́т зуб. | Mir tut ein Zahn weh.
+ше́я | У меня́ затекла́ ше́я. | Mein Nacken ist steif.
+плечо́ | У меня́ боли́т плечо́. | Mir tut die Schulter weh.
+вайфа́й | Како́й паро́ль от вайфа́я? | Wie lautet das WLAN-Passwort?
+скача́ть | Мне ну́жно скача́ть приложе́ние. | Ich muss die App herunterladen.
+экра́н | Экра́н телефо́на разби́лся. | Der Handybildschirm ist zerbrochen.
+заряжа́ть | Я заряжа́ю телефо́н всю ночь. | Ich lade das Handy die ganze Nacht.
+отпра́вить | Мо́жешь отпра́вить мне а́дрес? | Kannst du mir die Adresse schicken?
+квартира́нт | Но́вый квартира́нт въе́хал вчера́. | Der neue Mieter ist gestern eingezogen.
+эта́ж | Я живу́ на тре́тьем этаже́. | Ich wohne im dritten Stock.
+переезжа́ть | В сле́дующем ме́сяце мы переезжа́ем. | Nächsten Monat ziehen wir um.
+поддо́н | Поддо́н сли́шком тяжёлый. | Die Palette ist zu schwer.
+поста́вка | Поста́вка придёт за́втра у́тром. | Die Lieferung kommt morgen früh.
+коро́бка | Положи́ кни́ги в коро́бку. | Leg die Bücher in den Karton.
+конве́йер | Конве́йер останови́лся. | Das Förderband ist stehen geblieben.
+стано́к | Стано́к рабо́тает без переры́ва. | Die Maschine läuft ohne Pause.
+ка́ска | На скла́де на́до носи́ть ка́ску. | Im Lager muss man einen Helm tragen.
+переры́в | Переры́в в двена́дцать. | Die Pause ist um zwölf.
+упако́вка | Упако́вка порвала́сь. | Die Verpackung ist gerissen.
+го́рдый | Оте́ц го́рдый за сы́на. | Der Vater ist stolz auf den Sohn.
+ревни́вый | Мой па́рень о́чень ревни́вый. | Mein Freund ist sehr eifersüchtig.
+разочаро́ванный | Он вы́глядит разочаро́ванным. | Er sieht enttäuscht aus.
+удивлённый | У него́ был удивлённый вид. | Er sah überrascht aus.
+не́рвный | Сего́дня он о́чень не́рвный. | Heute ist er sehr nervös.
+влюблённый | Он как влюблённый подро́сток. | Er ist wie ein verliebter Teenager.
+благода́рный | Я вам о́чень благода́рен. | Ich bin Ihnen sehr dankbar.
+дово́льный | Клие́нт оста́лся дово́лен. | Der Kunde war zufrieden.
+растеря́нный | У тебя́ растеря́нный вид. | Du siehst ratlos aus.
+боль | Боль о́чень си́льная. | Der Schmerz ist sehr stark.
+температу́ра | У меня́ температу́ра со вчера́шнего дня. | Ich habe seit gestern Fieber.
+ка́шель | Ка́шель не прохо́дит. | Der Husten geht nicht weg.
+просту́да | У меня́ лёгкая просту́да. | Ich habe eine leichte Erkältung.
+грипп | Грипп дли́лся неде́лю. | Die Grippe dauerte eine Woche.
+регистрату́ра | Регистрату́ра на пе́рвом этаже́. | Die Anmeldung ist im Erdgeschoss.
 `;

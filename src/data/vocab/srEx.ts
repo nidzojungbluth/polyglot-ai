@@ -1,4 +1,4 @@
-// Serbisch – zusätzliche Beispielsätze (Etappe 15–16): Wort | Beispiel | Übersetzung
+// Serbisch – zusätzliche Beispielsätze (Etappe 15–17): Wort | Beispiel | Übersetzung
 export default `
 vino | Crno vino je odlično. | Der Rotwein ist ausgezeichnet.
 voda | Da li je voda sa česme pitka? | Ist das Leitungswasser trinkbar?
@@ -185,4 +185,124 @@ frižider | Mleko je u frižideru. | Die Milch ist im Kühlschrank.
 veš-mašina | Veš-mašina pravi buku. | Die Waschmaschine macht Lärm.
 ogledalo | Ogledalo je u kupatilu. | Der Spiegel ist im Bad.
 peškir | Uzmi čist peškir. | Nimm ein sauberes Handtuch.
+šljivovica | Šljivovica je jaka, polako! | Der Pflaumenschnaps ist stark, langsam!
+Knez Mihailova | Knez Mihailova je puna turista. | Die Knez Mihailova ist voller Touristen.
+tegovi | Tegovi su teški za mene. | Die Gewichte sind mir zu schwer.
+klupa | Da li je klupa slobodna? | Ist die Bank frei?
+serija | Radim tri serije po deset. | Ich mache drei Sätze à zehn.
+ponavljanje | Još jedno ponavljanje! | Noch eine Wiederholung!
+trčanje | Trčanje na keju je divno. | Laufen am Kai ist herrlich.
+proteini | Proteini pomažu mišićima. | Proteine helfen den Muskeln.
+ishrana | Zdrava ishrana je važna. | Gesunde Ernährung ist wichtig.
+simpatija | Ona je moja simpatija iz škole. | Sie ist mein Schwarm aus der Schule.
+piletina | Piletina sa krompirom je gotova. | Das Hähnchen mit Kartoffeln ist fertig.
+kalorije | Ovaj kolač ima mnogo kalorija. | Dieser Kuchen hat viele Kalorien.
+zagrevanje | Zagrevanje traje deset minuta. | Das Aufwärmen dauert zehn Minuten.
+istezanje | Posle treninga radim istezanje. | Nach dem Training mache ich Dehnübungen.
+grudi | Danas treniram grudi. | Heute trainiere ich Brust.
+komšiluk | Ceo komšiluk je došao na slavu. | Die ganze Nachbarschaft kam zur Slava.
+partner | Moj partner radi noću. | Mein Partner arbeitet nachts.
+osmehujem se | Uvek se osmehujem kad te vidim. | Ich lächle immer, wenn ich dich sehe.
+zezam se | Ne ljuti se, samo se zezam. | Sei nicht sauer, ich mach nur Spaß.
+zabavljam se | Odlično se zabavljam na žurci. | Ich amüsiere mich super auf der Party.
+novosti | Imaš li neke novosti? | Hast du Neuigkeiten?
+imam | Imam dva brata. | Ich habe zwei Brüder.
+nemam | Nemam vremena danas. | Ich habe heute keine Zeit.
+nećak | Moj nećak ima pet godina. | Mein Neffe ist fünf Jahre alt.
+unuk | Deda šeta sa unukom. | Opa geht mit dem Enkel spazieren.
+snaja | Naša snaja je iz Kragujevca. | Unsere Schwiegertochter ist aus Kragujevac.
+neslaganje | Imali smo malo neslaganje. | Wir hatten eine kleine Meinungsverschiedenheit.
+članak | Pročitao sam zanimljiv članak. | Ich habe einen interessanten Artikel gelesen.
+zemljotres | Juče je bio slab zemljotres. | Gestern gab es ein schwaches Erdbeben.
+banana | Posle treninga jedem bananu. | Nach dem Training esse ich eine Banane.
+narandža | Ova narandža je baš slatka. | Diese Orange ist richtig süß.
+krastavac | Iseci krastavac za salatu. | Schneide die Gurke für den Salat.
+suknja | Suknja je prekratka. | Der Rock ist zu kurz.
+kapa | Obuci kapu, hladno je. | Setz eine Mütze auf, es ist kalt.
+plav | Želim plavi džemper. | Ich möchte den blauen Pullover.
+žut | Taksi u Beogradu nije žut. | Taxis in Belgrad sind nicht gelb.
+siv | Nebo je danas sivo. | Der Himmel ist heute grau.
+luka | Luka je na Dunavu. | Der Hafen liegt an der Donau.
+brod | Brod plovi do Novog Sada. | Das Schiff fährt nach Novi Sad.
+prtljag | Moj prtljag se izgubio. | Mein Gepäck ist verloren gegangen.
+tanjir | Tanjir je vruć, pazi. | Der Teller ist heiß, pass auf.
+viljuška | Možete li mi doneti viljušku? | Können Sie mir eine Gabel bringen?
+nož | Nož ne seče dobro. | Das Messer schneidet nicht gut.
+kašika | Treba mi kašika za supu. | Ich brauche einen Löffel für die Suppe.
+predjelo | Za predjelo uzimamo pršutu i sir. | Als Vorspeise nehmen wir Schinken und Käse.
+slan | Ručak je malo slan. | Das Mittagessen ist etwas salzig.
+priznanica | Sačuvaj priznanicu za reklamaciju. | Bewahr den Beleg für die Reklamation auf.
+povraćaj | Povraćaj novca je moguć u roku od dve nedelje. | Geld zurück gibt es innerhalb von zwei Wochen.
+zamena | Da li je moguća zamena? | Ist ein Umtausch möglich?
+broj | Koji broj cipela nosite? | Welche Schuhgröße haben Sie?
+probati | Mogu li ovo da probam? | Kann ich das anprobieren?
+recepcija | Recepcija radi celu noć. | Die Rezeption ist die ganze Nacht besetzt.
+bazen | Bazen se otvara u devet. | Das Schwimmbad öffnet um neun.
+mapa | Imate li mapu grada? | Haben Sie einen Stadtplan?
+program | Kakav je program za sutra? | Wie ist das Programm für morgen?
+otkazivanje | Otkazivanje je besplatno. | Die Stornierung ist kostenlos.
+presedanje | Presedanje je u Beču. | Umsteigen ist in Wien.
+mikrotalasna | Podgrej supu u mikrotalasnoj. | Wärm die Suppe in der Mikrowelle auf.
+lampa | Lampa u dnevnoj sobi je pregorela. | Die Lampe im Wohnzimmer ist durchgebrannt.
+tuš | Tuš ima samo hladnu vodu. | Die Dusche hat nur kaltes Wasser.
+jastuk | Jastuk je pretvrd. | Das Kissen ist zu hart.
+ćebe | Daj mi ćebe, hladno mi je. | Gib mir eine Decke, mir ist kalt.
+ormar | Ormar je pun odeće. | Der Schrank ist voller Kleidung.
+polica | Knjige su na polici. | Die Bücher stehen im Regal.
+tepih | Tepih je od moje bake. | Der Teppich ist von meiner Oma.
+usisivač | Gde je usisivač? | Wo ist der Staubsauger?
+visok | Moj brat je baš visok. | Mein Bruder ist richtig groß.
+nizak | Niži sam od oca. | Ich bin kleiner als mein Vater.
+mlad | Novi učitelj je mlad. | Der neue Lehrer ist jung.
+star | Ovaj most je veoma star. | Diese Brücke ist sehr alt.
+kosa | Njena kosa je duga. | Ihre Haare sind lang.
+plavokos | Njihov sin je plavokos. | Ihr Sohn ist blond.
+smeđokos | Smeđokos sam i imam zelene oči. | Ich bin braunhaarig und habe grüne Augen.
+naočare | Gde su mi naočare? | Wo ist meine Brille?
+brada | Deda ima belu bradu. | Opa hat einen weißen Bart.
+vitak | On je visok i vitak. | Er ist groß und schlank.
+ljubazan | Konobar je bio veoma ljubazan. | Der Kellner war sehr freundlich.
+stidljiv | Mali je malo stidljiv. | Der Kleine ist etwas schüchtern.
+pametan | On je baš pametan dečak. | Er ist ein richtig kluger Junge.
+ruka | Daj mi ruku. | Gib mir die Hand.
+noga | Boli me noga. | Mir tut das Bein weh.
+stomak | Boli me stomak. | Mir tut der Bauch weh.
+oko | Nešto mi je upalo u oko. | Mir ist etwas ins Auge geflogen.
+uvo | Boli me uvo. | Mir tut das Ohr weh.
+nos | Curi mi nos. | Meine Nase läuft.
+usta | Ne pričaj punih usta! | Sprich nicht mit vollem Mund!
+zub | Boli me zub. | Mir tut ein Zahn weh.
+vrat | Ukočio mi se vrat. | Ich habe einen steifen Hals.
+rame | Boli me rame od posla. | Mir tut die Schulter von der Arbeit weh.
+vaj-faj | Koja je šifra za vaj-faj? | Wie lautet das WLAN-Passwort?
+šifra | Zaboravio sam šifru. | Ich habe das Passwort vergessen.
+skinuti | Moraš da skineš aplikaciju. | Du musst die App herunterladen.
+ekran | Ekran telefona je pukao. | Der Handybildschirm ist gesprungen.
+puniti | Telefon se puni celu noć. | Das Handy lädt die ganze Nacht.
+poslati | Možeš li da mi pošalješ adresu? | Kannst du mir die Adresse schicken?
+stanar | Novi stanar se uselio juče. | Der neue Mieter ist gestern eingezogen.
+kvadrat | Stan ima pedeset kvadrata. | Die Wohnung hat fünfzig Quadratmeter.
+sprat | Živim na trećem spratu. | Ich wohne im dritten Stock.
+prizemlje | Prodavnica je u prizemlju. | Der Laden ist im Erdgeschoss.
+seliti se | Sledećeg meseca se selimo. | Nächsten Monat ziehen wir um.
+paleta | Paleta je preteška. | Die Palette ist zu schwer.
+isporuka | Isporuka stiže sutra ujutru. | Die Lieferung kommt morgen früh.
+kutija | Stavi knjige u kutiju. | Pack die Bücher in den Karton.
+mašina | Mašina je odjednom stala. | Die Maschine blieb plötzlich stehen.
+šlem | Stavi šlem u magacinu. | Setz im Lager den Helm auf.
+pauza | Pauza je u dvanaest. | Die Pause ist um zwölf.
+pakovanje | Pakovanje je pocepano. | Die Verpackung ist aufgerissen.
+iznenađen | Bio sam iznenađen vestima. | Ich war von den Nachrichten überrascht.
+zaljubljen | On je ludo zaljubljen. | Er ist wahnsinnig verliebt.
+zahvalan | Zahvalan sam vam na pomoći. | Ich bin Ihnen für die Hilfe dankbar.
+zadovoljan | Zadovoljan sam poslom. | Ich bin mit der Arbeit zufrieden.
+oduševljen | Oduševljen sam putovanjem. | Ich bin von der Reise begeistert.
+zbunjen | Malo sam zbunjen. | Ich bin etwas verwirrt.
+bol | Bol je veoma jak. | Der Schmerz ist sehr stark.
+temperatura | Imam temperaturu od juče. | Ich habe seit gestern Fieber.
+kašalj | Kašalj ne prolazi. | Der Husten geht nicht weg.
+prehlada | Imam blagu prehladu. | Ich habe eine leichte Erkältung.
+grip | Grip je trajao nedelju dana. | Die Grippe dauerte eine Woche.
+glavobolja | Imam strašnu glavobolju. | Ich habe schreckliche Kopfschmerzen.
+čekaonica | Čekaonica je puna ljudi. | Das Wartezimmer ist voller Leute.
 `;
