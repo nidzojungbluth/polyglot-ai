@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 2930 | 59 % | 2343 | 1840 | 236 | 778 |
-| 🇷🇸 Serbisch | 2965 | 59 % | 2339 | 1406 | 236 | 779 |
-| 🇷🇺 Russisch | 2984 | 60 % | 2345 | 1481 | 236 | 781 |
+| 🇬🇷 Griechisch | 3001 | 60 % | 2414 | 1888 | 241 | 798 |
+| 🇷🇸 Serbisch | 3041 | 61 % | 2415 | 1439 | 241 | 799 |
+| 🇷🇺 Russisch | 3060 | 61 % | 2421 | 1517 | 241 | 801 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 808 | 654 | 255 | 196 | 40 |
-| Serbisch | 441 | 546 | 817 | 663 | 259 | 200 | 39 |
-| Russisch | 451 | 549 | 823 | 653 | 263 | 203 | 42 |
+| Griechisch | 435 | 542 | 848 | 673 | 267 | 196 | 40 |
+| Serbisch | 441 | 546 | 861 | 682 | 272 | 200 | 39 |
+| Russisch | 451 | 549 | 866 | 671 | 278 | 203 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -28,13 +28,13 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 2230 / 2817 (79 %) | 90 % | 99 % | 100 % | 72 % | 26 % | 9 % |
-| Serbisch | 2223 / 2849 (78 %) | 81 % | 100 % | 100 % | 72 % | 27 % | 12 % |
-| Russisch | 2225 / 2864 (78 %) | 81 % | 100 % | 100 % | 70 % | 28 % | 11 % |
+| Griechisch | 2301 / 2888 (80 %) | 90 % | 99 % | 100 % | 73 % | 30 % | 9 % |
+| Serbisch | 2299 / 2925 (79 %) | 81 % | 100 % | 100 % | 72 % | 30 % | 12 % |
+| Russisch | 2301 / 2940 (78 %) | 81 % | 100 % | 100 % | 71 % | 33 % | 11 % |
 
 ## Ladezeit
 
-App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1701 KB.
+App-Datei (alles in einer Datei, inkl. aller Sprachdaten): 1746 KB.
 
 ## Prüfstatus
 
@@ -64,7 +64,7 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 | 1 | Projekt analysiert, Datenformat für große Wortschätze (Textformat, stabile IDs, Duplikatprüfung, @-Übernahme, Beispielsatz-Liste) | ✅ erledigt |
 | 2 | Automatische Datenprüfung (Duplikate, Übersetzung, russische Betonung, serbische Schrift, Beispielsatz-Zuordnung) | ✅ erledigt |
 | 3 | Griechisch, Serbisch, Russisch: alle 6 Niveaus × 20 Themen gefüllt, Beispielsätze für A1/A2 | ✅ erledigt |
-| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.960) – Etappen 19–32: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe, Verben 4, Lager 2, Möbel & Umzug, Apotheke, Natur & Landschaft, Bank & Behörden, Küche, Auto & Werkstatt, Kleidung kaufen, Charakter, Handwerk & Baustelle, Garten, Medien & Internet, Miete & Verträge, Wirtschaft & Geld, Krankenhaus, Sport & Fußball, Schule & Ausbildung, Wissenschaft & Umwelt, Tiere & Bauernhof, Flughafen, Elektronik & Haushaltsgeräte, Körper & Erste Hilfe, Politik & Gesellschaft, Beziehungen C1, Kirche & Religion, Musik, Markt, Werkstatt & Maschinen, Recht & Behörden C1, Bewerbung, Hotel, Feste & Bräuche, Computer & Büro, Stadtverkehr, Gerichte & Rezepte, Online-Banking, Hobbys, Wohnungsprobleme, Kinder & Erziehung, Stimmungen, Geografie, Stil & Mode, Arbeitsrecht & Lohn, Handyvertrag (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
+| 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 3.040) – Etappen 19–33: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2, Gewürze, Gebäude, Schule, Charakter, Putzen & Wäsche, Getränke & Süßes, Accessoires & Stoffe, Freizeit & Hobbys, Verkehrsmittel, Werte & abstrakte Begriffe, Verben 4, Lager 2, Möbel & Umzug, Apotheke, Natur & Landschaft, Bank & Behörden, Küche, Auto & Werkstatt, Kleidung kaufen, Charakter, Handwerk & Baustelle, Garten, Medien & Internet, Miete & Verträge, Wirtschaft & Geld, Krankenhaus, Sport & Fußball, Schule & Ausbildung, Wissenschaft & Umwelt, Tiere & Bauernhof, Flughafen, Elektronik & Haushaltsgeräte, Körper & Erste Hilfe, Politik & Gesellschaft, Beziehungen C1, Kirche & Religion, Musik, Markt, Werkstatt & Maschinen, Recht & Behörden C1, Bewerbung, Hotel, Feste & Bräuche, Computer & Büro, Stadtverkehr, Gerichte & Rezepte, Online-Banking, Hobbys, Wohnungsprobleme, Kinder & Erziehung, Stimmungen, Geografie, Stil & Mode, Arbeitsrecht & Lohn, Handyvertrag, Bewegung & Richtung, Gemüse & Kräuter, Urlaub am Meer, Diskutieren C1, Verlust & Diebstahl (ab Etappe 22 jedes Wort mit Beispielsatz) | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
 | 5 | **Zwischenauftrag: Beispielsatz für jede Vokabel** – Anzeige im Beispielsatz-Block (Wortlisten, Slang, Lernkarten, Wörterbuch), Regel-Test für neue Wörter, Betonungsprüfung für russische Sätze, Nachtragen für alle vorhandenen Wörter | 🔄 läuft – Runden 1–2 (B1, ca. 200 Sätze pro Sprache) erledigt; noch ca. 1.150 Sätze pro Sprache, ca. 9 Runden |
 | 5b | **Zwischenauftrag: Umschrift jedes Beispielsatzes** – Griechisch und Russisch: lateinische Umschrift regelbasiert aus dem Satz erzeugt (passt immer zum Satz, keine doppelt gespeicherten Daten, Betonungszeichen im Russischen erhalten, Großschreibung bleibt); Serbisch: in kyrillischer Ansicht der lateinische Satz, in der Ansicht „beide“ die kyrillische Schreibweise; Englisch/Spanisch: keine Umschrift (kein Mehrwert). Anzeige zwischen Originalsatz und Übersetzung. | ✅ erledigt (gilt automatisch für alle vorhandenen und neuen Sätze) |
 | 6 | Lernsystem prüfen und verbessern – **Befund:** Wiederholungslogik (SM-2) und Speicherung (IndexedDB mit Ausweichlösung, Datenmigration, Sicherung) korrekt; 3 Schwachstellen behoben: sofortiges Speichern beim Verlassen der App, verwaiste Karten nach Korrekturen ignoriert (beendeten Wiederholungen vorzeitig), Tageslimit für neue Karten (Standard 20, einstellbar) + Anzeige „morgen fällig“; Geschwindigkeit mit 3.000 Karten getestet | ✅ erledigt |
