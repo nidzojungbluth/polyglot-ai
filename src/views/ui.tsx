@@ -13,6 +13,22 @@ export function WordHead({ t, de, tr, lang }: { t: string; de: string; tr?: stri
   );
 }
 
+/** Beispielsatz mit deutscher Übersetzung – klar von der Wortübersetzung abgesetzt. */
+export function ExampleBlock({ ex, lang, pack }: { ex?: { t: string; de: string }; lang: string; pack?: LanguagePack }) {
+  if (!ex) return null;
+  return (
+    <div className="ex-block">
+      <div className="ex-head">
+        <span className="ex-label">Beispielsatz</span>
+        {pack && <SpeakBtn text={ex.t} pack={pack} label="🔊" />}
+      </div>
+      <div className="ex-t" lang={lang}>{ex.t}</div>
+      <div className="ex-label">Deutsche Übersetzung</div>
+      <div className="ex-de" lang="de">{ex.de}</div>
+    </div>
+  );
+}
+
 export function RegBadge({ reg }: { reg: Register }) {
   const r = REGISTER_INFO[reg];
   return <span className="badge" style={{ borderColor: r.color, color: r.color }}>{r.label}</span>;

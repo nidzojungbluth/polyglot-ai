@@ -4,9 +4,9 @@ import { dueCards, isLearned, newCard, review, type Card, type Grade } from '../
 import { explainSlang } from '../lib/coach';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
-import { LevelBadge, RegBadge, SpeakBtn, WordHead } from './ui';
+import { ExampleBlock, LevelBadge, RegBadge, SpeakBtn, WordHead } from './ui';
 
-interface Item { t: string; tr?: string; de: string; reg: any; level?: string; cat?: string; extra?: string }
+interface Item { t: string; tr?: string; de: string; reg: any; level?: string; cat?: string; ex?: { t: string; de: string }; extra?: string }
 
 export const isHard = (c: Card) => c.lapses >= 2 || (c.reps > 0 && c.ease < 2.1);
 
@@ -25,8 +25,8 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
   const hard = deck.filter(isHard).sort((a, b) => b.lapses - a.lapses);
   const lookup = useMemo(() => {
     const m = new Map<string, Item>();
-    for (const w of pack.words) m.set(w.id, { t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, cat: w.cat, extra: [w.ex ? `${w.ex.t} – ${w.ex.de}` : '', w.note ?? ''].filter(Boolean).join('\n') });
-    for (const s of pack.slang) m.set(s.id, { t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, cat: 'slang', extra: `${s.ex.t} – ${s.ex.de}\nWirkung: ${s.effect}` });
+    for (const w of pack.words) m.set(w.id, { t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, cat: w.cat, ex: w.ex, extra: w.note });
+    for (const s of pack.slang) m.set(s.id, { t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, cat: 'slang', ex: s.ex, extra: `Wirkung: ${s.effect}` });
     return m;
   }, [pack]);
 
@@ -79,7 +79,8 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
               <div className="big" lang={dir === 'zu-de' ? 'de' : pack.code}>{dir === 'zu-de' ? item.de : item.t}</div>
               {dir === 'zu-ziel' && item.tr && <div className="muted">{item.tr}</div>}
               <div><RegBadge reg={item.reg} /> <LevelBadge level={item.level} /></div>
-              {item.extra && <div className="small muted pre">{item.extra}</div>}
+              <ExampleBlock ex={item.ex} lang={pack.code} />
+              {item.extra && <div className="small muted pre">💡 {item.extra}</div>}
             </div>
           ) : <div className="muted small">Tippen zum Umdrehen</div>}
         </button>
@@ -139,7 +140,8 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
               <li key={s.id} className="word-row">
                 <div className="grow">
                   <WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>} {s.status === 'älter' && <span className="badge">älter</span>}
-                  <div className="small pre">{explainSlang(s).split('\n').slice(1).join('\n')}</div>
+                  <div className="small pre">{explainSlang(s).split('\n').slice(1).filter((l) => !l.startsWith('• Beispiel')).join('\n')}</div>
+                  <ExampleBlock ex={s.ex} lang={pack.code} pack={pack} />
                 </div>
                 <SpeakBtn text={s.t} pack={pack} />
               </li>
@@ -162,7 +164,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
               const c = state.cards[id];
               return (
                 <li key={id} className="word-row">
-                  <div className="grow"><WordHead t={it.t} de={it.de} tr={it.tr} lang={pack.code} /><div className="small"><RegBadge reg={it.reg} /> <LevelBadge level={it.level} /></div></div>
+                  <div className="grow"><WordHead t={it.t} de={it.de} tr={it.tr} lang={pack.code} /><div className="small"><RegBadge reg={it.reg} /> <LevelBadge level={it.level} /></div><ExampleBlock ex={it.ex} lang={pack.code} pack={pack} /></div>
                   {c && <span className="muted small">{isLearned(c) ? '✓' : isHard(c) ? '🎯' : `${c.interval} T.`}</span>}
                   <SpeakBtn text={it.t} pack={pack} />
                 </li>

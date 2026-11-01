@@ -1,4 +1,4 @@
-// Russisch – zusätzliche Beispielsätze (Etappe 15–17): Wort | Beispiel | Übersetzung
+// Russisch – zusätzliche Beispielsätze (Etappe 15–17, Zwischenauftrag Beispielsätze): Wort | Beispiel | Übersetzung
 export default `
 коне́чно | Коне́чно, я помогу́ тебе́. | Natürlich helfe ich dir.
 хорошо́ | Всё бу́дет хорошо́. | Alles wird gut.
@@ -261,7 +261,7 @@ export default `
 ресе́пшн | Ресе́пшн рабо́тает круглосу́точно. | Die Rezeption ist rund um die Uhr besetzt.
 бассе́йн | Бассе́йн открыва́ется в де́вять. | Das Schwimmbad öffnet um neun.
 програ́мма | Кака́я програ́мма на за́втра? | Was ist das Programm für morgen?
-отме́на | Отме́на брони беспла́тная. | Die Stornierung der Buchung ist kostenlos.
+отме́на | Отме́на бро́ни беспла́тная. | Die Stornierung der Buchung ist kostenlos.
 гид | Гид пока́зывает нам Кремль. | Der Reiseführer zeigt uns den Kreml.
 микроволно́вка | Разогре́й суп в микроволно́вке. | Wärm die Suppe in der Mikrowelle auf.
 ла́мпа | Ла́мпа в гости́ной перегоре́ла. | Die Lampe im Wohnzimmer ist durchgebrannt.
@@ -326,4 +326,93 @@ export default `
 просту́да | У меня́ лёгкая просту́да. | Ich habe eine leichte Erkältung.
 грипп | Грипп дли́лся неде́лю. | Die Grippe dauerte eine Woche.
 регистрату́ра | Регистрату́ра на пе́рвом этаже́. | Die Anmeldung ist im Erdgeschoss.
+извини́, я не хоте́л | Извини́, я не хоте́л тебя́ оби́деть. | Entschuldige, ich wollte dich nicht kränken.
+ты прав | Ла́дно, ты прав, я винова́т. | Na gut, du hast recht, es ist meine Schuld.
+ты не прав | Ты не прав, я э́того не говори́л. | Du hast nicht recht, das habe ich nicht gesagt.
+что ты име́ешь в виду́? | Что ты име́ешь в виду́, что у тебя́ нет вре́мени? | Was meinst du damit, dass du keine Zeit hast?
+не кричи́ на меня́ | Не кричи́ на меня́, я тебя́ слы́шу. | Schrei mich nicht an, ich höre dich.
+дава́й помири́мся | Дава́й помири́мся, глу́по ссо́риться. | Lass uns versöhnen, es ist dumm zu streiten.
+мне ну́жно вре́мя | Мне ну́жно вре́мя, что́бы поду́мать. | Ich brauche Zeit zum Nachdenken.
+не обижа́йся | Не обижа́йся, я пошути́л. | Sei nicht beleidigt, das war ein Scherz.
+я ду́маю, что … | Я ду́маю, что за́втра бу́дет дождь. | Ich denke, dass es morgen regnet.
+я согла́сен | Я согла́сен с тобо́й во всём. | Ich stimme dir in allem zu.
+зави́сит | Всё зави́сит от пого́ды. | Alles hängt vom Wetter ab.
+с одно́й стороны́ …, с друго́й стороны́ … | С одно́й стороны́, я хочу́ оста́ться, с друго́й стороны́, я скуча́ю по семье́. | Einerseits will ich bleiben, andererseits vermisse ich meine Familie.
+серьёзно? | Серьёзно? Тебя́ взя́ли на рабо́ту? | Im Ernst? Du hast den Job bekommen?
+срок | Срок истека́ет в пя́тницу. | Die Frist läuft am Freitag ab.
+совеща́ние | Совеща́ние начнётся в де́вять. | Die Besprechung beginnt um neun.
+перерабо́тки | Перерабо́тки опла́чиваются отде́льно. | Überstunden werden extra bezahlt.
+зарпла́та в конве́рте | Я не хочу́ получа́ть зарпла́ту в конве́рте. | Ich will keinen Schwarzlohn bekommen.
+я уво́лился | Я уво́лился, потому́ что зарпла́та была́ ма́ленькая. | Ich habe gekündigt, weil das Gehalt niedrig war.
+меня́ уво́лили | Меня́ уво́лили без предупрежде́ния. | Ich wurde ohne Vorwarnung entlassen.
+повыше́ние | Че́рез два го́да он получи́л повыше́ние. | Nach zwei Jahren wurde er befördert.
+я отвеча́ю за … | Я отвеча́ю за приёмку това́ра на скла́де. | Ich bin für die Warenannahme im Lager verantwortlich.
+одино́кий | В но́вом го́роде я чу́вствовал себя́ одино́ким. | In der neuen Stadt fühlte ich mich einsam.
+я разочаро́ван | Я разочаро́ван результа́том. | Ich bin vom Ergebnis enttäuscht.
+я горжу́сь тобо́й | Ты сдал экза́мен, я горжу́сь тобо́й! | Du hast die Prüfung bestanden, ich bin stolz auf dich!
+мне не всё равно́ | Мне не всё равно́, что ты ду́маешь. | Es ist mir nicht egal, was du denkst.
+мне всё равно́ | Мне всё равно́, что говоря́т други́е. | Es ist mir egal, was andere sagen.
+мо́жно тебе́ ко́е-что сказа́ть? | Мо́жно тебе́ ко́е-что сказа́ть по секре́ту? | Kann ich dir im Vertrauen etwas sagen?
+никому́ не говори́ | Э́то секре́т, никому́ не говори́. | Das ist ein Geheimnis, sag es niemandem.
+как ты себя́ чу́вствуешь? | Как ты себя́ чу́вствуешь по́сле опера́ции? | Wie fühlst du dich nach der Operation?
+у меня́ гора́ с плеч | Экза́мен сдан, у меня́ гора́ с плеч! | Die Prüfung ist bestanden, mir fällt ein Stein vom Herzen!
+мы вме́сте | Мы вме́сте уже́ два го́да. | Wir sind schon zwei Jahre zusammen.
+я по тебе́ скуча́л | Я по тебе́ скуча́л всё ле́то. | Ich habe dich den ganzen Sommer vermisst.
+дове́рие | Без дове́рия нет отноше́ний. | Ohne Vertrauen gibt es keine Beziehung.
+ты мне изменя́ешь? | Скажи́ пра́вду: ты мне изменя́ешь? | Sag die Wahrheit: Betrügst du mich?
+хочу́ познако́миться с твои́ми роди́телями | Я хочу́ познако́миться с твои́ми роди́телями на Но́вый год. | Ich möchte an Neujahr deine Eltern kennenlernen.
+мы обручи́лись | Мы обручи́лись про́шлым ле́том. | Wir haben uns letzten Sommer verlobt.
+сва́дьба | Сва́дьба бу́дет в сентябре́. | Die Hochzeit ist im September.
+со́лнышко | До́брое у́тро, со́лнышко! | Guten Morgen, Sonnenschein!
+люби́мый | Споко́йной но́чи, люби́мый. | Gute Nacht, Liebling.
+почему́ | Почему́ ты не пришёл вчера́? | Warum bist du gestern nicht gekommen?
+пе́ред тем как | Позвони́ мне пе́ред тем как вы́йти. | Ruf mich an, bevor du losgehst.
+подпи́счики | У неё де́сять ты́сяч подпи́счиков. | Sie hat zehntausend Follower.
+лайк | Фо́то собра́ло мно́го ла́йков. | Das Foto hat viele Likes bekommen.
+ро́лик | Посмотри́ э́тот смешно́й ро́лик! | Schau dir dieses lustige Video an!
+блоге́р | Он изве́стный блоге́р из Москвы́. | Er ist ein bekannter Blogger aus Moskau.
+он меня́ заблоки́ровал | По́сле ссо́ры он меня́ заблоки́ровал. | Nach dem Streit hat er mich blockiert.
+Телегра́м-кана́л | Я чита́ю но́вости в Телегра́м-кана́ле. | Ich lese Nachrichten in einem Telegram-Kanal.
+холоди́льник | Молоко́ в холоди́льнике. | Die Milch ist im Kühlschrank.
+течёт кран | На ку́хне течёт кран. | In der Küche tropft der Wasserhahn.
+санте́хник | Санте́хник придёт за́втра у́тром. | Der Klempner kommt morgen früh.
+ключи́ | Я забы́л ключи́ до́ма. | Ich habe die Schlüssel zu Hause vergessen.
+квита́нция | Квита́нция за свет пришла́ вчера́. | Die Stromabrechnung kam gestern.
+шум | Шум с у́лицы меша́ет спать. | Der Lärm von der Straße stört beim Schlafen.
+тёща | Тёща пригласи́ла нас на обе́д. | Die Schwiegermutter hat uns zum Mittagessen eingeladen.
+сын | Мой сын пошёл в пе́рвый класс. | Mein Sohn ist in die erste Klasse gekommen.
+дочь | Их дочь у́чится на врача́. | Ihre Tochter studiert Medizin.
+ты похо́ж на ма́му | Ты о́чень похо́ж на ма́му. | Du siehst deiner Mama sehr ähnlich.
+еди́нственный ребёнок | Я еди́нственный ребёнок в семье́. | Ich bin das einzige Kind in der Familie.
+вну́ки | Ба́бушка ждёт вну́ков на пра́здники. | Oma wartet an den Feiertagen auf die Enkel.
+где живёт твоя́ семья́? | Где живёт твоя́ семья́, в Герма́нии? | Wo lebt deine Familie, in Deutschland?
+ро́дственники | На сва́дьбу прие́хали все ро́дственники. | Zur Hochzeit kamen alle Verwandten.
+гото́вить | Я люблю́ гото́вить по выходны́м. | Am Wochenende koche ich gern.
+ма́сло | Доба́вь немно́го ма́сла на сковоро́дку. | Gib etwas Öl in die Pfanne.
+жа́рить | Лук ну́жно жа́рить до золоти́стого цве́та. | Die Zwiebel muss goldbraun gebraten werden.
+печь | Ба́бушка лю́бит печь пироги́. | Oma backt gern Piroggen.
+соль | Переда́й, пожа́луйста, соль. | Reich mir bitte das Salz.
+пе́рец | В суп ну́жно немно́го пе́рца. | In die Suppe gehört etwas Pfeffer.
+помидо́р | Помидо́р с огоро́да о́чень вку́сный. | Die Tomate aus dem Garten ist sehr lecker.
+лук | Наре́жь лук ме́лкими кусо́чками. | Schneide die Zwiebel in kleine Stücke.
+чесно́к | В со́ус ну́жно мно́го чеснока́. | In die Soße gehört viel Knoblauch.
+сло́мано | Всё сло́мано, ничего́ не рабо́тает. | Alles ist kaputt, nichts funktioniert.
+гара́нтия | Гара́нтия де́йствует два го́да. | Die Garantie gilt zwei Jahre.
+возвра́т де́нег | Я хочу́ возвра́т де́нег за брак. | Ich möchte für die fehlerhafte Ware mein Geld zurück.
+курье́р | Курье́р привёз посы́лку ве́чером. | Der Kurier hat das Paket am Abend gebracht.
+мо́жно позва́ть администра́тора? | Извини́те, мо́жно позва́ть администра́тора? | Entschuldigung, kann ich den Geschäftsführer sprechen?
+поку́пка | Поздравля́ю с поку́пкой! | Glückwunsch zum Kauf!
+мой бага́ж потеря́лся | В аэропорту́ мой бага́ж потеря́лся. | Am Flughafen ist mein Gepäck verloren gegangen.
+кошелёк | Кошелёк лежи́т в су́мке. | Der Geldbeutel liegt in der Tasche.
+вы мо́жете мне помо́чь? | Вы мо́жете мне помо́чь с чемода́ном? | Können Sie mir mit dem Koffer helfen?
+где ближа́йшая больни́ца? | Где ближа́йшая больни́ца? Э́то сро́чно. | Wo ist das nächste Krankenhaus? Es ist dringend.
+врач | Врач сказа́л, что мне ну́жно отдыха́ть. | Der Arzt sagte, ich muss mich ausruhen.
+я заболе́л | Я заболе́л и не могу́ прийти́ на рабо́ту. | Ich bin krank und kann nicht zur Arbeit kommen.
+у меня́ температу́ра | У меня́ температу́ра три́дцать во́семь. | Ich habe 38 Grad Fieber.
+у меня́ боли́т голова́ | У меня́ с утра́ боли́т голова́. | Ich habe seit heute Morgen Kopfschmerzen.
+лека́рство | Принима́й лека́рство три ра́за в день. | Nimm das Medikament dreimal am Tag.
+я простуди́лся | Я простуди́лся на рыба́лке. | Ich habe mich beim Angeln erkältet.
+поликли́ника | Я записа́лся к врачу́ в поликли́нику. | Ich habe mich in der Poliklinik beim Arzt angemeldet.
+уважа́емая | Уважа́емая А́нна Петро́вна, спаси́бо за отве́т. | Sehr geehrte Anna Petrowna, danke für die Antwort.
+вака́нсия | Я уви́дел вака́нсию кладовщика́ на са́йте. | Ich habe die Stelle als Lagerarbeiter auf der Website gesehen.
 `;

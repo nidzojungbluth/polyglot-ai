@@ -1,4 +1,4 @@
-// Serbisch – zusätzliche Beispielsätze (Etappe 15–17): Wort | Beispiel | Übersetzung
+// Serbisch – zusätzliche Beispielsätze (Etappe 15–17, Zwischenauftrag Beispielsätze): Wort | Beispiel | Übersetzung
 export default `
 vino | Crno vino je odlično. | Der Rotwein ist ausgezeichnet.
 voda | Da li je voda sa česme pitka? | Ist das Leitungswasser trinkbar?
@@ -305,4 +305,95 @@ prehlada | Imam blagu prehladu. | Ich habe eine leichte Erkältung.
 grip | Grip je trajao nedelju dana. | Die Grippe dauerte eine Woche.
 glavobolja | Imam strašnu glavobolju. | Ich habe schreckliche Kopfschmerzen.
 čekaonica | Čekaonica je puna ljudi. | Das Wartezimmer ist voller Leute.
+izvini, nisam hteo | Izvini, nisam hteo da te povredim. | Entschuldige, ich wollte dich nicht verletzen.
+u pravu si | Dobro, u pravu si, moja greška. | Okay, du hast recht, mein Fehler.
+nisi u pravu | Nisi u pravu, to nisam rekao. | Du hast nicht recht, das habe ich nicht gesagt.
+kako to misliš? | Kako to misliš da nemaš vremena? | Wie meinst du das, du hast keine Zeit?
+ne viči na mene | Ne viči na mene, čujem te. | Schrei mich nicht an, ich höre dich.
+pusti to | Pusti to, nije važno. | Lass es, es ist nicht wichtig.
+dosta je | Dosta je bilo, idemo kući! | Jetzt reicht's, wir gehen nach Hause!
+hajde da se pomirimo | Hajde da se pomirimo, glupo je da se svađamo. | Lass uns wieder vertragen, es ist dumm zu streiten.
+treba mi vremena | Treba mi vremena da razmislim. | Ich brauche Zeit zum Nachdenken.
+ne zezaj | Ne zezaj, stvarno si dobio posao? | Im Ernst, du hast wirklich den Job bekommen?
+po mom mišljenju | Po mom mišljenju, film je bio odličan. | Meiner Meinung nach war der Film ausgezeichnet.
+slažem se | Slažem se s tobom u svemu. | Ich stimme dir in allem zu.
+s jedne strane …, s druge strane … | S jedne strane želim da ostanem, s druge strane mi nedostaje porodica. | Einerseits will ich bleiben, andererseits fehlt mir die Familie.
+protest | Protest je počeo ispred skupštine. | Der Protest begann vor dem Parlament.
+ozbiljno? | Ozbiljno? Dobio si posao? | Im Ernst? Du hast den Job bekommen?
+rok | Rok ističe u petak. | Die Frist läuft am Freitag ab.
+prekovremeni rad | Prekovremeni rad se plaća više. | Überstunden werden höher bezahlt.
+na crno | Ne želim da radim na crno. | Ich will nicht schwarzarbeiten.
+dao sam otkaz | Dao sam otkaz jer je plata bila mala. | Ich habe gekündigt, weil das Gehalt niedrig war.
+dobio sam otkaz | Dobio sam otkaz bez upozorenja. | Ich wurde ohne Vorwarnung entlassen.
+unapređenje | Posle dve godine dobio je unapređenje. | Nach zwei Jahren wurde er befördert.
+odgovoran sam za … | Odgovoran sam za ulaz robe u magacin. | Ich bin für den Wareneingang im Lager verantwortlich.
+radno vreme | Radno vreme je od sedam do tri. | Die Arbeitszeit ist von sieben bis drei.
+slobodan dan | Sutra imam slobodan dan. | Morgen habe ich einen freien Tag.
+radim od kuće | Petkom radim od kuće. | Freitags arbeite ich von zu Hause.
+godišnji odmor | Godišnji odmor uzimam u avgustu. | Meinen Jahresurlaub nehme ich im August.
+usamljen | U novom gradu sam se osećao usamljeno. | In der neuen Stadt habe ich mich einsam gefühlt.
+razočaran | Razočaran sam rezultatom. | Ich bin vom Ergebnis enttäuscht.
+stalo mi je | Stalo mi je do tvog mišljenja. | Deine Meinung ist mir wichtig.
+baš me briga | Baš me briga šta drugi kažu. | Es ist mir völlig egal, was andere sagen.
+mogu li da ti kažem nešto? | Mogu li da ti kažem nešto lično? | Kann ich dir etwas Persönliches sagen?
+nemoj nikom da kažeš | To je tajna, nemoj nikom da kažeš. | Das ist ein Geheimnis, sag es niemandem.
+kako se osećaš? | Kako se osećaš posle operacije? | Wie fühlst du dich nach der Operation?
+zajedno smo | Zajedno smo već dve godine. | Wir sind schon zwei Jahre zusammen.
+nedostajao si mi | Nedostajao si mi celo leto. | Du hast mir den ganzen Sommer gefehlt.
+poverenje | Bez poverenja nema veze. | Ohne Vertrauen gibt es keine Beziehung.
+varaš me? | Reci mi istinu: varaš me? | Sag mir die Wahrheit: Betrügst du mich?
+hoću da upoznam tvoje roditelje | Hoću da upoznam tvoje roditelje za Božić. | Ich will an Weihnachten deine Eltern kennenlernen.
+verili smo se | Verili smo se na moru prošlog leta. | Wir haben uns letzten Sommer am Meer verlobt.
+venčanje | Venčanje je u septembru. | Die Hochzeit ist im September.
+dušo | Dobro jutro, dušo! | Guten Morgen, Schatz!
+srce moje | Laku noć, srce moje. | Gute Nacht, mein Herz.
+zašto | Zašto nisi došao juče? | Warum bist du gestern nicht gekommen?
+došao sam da te vidim | Došao sam da te vidim pre puta. | Ich bin gekommen, um dich vor der Reise zu sehen.
+dakle | Dakle, vidimo se sutra u osam. | Also, wir sehen uns morgen um acht.
+pre nego što | Pozovi me pre nego što kreneš. | Ruf mich an, bevor du losgehst.
+pratioci | Ima deset hiljada pratilaca. | Sie hat zehntausend Follower.
+lajk | Slika je dobila mnogo lajkova. | Das Foto hat viele Likes bekommen.
+video | Pošalji mi video sa koncerta. | Schick mir das Video vom Konzert.
+influenser | Ona je poznata influenserka iz Beograda. | Sie ist eine bekannte Influencerin aus Belgrad.
+blokirao me je | Blokirao me je posle svađe. | Nach dem Streit hat er mich blockiert.
+bojler | Uključi bojler pre tuširanja. | Schalte den Boiler vor dem Duschen ein.
+curi | Slavina u kuhinji curi. | Der Wasserhahn in der Küche tropft.
+ključevi | Zaboravio sam ključeve u stanu. | Ich habe die Schlüssel in der Wohnung vergessen.
+upravnik zgrade | Upravnik zgrade skuplja novac za lift. | Der Hausverwalter sammelt Geld für den Aufzug.
+buka | Buka sa ulice ne da mi da spavam. | Der Lärm von der Straße lässt mich nicht schlafen.
+svekrva | Svekrva mi je dala recept za sarmu. | Meine Schwiegermutter hat mir das Sarma-Rezept gegeben.
+sin | Sin mi ide u prvi razred. | Mein Sohn kommt in die erste Klasse.
+ćerka | Njihova ćerka studira medicinu. | Ihre Tochter studiert Medizin.
+sestrić | Moj sestrić ima pet godina. | Mein Neffe ist fünf Jahre alt.
+ličiš na mamu | Baš ličiš na mamu, imaš njene oči. | Du ähnelst deiner Mama sehr, du hast ihre Augen.
+jedinac | Ja sam jedinac, nemam braću ni sestre. | Ich bin Einzelkind, ich habe keine Geschwister.
+unuci | Baka čeka unuke za praznike. | Oma wartet an den Feiertagen auf die Enkel.
+gde živi tvoja porodica? | Gde živi tvoja porodica, u Nemačkoj? | Wo lebt deine Familie, in Deutschland?
+rodbina | Cela rodbina se okupila na slavi. | Die ganze Verwandtschaft kam zur Slava zusammen.
+kuvam | Kuvam pasulj za celu nedelju. | Ich koche Bohneneintopf für die ganze Woche.
+ulje | Stavi malo ulja u tiganj. | Gib etwas Öl in die Pfanne.
+pržiti | Moraš da pržiš luk dok ne porumeni. | Du musst die Zwiebel braten, bis sie goldbraun ist.
+so | Dodaj mi so, molim te. | Reich mir bitte das Salz.
+biber | Jelo treba još malo bibera. | Das Essen braucht noch etwas Pfeffer.
+paradajz | Paradajz sa pijace ima pravi ukus. | Tomaten vom Markt schmecken richtig.
+luk | Iseci luk na sitne kockice. | Schneide die Zwiebel in kleine Würfel.
+beli luk | U tzatziki ide mnogo belog luka. | In Tzatziki kommt viel Knoblauch.
+pokvareno | Mleko je pokvareno, nemoj da piješ. | Die Milch ist schlecht, trink sie nicht.
+garancija | Garancija važi dve godine. | Die Garantie gilt zwei Jahre.
+povraćaj novca | Tražim povraćaj novca za neispravan telefon. | Ich verlange mein Geld für das defekte Handy zurück.
+paket | Paket je stigao danas ujutru. | Das Paket ist heute Morgen angekommen.
+reklamacija | Podneo sam reklamaciju za cipele. | Ich habe die Schuhe reklamiert.
+mogu li da razgovaram sa poslovođom? | Izvinite, mogu li da razgovaram sa poslovođom? | Entschuldigung, kann ich mit dem Filialleiter sprechen?
+propustio sam voz | Propustio sam voz za Novi Sad. | Ich habe den Zug nach Novi Sad verpasst.
+izgubio mi se kofer | Izgubio mi se kofer na aerodromu. | Mein Koffer ist am Flughafen verloren gegangen.
+novčanik | Novčanik mi je u torbi. | Mein Geldbeutel ist in der Tasche.
+možete li da mi pomognete? | Možete li da mi pomognete sa koferom? | Können Sie mir mit dem Koffer helfen?
+gde je najbliža bolnica? | Gde je najbliža bolnica? Hitno je. | Wo ist das nächste Krankenhaus? Es ist dringend.
+bolestan sam | Bolestan sam, ne mogu da dođem na posao. | Ich bin krank, ich kann nicht zur Arbeit kommen.
+imam temperaturu | Imam temperaturu trideset osam. | Ich habe 38 Grad Fieber.
+boli me glava | Boli me glava od jutros. | Ich habe seit heute Morgen Kopfschmerzen.
+lek | Lek pijem tri puta dnevno. | Das Medikament nehme ich dreimal täglich.
+povredio sam koleno | Povredio sam koleno na fudbalu. | Ich habe mir beim Fußball das Knie verletzt.
+koleno | Koleno me boli kad hodam. | Das Knie tut mir beim Gehen weh.
+dom zdravlja | Zakazao sam pregled u domu zdravlja. | Ich habe im Gesundheitszentrum einen Termin gemacht.
 `;

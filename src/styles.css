@@ -186,3 +186,11 @@ input[type=checkbox] { width: 24px; height: 24px; accent-color: var(--primary); 
 
 /* Deutsche Übersetzung direkt neben dem Wort */
 .de-inline { font-weight: 400; color: var(--text); }
+
+/* Beispielsatz-Block: deutlich von der Wortübersetzung abgesetzt */
+.ex-block { margin-top: 8px; padding: 8px 12px 10px; border-left: 3px solid var(--primary); background: var(--chip); border-radius: 10px; text-align: left; }
+.ex-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 28px; }
+.ex-head .icon-btn { width: 32px; height: 32px; font-size: 15px; }
+.ex-label { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.ex-t { font-size: 16px; font-weight: 500; margin: 2px 0 6px; line-height: 1.35; }
+.ex-de { font-size: 15px; color: var(--text); opacity: .85; line-height: 1.35; }

@@ -1,5 +1,5 @@
-// Erzeugt docs/STATUS.md mit echten Zahlen aus den Sprachdaten (npm run report).
-import { writeFileSync } from 'fs';
+// Erzeugt PROJECT_PROGRESS.md (zentrale Fortschrittsdoku) mit echten Zahlen aus den Sprachdaten (npm run report).
+import { existsSync, readFileSync, statSync, writeFileSync } from 'fs';
 import { PACKS } from '../src/data';
 import { LEVELS } from '../src/data/types';
 import { clozeFromExample } from '../src/lib/exercises';
@@ -12,12 +12,17 @@ const rows = PACKS.map((p) => {
   const perLevel = LEVELS.map((l) => p.words.filter((w) => w.level === l).length + p.slang.filter((s) => s.level === l).length);
   const mods = p.modules ?? [];
   const lessons = mods.reduce((n, m) => n + moduleLessons(p, m).length, 0);
-  return { p, total, ex, perLevel, mods: mods.length, lessons, cloze: p.words.filter((w) => clozeFromExample(w)).length };
+  const exPerLevel = LEVELS.map((l) => {
+    const ws = p.words.filter((w) => w.level === l);
+    return ws.length ? Math.round((ws.filter((w) => w.ex).length / ws.length) * 100) : 0;
+  });
+  const wordsEx = p.words.filter((w) => w.ex).length;
+  return { p, total, ex, perLevel, exPerLevel, wordsEx, mods: mods.length, lessons, cloze: p.words.filter((w) => clozeFromExample(w)).length };
 });
 
 const date = new Date().toISOString().slice(0, 10);
 const md = [
-  '# Polyglot AI – Stand der Inhalte',
+  '# Polyglot AI – PROJECT PROGRESS',
   '',
   `Automatisch erzeugt am ${date} mit \`npm run report\`. Ziel: ${GOAL} Einträge pro Sprache.`,
   '',
@@ -31,11 +36,24 @@ const md = [
   `|---|${LEVELS.map(() => '---').join('|')}|---|`,
   ...rows.map((r) => `| ${r.p.name} | ${r.perLevel.join(' | ')} | ${r.total - r.perLevel.reduce((a, b) => a + b, 0)} |`),
   '',
+  '## Zwischenauftrag: Beispielsatz für jede Vokabel',
+  '',
+  'Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer einen Beispielsatz). Neue Wortlisten ab Nr. 19 müssen zu jedem Wort einen Beispielsatz enthalten – das prüft ein Test.',
+  '',
+  `| Sprache | Wörter mit Beispiel | ${LEVELS.join(' | ')} |`,
+  `|---|---|${LEVELS.map(() => '---').join('|')}|`,
+  ...rows.map((r) => `| ${r.p.name} | ${r.wordsEx} / ${r.p.words.length} (${Math.round((r.wordsEx / r.p.words.length) * 100)} %) | ${r.exPerLevel.map((x) => x + ' %').join(' | ')} |`),
+  '',
+  '## Ladezeit',
+  '',
+  existsSync('dist/index.html') ? `App-Datei (alles in einer Datei, inkl. aller Sprachdaten): ${(statSync('dist/index.html').size / 1024).toFixed(0)} KB.` : 'App-Datei: noch nicht gebaut.',
+  '',
   '## Prüfstatus',
   '',
   '- **Von Muttersprachlern geprüft: 0 Einträge.** Alle Inhalte sind KI-erstellt.',
   '- **Automatisch geprüft: alle Einträge** – keine Duplikate, jede Übersetzung vorhanden, Russisch mit Betonung, Serbisch ohne Schriftmischung, Beispielsätze korrekt zugeordnet (siehe `tests/content.test.ts`).',
   '',
 ].join('\n');
-writeFileSync('docs/STATUS.md', md);
+const roadmap = existsSync('docs/ROADMAP.md') ? readFileSync('docs/ROADMAP.md', 'utf8') : '';
+writeFileSync('PROJECT_PROGRESS.md', md + '\n---\n\n' + roadmap);
 console.log(md);

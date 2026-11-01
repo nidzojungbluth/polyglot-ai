@@ -1,9 +1,11 @@
 # Polyglot AI – Roadmap
 
-Zentrale Planung. Die Zahlen stehen in [STATUS.md](STATUS.md) (automatisch erzeugt mit `npm run report`).
+Zentrale Planung. Die Zahlen oben in PROJECT_PROGRESS.md werden automatisch mit `npm run report` erzeugt; dieser Teil (Roadmap) wird von Hand gepflegt.
 Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 
 ## Arbeitsweise
+
+- **Reihenfolge ab Zwischenauftrag:** Runden wechseln sich ab – eine Runde Beispielsätze nachtragen, eine Runde neue Wörter (immer mit Beispielsatz) für das 5.000-Ziel.
 
 - Gearbeitet wird in **Etappen**. Jede Etappe wird getestet (Unit-Tests, Datenprüfung, iPhone-Test mit Playwright), dann committet und veröffentlicht.
 - Vor jeder Änderung an bestehenden Daten gibt es ein Git-Commit als Sicherung. Die Sicherungs-Branch `sicherung-v1` enthält den Stand vor der großen Erweiterung.
@@ -18,7 +20,7 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 | 2 | Automatische Datenprüfung (Duplikate, Übersetzung, russische Betonung, serbische Schrift, Beispielsatz-Zuordnung) | ✅ erledigt |
 | 3 | Griechisch, Serbisch, Russisch: alle 6 Niveaus × 20 Themen gefüllt, Beispielsätze für A1/A2 | ✅ erledigt |
 | 4 | **Griechisch, Serbisch, Russisch auf 5.000 Einträge** (aktuell ca. 2.130) – Etappen 19–21: Kernverben 1–3, Adjektive 1–2, kleine Wörter, Fragewörter, Präpositionen, Tiere, Maße, Werkzeug, Wetter, Körper 2, Berufe 2 | 🔄 läuft – ca. 150–200 neue Einträge pro Sprache und Etappe |
-| 5 | Beispielsätze für B1–C2 | ⏳ geplant, verzahnt mit Paket 4 |
+| 5 | **Zwischenauftrag: Beispielsatz für jede Vokabel** – Anzeige im Beispielsatz-Block (Wortlisten, Slang, Lernkarten, Wörterbuch), Regel-Test für neue Wörter, Betonungsprüfung für russische Sätze, Nachtragen für alle vorhandenen Wörter | 🔄 läuft – Runde 1 (B1, ca. 90 Sätze pro Sprache) erledigt; noch ca. 1.300 Sätze pro Sprache, ca. 10 Runden |
 | 6 | Lernsystem prüfen und verbessern (Wiederholung, schwierige Wörter, Statistik) | ⏳ geplant nach ca. 2.500 Einträgen |
 | 7 | UI/UX professionalisieren (Startseite, Navigation, Vokabeltrainer, Statistik, Animationen) | ⏳ geplant nach ca. 2.500 Einträgen |
 | 8 | Ladezeit bei großen Wortschätzen: Sprachdaten getrennt laden (GitHub-Pages-Version) | ⏳ geplant ab ca. 3.000 Einträgen |
@@ -32,6 +34,12 @@ Diese Datei wird nach jedem Arbeitspaket aktualisiert.
 - Deutsche Übersetzung fehlte in der Slang-Liste; steht jetzt in allen Wortlisten direkt neben dem Wort.
 - Falsche russische Betonungen (трудово́й, работода́тель, вы́деленная, ваще́) korrigiert.
 - Mehrdeutiges russisches „пост“ (Fasten / Beitrag) getrennt.
+- Fehlende Betonungen in russischen Beispielsätzen (u. a. Че́рез, Споко́йной, О́тпуск, и́ли) korrigiert; wird jetzt automatisch geprüft.
+- Build-Fehler durch einen Test ohne Vite-Typen behoben.
+
+## Messwerte
+
+- Ladezeit (iPhone-13-Simulation): App bedienbar nach ca. 0,5 s; Liste aller ~2.000 Wörter öffnet in ca. 0,2 s.
 
 ## Offene Punkte
 

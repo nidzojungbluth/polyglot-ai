@@ -4,9 +4,9 @@ import { PACKS, withScript } from '../data';
 import type { LanguagePack, Register } from '../data/types';
 import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
-import { LevelBadge, RegBadge, SpeakBtn, WordHead } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn, WordHead, ExampleBlock } from './ui';
 
-interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: string; extra?: string; local?: boolean; search: string }
+interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: { t: string; de: string }; extra?: string; local?: boolean; search: string }
 
 export function Dictionary({ ctx }: { ctx: Ctx }) {
   const [q, setQ] = useState('');
@@ -19,9 +19,9 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
     const packs = all ? PACKS.map((p) => withScript(p, ctx.state.settings.srScript)) : [ctx.pack];
     const out: Entry[] = [];
     for (const p of packs) {
-      for (const w of p.words) out.push({ pack: p, id: w.id, t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, ex: w.ex ? `${w.ex.t} – ${w.ex.de}` : undefined, extra: w.note,
+      for (const w of p.words) out.push({ pack: p, id: w.id, t: w.t, tr: w.tr, de: w.de, reg: w.reg, level: w.level, ex: w.ex, extra: w.note,
         search: normalize([w.t, w.tr, w.de].join(' ')) });
-      for (const s of p.slang) out.push({ pack: p, id: s.id, t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, local: s.local, ex: `${s.ex.t} – ${s.ex.de}`,
+      for (const s of p.slang) out.push({ pack: p, id: s.id, t: s.t, tr: s.tr, de: s.de, reg: s.reg, level: s.level, local: s.local, ex: s.ex,
         extra: `${s.situation} · ${s.effect} · Neutral: ${s.formal}${s.status === 'älter' ? ' · eher veraltet' : ''}`, search: normalize([s.t, s.tr, s.de].join(' ')) });
     }
     return out;
@@ -58,7 +58,7 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
             <div className="grow">
               <span>{r.pack.flag}</span> <WordHead t={r.t} de={r.de} tr={r.tr} lang={r.pack.code} /> <RegBadge reg={r.reg} /> <LevelBadge level={r.level} />
               {r.local && <span className="badge local">📍 {r.pack.city}</span>}
-              {r.ex && <div className="small muted">{r.ex}</div>}
+              <ExampleBlock ex={r.ex} lang={r.pack.code} pack={r.pack} />
               {r.extra && <div className="small note">💡 {r.extra}</div>}
             </div>
             <SpeakBtn text={r.t} pack={r.pack} />

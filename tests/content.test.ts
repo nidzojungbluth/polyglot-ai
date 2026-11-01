@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { describe, it, expect } from 'vitest';
 import { PACKS, packByCode, withScript } from '../src/data';
 import { moduleLessons, findLesson, lessonItems } from '../src/lib/course';
@@ -131,5 +132,40 @@ describe('Datenqualität – automatische Sprachprüfung', () => {
   });
   it('alle Einträge haben eine deutsche Übersetzung', () => {
     for (const p of PACKS) expect([...p.words, ...p.slang].filter((w) => !w.de || w.de.trim().length < 2).map((w) => w.t)).toEqual([]);
+  });
+});
+
+describe('Regel: neue Vokabeln immer mit Beispielsatz', () => {
+  it('jede Wortliste ab Nr. 19 enthält zu jedem neuen Wort einen Beispielsatz mit Übersetzung', () => {
+    const files = import.meta.glob('../src/data/vocab/*.ts', { eager: true, import: 'default' }) as Record<string, string>;
+    const missing: string[] = [];
+    for (const [path, src] of Object.entries(files)) {
+      const m = path.match(/\/(el|sr|ru)(\d+)\.ts$/);
+      if (!m || Number(m[2]) < 19) continue;
+      let kind = 'word';
+      for (const raw of src.split('\n')) {
+        const line = raw.trim();
+        if (line.startsWith('##')) { kind = /kind=slang/.test(line) ? 'slang' : 'word'; continue; }
+        if (!line.includes(' | ') || line.startsWith('>') || line.startsWith('@') || line.startsWith('//') || kind !== 'word') continue;
+        const x = line.split('|').map((v: string) => v.trim());
+        if (!x[4] || !x[5]) missing.push(`${path}: ${x[0]}`);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+});
+
+describe('Datenqualität – russische Beispielsätze', () => {
+  it('jedes mehrsilbige Wort in russischen Beispielsätzen hat eine Betonung', () => {
+    const ru = PACKS.find((p) => p.code === 'ru')!;
+    const bad: string[] = [];
+    for (const w of [...ru.words, ...ru.slang]) {
+      if (!w.ex) continue;
+      for (const x of w.ex.t.split(/[\s\-–—/,.!?;:…()«»"„“]+/).filter(Boolean)) {
+        const v = (x.match(/[аеёиоуыэюя]/gi) || []).length;
+        if (v >= 2 && !/́|ё/i.test(x) && !/^[А-ЯЁA-Z]{2,}$/.test(x) && !/^[a-z]/i.test(x)) bad.push(`${w.t}: ${x}`);
+      }
+    }
+    expect(bad).toEqual([]);
   });
 });

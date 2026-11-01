@@ -1,4 +1,4 @@
-// Griechisch – zusätzliche Beispielsätze (Etappe 15–17): Wort | Beispiel | Übersetzung
+// Griechisch – zusätzliche Beispielsätze (Etappe 15–17, Zwischenauftrag Beispielsätze): Wort | Beispiel | Übersetzung
 export default `
 ο φίλος / η φίλη | Ο Νίκος είναι καλός μου φίλος. | Nikos ist ein guter Freund von mir.
 ο καφές | Ο καφές εδώ είναι πολύ καλός. | Der Kaffee hier ist sehr gut.
@@ -314,4 +314,94 @@ export default `
 ο πονοκέφαλος | Έχω τρομερό πονοκέφαλο. | Ich habe schreckliche Kopfschmerzen.
 ο κοιλόπονος | Έχω κοιλόπονο από το πρωί. | Ich habe seit heute Morgen Bauchschmerzen.
 ο ΑΜΚΑ | Ποιος είναι ο ΑΜΚΑ σας; | Wie lautet Ihre AMKA-Nummer?
+συγγνώμη, δεν ήθελα | Συγγνώμη, δεν ήθελα να σε στενοχωρήσω. | Entschuldige, ich wollte dich nicht traurig machen.
+έχεις δίκιο | Εντάξει, έχεις δίκιο, φταίω εγώ. | Okay, du hast recht, es ist meine Schuld.
+δεν έχεις δίκιο | Δεν έχεις δίκιο, εγώ δεν το είπα αυτό. | Du hast nicht recht, das habe ich nicht gesagt.
+τι εννοείς; | Τι εννοείς ότι δεν έχεις χρόνο; | Was meinst du damit, dass du keine Zeit hast?
+μη μου φωνάζεις | Μη μου φωνάζεις, σε ακούω. | Schrei mich nicht an, ich höre dich.
+φτάνει πια | Φτάνει πια, πάμε σπίτι! | Jetzt reicht's, wir gehen nach Hause!
+χρειάζομαι χρόνο | Χρειάζομαι χρόνο να το σκεφτώ. | Ich brauche Zeit, um darüber nachzudenken.
+κατά τη γνώμη μου | Κατά τη γνώμη μου, η ταινία ήταν πολύ καλή. | Meiner Meinung nach war der Film sehr gut.
+συμφωνώ | Συμφωνώ μαζί σου σε όλα. | Ich stimme dir in allem zu.
+διαφωνώ | Διαφωνώ, νομίζω ότι είναι ακριβό. | Ich bin anderer Meinung, ich finde es teuer.
+από τη μία …, από την άλλη … | Από τη μία θέλω να μείνω, από την άλλη μου λείπει η οικογένειά μου. | Einerseits will ich bleiben, andererseits fehlt mir meine Familie.
+σοβαρά; | Σοβαρά; Πήρες τη δουλειά; | Im Ernst? Hast du den Job bekommen?
+η προθεσμία | Η προθεσμία λήγει την Παρασκευή. | Die Frist läuft am Freitag ab.
+παραιτήθηκα | Παραιτήθηκα γιατί ο μισθός ήταν χαμηλός. | Ich habe gekündigt, weil das Gehalt niedrig war.
+με απέλυσαν | Με απέλυσαν χωρίς προειδοποίηση. | Sie haben mich ohne Vorwarnung entlassen.
+η προαγωγή | Πήρε προαγωγή μετά από δύο χρόνια. | Nach zwei Jahren wurde er befördert.
+συνεργάζομαι | Συνεργάζομαι καλά με τους συναδέλφους μου. | Ich arbeite gut mit meinen Kollegen zusammen.
+δουλεύω από το σπίτι | Τις Παρασκευές δουλεύω από το σπίτι. | Freitags arbeite ich von zu Hause.
+μόνος | Μένω μόνος σε μια μικρή γκαρσονιέρα. | Ich wohne allein in einer kleinen Einzimmerwohnung.
+απογοητεύτηκα | Απογοητεύτηκα όταν άκουσα την απάντηση. | Ich war enttäuscht, als ich die Antwort hörte.
+με νοιάζει | Με νοιάζει τι πιστεύεις εσύ. | Es ist mir wichtig, was du denkst.
+δεν με νοιάζει | Δεν με νοιάζει τι λένε οι άλλοι. | Es ist mir egal, was die anderen sagen.
+μπορώ να σου πω κάτι; | Μπορώ να σου πω κάτι προσωπικό; | Kann ich dir etwas Persönliches sagen?
+μην το πεις σε κανέναν | Είναι μυστικό, μην το πεις σε κανέναν. | Es ist ein Geheimnis, sag es niemandem.
+πώς νιώθεις; | Πώς νιώθεις μετά την εγχείρηση; | Wie fühlst du dich nach der Operation?
+ανακουφίστηκα | Ανακουφίστηκα όταν τηλεφώνησες. | Ich war erleichtert, als du angerufen hast.
+μου έλειψες | Μου έλειψες πολύ όλο το καλοκαίρι. | Du hast mir den ganzen Sommer sehr gefehlt.
+η εμπιστοσύνη | Χωρίς εμπιστοσύνη δεν γίνεται σχέση. | Ohne Vertrauen geht keine Beziehung.
+με απατάς; | Πες μου την αλήθεια: με απατάς; | Sag mir die Wahrheit: Betrügst du mich?
+ζηλιάρης | Ο φίλος της είναι πολύ ζηλιάρης. | Ihr Freund ist sehr eifersüchtig.
+θέλω να γνωρίσω τους γονείς σου | Θέλω να γνωρίσω τους γονείς σου το Πάσχα. | Ich möchte an Ostern deine Eltern kennenlernen.
+μένουμε μαζί | Μένουμε μαζί εδώ και έναν χρόνο. | Wir wohnen seit einem Jahr zusammen.
+αρραβωνιαστήκαμε | Αρραβωνιαστήκαμε το καλοκαίρι στη Χαλκιδική. | Wir haben uns im Sommer auf Chalkidiki verlobt.
+ο γάμος | Ο γάμος θα γίνει τον Σεπτέμβριο. | Die Hochzeit findet im September statt.
+αγάπη μου | Καλημέρα, αγάπη μου! | Guten Morgen, mein Schatz!
+ότι | Νομίζω ότι θα βρέξει. | Ich glaube, dass es regnen wird.
+οι ακόλουθοι | Έχει δέκα χιλιάδες ακόλουθους. | Sie hat zehntausend Follower.
+το λάικ | Η φωτογραφία πήρε πολλά λάικ. | Das Foto hat viele Likes bekommen.
+το βίντεο | Στείλε μου το βίντεο από τη συναυλία. | Schick mir das Video vom Konzert.
+με μπλόκαρε | Με μπλόκαρε μετά τον καβγά. | Nach dem Streit hat er mich blockiert.
+είναι της μόδας | Αυτά τα παπούτσια είναι της μόδας φέτος. | Diese Schuhe sind dieses Jahr in Mode.
+ο θερμοσίφωνας | Άναψε τον θερμοσίφωνα πριν κάνεις μπάνιο. | Schalte den Boiler ein, bevor du duschst.
+στάζει | Η βρύση στην κουζίνα στάζει. | Der Wasserhahn in der Küche tropft.
+τα κλειδιά | Ξέχασα τα κλειδιά μέσα στο σπίτι. | Ich habe die Schlüssel in der Wohnung vergessen.
+ο διαχειριστής | Ο διαχειριστής μαζεύει τα κοινόχρηστα. | Der Hausverwalter sammelt die Nebenkosten ein.
+κάνει θόρυβο | Ο γείτονας κάνει θόρυβο όλη νύχτα. | Der Nachbar macht die ganze Nacht Lärm.
+η πεθερά | Η πεθερά μου μαγειρεύει κάθε Κυριακή. | Meine Schwiegermutter kocht jeden Sonntag.
+ο γιος | Ο γιος μου πάει στο δημοτικό. | Mein Sohn geht in die Grundschule.
+η κόρη | Η κόρη τους σπουδάζει ιατρική. | Ihre Tochter studiert Medizin.
+ο κουμπάρος | Ο κουμπάρος μας ήρθε από την Αθήνα. | Unser Trauzeuge ist aus Athen gekommen.
+μοιάζεις στη μητέρα σου | Μοιάζεις στη μητέρα σου, έχεις τα μάτια της. | Du ähnelst deiner Mutter, du hast ihre Augen.
+το μοναχοπαίδι | Είμαι μοναχοπαίδι, δεν έχω αδέρφια. | Ich bin Einzelkind, ich habe keine Geschwister.
+πού ζει η οικογένειά σου; | Πού ζει η οικογένειά σου, στη Γερμανία; | Wo lebt deine Familie, in Deutschland?
+μαγειρεύω | Μαγειρεύω φασολάδα για όλη την εβδομάδα. | Ich koche Bohnensuppe für die ganze Woche.
+το ελαιόλαδο | Βάλε λίγο ελαιόλαδο στη σαλάτα. | Gib etwas Olivenöl an den Salat.
+τηγανίζω | Τηγανίζω πατάτες για τα παιδιά. | Ich brate Pommes für die Kinder.
+ψήνω | Το Σάββατο ψήνω σουβλάκια στο μπαλκόνι. | Am Samstag grille ich Souvlaki auf dem Balkon.
+το αλάτι | Μου δίνεις το αλάτι, παρακαλώ; | Gibst du mir bitte das Salz?
+το πιπέρι | Το φαγητό θέλει λίγο πιπέρι. | Das Essen braucht etwas Pfeffer.
+η ντομάτα | Η ντομάτα από το χωριό έχει άλλη γεύση. | Die Tomate aus dem Dorf schmeckt anders.
+το κρεμμύδι | Κόψε το κρεμμύδι σε μικρά κομμάτια. | Schneide die Zwiebel in kleine Stücke.
+το σκόρδο | Το τζατζίκι θέλει πολύ σκόρδο. | Tzatziki braucht viel Knoblauch.
+χαλασμένο | Το κινητό είναι χαλασμένο από χθες. | Das Handy ist seit gestern kaputt.
+η αντικαταβολή | Θα πληρώσω με αντικαταβολή. | Ich zahle per Nachnahme.
+η τιμή | Η τιμή περιλαμβάνει ΦΠΑ. | Der Preis enthält Mehrwertsteuer.
+χάθηκε η βαλίτσα μου | Χάθηκε η βαλίτσα μου στο αεροδρόμιο. | Mein Koffer ist am Flughafen verloren gegangen.
+το πορτοφόλι | Το πορτοφόλι μου είναι στην τσάντα. | Mein Geldbeutel ist in der Tasche.
+μπορείτε να με βοηθήσετε; | Συγγνώμη, μπορείτε να με βοηθήσετε με τη βαλίτσα; | Entschuldigung, können Sie mir mit dem Koffer helfen?
+το προξενείο | Το προξενείο ανοίγει στις εννιά. | Das Konsulat öffnet um neun.
+πού είναι το πιο κοντινό νοσοκομείο; | Πού είναι το πιο κοντινό νοσοκομείο; Είναι επείγον. | Wo ist das nächste Krankenhaus? Es ist dringend.
+ο γιατρός | Ο γιατρός είπε να ξεκουραστώ. | Der Arzt hat gesagt, ich soll mich ausruhen.
+το νοσοκομείο | Η γιαγιά είναι στο νοσοκομείο. | Oma ist im Krankenhaus.
+είμαι άρρωστος | Είμαι άρρωστος, δεν μπορώ να έρθω στη δουλειά. | Ich bin krank, ich kann nicht zur Arbeit kommen.
+έχω πυρετό | Έχω πυρετό τριάντα οκτώ. | Ich habe 38 Grad Fieber.
+με πονάει το κεφάλι | Με πονάει το κεφάλι από το πρωί. | Ich habe seit heute Morgen Kopfschmerzen.
+το φάρμακο | Παίρνω το φάρμακο τρεις φορές τη μέρα. | Ich nehme das Medikament dreimal am Tag.
+το γόνατο | Χτύπησα το γόνατο στο ποδόσφαιρο. | Ich habe mir beim Fußball das Knie gestoßen.
+αγαπητή κυρία | Αγαπητή κυρία Παπαδοπούλου, σας ευχαριστώ για την απάντηση. | Sehr geehrte Frau Papadopoulou, vielen Dank für Ihre Antwort.
+η αγγελία | Είδα την αγγελία για τη θέση αποθηκάριου. | Ich habe die Anzeige für die Stelle als Lagerarbeiter gesehen.
+θα ήθελα να ρωτήσω | Θα ήθελα να ρωτήσω αν η θέση είναι ακόμα ελεύθερη. | Ich möchte fragen, ob die Stelle noch frei ist.
+περιμένω την απάντησή σας | Περιμένω την απάντησή σας με ενδιαφέρον. | Ich freue mich auf Ihre Antwort.
+με εκτίμηση | Με εκτίμηση, Νίκος Μίλερ | Mit freundlichen Grüßen, Nikos Müller
+φιλικά | Φιλικά, Μαρία | Viele Grüße, Maria
+ευχαριστώ εκ των προτέρων | Ευχαριστώ εκ των προτέρων για τη βοήθεια. | Vielen Dank im Voraus für Ihre Hilfe.
+το email | Σας στέλνω το βιογραφικό μου με email. | Ich schicke Ihnen meinen Lebenslauf per E-Mail.
+αργώ λίγο | Αργώ λίγο, έρχομαι σε δέκα λεπτά. | Ich bin etwas spät, ich komme in zehn Minuten.
+στην ώρα μου | Πάντα είμαι στην ώρα μου στη δουλειά. | Ich bin immer pünktlich bei der Arbeit.
+την άλλη εβδομάδα | Την άλλη εβδομάδα πάω διακοπές. | Nächste Woche fahre ich in den Urlaub.
+μεθαύριο | Μεθαύριο έχω συνέντευξη. | Übermorgen habe ich ein Vorstellungsgespräch.
+προχθές | Προχθές πήγαμε στη θάλασσα. | Vorgestern sind wir ans Meer gefahren.
 `;

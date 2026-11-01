@@ -132,7 +132,7 @@ export default `
 ла́мповый | gemütlich, mit Retro-Charme | s | freundlich | 0 | ganz Russland | über Atmosphäre | warm, positiv | ую́тный | Ла́мповое кафе́, мне нра́вится. | Gemütliches Café, gefällt mir. | aktuell
 понае́хали | „sind alle hergezogen“ | s | unhöflich | 1 | Moskau, Sankt Petersburg | über Zugezogene | abwertend, oft auch selbstironisch | прие́хали | Опя́ть про́бки – понае́хали тут! | Schon wieder Stau – alle sind hergezogen! | aktuell
 Москва́ не рези́новая | Moskau ist nicht aus Gummi | l | ironisch | 1 | Moskau | Klage über Enge und Zuzug | ironisch, teils abwertend | в Москве́ те́сно | В метро́ не протолкну́ться – Москва́ не рези́новая. | In der Metro kein Durchkommen – Moskau ist nicht aus Gummi. | aktuell
-душни́ла | Besserwisser, Spaßbremse | s | unhöflich | 0 | ganz Russland | über pedantische Leute | spöttisch | зану́да | Не будь душни́лой, дай расслабиться. | Sei keine Spaßbremse, lass uns entspannen. | aktuell
-рофли́ть | Witze reißen, trollen (von „ROFL“) | s | locker | 0 | ganz Russland, online | Jugend, Chats | sehr jung | шути́ть | Ты серьёзно или рофли́шь? | Meinst du das ernst oder machst du Witze? | aktuell
+душни́ла | Besserwisser, Spaßbremse | s | unhöflich | 0 | ganz Russland | über pedantische Leute | spöttisch | зану́да | Не будь душни́лой, дай рассла́биться. | Sei keine Spaßbremse, lass uns entspannen. | aktuell
+рофли́ть | Witze reißen, trollen (von „ROFL“) | s | locker | 0 | ganz Russland, online | Jugend, Chats | sehr jung | шути́ть | Ты серьёзно и́ли рофли́шь? | Meinst du das ernst oder machst du Witze? | aktuell
 не парь мне мозг | nerv mich nicht | s | unhöflich | 0 | ganz Russland | genervte Abwehr | grob, nur unter Freunden | не надоеда́й | Не парь мне мозг, я за́нят. | Nerv mich nicht, ich bin beschäftigt. | aktuell
 `;

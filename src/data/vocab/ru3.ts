@@ -19,7 +19,7 @@ export default `
 гото́вить | kochen | v | n
 реце́пт | Rezept | n.m | n | Дашь реце́пт? | Gibst du mir das Rezept? |
 ма́сло | Öl / Butter | n.n | n
-ре́зать | schneiden | v | n | Нарежь лук. | Schneid die Zwiebel. |
+ре́зать | schneiden | v | n | Наре́жь лук. | Schneid die Zwiebel. |
 вари́ть | kochen (in Wasser) | v | n | Я варю́ макаро́ны. | Ich koche Nudeln. |
 жа́рить | braten | v | n
 печь | backen | v | n
