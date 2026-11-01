@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 2002 | 40 % | 761 | 585 | 176 | 536 |
-| 🇷🇸 Serbisch | 2021 | 40 % | 724 | 446 | 176 | 537 |
-| 🇷🇺 Russisch | 2021 | 40 % | 729 | 486 | 176 | 539 |
+| 🇬🇷 Griechisch | 2119 | 42 % | 769 | 590 | 181 | 558 |
+| 🇷🇸 Serbisch | 2141 | 43 % | 732 | 449 | 181 | 559 |
+| 🇷🇺 Russisch | 2141 | 43 % | 737 | 488 | 181 | 561 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 348 | 427 | 398 | 372 | 221 | 196 | 40 |
-| Serbisch | 349 | 431 | 408 | 371 | 223 | 200 | 39 |
-| Russisch | 358 | 430 | 400 | 364 | 224 | 203 | 42 |
+| Griechisch | 370 | 469 | 426 | 397 | 221 | 196 | 40 |
+| Serbisch | 372 | 474 | 435 | 398 | 223 | 200 | 39 |
+| Russisch | 382 | 473 | 427 | 390 | 224 | 203 | 42 |
 
 ## Prüfstatus
 
