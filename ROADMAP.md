@@ -19,8 +19,8 @@
 
 | Phase | Ziel | Priorität | Aufwand | Status |
 |---|---|---|---|---|
-| 0 | Werkzeuge & Doku aufräumen | hoch | 1 Runde | ⏳ |
-| 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | 🔒 D-010 |
+| 0 | Werkzeuge & Doku aufräumen | hoch | 1 Runde | ✅ 01.11. |
+| 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | 🔄 freigegeben 01.11. |
 | 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | 🔄 (laufend seit Etappe 19) |
 | 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ⏳ |
 | 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ⏳ |
@@ -33,7 +33,7 @@ Abhängigkeiten: 0 → 1 → (2 läuft parallel weiter, profitiert aber von 1) �
 
 ---
 
-## Phase 0 – Werkzeuge & Doku aufräumen ⏳
+## Phase 0 – Werkzeuge & Doku aufräumen ✅ (01.11.2026: `npm run missing`, `npm run e2e` mit PORT, Chronik nach `docs/CHANGELOG.md`, Report verweist auf Steuerdateien, README aktualisiert)
 
 1. **Ziel:** Folge-Sitzungen ohne Nacharbeit starten können.
 2. **Aufgaben:**
@@ -49,7 +49,7 @@ Abhängigkeiten: 0 → 1 → (2 läuft parallel weiter, profitiert aber von 1) �
 8. **Abnahme:** `npm run missing B2 10`, `npm run e2e`, `npm run report` laufen; 107 + 31 Tests grün; App-Build byte-gleich zum Vorher (außer Doku).
 9. **Ergebnis:** reproduzierbare Werkzeugkette.
 
-## Phase 1 – Performance: Sprachen getrennt laden 🔒 (D-010)
+## Phase 1 – Performance: Sprachen getrennt laden 🔄 (D-010 freigegeben 01.11.2026)
 
 1. **Ziel:** Start < 1 s (iPhone-13-Simulation, CPU ×4), erster Download < 500 KB, auch bei 5.000+ Einträgen je Sprache.
 2. **Aufgaben:**
@@ -125,7 +125,7 @@ Vollständiger Testlauf, Leistungsmessung, Barrierefreiheits-Durchgang, README/S
 1. `PROJECT_STATUS.md`, `ROADMAP.md`, `DECISIONS.md` lesen (nichts anderes vorab).
 2. Kurzprüfung: `git log --oneline -3`, `gh run list -R nidzojungbluth/polyglot-ai -L 1`, `npx vitest run | tail -3`.
 3. Erste offene Aufgabe mit höchster Priorität wählen, deren Abhängigkeiten erfüllt sind und die **nicht** 🔒 ist.
-4. Umsetzen → Tests (vitest, Build, `npm run e2e`) → `npm run report` → Status-/Roadmap-Zeile aktualisieren → Commit (Trailer) → Push → Artefakt veröffentlichen (`publish_files`, slug `aafed084-5356-4a9e-9b7a-4101f6b3b948`, aktuelle `base_version` per `get_artifact`).
+4. Umsetzen → Tests (`npx vitest run`, `npm run build`, `npm run e2e`) → `npm run report` → Status-/Roadmap-Zeile aktualisieren → Commit (Trailer) → Push → Artefakt veröffentlichen (`publish_files`, slug `aafed084-5356-4a9e-9b7a-4101f6b3b948`, aktuelle `base_version` per `get_artifact`).
 5. Kurzer deutscher Bericht (Fachbegriffe einfach erklären), dann nächste Aufgabe, solange der Nutzer nicht „stopp/Pause“ sagt.
 
 ## Effizienzregeln (Claude-Nutzungsvolumen)

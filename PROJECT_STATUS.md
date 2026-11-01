@@ -20,7 +20,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 | Zweitauslieferung | claude.ai-Artefakt (gleiche `index.html`): echter KI-Coach, private Cloud-Sicherung (`src/lib/cloud.ts`), kein Service Worker |
 | Backend | **keins** – keine Server, keine Konten, keine Kosten |
 | Tests | Vitest (`tests/*.test.ts`, 107 Tests: Kernlogik, Datenqualität, Alphabet) + Playwright-E2E `tests/e2e.cjs` (31 Prüfungen, iPhone-SE/13-Simulation, offline, Dark Mode) |
-| Werkzeuge | `scripts/add-stage.py` (neue Wortliste einbinden, Dubletten mit `@` markieren), `scripts/report.ts` (Kennzahlen), `/tmp/missing.ts` (**nur temporär**, siehe Schulden) |
+| Werkzeuge | `scripts/add-stage.py` (neue Wortliste einbinden, Dubletten mit `@` markieren), `scripts/report.ts` (Kennzahlen), `scripts/missing.ts` (`npm run missing -- <Niveau> <Anzahl>`), `scripts/e2e.sh` (`npm run e2e`, Port per `PORT`) |
 
 ## 3. Implementierte Funktionen (geprüft im Code)
 
@@ -65,9 +65,9 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 ## 6. Offene Probleme und technische Schulden
 
 1. **Ladezeit/Dateigröße** (höchste Priorität): alles in einer Datei, alle Sprachen werden beim Start geparst → Roadmap Phase 1.
-2. **Hilfsskript `missing.ts` liegt nur in `/tmp`** (geht beim Container-Neustart verloren) → nach `scripts/missing.ts` übernehmen.
-3. **E2E-Port wird jede Runde per `sed` im Testskript geändert** → Port per Umgebungsvariable.
-4. **Doppelte Doku:** `docs/ROADMAP.md` (wird von `report.ts` in `PROJECT_PROGRESS.md` eingebunden) vs. neue `ROADMAP.md`; README-Zahlen veraltet („~2.180 Wörter“).
+2. ~~Hilfsskript nur in /tmp~~ ✅ jetzt `scripts/missing.ts`.
+3. ~~E2E-Port per sed~~ ✅ `npm run e2e` mit `PORT`.
+4. ~~Doppelte Doku~~ ✅ erledigt (Chronik `docs/CHANGELOG.md`). Früher: `docs/ROADMAP.md` (wird von `report.ts` in `PROJECT_PROGRESS.md` eingebunden) vs. neue `ROADMAP.md`; README-Zahlen veraltet („~2.180 Wörter“).
 5. **`src/data/index.ts`** bindet 93 Dateien über eine sehr lange, von `add-stage.py` per Textersetzung gepflegte Zeile ein → fehleranfällig, blockiert getrenntes Laden.
 6. **Alte Basis-Einträge ohne Beispielsatz** (v. a. B2-Rest, C1, C2, einige A1) – ca. 550–600 Wörter je Sprache.
 7. **Lückentext** funktioniert nicht bei gebeugten Formen (dann nur Satzbau-Übung).
@@ -85,4 +85,5 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 ## 8. Letzter Fortschritt
 
 - 01.11.2026: Etappen 24–33 (je ~70–90 neue Einträge pro Sprache, alle mit Beispielsatz), Beispielsatz-Runden 3–12 (B1 und A2 vollständig, B2 auf ~80 %), 3.000-Marke überschritten, Messung Ladezeit; danach **Planungsauftrag**: diese drei Steuerdateien angelegt. Keine Code-Änderungen in dieser Sitzung nach Runde 12.
-- Arbeit pausiert auf Wunsch des Nutzers. Nächster Schritt laut Roadmap: **Phase 0, dann Phase 1 (Performance) – braucht Freigabe der Architektur-Entscheidung D-010.**
+- 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 erledigt.
+- (alt) Arbeit pausiert auf Wunsch des Nutzers. Nächster Schritt laut Roadmap: **Phase 0, dann Phase 1 (Performance) – braucht Freigabe der Architektur-Entscheidung D-010.**

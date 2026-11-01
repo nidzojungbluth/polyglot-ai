@@ -1,4 +1,6 @@
-# Polyglot AI – Roadmap
+# Polyglot AI – Chronik (bis 01.11.2026)
+
+> Ab 01.11.2026 ist `ROADMAP.md` (Projektwurzel) die verbindliche Planung. Diese Datei bleibt als Verlauf und Fehlerchronik erhalten.
 
 Zentrale Planung. Die Zahlen oben in PROJECT_PROGRESS.md werden automatisch mit `npm run report` erzeugt; dieser Teil (Roadmap) wird von Hand gepflegt.
 Diese Datei wird nach jedem Arbeitspaket aktualisiert.

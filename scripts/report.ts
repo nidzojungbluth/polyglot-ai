@@ -54,6 +54,6 @@ const md = [
   '- **Automatisch geprüft: alle Einträge** – keine Duplikate, jede Übersetzung vorhanden, Russisch mit Betonung, Serbisch ohne Schriftmischung, Beispielsätze korrekt zugeordnet (siehe `tests/content.test.ts`).',
   '',
 ].join('\n');
-const roadmap = existsSync('docs/ROADMAP.md') ? readFileSync('docs/ROADMAP.md', 'utf8') : '';
-writeFileSync('PROJECT_PROGRESS.md', md + '\n---\n\n' + roadmap);
+const note = '\n---\n\nPlanung: `ROADMAP.md` · Status: `PROJECT_STATUS.md` · Entscheidungen: `DECISIONS.md` · Verlauf: `docs/CHANGELOG.md`\n';
+writeFileSync('PROJECT_PROGRESS.md', md + note);
 console.log(md);

@@ -51,11 +51,11 @@ Format: `## topic=… level=… [part=N] title=…`, Wortzeile `t | de | pos | r
 3. Geparstes Ergebnis pro Sprache im Speicher halten (kein erneutes Parsen beim Ansichtswechsel).
 *Ziel/Abnahme:* erster Start nur Kern + eine Sprache (< 500 KB), Start < 1 s bei CPU ×4, offline weiterhin vollständig, alle Tests grün, Lernfortschritt unverändert (IDs gleich).
 *Verworfen:* Daten als JSON-Dateien zur Laufzeit per `fetch` (gleicher Effekt, aber zweites Datenformat); Daten in IndexedDB vorab speichern (komplex); nur Minifizieren (zu wenig Wirkung).
-*Status:* **wartet auf Freigabe** („Architektur ändern“ war für diese Sitzung ausgeschlossen).
+*Status:* **freigegeben am 01.11.2026** (Nutzer: „mach weiter … ohne erneute Erlaubnis“).
 
 **D-011 · Ein Dokumentationssystem – VORSCHLAG.**
 `ROADMAP.md` (Wurzel) wird die einzige Roadmap; `docs/ROADMAP.md` wird zur Fehler- und Änderungschronik umbenannt (`docs/CHANGELOG.md`), `scripts/report.ts` hängt künftig `PROJECT_STATUS.md`-Kennzahlen an statt die Roadmap zu kopieren.
-*Status:* kleine Werkzeug-Änderung, Teil von Phase 0; ohne Produktwirkung.
+*Status:* umgesetzt 01.11.2026.
 
 **D-012 · Fehler-melden-Funktion statt (unbezahlbarer) Muttersprachler-Prüfung – VORSCHLAG.**
 Knopf „Fehler melden“ an jedem Eintrag; Meldungen lokal gespeichert, als Text exportierbar (z. B. an Bekannte mit Muttersprache schicken); markierte Einträge werden in Übungen zurückgestellt.

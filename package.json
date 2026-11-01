@@ -1,13 +1,15 @@
 {
   "name": "polyglot-ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kostenlose Offline-Sprachlern-App (PWA) für Griechisch, Serbisch, Russisch",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "vitest run",
-    "report": "vite-node scripts/report.ts"
+    "report": "vite-node scripts/report.ts",
+    "missing": "vite-node scripts/missing.ts",
+    "e2e": "sh scripts/e2e.sh"
   },
   "keywords": [],
   "author": "",
