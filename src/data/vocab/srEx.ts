@@ -844,4 +844,67 @@ koza | Koza se popela na stenu. | Die Ziege ist auf den Felsen geklettert.
 leptir | Leptir je sleteo na cvet. | Ein Schmetterling ist auf der Blume gelandet.
 pčela | Pazi, pčela! | Pass auf, eine Biene!
 zmija | Videli smo zmiju na stazi. | Wir haben eine Schlange auf dem Pfad gesehen.
+drvo | Sedimo u hladu ispod drveta. | Wir sitzen im Schatten unter dem Baum.
+cvet | Kupio sam joj cvet. | Ich habe ihr eine Blume gekauft.
+šljiva | Od šljiva pravimo pekmez. | Aus Pflaumen machen wir Mus.
+planina | Vikendom idemo na planinu. | Am Wochenende fahren wir in die Berge.
+jezero | Šetali smo oko jezera. | Wir sind um den See spaziert.
+ostrvo | Ada Ciganlija je nekad bila ostrvo. | Ada Ciganlija war früher eine Insel.
+obala | Sedimo na obali Dunava. | Wir sitzen am Donauufer.
+pećina | Posetili smo Resavsku pećinu. | Wir haben die Resava-Höhle besucht.
+nebo | Nebo je danas vedro. | Der Himmel ist heute klar.
+zvezda | Na selu vidiš mnogo zvezda. | Auf dem Land siehst du viele Sterne.
+Fruška gora | Vikendom idemo na Frušku goru. | Am Wochenende fahren wir in die Fruška Gora.
+litar | Litar mleka, molim. | Einen Liter Milch, bitte.
+kilogram | Kilogram jabuka košta sto dinara. | Ein Kilogramm Äpfel kostet hundert Dinar.
+gram | Dvesta grama sira, molim. | Zweihundert Gramm Käse, bitte.
+metar | Soba ima četiri metra. | Das Zimmer ist vier Meter lang.
+centimetar | Kutija je duga pedeset centimetara. | Der Karton ist fünfzig Zentimeter lang.
+flaša | Uzmi flašu vode. | Nimm eine Flasche Wasser.
+konzerva | Otvori konzervu tunjevine. | Mach die Thunfischdose auf.
+tegla | Baka mi je dala teglu ajvara. | Oma hat mir ein Glas Ajvar gegeben.
+komad | Hoćeš komad pite? | Möchtest du ein Stück Pita?
+parče | Daj mi parče hleba. | Gib mir ein Stück Brot.
+polovina | Polovina grupe je već stigla. | Die Hälfte der Gruppe ist schon da.
+četvrtina | Ostala je četvrtina torte. | Ein Viertel der Torte ist übrig.
+tuce | Kupio sam tuce jaja. | Ich habe ein Dutzend Eier gekauft.
+još malo | Hoćeš još malo salate? | Möchtest du noch ein bisschen Salat?
+meriti | Prodavac meri jabuke. | Der Verkäufer wiegt die Äpfel.
+duplo | Kirija je duplo veća nego pre. | Die Miete ist doppelt so hoch wie früher.
+proleće | U proleće sve cveta. | Im Frühling blüht alles.
+jesen | U jesen opada lišće. | Im Herbst fällt das Laub.
+zima | Zima u Beogradu je hladna. | Der Winter in Belgrad ist kalt.
+kiša | Kiša pada ceo dan. | Es regnet den ganzen Tag.
+sneg | Na Kopaoniku već ima snega. | Auf dem Kopaonik liegt schon Schnee.
+magla | Jutros je bila gusta magla. | Heute Morgen war dichter Nebel.
+vrućina | Ne mogu da izdržim ovu vrućinu. | Ich halte diese Hitze nicht aus.
+hladnoća | Hladnoća je danas strašna. | Die Kälte ist heute furchtbar.
+oblačno | Danas je oblačno, ali toplo. | Heute ist es bewölkt, aber warm.
+sunčano | Sutra će biti sunčano. | Morgen wird es sonnig.
+vlaga | Vlaga u stanu pravi buđ. | Die Feuchtigkeit in der Wohnung macht Schimmel.
+munja | Munja je udarila u drvo. | Der Blitz hat in einen Baum eingeschlagen.
+grom | Dete se plaši groma. | Das Kind hat Angst vor dem Donner.
+pada grad | Pada grad, sklonite auto! | Es hagelt, stellt das Auto unter!
+sipi kiša | Sipi kiša, uzmi kišobran. | Es nieselt, nimm einen Schirm mit.
+pljušti | Napolju pljušti, ne izlazimo. | Draußen schüttet es, wir gehen nicht raus.
+blaga zima | Ove godine je bila blaga zima. | Dieses Jahr war ein milder Winter.
+kišobran | Zaboravio sam kišobran u autobusu. | Ich habe den Schirm im Bus vergessen.
+pluća | Pušenje šteti plućima. | Rauchen schadet der Lunge.
+želudac | Boli me želudac. | Mir tut der Magen weh.
+krv | Dajem krv dva puta godišnje. | Ich spende zweimal im Jahr Blut.
+kost | Pas glođe kost. | Der Hund nagt an einem Knochen.
+mišić | Bole me mišići posle teretane. | Nach dem Fitnessstudio tun mir die Muskeln weh.
+prst | Posekao sam se po prstu. | Ich habe mich in den Finger geschnitten.
+članak na nozi | Otekao mi je članak na nozi. | Mein Knöchel ist geschwollen.
+čelo | Ima temperaturu, čelo mu gori. | Er hat Fieber, seine Stirn glüht.
+obraz | Poljubila ga je u obraz. | Sie hat ihn auf die Wange geküsst.
+usna | Usne mi pucaju od hladnoće. | Meine Lippen springen von der Kälte auf.
+jezik | Opekao sam jezik kafom. | Ich habe mir die Zunge am Kaffee verbrannt.
+mozak | San je važan za mozak. | Schlaf ist wichtig für das Gehirn.
+zdravlje | Zdravlje je najvažnije. | Gesundheit ist das Wichtigste.
+razboleti se | Svake zime se razbolim. | Jeden Winter werde ich krank.
+oporaviti se | Polako se oporavlja posle operacije. | Er erholt sich langsam von der Operation.
+mast | Mažite mast dva puta dnevno. | Tragen Sie die Salbe zweimal täglich auf.
+kapi | Stavi tri kapi u svako oko. | Gib drei Tropfen in jedes Auge.
+udario sam se | Udario sam se o ivicu stola. | Ich habe mich an der Tischkante gestoßen.
 `;

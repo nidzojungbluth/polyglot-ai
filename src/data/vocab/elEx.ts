@@ -840,4 +840,64 @@ export default `
 η ζέστη | Δεν αντέχω αυτή τη ζέστη. | Ich halte diese Hitze nicht aus.
 το κρύο | Το κρύο είναι τσουχτερό σήμερα. | Die Kälte ist heute beißend.
 συννεφιασμένος | Ο ουρανός είναι συννεφιασμένος. | Der Himmel ist bewölkt.
+η ελιά | Στην αυλή έχουμε μια μεγάλη ελιά. | Im Hof haben wir einen großen Olivenbaum.
+ηλιόλουστος | Αύριο θα είναι μια ηλιόλουστη μέρα. | Morgen wird ein sonniger Tag.
+η αστραπή | Είδες την αστραπή; | Hast du den Blitz gesehen?
+η βροντή | Το παιδί φοβάται τη βροντή. | Das Kind hat Angst vor dem Donner.
+ο κεραυνός | Ο κεραυνός χτύπησε ένα δέντρο. | Der Blitz hat in einen Baum eingeschlagen.
+το χαλάζι | Το χαλάζι χάλασε τα αυτοκίνητα. | Der Hagel hat die Autos beschädigt.
+ψιχαλίζει | Ψιχαλίζει, πάρε ομπρέλα. | Es nieselt, nimm einen Schirm mit.
+βρέχει καρεκλοπόδαρα | Βρέχει καρεκλοπόδαρα, δεν βγαίνουμε. | Es gießt in Strömen, wir gehen nicht raus.
+μαλακός χειμώνας | Φέτος είχαμε μαλακό χειμώνα. | Dieses Jahr hatten wir einen milden Winter.
+ο πνεύμονας | Το κάπνισμα βλάπτει τους πνεύμονες. | Rauchen schadet der Lunge.
+το στομάχι | Με πονάει το στομάχι μου. | Mir tut der Magen weh.
+το αίμα | Δίνω αίμα δύο φορές τον χρόνο. | Ich spende zweimal im Jahr Blut.
+το δέρμα | Βάλε αντηλιακό, το δέρμα σου είναι λευκό. | Trag Sonnencreme auf, deine Haut ist hell.
+το κόκαλο | Ο σκύλος τρώει ένα κόκαλο. | Der Hund frisst einen Knochen.
+ο μυς | Με πονάνε οι μύες μετά το γυμναστήριο. | Nach dem Fitnessstudio tun mir die Muskeln weh.
+το δάχτυλο | Κόπηκα στο δάχτυλο. | Ich habe mich in den Finger geschnitten.
+το μέτωπο | Έχει πυρετό, το μέτωπό του καίει. | Er hat Fieber, seine Stirn glüht.
+το μάγουλο | Του έδωσε ένα φιλί στο μάγουλο. | Sie gab ihm einen Kuss auf die Wange.
+το χείλι | Τα χείλια μου σκάνε από το κρύο. | Meine Lippen springen von der Kälte auf.
+η γλώσσα | Έκαψα τη γλώσσα μου με τον καφέ. | Ich habe mir die Zunge am Kaffee verbrannt.
+ο εγκέφαλος | Ο ύπνος είναι σημαντικός για τον εγκέφαλο. | Schlaf ist wichtig für das Gehirn.
+η υγεία | Η υγεία είναι το πιο σημαντικό. | Gesundheit ist das Wichtigste.
+αρρωσταίνω | Κάθε χειμώνα αρρωσταίνω. | Jeden Winter werde ich krank.
+αναρρώνω | Αναρρώνει σιγά σιγά μετά την εγχείρηση. | Er erholt sich langsam von der Operation.
+ο λευκοπλάστης | Βάλε λευκοπλάστη στην πληγή. | Klebe ein Pflaster auf die Wunde.
+η αλοιφή | Βάλε αλοιφή δύο φορές τη μέρα. | Trag zweimal täglich die Salbe auf.
+οι σταγόνες | Βάλε τρεις σταγόνες σε κάθε μάτι. | Gib drei Tropfen in jedes Auge.
+καληνύχτα | Καληνύχτα, τα λέμε αύριο. | Gute Nacht, bis morgen.
+πώς σας λένε; | Καλησπέρα, πώς σας λένε; | Guten Abend, wie heißen Sie?
+μιλάω λίγα ελληνικά | Συγγνώμη, μιλάω λίγα ελληνικά. | Entschuldigung, ich spreche nur ein bisschen Griechisch.
+μπορείς να το πεις πιο αργά; | Δεν κατάλαβα. Μπορείς να το πεις πιο αργά; | Ich habe es nicht verstanden. Kannst du das langsamer sagen?
+τι σημαίνει …; | Τι σημαίνει «μεράκι»; | Was bedeutet „meraki“?
+σήμερα | Σήμερα δουλεύω μέχρι τις έξι. | Heute arbeite ich bis sechs.
+χθες | Χθες πήγαμε σινεμά. | Gestern waren wir im Kino.
+τώρα | Τώρα δεν μπορώ, σε παίρνω μετά. | Jetzt kann ich nicht, ich rufe dich später an.
+μετά | Πρώτα τρώμε και μετά βγαίνουμε. | Zuerst essen wir und danach gehen wir aus.
+η Δευτέρα | Τη Δευτέρα αρχίζω καινούργια δουλειά. | Am Montag fange ich eine neue Arbeit an.
+το Σάββατο | Το Σάββατο πάμε για ψώνια. | Am Samstag gehen wir einkaufen.
+η Κυριακή | Την Κυριακή τρώμε με τους γονείς μου. | Am Sonntag essen wir mit meinen Eltern.
+βρέχει | Βρέχει από το πρωί. | Es regnet seit dem Morgen.
+καλή όρεξη | Το φαγητό είναι έτοιμο, καλή όρεξη! | Das Essen ist fertig, guten Appetit!
+είμαι χορτοφάγος | Όχι κρέας, ευχαριστώ, είμαι χορτοφάγος. | Kein Fleisch, danke, ich bin Vegetarier.
+έχετε …; | Έχετε αυτό σε μεγαλύτερο νούμερο; | Haben Sie das in einer größeren Größe?
+απλώς κοιτάζω | Ευχαριστώ, απλώς κοιτάζω. | Danke, ich schaue nur.
+πόση ώρα κάνει; | Πόση ώρα κάνει το πλοίο για τη Νάξο; | Wie lange braucht die Fähre nach Naxos?
+έχεις αδέρφια; | Έχεις αδέρφια ή είσαι μοναχοπαίδι; | Hast du Geschwister oder bist du Einzelkind?
+μένω με τους γονείς μου | Ακόμα μένω με τους γονείς μου. | Ich wohne noch bei meinen Eltern.
+δε μου αρέσει | Δε μου αρέσει το κρύο. | Die Kälte gefällt mir nicht.
+στείλε μου μήνυμα | Όταν φτάσεις, στείλε μου μήνυμα. | Wenn du ankommst, schick mir eine Nachricht.
+ποιος είναι; | Χτυπάει το κουδούνι. Ποιος είναι; | Es klingelt. Wer ist da?
+δεν σε ακούω καλά | Δεν σε ακούω καλά, έχει πολύ θόρυβο. | Ich höre dich schlecht, es ist sehr laut.
+θα σου στείλω την τοποθεσία | Θα σου στείλω την τοποθεσία στο κινητό. | Ich schicke dir den Standort aufs Handy.
+είμαι άνεργος | Αυτή τη στιγμή είμαι άνεργος και ψάχνω δουλειά. | Im Moment bin ich arbeitslos und suche Arbeit.
+φτάνει! | Φτάνει! Δεν θέλω να ακούσω άλλο. | Es reicht! Ich will nichts mehr hören.
+σταμάτα! | Σταμάτα να φωνάζεις! | Hör auf zu schreien!
+δεν συμφωνώ | Δεν συμφωνώ μαζί σου. | Ich bin nicht deiner Meinung.
+κάνεις λάθος | Κάνεις λάθος, το μαγαζί είναι ανοιχτό. | Du irrst dich, der Laden ist offen.
+άσε με ήσυχο | Άσε με ήσυχο, είμαι κουρασμένος. | Lass mich in Ruhe, ich bin müde.
+με συγχωρείς | Με συγχωρείς, δεν σε είδα. | Entschuldige, ich habe dich nicht gesehen.
+όχι τώρα | Όχι τώρα, είμαι στη δουλειά. | Nicht jetzt, ich bin auf der Arbeit.
 `;

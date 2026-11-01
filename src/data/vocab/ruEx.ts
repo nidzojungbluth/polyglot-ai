@@ -862,4 +862,65 @@ export default `
 ба́бочка | Ба́бочка се́ла на цвето́к. | Ein Schmetterling hat sich auf die Blume gesetzt.
 пчела́ | Осторо́жно, пчела́! | Vorsicht, eine Biene!
 змея́ | Мы ви́дели змею́ на тропи́нке. | Wir haben eine Schlange auf dem Pfad gesehen.
+де́рево | Мы сиди́м в тени́ под де́ревом. | Wir sitzen im Schatten unter dem Baum.
+цвето́к | Он подари́л ей цвето́к. | Er hat ihr eine Blume geschenkt.
+берёза | Во дворе́ растёт ста́рая берёза. | Im Hof wächst eine alte Birke.
+гора́ | Мы подняли́сь на го́ру. | Wir sind auf den Berg gestiegen.
+о́зеро | Ле́том мы купа́емся в о́зере. | Im Sommer baden wir im See.
+о́стров | Мы плы́ли на о́стров на ло́дке. | Wir sind mit dem Boot zur Insel gefahren.
+бе́рег | Мы сиди́м на берегу́ реки́. | Wir sitzen am Flussufer.
+пеще́ра | В пеще́ре бы́ло хо́лодно и темно́. | In der Höhle war es kalt und dunkel.
+звезда́ | На да́че ви́дно мно́го звёзд. | Auf der Datscha sieht man viele Sterne.
+луна́ | Сего́дня по́лная луна́. | Heute ist Vollmond.
+литр | Литр молока́, пожа́луйста. | Einen Liter Milch, bitte.
+грамм | Две́сти грамм сы́ра, пожа́луйста. | Zweihundert Gramm Käse, bitte.
+метр | Ко́мната четы́ре ме́тра в длину́. | Das Zimmer ist vier Meter lang.
+сантиме́тр | Коро́бка длино́й пятьдеся́т сантиме́тров. | Der Karton ist fünfzig Zentimeter lang.
+буты́лка | Возьми́ буты́лку воды́. | Nimm eine Flasche Wasser.
+ба́нка | Ба́бушка дала́ мне ба́нку варе́нья. | Oma hat mir ein Glas Marmelade gegeben.
+па́чка | Купи́ па́чку ча́я. | Kauf eine Packung Tee.
+кусо́к | Хо́чешь кусо́к пирога́? | Möchtest du ein Stück Kuchen?
+полови́на | Полови́на гру́ппы уже́ пришла́. | Die Hälfte der Gruppe ist schon da.
+че́тверть | Оста́лась че́тверть то́рта. | Ein Viertel der Torte ist übrig.
+дю́жина | Я купи́л дю́жину яи́ц. | Ich habe ein Dutzend Eier gekauft.
+ещё немно́го | Хо́чешь ещё немно́го сала́та? | Möchtest du noch ein bisschen Salat?
+взве́шивать | Продаве́ц взве́шивает я́блоки. | Der Verkäufer wiegt die Äpfel.
+вдво́е бо́льше | Сейча́с я плачу́ вдво́е бо́льше за аре́нду. | Jetzt zahle ich doppelt so viel Miete.
+па́чка ма́сла | Для пирога́ нужна́ па́чка ма́сла. | Für den Kuchen braucht man ein Päckchen Butter.
+весна́ | Весно́й всё цветёт. | Im Frühling blüht alles.
+о́сень | О́сенью ча́сто идёт дождь. | Im Herbst regnet es oft.
+зима́ | Зима́ в Москве́ холо́дная. | Der Winter in Moskau ist kalt.
+дождь | Дождь идёт весь день. | Es regnet den ganzen Tag.
+снег | Вчера́ вы́пал пе́рвый снег. | Gestern ist der erste Schnee gefallen.
+тума́н | У́тром был густо́й тума́н. | Am Morgen war dichter Nebel.
+хо́лод | Я не люблю́ хо́лод. | Ich mag die Kälte nicht.
+о́блачно | Сего́дня о́блачно, но тепло́. | Heute ist es bewölkt, aber warm.
+со́лнечно | За́втра бу́дет со́лнечно. | Morgen wird es sonnig.
+вла́жность | Из-за вла́жности в кварти́ре пле́сень. | Wegen der Feuchtigkeit ist Schimmel in der Wohnung.
+мо́лния | Мо́лния уда́рила в де́рево. | Der Blitz hat in einen Baum eingeschlagen.
+гром | Ребёнок бои́тся гро́ма. | Das Kind hat Angst vor dem Donner.
+град | Град повреди́л маши́ны. | Der Hagel hat die Autos beschädigt.
+мороси́т | Мороси́т, возьми́ зо́нтик. | Es nieselt, nimm einen Schirm mit.
+льёт как из ведра́ | На у́лице льёт как из ведра́. | Draußen gießt es in Strömen.
+мя́гкая зима́ | В э́том году́ была́ мя́гкая зима́. | Dieses Jahr war ein milder Winter.
+зо́нтик | Я забы́л зо́нтик в авто́бусе. | Ich habe den Schirm im Bus vergessen.
+лёгкие | Куре́ние вреди́т лёгким. | Rauchen schadet der Lunge.
+желу́док | У меня́ боли́т желу́док. | Mir tut der Magen weh.
+кровь | Я сдаю́ кровь два ра́за в год. | Ich spende zweimal im Jahr Blut.
+ко́жа | У тебя́ све́тлая ко́жа, нама́жься кре́мом. | Du hast helle Haut, creme dich ein.
+кость | Соба́ка грызёт кость. | Der Hund nagt an einem Knochen.
+мы́шца | По́сле трениро́вки боля́т мы́шцы. | Nach dem Training tun die Muskeln weh.
+па́лец | Я поре́зал па́лец. | Ich habe mir in den Finger geschnitten.
+лоб | У него́ температу́ра, лоб горя́чий. | Er hat Fieber, die Stirn ist heiß.
+щека́ | Она́ поцелова́ла его́ в щёку. | Sie hat ihn auf die Wange geküsst.
+губа́ | У меня́ тре́скаются гу́бы от хо́лода. | Meine Lippen springen von der Kälte auf.
+язы́к | Я обжёг язы́к ко́фе. | Ich habe mir die Zunge am Kaffee verbrannt.
+мозг | Сон ва́жен для мо́зга. | Schlaf ist wichtig für das Gehirn.
+здоро́вье | Здоро́вье – са́мое гла́вное. | Gesundheit ist das Wichtigste.
+заболе́ть | Я заболе́л и не пойду́ на рабо́ту. | Ich bin krank geworden und gehe nicht zur Arbeit.
+поправля́ться | Он ме́дленно поправля́ется по́сле опера́ции. | Er erholt sich langsam von der Operation.
+повя́зка | Медсестра́ смени́ла повя́зку. | Die Krankenschwester hat den Verband gewechselt.
+мазь | Нама́зывайте мазь два ра́за в день. | Tragen Sie die Salbe zweimal täglich auf.
+ка́пли | Капа́йте по три ка́пли в ка́ждый глаз. | Tropfen Sie drei Tropfen in jedes Auge.
+я уда́рился | Я уда́рился о край стола́. | Ich habe mich an der Tischkante gestoßen.
 `;
