@@ -1479,4 +1479,44 @@ export default `
 η γαλήνη | Στο νησί βρήκα γαλήνη. | Auf der Insel habe ich innere Ruhe gefunden.
 η πίκρα | Μιλάει με πίκρα για το παρελθόν. | Er spricht mit Bitterkeit über die Vergangenheit.
 η συγκίνηση | Η μητέρα έκλαιγε από συγκίνηση. | Die Mutter weinte vor Rührung.
+ο καημός | Ο καημός της ξενιτιάς ακούγεται στα τραγούδια. | Der Schmerz der Fremde klingt in den Liedern an.
+η αμηχανία | Υπήρξε μια στιγμή αμηχανίας. | Es gab einen Moment der Verlegenheit.
+η ζήλια | Η ζήλια χαλάει τις σχέσεις. | Eifersucht zerstört Beziehungen.
+δεν θα ήθελα να φανώ αγενής, αλλά … | Δεν θα ήθελα να φανώ αγενής, αλλά πρέπει να φύγω. | Ich möchte nicht unhöflich wirken, aber ich muss gehen.
+αν μου επιτρέπετε | Αν μου επιτρέπετε, θα ήθελα να προσθέσω κάτι. | Wenn Sie gestatten, möchte ich etwas hinzufügen.
+όπως και να το κάνεις | Όπως και να το κάνεις, είναι ακριβό. | Wie man's auch dreht, es ist teuer.
+δεν το λέω για κακό | Δεν το λέω για κακό, αλλά άργησες πάλι. | Ich mein's nicht böse, aber du bist schon wieder zu spät.
+ο νοών νοείτω | Δεν λέω ονόματα· ο νοών νοείτω. | Ich nenne keine Namen; wer's versteht, versteht's.
+κατά τα φαινόμενα | Κατά τα φαινόμενα, θα βρέξει. | Allem Anschein nach wird es regnen.
+για να μην πω | Ήταν κουραστικό, για να μην πω βαρετό. | Es war anstrengend, um nicht zu sagen langweilig.
+χωρίς παρεξήγηση | Χωρίς παρεξήγηση, αλλά δεν συμφωνώ. | Nichts für ungut, aber ich bin nicht einverstanden.
+εδώ που τα λέμε | Εδώ που τα λέμε, ο μισθός είναι χαμηλός. | Unter uns gesagt, das Gehalt ist niedrig.
+ο αντισυμβαλλόμενος | Ο αντισυμβαλλόμενος πρέπει να ειδοποιηθεί γραπτώς. | Die Vertragspartei muss schriftlich benachrichtigt werden.
+η ρήτρα | Η ρήτρα εχεμύθειας ισχύει δύο χρόνια. | Die Verschwiegenheitsklausel gilt zwei Jahre.
+η παράβαση | Η παράβαση του συμβολαίου έχει κυρώσεις. | Ein Verstoß gegen den Vertrag hat Sanktionen zur Folge.
+η ευθύνη | Η εταιρεία φέρει την ευθύνη για τη ζημιά. | Die Firma haftet für den Schaden.
+η λύση της σύμβασης | Η λύση της σύμβασης γίνεται με προειδοποίηση. | Die Auflösung des Vertrags erfolgt mit Kündigungsfrist.
+εφεξής | Εφεξής οι πληρωμές θα γίνονται ηλεκτρονικά. | Fortan erfolgen die Zahlungen elektronisch.
+η εμπιστευτικότητα | Η εμπιστευτικότητα των δεδομένων είναι εγγυημένη. | Die Vertraulichkeit der Daten ist garantiert.
+η τροποποίηση | Κάθε τροποποίηση γίνεται γραπτώς. | Jede Änderung erfolgt schriftlich.
+ο υπογράφων | Ο υπογράφων δηλώνει ότι τα στοιχεία είναι αληθή. | Der Unterzeichnende erklärt, dass die Angaben wahr sind.
+η διαιτησία | Η διαφορά θα λυθεί με διαιτησία. | Der Streit wird durch ein Schiedsverfahren beigelegt.
+το έγγραφο | Παρακαλώ προσκομίστε το έγγραφο ταυτότητας. | Bitte legen Sie das Ausweisdokument vor.
+η κοινοποίηση | Η κοινοποίηση της απόφασης έγινε με δικαστικό επιμελητή. | Die Zustellung des Bescheids erfolgte durch einen Gerichtsvollzieher.
+κατόπιν αιτήσεως | Το πιστοποιητικό εκδίδεται κατόπιν αιτήσεως. | Die Bescheinigung wird auf Antrag ausgestellt.
+εμπρόθεσμα | Η δήλωση υποβλήθηκε εμπρόθεσμα. | Die Erklärung wurde fristgerecht eingereicht.
+ο αρμόδιος υπάλληλος | Ο αρμόδιος υπάλληλος λείπει σήμερα. | Der zuständige Beamte ist heute nicht da.
+το παράβολο | Πλήρωσε πρώτα το παράβολο. | Zahl zuerst die Behördengebühr.
+επικυρωμένο αντίγραφο | Χρειάζομαι επικυρωμένο αντίγραφο του πτυχίου. | Ich brauche eine beglaubigte Kopie des Diploms.
+προσκομίζω | Προσκομίζω όλα τα δικαιολογητικά. | Ich lege alle Unterlagen vor.
+δια ζώσης | Η συνέντευξη θα γίνει δια ζώσης. | Das Gespräch findet persönlich statt.
+Αγαπητέ συνάδελφε | Αγαπητέ συνάδελφε, σας στέλνω το αρχείο. | Lieber Kollege, ich sende Ihnen die Datei.
+Παρακαλώ δεχθείτε τις ευχαριστίες μου | Παρακαλώ δεχθείτε τις ευχαριστίες μου για τη βοήθεια. | Bitte nehmen Sie meinen Dank für die Hilfe entgegen.
+Αξιότιμε κύριε | Αξιότιμε κύριε Παπαδόπουλε, σας γράφω σχετικά με την αίτηση. | Sehr geehrter Herr Papadopoulos, ich schreibe Ihnen bezüglich des Antrags.
+Αξιότιμη κυρία | Αξιότιμη κυρία Νικολάου, ευχαριστώ για την απάντηση. | Sehr geehrte Frau Nikolaou, danke für die Antwort.
+Με φιλικούς χαιρετισμούς | Με φιλικούς χαιρετισμούς, Νίκος. | Mit freundlichen Grüßen, Nikos.
+Με τιμή | Με τιμή, ο διευθυντής. | Hochachtungsvoll, der Direktor.
+Εξοχότατε | Εξοχότατε, σας ευχαριστούμε για την παρουσία σας. | Exzellenz, wir danken Ihnen für Ihre Anwesenheit.
+Σεβασμιότατε | Σεβασμιότατε, η κοινότητα σας καλωσορίζει. | Eure Eminenz, die Gemeinde heißt Sie willkommen.
+ο φάκελος | Ο φάκελός σας βρίσκεται στο αρχείο. | Ihre Akte befindet sich im Archiv.
 `;

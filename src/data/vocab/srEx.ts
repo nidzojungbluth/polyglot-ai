@@ -1490,4 +1490,44 @@ BDP | BDP je porastao prošle godine. | Das BIP ist letztes Jahr gestiegen.
 kupovna moć | Kupovna moć je opala. | Die Kaufkraft ist gesunken.
 spomenik | Spomenik je na glavnom trgu. | Das Denkmal steht auf dem Hauptplatz.
 soliter | Živimo u soliteru na petnaestom spratu. | Wir wohnen in einem Hochhaus im fünfzehnten Stock.
+argument | Tvoj argument me ne ubeđuje. | Dein Argument überzeugt mich nicht.
+retorika | Njegova retorika je upečatljiva, ali prazna. | Seine Rhetorik ist eindrucksvoll, aber leer.
+populizam | Populizam obećava laka rešenja. | Der Populismus verspricht einfache Lösungen.
+propaganda | Propaganda je svuda na društvenim mrežama. | Propaganda ist in den sozialen Netzwerken überall.
+kao što je opšte poznato | Kao što je opšte poznato, Tesla je rođen u Smiljanu. | Wie allgemein bekannt, wurde Tesla in Smiljan geboren.
+naknadno | Naknadno se ispostavilo da je bio u pravu. | Im Nachhinein stellte sich heraus, dass er recht hatte.
+u osnovi | U osnovi se slažemo. | Im Wesentlichen sind wir uns einig.
+licemerje | Ne podnosim njegovo licemerje. | Ich ertrage seine Heuchelei nicht.
+dezinformacija | Dezinformacija se brzo širi. | Desinformation verbreitet sich schnell.
+argumentacija | Njena argumentacija je bila odlična. | Ihre Argumentation war hervorragend.
+pristrasnost | Sudija je optužen za pristrasnost. | Dem Schiedsrichter wurde Voreingenommenheit vorgeworfen.
+dođoh, videh, pobedih | Završio je ispit za deset minuta – dođoh, videh, pobedih. | Er hat die Prüfung in zehn Minuten geschafft – ich kam, sah und siegte.
+beše jednom | Beše jednom jedan car koji je imao kozje uši. | Es war einmal ein Kaiser, der Ziegenohren hatte.
+utoliko pre | Pomozi mu, utoliko pre što je nov. | Hilf ihm, umso mehr, als er neu ist.
+nipošto | Nipošto ne dodiruj tu žicu! | Berühr diesen Draht keinesfalls!
+doduše | Stan je mali, doduše, ali je jeftin. | Die Wohnung ist zwar klein, aber günstig.
+književnost | Srpska književnost ima bogatu tradiciju. | Die serbische Literatur hat eine reiche Tradition.
+roman | Čitam roman o Beogradu. | Ich lese einen Roman über Belgrad.
+poezija | Poezija Desanke Maksimović se uči u školi. | Die Gedichte von Desanka Maksimović lernt man in der Schule.
+Ivo Andrić | Ivo Andrić je napisao „Na Drini ćuprija“. | Ivo Andrić hat „Die Brücke über die Drina“ geschrieben.
+Branislav Nušić | Komedije Branislava Nušića se i danas igraju. | Die Komödien von Branislav Nušić werden heute noch gespielt.
+Danilo Kiš | Danilo Kiš je napisao „Grobnicu za Borisa Davidoviča“. | Danilo Kiš hat „Ein Grabmal für Boris Dawidowitsch“ geschrieben.
+metafora | Reka u pesmi je metafora za život. | Der Fluss im Gedicht ist eine Metapher für das Leben.
+junak | Junak romana je jedan ribar. | Die Hauptfigur des Romans ist ein Fischer.
+tragedija | Gledali smo antičku tragediju. | Wir haben eine antike Tragödie gesehen.
+izložba | Izložba fotografija se zatvara u nedelju. | Die Fotoausstellung schließt am Sonntag.
+BITEF | Na BITEF-u gostuju pozorišta iz celog sveta. | Beim BITEF gastieren Theater aus aller Welt.
+starogradska muzika | U kafani svira starogradska muzika. | In der Kafana spielt traditionelle Stadtmusik.
+dokolica | U dokolici čita poeziju. | In der Muße liest er Gedichte.
+ogorčenje | Ogorčenje građana je bilo veliko. | Die Empörung der Bürger war groß.
+očaj | U trenutku očaja je zatražio pomoć. | In einem Moment der Verzweiflung bat er um Hilfe.
+spokoj | Na planini sam našao spokoj. | In den Bergen habe ich innere Ruhe gefunden.
+gorčina | Govori sa gorčinom o prošlosti. | Er spricht mit Bitterkeit über die Vergangenheit.
+jad | Peva o jadu i ljubavi. | Er singt von Kummer und Liebe.
+ganutost | Majka je plakala od ganutosti. | Die Mutter weinte vor Rührung.
+nelagodnost | Osetio sam nelagodnost u tišini. | In der Stille fühlte ich Unbehagen.
+zavist | Zavist mu ne da mira. | Der Neid lässt ihm keine Ruhe.
+ne bih želeo da ispadnem neljubazan, ali … | Ne bih želeo da ispadnem neljubazan, ali moram da idem. | Ich möchte nicht unhöflich wirken, aber ich muss gehen.
+ako dozvolite | Ako dozvolite, dodao bih nešto. | Wenn Sie gestatten, würde ich etwas hinzufügen.
+po svemu sudeći | Po svemu sudeći, padaće kiša. | Allem Anschein nach wird es regnen.
 `;

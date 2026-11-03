@@ -1478,4 +1478,44 @@ export default `
 помо́лвка | Помо́лвка была́ на Па́сху. | Die Verlobung war zu Ostern.
 виноде́л | Виноде́л провёл нас по по́гребу. | Der Winzer hat uns durch den Keller geführt.
 сухо́е вино́ | Я предпочита́ю сухо́е вино́. | Ich bevorzuge trockenen Wein.
+Вели́кая Оте́чественная война́ | Де́душка расска́зывал о Вели́кой Оте́чественной войне́. | Der Großvater erzählte vom Großen Vaterländischen Krieg.
+ца́рствие ему́ небе́сное | Твой оте́ц, ца́рствие ему́ небе́сное, был хоро́шим челове́ком. | Dein Vater, Gott hab ihn selig, war ein guter Mensch.
+полусла́дкое | Мне полусла́дкое кра́сное, пожа́луйста. | Für mich einen halbsüßen Roten, bitte.
+арома́т | У вина́ фрукто́вый арома́т. | Der Wein hat ein fruchtiges Aroma.
+по́греб | Дя́дя храни́т вино́ в по́гребе. | Der Onkel lagert den Wein im Keller.
+гастроно́мия | Грузи́нская гастроно́мия о́чень бога́тая. | Die georgische Küche ist sehr reichhaltig.
+ба́бушкин реце́пт | Борщ я ва́рю по ба́бушкиному реце́пту. | Borschtsch koche ich nach Omas Rezept.
+по́вар | По́вар пригото́вил бара́нину. | Der Koch hat Lamm zubereitet.
+та́ет во рту | Мя́со та́ет во рту. | Das Fleisch zergeht im Mund.
+насто́йка | Дед угости́л нас ви́шнёвой насто́йкой. | Der Opa hat uns Kirschlikör angeboten.
+спрос и предложе́ние | Цена́ зави́сит от спро́са и предложе́ния. | Der Preis hängt von Angebot und Nachfrage ab.
+предприя́тие | На предприя́тии рабо́тают пятьсо́т челове́к. | Im Unternehmen arbeiten fünfhundert Menschen.
+при́быль | При́быль в э́том году́ ни́зкая. | Der Gewinn ist dieses Jahr niedrig.
+убы́ток | Фи́рма понесла́ убы́ток. | Die Firma hat Verlust gemacht.
+инвести́ции | Инвести́ции в стро́йку оку́пятся. | Die Investitionen in den Bau werden sich lohnen.
+а́кция | Он купи́л а́кции э́той компа́нии. | Er hat Aktien dieser Firma gekauft.
+экспо́рт | Экспо́рт зерна́ вы́рос. | Der Getreideexport ist gestiegen.
+конкуре́нция | Конкуре́нция снижа́ет це́ны. | Der Wettbewerb senkt die Preise.
+рост | Рост эконо́мики соста́вил два проце́нта. | Das Wirtschaftswachstum betrug zwei Prozent.
+реце́ссия | Реце́ссия продолжа́лась два го́да. | Die Rezession dauerte zwei Jahre.
+ВВП | ВВП вы́рос в про́шлом году́. | Das BIP ist letztes Jahr gestiegen.
+покупа́тельная спосо́бность | Покупа́тельная спосо́бность упа́ла. | Die Kaufkraft ist gesunken.
+па́мятник | Па́мятник стои́т на гла́вной пло́щади. | Das Denkmal steht auf dem Hauptplatz.
+истори́ческий центр | Истори́ческий центр закры́т для маши́н. | Das historische Zentrum ist für Autos gesperrt.
+ста́линская высо́тка | Мы живём ря́дом со ста́линской высо́ткой. | Wir wohnen neben einem Stalinhochhaus.
+реставра́ция | Реставра́ция собо́ра дли́лась пять лет. | Die Restaurierung der Kathedrale dauerte fünf Jahre.
+рено́вация | Наш дом попа́л под рено́вацию. | Unser Haus fällt unter das Neubauprogramm.
+архитекту́ра | Архитекту́ра Петербу́рга поража́ет. | Die Architektur von Petersburg beeindruckt.
+градострои́тельство | Он у́чится на факульте́те градострои́тельства. | Er studiert Stadtplanung.
+фаса́д | Фаса́д до́ма покра́сили. | Die Fassade des Hauses wurde gestrichen.
+благоустро́йство | Благоустро́йство па́рка зако́нчили к ле́ту. | Die Neugestaltung des Parks wurde bis zum Sommer abgeschlossen.
+диа́гноз | Врач поста́вил диа́гноз. | Der Arzt hat eine Diagnose gestellt.
+ана́лиз кро́ви | Ана́лиз кро́ви сдаю́т натоща́к. | Eine Blutuntersuchung macht man nüchtern.
+опера́ция | Опера́ция прошла́ успе́шно. | Die Operation ist gut verlaufen.
+побо́чные эффе́кты | У лека́рства ма́ло побо́чных эффе́ктов. | Das Medikament hat wenige Nebenwirkungen.
+приви́вка | Приви́вку от гри́ппа де́лают о́сенью. | Die Grippeimpfung macht man im Herbst.
+аллерги́я | У меня́ аллерги́я на пыльцу́. | Ich habe eine Pollenallergie.
+рентге́н | Рентге́н показа́л перело́м. | Das Röntgenbild zeigte einen Bruch.
+направле́ние | Терапе́вт дал мне направле́ние к хиру́ргу. | Der Hausarzt hat mir eine Überweisung zum Chirurgen gegeben.
+выздоровле́ние | Жела́ю ско́рого выздоровле́ния! | Ich wünsche gute Besserung!
 `;
