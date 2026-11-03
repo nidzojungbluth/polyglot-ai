@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-03 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 3870 | 77 % | 3725 | 2994 | 291 | 998 |
-| 🇷🇸 Serbisch | 3910 | 78 % | 3726 | 2275 | 291 | 999 |
-| 🇷🇺 Russisch | 3938 | 79 % | 3726 | 2374 | 291 | 1001 |
+| 🇬🇷 Griechisch | 3870 | 77 % | 3765 | 3020 | 291 | 998 |
+| 🇷🇸 Serbisch | 3910 | 78 % | 3766 | 2304 | 291 | 999 |
+| 🇷🇺 Russisch | 3938 | 79 % | 3766 | 2404 | 291 | 1001 |
 
 ## Einträge pro Niveau
 
@@ -28,13 +28,13 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 3612 / 3757 (96 %) | 95 % | 99 % | 100 % | 100 % | 98 % | 61 % |
-| Serbisch | 3610 / 3794 (95 %) | 96 % | 100 % | 100 % | 100 % | 96 % | 43 % |
-| Russisch | 3606 / 3818 (94 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 24 % |
+| Griechisch | 3652 / 3757 (97 %) | 95 % | 99 % | 100 % | 100 % | 98 % | 80 % |
+| Serbisch | 3650 / 3794 (96 %) | 96 % | 100 % | 100 % | 100 % | 96 % | 62 % |
+| Russisch | 3646 / 3818 (95 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 42 % |
 
 ## Ladezeit
 
-App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 767 KB, sr 536 KB, ru 737 KB (jede Sprache wird erst bei Bedarf geladen).
+App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 772 KB, sr 540 KB, ru 743 KB (jede Sprache wird erst bei Bedarf geladen).
 
 ## Prüfstatus
 

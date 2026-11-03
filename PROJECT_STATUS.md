@@ -38,14 +38,14 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - **Sprachausgabe** über Gerätestimmen (`lib/platform.ts`), Serbisch über kroatische/serbische Stimme in Latein.
 - **Barrierefreiheit:** Tippflächen ≥ 44 pt, sichtbarer Fokus, „Bewegung reduzieren“ beachtet, Dark Mode.
 
-## 4. Inhaltsstand (04.11.2026, nach Etappe 43)
+## 4. Inhaltsstand (04.11.2026, nach Beispielsatz-Runde 22)
 
 | | Griechisch | Serbisch | Russisch |
 |---|---|---|---|
 | Einträge (Wörter + Slang) | 3.870 | 3.910 | 3.938 |
 | Ziel 5.000 erreicht | 77 % | 78 % | 79 % |
-| Wörter mit Beispielsatz | 96 % | 95 % | 94 % |
-| davon A1 / A2 / B1 / B2 / C1 / C2 | 95 / 99 / 100 / 100 / 98 / 61 % | 96 / 100 / 100 / 100 / 96 / 43 % | 96 / 100 / 100 / 100 / 100 / 24 % |
+| Wörter mit Beispielsatz | 97 % | 96 % | 95 % |
+| davon A1 / A2 / B1 / B2 / C1 / C2 | 95 / 99 / 100 / 100 / 98 / 80 % | 96 / 100 / 100 / 100 / 96 / 62 % | 96 / 100 / 100 / 100 / 100 / 42 % |
 | Module / Lektionen | 291 / 998 | 291 / 999 | 291 / 1.001 |
 
 - Wortlisten: `src/data/vocab/{el,sr,ru}{,2..31}.ts` (96 Dateien, ~1,6 MB Text) + Nachtragslisten `{el,sr,ru}Ex.ts` (Beispielsätze).
@@ -87,6 +87,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 01.11.2026: Etappen 24–33 (je ~70–90 neue Einträge pro Sprache, alle mit Beispielsatz), Beispielsatz-Runden 3–12 (B1 und A2 vollständig, B2 auf ~80 %), 3.000-Marke überschritten, Messung Ladezeit; danach **Planungsauftrag**: diese drei Steuerdateien angelegt. Keine Code-Änderungen in dieser Sitzung nach Runde 12.
 - 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 und Phase 1 erledigt (Start 1,5 s → 0,47 s). Weiter mit Phase 2 (Inhalte).
 - 03.11.2026: Etappe 34 (Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik) – ~95 neue Einträge je Sprache (beste Quote bisher, spezifische Themen wirken).
+- 04.11.2026: Beispielsatz-Runde 22 – C2 auf 42–80 % (Argumentieren, Literatur, Gefühle, Amts- und Briefsprache, Verbraucher).
 - 04.11.2026: Etappe 43 – je +99 Einträge (Chemie im Werk, Kunststoff & Spritzguss, Lebensmittelproduktion, Callcenter, Hotel-Rezeption & Housekeeping).
 - 03.11.2026: Beispielsatz-Runde 21 – Russisch C1 komplett; C2 Griechisch 61 %, Serbisch 43 %.
 - 03.11.2026: Etappe 42 – +99/+103/+98 Einträge (Pflege & Altenheim, Metallbau & Schweißen, Kantine & Großküche, Paketzustellung, Sicherheitsdienst).

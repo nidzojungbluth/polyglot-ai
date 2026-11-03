@@ -1519,4 +1519,44 @@ export default `
 Εξοχότατε | Εξοχότατε, σας ευχαριστούμε για την παρουσία σας. | Exzellenz, wir danken Ihnen für Ihre Anwesenheit.
 Σεβασμιότατε | Σεβασμιότατε, η κοινότητα σας καλωσορίζει. | Eure Eminenz, die Gemeinde heißt Sie willkommen.
 ο φάκελος | Ο φάκελός σας βρίσκεται στο αρχείο. | Ihre Akte befindet sich im Archiv.
+δυνάμει του νόμου | Δυνάμει του νόμου, η σύμβαση λύεται αυτόματα. | Kraft Gesetzes wird der Vertrag automatisch aufgelöst.
+η απόφαση | Η απόφαση της υπηρεσίας ήρθε μετά από δύο μήνες. | Der Bescheid der Behörde kam nach zwei Monaten.
+Προς | Προς: Δήμο Θεσσαλονίκης, Τμήμα Αδειών. | An: Stadt Thessaloniki, Abteilung Genehmigungen.
+εφήμερος | Η επιτυχία του ήταν εφήμερη. | Sein Erfolg war kurzlebig.
+παροδικός | Ο πόνος είναι παροδικός. | Der Schmerz ist vorübergehend.
+η αιωνιότητα | Περίμενα μια αιωνιότητα στην ουρά. | Ich habe eine Ewigkeit in der Schlange gewartet.
+εν τω μεταξύ | Εν τω μεταξύ, η τιμή ανέβηκε. | Inzwischen ist der Preis gestiegen.
+κατά καιρούς | Κατά καιρούς επισκέπτομαι το χωριό. | Von Zeit zu Zeit besuche ich das Dorf.
+από καταβολής κόσμου | Από καταβολής κόσμου οι άνθρωποι λένε ιστορίες. | Seit Menschengedenken erzählen Menschen Geschichten.
+ο απολογισμός | Στο τέλος της χρονιάς κάνουμε απολογισμό. | Am Jahresende ziehen wir Bilanz.
+εσαεί | Θα σου είμαι εσαεί ευγνώμων. | Ich werde dir auf ewig dankbar sein.
+ο κληρονόμος | Ο μοναδικός κληρονόμος είναι ο γιος του. | Der einzige Erbe ist sein Sohn.
+η επιμέλεια | Η μητέρα πήρε την επιμέλεια των παιδιών. | Die Mutter hat das Sorgerecht für die Kinder bekommen.
+η υιοθεσία | Η υιοθεσία κράτησε δύο χρόνια. | Die Adoption dauerte zwei Jahre.
+η προίκα | Παλιά η νύφη έπρεπε να έχει προίκα. | Früher musste die Braut eine Mitgift haben.
+οι πρόγονοι | Οι πρόγονοί μου ήρθαν από τη Μικρά Ασία. | Meine Vorfahren kamen aus Kleinasien.
+η καταγωγή | Είναι ποντιακής καταγωγής. | Er ist pontischer Abstammung.
+η οινογνωσία | Παρακολουθεί μαθήματα οινογνωσίας. | Er besucht Kurse in Weinkunde.
+το επιδόρπιο | Για επιδόρπιο έχουμε γαλακτομπούρεκο. | Zum Nachtisch gibt es Galaktoboureko.
+πικάντικος | Η σάλτσα είναι λίγο πικάντικη. | Die Soße ist etwas pikant.
+η υφή | Η υφή του ψωμιού είναι αφράτη. | Die Textur des Brotes ist locker.
+ο ουρανίσκος | Το κρασί αφήνει γεύση φρούτων στον ουρανίσκο. | Der Wein hinterlässt einen fruchtigen Geschmack am Gaumen.
+ο τρύγος | Στον τρύγο βοηθάει όλο το χωριό. | Bei der Weinlese hilft das ganze Dorf.
+το μπουγιουρντί | Το μπουγιουρντί σερβίρεται ζεστό σε πήλινο. | Bougiourdi wird heiß in einer Tonform serviert.
+ώριμος | Οι ντομάτες είναι ώριμες. | Die Tomaten sind reif.
+παλαιωμένος | Αυτό το τυρί είναι παλαιωμένο δύο χρόνια. | Dieser Käse ist zwei Jahre gereift.
+ο καλοφαγάς | Ο θείος μου είναι μεγάλος καλοφαγάς. | Mein Onkel ist ein großer Feinschmecker.
+ο καταναλωτής | Ο καταναλωτής έχει δικαίωμα επιστροφής. | Der Verbraucher hat ein Rückgaberecht.
+ελαττωματικός | Το προϊόν ήταν ελαττωματικό. | Das Produkt war mangelhaft.
+η υπαναχώρηση | Η υπαναχώρηση από αγορά online γίνεται σε δεκατέσσερις μέρες. | Der Rücktritt vom Onlinekauf ist innerhalb von vierzehn Tagen möglich.
+η απάτη | Το μήνυμα ήταν απάτη. | Die Nachricht war Betrug.
+ο Συνήγορος του Καταναλωτή | Έκανα καταγγελία στον Συνήγορο του Καταναλωτή. | Ich habe mich bei der Verbraucher-Ombudsstelle beschwert.
+παραπλανητικός | Η διαφήμιση ήταν παραπλανητική. | Die Werbung war irreführend.
+η υπερχρέωση | Στον λογαριασμό υπάρχει υπερχρέωση. | Auf der Rechnung gibt es eine Überberechnung.
+τα βυζαντινά τείχη | Περπατήσαμε κατά μήκος των βυζαντινών τειχών. | Wir sind entlang der byzantinischen Mauern spaziert.
+η αποκατάσταση μνημείων | Η αποκατάσταση μνημείων χρηματοδοτείται από την ΕΕ. | Die Denkmalsanierung wird von der EU finanziert.
+ο κυκλοφοριακός φόρτος | Ο κυκλοφοριακός φόρτος είναι μεγάλος το πρωί. | Das Verkehrsaufkommen ist morgens hoch.
+η μεγάλη πυρκαγιά του 1917 | Η μεγάλη πυρκαγιά του 1917 κατέστρεψε το κέντρο. | Der große Brand von 1917 zerstörte das Zentrum.
+το μετρό Θεσσαλονίκης | Το μετρό Θεσσαλονίκης άνοιξε το 2024. | Die U-Bahn Thessaloniki wurde 2024 eröffnet.
+ο εξευγενισμός | Ο εξευγενισμός ανεβάζει τα ενοίκια. | Die Gentrifizierung treibt die Mieten hoch.
 `;

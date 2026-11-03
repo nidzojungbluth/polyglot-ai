@@ -1518,4 +1518,44 @@ export default `
 рентге́н | Рентге́н показа́л перело́м. | Das Röntgenbild zeigte einen Bruch.
 направле́ние | Терапе́вт дал мне направле́ние к хиру́ргу. | Der Hausarzt hat mir eine Überweisung zum Chirurgen gegeben.
 выздоровле́ние | Жела́ю ско́рого выздоровле́ния! | Ich wünsche gute Besserung!
+до́вод | Твой до́вод меня́ не убежда́ет. | Dein Argument überzeugt mich nicht.
+рито́рика | Его́ рито́рика эффе́ктна, но пуста́. | Seine Rhetorik ist wirkungsvoll, aber leer.
+попули́зм | Попули́зм обеща́ет просты́е реше́ния. | Der Populismus verspricht einfache Lösungen.
+пропага́нда | Пропага́нда в соцсетя́х повсю́ду. | Propaganda ist in den sozialen Netzwerken überall.
+как изве́стно | Как изве́стно, Москва́ не сра́зу стро́илась. | Bekanntlich wurde Moskau nicht an einem Tag erbaut.
+за́дним число́м | За́дним число́м я по́нял свою́ оши́бку. | Im Nachhinein habe ich meinen Fehler verstanden.
+по существу́ | По существу́ мы согла́сны. | Im Wesentlichen sind wir einverstanden.
+лицеме́рие | Я не выношу́ его́ лицеме́рия. | Ich ertrage seine Heuchelei nicht.
+дезинформа́ция | Дезинформа́ция распространя́ется бы́стро. | Desinformation verbreitet sich schnell.
+аргумента́ция | Её аргумента́ция была́ безупре́чной. | Ihre Argumentation war tadellos.
+предвзя́тость | Судью́ обвини́ли в предвзя́тости. | Dem Schiedsrichter wurde Voreingenommenheit vorgeworfen.
+сде́лав | Сде́лав рабо́ту, он пошёл домо́й. | Nachdem er die Arbeit erledigt hatte, ging er nach Hause.
+тем бо́лее | Помоги́ ему́, тем бо́лее что он но́вый. | Hilf ihm, umso mehr, als er neu ist.
+ни в ко́ем слу́чае | Ни в ко́ем слу́чае не тро́гай э́тот про́вод! | Berühr dieses Kabel keinesfalls!
+да́бы | Он говори́л ти́хо, да́бы не разбуди́ть ребёнка. | Er sprach leise, um das Kind nicht zu wecken.
+и́бо | Не суди́те, и́бо са́ми бу́дете суди́мы. | Richtet nicht, denn ihr werdet selbst gerichtet werden.
+отню́дь не | Э́то отню́дь не просто́й вопро́с. | Das ist keineswegs eine einfache Frage.
+литерату́ра | Ру́сская литерату́ра изве́стна во всём ми́ре. | Die russische Literatur ist weltweit bekannt.
+рома́н | Я чита́ю рома́н о Петербу́рге. | Ich lese einen Roman über Petersburg.
+поэ́зия | Поэ́зию Ахма́товой изуча́ют в шко́ле. | Achmatowas Gedichte lernt man in der Schule.
+Пу́шкин | Пу́шкин написа́л «Евге́ния Оне́гина». | Puschkin schrieb „Eugen Onegin“.
+Булга́ков | Булга́ков написа́л «Ма́стера и Маргари́ту». | Bulgakow schrieb „Der Meister und Margarita“.
+Достое́вский | Достое́вский жил в Петербу́рге. | Dostojewski lebte in Petersburg.
+мета́фора | Река́ в стихотворе́нии – мета́фора жи́зни. | Der Fluss im Gedicht ist eine Metapher des Lebens.
+геро́й | Гла́вный геро́й рома́на – студе́нт. | Die Hauptfigur des Romans ist ein Student.
+траге́дия | Мы смотре́ли анти́чную траге́дию. | Wir haben eine antike Tragödie gesehen.
+вы́ставка | Вы́ставка закрыва́ется в воскресе́нье. | Die Ausstellung schließt am Sonntag.
+Большо́й теа́тр | Мы ходи́ли на бале́т в Большо́й теа́тр. | Wir waren im Bolschoi-Theater beim Ballett.
+Патриа́ршие пруды́ | Рома́н Булга́кова начина́ется на Патриа́рших пруда́х. | Bulgakows Roman beginnt an den Patriarchenteichen.
+грусть | О́сенью меня́ охва́тывает грусть. | Im Herbst überkommt mich Wehmut.
+ску́ка | От ску́ки он на́чал рисова́ть. | Aus Langeweile fing er an zu zeichnen.
+возмуще́ние | Возмуще́ние жи́телей бы́ло огро́мным. | Die Empörung der Bewohner war riesig.
+отча́яние | В отча́янии он попроси́л по́мощи. | In seiner Verzweiflung bat er um Hilfe.
+умиротворе́ние | На берегу́ мо́ря я почу́вствовал умиротворе́ние. | Am Meeresufer spürte ich innere Ruhe.
+го́речь | Он с го́речью говори́т о про́шлом. | Er spricht mit Bitterkeit über die Vergangenheit.
+печа́ль | В её глаза́х была́ печа́ль. | In ihren Augen lag Kummer.
+умиле́ние | Ба́бушка с умиле́нием смотре́ла на вну́ка. | Die Oma sah den Enkel gerührt an.
+нело́вкость | Пови́сла нело́вкость. | Es entstand eine peinliche Situation.
+за́висть | За́висть не даёт ему́ поко́я. | Der Neid lässt ihm keine Ruhe.
+е́сли позво́лите | Е́сли позво́лите, я доба́влю. | Wenn Sie gestatten, füge ich etwas hinzu.
 `;

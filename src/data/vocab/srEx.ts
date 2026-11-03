@@ -1530,4 +1530,44 @@ zavist | Zavist mu ne da mira. | Der Neid lässt ihm keine Ruhe.
 ne bih želeo da ispadnem neljubazan, ali … | Ne bih želeo da ispadnem neljubazan, ali moram da idem. | Ich möchte nicht unhöflich wirken, aber ich muss gehen.
 ako dozvolite | Ako dozvolite, dodao bih nešto. | Wenn Sie gestatten, würde ich etwas hinzufügen.
 po svemu sudeći | Po svemu sudeći, padaće kiša. | Allem Anschein nach wird es regnen.
+kako god okreneš | Kako god okreneš, skupo je. | Wie man's auch dreht, es ist teuer.
+ne mislim ništa loše | Ne mislim ništa loše, ali opet kasniš. | Ich mein's nicht böse, aber du bist schon wieder zu spät.
+da ne kažem | Bilo je naporno, da ne kažem dosadno. | Es war anstrengend, um nicht zu sagen langweilig.
+bez zamerke | Bez zamerke, ali ne slažem se. | Nichts für ungut, aber ich bin nicht einverstanden.
+kad smo već kod toga | Kad smo već kod toga, ko plaća račun? | Wo wir gerade dabei sind, wer zahlt die Rechnung?
+aluzija | Razumeo sam aluziju. | Ich habe die Anspielung verstanden.
+ugovorna strana | Ugovorna strana mora biti obaveštena pismeno. | Die Vertragspartei muss schriftlich benachrichtigt werden.
+klauzula | Klauzula o poverljivosti važi dve godine. | Die Vertraulichkeitsklausel gilt zwei Jahre.
+povreda ugovora | Povreda ugovora povlači kaznu. | Eine Vertragsverletzung zieht eine Strafe nach sich.
+odgovornost | Firma snosi odgovornost za štetu. | Die Firma haftet für den Schaden.
+raskid ugovora | Raskid ugovora mora biti pismen. | Die Auflösung des Vertrags muss schriftlich erfolgen.
+ubuduće | Ubuduće će se plaćanja vršiti elektronski. | Künftig erfolgen die Zahlungen elektronisch.
+na osnovu zakona | Na osnovu zakona imate pravo na odmor. | Aufgrund des Gesetzes haben Sie Anspruch auf Urlaub.
+poverljivost | Poverljivost podataka je zagarantovana. | Die Vertraulichkeit der Daten ist garantiert.
+izmena | Svaka izmena ugovora mora biti pismena. | Jede Vertragsänderung muss schriftlich sein.
+potpisnik | Potpisnik izjavljuje da su podaci tačni. | Der Unterzeichner erklärt, dass die Angaben richtig sind.
+arbitraža | Spor će rešiti arbitraža. | Der Streit wird durch ein Schiedsverfahren gelöst.
+dopis | Dobili smo dopis iz opštine. | Wir haben ein Schreiben von der Gemeinde bekommen.
+dostava | Dostava rešenja je izvršena poštom. | Die Zustellung des Bescheids erfolgte per Post.
+po zahtevu | Uverenje se izdaje po zahtevu. | Die Bescheinigung wird auf Antrag ausgestellt.
+prigovor | Uložio je prigovor na rešenje. | Er hat Widerspruch gegen den Bescheid eingelegt.
+u zakonskom roku | Prijava je podneta u zakonskom roku. | Die Meldung wurde fristgerecht eingereicht.
+nadležni službenik | Nadležni službenik danas nije tu. | Der zuständige Beamte ist heute nicht da.
+taksa | Prvo platite taksu. | Zahlen Sie zuerst die Gebühr.
+overena kopija | Treba mi overena kopija diplome. | Ich brauche eine beglaubigte Kopie des Diploms.
+priložiti | Priložite kopiju lične karte. | Legen Sie eine Kopie des Personalausweises bei.
+lično | Zahtev morate predati lično. | Den Antrag müssen Sie persönlich abgeben.
+Uvaženi kolega | Uvaženi kolega, šaljem Vam dokument. | Werter Kollege, ich sende Ihnen das Dokument.
+Molim Vas da primite moju zahvalnost | Molim Vas da primite moju zahvalnost za pomoć. | Bitte nehmen Sie meinen Dank für die Hilfe entgegen.
+Poštovani gospodine | Poštovani gospodine Petroviću, pišem Vam povodom zahteva. | Sehr geehrter Herr Petrović, ich schreibe Ihnen wegen des Antrags.
+Poštovana gospođo | Poštovana gospođo Jovanović, hvala na odgovoru. | Sehr geehrte Frau Jovanović, danke für die Antwort.
+Uz izraze dubokog poštovanja | Uz izraze dubokog poštovanja, direktor. | Mit dem Ausdruck tiefster Hochachtung, der Direktor.
+Vaša ekselencijo | Vaša ekselencijo, zahvaljujemo na dolasku. | Exzellenz, wir danken für Ihr Kommen.
+Vaše preosveštenstvo | Vaše preosveštenstvo, parohija Vas pozdravlja. | Eure Exzellenz, die Gemeinde begrüßt Sie.
+Iskreno saučešće | Iskreno saučešće povodom smrti Vašeg oca. | Aufrichtiges Beileid zum Tod Ihres Vaters.
+Dobro došli u naš dom | Dobro došli u naš dom, izvolite unutra. | Willkommen in unserem Haus, kommen Sie herein.
+prolaznost | Pesma govori o prolaznosti života. | Das Gedicht handelt von der Vergänglichkeit des Lebens.
+večnost | Čekao sam čitavu večnost. | Ich habe eine Ewigkeit gewartet.
+otkad je sveta i veka | Otkad je sveta i veka, ljudi pričaju priče. | Seit Menschengedenken erzählen Menschen Geschichten.
+privremen | Ovo rešenje je samo privremeno. | Diese Lösung ist nur vorübergehend.
 `;
