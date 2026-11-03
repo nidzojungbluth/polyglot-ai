@@ -1439,4 +1439,44 @@ export default `
 η διάγνωση | Η διάγνωση ήταν ευτυχώς απλή. | Die Diagnose war zum Glück einfach.
 η εξέταση αίματος | Η εξέταση αίματος γίνεται νηστικός. | Die Blutuntersuchung macht man nüchtern.
 οι παρενέργειες | Το φάρμακο δεν έχει πολλές παρενέργειες. | Das Medikament hat nicht viele Nebenwirkungen.
+το επιχείρημα | Το επιχείρημά σου δεν με πείθει. | Dein Argument überzeugt mich nicht.
+η ρητορική | Η ρητορική του είναι εντυπωσιακή, αλλά κενή. | Seine Rhetorik ist beeindruckend, aber leer.
+ο λαϊκισμός | Ο λαϊκισμός υπόσχεται εύκολες λύσεις. | Der Populismus verspricht einfache Lösungen.
+η προπαγάνδα | Η προπαγάνδα στα μέσα δικτύωσης είναι παντού. | Propaganda ist in den sozialen Medien überall.
+κατά κοινή ομολογία | Κατά κοινή ομολογία, ήταν ο καλύτερος παίκτης. | Wie allgemein anerkannt, war er der beste Spieler.
+εκ των υστέρων | Εκ των υστέρων, ήταν λάθος απόφαση. | Im Nachhinein war es eine falsche Entscheidung.
+κατά βάση | Κατά βάση συμφωνούμε. | Im Wesentlichen sind wir uns einig.
+η υποκρισία | Δεν αντέχω την υποκρισία του. | Ich ertrage seine Heuchelei nicht.
+η παραπληροφόρηση | Η παραπληροφόρηση διαδίδεται γρήγορα. | Desinformation verbreitet sich schnell.
+η επιχειρηματολογία | Η επιχειρηματολογία της ήταν πολύ καλή. | Ihre Argumentation war sehr gut.
+η μεροληψία | Ο διαιτητής κατηγορήθηκε για μεροληψία. | Dem Schiedsrichter wurde Voreingenommenheit vorgeworfen.
+εν πάση περιπτώσει | Εν πάση περιπτώσει, θα σε ενημερώσω. | Jedenfalls sage ich dir Bescheid.
+εν ανάγκη | Εν ανάγκη, παίρνουμε ταξί. | Notfalls nehmen wir ein Taxi.
+εκ πρώτης όψεως | Εκ πρώτης όψεως φαίνεται εύκολο. | Auf den ersten Blick wirkt es einfach.
+εν καιρώ | Εν καιρώ θα μάθεις την αλήθεια. | Zu gegebener Zeit wirst du die Wahrheit erfahren.
+κατά κανόνα | Κατά κανόνα τελειώνουμε στις πέντε. | In der Regel sind wir um fünf fertig.
+εν γνώσει μου | Δεν το έκανα εν γνώσει μου. | Ich habe es nicht wissentlich getan.
+εν ονόματι | Μιλάω εν ονόματι όλης της ομάδας. | Ich spreche im Namen des ganzen Teams.
+προ ημερών | Προ ημερών έλαβα την επιστολή σας. | Vor einigen Tagen habe ich Ihren Brief erhalten.
+εξ αρχής | Το είχα πει εξ αρχής. | Das hatte ich von Anfang an gesagt.
+επί τόπου | Η αστυνομία έφτασε επί τόπου. | Die Polizei kam an Ort und Stelle.
+η λογοτεχνία | Η ελληνική λογοτεχνία έχει μεγάλη παράδοση. | Die griechische Literatur hat eine lange Tradition.
+το μυθιστόρημα | Διαβάζω ένα μυθιστόρημα για τη Θεσσαλονίκη. | Ich lese einen Roman über Thessaloniki.
+η ποίηση | Η ποίηση του Ελύτη κέρδισε το Νόμπελ. | Die Poesie von Elytis gewann den Nobelpreis.
+ο Καβάφης | Ο Καβάφης έγραψε την «Ιθάκη». | Kavafis hat „Ithaka“ geschrieben.
+ο Καζαντζάκης | Ο Καζαντζάκης έγραψε τον «Ζορμπά». | Kazantzakis hat „Alexis Sorbas“ geschrieben.
+το ρεμπέτικο | Το ρεμπέτικο γεννήθηκε στα λιμάνια. | Der Rembetiko ist in den Häfen entstanden.
+ο Τσιτσάνης | Τα τραγούδια του Τσιτσάνη ακούγονται ακόμα. | Die Lieder von Tsitsanis hört man bis heute.
+η μεταφορά | Η θάλασσα στο ποίημα είναι μεταφορά για τη ζωή. | Das Meer im Gedicht ist eine Metapher für das Leben.
+ο ήρωας | Ο ήρωας του βιβλίου είναι ένας ψαράς. | Die Hauptfigur des Buches ist ein Fischer.
+η τραγωδία | Είδαμε αρχαία τραγωδία στην Επίδαυρο. | Wir haben eine antike Tragödie in Epidauros gesehen.
+η έκθεση | Η έκθεση φωτογραφίας κλείνει την Κυριακή. | Die Fotoausstellung endet am Sonntag.
+το Φεστιβάλ Κινηματογράφου Θεσσαλονίκης | Το Φεστιβάλ Κινηματογράφου Θεσσαλονίκης γίνεται τον Νοέμβριο. | Das Filmfestival Thessaloniki findet im November statt.
+η μελαγχολία | Το φθινόπωρο μού φέρνει μελαγχολία. | Der Herbst macht mich melancholisch.
+η ανία | Η ανία της επαρχίας τον έπνιγε. | Die Langeweile der Provinz erdrückte ihn.
+η αγανάκτηση | Η αγανάκτηση του κόσμου ήταν μεγάλη. | Die Empörung der Leute war groß.
+η απόγνωση | Σε στιγμή απόγνωσης ζήτησε βοήθεια. | In einem Moment der Verzweiflung bat er um Hilfe.
+η γαλήνη | Στο νησί βρήκα γαλήνη. | Auf der Insel habe ich innere Ruhe gefunden.
+η πίκρα | Μιλάει με πίκρα για το παρελθόν. | Er spricht mit Bitterkeit über die Vergangenheit.
+η συγκίνηση | Η μητέρα έκλαιγε από συγκίνηση. | Die Mutter weinte vor Rührung.
 `;

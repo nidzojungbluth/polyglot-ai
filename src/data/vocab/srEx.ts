@@ -1450,4 +1450,44 @@ Osmansko carstvo | Osmansko carstvo je vladalo vekovima. | Das Osmanische Reich 
 epoha | To je bila epoha velikih promena. | Das war eine Epoche großer Veränderungen.
 tada | Tada smo živeli na selu. | Damals lebten wir auf dem Dorf.
 u današnje vreme | U današnje vreme svi imaju mobilni. | Heutzutage hat jeder ein Handy.
+obmotala me je oko malog prsta | Ćerka me je obmotala oko malog prsta. | Meine Tochter hat mich um den kleinen Finger gewickelt.
+Prvi srpski ustanak | Prvi srpski ustanak je počeo u Orašcu. | Der Erste Serbische Aufstand begann in Orašac.
+Kraljevina Jugoslavija | Kraljevina Jugoslavija je postojala između dva rata. | Das Königreich Jugoslawien bestand zwischen den beiden Weltkriegen.
+SFRJ | Moji roditelji su rođeni u SFRJ. | Meine Eltern wurden in der SFR Jugoslawien geboren.
+Peti oktobar | Peti oktobar je promenio politiku u Srbiji. | Der 5. Oktober hat die Politik in Serbien verändert.
+krštenje | Krštenje će biti u crkvi u selu. | Die Taufe ist in der Dorfkirche.
+kumstvo | Kumstvo se kod Srba nasleđuje. | Die Patenschaft wird bei Serben vererbt.
+sahrana | Sahrana je sutra u jedanaest. | Die Beerdigung ist morgen um elf.
+Bog da mu dušu prosti | Tvoj otac, Bog da mu dušu prosti, bio je dobar čovek. | Dein Vater, Gott hab ihn selig, war ein guter Mensch.
+četrdesetnica | Četrdesetnica je u subotu na groblju. | Die Gedenkfeier nach vierzig Tagen ist am Samstag auf dem Friedhof.
+trudnoća | Trudnoća protiče odlično. | Die Schwangerschaft verläuft hervorragend.
+rodila je | Sestra je rodila juče. | Meine Schwester hat gestern entbunden.
+neka vam je živo i zdravo! | Dobili ste sina? Neka vam je živo i zdravo! | Ihr habt einen Sohn bekommen? Herzlichen Glückwunsch!
+veridba | Veridba je bila na Uskrs. | Die Verlobung war zu Ostern.
+babine | Idemo na babine u nedelju. | Am Sonntag besuchen wir die junge Mutter und das Baby.
+vinar | Vinar nas je proveo kroz podrum. | Der Winzer hat uns durch den Keller geführt.
+prokupac | Prokupac je stara srpska sorta. | Prokupac ist eine alte serbische Rebsorte.
+suvo vino | Više volim suvo vino. | Ich mag trockenen Wein lieber.
+pitko | Ovo vino je veoma pitko. | Dieser Wein ist sehr süffig.
+aroma | Vino ima voćnu aromu. | Der Wein hat ein fruchtiges Aroma.
+podrum | Ujak drži vino u podrumu. | Der Onkel lagert den Wein im Keller.
+gastronomija | Vojvođanska gastronomija je bogata. | Die Küche der Vojvodina ist reichhaltig.
+bakin recept | Sarmu pravim po bakinom receptu. | Sarma mache ich nach Omas Rezept.
+kuvar | Kuvar je spremio jagnjetinu. | Der Koch hat Lamm zubereitet.
+topi se u ustima | Meso se topi u ustima. | Das Fleisch zergeht auf der Zunge.
+dunjevača | Deda je doneo dunjevaču. | Der Opa hat Quittenbrand mitgebracht.
+ponuda i potražnja | Cena zavisi od ponude i potražnje. | Der Preis hängt von Angebot und Nachfrage ab.
+preduzeće | Preduzeće ima pedeset zaposlenih. | Das Unternehmen hat fünfzig Beschäftigte.
+profit | Profit je ove godine bio mali. | Der Gewinn war dieses Jahr klein.
+gubitak | Firma je imala gubitak. | Die Firma hat Verlust gemacht.
+investicija | Investicija u solarne panele se isplati. | Die Investition in Solarpaneele lohnt sich.
+akcija | Kupio je akcije te firme. | Er hat Aktien dieser Firma gekauft.
+izvoz | Izvoz malina je porastao. | Der Himbeerexport ist gestiegen.
+konkurencija | Konkurencija obara cene. | Der Wettbewerb drückt die Preise.
+rast | Ekonomski rast je bio dva odsto. | Das Wirtschaftswachstum betrug zwei Prozent.
+recesija | Recesija je trajala nekoliko godina. | Die Rezession dauerte einige Jahre.
+BDP | BDP je porastao prošle godine. | Das BIP ist letztes Jahr gestiegen.
+kupovna moć | Kupovna moć je opala. | Die Kaufkraft ist gesunken.
+spomenik | Spomenik je na glavnom trgu. | Das Denkmal steht auf dem Hauptplatz.
+soliter | Živimo u soliteru na petnaestom spratu. | Wir wohnen in einem Hochhaus im fünfzehnten Stock.
 `;

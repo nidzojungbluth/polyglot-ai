@@ -1438,4 +1438,44 @@ export default `
 приложе́ние | Приложе́ние рабо́тает без интерне́та. | Die App funktioniert ohne Internet.
 обновле́ние | Обновле́ние испра́вило оши́бку. | Das Update hat den Fehler behoben.
 иск | Иск пода́ли на про́шлой неде́ле. | Die Klage wurde letzte Woche eingereicht.
+ты из меня́ верёвки вьёшь | Ты из меня́ верёвки вьёшь, до́чка. | Du wickelst mich um den Finger, Töchterchen.
+лесны́е пожа́ры | Лесны́е пожа́ры уничто́жили ты́сячи гекта́ров. | Waldbrände haben Tausende Hektar vernichtet.
+возобновля́емая эне́ргия | Возобновля́емая эне́ргия стано́вится деше́вле. | Erneuerbare Energie wird billiger.
+усто́йчивое разви́тие | Компа́ния говори́т об усто́йчивом разви́тии. | Die Firma spricht über nachhaltige Entwicklung.
+за́суха | За́суха погуби́ла урожа́й. | Die Dürre hat die Ernte vernichtet.
+о́блако | Фотогра́фии храня́тся в о́блаке. | Die Fotos werden in der Cloud gespeichert.
+зарегистри́роваться | Я зарегистри́ровался по по́чте. | Ich habe mich per E-Mail registriert.
+платфо́рма | На платфо́рме миллио́ны по́льзователей. | Die Plattform hat Millionen Nutzer.
+алгори́тм | Алгори́тм пока́зывает мне то́лько ко́шек. | Der Algorithmus zeigt mir nur Katzen.
+акка́унт | Я удали́л свой акка́унт. | Ich habe mein Benutzerkonto gelöscht.
+позво́льте сказа́ть па́ру слов | Позво́льте сказа́ть па́ру слов о молодожёнах. | Erlauben Sie mir ein paar Worte über das Brautpaar.
+от и́мени всех нас | От и́мени всех нас благодарю́ вас. | Im Namen von uns allen danke ich Ihnen.
+тост | Свиде́тель произнёс тост. | Der Trauzeuge hat einen Trinkspruch gehalten.
+в заключе́ние | В заключе́ние жела́ю всем успе́хов. | Zum Schluss wünsche ich allen Erfolg.
+от всей души́ благодарю́ | От всей души́ благодарю́ за гостеприи́мство. | Von ganzem Herzen danke ich für die Gastfreundschaft.
+по́льзуясь слу́чаем | По́льзуясь слу́чаем, поздравля́ю колле́г с пра́здником. | Bei dieser Gelegenheit gratuliere ich den Kollegen zum Feiertag.
+речь | Его́ речь дли́лась полчаса́. | Seine Rede dauerte eine halbe Stunde.
+молодожёны | Молодожёны вошли́ в зал. | Das Brautpaar hat den Saal betreten.
+го́рько! | Го́сти закрича́ли: «Го́рько!» | Die Gäste riefen: „Bitter!“
+за дру́жбу! | Подни́мем бока́лы – за дру́жбу! | Heben wir die Gläser – auf die Freundschaft!
+век | Це́рковь постро́или в двена́дцатом ве́ке. | Die Kirche wurde im zwölften Jahrhundert gebaut.
+средневеко́вье | В средневеко́вье Но́вгород был бога́тым го́родом. | Im Mittelalter war Nowgorod eine reiche Stadt.
+Росси́йская импе́рия | Росси́йская импе́рия просуществова́ла до 1917 го́да. | Das Russische Kaiserreich bestand bis 1917.
+револю́ция | По́сле револю́ции всё измени́лось. | Nach der Revolution änderte sich alles.
+Сове́тский Сою́з | Мои́ роди́тели родили́сь в Сове́тском Сою́зе. | Meine Eltern wurden in der Sowjetunion geboren.
+перестро́йка | Перестро́йка начала́сь в 1985 году́. | Die Perestroika begann 1985.
+эпо́ха | Э́то была́ эпо́ха больши́х переме́н. | Das war eine Epoche großer Veränderungen.
+тогда́ | Тогда́ мы жи́ли в дере́вне. | Damals lebten wir auf dem Dorf.
+в на́ши дни | В на́ши дни у всех есть смартфо́н. | Heutzutage hat jeder ein Smartphone.
+крести́ны | На крести́ны пришла́ вся семья́. | Zur Tauffeier kam die ganze Familie.
+кре́стный | Кре́стный подари́л ему́ велосипе́д. | Der Taufpate hat ihm ein Fahrrad geschenkt.
+по́хороны | По́хороны за́втра в оди́ннадцать. | Die Beerdigung ist morgen um elf.
+прими́те мои́ соболе́знования | Прими́те мои́ соболе́знования в связи́ с утра́той. | Mein aufrichtiges Beileid zu Ihrem Verlust.
+поми́нки | По́сле кла́дбища все пошли́ на поми́нки. | Nach dem Friedhof gingen alle zum Gedenkessen.
+бере́менность | Бере́менность прохо́дит хорошо́. | Die Schwangerschaft verläuft gut.
+она́ родила́ | Вчера́ она́ родила́ сы́на. | Gestern hat sie einen Sohn zur Welt gebracht.
+с рожде́нием ребёнка! | Поздравля́ю с рожде́нием ребёнка! | Herzlichen Glückwunsch zur Geburt!
+помо́лвка | Помо́лвка была́ на Па́сху. | Die Verlobung war zu Ostern.
+виноде́л | Виноде́л провёл нас по по́гребу. | Der Winzer hat uns durch den Keller geführt.
+сухо́е вино́ | Я предпочита́ю сухо́е вино́. | Ich bevorzuge trockenen Wein.
 `;
