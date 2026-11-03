@@ -1399,4 +1399,44 @@ export default `
 το νόημα της ζωής | Ποιο είναι για σένα το νόημα της ζωής; | Was ist für dich der Sinn des Lebens?
 η ευτυχία | Η ευτυχία βρίσκεται στα μικρά πράγματα. | Das Glück liegt in den kleinen Dingen.
 η εγκυμοσύνη | Η εγκυμοσύνη πάει πολύ καλά. | Die Schwangerschaft verläuft sehr gut.
+η χούντα | Η χούντα έπεσε το 1974. | Die Militärjunta fiel 1974.
+η μεταπολίτευση | Μετά τη μεταπολίτευση ιδρύθηκαν νέα κόμματα. | Nach der Rückkehr zur Demokratie wurden neue Parteien gegründet.
+ζωή σε λόγου σας | Λυπάμαι πολύ, ζωή σε λόγου σας. | Es tut mir sehr leid, mein Beileid.
+το μνημόσυνο | Το μνημόσυνο του παππού είναι την Κυριακή. | Die Gedenkfeier für den Opa ist am Sonntag.
+Θεός σχωρέσ' τον | Ο πατέρας σου, Θεός σχωρέσ' τον, ήταν καλός άνθρωπος. | Dein Vater, Gott hab ihn selig, war ein guter Mensch.
+να σας ζήσει! | Γέννησε η γυναίκα σου; Να σας ζήσει! | Deine Frau hat entbunden? Herzlichen Glückwunsch!
+ο αρραβώνας | Ο αρραβώνας θα γίνει το Πάσχα. | Die Verlobung ist zu Ostern.
+ο οινοποιός | Ο οινοποιός μάς ξενάγησε στο οινοποιείο. | Der Winzer hat uns durchs Weingut geführt.
+το ξινόμαυρο | Το ξινόμαυρο της Νάουσας είναι διάσημο. | Der Xinomavro aus Naoussa ist berühmt.
+το ασύρτικο | Το ασύρτικο της Σαντορίνης ταιριάζει με ψάρι. | Der Assyrtiko aus Santorini passt zu Fisch.
+ξηρό | Προτιμώ ξηρό κρασί. | Ich bevorzuge trockenen Wein.
+το άρωμα | Το κρασί έχει άρωμα από φρούτα. | Der Wein hat ein fruchtiges Aroma.
+το κελάρι | Ο θείος κρατάει το κρασί στο κελάρι. | Der Onkel lagert den Wein im Keller.
+η γαστρονομία | Η κρητική γαστρονομία είναι πολύ υγιεινή. | Die kretische Gastronomie ist sehr gesund.
+η συνταγή της γιαγιάς | Φτιάχνω τον μουσακά με τη συνταγή της γιαγιάς. | Ich mache die Moussaka nach Omas Rezept.
+λιώνει στο στόμα | Το κρέας λιώνει στο στόμα. | Das Fleisch zergeht auf der Zunge.
+η προσφορά και η ζήτηση | Η τιμή εξαρτάται από την προσφορά και τη ζήτηση. | Der Preis hängt von Angebot und Nachfrage ab.
+η επιχείρηση | Η επιχείρηση έχει πενήντα υπαλλήλους. | Das Unternehmen hat fünfzig Mitarbeiter.
+το κέρδος | Το κέρδος φέτος ήταν μικρό. | Der Gewinn war dieses Jahr gering.
+η ζημιά | Η εταιρεία είχε ζημιά δύο εκατομμύρια. | Die Firma hatte zwei Millionen Verlust.
+η επένδυση | Η επένδυση σε ηλιακά αποδίδει. | Die Investition in Solar lohnt sich.
+η μετοχή | Η μετοχή της τράπεζας ανέβηκε. | Die Aktie der Bank ist gestiegen.
+οι εξαγωγές | Οι εξαγωγές λαδιού αυξήθηκαν. | Die Ölexporte sind gestiegen.
+ο ανταγωνισμός | Ο ανταγωνισμός ρίχνει τις τιμές. | Der Wettbewerb senkt die Preise.
+η ανάπτυξη | Η οικονομική ανάπτυξη ήταν δύο τοις εκατό. | Das Wirtschaftswachstum betrug zwei Prozent.
+η ύφεση | Η ύφεση κράτησε πολλά χρόνια. | Die Rezession dauerte viele Jahre.
+το ΑΕΠ | Το ΑΕΠ αυξήθηκε πέρυσι. | Das BIP ist letztes Jahr gestiegen.
+η αγοραστική δύναμη | Η αγοραστική δύναμη μειώθηκε. | Die Kaufkraft ist gesunken.
+το μνημείο | Το μνημείο είναι στην κεντρική πλατεία. | Das Denkmal steht auf dem Hauptplatz.
+η ανακαίνιση | Η ανακαίνιση της κουζίνας κράτησε δύο μήνες. | Die Renovierung der Küche dauerte zwei Monate.
+η πολυκατοικία | Μένουμε σε πολυκατοικία με έξι ορόφους. | Wir wohnen in einem Mehrfamilienhaus mit sechs Stockwerken.
+η αρχιτεκτονική | Η αρχιτεκτονική της πόλης είναι νεοκλασική. | Die Architektur der Stadt ist neoklassisch.
+ο αρχαιολογικός χώρος | Ο αρχαιολογικός χώρος κλείνει στις οχτώ. | Die Ausgrabungsstätte schließt um acht.
+η Ροτόντα | Η Ροτόντα είναι ένα από τα παλαιότερα κτίρια της Θεσσαλονίκης. | Die Rotunde ist eines der ältesten Gebäude Thessalonikis.
+η πολεοδομία | Πήγα στην πολεοδομία για την άδεια. | Ich war beim Bauamt wegen der Genehmigung.
+η ανάπλαση | Η ανάπλαση της παραλίας ολοκληρώθηκε. | Die Neugestaltung der Uferpromenade ist abgeschlossen.
+η πρόσοψη | Βάψαμε την πρόσοψη του σπιτιού. | Wir haben die Fassade des Hauses gestrichen.
+η διάγνωση | Η διάγνωση ήταν ευτυχώς απλή. | Die Diagnose war zum Glück einfach.
+η εξέταση αίματος | Η εξέταση αίματος γίνεται νηστικός. | Die Blutuntersuchung macht man nüchtern.
+οι παρενέργειες | Το φάρμακο δεν έχει πολλές παρενέργειες. | Das Medikament hat nicht viele Nebenwirkungen.
 `;

@@ -1410,4 +1410,44 @@ pregovori | Pregovori o plati su bili teški. | Die Gehaltsverhandlungen waren s
 popustiti | U ovome neću popustiti. | In diesem Punkt gebe ich nicht nach.
 nasledstvo | Podelili su nasledstvo na troje. | Sie haben das Erbe durch drei geteilt.
 klimatske promene | Klimatske promene utiču na poljoprivredu. | Der Klimawandel beeinflusst die Landwirtschaft.
+shodno tome | Shodno tome, sastanak se odlaže. | Dementsprechend wird das Treffen verschoben.
+nekretnina | Cene nekretnina u Beogradu stalno rastu. | Die Immobilienpreise in Belgrad steigen ständig.
+tužba | Tužba je podneta prošle nedelje. | Die Klage wurde letzte Woche eingereicht.
+nestašica vode | Leti je nestašica vode u nekim selima. | Im Sommer gibt es in manchen Dörfern Wasserknappheit.
+obnovljivi izvori energije | Srbija ulaže u obnovljive izvore energije. | Serbien investiert in erneuerbare Energien.
+održivost | Održivost turizma je velika tema. | Die Nachhaltigkeit des Tourismus ist ein großes Thema.
+suša | Suša je oštetila kukuruz. | Die Dürre hat den Mais beschädigt.
+sreća | Sreća je u malim stvarima. | Glück liegt in den kleinen Dingen.
+sloboda | Sloboda nije nešto što se podrazumeva. | Freiheit ist nicht selbstverständlich.
+dostojanstvo | Svaki čovek ima pravo na dostojanstvo. | Jeder Mensch hat ein Recht auf Würde.
+sudbina | Sudbina je htela da se ponovo sretnemo. | Das Schicksal wollte, dass wir uns wiedersehen.
+verujem u sudbinu | Ne verujem u sudbinu, verujem u rad. | Ich glaube nicht ans Schicksal, ich glaube an Arbeit.
+zavisi iz kog ugla gledaš | Da li je to dobro? Zavisi iz kog ugla gledaš. | Ist das gut? Kommt auf die Perspektive an.
+vrednosti | Naše vrednosti su porodica i poštenje. | Unsere Werte sind Familie und Ehrlichkeit.
+veštačka inteligencija | Veštačka inteligencija već piše tekstove. | Künstliche Intelligenz schreibt schon Texte.
+lični podaci | Ne daj lične podatke nepoznatima. | Gib deine persönlichen Daten nicht an Fremde.
+privatnost | Aplikacija poštuje privatnost. | Die App respektiert die Privatsphäre.
+onlajn prevara | Bio je žrtva onlajn prevare. | Er war Opfer eines Online-Betrugs.
+aplikacija | Aplikacija radi i bez interneta. | Die App funktioniert auch ohne Internet.
+ažuriranje | Ažuriranje je rešilo problem. | Das Update hat das Problem gelöst.
+oblak | Slike se čuvaju u oblaku. | Die Fotos werden in der Cloud gespeichert.
+registrovati se | Registrovao sam se mejlom. | Ich habe mich mit der E-Mail registriert.
+platforma | Platforma ima milione korisnika. | Die Plattform hat Millionen Nutzer.
+algoritam | Algoritam mi pokazuje samo snimke mačaka. | Der Algorithmus zeigt mir nur Katzenvideos.
+nalog | Obrisao sam svoj nalog. | Ich habe mein Benutzerkonto gelöscht.
+želeo bih da kažem nekoliko reči | Želeo bih da kažem nekoliko reči o mladencima. | Ich möchte ein paar Worte über das Brautpaar sagen.
+u ime svih nas | U ime svih nas, hvala vam. | Im Namen von uns allen danke ich Ihnen.
+zdravica | Kum je održao zdravicu. | Der Trauzeuge hat den Trinkspruch gehalten.
+za kraj | Za kraj, želim vam mnogo uspeha. | Zum Schluss wünsche ich Ihnen viel Erfolg.
+od srca vam hvala | Od srca vam hvala na gostoprimstvu. | Ich danke Ihnen von Herzen für die Gastfreundschaft.
+ovom prilikom | Ovom prilikom zahvaljujemo roditeljima. | Bei dieser Gelegenheit danken wir den Eltern.
+govor | Njegov govor je trajao pola sata. | Seine Rede dauerte eine halbe Stunde.
+mladenci | Mladenci su ušli u salu. | Das Brautpaar hat den Saal betreten.
+živeli mladenci! | Podignite čaše – živeli mladenci! | Hebt die Gläser – hoch das Brautpaar!
+vek | Crkva je sagrađena u dvanaestom veku. | Die Kirche wurde im zwölften Jahrhundert gebaut.
+srednji vek | U srednjem veku Srbija je bila jaka država. | Im Mittelalter war Serbien ein starker Staat.
+Osmansko carstvo | Osmansko carstvo je vladalo vekovima. | Das Osmanische Reich herrschte jahrhundertelang.
+epoha | To je bila epoha velikih promena. | Das war eine Epoche großer Veränderungen.
+tada | Tada smo živeli na selu. | Damals lebten wir auf dem Dorf.
+u današnje vreme | U današnje vreme svi imaju mobilni. | Heutzutage hat jeder ein Handy.
 `;

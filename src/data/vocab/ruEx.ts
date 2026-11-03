@@ -1398,4 +1398,44 @@ export default `
 быть посре́дником | Нача́льник согласи́лся быть посре́дником в спо́ре. | Der Chef hat sich bereit erklärt, im Streit zu vermitteln.
 перегово́ры | Перегово́ры о зарпла́те бы́ли тру́дными. | Die Gehaltsverhandlungen waren schwierig.
 страсть | Футбо́л – его́ страсть. | Fußball ist seine Leidenschaft.
+любо́вь с пе́рвого взгля́да | Э́то была́ любо́вь с пе́рвого взгля́да. | Es war Liebe auf den ersten Blick.
+не́жность | Он с не́жностью смо́трит на дочь. | Er sieht seine Tochter zärtlich an.
+бли́зость | Ме́жду на́ми больша́я бли́зость. | Zwischen uns gibt es große Vertrautheit.
+пре́данность | Пре́данность соба́ки тро́гает. | Die Treue des Hundes rührt.
+душа́ моя́ | Споко́йной но́чи, душа́ моя́. | Gute Nacht, mein Schatz.
+я безу́мно влюблён | Я безу́мно влюблён в неё. | Ich bin wahnsinnig in sie verliebt.
+расстава́ние | Расстава́ние в аэропорту́ бы́ло тяжёлым. | Der Abschied am Flughafen war schwer.
+аренда́тор | Аренда́тор пла́тит до пя́того числа́. | Der Mieter zahlt bis zum Fünften.
+арендода́тель | Арендода́тель отвеча́ет за кру́пный ремо́нт. | Der Vermieter ist für größere Reparaturen zuständig.
+расторже́ние догово́ра | Расторже́ние догово́ра – то́лько в пи́сьменной фо́рме. | Die Kündigung des Vertrags nur schriftlich.
+выселе́ние | Выселе́ние отложи́ли до весны́. | Die Zwangsräumung wurde bis zum Frühling verschoben.
+насле́дство | Они́ раздели́ли насле́дство на тро́их. | Sie haben das Erbe durch drei geteilt.
+недви́жимость | Недви́жимость в це́нтре о́чень дорога́я. | Immobilien im Zentrum sind sehr teuer.
+нота́риус | Догово́р заве́рили у нота́риуса. | Der Vertrag wurde beim Notar beglaubigt.
+со́бственность | Кварти́ра в со́бственности его́ ма́тери. | Die Wohnung ist im Eigentum seiner Mutter.
+обя́занность | Опла́та счето́в – твоя́ обя́занность. | Das Bezahlen der Rechnungen ist deine Pflicht.
+окружа́ющая среда́ | Мы должны́ бере́чь окружа́ющую среду́. | Wir müssen die Umwelt schützen.
+измене́ние кли́мата | Измене́ние кли́мата влия́ет на се́льское хозя́йство. | Der Klimawandel beeinflusst die Landwirtschaft.
+жара́ | Жара́ стои́т уже́ неде́лю. | Die Hitze hält schon eine Woche an.
+нехва́тка воды́ | Ле́том в дере́вне нехва́тка воды́. | Im Sommer gibt es im Dorf Wassermangel.
+загрязне́ние | Загрязне́ние рек – больша́я пробле́ма. | Die Flussverschmutzung ist ein großes Problem.
+защища́ть | На́до защища́ть леса́ от вы́рубки. | Man muss die Wälder vor Abholzung schützen.
+лес | Мы гуля́ли в лесу́ три часа́. | Wir sind drei Stunden im Wald spazieren gegangen.
+наводне́ние | Наводне́ние затопи́ло пол-го́рода. | Die Überschwemmung hat die halbe Stadt überflutet.
+смысл жи́зни | В чём для тебя́ смысл жи́зни? | Worin liegt für dich der Sinn des Lebens?
+сча́стье | Сча́стье в ме́лочах. | Das Glück liegt in den Kleinigkeiten.
+свобо́да | Свобо́да – э́то не да́нность. | Freiheit ist nicht selbstverständlich.
+досто́инство | Ка́ждый челове́к име́ет пра́во на досто́инство. | Jeder Mensch hat ein Recht auf Würde.
+судьба́ | Судьба́ свела́ нас сно́ва. | Das Schicksal hat uns wieder zusammengeführt.
+я ве́рю в судьбу́ | Я ве́рю в судьбу́, а ты? | Ich glaube ans Schicksal, und du?
+смотря́ с како́й стороны́ посмотре́ть | Хорошо́ ли э́то? Смотря́ с како́й стороны́ посмотре́ть. | Ist das gut? Kommt drauf an, wie man es sieht.
+це́нности | На́ши це́нности – семья́ и че́стность. | Unsere Werte sind Familie und Ehrlichkeit.
+со́весть | У меня́ чи́стая со́весть. | Ich habe ein reines Gewissen.
+иску́сственный интелле́кт | Иску́сственный интелле́кт уже́ пи́шет те́ксты. | Künstliche Intelligenz schreibt schon Texte.
+персона́льные да́нные | Не сообща́й персона́льные да́нные незнако́мым. | Gib deine persönlichen Daten nicht an Fremde weiter.
+конфиденциа́льность | Приложе́ние гаранти́рует конфиденциа́льность. | Die App garantiert Vertraulichkeit.
+телефо́нные моше́нники | Телефо́нные моше́нники звоня́т от и́мени ба́нка. | Telefonbetrüger rufen im Namen der Bank an.
+приложе́ние | Приложе́ние рабо́тает без интерне́та. | Die App funktioniert ohne Internet.
+обновле́ние | Обновле́ние испра́вило оши́бку. | Das Update hat den Fehler behoben.
+иск | Иск пода́ли на про́шлой неде́ле. | Die Klage wurde letzte Woche eingereicht.
 `;
