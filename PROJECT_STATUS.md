@@ -38,15 +38,15 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - **Sprachausgabe** über Gerätestimmen (`lib/platform.ts`), Serbisch über kroatische/serbische Stimme in Latein.
 - **Barrierefreiheit:** Tippflächen ≥ 44 pt, sichtbarer Fokus, „Bewegung reduzieren“ beachtet, Dark Mode.
 
-## 4. Inhaltsstand (03.11.2026, nach Beispielsatz-Runde 16)
+## 4. Inhaltsstand (03.11.2026, nach Etappe 38)
 
 | | Griechisch | Serbisch | Russisch |
 |---|---|---|---|
-| Einträge (Wörter + Slang) | 3.324 | 3.368 | 3.388 |
-| Ziel 5.000 erreicht | 66 % | 67 % | 68 % |
-| Wörter mit Beispielsatz | 89 % | 88 % | 87 % |
+| Einträge (Wörter + Slang) | 3.407 | 3.450 | 3.471 |
+| Ziel 5.000 erreicht | 68 % | 69 % | 69 % |
+| Wörter mit Beispielsatz | 90 % | 88 % | 88 % |
 | davon A1 / A2 / B1 / B2 / C1 / C2 | 95 / 99 / 100 / 100 / 66 / 24 % | 94 / 100 / 100 / 100 / 57 / 25 % | 89 / 100 / 100 / 100 / 57 / 24 % |
-| Module / Lektionen | 261 / 878 | 261 / 879 | 261 / 881 |
+| Module / Lektionen | 266 / 898 | 266 / 899 | 266 / 901 |
 
 - Wortlisten: `src/data/vocab/{el,sr,ru}{,2..31}.ts` (96 Dateien, ~1,6 MB Text) + Nachtragslisten `{el,sr,ru}Ex.ts` (Beispielsätze).
 - Seit Etappe 22 hat **jedes neue Wort** einen Beispielsatz (per Test erzwungen ab Datei 19).
@@ -87,6 +87,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 01.11.2026: Etappen 24–33 (je ~70–90 neue Einträge pro Sprache, alle mit Beispielsatz), Beispielsatz-Runden 3–12 (B1 und A2 vollständig, B2 auf ~80 %), 3.000-Marke überschritten, Messung Ladezeit; danach **Planungsauftrag**: diese drei Steuerdateien angelegt. Keine Code-Änderungen in dieser Sitzung nach Runde 12.
 - 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 und Phase 1 erledigt (Start 1,5 s → 0,47 s). Weiter mit Phase 2 (Inhalte).
 - 03.11.2026: Etappe 34 (Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik) – ~95 neue Einträge je Sprache (beste Quote bisher, spezifische Themen wirken).
+- 03.11.2026: Etappe 38 – +83/+82/+83 Einträge (Profiküche, Wildtiere & Insekten, Spiele & Hobbys, Elektriker & Installateur, Notfälle).
 - 03.11.2026: Beispielsatz-Runde 16 – A1 fast komplett (Fragewörter, Smalltalk, Berufe, Wochentage), Griechisch C1 auf 66 %.
 - 03.11.2026: Etappe 37 – +56/+55/+58 Einträge (Recht, Finanzen, Technik, Kfz, Landwirtschaft); ~50 % waren schon vorhanden.
 - 03.11.2026: Beispielsatz-Runde 15 – B2 komplett (100 %), dazu A1-Wochentage, Monate und Berufe.
