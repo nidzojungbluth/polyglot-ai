@@ -38,15 +38,15 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - **Sprachausgabe** über Gerätestimmen (`lib/platform.ts`), Serbisch über kroatische/serbische Stimme in Latein.
 - **Barrierefreiheit:** Tippflächen ≥ 44 pt, sichtbarer Fokus, „Bewegung reduzieren“ beachtet, Dark Mode.
 
-## 4. Inhaltsstand (03.11.2026, nach Etappe 34)
+## 4. Inhaltsstand (03.11.2026, nach Etappe 35)
 
 | | Griechisch | Serbisch | Russisch |
 |---|---|---|---|
 | Einträge (Wörter + Slang) | 3.190 | 3.238 | 3.253 |
-| Ziel 5.000 erreicht | 62 % | 63 % | 63 % |
+| Ziel 5.000 erreicht | 64 % | 65 % | 65 % |
 | Wörter mit Beispielsatz | 85 % | 84 % | 83 % |
-| davon A1 / A2 / B1 / B2 / C1 / C2 | 90 / 99 / 100 / 93 / 30 / 9 % | 81 / 100 / 100 / 91 / 30 / 12 % | 81 / 100 / 100 / 89 / 33 / 11 % |
-| Module / Lektionen | 246 / ~820 | 246 / ~820 | 246 / ~820 |
+| davon A1 / A2 / B1 / B2 / C1 / C2 | 90 / 99 / 100 / 94 / 47 / 9 % | 81 / 100 / 100 / 92 / 48 / 12 % | 81 / 100 / 100 / 89 / 48 / 11 % |
+| Module / Lektionen | 251 / 838 | 251 / 839 | 251 / 841 |
 
 - Wortlisten: `src/data/vocab/{el,sr,ru}{,2..31}.ts` (96 Dateien, ~1,6 MB Text) + Nachtragslisten `{el,sr,ru}Ex.ts` (Beispielsätze).
 - Seit Etappe 22 hat **jedes neue Wort** einen Beispielsatz (per Test erzwungen ab Datei 19).
