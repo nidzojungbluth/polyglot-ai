@@ -1140,4 +1140,74 @@ kontejner za reciklažu | Plastiku baci u kontejner za reciklažu. | Wirf den Ku
 energetski razred | Frižider ima energetski razred A. | Der Kühlschrank hat Energieeffizienzklasse A.
 vozačka dozvola | Još nemam vozačku dozvolu. | Ich habe noch keinen Führerschein.
 sipati gorivo | Moram da sipam gorivo pre puta. | Ich muss vor der Fahrt tanken.
+poreska prijava | Poresku prijavu predajem elektronski. | Die Steuererklärung reiche ich elektronisch ein.
+bankomat | Bankomat ne radi, idem do drugog. | Der Automat funktioniert nicht, ich gehe zu einem anderen.
+provizija | Za podizanje u drugoj banci plaća se provizija. | Für Abhebungen bei einer anderen Bank zahlt man eine Gebühr.
+pubertet | Ćerka je ušla u pubertet. | Meine Tochter ist in die Pubertät gekommen.
+sastojci | Svi sastojci su sa pijace. | Alle Zutaten sind vom Markt.
+post | Božićni post traje šest nedelja. | Das Weihnachtsfasten dauert sechs Wochen.
+platni listić | Na platnom listiću vidiš sve odbitke. | Auf dem Lohnzettel siehst du alle Abzüge.
+naknada za nezaposlene | Naknada za nezaposlene traje šest meseci. | Das Arbeitslosengeld gibt es sechs Monate.
+otkazni rok | Otkazni rok je trideset dana. | Die Kündigungsfrist beträgt dreißig Tage.
+doprinosi | Doprinosi se plaćaju svakog meseca. | Die Sozialabgaben werden jeden Monat gezahlt.
+inspekcija rada | Inspekcija rada je kontrolisala magacin. | Die Arbeitsinspektion hat das Lager kontrolliert.
+električni trotinet | Na posao idem električnim trotinetom. | Ich fahre mit dem E-Scooter zur Arbeit.
+žuta traka | Ne vozi po žutoj traci. | Fahr nicht auf der Busspur.
+mesečna karta | Mesečna karta važi za sve linije. | Die Monatskarte gilt für alle Linien.
+pešački prelaz | Automobili ne staju na pešačkom prelazu. | Die Autos halten nicht am Fußgängerüberweg.
+klima | Klima kaplje vodu. | Die Klimaanlage tropft.
+izolacija | Bez izolacije je kuća hladna. | Ohne Dämmung ist das Haus kalt.
+benzinska pumpa | Stani na prvoj benzinskoj pumpi. | Halt an der ersten Tankstelle an.
+putarina | Putarina do Niša je skupa. | Die Maut bis Niš ist teuer.
+autoput | Autoput je pun kamiona. | Die Autobahn ist voller Lkw.
+rent-a-kar | Na aerodromu smo uzeli rent-a-kar. | Am Flughafen haben wir einen Mietwagen genommen.
+guma | Guma treba da se napumpa. | Der Reifen muss aufgepumpt werden.
+probušila mi se guma | Probušila mi se guma usred puta. | Mitten auf der Strecke hatte ich einen Platten.
+pomoć na putu | Čekamo pomoć na putu već sat vremena. | Wir warten seit einer Stunde auf die Pannenhilfe.
+ograničenje brzine | Ograničenje brzine ovde je pedeset. | Das Tempolimit hier ist fünfzig.
+šlep služba | Šlep služba je odvezla auto u servis. | Der Abschleppdienst hat das Auto in die Werkstatt gebracht.
+auto-osiguranje | Auto-osiguranje ističe u maju. | Die Kfz-Versicherung läuft im Mai ab.
+tehnički pregled | Auto je prošao tehnički pregled. | Das Auto hat die Hauptuntersuchung bestanden.
+želim da uložim žalbu | Želim da uložim žalbu na uslugu. | Ich möchte mich über den Service beschweren.
+nisam zadovoljan | Nisam zadovoljan popravkom. | Ich bin mit der Reparatur nicht zufrieden.
+zahtevam | Zahtevam da mi vratite novac. | Ich verlange, dass Sie mir das Geld zurückgeben.
+to je neprihvatljivo | Čekati tri sata, to je neprihvatljivo. | Drei Stunden zu warten ist inakzeptabel.
+želim da razgovaram sa nadležnim | Izvinite, želim da razgovaram sa nadležnim. | Entschuldigung, ich möchte mit dem Zuständigen sprechen.
+očekujem odgovor | Očekujem odgovor do petka. | Ich erwarte eine Antwort bis Freitag.
+pismeno | Pošaljite mi ponudu pismeno. | Schicken Sie mir das Angebot schriftlich.
+izvinjavamo se zbog neprijatnosti | Izvinjavamo se zbog neprijatnosti i dajemo vam popust. | Wir entschuldigen uns für die Unannehmlichkeiten und geben Ihnen Rabatt.
+proverićemo | Hvala na prijavi, proverićemo. | Danke für die Meldung, wir prüfen das.
+ako se problem ne reši, … | Ako se problem ne reši, obratiću se zaštiti potrošača. | Wenn das Problem nicht gelöst wird, wende ich mich an den Verbraucherschutz.
+knjiga žalbi | Tražio sam knjigu žalbi u prodavnici. | Ich habe im Laden nach dem Beschwerdebuch gefragt.
+inflacija | Inflacija je dostigla deset odsto. | Die Inflation erreichte zehn Prozent.
+kamatna stopa | Kamatna stopa na stambeni kredit je porasla. | Der Zins für den Wohnkredit ist gestiegen.
+porezi | Porezi na gorivo su visoki. | Die Steuern auf Kraftstoff sind hoch.
+PDV | Cena uključuje PDV. | Der Preis enthält die Mehrwertsteuer.
+investicije | Strane investicije su porasle. | Die ausländischen Investitionen sind gestiegen.
+dug | Javni dug je sve veći. | Die Staatsschulden werden immer größer.
+vegetarijanac | Moj brat je vegetarijanac. | Mein Bruder ist Vegetarier.
+vegan | Imate li nešto za vegane na meniju? | Haben Sie etwas für Veganer auf der Karte?
+bez glutena | Tražim hleb bez glutena. | Ich suche glutenfreies Brot.
+organski | Kupujem organsko povrće na pijaci. | Ich kaufe Bio-Gemüse auf dem Markt.
+mediteranska ishrana | Mediteranska ishrana se smatra zdravom. | Die Mittelmeerernährung gilt als gesund.
+prerađena hrana | Pokušavam da jedem manje prerađene hrane. | Ich versuche, weniger verarbeitete Lebensmittel zu essen.
+masti | Ovo jelo ima mnogo masti. | Dieses Gericht hat viel Fett.
+vlakna | Pasulj ima mnogo vlakana. | Bohnen haben viele Ballaststoffe.
+netolerancija | Imam netoleranciju na laktozu. | Ich habe eine Laktoseunverträglichkeit.
+domaći proizvodi | Na selu kupujemo domaće proizvode. | Auf dem Land kaufen wir hausgemachte Produkte.
+polisa osiguranja | Pažljivo pročitaj polisu osiguranja. | Lies die Versicherungspolice genau.
+osiguranje stana | Osiguranje stana pokriva krađu. | Die Hausratversicherung deckt Diebstahl ab.
+pretplata | Pretplata za teretanu je četiri hiljade mesečno. | Das Abo fürs Fitnessstudio kostet viertausend im Monat.
+produženje | Produženje ugovora je automatsko. | Die Vertragsverlängerung erfolgt automatisch.
+ugovorna obaveza | Ugovorna obaveza traje dve godine. | Die Vertragsbindung dauert zwei Jahre.
+mesečna pretplata | Mesečna pretplata za telefon je hiljadu dinara. | Die monatliche Grundgebühr fürs Telefon beträgt tausend Dinar.
+uslovi korišćenja | Niko ne čita uslove korišćenja. | Niemand liest die Nutzungsbedingungen.
+otkazati pretplatu | Otkazao sam pretplatu na kablovsku. | Ich habe das Kabelfernsehen-Abo gekündigt.
+specijalista | Za specijalistu se čeka mesecima. | Auf einen Facharzt wartet man Monate.
+sistematski pregled | Na poslu imamo sistematski pregled svake godine. | Auf der Arbeit haben wir jedes Jahr eine Vorsorgeuntersuchung.
+urgentni centar | Odveli su ga u urgentni centar. | Man hat ihn in die Notaufnahme gebracht.
+državna bolnica | U državnoj bolnici lečenje je besplatno. | Im staatlichen Krankenhaus ist die Behandlung kostenlos.
+privatna klinika | Privatna klinika je skupa, ali brza. | Die Privatklinik ist teuer, aber schnell.
+participacija | Za ovaj pregled se plaća participacija. | Für diese Untersuchung zahlt man eine Zuzahlung.
+društvene mreže | Provodim previše vremena na društvenim mrežama. | Ich verbringe zu viel Zeit in sozialen Netzwerken.
 `;

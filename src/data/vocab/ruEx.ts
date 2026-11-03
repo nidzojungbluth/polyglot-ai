@@ -1142,4 +1142,67 @@ export default `
 ка́ршеринг | Я по́льзуюсь ка́ршерингом вме́сто свое́й маши́ны. | Ich nutze Carsharing statt eines eigenen Autos.
 потребле́ние | Потребле́ние электри́чества растёт зимо́й. | Der Stromverbrauch steigt im Winter.
 центра́льное отопле́ние | Центра́льное отопле́ние включа́ют в октябре́. | Die Zentralheizung wird im Oktober eingeschaltet.
+нало́говая деклара́ция | Нало́говую деклара́цию я подаю́ онла́йн. | Die Steuererklärung reiche ich online ein.
+банкома́т | Банкома́т не рабо́тает, пойду́ к друго́му. | Der Automat funktioniert nicht, ich gehe zu einem anderen.
+коми́ссия | За сня́тие в чужо́м ба́нке беру́т коми́ссию. | Für Abhebungen bei einer fremden Bank wird eine Gebühr erhoben.
+перехо́дный во́зраст | У сы́на перехо́дный во́зраст. | Mein Sohn ist in der Pubertät.
+ингредие́нты | Все ингредие́нты с ры́нка. | Alle Zutaten sind vom Markt.
+све́жий | Хлеб све́жий, то́лько из пека́рни. | Das Brot ist frisch, direkt aus der Bäckerei.
+по́рция | Дава́йте одну́ по́рцию на двои́х. | Geben Sie uns eine Portion für zwei.
+МРОТ | Моя́ зарпла́та чуть вы́ше МРОТ. | Mein Lohn liegt knapp über dem Mindestlohn.
+расчётный листо́к | В расчётном листке́ ви́дно все вы́четы. | Im Lohnzettel sieht man alle Abzüge.
+непо́лный рабо́чий день | Ма́ма рабо́тает непо́лный рабо́чий день. | Mama arbeitet Teilzeit.
+посо́бие по безрабо́тице | Посо́бие по безрабо́тице о́чень ма́ленькое. | Das Arbeitslosengeld ist sehr gering.
+трудова́я инспе́кция | Трудова́я инспе́кция прове́рила склад. | Die Arbeitsinspektion hat das Lager geprüft.
+электросамока́т | Я е́зжу на рабо́ту на электросамока́те. | Ich fahre mit dem E-Scooter zur Arbeit.
+вы́деленная полоса́ | По вы́деленной полосе́ е́здят то́лько авто́бусы. | Auf der Busspur fahren nur Busse.
+час пик | В час пик лу́чше е́хать на метро́. | Zur Hauptverkehrszeit fährt man besser mit der Metro.
+проездно́й | Проездно́й де́йствует на все ви́ды тра́нспорта. | Die Monatskarte gilt für alle Verkehrsmittel.
+пешехо́дный перехо́д | Перехо́ди у́лицу то́лько по пешехо́дному перехо́ду. | Überquere die Straße nur am Fußgängerüberweg.
+счёт за электри́чество | Счёт за электри́чество пришёл огро́мный. | Die Stromrechnung kam riesig.
+кондиционе́р | Кондиционе́р течёт. | Die Klimaanlage tropft.
+отключе́ние горя́чей воды́ | Ле́том у нас отключе́ние горя́чей воды́ на две неде́ли. | Im Sommer wird bei uns zwei Wochen lang das Warmwasser abgestellt.
+счётчик | Переда́й показа́ния счётчика до двадца́того. | Melde den Zählerstand bis zum Zwanzigsten.
+утепле́ние | Без утепле́ния в кварти́ре хо́лодно. | Ohne Dämmung ist es in der Wohnung kalt.
+эконо́мить электроэне́ргию | Ла́мпы LED помога́ют эконо́мить электроэне́ргию. | LED-Lampen helfen, Strom zu sparen.
+газ | Мы гото́вим на га́зе. | Wir kochen mit Gas.
+разде́льный сбор му́сора | В на́шем до́ме ввели́ разде́льный сбор му́сора. | In unserem Haus wurde Mülltrennung eingeführt.
+води́тельские права́ | У меня́ ещё нет води́тельских прав. | Ich habe noch keinen Führerschein.
+запра́вить маши́ну | На́до запра́вить маши́ну пе́ред доро́гой. | Wir müssen vor der Fahrt tanken.
+пла́тная доро́га | Пла́тная доро́га быстре́е, но доро́же. | Die Mautstraße ist schneller, aber teurer.
+тра́сса | На тра́ссе мно́го фу́р. | Auf der Fernstraße sind viele Lkw.
+аре́нда автомоби́ля | Аре́нда автомоби́ля в аэропорту́ доро́же. | Ein Mietwagen am Flughafen ist teurer.
+у меня́ проко́л | У меня́ проко́л, придётся меня́ть колесо́. | Ich habe einen Platten, ich muss das Rad wechseln.
+ограниче́ние ско́рости | Ограниче́ние ско́рости в го́роде – шестьдеся́т. | Das Tempolimit in der Stadt beträgt sechzig.
+ГИБДД | Его́ останови́л инспе́ктор ГИБДД. | Ein Verkehrspolizist hat ihn angehalten.
+ОСА́ГО | Без ОСА́ГО е́здить нельзя́. | Ohne Kfz-Haftpflichtversicherung darf man nicht fahren.
+я хочу́ пода́ть жа́лобу | Я хочу́ пода́ть жа́лобу на обслу́живание. | Ich möchte mich über den Service beschweren.
+я недово́лен | Я недово́лен ремо́нтом. | Ich bin mit der Reparatur unzufrieden.
+я тре́бую | Я тре́бую верну́ть де́ньги. | Ich verlange mein Geld zurück.
+э́то недопусти́мо | Ждать три часа́ – э́то недопусти́мо. | Drei Stunden zu warten ist inakzeptabel.
+позови́те администра́тора | Позови́те администра́тора, пожа́луйста. | Rufen Sie bitte den Geschäftsführer.
+я жду отве́та | Я жду отве́та до пя́тницы. | Ich erwarte eine Antwort bis Freitag.
+в пи́сьменной фо́рме | Пришли́те предложе́ние в пи́сьменной фо́рме. | Schicken Sie das Angebot schriftlich.
+прино́сим извине́ния за неудо́бства | Прино́сим извине́ния за неудо́бства, вот ва́ша ски́дка. | Wir bitten die Unannehmlichkeiten zu entschuldigen, hier ist Ihr Rabatt.
+мы разберёмся | Спаси́бо, что сообщи́ли, мы разберёмся. | Danke für den Hinweis, wir kümmern uns darum.
+е́сли вопро́с не бу́дет решён, … | Е́сли вопро́с не бу́дет решён, я обращу́сь в Роспотребнадзо́р. | Wenn die Frage nicht gelöst wird, wende ich mich an die Verbraucherschutzbehörde.
+кни́га жа́лоб | Я попроси́л кни́гу жа́лоб. | Ich habe nach dem Beschwerdebuch gefragt.
+экономи́ческий кри́зис | Экономи́ческий кри́зис уда́рил по ма́лому би́знесу. | Die Wirtschaftskrise hat kleine Unternehmen getroffen.
+нало́ги | Нало́ги на бензи́н высо́кие. | Die Steuern auf Benzin sind hoch.
+НДС | Цена́ включа́ет НДС. | Der Preis enthält die Mehrwertsteuer.
+курс рубля́ | Курс рубля́ сего́дня упа́л. | Der Rubelkurs ist heute gefallen.
+вегетариа́нец | Мой брат – вегетариа́нец. | Mein Bruder ist Vegetarier.
+вега́н | У вас есть что́-то для вега́нов? | Haben Sie etwas für Veganer?
+без глюте́на | Я ищу́ хлеб без глюте́на. | Ich suche glutenfreies Brot.
+органи́ческий | Я покупа́ю органи́ческие о́вощи. | Ich kaufe Bio-Gemüse.
+средиземномо́рская дие́та | Средиземномо́рская дие́та счита́ется здоро́вой. | Die Mittelmeerernährung gilt als gesund.
+полуфабрика́ты | Я стара́юсь не покупа́ть полуфабрика́ты. | Ich versuche, keine Fertigprodukte zu kaufen.
+жиры́ | В э́том блю́де мно́го жиро́в. | In diesem Gericht ist viel Fett.
+клетча́тка | В гре́чке мно́го клетча́тки. | Buchweizen enthält viele Ballaststoffe.
+непереноси́мость | У меня́ непереноси́мость лакто́зы. | Ich habe eine Laktoseunverträglichkeit.
+ферме́рские проду́кты | На ры́нке продаю́т ферме́рские проду́кты. | Auf dem Markt werden Produkte vom Bauernhof verkauft.
+страхово́й по́лис | Внима́тельно прочита́й страхово́й по́лис. | Lies die Versicherungspolice genau.
+страхова́ние кварти́ры | Страхова́ние кварти́ры покрыва́ет кра́жу. | Die Wohnungsversicherung deckt Diebstahl ab.
+продле́ние | Продле́ние подпи́ски автомати́ческое. | Die Verlängerung des Abos erfolgt automatisch.
+платёж | Платёж прошёл успе́шно. | Die Zahlung war erfolgreich.
 `;

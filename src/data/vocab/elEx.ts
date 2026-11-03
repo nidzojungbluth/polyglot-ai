@@ -1141,4 +1141,72 @@ export default `
 η εθνική οδός | Πήραμε την εθνική οδό για την Πάτρα. | Wir haben die Nationalstraße nach Patras genommen.
 το ενοικιαζόμενο αυτοκίνητο | Στο νησί νοικιάσαμε ενοικιαζόμενο αυτοκίνητο. | Auf der Insel haben wir einen Mietwagen genommen.
 έπαθα λάστιχο | Έπαθα λάστιχο στη μέση του πουθενά. | Ich hatte mitten im Nirgendwo einen Platten.
+το ηλεκτρικό πατίνι | Πάω στη δουλειά με ηλεκτρικό πατίνι. | Ich fahre mit dem E-Scooter zur Arbeit.
+η λεωφορειολωρίδα | Μην οδηγείς στη λεωφορειολωρίδα. | Fahr nicht auf der Busspur.
+το κλιματιστικό | Το κλιματιστικό στάζει νερό. | Die Klimaanlage tropft Wasser.
+η μόνωση | Χωρίς μόνωση το σπίτι είναι κρύο. | Ohne Dämmung ist das Haus kalt.
+το λάστιχο | Το λάστιχο θέλει αέρα. | Der Reifen braucht Luft.
+η οδική βοήθεια | Περιμένουμε την οδική βοήθεια μία ώρα. | Wir warten seit einer Stunde auf die Pannenhilfe.
+το όριο ταχύτητας | Το όριο ταχύτητας εδώ είναι πενήντα. | Das Tempolimit hier ist fünfzig.
+το παρκόμετρο | Βάλε κέρματα στο παρκόμετρο. | Wirf Münzen in die Parkuhr.
+η ασφάλεια αυτοκινήτου | Η ασφάλεια αυτοκινήτου λήγει τον Μάιο. | Die Kfz-Versicherung läuft im Mai ab.
+το ΚΤΕΟ | Το αυτοκίνητο πέρασε το ΚΤΕΟ. | Das Auto hat die Hauptuntersuchung bestanden.
+θα ήθελα να κάνω ένα παράπονο | Θα ήθελα να κάνω ένα παράπονο για το δωμάτιο. | Ich möchte mich über das Zimmer beschweren.
+δεν είμαι ικανοποιημένος | Δεν είμαι ικανοποιημένος με την επισκευή. | Ich bin mit der Reparatur nicht zufrieden.
+απαιτώ | Απαιτώ να μου επιστρέψετε τα χρήματα. | Ich verlange, dass Sie mir das Geld zurückgeben.
+είναι απαράδεκτο | Είναι απαράδεκτο να περιμένουμε τρεις ώρες. | Es ist inakzeptabel, drei Stunden zu warten.
+θα ήθελα να μιλήσω με τον υπεύθυνο | Συγγνώμη, θα ήθελα να μιλήσω με τον υπεύθυνο. | Entschuldigung, ich möchte mit dem Verantwortlichen sprechen.
+περιμένω απάντηση | Περιμένω απάντηση μέχρι την Παρασκευή. | Ich erwarte eine Antwort bis Freitag.
+γραπτώς | Στείλτε μου την προσφορά γραπτώς. | Schicken Sie mir das Angebot schriftlich.
+λυπούμαστε για την ταλαιπωρία | Λυπούμαστε για την ταλαιπωρία και σας κάνουμε έκπτωση. | Wir bedauern die Unannehmlichkeiten und geben Ihnen einen Rabatt.
+θα το εξετάσουμε | Ευχαριστούμε για το παράπονο, θα το εξετάσουμε. | Danke für die Beschwerde, wir werden das prüfen.
+αν δεν λυθεί το θέμα, … | Αν δεν λυθεί το θέμα, θα πάω στον συνήγορο του καταναλωτή. | Wenn das nicht gelöst wird, gehe ich zur Verbraucherschlichtung.
+ο πληθωρισμός | Ο πληθωρισμός έφτασε το πέντε τοις εκατό. | Die Inflation erreichte fünf Prozent.
+το επιτόκιο | Το επιτόκιο του στεγαστικού ανέβηκε. | Der Zinssatz für den Wohnkredit ist gestiegen.
+οι φόροι | Οι φόροι στα καύσιμα είναι υψηλοί. | Die Steuern auf Kraftstoff sind hoch.
+ο ΦΠΑ | Η τιμή περιλαμβάνει ΦΠΑ. | Der Preis enthält die Mehrwertsteuer.
+οι επενδύσεις | Οι ξένες επενδύσεις αυξήθηκαν. | Die ausländischen Investitionen sind gestiegen.
+το χρέος | Το δημόσιο χρέος είναι πολύ μεγάλο. | Die Staatsschulden sind sehr hoch.
+χορτοφάγος | Η αδερφή μου είναι χορτοφάγος. | Meine Schwester ist Vegetarierin.
+βίγκαν | Έχετε κάτι βίγκαν στο μενού; | Haben Sie etwas Veganes auf der Karte?
+χωρίς γλουτένη | Ψάχνω ψωμί χωρίς γλουτένη. | Ich suche glutenfreies Brot.
+βιολογικός | Αγοράζω βιολογικά λαχανικά από τη λαϊκή. | Ich kaufe Bio-Gemüse auf dem Wochenmarkt.
+τα νηστίσιμα | Τη Σαρακοστή οι ταβέρνες έχουν νηστίσιμα. | In der Fastenzeit haben die Tavernen Fastenspeisen.
+τα λαδερά | Τα λαδερά της γιαγιάς είναι τα καλύτερα. | Omas Gemüsegerichte in Olivenöl sind die besten.
+η μεσογειακή διατροφή | Η μεσογειακή διατροφή θεωρείται πολύ υγιεινή. | Die Mittelmeerernährung gilt als sehr gesund.
+τα επεξεργασμένα τρόφιμα | Προσπαθώ να τρώω λιγότερα επεξεργασμένα τρόφιμα. | Ich versuche, weniger verarbeitete Lebensmittel zu essen.
+τα λιπαρά | Το φαγητό έχει πολλά λιπαρά. | Das Essen hat viel Fett.
+οι φυτικές ίνες | Τα όσπρια έχουν πολλές φυτικές ίνες. | Hülsenfrüchte haben viele Ballaststoffe.
+τα τοπικά προϊόντα | Στο νησί αγοράζουμε τοπικά προϊόντα. | Auf der Insel kaufen wir regionale Produkte.
+το ασφαλιστήριο | Διάβασε καλά το ασφαλιστήριο. | Lies die Versicherungspolice gut durch.
+η ασφάλεια κατοικίας | Η ασφάλεια κατοικίας καλύπτει την κλοπή. | Die Hausratversicherung deckt Diebstahl ab.
+η συνδρομή | Η συνδρομή στο γυμναστήριο είναι τριάντα ευρώ. | Der Beitrag fürs Fitnessstudio beträgt dreißig Euro.
+η ανανέωση | Η ανανέωση γίνεται αυτόματα κάθε χρόνο. | Die Verlängerung erfolgt jedes Jahr automatisch.
+το πάγιο | Το πάγιο του τηλεφώνου είναι δεκαπέντε ευρώ. | Die Grundgebühr fürs Telefon beträgt fünfzehn Euro.
+άτοκες δόσεις | Το κινητό το πήρα με δώδεκα άτοκες δόσεις. | Das Handy habe ich in zwölf zinslosen Raten gekauft.
+η χρέωση | Δεν καταλαβαίνω αυτή τη χρέωση στον λογαριασμό. | Ich verstehe diese Gebühr auf der Rechnung nicht.
+η εξυπηρέτηση πελατών | Πήρα την εξυπηρέτηση πελατών τρεις φορές. | Ich habe dreimal den Kundenservice angerufen.
+οι όροι χρήσης | Κανείς δεν διαβάζει τους όρους χρήσης. | Niemand liest die Nutzungsbedingungen.
+η καταγγελία σύμβασης | Έστειλα την καταγγελία σύμβασης με συστημένο. | Ich habe die Vertragskündigung per Einschreiben geschickt.
+ο οικογενειακός γιατρός | Ο οικογενειακός γιατρός με έστειλε σε ειδικό. | Der Hausarzt hat mich zum Facharzt geschickt.
+ο ειδικός γιατρός | Για ραντεβού με ειδικό γιατρό περιμένεις εβδομάδες. | Auf einen Facharzttermin wartet man Wochen.
+το παραπεμπτικό | Χωρίς παραπεμπτικό πληρώνεις τις εξετάσεις. | Ohne Überweisung zahlst du die Untersuchungen selbst.
+οι εξετάσεις αίματος | Οι εξετάσεις αίματος βγήκαν καλές. | Die Blutwerte waren gut.
+ο προληπτικός έλεγχος | Κάνε προληπτικό έλεγχο μία φορά τον χρόνο. | Mach einmal im Jahr eine Vorsorgeuntersuchung.
+το δημόσιο νοσοκομείο | Στο δημόσιο νοσοκομείο η περίθαλψη είναι δωρεάν. | Im öffentlichen Krankenhaus ist die Behandlung kostenlos.
+η ιδιωτική κλινική | Η ιδιωτική κλινική είναι ακριβή αλλά γρήγορη. | Die Privatklinik ist teuer, aber schnell.
+η συμμετοχή | Η συμμετοχή στα φάρμακα είναι είκοσι πέντε τοις εκατό. | Die Zuzahlung für Medikamente beträgt fünfundzwanzig Prozent.
+τα μέσα κοινωνικής δικτύωσης | Περνάω πολλή ώρα στα μέσα κοινωνικής δικτύωσης. | Ich verbringe viel Zeit in den sozialen Medien.
+κάνω like | Έκανα like στη φωτογραφία σου. | Ich habe dein Foto geliked.
+κοινοποιώ | Μην κοινοποιείς ειδήσεις χωρίς να τις ελέγξεις. | Teile keine Nachrichten, ohne sie zu prüfen.
+το προφίλ | Άλλαξα τη φωτογραφία του προφίλ μου. | Ich habe mein Profilbild geändert.
+οι ψευδείς ειδήσεις | Οι ψευδείς ειδήσεις διαδίδονται γρήγορα. | Falschmeldungen verbreiten sich schnell.
+η διαδικτυακή παρενόχληση | Το σχολείο μιλάει στα παιδιά για τη διαδικτυακή παρενόχληση. | Die Schule spricht mit den Kindern über Cybermobbing.
+μπλοκάρω | Τον μπλόκαρα γιατί μου έστελνε συνέχεια μηνύματα. | Ich habe ihn blockiert, weil er mir ständig schrieb.
+το γυμνάσιο | Ο γιος μου πάει δευτέρα γυμνασίου. | Mein Sohn geht in die zweite Klasse der Mittelstufe.
+το λύκειο | Στο λύκειο διαβάζουν πολύ για τις εξετάσεις. | Im Lyzeum lernt man viel für die Prüfungen.
+οι Πανελλήνιες | Οι Πανελλήνιες είναι πολύ αγχωτικές. | Die landesweiten Aufnahmeprüfungen sind sehr stressig.
+η συνάντηση γονέων | Η συνάντηση γονέων είναι αύριο στις έξι. | Der Elternabend ist morgen um sechs.
+τα όρια | Τα παιδιά χρειάζονται όρια. | Kinder brauchen Grenzen.
+ο έπαινος | Ο έπαινος δίνει κίνητρο στα παιδιά. | Lob motiviert Kinder.
 `;
