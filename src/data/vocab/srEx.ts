@@ -1330,4 +1330,44 @@ zidar | Zidar gradi zid od cigle. | Der Maurer baut eine Ziegelmauer.
 opozicija | Opozicija je glasala protiv zakona. | Die Opposition hat gegen das Gesetz gestimmt.
 predlog zakona | Predlog zakona je upućen skupštini. | Der Gesetzentwurf wurde dem Parlament vorgelegt.
 lažne vesti | Lažne vesti se brzo šire. | Falschnachrichten verbreiten sich schnell.
+u | Ključevi su u torbi. | Die Schlüssel sind in der Tasche.
+na | Telefon je na stolu. | Das Handy liegt auf dem Tisch.
+sa | Idem u bioskop sa sestrom. | Ich gehe mit meiner Schwester ins Kino.
+za | Ovaj poklon je za tebe. | Dieses Geschenk ist für dich.
+do | Radim do pet. | Ich arbeite bis fünf.
+posle | Posle ručka idemo u šetnju. | Nach dem Mittagessen gehen wir spazieren.
+pre | Pre posla pijem kafu. | Vor der Arbeit trinke ich Kaffee.
+ispod | Mačka spava ispod kreveta. | Die Katze schläft unter dem Bett.
+iznad | Iznad stola visi lampa. | Über dem Tisch hängt eine Lampe.
+prema | Idi prema centru. | Geh in Richtung Zentrum.
+automehaničar | Automehaničar je popravio kočnice. | Der Kfz-Mechaniker hat die Bremsen repariert.
+zajednički imenitelj | Konačno smo našli zajednički imenitelj. | Endlich haben wir einen gemeinsamen Nenner gefunden.
+kompromisno rešenje | Kompromisno rešenje je odgovaralo svima. | Die Kompromisslösung passte allen.
+o tome se ne pregovara | Bezbednost je na prvom mestu, o tome se ne pregovara. | Sicherheit geht vor, darüber wird nicht verhandelt.
+postavljam granice | Na poslu jasno postavljam granice. | Bei der Arbeit setze ich klare Grenzen.
+povratiti poverenje | Teško je povratiti poverenje posle laži. | Nach einer Lüge ist es schwer, das Vertrauen wiederherzustellen.
+zaljubljenost | Zaljubljenost brzo prođe. | Verliebtheit vergeht schnell.
+ljubav na prvi pogled | Bila je to ljubav na prvi pogled. | Es war Liebe auf den ersten Blick.
+nežnost | Pokazuje nežnost prema deci. | Er zeigt Zärtlichkeit gegenüber den Kindern.
+bliskost | Između nas postoji velika bliskost. | Zwischen uns gibt es große Vertrautheit.
+čežnja | Oseća čežnju za domom. | Er hat Sehnsucht nach Zuhause.
+posvećenost | Njena posvećenost poslu je velika. | Ihre Hingabe an die Arbeit ist groß.
+dušo moja | Laku noć, dušo moja. | Gute Nacht, mein Schatz.
+ludo sam zaljubljen | Ludo sam zaljubljen u nju. | Ich bin wahnsinnig in sie verliebt.
+rastanak | Rastanak na aerodromu je bio težak. | Der Abschied am Flughafen war schwer.
+zakupac | Zakupac mora da plati kiriju do petog. | Der Mieter muss die Miete bis zum Fünften zahlen.
+zakupodavac | Zakupodavac je odgovoran za velike popravke. | Der Vermieter ist für große Reparaturen zuständig.
+otkaz ugovora | Otkaz ugovora mora biti pismen. | Die Kündigung des Vertrags muss schriftlich sein.
+prinudno iseljenje | Prinudno iseljenje je odloženo. | Die Zwangsräumung wurde aufgeschoben.
+hipoteka | Na stanu je upisana hipoteka. | Auf der Wohnung ist eine Hypothek eingetragen.
+javni beležnik | Ugovor je overen kod javnog beležnika. | Der Vertrag wurde beim Notar beglaubigt.
+vlasništvo | Stan je u vlasništvu njegove majke. | Die Wohnung ist im Eigentum seiner Mutter.
+obaveza | Plaćanje računa je tvoja obaveza. | Das Bezahlen der Rechnungen ist deine Pflicht.
+životna sredina | Moramo više da čuvamo životnu sredinu. | Wir müssen die Umwelt mehr schützen.
+požari | Leti su požari sve češći. | Im Sommer gibt es immer öfter Brände.
+toplotni talas | Toplotni talas traje već nedelju dana. | Die Hitzewelle dauert schon eine Woche.
+zagađenje | Zagađenje reka je veliki problem. | Die Flussverschmutzung ist ein großes Problem.
+zaštititi | Treba zaštititi šume od seče. | Man muss die Wälder vor Abholzung schützen.
+smisao života | Šta je za tebe smisao života? | Was ist für dich der Sinn des Lebens?
+savest | Imam čistu savest. | Ich habe ein reines Gewissen.
 `;

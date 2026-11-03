@@ -1318,4 +1318,44 @@ export default `
 чей? | Чей э́то телефо́н? | Wessen Handy ist das?
 по́сле | По́сле рабо́ты я иду́ в спортза́л. | Nach der Arbeit gehe ich ins Fitnessstudio.
 пе́ред | Мой ру́ки пе́ред едо́й. | Wasch dir vor dem Essen die Hände.
+в | Ключи́ в су́мке. | Die Schlüssel sind in der Tasche.
+на | Телефо́н на столе́. | Das Handy liegt auf dem Tisch.
+с | Я иду́ в кино́ с сестро́й. | Ich gehe mit meiner Schwester ins Kino.
+для | Э́тот пода́рок для тебя́. | Dieses Geschenk ist für dich.
+до | Я рабо́таю до пяти́. | Ich arbeite bis fünf.
+под | Ко́шка спит под крова́тью. | Die Katze schläft unter dem Bett.
+над | Над столо́м виси́т ла́мпа. | Über dem Tisch hängt eine Lampe.
+ме́жду | Апте́ка ме́жду ба́нком и по́чтой. | Die Apotheke ist zwischen der Bank und der Post.
+о́коло | Я жду тебя́ о́коло вхо́да. | Ich warte am Eingang auf dich.
+к | Я иду́ к врачу́. | Ich gehe zum Arzt.
+пе́карь | Пе́карь встаёт в три часа́ но́чи. | Der Bäcker steht um drei Uhr nachts auf.
+мясни́к | У мясника́ све́жее мя́со. | Der Metzger hat frisches Fleisch.
+парикма́хер | За́втра я иду́ к парикма́херу. | Morgen gehe ich zum Friseur.
+медсестра́ | Медсестра́ изме́рила мне давле́ние. | Die Krankenschwester hat mir den Blutdruck gemessen.
+полице́йский | Полице́йский останови́л маши́ну. | Der Polizist hat das Auto angehalten.
+пожа́рный | Пожа́рный спас котёнка. | Der Feuerwehrmann hat das Kätzchen gerettet.
+автомеха́ник | Автомеха́ник почини́л тормоза́. | Der Mechaniker hat die Bremsen repariert.
+води́тель погру́зчика | Мы и́щем води́теля погру́зчика на ночну́ю сме́ну. | Wir suchen einen Staplerfahrer für die Nachtschicht.
+строи́тель | Строи́тель рабо́тает и под дождём. | Der Bauarbeiter arbeitet auch im Regen.
+маля́р | Маля́р кра́сит гости́ную. | Der Maler streicht das Wohnzimmer.
+садо́вник | Садо́вник стрижёт газо́н. | Der Gärtner mäht den Rasen.
+фе́рмер | Фе́рмер продаёт сыр на ры́нке. | Der Landwirt verkauft Käse auf dem Markt.
+касси́р | Касси́р дал мне сда́чу. | Der Kassierer hat mir das Wechselgeld gegeben.
+убо́рщица | Убо́рщица прихо́дит по понеде́льникам. | Die Putzfrau kommt montags.
+программи́ст | Мой брат – программи́ст. | Mein Bruder ist Programmierer.
+инжене́р | Инжене́р прове́рил мост. | Der Ingenieur hat die Brücke geprüft.
+адвока́т | Мне ну́жен хоро́ший адвока́т. | Ich brauche einen guten Anwalt.
+бухга́лтер | Бухга́лтер счита́ет зарпла́ту. | Der Buchhalter berechnet die Löhne.
+секрета́рь | Секрета́рь запи́сывает на приём. | Die Sekretärin vergibt die Termine.
+пило́т | Пило́т обрати́лся к пассажи́рам. | Der Pilot wandte sich an die Passagiere.
+солда́т | Солда́т охраня́ет воро́та. | Der Soldat bewacht das Tor.
+рыба́к | Рыба́к выхо́дит в мо́ре до рассве́та. | Der Fischer fährt vor Tagesanbruch aufs Meer.
+ка́менщик | Ка́менщик кладёт кирпи́чную сте́ну. | Der Maurer mauert eine Ziegelwand.
+уступи́ть | Ну́жно уме́ть уступи́ть. | Man muss nachgeben können.
+о́бщий знамена́тель | Мы нашли́ о́бщий знамена́тель. | Wir haben einen gemeinsamen Nenner gefunden.
+э́то не обсужда́ется | Безопа́сность пре́жде всего́, э́то не обсужда́ется. | Sicherheit geht vor, darüber wird nicht diskutiert.
+ли́чные грани́цы | Уважа́й мои́ ли́чные грани́цы. | Respektiere meine persönlichen Grenzen.
+восстанови́ть дове́рие | По́сле лжи тру́дно восстанови́ть дове́рие. | Nach einer Lüge ist es schwer, das Vertrauen wiederherzustellen.
+сохраня́й споко́йствие | Сохраня́й споко́йствие и дыши́ глубоко́. | Bleib ruhig und atme tief.
+влюблённость | Влюблённость бы́стро прохо́дит. | Verliebtheit vergeht schnell.
 `;

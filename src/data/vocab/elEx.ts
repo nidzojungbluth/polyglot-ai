@@ -1319,4 +1319,44 @@ export default `
 η διαπραγμάτευση | Η διαπραγμάτευση για τον μισθό ήταν δύσκολη. | Die Gehaltsverhandlung war schwierig.
 υποχωρώ | Δεν θα υποχωρήσω σε αυτό το θέμα. | In diesem Punkt gebe ich nicht nach.
 βάζω όρια | Πρέπει να μάθεις να βάζεις όρια. | Du musst lernen, Grenzen zu setzen.
+η ελευθερία | Η ελευθερία δεν είναι δεδομένη. | Freiheit ist nicht selbstverständlich.
+η αξιοπρέπεια | Κάθε άνθρωπος έχει δικαίωμα στην αξιοπρέπεια. | Jeder Mensch hat ein Recht auf Würde.
+η μοίρα | Η μοίρα το ήθελε να ξανασυναντηθούμε. | Das Schicksal wollte, dass wir uns wiedersehen.
+πιστεύω στη μοίρα | Δεν πιστεύω στη μοίρα, πιστεύω στη δουλειά. | Ich glaube nicht ans Schicksal, ich glaube an Arbeit.
+εξαρτάται από την οπτική γωνία | Αν είναι καλή ιδέα; Εξαρτάται από την οπτική γωνία. | Ob das eine gute Idee ist? Kommt auf die Perspektive an.
+οι αξίες | Οι αξίες μας είναι η οικογένεια και η τιμιότητα. | Unsere Werte sind Familie und Ehrlichkeit.
+η συνείδηση | Έχω ήσυχη τη συνείδησή μου. | Ich habe ein reines Gewissen.
+η τεχνητή νοημοσύνη | Η τεχνητή νοημοσύνη γράφει ήδη κείμενα. | Künstliche Intelligenz schreibt bereits Texte.
+τα προσωπικά δεδομένα | Μη δίνεις τα προσωπικά δεδομένα σου σε άγνωστους. | Gib deine persönlichen Daten nicht an Fremde.
+η ιδιωτικότητα | Η εφαρμογή σέβεται την ιδιωτικότητα. | Die App respektiert die Privatsphäre.
+η ηλεκτρονική απάτη | Έπεσε θύμα ηλεκτρονικής απάτης. | Er wurde Opfer eines Online-Betrugs.
+η εφαρμογή | Η εφαρμογή δουλεύει και χωρίς ίντερνετ. | Die App funktioniert auch ohne Internet.
+η ενημέρωση | Η ενημέρωση διόρθωσε το πρόβλημα. | Das Update hat das Problem behoben.
+το cloud | Οι φωτογραφίες αποθηκεύονται στο cloud. | Die Fotos werden in der Cloud gespeichert.
+κάνω εγγραφή | Κάνω εγγραφή με το email μου. | Ich registriere mich mit meiner E-Mail.
+η πλατφόρμα | Η πλατφόρμα έχει εκατομμύρια χρήστες. | Die Plattform hat Millionen Nutzer.
+ο αλγόριθμος | Ο αλγόριθμος μου δείχνει μόνο βίντεο με γάτες. | Der Algorithmus zeigt mir nur Katzenvideos.
+ο λογαριασμός χρήστη | Διέγραψα τον λογαριασμό χρήστη μου. | Ich habe mein Benutzerkonto gelöscht.
+θα ήθελα να πω δυο λόγια | Θα ήθελα να πω δυο λόγια για τη νύφη. | Ich möchte ein paar Worte über die Braut sagen.
+εκ μέρους όλων μας | Εκ μέρους όλων μας, σας ευχαριστούμε. | Im Namen von uns allen danken wir Ihnen.
+εις υγείαν | Σηκώστε τα ποτήρια, εις υγείαν! | Hebt die Gläser, zum Wohl!
+κλείνοντας | Κλείνοντας, εύχομαι καλή επιτυχία. | Zum Schluss wünsche ich viel Erfolg.
+ευχαριστώ θερμά | Ευχαριστώ θερμά για τη φιλοξενία. | Ich danke herzlich für die Gastfreundschaft.
+με την ευκαιρία | Με την ευκαιρία, ας ευχαριστήσουμε τους γονείς. | Bei dieser Gelegenheit danken wir den Eltern.
+η ομιλία | Η ομιλία του κράτησε μισή ώρα. | Seine Rede dauerte eine halbe Stunde.
+να ζήσετε! | Να ζήσετε! Να γεράσετε μαζί! | Alles Gute! Mögt ihr zusammen alt werden!
+η πρόποση | Ο κουμπάρος έκανε την πρόποση. | Der Trauzeuge hat den Trinkspruch gehalten.
+ο αιώνας | Η εκκλησία χτίστηκε τον δωδέκατο αιώνα. | Die Kirche wurde im zwölften Jahrhundert gebaut.
+η αρχαιότητα | Στην αρχαιότητα η Αθήνα ήταν κέντρο του πολιτισμού. | In der Antike war Athen ein Zentrum der Kultur.
+η Τουρκοκρατία | Η Τουρκοκρατία κράτησε σχεδόν τέσσερις αιώνες. | Die osmanische Herrschaft dauerte fast vier Jahrhunderte.
+η απελευθέρωση | Η απελευθέρωση της πόλης γιορτάζεται κάθε χρόνο. | Die Befreiung der Stadt wird jedes Jahr gefeiert.
+η εποχή | Εκείνη την εποχή δεν υπήρχαν κινητά. | Zu der Zeit gab es keine Handys.
+τότε | Τότε ζούσαμε στο χωριό. | Damals lebten wir im Dorf.
+στις μέρες μας | Στις μέρες μας όλοι έχουν κινητό. | Heutzutage hat jeder ein Handy.
+η Κατοχή | Ο παππούς μου θυμάται την πείνα της Κατοχής. | Mein Opa erinnert sich an den Hunger der Besatzungszeit.
+ο Εμφύλιος | Ο Εμφύλιος χώρισε πολλές οικογένειες. | Der Bürgerkrieg hat viele Familien gespalten.
+η βάφτιση | Η βάφτιση θα γίνει στο εκκλησάκι του χωριού. | Die Taufe findet in der Dorfkapelle statt.
+ο νονός | Ο νονός αγοράζει τα πρώτα παπούτσια. | Der Taufpate kauft die ersten Schuhe.
+η κηδεία | Η κηδεία είναι αύριο στις έντεκα. | Die Beerdigung ist morgen um elf.
+θερμά συλλυπητήρια | Θερμά συλλυπητήρια για τον πατέρα σας. | Herzliches Beileid zum Tod Ihres Vaters.
 `;
