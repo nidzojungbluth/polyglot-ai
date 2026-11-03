@@ -1279,4 +1279,44 @@ export default `
 ο πιλότος | Ο πιλότος μίλησε στους επιβάτες. | Der Pilot sprach zu den Passagieren.
 ο στρατιώτης | Ο στρατιώτης φυλάει την πύλη. | Der Soldat bewacht das Tor.
 ο ψαράς | Ο ψαράς βγαίνει στη θάλασσα πριν το ξημέρωμα. | Der Fischer fährt vor Tagesanbruch aufs Meer.
+η αντιπολίτευση | Η αντιπολίτευση ψήφισε κατά του νόμου. | Die Opposition hat gegen das Gesetz gestimmt.
+η νομοθεσία | Η νομοθεσία για τα ενοίκια άλλαξε. | Die Gesetzgebung zu Mieten hat sich geändert.
+το νομοσχέδιο | Το νομοσχέδιο κατατέθηκε στη Βουλή. | Der Gesetzentwurf wurde im Parlament eingebracht.
+η δημοσκόπηση | Η τελευταία δημοσκόπηση δείχνει ισοπαλία. | Die letzte Umfrage zeigt ein Patt.
+η διαδήλωση | Η διαδήλωση έκλεισε το κέντρο. | Die Demonstration hat das Zentrum blockiert.
+τα ψευδή νέα | Τα ψευδή νέα διαδίδονται γρήγορα. | Falschnachrichten verbreiten sich schnell.
+η ελευθερία του λόγου | Η ελευθερία του λόγου έχει και όρια. | Die Meinungsfreiheit hat auch Grenzen.
+η πηγή | Ποια είναι η πηγή της είδησης; | Was ist die Quelle der Nachricht?
+η διαφάνεια | Οι πολίτες ζητούν περισσότερη διαφάνεια. | Die Bürger fordern mehr Transparenz.
+η Βουλή | Η Βουλή συνεδριάζει την Πέμπτη. | Das Parlament tagt am Donnerstag.
+η ομάδα | Η ομάδα μας τελείωσε το έργο νωρίτερα. | Unser Team hat das Projekt früher abgeschlossen.
+συντονίζω | Συντονίζω τις βάρδιες στην αποθήκη. | Ich koordiniere die Schichten im Lager.
+η προτεραιότητα | Η ασφάλεια είναι η πρώτη προτεραιότητα. | Sicherheit hat oberste Priorität.
+συνοψίζοντας | Συνοψίζοντας, χρειαζόμαστε δύο άτομα ακόμα. | Zusammenfassend brauchen wir noch zwei Leute.
+ας επανέλθουμε σε αυτό | Ας επανέλθουμε σε αυτό την επόμενη εβδομάδα. | Kommen wir nächste Woche darauf zurück.
+η εποικοδομητική κριτική | Δέχομαι την εποικοδομητική κριτική. | Konstruktive Kritik nehme ich an.
+ανταποκρίνομαι στις προσδοκίες | Ο νέος υπάλληλος ανταποκρίθηκε στις προσδοκίες. | Der neue Mitarbeiter hat die Erwartungen erfüllt.
+η αποτελεσματικότητα | Το νέο σύστημα αυξάνει την αποτελεσματικότητα. | Das neue System steigert die Effizienz.
+το έργο | Το έργο πρέπει να τελειώσει ως τον Μάρτιο. | Das Projekt muss bis März fertig sein.
+με βάση τα δεδομένα | Με βάση τα δεδομένα, οι πωλήσεις πέφτουν. | Auf Grundlage der Daten sinken die Verkäufe.
+επιπλέον | Επιπλέον, ο μισθός είναι καλός. | Außerdem ist das Gehalt gut.
+συνεπώς | Έβρεχε, συνεπώς ακυρώθηκε ο αγώνας. | Es regnete, folglich wurde das Spiel abgesagt.
+εντούτοις | Ήταν κουρασμένος· εντούτοις συνέχισε. | Er war müde; nichtsdestotrotz machte er weiter.
+εφόσον | Εφόσον συμφωνείς, ξεκινάμε. | Sofern du einverstanden bist, fangen wir an.
+προκειμένου να | Ήρθε νωρίς προκειμένου να βρει θέση. | Er kam früh, um einen Platz zu finden.
+κατά συνέπεια | Η μηχανή χάλασε και κατά συνέπεια σταμάτησε η παραγωγή. | Die Maschine fiel aus, infolgedessen stand die Produktion still.
+εξάλλου | Δεν πάω, εξάλλου είναι αργά. | Ich gehe nicht, zumal es spät ist.
+αφενός … αφετέρου | Αφενός θέλω να μετακομίσω, αφετέρου φοβάμαι. | Einerseits will ich umziehen, andererseits habe ich Angst.
+εν ολίγοις | Εν ολίγοις, δεν έχουμε χρήματα. | Kurz gesagt, wir haben kein Geld.
+η ανασφάλεια | Η ανασφάλεια για το μέλλον τον αγχώνει. | Die Unsicherheit über die Zukunft stresst ihn.
+η εξουθένωση | Μετά από έξι μήνες υπερωρίες έπαθε εξουθένωση. | Nach sechs Monaten Überstunden hatte er einen Burnout.
+η ενσυναίσθηση | Η καλή νοσηλεύτρια έχει ενσυναίσθηση. | Eine gute Pflegerin hat Empathie.
+συγκρατήθηκα | Ήθελα να του φωνάξω, αλλά συγκρατήθηκα. | Ich wollte ihn anschreien, habe mich aber zurückgehalten.
+η απογοήτευση | Η απογοήτευση ήταν μεγάλη μετά την ήττα. | Die Enttäuschung nach der Niederlage war groß.
+η ψυχοθεραπεία | Η ψυχοθεραπεία τη βοήθησε πολύ. | Die Psychotherapie hat ihr sehr geholfen.
+συναισθηματικός | Είναι πολύ συναισθηματικός άνθρωπος. | Er ist ein sehr emotionaler Mensch.
+μεσολαβώ | Ο προϊστάμενος μεσολάβησε στη διαφωνία. | Der Vorgesetzte hat im Streit vermittelt.
+η διαπραγμάτευση | Η διαπραγμάτευση για τον μισθό ήταν δύσκολη. | Die Gehaltsverhandlung war schwierig.
+υποχωρώ | Δεν θα υποχωρήσω σε αυτό το θέμα. | In diesem Punkt gebe ich nicht nach.
+βάζω όρια | Πρέπει να μάθεις να βάζεις όρια. | Du musst lernen, Grenzen zu setzen.
 `;

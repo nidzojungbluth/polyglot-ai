@@ -1285,4 +1285,37 @@ export default `
 сего́дня | Сего́дня я рабо́таю до четырёх. | Heute arbeite ich bis vier.
 за́втра | За́втра мы е́дем к ба́бушке. | Morgen fahren wir zur Oma.
 вчера́ | Вчера́ весь день шёл дождь. | Gestern hat es den ganzen Tag geregnet.
+сейча́с | Сейча́с я за́нят, перезвоню́ по́зже. | Gerade bin ich beschäftigt, ich rufe später zurück.
+пото́м | Снача́ла рабо́та, пото́м отды́х. | Erst die Arbeit, dann die Erholung.
+понеде́льник | В понеде́льник я начина́ю но́вую рабо́ту. | Am Montag fange ich die neue Arbeit an.
+вто́рник | Во вто́рник у меня́ приём у врача́. | Am Dienstag habe ich einen Arzttermin.
+среда́ | Ры́нок рабо́тает ка́ждую сре́ду. | Der Markt ist jeden Mittwoch.
+четве́рг | В четве́рг я рабо́таю во второ́й полови́не дня. | Am Donnerstag arbeite ich nachmittags.
+пя́тница | В пя́тницу мы идём в кафе́. | Am Freitag gehen wir ins Café.
+суббо́та | В суббо́ту я сплю до обе́да. | Am Samstag schlafe ich bis Mittag.
+воскресе́нье | В воскресе́нье мы обе́даем у роди́телей. | Am Sonntag essen wir bei den Eltern zu Mittag.
+янва́рь | В январе́ о́чень хо́лодно. | Im Januar ist es sehr kalt.
+март | У меня́ день рожде́ния в ма́рте. | Ich habe im März Geburtstag.
+ию́ль | В ию́ле мы е́дем на мо́ре. | Im Juli fahren wir ans Meer.
+сентя́брь | Шко́ла начина́ется в сентябре́. | Die Schule beginnt im September.
+дека́брь | В декабре́ мно́го сне́га. | Im Dezember gibt es viel Schnee.
+идёт снег | Идёт снег, оде́нься тепле́е. | Es schneit, zieh dich wärmer an.
+жа́рко | Сего́дня о́чень жа́рко. | Heute ist es sehr heiß.
+на углу́ | Апте́ка на углу́. | Die Apotheke ist an der Ecke.
+я живу́ в … | Я живу́ в Манге́йме уже́ год. | Ich wohne schon ein Jahr in Mannheim.
+ско́лько тебе́ лет? | Ско́лько тебе́ лет? – Два́дцать пять. | Wie alt bist du? – Fünfundzwanzig.
+я говорю́ по-неме́цки | Я говорю́ по-неме́цки и немно́го по-ру́сски. | Ich spreche Deutsch und ein bisschen Russisch.
+ме́дленнее, пожа́луйста | Ме́дленнее, пожа́луйста, я не понима́ю. | Langsamer, bitte, ich verstehe nicht.
+как э́то называ́ется? | Как э́то называ́ется по-ру́сски? | Wie heißt das auf Russisch?
+что э́то зна́чит? | Что э́то зна́чит? Я не зна́ю э́того сло́ва. | Was bedeutet das? Ich kenne das Wort nicht.
+большо́е спаси́бо | Большо́е спаси́бо за по́мощь! | Vielen Dank für die Hilfe!
+стира́льная маши́на | Стира́льная маши́на опя́ть слома́лась. | Die Waschmaschine ist schon wieder kaputt.
+кто? | Кто звони́л? | Wer hat angerufen?
+куда́? | Куда́ ты идёшь по́сле рабо́ты? | Wohin gehst du nach der Arbeit?
+как? | Как тебя́ зову́т? | Wie heißt du?
+ско́лько? | Ско́лько сто́ит биле́т? | Wie viel kostet die Fahrkarte?
+отку́да? | Отку́да ты? | Woher kommst du?
+чей? | Чей э́то телефо́н? | Wessen Handy ist das?
+по́сле | По́сле рабо́ты я иду́ в спортза́л. | Nach der Arbeit gehe ich ins Fitnessstudio.
+пе́ред | Мой ру́ки пе́ред едо́й. | Wasch dir vor dem Essen die Hände.
 `;

@@ -1290,4 +1290,44 @@ hladno je | Hladno je, obuci jaknu. | Es ist kalt, zieh eine Jacke an.
 pada kiša | Pada kiša, uzmi kišobran. | Es regnet, nimm einen Schirm.
 iza | Parking je iza zgrade. | Der Parkplatz ist hinter dem Gebäude.
 ispred | Čekam te ispred bioskopa. | Ich warte vor dem Kino auf dich.
+živim u … | Živim u Novom Sadu već deset godina. | Ich wohne schon zehn Jahre in Novi Sad.
+koliko imaš godina? | Koliko imaš godina? – Dvadeset pet. | Wie alt bist du? – Fünfundzwanzig.
+govorim nemački | Govorim nemački i malo srpski. | Ich spreche Deutsch und ein bisschen Serbisch.
+polako, molim te | Polako, molim te, ne razumem. | Langsam, bitte, ich verstehe nicht.
+možeš li da ponoviš? | Izvini, možeš li da ponoviš? | Entschuldige, kannst du das wiederholen?
+kako se kaže? | Kako se kaže „Gabelstapler“ na srpskom? | Wie sagt man „Gabelstapler“ auf Serbisch?
+hvala puno | Hvala puno na pomoći! | Vielen Dank für die Hilfe!
+ko? | Ko je to bio na telefonu? | Wer war das am Telefon?
+kuda? | Kuda ideš posle posla? | Wohin gehst du nach der Arbeit?
+kada? | Kada polazi autobus? | Wann fährt der Bus ab?
+kako? | Kako se zoveš? | Wie heißt du?
+koliko? | Koliko košta karta? | Wie viel kostet die Fahrkarte?
+odakle? | Odakle si? | Woher kommst du?
+čiji? | Čiji je ovo telefon? | Wessen Handy ist das?
+između | Apoteka je između banke i pošte. | Die Apotheke ist zwischen der Bank und der Post.
+kroz | Idemo kroz park. | Wir gehen durch den Park.
+pekar | Pekar ustaje u tri ujutru. | Der Bäcker steht um drei Uhr morgens auf.
+mesar | Mesar ima sveže meso. | Der Metzger hat frisches Fleisch.
+frizer | Sutra idem kod frizera. | Morgen gehe ich zum Friseur.
+medicinska sestra | Medicinska sestra mi je izmerila pritisak. | Die Krankenschwester hat mir den Blutdruck gemessen.
+policajac | Policajac je zaustavio auto. | Der Polizist hat das Auto angehalten.
+vatrogasac | Vatrogasac je spasao mače. | Der Feuerwehrmann hat das Kätzchen gerettet.
+viljuškarista | Tražimo viljuškaristu za noćnu smenu. | Wir suchen einen Staplerfahrer für die Nachtschicht.
+građevinski radnik | Građevinski radnik radi i po kiši. | Der Bauarbeiter arbeitet auch bei Regen.
+moler | Moler kreči dnevnu sobu. | Der Maler streicht das Wohnzimmer.
+baštovan | Baštovan kosi travu. | Der Gärtner mäht den Rasen.
+poljoprivrednik | Poljoprivrednik bere šljive. | Der Landwirt erntet Pflaumen.
+kasirka | Kasirka mi je vratila kusur. | Die Kassiererin hat mir das Wechselgeld gegeben.
+spremačica | Spremačica dolazi ponedeljkom. | Die Putzfrau kommt montags.
+programer | Moj brat je programer. | Mein Bruder ist Programmierer.
+inženjer | Inženjer je pregledao most. | Der Ingenieur hat die Brücke geprüft.
+knjigovođa | Knjigovođa radi moju poresku prijavu. | Der Buchhalter macht meine Steuererklärung.
+sekretarica | Sekretarica zakazuje termine. | Die Sekretärin vergibt die Termine.
+pilot | Pilot se obratio putnicima. | Der Pilot wandte sich an die Passagiere.
+vojnik | Vojnik čuva kapiju. | Der Soldat bewacht das Tor.
+ribar | Ribar izlazi na Dunav pre zore. | Der Fischer fährt vor Tagesanbruch auf die Donau.
+zidar | Zidar gradi zid od cigle. | Der Maurer baut eine Ziegelmauer.
+opozicija | Opozicija je glasala protiv zakona. | Die Opposition hat gegen das Gesetz gestimmt.
+predlog zakona | Predlog zakona je upućen skupštini. | Der Gesetzentwurf wurde dem Parlament vorgelegt.
+lažne vesti | Lažne vesti se brzo šire. | Falschnachrichten verbreiten sich schnell.
 `;
