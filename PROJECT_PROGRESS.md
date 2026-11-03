@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-03 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 3095 | 62 % | 2640 | 2078 | 246 | 818 |
-| 🇷🇸 Serbisch | 3136 | 63 % | 2632 | 1582 | 246 | 819 |
-| 🇷🇺 Russisch | 3156 | 63 % | 2631 | 1663 | 246 | 821 |
+| 🇬🇷 Griechisch | 3190 | 64 % | 2735 | 2164 | 251 | 838 |
+| 🇷🇸 Serbisch | 3238 | 65 % | 2734 | 1659 | 251 | 839 |
+| 🇷🇺 Russisch | 3253 | 65 % | 2728 | 1736 | 251 | 841 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-03 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 889 | 726 | 267 | 196 | 40 |
-| Serbisch | 441 | 546 | 904 | 734 | 272 | 200 | 39 |
-| Russisch | 451 | 549 | 909 | 724 | 278 | 203 | 42 |
+| Griechisch | 435 | 542 | 889 | 745 | 343 | 196 | 40 |
+| Serbisch | 441 | 546 | 904 | 756 | 352 | 200 | 39 |
+| Russisch | 451 | 549 | 909 | 745 | 354 | 203 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -28,13 +28,13 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 2527 / 2982 (85 %) | 90 % | 99 % | 100 % | 93 % | 30 % | 9 % |
-| Serbisch | 2516 / 3020 (83 %) | 81 % | 100 % | 100 % | 91 % | 30 % | 12 % |
-| Russisch | 2511 / 3036 (83 %) | 81 % | 100 % | 100 % | 89 % | 33 % | 11 % |
+| Griechisch | 2622 / 3077 (85 %) | 90 % | 99 % | 100 % | 94 % | 47 % | 9 % |
+| Serbisch | 2618 / 3122 (84 %) | 81 % | 100 % | 100 % | 92 % | 48 % | 12 % |
+| Russisch | 2608 / 3133 (83 %) | 81 % | 100 % | 100 % | 89 % | 48 % | 11 % |
 
 ## Ladezeit
 
-App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 555 KB, sr 390 KB, ru 533 KB (jede Sprache wird erst bei Bedarf geladen).
+App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 576 KB, sr 404 KB, ru 554 KB (jede Sprache wird erst bei Bedarf geladen).
 
 ## Prüfstatus
 

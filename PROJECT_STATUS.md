@@ -42,9 +42,9 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 
 | | Griechisch | Serbisch | Russisch |
 |---|---|---|---|
-| Einträge (Wörter + Slang) | 3.095 | 3.136 | 3.156 |
+| Einträge (Wörter + Slang) | 3.190 | 3.238 | 3.253 |
 | Ziel 5.000 erreicht | 62 % | 63 % | 63 % |
-| Wörter mit Beispielsatz | 85 % | 83 % | 83 % |
+| Wörter mit Beispielsatz | 85 % | 84 % | 83 % |
 | davon A1 / A2 / B1 / B2 / C1 / C2 | 90 / 99 / 100 / 93 / 30 / 9 % | 81 / 100 / 100 / 91 / 30 / 12 % | 81 / 100 / 100 / 89 / 33 / 11 % |
 | Module / Lektionen | 246 / ~820 | 246 / ~820 | 246 / ~820 |
 
@@ -87,5 +87,6 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 01.11.2026: Etappen 24–33 (je ~70–90 neue Einträge pro Sprache, alle mit Beispielsatz), Beispielsatz-Runden 3–12 (B1 und A2 vollständig, B2 auf ~80 %), 3.000-Marke überschritten, Messung Ladezeit; danach **Planungsauftrag**: diese drei Steuerdateien angelegt. Keine Code-Änderungen in dieser Sitzung nach Runde 12.
 - 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 und Phase 1 erledigt (Start 1,5 s → 0,47 s). Weiter mit Phase 2 (Inhalte).
 - 03.11.2026: Etappe 34 (Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik) – ~95 neue Einträge je Sprache (beste Quote bisher, spezifische Themen wirken).
+- 03.11.2026: Etappe 35 – +95/+102/+97 Einträge (Versicherungen, Immobilien, Gesundheitssystem, Medien, Lager & Produktion).
 - 03.11.2026: Beispielsatz-Runde 13 – B2 auf ~90 % (Beschwerden, Wirtschaft, Ernährung, Verträge, Gesundheitssystem, Verkehr).
 - (alt) Arbeit pausiert auf Wunsch des Nutzers. Nächster Schritt laut Roadmap: **Phase 0, dann Phase 1 (Performance) – braucht Freigabe der Architektur-Entscheidung D-010.**
