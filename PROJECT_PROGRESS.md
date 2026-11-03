@@ -1,14 +1,14 @@
 # Polyglot AI – PROJECT PROGRESS
 
-Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro Sprache.
+Automatisch erzeugt am 2026-11-03 mit `npm run report`. Ziel: 5000 Einträge pro Sprache.
 
 | Sprache | Einträge (Wörter + Slang) | Ziel erreicht | mit Beispielsatz | Lückentext möglich | Module | Lektionen |
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 3001 | 60 % | 2478 | 1943 | 241 | 798 |
-| 🇷🇸 Serbisch | 3041 | 61 % | 2467 | 1476 | 241 | 799 |
-| 🇷🇺 Russisch | 3060 | 61 % | 2472 | 1561 | 241 | 801 |
+| 🇬🇷 Griechisch | 3095 | 62 % | 2572 | 2022 | 246 | 818 |
+| 🇷🇸 Serbisch | 3136 | 63 % | 2562 | 1537 | 246 | 819 |
+| 🇷🇺 Russisch | 3156 | 63 % | 2568 | 1620 | 246 | 821 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-01 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 848 | 673 | 267 | 196 | 40 |
-| Serbisch | 441 | 546 | 861 | 682 | 272 | 200 | 39 |
-| Russisch | 451 | 549 | 866 | 671 | 278 | 203 | 42 |
+| Griechisch | 435 | 542 | 889 | 726 | 267 | 196 | 40 |
+| Serbisch | 441 | 546 | 904 | 734 | 272 | 200 | 39 |
+| Russisch | 451 | 549 | 909 | 724 | 278 | 203 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -28,13 +28,13 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 2365 / 2888 (82 %) | 90 % | 99 % | 100 % | 82 % | 30 % | 9 % |
-| Serbisch | 2351 / 2925 (80 %) | 81 % | 100 % | 100 % | 80 % | 30 % | 12 % |
-| Russisch | 2352 / 2940 (80 %) | 81 % | 100 % | 100 % | 79 % | 33 % | 11 % |
+| Griechisch | 2459 / 2982 (82 %) | 90 % | 99 % | 100 % | 84 % | 30 % | 9 % |
+| Serbisch | 2446 / 3020 (81 %) | 81 % | 100 % | 100 % | 82 % | 30 % | 12 % |
+| Russisch | 2448 / 3036 (81 %) | 81 % | 100 % | 100 % | 80 % | 33 % | 11 % |
 
 ## Ladezeit
 
-App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 527 KB, sr 370 KB, ru 506 KB (jede Sprache wird erst bei Bedarf geladen).
+App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 546 KB, sr 383 KB, ru 524 KB (jede Sprache wird erst bei Bedarf geladen).
 
 ## Prüfstatus
 
