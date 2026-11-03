@@ -1358,4 +1358,44 @@ export default `
 восстанови́ть дове́рие | По́сле лжи тру́дно восстанови́ть дове́рие. | Nach einer Lüge ist es schwer, das Vertrauen wiederherzustellen.
 сохраня́й споко́йствие | Сохраня́й споко́йствие и дыши́ глубоко́. | Bleib ruhig und atme tief.
 влюблённость | Влюблённость бы́стро прохо́дит. | Verliebtheit vergeht schnell.
+оппози́ция | Оппози́ция голосова́ла про́тив зако́на. | Die Opposition hat gegen das Gesetz gestimmt.
+законода́тельство | Трудово́е законода́тельство меня́ется. | Das Arbeitsrecht ändert sich.
+законопрое́кт | Законопрое́кт внесли́ в Ду́му. | Der Gesetzentwurf wurde in die Duma eingebracht.
+опро́с | Опро́с показа́л, что лю́ди недово́льны. | Die Umfrage hat gezeigt, dass die Leute unzufrieden sind.
+ми́тинг | Ми́тинг прошёл на центра́льной пло́щади. | Die Kundgebung fand auf dem zentralen Platz statt.
+фейк | Э́то фейк, не верь. | Das ist eine Falschmeldung, glaub das nicht.
+свобо́да сло́ва | Свобо́да сло́ва запи́сана в конститу́ции. | Die Meinungsfreiheit steht in der Verfassung.
+исто́чник | Како́й исто́чник у э́той но́вости? | Was ist die Quelle dieser Nachricht?
+прозра́чность | Гра́ждане тре́буют бо́льше прозра́чности. | Die Bürger fordern mehr Transparenz.
+Госду́ма | Госду́ма при́няла но́вый зако́н. | Die Staatsduma hat ein neues Gesetz verabschiedet.
+кома́нда | На́ша кома́нда зако́нчила прое́кт ра́ньше. | Unser Team hat das Projekt früher abgeschlossen.
+координи́ровать | Я координи́рую сме́ны на скла́де. | Ich koordiniere die Schichten im Lager.
+приорите́т | Безопа́сность – гла́вный приорите́т. | Sicherheit hat oberste Priorität.
+подводя́ ито́г | Подводя́ ито́г, нам нужны́ ещё два челове́ка. | Zusammenfassend brauchen wir noch zwei Leute.
+вернёмся к э́тому | Вернёмся к э́тому на сле́дующей неде́ле. | Darauf kommen wir nächste Woche zurück.
+конструкти́вная кри́тика | Я принима́ю конструкти́вную кри́тику. | Konstruktive Kritik nehme ich an.
+оправда́ть ожида́ния | Но́вый сотру́дник оправда́л ожида́ния. | Der neue Mitarbeiter hat die Erwartungen erfüllt.
+эффекти́вность | Но́вая систе́ма повыша́ет эффекти́вность. | Das neue System steigert die Effizienz.
+на осно́ве да́нных | На осно́ве да́нных прода́жи па́дают. | Auf Grundlage der Daten sinken die Verkäufe.
+кро́ме того́ | Кро́ме того́, зарпла́та хоро́шая. | Außerdem ist das Gehalt gut.
+таки́м о́бразом | Таки́м о́бразом, мы сэконо́мили ты́сячу рубле́й. | Somit haben wir tausend Rubel gespart.
+тем не ме́нее | Он уста́л, тем не ме́нее продолжа́л рабо́тать. | Er war müde, arbeitete aber trotzdem weiter.
+в слу́чае е́сли | В слу́чае е́сли по́езд опозда́ет, позвони́. | Falls der Zug sich verspätet, ruf an.
+для того́ что́бы | Он пришёл ра́но, для того́ что́бы заня́ть ме́сто. | Er kam früh, um einen Platz zu bekommen.
+в связи́ с э́тим | В связи́ с э́тим встре́ча перено́сится. | In diesem Zusammenhang wird das Treffen verschoben.
+впро́чем | Я не пойду́, впро́чем, уже́ по́здно. | Ich gehe nicht, es ist übrigens schon spät.
+коро́че говоря́ | Коро́че говоря́, де́нег нет. | Kurz gesagt, es ist kein Geld da.
+благодаря́ | Благодаря́ тебе́ я нашёл рабо́ту. | Dank dir habe ich Arbeit gefunden.
+неуве́ренность | Неуве́ренность в бу́дущем его́ напряга́ет. | Die Unsicherheit über die Zukunft stresst ihn.
+профессиона́льное выгора́ние | По́сле полуго́да перерабо́ток у него́ профессиона́льное выгора́ние. | Nach einem halben Jahr Überstunden hat er einen Burnout.
+эмпа́тия | У хоро́шей медсестры́ есть эмпа́тия. | Eine gute Krankenschwester hat Empathie.
+я сдержа́лся | Я хоте́л накрича́ть, но сдержа́лся. | Ich wollte schreien, habe mich aber zurückgehalten.
+меня́ э́то угнета́ет | Тёмная зима́ – меня́ э́то угнета́ет. | Der dunkle Winter bedrückt mich.
+разочарова́ние | Разочарова́ние по́сле пораже́ния бы́ло большо́е. | Die Enttäuschung nach der Niederlage war groß.
+психотерапе́вт | Психотерапе́вт ей о́чень помо́г. | Der Psychotherapeut hat ihr sehr geholfen.
+эмоциона́льный | Он о́чень эмоциона́льный челове́к. | Er ist ein sehr emotionaler Mensch.
+психи́ческое здоро́вье | Психи́ческое здоро́вье так же ва́жно, как физи́ческое. | Die psychische Gesundheit ist genauso wichtig wie die körperliche.
+быть посре́дником | Нача́льник согласи́лся быть посре́дником в спо́ре. | Der Chef hat sich bereit erklärt, im Streit zu vermitteln.
+перегово́ры | Перегово́ры о зарпла́те бы́ли тру́дными. | Die Gehaltsverhandlungen waren schwierig.
+страсть | Футбо́л – его́ страсть. | Fußball ist seine Leidenschaft.
 `;

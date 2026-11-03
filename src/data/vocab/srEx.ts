@@ -1370,4 +1370,44 @@ zagađenje | Zagađenje reka je veliki problem. | Die Flussverschmutzung ist ein
 zaštititi | Treba zaštititi šume od seče. | Man muss die Wälder vor Abholzung schützen.
 smisao života | Šta je za tebe smisao života? | Was ist für dich der Sinn des Lebens?
 savest | Imam čistu savest. | Ich habe ein reines Gewissen.
+zakonodavstvo | Zakonodavstvo o radu se menja. | Das Arbeitsrecht wird geändert.
+istraživanje javnog mnjenja | Istraživanje javnog mnjenja pokazuje neizvesnost. | Die Meinungsumfrage zeigt Ungewissheit.
+demonstracije | Demonstracije su blokirale centar grada. | Die Demonstrationen haben das Stadtzentrum blockiert.
+sloboda govora | Sloboda govora ima i granice. | Die Meinungsfreiheit hat auch Grenzen.
+izvor | Koji je izvor ove vesti? | Was ist die Quelle dieser Nachricht?
+izazvalo je reakcije | To saopštenje izazvalo je reakcije u celoj zemlji. | Diese Mitteilung hat im ganzen Land Reaktionen ausgelöst.
+transparentnost | Građani traže više transparentnosti. | Die Bürger fordern mehr Transparenz.
+skupština | Skupština zaseda u utorak. | Das Parlament tagt am Dienstag.
+tim | Naš tim je završio projekat ranije. | Unser Team hat das Projekt früher abgeschlossen.
+koordinirati | Ja koordiniram smene u magacinu. | Ich koordiniere die Schichten im Lager.
+prioritet | Bezbednost je prvi prioritet. | Sicherheit hat oberste Priorität.
+da rezimiram | Da rezimiram, treba nam još dva čoveka. | Um zusammenzufassen: Wir brauchen noch zwei Leute.
+vratićemo se na to | Vratićemo se na to sledeće nedelje. | Darauf kommen wir nächste Woche zurück.
+konstruktivna kritika | Prihvatam konstruktivnu kritiku. | Konstruktive Kritik nehme ich an.
+ispuniti očekivanja | Novi radnik je ispunio očekivanja. | Der neue Mitarbeiter hat die Erwartungen erfüllt.
+efikasnost | Novi sistem povećava efikasnost. | Das neue System steigert die Effizienz.
+projekat | Projekat mora da se završi do marta. | Das Projekt muss bis März fertig sein.
+na osnovu podataka | Na osnovu podataka, prodaja pada. | Auf Grundlage der Daten sinkt der Verkauf.
+rok za predaju | Rok za predaju je u petak. | Die Abgabefrist ist am Freitag.
+osim toga | Osim toga, plata je dobra. | Außerdem ist das Gehalt gut.
+stoga | Padala je kiša, stoga je utakmica otkazana. | Es regnete, deshalb wurde das Spiel abgesagt.
+međutim | Bio je umoran, međutim nastavio je. | Er war müde, machte jedoch weiter.
+ukoliko | Ukoliko se slažeš, počinjemo. | Sofern du einverstanden bist, fangen wir an.
+kako bi | Došao je rano kako bi našao mesto. | Er kam früh, um einen Platz zu finden.
+naime | Ne mogu da dođem, naime, radim noćnu smenu. | Ich kann nicht kommen, ich habe nämlich Nachtschicht.
+uostalom | Ne idem, uostalom, kasno je. | Ich gehe nicht, im Übrigen ist es spät.
+ukratko | Ukratko, nemamo para. | Kurz gesagt, wir haben kein Geld.
+nesigurnost | Nesigurnost oko posla ga nervira. | Die Unsicherheit wegen der Arbeit macht ihn nervös.
+sagorevanje na poslu | Posle šest meseci prekovremenog rada imao je sagorevanje na poslu. | Nach sechs Monaten Überstunden hatte er einen Burnout.
+empatija | Dobra medicinska sestra ima empatiju. | Eine gute Krankenschwester hat Empathie.
+suzdržao sam se | Hteo sam da vičem, ali sam se suzdržao. | Ich wollte schreien, habe mich aber zurückgehalten.
+razočaranje | Razočaranje posle poraza je bilo veliko. | Die Enttäuschung nach der Niederlage war groß.
+psihoterapija | Psihoterapija joj je mnogo pomogla. | Die Psychotherapie hat ihr sehr geholfen.
+emotivan | On je veoma emotivan čovek. | Er ist ein sehr emotionaler Mensch.
+mentalno zdravlje | Mentalno zdravlje je jednako važno kao fizičko. | Die psychische Gesundheit ist genauso wichtig wie die körperliche.
+posredovati | Šef je posredovao u svađi. | Der Chef hat im Streit vermittelt.
+pregovori | Pregovori o plati su bili teški. | Die Gehaltsverhandlungen waren schwierig.
+popustiti | U ovome neću popustiti. | In diesem Punkt gebe ich nicht nach.
+nasledstvo | Podelili su nasledstvo na troje. | Sie haben das Erbe durch drei geteilt.
+klimatske promene | Klimatske promene utiču na poljoprivredu. | Der Klimawandel beeinflusst die Landwirtschaft.
 `;

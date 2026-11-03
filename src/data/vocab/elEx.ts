@@ -1359,4 +1359,44 @@ export default `
 ο νονός | Ο νονός αγοράζει τα πρώτα παπούτσια. | Der Taufpate kauft die ersten Schuhe.
 η κηδεία | Η κηδεία είναι αύριο στις έντεκα. | Die Beerdigung ist morgen um elf.
 θερμά συλλυπητήρια | Θερμά συλλυπητήρια για τον πατέρα σας. | Herzliches Beileid zum Tod Ihres Vaters.
+η ψυχική υγεία | Η ψυχική υγεία είναι εξίσου σημαντική με τη σωματική. | Die psychische Gesundheit ist genauso wichtig wie die körperliche.
+ο κοινός παρονομαστής | Βρήκαμε επιτέλους κοινό παρονομαστή. | Endlich haben wir einen gemeinsamen Nenner gefunden.
+αδιαπραγμάτευτο | Η ασφάλεια είναι αδιαπραγμάτευτη. | Sicherheit ist nicht verhandelbar.
+αποκαθιστώ την εμπιστοσύνη | Μετά το ψέμα είναι δύσκολο να αποκαταστήσεις την εμπιστοσύνη. | Nach einer Lüge ist es schwer, das Vertrauen wiederherzustellen.
+ο έρωτας | Ο έρωτας τους ξεκίνησε στη Μύκονο. | Ihre Liebe begann auf Mykonos.
+η αγάπη | Η αγάπη της μητέρας δεν έχει όρια. | Die Liebe einer Mutter kennt keine Grenzen.
+κεραυνοβόλος έρωτας | Ήταν κεραυνοβόλος έρωτας. | Es war Liebe auf den ersten Blick.
+η τρυφερότητα | Δείχνει τρυφερότητα στα παιδιά. | Er zeigt den Kindern gegenüber Zärtlichkeit.
+η οικειότητα | Ανάμεσά μας υπάρχει μεγάλη οικειότητα. | Zwischen uns gibt es große Vertrautheit.
+ο πόθος | Ο πόθος του για την πατρίδα μεγάλωνε. | Seine Sehnsucht nach der Heimat wuchs.
+η αφοσίωση | Η αφοσίωσή της στη δουλειά είναι μεγάλη. | Ihre Hingabe an die Arbeit ist groß.
+με έχεις στο χέρι | Ό,τι θες κάνω, με έχεις στο χέρι. | Ich mache alles, was du willst, du hast mich um den Finger gewickelt.
+ψυχή μου | Καληνύχτα, ψυχή μου. | Gute Nacht, mein Schatz.
+είμαι τρελά ερωτευμένος | Είμαι τρελά ερωτευμένος μαζί της. | Ich bin wahnsinnig in sie verliebt.
+ο χωρισμός | Ο χωρισμός ήταν δύσκολος για τα παιδιά. | Die Trennung war schwer für die Kinder.
+ο ενοικιαστής | Ο ενοικιαστής πληρώνει το ενοίκιο ως τις πέντε. | Der Mieter zahlt die Miete bis zum Fünften.
+ο εκμισθωτής | Ο εκμισθωτής ευθύνεται για τις μεγάλες επισκευές. | Der Vermieter ist für größere Reparaturen zuständig.
+η καταγγελία της σύμβασης | Η καταγγελία της σύμβασης πρέπει να είναι γραπτή. | Die Kündigung des Vertrags muss schriftlich erfolgen.
+η έξωση | Η έξωση αναβλήθηκε για τον χειμώνα. | Die Zwangsräumung wurde bis nach dem Winter verschoben.
+η κληρονομιά | Μοιράστηκαν την κληρονομιά στα τρία. | Sie haben das Erbe durch drei geteilt.
+το ακίνητο | Το ακίνητο έχει πολλά χρέη. | Auf der Immobilie lasten viele Schulden.
+η υποθήκη | Η τράπεζα έβαλε υποθήκη στο σπίτι. | Die Bank hat eine Hypothek auf das Haus eingetragen.
+ο συμβολαιογράφος | Το συμβόλαιο υπογράφεται στον συμβολαιογράφο. | Der Vertrag wird beim Notar unterschrieben.
+η ιδιοκτησία | Το διαμέρισμα είναι ιδιοκτησία της μητέρας του. | Die Wohnung ist Eigentum seiner Mutter.
+η υποχρέωση | Η πληρωμή των λογαριασμών είναι δική σου υποχρέωση. | Das Bezahlen der Rechnungen ist deine Pflicht.
+η αγωγή | Ο ιδιοκτήτης κατέθεσε αγωγή για τα απλήρωτα ενοίκια. | Der Eigentümer hat wegen der unbezahlten Mieten geklagt.
+το περιβάλλον | Πρέπει να προστατεύσουμε το περιβάλλον. | Wir müssen die Umwelt schützen.
+η κλιματική αλλαγή | Η κλιματική αλλαγή επηρεάζει τη γεωργία. | Der Klimawandel beeinflusst die Landwirtschaft.
+ο καύσωνας | Ο καύσωνας κράτησε μία εβδομάδα. | Die Hitzewelle dauerte eine Woche.
+η λειψυδρία | Η λειψυδρία είναι πρόβλημα στις Κυκλάδες. | Wasserknappheit ist ein Problem auf den Kykladen.
+οι ανανεώσιμες πηγές ενέργειας | Η Ελλάδα επενδύει σε ανανεώσιμες πηγές ενέργειας. | Griechenland investiert in erneuerbare Energien.
+η βιωσιμότητα | Η βιωσιμότητα του τουρισμού συζητιέται πολύ. | Über die Nachhaltigkeit des Tourismus wird viel diskutiert.
+ο υπερτουρισμός | Ο υπερτουρισμός γεμίζει τη Σαντορίνη τον Αύγουστο. | Der Übertourismus macht Santorini im August voll.
+η μόλυνση | Η μόλυνση του αέρα είναι μεγάλη στην Αθήνα. | Die Luftverschmutzung ist in Athen hoch.
+προστατεύω | Προστατεύω τα φυτά από τον παγετό. | Ich schütze die Pflanzen vor Frost.
+το δάσος | Περπατήσαμε τρεις ώρες στο δάσος. | Wir sind drei Stunden im Wald gewandert.
+η ξηρασία | Η ξηρασία έκανε ζημιά στις ελιές. | Die Dürre hat den Oliven geschadet.
+το νόημα της ζωής | Ποιο είναι για σένα το νόημα της ζωής; | Was ist für dich der Sinn des Lebens?
+η ευτυχία | Η ευτυχία βρίσκεται στα μικρά πράγματα. | Das Glück liegt in den kleinen Dingen.
+η εγκυμοσύνη | Η εγκυμοσύνη πάει πολύ καλά. | Die Schwangerschaft verläuft sehr gut.
 `;
