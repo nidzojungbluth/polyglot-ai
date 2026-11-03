@@ -34,8 +34,9 @@ import elVocab29 from '../vocab/el29';
 import elVocab30 from '../vocab/el30';
 import elVocab31 from '../vocab/el31';
 import elVocab32 from '../vocab/el32';
+import elVocab33 from '../vocab/el33';
 import elEx from '../vocab/elEx';
 
 export default enrich(el, [
-  elVocab, elVocab2, elVocab3, elVocab4, elVocab5, elVocab6, elVocab7, elVocab8, elVocab9, elVocab10, elVocab11, elVocab12, elVocab13, elVocab14, elVocab15, elVocab16, elVocab17, elVocab18, elVocab19, elVocab20, elVocab21, elVocab22, elVocab23, elVocab24, elVocab25, elVocab26, elVocab27, elVocab28, elVocab29, elVocab30, elVocab31, elVocab32,
+  elVocab, elVocab2, elVocab3, elVocab4, elVocab5, elVocab6, elVocab7, elVocab8, elVocab9, elVocab10, elVocab11, elVocab12, elVocab13, elVocab14, elVocab15, elVocab16, elVocab17, elVocab18, elVocab19, elVocab20, elVocab21, elVocab22, elVocab23, elVocab24, elVocab25, elVocab26, elVocab27, elVocab28, elVocab29, elVocab30, elVocab31, elVocab32, elVocab33,
 ].join(''), elEx);

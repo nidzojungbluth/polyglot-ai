@@ -76,9 +76,9 @@ Ursprünglicher Plan:
 
 1. **Ziel:** je Sprache 5.000 Einträge; jeder Eintrag mit Beispielsatz (+ automatische Umschrift).
 2. **Aufgaben (abwechselnd, wie bisher bewährt):**
-   - **Runde A – neue Etappe:** Dateien `src/data/vocab/{el,sr,ru}<N>.ts` (nächstes N = 33), 5 Module × ~22 **spezifische** Wörter (Erfahrung: allgemeine Themen bringen nur ~40 % neue Wörter, spezifische ~70–80 %). Part-Nummern vorher prüfen: `grep -ho "topic=X level=Y\( part=[0-9]*\)\?" src/data/vocab/el*.ts | sort -u`. Danach `python3 scripts/add-stage.py <N>`.
+   - **Runde A – neue Etappe:** Dateien `src/data/vocab/{el,sr,ru}<N>.ts` (nächstes N = 34), 5 Module × ~22 **spezifische** Wörter (Erfahrung: allgemeine Themen bringen nur ~40 % neue Wörter, spezifische ~70–80 %). Part-Nummern vorher prüfen: `grep -ho "topic=X level=Y\( part=[0-9]*\)\?" src/data/vocab/el*.ts | sort -u`. Danach `python3 scripts/add-stage.py <N>`.
    - **Runde B – Beispielsätze nachtragen:** `npm run missing <Niveau> 80`, Sätze an `src/data/vocab/{el,sr,ru}Ex.ts` anhängen (vor dem schließenden Backtick). Reihenfolge: B2-Rest → A1-Rest (ohne Artikel/Pronomen/Zahlen) → C1 → C2.
-   - Themenvorrat für Runden A (erledigt: Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik, Versicherungen, Immobilien, Gesundheitssystem, Medien, Lager/Produktion): Umweltpolitik C1, Redewendungen C2 (je Sprache eigene), Ironie & Humor C2, Amtsdeutsch-Äquivalente C2, Reisen & Behörden C1, Wissenschaft C1.
+   - Themenvorrat für Runden A (erledigt: Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik, Versicherungen, Immobilien, Gesundheitssystem, Medien, Lager/Produktion, Umweltpolitik, Wissenschaft, Reisen & Behörden, Ironie, Amtssprache): Redewendungen C2 (je Sprache eigene), Recht & Gericht C1, Finanzen & Steuern C1, Technik & Elektronik B2, Kfz & Werkstatt B2, Landwirtschaft B2, Psychologie C1.
 3. **Technik:** bestehendes Format (D-004), Regeln D-006.
 4. **Dateien:** `src/data/vocab/*`, automatisch `src/data/packs/<code>.ts` (über `add-stage.py`).
 5. **Abhängigkeiten:** keine harte; empfohlen nach Phase 1.
