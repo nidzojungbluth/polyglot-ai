@@ -1245,4 +1245,44 @@ export default `
 сомнева́юсь | Сомнева́юсь, что он придёт во́время. | Ich bezweifle, dass er pünktlich kommt.
 ты меня́ убеди́л | Ла́дно, ты меня́ убеди́л, е́дем на мо́ре. | Gut, du hast mich überzeugt, wir fahren ans Meer.
 ты меня́ не убеди́л | Ты меня́ пока́ не убеди́л. | Du hast mich noch nicht überzeugt.
+ска́жем, … | Ска́жем, ты вы́играл в лотере́ю. Что ты сде́лаешь? | Sagen wir, du hast im Lotto gewonnen. Was machst du?
+преиму́щество | Преиму́щество э́той рабо́ты – гра́фик. | Der Vorteil dieser Arbeit ist der Dienstplan.
+недоста́ток | Недоста́ток – далеко́ е́здить. | Der Nachteil ist der weite Weg.
+справедли́во | Ты справедли́во рассерди́лся. | Du hast dich zu Recht geärgert.
+се́рия | Вчера́ мы посмотре́ли три се́рии. | Gestern haben wir drei Folgen geschaut.
+режиссёр | Режиссёр получи́л пре́мию в Ка́нне. | Der Regisseur hat in Cannes einen Preis bekommen.
+актёр | Актёр игра́л о́чень есте́ственно. | Der Schauspieler hat sehr natürlich gespielt.
+субти́тры | Я смотрю́ фи́льмы с ру́сскими субти́трами. | Ich schaue Filme mit russischen Untertiteln.
+дубля́ж | Мультфи́льмы иду́т с дубляжо́м. | Zeichentrickfilme laufen synchronisiert.
+сюже́т | Сюже́т был немно́го запу́танным. | Die Handlung war etwas verwirrend.
+не спо́йлери! | Не спо́йлери! Я ещё не досмотре́л. | Spoiler nicht! Ich hab's noch nicht zu Ende geschaut.
+реце́нзия | Я прочита́л хоро́шую реце́нзию на фильм. | Ich habe eine gute Filmkritik gelesen.
+документа́льный фильм | Документа́льный фильм был о леса́х. | Der Dokumentarfilm handelte von Wäldern.
+онла́йн-кинотеа́тр | Я смотрю́ сериа́лы в онла́йн-кинотеа́тре. | Ich schaue Serien bei einem Streamingdienst.
+зараба́тывать | В ночну́ю сме́ну я зараба́тываю бо́льше. | In der Nachtschicht verdiene ich mehr.
+организо́вывать | Она́ всегда́ организо́вывает пра́здники. | Sie organisiert immer die Feiern.
+подгота́вливать | Мы подгота́вливаем зака́з к отпра́вке. | Wir bereiten die Bestellung für den Versand vor.
+перевози́ть | Мы перевози́м поддо́ны погру́зчиком. | Wir transportieren die Paletten mit dem Stapler.
+загружа́ть | Мы загружа́ем грузови́к до десяти́. | Wir beladen den Lkw bis zehn.
+разгружа́ть | Я разгружа́ю конте́йнер с двумя́ колле́гами. | Ich entlade den Container mit zwei Kollegen.
+упако́вывать | Я упако́вываю зака́зы в отде́ле отгру́зки. | Ich verpacke die Bestellungen im Versand.
+счита́ть | Я счита́ю коро́бки, пре́жде чем подписа́ть. | Ich zähle die Kartons, bevor ich unterschreibe.
+по́льзоваться | Я весь день по́льзуюсь ска́нером. | Ich benutze den ganzen Tag den Scanner.
+объясня́ть | Он хорошо́ объясня́ет пра́вила. | Er erklärt die Regeln gut.
+соглаша́ться | Я соглаша́юсь с тобо́й. | Ich stimme dir zu.
+отка́зываться | Не отка́зывайся от по́мощи. | Lehn die Hilfe nicht ab.
+проща́ть | Я тебя́ проща́ю, но не повторя́й. | Ich verzeihe dir, aber mach es nicht nochmal.
+доверя́ть | Я доверя́ю бра́ту по́лностью. | Ich vertraue meinem Bruder voll und ganz.
+наде́яться | Я наде́юсь получи́ть э́ту рабо́ту. | Ich hoffe, diese Stelle zu bekommen.
+пуга́ть | Не пуга́й соба́ку! | Erschreck den Hund nicht!
+знако́миться | Знако́мьтесь, э́то мой брат. | Darf ich vorstellen, das ist mein Bruder.
+встреча́ть | Я встреча́ю ма́му на вокза́ле. | Ich hole Mama vom Bahnhof ab.
+дели́ться | Он всегда́ де́лится едо́й. | Er teilt immer sein Essen.
+одолжи́ть | Мо́жешь одолжи́ть мне сто рубле́й? | Kannst du mir hundert Rubel leihen?
+копи́ть | Я коплю́ на о́тпуск. | Ich spare für den Urlaub.
+выи́грывать | На́ша кома́нда ре́дко выи́грывает. | Unsere Mannschaft gewinnt selten.
+заблуди́ться | Мы заблуди́лись в ста́ром го́роде. | Wir haben uns in der Altstadt verirrt.
+сего́дня | Сего́дня я рабо́таю до четырёх. | Heute arbeite ich bis vier.
+за́втра | За́втра мы е́дем к ба́бушке. | Morgen fahren wir zur Oma.
+вчера́ | Вчера́ весь день шёл дождь. | Gestern hat es den ganzen Tag geregnet.
 `;

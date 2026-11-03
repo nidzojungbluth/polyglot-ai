@@ -1250,4 +1250,44 @@ dokumentarac | Dokumentarac je bio o šumama. | Der Dokumentarfilm handelte von 
 zaraditi | Na noćnoj smeni zaradim više. | In der Nachtschicht verdiene ich mehr.
 organizovati | Ja ću organizovati rođendansku žurku. | Ich organisiere die Geburtstagsfeier.
 pripremiti | Moram da pripremim kofer za sutra. | Ich muss den Koffer für morgen vorbereiten.
+prevoziti | Kamion prevozi robu do Novog Sada. | Der Lkw transportiert die Ware nach Novi Sad.
+utovariti | Treba da utovarimo kamion do deset. | Wir müssen den Lkw bis zehn beladen.
+istovariti | Istovarili smo kontejner za sat vremena. | Wir haben den Container in einer Stunde entladen.
+spakovati | Spakuj porudžbine pre pauze. | Pack die Bestellungen vor der Pause.
+brojati | Brojim kutije pre nego što potpišem. | Ich zähle die Kartons, bevor ich unterschreibe.
+koristiti | Ceo dan koristim skener. | Ich benutze den ganzen Tag den Scanner.
+objasniti | Možeš li da mi objasniš kako radi mašina? | Kannst du mir erklären, wie die Maschine funktioniert?
+složiti se | Slažem se s tobom. | Ich stimme dir zu.
+odbiti | Odbio je ponudu za posao. | Er hat das Jobangebot abgelehnt.
+oprostiti | Oprosti mi, nisam hteo. | Verzeih mir, ich wollte das nicht.
+verovati nekome | Verujem bratu potpuno. | Ich vertraue meinem Bruder voll und ganz.
+nadati se | Nadam se da ću dobiti posao. | Ich hoffe, dass ich die Stelle bekomme.
+uplašiti | Uplašio si me! | Du hast mich erschreckt!
+smetati | Izvini što smetam tako kasno. | Entschuldige, dass ich so spät störe.
+upoznati | Drago mi je što sam te upoznao. | Schön, dich kennengelernt zu haben.
+sresti | Sreo sam komšiju u prodavnici. | Ich habe den Nachbarn im Laden getroffen.
+deliti | Delim stan sa dva studenta. | Ich teile die Wohnung mit zwei Studenten.
+pozajmiti | Možeš li da mi pozajmiš deset evra? | Kannst du mir zehn Euro leihen?
+štedeti | Štedim za letovanje. | Ich spare für den Sommerurlaub.
+pobediti | Zvezda je pobedila sinoć. | Roter Stern hat gestern Abend gewonnen.
+izgubiti se | Izgubili smo se u starom gradu. | Wir haben uns in der Altstadt verirrt.
+danas | Danas radim do četiri. | Heute arbeite ich bis vier.
+sutra | Sutra idemo kod bake. | Morgen gehen wir zur Oma.
+juče | Juče je padala kiša ceo dan. | Gestern hat es den ganzen Tag geregnet.
+ponedeljak | U ponedeljak počinjem novi posao. | Am Montag fange ich die neue Arbeit an.
+utorak | U utorak imam termin kod lekara. | Am Dienstag habe ich einen Arzttermin.
+sreda | Pijaca je svake srede. | Der Markt ist jeden Mittwoch.
+četvrtak | U četvrtak radim popodne. | Am Donnerstag arbeite ich nachmittags.
+petak | U petak izlazimo. | Am Freitag gehen wir aus.
+subota | U subotu spavam do podne. | Am Samstag schlafe ich bis Mittag.
+nedelja | U nedelju ručamo kod roditelja. | Am Sonntag essen wir bei den Eltern zu Mittag.
+januar | U januaru je hladno. | Im Januar ist es kalt.
+mart | Rođendan mi je u martu. | Mein Geburtstag ist im März.
+jul | U julu idemo na more. | Im Juli fahren wir ans Meer.
+septembar | Škola počinje u septembru. | Die Schule beginnt im September.
+decembar | U decembru je mnogo snega. | Im Dezember gibt es viel Schnee.
+hladno je | Hladno je, obuci jaknu. | Es ist kalt, zieh eine Jacke an.
+pada kiša | Pada kiša, uzmi kišobran. | Es regnet, nimm einen Schirm.
+iza | Parking je iza zgrade. | Der Parkplatz ist hinter dem Gebäude.
+ispred | Čekam te ispred bioskopa. | Ich warte vor dem Kino auf dich.
 `;

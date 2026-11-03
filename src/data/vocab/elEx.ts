@@ -1249,4 +1249,34 @@ export default `
 εμπιστεύομαι | Εμπιστεύομαι τον αδερφό μου απόλυτα. | Ich vertraue meinem Bruder voll und ganz.
 ελπίζω | Ελπίζω να πάρω τη δουλειά. | Ich hoffe, dass ich die Stelle bekomme.
 φοβίζω | Μη φοβίζεις τον σκύλο! | Mach dem Hund keine Angst!
+ενοχλώ | Συγγνώμη που σας ενοχλώ τόσο αργά. | Entschuldigung, dass ich so spät störe.
+γνωρίζω | Χάρηκα που σε γνώρισα. | Schön, dich kennengelernt zu haben.
+συναντώ | Συναντώ τον φίλο μου στο καφέ. | Ich treffe meinen Freund im Café.
+μοιράζομαι | Μοιράζομαι το διαμέρισμα με δύο φοιτητές. | Ich teile die Wohnung mit zwei Studenten.
+δανείζομαι | Δανείζομαι το αυτοκίνητο του αδερφού μου. | Ich leihe mir das Auto meines Bruders.
+δανείζω | Μου δανείζεις δέκα ευρώ; | Leihst du mir zehn Euro?
+αποταμιεύω | Αποταμιεύω για τις διακοπές. | Ich spare für den Urlaub.
+η Τρίτη | Την Τρίτη έχω ραντεβού στον γιατρό. | Am Dienstag habe ich einen Arzttermin.
+η Τετάρτη | Η αγορά είναι κάθε Τετάρτη. | Der Markt ist jeden Mittwoch.
+η Πέμπτη | Την Πέμπτη δουλεύω απόγευμα. | Am Donnerstag arbeite ich nachmittags.
+η Παρασκευή | Την Παρασκευή βγαίνουμε έξω. | Am Freitag gehen wir aus.
+ο Ιανουάριος | Τον Ιανουάριο κάνει κρύο. | Im Januar ist es kalt.
+ο Μάρτιος | Τα γενέθλιά μου είναι τον Μάρτιο. | Mein Geburtstag ist im März.
+ο Ιούλιος | Τον Ιούλιο πάμε στο νησί. | Im Juli fahren wir auf die Insel.
+ο Σεπτέμβριος | Τα σχολεία ανοίγουν τον Σεπτέμβριο. | Die Schulen öffnen im September.
+ο Δεκέμβριος | Τον Δεκέμβριο έχουμε Χριστούγεννα. | Im Dezember haben wir Weihnachten.
+ο φούρνος μικροκυμάτων | Ζέστανε το φαγητό στον φούρνο μικροκυμάτων. | Wärm das Essen in der Mikrowelle auf.
+ο χασάπης | Ο χασάπης έχει φρέσκο κρέας. | Der Metzger hat frisches Fleisch.
+ο ελαιοχρωματιστής | Ο ελαιοχρωματιστής βάφει το σαλόνι. | Der Maler streicht das Wohnzimmer.
+ο κηπουρός | Ο κηπουρός κόβει το γρασίδι. | Der Gärtner mäht den Rasen.
+ο αγρότης | Ο αγρότης μαζεύει ελιές. | Der Bauer erntet Oliven.
+ο ταμίας | Ο ταμίας μου έδωσε τα ρέστα. | Der Kassierer hat mir das Wechselgeld gegeben.
+η καθαρίστρια | Η καθαρίστρια έρχεται κάθε Δευτέρα. | Die Putzfrau kommt jeden Montag.
+ο προγραμματιστής | Ο αδερφός μου είναι προγραμματιστής. | Mein Bruder ist Programmierer.
+ο μηχανικός | Ο μηχανικός έλεγξε τη γέφυρα. | Der Ingenieur hat die Brücke geprüft.
+ο λογιστής | Ο λογιστής κάνει τη φορολογική μου δήλωση. | Der Buchhalter macht meine Steuererklärung.
+η γραμματέας | Η γραμματέας κλείνει τα ραντεβού. | Die Sekretärin vereinbart die Termine.
+ο πιλότος | Ο πιλότος μίλησε στους επιβάτες. | Der Pilot sprach zu den Passagieren.
+ο στρατιώτης | Ο στρατιώτης φυλάει την πύλη. | Der Soldat bewacht das Tor.
+ο ψαράς | Ο ψαράς βγαίνει στη θάλασσα πριν το ξημέρωμα. | Der Fischer fährt vor Tagesanbruch aufs Meer.
 `;
