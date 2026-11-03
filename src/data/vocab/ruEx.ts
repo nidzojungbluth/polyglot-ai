@@ -1205,4 +1205,44 @@ export default `
 страхова́ние кварти́ры | Страхова́ние кварти́ры покрыва́ет кра́жу. | Die Wohnungsversicherung deckt Diebstahl ab.
 продле́ние | Продле́ние подпи́ски автомати́ческое. | Die Verlängerung des Abos erfolgt automatisch.
 платёж | Платёж прошёл успе́шно. | Die Zahlung war erfolgreich.
+запра́вка | Ближа́йшая запра́вка в пяти́ киломе́трах. | Die nächste Tankstelle ist fünf Kilometer entfernt.
+ши́на | У маши́ны спусти́ла ши́на. | Am Auto ist ein Reifen platt.
+эвакуа́тор | Эвакуа́тор увёз маши́ну на стоя́нку. | Der Abschleppwagen hat das Auto auf den Parkplatz gebracht.
+техосмо́тр | Техосмо́тр на́до проходи́ть ка́ждые два го́да. | Die Fahrzeugprüfung muss man alle zwei Jahre machen.
+проце́нтная ста́вка | Проце́нтная ста́вка по креди́ту вы́росла. | Der Kreditzins ist gestiegen.
+долг | Он наконе́ц верну́л долг. | Er hat endlich die Schulden zurückgezahlt.
+подпи́ска | Подпи́ска сто́ит две́сти рубле́й в ме́сяц. | Das Abo kostet zweihundert Rubel im Monat.
+абоне́нтская пла́та | Абоне́нтская пла́та снима́ется пе́рвого числа́. | Die Grundgebühr wird am Ersten abgebucht.
+слу́жба подде́ржки | Я написа́л в слу́жбу подде́ржки. | Ich habe dem Kundenservice geschrieben.
+усло́вия | Внима́тельно прочита́й усло́вия. | Lies die Bedingungen aufmerksam.
+отказа́ться от подпи́ски | Я хочу́ отказа́ться от подпи́ски. | Ich möchte das Abo kündigen.
+участко́вый врач | Участко́вый врач прихо́дит на дом. | Der Bezirksarzt macht Hausbesuche.
+специали́ст | К специали́сту запи́сываются за́ две неде́ли. | Beim Facharzt bekommt man in zwei Wochen einen Termin.
+диспансериза́ция | Диспансериза́ция беспла́тная. | Die Vorsorgeuntersuchung ist kostenlos.
+приёмный поко́й | Его́ привезли́ в приёмный поко́й. | Man hat ihn in die Notaufnahme gebracht.
+ча́стная кли́ника | В ча́стной кли́нике нет о́череди. | In der Privatklinik gibt es keine Warteschlange.
+пла́тные услу́ги | Ана́лизы вхо́дят в пла́тные услу́ги. | Die Laborwerte gehören zu den kostenpflichtigen Leistungen.
+пост в соцсетя́х | Его́ пост в соцсетя́х все обсужда́ют. | Alle diskutieren seinen Beitrag in den sozialen Medien.
+подпи́счик | У неё пять ты́сяч подпи́счиков. | Sie hat fünftausend Follower.
+ла́йкнуть | Ла́йкни моё фо́то! | Like mein Foto!
+сде́лать репо́ст | Сде́лай репо́ст объявле́ния, пожа́луйста. | Teile bitte die Anzeige.
+про́филь | Поменя́й фо́то в про́филе. | Ändere das Profilbild.
+тра́вля в интерне́те | О тра́вле в интерне́те на́до сообща́ть. | Cybermobbing sollte man melden.
+заблоки́ровать | По́сле ссо́ры я его́ заблоки́ровал. | Nach dem Streit habe ich ihn blockiert.
+де́тский сад | Сын хо́дит в де́тский сад ря́дом с до́мом. | Der Sohn geht in den Kindergarten neben dem Haus.
+нача́льная шко́ла | Дочь у́чится в нача́льной шко́ле. | Die Tochter geht in die Grundschule.
+сре́дняя шко́ла | По́сле сре́дней шко́лы он пошёл в ко́лледж. | Nach der Schule ging er aufs College.
+ЕГЭ | Она́ сдаёт ЕГЭ в ию́не. | Sie legt im Juni das Staatsexamen ab.
+роди́тельское собра́ние | Роди́тельское собра́ние в пя́тницу ве́чером. | Der Elternabend ist am Freitagabend.
+подро́стковый во́зраст | Подро́стковый во́зраст – тру́дное вре́мя. | Die Pubertät ist eine schwierige Zeit.
+грани́цы | Де́тям нужны́ чёткие грани́цы. | Kinder brauchen klare Grenzen.
+похвала́ | Похвала́ учи́теля его́ обра́довала. | Das Lob des Lehrers hat ihn gefreut.
+наказа́ние | Наказа́ние – неде́ля без телефо́на. | Die Strafe ist eine Woche ohne Handy.
+вы́пускной | На вы́пускной она́ купи́ла пла́тье. | Für den Abschlussball hat sie ein Kleid gekauft.
+э́то не так | Э́то не так, я там был. | Das stimmt nicht, ich war dabei.
+по моему́ о́пыту | По моему́ о́пыту, дешёвая о́бувь бы́стро рвётся. | Aus meiner Erfahrung gehen billige Schuhe schnell kaputt.
+факт в том, что … | Факт в том, что аре́нда подорожа́ла. | Tatsache ist, dass die Miete teurer geworden ist.
+сомнева́юсь | Сомнева́юсь, что он придёт во́время. | Ich bezweifle, dass er pünktlich kommt.
+ты меня́ убеди́л | Ла́дно, ты меня́ убеди́л, е́дем на мо́ре. | Gut, du hast mich überzeugt, wir fahren ans Meer.
+ты меня́ не убеди́л | Ты меня́ пока́ не убеди́л. | Du hast mich noch nicht überzeugt.
 `;

@@ -1209,4 +1209,44 @@ export default `
 η συνάντηση γονέων | Η συνάντηση γονέων είναι αύριο στις έξι. | Der Elternabend ist morgen um sechs.
 τα όρια | Τα παιδιά χρειάζονται όρια. | Kinder brauchen Grenzen.
 ο έπαινος | Ο έπαινος δίνει κίνητρο στα παιδιά. | Lob motiviert Kinder.
+η ανάρτηση | Η ανάρτησή σου πήρε πολλά λάικ. | Dein Beitrag hat viele Likes bekommen.
+ο ακόλουθος | Έχει πέντε χιλιάδες ακόλουθους στο Instagram. | Sie hat fünftausend Follower auf Instagram.
+ο παιδικός σταθμός | Ο μικρός πάει στον παιδικό σταθμό από τις οχτώ. | Der Kleine geht ab acht Uhr in die Kita.
+το δημοτικό | Η κόρη μου πάει πρώτη δημοτικού. | Meine Tochter geht in die erste Klasse der Grundschule.
+η τιμωρία | Η τιμωρία ήταν μια εβδομάδα χωρίς κινητό. | Die Strafe war eine Woche ohne Handy.
+αυτό δεν ισχύει | Αυτό δεν ισχύει, εγώ ήμουν εκεί. | Das stimmt nicht, ich war dabei.
+από την εμπειρία μου | Από την εμπειρία μου, τα φθηνά παπούτσια χαλάνε γρήγορα. | Aus meiner Erfahrung gehen billige Schuhe schnell kaputt.
+είναι γεγονός ότι … | Είναι γεγονός ότι τα ενοίκια ανέβηκαν. | Tatsache ist, dass die Mieten gestiegen sind.
+αμφιβάλλω | Αμφιβάλλω αν θα έρθει στην ώρα του. | Ich bezweifle, dass er pünktlich kommt.
+με έπεισες | Εντάξει, με έπεισες, πάμε θάλασσα. | Okay, du hast mich überzeugt, wir fahren ans Meer.
+δεν με έπεισες | Ακόμα δεν με έπεισες για το σχέδιο. | Vom Plan hast du mich noch nicht überzeugt.
+ας πούμε ότι … | Ας πούμε ότι κερδίζεις το λαχείο. Τι κάνεις; | Sagen wir mal, du gewinnst im Lotto. Was machst du?
+το πλεονέκτημα | Το πλεονέκτημα της δουλειάς είναι το ωράριο. | Der Vorteil der Arbeit sind die Arbeitszeiten.
+το μειονέκτημα | Το μειονέκτημα είναι η μεγάλη απόσταση. | Der Nachteil ist die große Entfernung.
+συμπερασματικά | Συμπερασματικά, η πρόταση είναι καλή. | Zusammenfassend ist der Vorschlag gut.
+με το δίκιο σου | Θύμωσες με το δίκιο σου. | Du hast dich zu Recht geärgert.
+το επεισόδιο | Είδαμε τρία επεισόδια χθες βράδυ. | Wir haben gestern Abend drei Folgen geschaut.
+ο σκηνοθέτης | Ο σκηνοθέτης πήρε βραβείο στις Κάννες. | Der Regisseur hat in Cannes einen Preis bekommen.
+ο ηθοποιός | Ο ηθοποιός έπαιξε πολύ φυσικά. | Der Schauspieler hat sehr natürlich gespielt.
+οι υπότιτλοι | Βλέπω ταινίες με ελληνικούς υπότιτλους. | Ich schaue Filme mit griechischen Untertiteln.
+η μεταγλώττιση | Τα παιδικά έχουν μεταγλώττιση. | Kinderfilme sind synchronisiert.
+η πλοκή | Η πλοκή ήταν λίγο μπερδεμένη. | Die Handlung war etwas verwirrend.
+μη μου πεις το τέλος! | Μη μου πεις το τέλος! Δεν το έχω δει ακόμα. | Verrat mir nicht das Ende! Ich hab's noch nicht gesehen.
+η κριτική ταινίας | Διάβασα μια καλή κριτική ταινίας. | Ich habe eine gute Filmkritik gelesen.
+το ντοκιμαντέρ | Το ντοκιμαντέρ ήταν για τα δάση. | Der Dokumentarfilm handelte von Wäldern.
+κερδίζω | Κερδίζω περισσότερα στη νυχτερινή βάρδια. | In der Nachtschicht verdiene ich mehr.
+οργανώνω | Οργανώνω το πάρτι γενεθλίων της. | Ich organisiere ihre Geburtstagsfeier.
+ετοιμάζω | Ετοιμάζω τη βαλίτσα για αύριο. | Ich packe den Koffer für morgen.
+μεταφέρω | Μεταφέρω τις παλέτες με το κλαρκ. | Ich transportiere die Paletten mit dem Stapler.
+φορτώνω | Φορτώνουμε το φορτηγό μέχρι τις δέκα. | Wir beladen den Lkw bis zehn Uhr.
+ξεφορτώνω | Ξεφορτώνω το κοντέινερ με δύο συναδέλφους. | Ich entlade den Container mit zwei Kollegen.
+συσκευάζω | Συσκευάζω τις παραγγελίες στο τμήμα αποστολών. | Ich verpacke die Bestellungen im Versand.
+μετράω | Μετράω τα κουτιά πριν τα υπογράψω. | Ich zähle die Kartons, bevor ich unterschreibe.
+χρησιμοποιώ | Χρησιμοποιώ το σκάνερ όλη μέρα. | Ich benutze den ganzen Tag den Scanner.
+εξηγώ | Σου εξηγώ πώς δουλεύει η μηχανή. | Ich erkläre dir, wie die Maschine funktioniert.
+αρνούμαι | Αρνούμαι να δουλέψω χωρίς γάντια. | Ich weigere mich, ohne Handschuhe zu arbeiten.
+συγχωρώ | Σε συγχωρώ, αλλά μην το ξανακάνεις. | Ich verzeihe dir, aber mach es nicht nochmal.
+εμπιστεύομαι | Εμπιστεύομαι τον αδερφό μου απόλυτα. | Ich vertraue meinem Bruder voll und ganz.
+ελπίζω | Ελπίζω να πάρω τη δουλειά. | Ich hoffe, dass ich die Stelle bekomme.
+φοβίζω | Μη φοβίζεις τον σκύλο! | Mach dem Hund keine Angst!
 `;

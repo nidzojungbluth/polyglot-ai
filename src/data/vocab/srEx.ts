@@ -1210,4 +1210,44 @@ državna bolnica | U državnoj bolnici lečenje je besplatno. | Im staatlichen K
 privatna klinika | Privatna klinika je skupa, ali brza. | Die Privatklinik ist teuer, aber schnell.
 participacija | Za ovaj pregled se plaća participacija. | Für diese Untersuchung zahlt man eine Zuzahlung.
 društvene mreže | Provodim previše vremena na društvenim mrežama. | Ich verbringe zu viel Zeit in sozialen Netzwerken.
+korisnički servis | Zvao sam korisnički servis tri puta. | Ich habe dreimal den Kundenservice angerufen.
+objava | Tvoja objava ima mnogo lajkova. | Dein Beitrag hat viele Likes.
+pratilac | Ima pet hiljada pratilaca na Instagramu. | Sie hat fünftausend Follower auf Instagram.
+lajkovati | Lajkovala je sve moje slike. | Sie hat alle meine Bilder geliked.
+podeliti | Podeli oglas sa prijateljima. | Teile die Anzeige mit Freunden.
+profil | Promeni sliku na profilu. | Ändere das Profilbild.
+stori | Video je stavio u stori. | Er hat das Video in die Story gestellt.
+nasilje na internetu | Nasilje na internetu treba prijaviti. | Cybermobbing sollte man melden.
+blokirati | Blokirao sam ga posle svađe. | Ich habe ihn nach dem Streit blockiert.
+vrtić | Mali ide u vrtić od sedam. | Der Kleine geht ab sieben in den Kindergarten.
+osnovna škola | Ćerka je u trećem razredu osnovne škole. | Die Tochter ist in der dritten Klasse der Grundschule.
+srednja škola | Posle osnovne upisao je srednju školu. | Nach der Grundschule kam er auf die weiterführende Schule.
+gimnazija | Gimnazija traje četiri godine. | Das Gymnasium dauert vier Jahre.
+završni ispit | Završni ispit je u junu. | Die Abschlussprüfung ist im Juni.
+privatni časovi | Plaćamo mu privatne časove iz matematike. | Wir zahlen ihm Nachhilfe in Mathe.
+granice | Deci su potrebne jasne granice. | Kinder brauchen klare Grenzen.
+pohvala | Dobio je pohvalu od učiteljice. | Er hat ein Lob von der Lehrerin bekommen.
+to nije tačno | To nije tačno, bio sam tamo. | Das stimmt nicht, ich war dabei.
+iz mog iskustva | Iz mog iskustva, jeftine cipele se brzo pocepaju. | Aus meiner Erfahrung gehen billige Schuhe schnell kaputt.
+činjenica je da … | Činjenica je da su kirije porasle. | Tatsache ist, dass die Mieten gestiegen sind.
+sumnjam | Sumnjam da će doći na vreme. | Ich bezweifle, dass er pünktlich kommt.
+ubedio si me | Dobro, ubedio si me, idemo na more. | Gut, du hast mich überzeugt, wir fahren ans Meer.
+nisi me ubedio | Još me nisi ubedio za taj plan. | Von dem Plan hast du mich noch nicht überzeugt.
+recimo da … | Recimo da dobiješ na lotu. Šta radiš? | Sagen wir mal, du gewinnst im Lotto. Was machst du?
+prednost | Prednost ovog posla je radno vreme. | Der Vorteil dieser Arbeit sind die Arbeitszeiten.
+mana | Mana je velika udaljenost. | Der Nachteil ist die große Entfernung.
+zaključno | Zaključno, predlog je dobar. | Zusammenfassend ist der Vorschlag gut.
+s pravom | S pravom si se naljutio. | Du hast dich zu Recht geärgert.
+epizoda | Sinoć smo gledali tri epizode. | Gestern Abend haben wir drei Folgen geschaut.
+režiser | Režiser je dobio nagradu u Kanu. | Der Regisseur hat in Cannes einen Preis bekommen.
+glumac | Glumac je igrao veoma prirodno. | Der Schauspieler hat sehr natürlich gespielt.
+titlovi | Gledam filmove sa srpskim titlovima. | Ich schaue Filme mit serbischen Untertiteln.
+sinhronizacija | Crtani filmovi imaju sinhronizaciju. | Zeichentrickfilme sind synchronisiert.
+radnja | Radnja je bila malo zbunjujuća. | Die Handlung war etwas verwirrend.
+nemoj da mi otkriješ kraj! | Nemoj da mi otkriješ kraj! Još nisam gledao. | Verrat mir nicht das Ende! Ich hab's noch nicht gesehen.
+filmska kritika | Pročitao sam dobru filmsku kritiku. | Ich habe eine gute Filmkritik gelesen.
+dokumentarac | Dokumentarac je bio o šumama. | Der Dokumentarfilm handelte von Wäldern.
+zaraditi | Na noćnoj smeni zaradim više. | In der Nachtschicht verdiene ich mehr.
+organizovati | Ja ću organizovati rođendansku žurku. | Ich organisiere die Geburtstagsfeier.
+pripremiti | Moram da pripremim kofer za sutra. | Ich muss den Koffer für morgen vorbereiten.
 `;
