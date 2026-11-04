@@ -5,7 +5,8 @@ import { findLesson, lessonItems } from '../lib/course';
 import { newCard, review } from '../lib/srs';
 import { matches, sameAnswer } from '../lib/text';
 import { sayFor } from '../lib/platform';
-import { LevelBadge, ProgressBar, RegBadge, SpeakBtn, Icon, ResultBadge } from './ui';
+import { reportedIds } from '../lib/store';
+import { LevelBadge, ProgressBar, RegBadge, SpeakBtn, Icon, ResultBadge, ReportBtn } from './ui';
 
 export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) {
   const { pack, update, addActivity, go } = ctx;
@@ -16,8 +17,13 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
   const exercises = useMemo(() => {
     if (!lesson) return [];
     const slang = lesson.slangIds.map((id) => pack.slang.find((s) => s.id === id)!).filter(Boolean);
-    const ex = buildExercises(pack, items, lesson.cloze, lesson.order, slang);
+    const all = buildExercises(pack, items, lesson.cloze, lesson.order, slang);
+    // Gemeldete Einträge nicht abfragen (Phase 3); bleibt nichts übrig, doch alle zeigen
+    const reported = reportedIds(ctx.state);
+    const kept = all.filter((e) => !('wordId' in e) || !reported.has(e.wordId));
+    const ex = kept.length ? kept : all;
     return lesson.review ? ex.sort(() => Math.random() - 0.5).slice(0, 25) : ex;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lesson, pack, items, seed]);
   const [i, setI] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -73,7 +79,7 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
                   {w.ex && <div className="small muted"><i lang={pack.code}>{w.ex.t}</i> – {w.ex.de}</div>}
                   {w.note && <div className="small note"><Icon name="bulb" size={15} /> {w.note}</div>}
                 </div>
-                <SpeakBtn text={w.t} pack={pack} />
+                <div className="word-actions"><SpeakBtn text={w.t} pack={pack} /><ReportBtn ctx={ctx} target={{ id: w.id, lang: pack.code, t: w.t, de: w.de, ex: w.ex?.t }} /></div>
               </li>
             ))}
           </ul>

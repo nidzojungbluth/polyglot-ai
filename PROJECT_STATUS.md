@@ -14,7 +14,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 |---|---|
 | Frontend | React 18, TypeScript 5, Vite 5, kein Router (eigener View-State in `App.tsx`), eigenes CSS (`styles.css`), keine UI-Bibliothek |
 | Build | `npm run build` → `dist/` mit Code-Splitting (Kern + ein Chunk je Sprache, für GitHub Pages); `npm run build:artifact` → `dist-artifact/index.html` (eine Datei, für claude.ai) |
-| Speicher | IndexedDB (Schema-Version 1, Migration, Export/Import), Ausweichlösung localStorage/Speicher; sofortiges Speichern bei `visibilitychange`/`pagehide` |
+| Speicher | IndexedDB (Schema-Version 2 seit 04.11.2026, Migration 1→2, jedes Feld geprüft, Export/Import), Ausweichlösung localStorage/Speicher; sofortiges Speichern bei `visibilitychange`/`pagehide` |
 | Offline | Service Worker `public/sw.js` (Netzwerk zuerst, sonst Cache) – nur auf GitHub Pages wirksam |
 | Hosting | GitHub Pages über `.github/workflows/pages.yml` (Build + Deploy bei Push auf `main`) |
 | Zweitauslieferung | claude.ai-Artefakt (gleiche `index.html`): echter KI-Coach, private Cloud-Sicherung (`src/lib/cloud.ts`), kein Service Worker |
@@ -32,7 +32,8 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - **Wörterbuch** (`Dictionary.tsx`): Suche auch über Umschrift.
 - **Slang** mit Register, Ton, Region, Situation, Wirkung, neutraler Alternative.
 - **Rollenspiele** (`Roleplays.tsx`): verzweigte Dialoge.
-- **Sprachcoach** (`Coach.tsx`, `lib/coach.ts`): auf claude.ai echte KI (Claude), sonst gekennzeichneter regelbasierter Offline-Coach; Modi Lernen/Alltag/Immersion, Slang-Regler.
+- **Sprachcoach** (`Coach.tsx`, `lib/coach.ts`): auf claude.ai echte KI (Claude), sonst gekennzeichneter regelbasierter Offline-Coach; Modi Lernen/Alltag/Immersion, Slang-Menge im Einstellungs-Panel; Design Entwurf A „Apple Minimal“ (Korrekturen als „Besser so“ oben in der Antwort, Eingabe unten fixiert).
+- **Fehler melden & Prüfmodus** (Phase 3, `ui.tsx` `ReportBtn`/`ReportSheet`, `Courses.tsx` `CheckMode`, `Settings.tsx` `ReportsSection`): Fähnchen an Einträgen, Blatt mit Fehlerart + Notiz, Liste/Kopieren/Teilen in den Einstellungen, gemeldete Einträge werden nicht abgefragt; Prüfmodus je Kursmodul (Stimmt/Fehler).
 - **Fortschritt** (`Progress.tsx`): Statistik, Lernserie, Fortschritt je Niveau/Thema.
 - **Einstellungen/Sicherung** (`Settings.tsx`): Export/Import, Cloud-Sicherung (nur claude.ai), Schriftwahl Serbisch.
 - **Sprachausgabe** über Gerätestimmen (`lib/platform.ts`), Serbisch über kroatische/serbische Stimme in Latein.
@@ -57,9 +58,9 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 | Messgröße | Wert | Bewertung |
 |---|---|---|
 | Erster Download (Pages) | 366 KB (Kern + gewählte Sprache) | ✅ (vorher ~1,8 MB) |
-| Start iPhone-13-Simulation, CPU ×4 (`npm run perf`) | **0,47 s** | ✅ (vorher 1,5 s) – wächst nur noch mit der gewählten Sprache |
-| Unit-Tests | 107/107 grün | ✅ |
-| E2E | 34/34 grün (inkl. Sprachwechsel offline) | ✅ |
+| Start iPhone-13-Simulation, CPU ×4 (`npm run perf`) | **0,43–0,50 s** (04.11.2026) | ✅ (vorher 1,5 s) – wächst nur noch mit der gewählten Sprache |
+| Unit-Tests | 114/114 grün (04.11.2026) | ✅ |
+| E2E | 40/40 grün (inkl. Sprachwechsel offline, Fehler melden, Prüfmodus, alle Seiten ohne Überlauf) | ✅ |
 | GitHub Pages Deploy | grün | ✅ |
 
 ## 6. Offene Probleme und technische Schulden
@@ -72,7 +73,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 6. **Alte Basis-Einträge ohne Beispielsatz** (v. a. B2-Rest, C1, C2, einige A1) – ca. 550–600 Wörter je Sprache.
 7. **Lückentext** funktioniert nicht bei gebeugten Formen (dann nur Satzbau-Übung).
 8. **Englisch/Spanisch** nur Mini-Pakete.
-9. **Inhaltsqualität** nicht durch Muttersprachler geprüft; es gibt keine Möglichkeit, in der App Fehler zu melden.
+9. **Inhaltsqualität** nicht durch Muttersprachler geprüft. ✅ Seit Phase 3 kann man Fehler melden und Module im Prüfmodus durchgehen – die Prüfung selbst braucht weiterhin Muttersprachler.
 10. iOS kann Browserdaten löschen → Nutzer muss sichern (Hinweis vorhanden, keine Erinnerung).
 
 ## 7. Sicherheit und Datenschutz
@@ -95,6 +96,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 04.11.2026: Etappe 53 – +99/+102/+102 Einträge (Steinmetz, Spinnerei & Textilfasern, Vermessung & Kartografie, Skigebiet & Seilbahn, Brauerei).
 - 04.11.2026: Etappe 54 – +144/+141/+139 Einträge in 7 Modulen (Nagelstudio & Kosmetik, Tattoo & Piercing, Klavier & Klavierstimmer, Tischtennis & Badminton, Pilze sammeln, Wasserwerk & Kanalisation, Kaffeerösterei & Barista). **Phase 2 abgeschlossen: alle drei Sprachen ≥ 5.000 Einträge.** Ohne Beispielsatz bleiben nur A1-Grundwörter (Zahlen, Artikel, Pronomen, ~1 %).
 - 04.11.2026 abends: **Audit + Redesign** (Master-Prompt des Nutzers). Wiederherstellungspunkt: Zweig `backup/vor-audit-2026-11-04` (Commit `1e89d7c`). Behoben: (1) `migrate()` prüft jetzt jedes Feld einer Sicherung einzeln – eine kaputte Datei konnte vorher die App lahmlegen (z. B. Coach-Verlauf mit falschem Aufbau); (2) IndexedDB-Verbindung wird wiederverwendet; (3) Cloud-Wiederherstellung prüft den aktuellen Stand; (4) Service Worker speichert keine Fehlerseiten mehr; (5) Dateiauswahl in den Einstellungen machte die Seite breiter als das iPhone; (6) Wörterbuch ohne leere Karte, flüssiges Tippen. Neues Designsystem im iOS-Stil (Farben, Typografie, Karten, SVG-Tab-Leiste, Aktivitätsring auf der Startseite, dezente Animationen, Hell/Dunkel). Tests: vitest 109/109, E2E 36/36, Start 0,43 s. **Coach-Design wartet auf Auswahl A/B/C** (Entwürfe: https://claude.ai/artifact/SnPnAfJgihgeNgohAcS4h4). Danach weiter mit Phase 3.
+- 04.11.2026 spät: Nutzer wählt **Coach-Entwurf A** und gibt die vollständige Design-Transformation frei. Umgesetzt: Coach A; alle Seiten mit eigenen SVG-Symbolen statt Emojis in Bedienelementen, iOS-Zurück-Chevron, Schließen-Knöpfe, Auswahllisten, Ladeanzeige, Ergebnis-Abzeichen, Verläufe auf leichten Glanz reduziert, keine Randstreifen. Danach **Phase 3 abgeschlossen** (Fehler melden, Prüfmodus, Schema 2). E2E-Fehler im Test selbst behoben (Service-Worker-Prüfung hätte auch bei „nicht aktiv“ bestanden). Tests: vitest 114/114, E2E 40/40, Start 0,43–0,50 s. Nächste Phase: 4.
 - 04.11.2026: Beispielsatz-Runde 25 – letzte Runde B: A2 bis C2 in allen drei Sprachen 100 %; offen nur A1-Grundwörter (Artikel, Pronomen, Zahlen).
 - 04.11.2026: Etappe 47 – +97/+102/+102 Einträge (Fischerei & Fischmarkt, Zoo & Tierpflege, Bibliothek & Archiv, Schuhmacher & Sattler, Bestattung).
 - 04.11.2026: Etappe 46 – +107/+108/+107 Einträge (Imkerei & Hofladen, Bergbau & Steinbruch, Schiff & Hafen, Fotostudio, Juwelier & Uhrmacher).

@@ -1,4 +1,8 @@
 import type React from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
+import type { Ctx } from '../App';
+import { REPORT_KINDS, type ReportKind } from '../lib/store';
 import type { Register } from '../data/types';
 import { REGISTER_INFO } from '../data/types';
 import { sayFor } from '../lib/platform';
@@ -131,4 +135,73 @@ export function LevelBadge({ level }: { level?: string }) {
 
 export function AiNotice() {
   return <p className="fine">Inhalte von KI erstellt und sorgfältig zusammengestellt, aber noch nicht von Muttersprachlern geprüft.</p>;
+}
+
+// ---------- Fehler melden (Phase 3) ----------
+export interface ReportTarget { id: string; lang: string; t: string; de: string; ex?: string }
+
+/** Kleiner Knopf mit Fähnchen. Gemeldete Einträge zeigen ein gefülltes, orangefarbenes Fähnchen. */
+export function ReportBtn({ ctx, target }: { ctx: Ctx; target: ReportTarget }) {
+  const [open, setOpen] = useState(false);
+  const done = !!ctx.state.reports[target.id];
+  return (
+    <>
+      <button type="button" className={`icon-btn report-btn ${done ? 'on' : ''}`} aria-label={done ? `Gemeldet: ${target.t}` : `Fehler melden: ${target.t}`}
+        onClick={(e) => { e.stopPropagation(); setOpen(true); }}>
+        <Icon name="flag" size={17} />
+      </button>
+      {open && <ReportSheet ctx={ctx} target={target} onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
+/** Blatt von unten (wie iOS) zum Melden eines Fehlers. Speichert nur auf diesem Gerät. */
+export function ReportSheet({ ctx, target, onClose, onSaved }: { ctx: Ctx; target: ReportTarget; onClose: () => void; onSaved?: () => void }) {
+  const existing = ctx.state.reports[target.id];
+  const [kind, setKind] = useState<ReportKind>(existing?.kind ?? 'übersetzung');
+  const [note, setNote] = useState(existing?.note ?? '');
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => { ref.current?.focus(); }, []);
+  const save = () => {
+    ctx.update((s) => {
+      const checks = { ...s.checks }; delete checks[target.id]; // gemeldet ersetzt „bestätigt“
+      return { ...s, checks, reports: { ...s.reports, [target.id]: { ...target, kind, note: note.trim(), at: Date.now() } } };
+    });
+    onClose();
+    onSaved?.();
+  };
+  const remove = () => {
+    ctx.update((s) => { const r = { ...s.reports }; delete r[target.id]; return { ...s, reports: r }; });
+    onClose();
+  };
+  // Über ein Portal direkt in <body>: Die Seiten-Animation (transform) würde „position: fixed“ sonst an die Seite binden.
+  return createPortal(
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby="report-title" tabIndex={-1} ref={ref}
+        onClick={(e) => e.stopPropagation()} onKeyDown={(e) => { if (e.key === 'Escape') onClose(); }}>
+        <div className="sheet-grabber" aria-hidden="true" />
+        <h2 id="report-title">{existing ? 'Meldung bearbeiten' : 'Fehler melden'}</h2>
+        <div className="sheet-entry">
+          <b lang={target.lang}>{target.t}</b> <span className="muted">– {target.de}</span>
+          {target.ex && <div className="small muted" lang={target.lang}>{target.ex}</div>}
+        </div>
+        <div className="choice-list" role="radiogroup" aria-label="Was stimmt nicht?">
+          {REPORT_KINDS.map((k) => (
+            <button key={k.k} type="button" role="radio" aria-checked={kind === k.k} className={`choice ${kind === k.k ? 'on' : ''}`} onClick={() => setKind(k.k)}>
+              <span>{k.label}</span>{kind === k.k && <Icon name="check" size={18} />}
+            </button>
+          ))}
+        </div>
+        <label className="field">Was wäre richtig? (freiwillig)
+          <textarea className="input" rows={2} maxLength={1000} value={note} onChange={(e) => setNote(e.target.value)} placeholder="z. B. richtige Übersetzung oder Betonung" />
+        </label>
+        <p className="fine">Die Meldung bleibt nur auf diesem Gerät. Der Eintrag wird nicht mehr abgefragt, bis du die Meldung löschst. In den Einstellungen kannst du alle Meldungen als Text kopieren.</p>
+        <div className="row">
+          {existing ? <button type="button" className="btn danger" onClick={remove}>Meldung löschen</button> : <button type="button" className="btn" onClick={onClose}>Abbrechen</button>}
+          <button type="button" className="btn primary grow" onClick={save}>{existing ? 'Speichern' : 'Melden'}</button>
+        </div>
+      </div>
+    </div>,
+    document.body,
+  );
 }

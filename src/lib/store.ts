@@ -2,10 +2,22 @@
 // Fallback: localStorage, zuletzt nur Arbeitsspeicher. Mit Schema-Version und Migration.
 import type { Card } from './srs';
 
-export const SCHEMA_VERSION = 1;
+/** 2 = mit Fehlermeldungen (reports) und Prüfhäkchen (checks), Phase 3, 04.11.2026. */
+export const SCHEMA_VERSION = 2;
 
 export type CoachMode = 'lernen' | 'alltag' | 'immersion';
 export type Theme = 'auto' | 'hell' | 'dunkel';
+
+export type ReportKind = 'übersetzung' | 'schreibweise' | 'betonung' | 'satz' | 'sonstiges';
+export const REPORT_KINDS: { k: ReportKind; label: string }[] = [
+  { k: 'übersetzung', label: 'Übersetzung falsch' },
+  { k: 'schreibweise', label: 'Schreibweise falsch' },
+  { k: 'betonung', label: 'Betonung/Aussprache falsch' },
+  { k: 'satz', label: 'Beispielsatz unnatürlich' },
+  { k: 'sonstiges', label: 'Sonstiges' },
+];
+/** Eine Fehlermeldung zu einem Eintrag. Der Eintrag wird mitgespeichert, damit die Meldung auch nach einer Korrektur verständlich bleibt. */
+export interface Report { id: string; lang: string; kind: ReportKind; note: string; at: number; t: string; de: string; ex?: string }
 
 export interface CoachMsg { role: 'user' | 'assistant'; content: string; source?: 'ki' | 'regel' }
 
@@ -31,6 +43,8 @@ export interface AppState {
   daily: Record<string, number>;               // "YYYY-MM-DD" → Übungen
   mistakes: Record<string, { why: string; count: number; lang: string }>;
   coach: Record<string, CoachMsg[]>;           // Verlauf pro Sprache
+  reports: Record<string, Report>;             // Fehlermeldungen, Schlüssel = Eintrags-ID
+  checks: Record<string, number>;              // Prüfmodus: als korrekt bestätigt (Zeitpunkt)
   updatedAt: number;
 }
 
@@ -38,7 +52,7 @@ export function defaultState(): AppState {
   return {
     schema: SCHEMA_VERSION,
     settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true, srScript: 'beide', cardDir: 'gemischt', newPerDay: 20 },
-    cards: {}, lessons: {}, roleplays: {}, daily: {}, mistakes: {}, coach: {}, updatedAt: Date.now(),
+    cards: {}, lessons: {}, roleplays: {}, daily: {}, mistakes: {}, coach: {}, reports: {}, checks: {}, updatedAt: Date.now(),
   };
 }
 
@@ -77,6 +91,13 @@ export function migrate(raw: unknown): AppState {
     daily: pick(r.daily, (v) => (num(v) ? v : undefined)),
     mistakes: pick(r.mistakes, (v) => (v && typeof v.why === 'string' && num(v.count) && typeof v.lang === 'string' ? { why: v.why.slice(0, 500), count: v.count, lang: v.lang } : undefined)),
     coach,
+    // Schema 1 kannte beides noch nicht → leer übernehmen (Migration 1 → 2)
+    reports: pick((r as any).reports, (v): Report | undefined => (v && typeof v.id === 'string' && typeof v.t === 'string' && typeof v.de === 'string'
+      && REPORT_KINDS.some((x) => x.k === v.kind) ? {
+        id: v.id, lang: typeof v.lang === 'string' ? v.lang : '', kind: v.kind, note: typeof v.note === 'string' ? v.note.slice(0, 1000) : '',
+        at: num(v.at) ? v.at : Date.now(), t: v.t.slice(0, 300), de: v.de.slice(0, 300), ...(typeof v.ex === 'string' ? { ex: v.ex.slice(0, 600) } : {}),
+      } : undefined)),
+    checks: pick((r as any).checks, (v) => (num(v) ? v : undefined)),
     updatedAt: num(r.updatedAt) ? r.updatedAt : Date.now(),
   };
 }
@@ -192,3 +213,21 @@ export function streak(daily: Record<string, number>, now = new Date()): number 
 export const newDoneToday = (s: AppState, now = new Date()) => (s.newDone?.day === today(now) ? s.newDone.n : 0);
 /** Tageslimit für neue Karten; 0 heißt „kein Limit“. */
 export const newLimit = (s: AppState) => (s.settings.newPerDay > 0 ? s.settings.newPerDay : Number.MAX_SAFE_INTEGER);
+
+// ---------- Fehlermeldungen (Phase 3) ----------
+/** IDs gemeldeter Einträge – sie werden in Übungen nicht abgefragt, bis die Meldung gelöscht ist. */
+export const reportedIds = (s: AppState) => new Set(Object.keys(s.reports));
+
+/** Meldungen als lesbarer Text zum Kopieren/Teilen (z. B. an einen Muttersprachler oder zur Korrektur). */
+export function reportsText(s: AppState, langName: (code: string) => string = (c) => c): string {
+  const list = Object.values(s.reports).sort((a, b) => a.lang.localeCompare(b.lang) || a.at - b.at);
+  const checked = Object.keys(s.checks).length;
+  const head = `Polyglot AI – Fehlermeldungen (${list.length})${checked ? ` · als korrekt bestätigt: ${checked}` : ''} · ${new Date().toLocaleDateString('de-DE')}`;
+  const kinds = Object.fromEntries(REPORT_KINDS.map((x) => [x.k, x.label]));
+  const rows = list.map((r, i) => [
+    `${i + 1}. [${langName(r.lang)}] ${r.t} – ${r.de}  (ID ${r.id})`,
+    `   Problem: ${kinds[r.kind]}${r.note ? ` – ${r.note}` : ''}`,
+    r.ex ? `   Beispielsatz: ${r.ex}` : '',
+  ].filter(Boolean).join('\n'));
+  return [head, '', ...rows].join('\n');
+}

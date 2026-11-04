@@ -5,7 +5,7 @@ import { useAllPacks } from '../lib/usePacks';
 import type { LanguagePack, Register } from '../data/types';
 import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
-import { LevelBadge, RegBadge, SpeakBtn, WordHead, ExampleBlock, Icon } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn, WordHead, ExampleBlock, Icon, ReportBtn } from './ui';
 
 interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: { t: string; de: string }; extra?: string; local?: boolean; search: string }
 
@@ -65,7 +65,7 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
               <ExampleBlock ex={r.ex} lang={r.pack.code} pack={r.pack} />
               {r.extra && <div className="small note"><Icon name="bulb" size={15} /> {r.extra}</div>}
             </div>
-            <SpeakBtn text={r.t} pack={r.pack} />
+            <div className="word-actions"><SpeakBtn text={r.t} pack={r.pack} /><ReportBtn ctx={ctx} target={{ id: r.id, lang: r.pack.code, t: r.t, de: r.de, ex: r.ex?.t }} /></div>
           </li>
         ))}
       </ul>}

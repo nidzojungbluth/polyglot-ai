@@ -183,6 +183,29 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   assert(await p.locator('.err-text').count() === 1, 'Kaputte Sicherung → verständliche Fehlermeldung');
   await p.screenshot({ path: '../shots/6-settings.png' });
 
+  // Phase 3: Fehler melden (Wörterbuch) – bleibt nach Neuladen gespeichert, erscheint in den Einstellungen
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Wörterbuch');
+  await p.fill('input[type=search]', 'danke');
+  await p.locator('.report-btn').first().click();
+  await p.waitForSelector('.sheet');
+  await p.click('.choice:has-text("Betonung")');
+  await p.fill('.sheet textarea', 'Testmeldung');
+  await p.click('.sheet button:has-text("Melden")');
+  assert(await p.locator('.report-btn.on').count() === 1, 'Fehler melden: Fähnchen zeigt „gemeldet“');
+  await p.waitForTimeout(500); await p.reload(); await p.waitForSelector('.tabbar');
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Einstellungen');
+  assert(await p.locator('text=Testmeldung').count() === 1, 'Meldung übersteht Neuladen und steht in den Einstellungen');
+  await p.click('button[aria-label^="Meldung löschen"]');
+  assert(await p.locator('text=Testmeldung').count() === 0, 'Meldung lässt sich löschen');
+  // Prüfmodus in einem Kursmodul
+  await p.click('.tab:has-text("Kurse")'); await p.locator('.list-btn').first().click();
+  await p.click('button:has-text("Prüfmodus")');
+  await p.waitForSelector('.check-card');
+  await p.click('button:has-text("Stimmt")');
+  assert(await p.locator('text=1 bestätigt').count() === 1, 'Prüfmodus: Eintrag bestätigt, nächster Eintrag erscheint');
+  await p.click('button[aria-label="Prüfmodus beenden"]');
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Einstellungen');
+
   // Offline (Service Worker)
   const swState = await p.locator('tr:has-text("Service Worker") td').nth(1).innerText();
   assert(swState.trim().startsWith('aktiv'), 'Service Worker aktiv: ' + swState);

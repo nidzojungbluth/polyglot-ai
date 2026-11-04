@@ -66,7 +66,8 @@ export function dueTomorrowCount(cards: Record<string, Card>, known: (id: string
 }
 
 /** Prüffunktion „gibt es diesen Eintrag in der Sprache?“ – für todayQueue/dueTomorrowCount. */
-export function knownIn(pack: { words: { id: string }[]; slang: { id: string }[] }): (id: string) => boolean {
+export function knownIn(pack: { words: { id: string }[]; slang: { id: string }[] }, exclude?: Set<string>): (id: string) => boolean {
   const ids = new Set<string>([...pack.words.map((w) => w.id), ...pack.slang.map((s) => s.id)]);
-  return (id) => ids.has(id);
+  // Gemeldete Einträge (Phase 3) werden nicht abgefragt, bis die Meldung gelöscht ist.
+  return (id) => ids.has(id) && !exclude?.has(id);
 }

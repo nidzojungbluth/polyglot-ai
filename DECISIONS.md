@@ -57,10 +57,14 @@ Format: `## topic=… level=… [part=N] title=…`, Wortzeile `t | de | pos | r
 `ROADMAP.md` (Wurzel) wird die einzige Roadmap; `docs/ROADMAP.md` wird zur Fehler- und Änderungschronik umbenannt (`docs/CHANGELOG.md`), `scripts/report.ts` hängt künftig `PROJECT_STATUS.md`-Kennzahlen an statt die Roadmap zu kopieren.
 *Status:* umgesetzt 01.11.2026.
 
-**D-012 · Fehler-melden-Funktion statt (unbezahlbarer) Muttersprachler-Prüfung – VORSCHLAG.**
+**D-012 · Fehler-melden-Funktion statt (unbezahlbarer) Muttersprachler-Prüfung – UMGESETZT (04.11.2026).**
 Knopf „Fehler melden“ an jedem Eintrag; Meldungen lokal gespeichert, als Text exportierbar (z. B. an Bekannte mit Muttersprache schicken); markierte Einträge werden in Übungen zurückgestellt.
 *Warum:* einziger kostenloser Weg zu echter Qualitätsprüfung; Wettbewerbsvorteil (Transparenz).
-*Status:* zur Planung, Phase 3.
+*Status:* umgesetzt in Phase 3: Fähnchen an Wörterbuch-, Kurs-, Lektions- und Vokabeleinträgen, Prüfmodus je Kursmodul, Liste/Export in den Einstellungen, Schema 2.
+
+**D-013 · Designsystem im iOS-Stil, Coach nach Entwurf A „Apple Minimal“ (04.11.2026).**
+Eigene Linien-Symbole (SVG) statt Emojis in Bedienelementen, Systemschrift, gruppierte Karten, Haarlinien, iOS-Segmente, Blatt von unten für Dialoge, nur ganz leichte Verläufe. Der Nutzer hat für den Coach Entwurf A gewählt (Entwürfe: https://claude.ai/artifact/SnPnAfJgihgeNgohAcS4h4).
+*Status:* gilt.
 
 ## Grundsätze für künftige Entscheidungen
 

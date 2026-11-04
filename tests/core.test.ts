@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest';
 import 'fake-indexeddb/auto';
 import { PACKS } from '../src/data/all';
 import { REGISTER_INFO } from '../src/data/types';
-import { newCard, review, dueCards, isLearned } from '../src/lib/srs';
+import { newCard, review, dueCards, isLearned, todayQueue, knownIn } from '../src/lib/srs';
 import { matches, normalize } from '../src/lib/text';
-import { defaultState, exportBackup, importBackup, migrate, loadState, saveState, streak, today } from '../src/lib/store';
+import { defaultState, exportBackup, importBackup, migrate, loadState, saveState, streak, today, reportsText, reportedIds } from '../src/lib/store';
 import { checkRules, ruleReply, findSlang, buildAiMessages, buildAiInstructions } from '../src/lib/coach';
 import { buildLessonExercises } from '../src/lib/exercises';
 
@@ -282,5 +282,45 @@ describe('Lernsystem: Tageswarteschlange', () => {
     const t0 = performance.now();
     for (let k = 0; k < 20; k++) todayQueue(cards, () => true, { newLimit: 20, newDoneToday: 0 });
     expect((performance.now() - t0) / 20).toBeLessThan(20);
+  });
+});
+
+describe('Fehler melden & Prüfmodus (Phase 3)', () => {
+  const report = { id: 'el-w1', lang: 'el', kind: 'betonung' as const, note: 'Betonung auf der 2. Silbe', at: 1, t: 'καφές', de: 'Kaffee', ex: 'Θέλω έναν καφέ.' };
+  it('alte Sicherung (Schema 1) lädt und bekommt leere Meldungen', () => {
+    const old = { app: 'polyglot-ai', schema: 1, settings: { lang: 'el' }, cards: { 'el-w1': { due: 1, ease: 2.5, interval: 1 } }, lessons: {} };
+    const m = importBackup(JSON.stringify(old));
+    expect(m.schema).toBe(2);
+    expect(m.reports).toEqual({});
+    expect(m.checks).toEqual({});
+    expect(Object.keys(m.cards)).toEqual(['el-w1']);
+  });
+  it('Meldung übersteht Export/Import und Speichern/Laden', async () => {
+    const s = defaultState(); s.reports['el-w1'] = report; s.checks['el-w2'] = 5;
+    const back = importBackup(exportBackup(s));
+    expect(back.reports['el-w1']).toEqual(report);
+    expect(back.checks).toEqual({ 'el-w2': 5 });
+    const { kind } = await loadState();
+    await saveState(back, kind);
+    expect((await loadState()).state.reports['el-w1'].note).toBe('Betonung auf der 2. Silbe');
+  });
+  it('ungültige Meldungen werden verworfen', () => {
+    const m = migrate({ schema: 2, reports: { a: { id: 'a', t: 'x', de: 'y', kind: 'quatsch' }, b: { ...report, id: 'b' } } });
+    expect(Object.keys(m.reports)).toEqual(['b']);
+  });
+  it('Export-Text enthält Eintrag, Problem und Notiz', () => {
+    const s = defaultState(); s.reports['el-w1'] = report;
+    const t = reportsText(s, (c) => (c === 'el' ? 'Griechisch' : c));
+    expect(t).toContain('[Griechisch] καφές – Kaffee');
+    expect(t).toContain('Betonung/Aussprache falsch – Betonung auf der 2. Silbe');
+    expect(t).toContain('Θέλω έναν καφέ.');
+  });
+  it('gemeldete Karte erscheint nicht in der Tageswarteschlange', () => {
+    const s = defaultState(); s.cards['el-w1'] = newCard('el-w1', 0); s.cards['el-w2'] = newCard('el-w2', 0);
+    const pack = { words: [{ id: 'el-w1' }, { id: 'el-w2' }], slang: [] };
+    expect(todayQueue(s.cards, knownIn(pack), { newLimit: 99, newDoneToday: 0, now: 10 }).length).toBe(2);
+    s.reports['el-w1'] = report;
+    const q = todayQueue(s.cards, knownIn(pack, reportedIds(s)), { newLimit: 99, newDoneToday: 0, now: 10 });
+    expect(q.map((c) => c.id)).toEqual(['el-w2']);
   });
 });

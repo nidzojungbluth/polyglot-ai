@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Ctx } from '../App';
 import { dueTomorrowCount, isLearned, isNew, newCard, review, todayQueue, type Card, type Grade } from '../lib/srs';
-import { newDoneToday, newLimit, today } from '../lib/store';
+import { newDoneToday, newLimit, reportedIds, today } from '../lib/store';
 import { explainSlang } from '../lib/coach';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
-import { ExampleBlock, LevelBadge, RegBadge, SpeakBtn, WordHead, Icon, ResultBadge } from './ui';
+import { ExampleBlock, LevelBadge, RegBadge, SpeakBtn, WordHead, Icon, ResultBadge, ReportBtn } from './ui';
 
 interface Item { t: string; tr?: string; de: string; reg: any; level?: string; cat?: string; ex?: { t: string; de: string }; extra?: string }
 
@@ -28,7 +28,8 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
     return m;
   }, [pack]);
   // Nur Karten zu Einträgen, die es (noch) gibt – alte Karten nach Korrekturen bleiben gespeichert, stören aber nicht.
-  const known = (id: string) => lookup.has(id);
+  const reported = reportedIds(state);
+  const known = (id: string) => lookup.has(id) && !reported.has(id);
   const due = todayQueue(state.cards, known, { newLimit: newLimit(state), newDoneToday: newDoneToday(state) });
   const deck = Object.values(state.cards).filter((c) => c.id.startsWith(prefix) && known(c.id));
   const hard = deck.filter(isHard).sort((a, b) => b.lapses - a.lapses);
@@ -96,7 +97,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
             </div>
           ) : <div className="muted small">Tippen zum Umdrehen</div>}
         </button>
-        {(flipped || dir === 'zu-de') && <SpeakBtn text={item.t} pack={pack} label="Anhören" />}
+        {(flipped || dir === 'zu-de') && <div className="row card-actions"><SpeakBtn text={item.t} pack={pack} label="Anhören" />{flipped && <ReportBtn ctx={ctx} target={{ id, lang: pack.code, t: item.t, de: item.de, ex: item.ex?.t }} />}</div>}
         {flipped && (
           <div className="grades">
             <button className="btn g0" onClick={() => grade(0)}>Nochmal</button>
@@ -163,7 +164,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
                   <div className="small pre">{explainSlang(s).split('\n').slice(1).filter((l) => !l.startsWith('• Beispiel')).join('\n')}</div>
                   <ExampleBlock ex={s.ex} lang={pack.code} pack={pack} />
                 </div>
-                <SpeakBtn text={s.t} pack={pack} />
+                <div className="word-actions"><SpeakBtn text={s.t} pack={pack} /><ReportBtn ctx={ctx} target={{ id: s.id, lang: pack.code, t: s.t, de: s.de, ex: s.ex?.t }} /></div>
               </li>
             ))}
           </ul>
@@ -185,8 +186,8 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
               return (
                 <li key={id} className="word-row">
                   <div className="grow"><WordHead t={it.t} de={it.de} tr={it.tr} lang={pack.code} /><div className="small"><RegBadge reg={it.reg} /> <LevelBadge level={it.level} /></div><ExampleBlock ex={it.ex} lang={pack.code} pack={pack} /></div>
-                  {c && <span className="muted small">{isLearned(c) ? '✓' : isHard(c) ? '🎯' : `${c.interval} T.`}</span>}
-                  <SpeakBtn text={it.t} pack={pack} />
+                  {c && <span className="muted small">{isLearned(c) ? '✓' : isHard(c) ? <Icon name="target" size={16} label="schwierig" /> : `${c.interval} T.`}</span>}
+                  <div className="word-actions"><SpeakBtn text={it.t} pack={pack} /><ReportBtn ctx={ctx} target={{ id, lang: pack.code, t: it.t, de: it.de, ex: it.ex?.t }} /></div>
                 </li>
               );
             })}

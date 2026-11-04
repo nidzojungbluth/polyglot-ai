@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Ctx } from '../App';
-import { defaultState, exportBackup, importBackup, type Theme } from '../lib/store';
+import { defaultState, exportBackup, importBackup, reportsText, REPORT_KINDS, type Theme } from '../lib/store';
+import { BASES } from '../data';
 import { cloudSave } from '../lib/cloud';
 import { isStandalone, speechAvailable, useCapability } from '../lib/platform';
 import { Icon } from './ui';
@@ -89,6 +90,8 @@ export function Settings({ ctx }: { ctx: Ctx }) {
         <p className="fine">Modus und Slang-Menge stellst du direkt im Coach ein.</p>
       </section>
 
+      <ReportsSection ctx={ctx} />
+
       <section className="card">
         <h2>Sicherung & Wiederherstellung</h2>
         <p className="small">Browserdaten können auf dem iPhone gelöscht werden (z. B. bei wenig Speicher oder wenn eine Seite lange nicht geöffnet wurde). Sichere deinen Fortschritt regelmäßig.</p>
@@ -151,5 +154,58 @@ export function Settings({ ctx }: { ctx: Ctx }) {
         )}
       </section>
     </div>
+  );
+}
+
+/** Fehlermeldungen (Phase 3): ansehen, als Text kopieren oder teilen, einzeln oder alle löschen. */
+function ReportsSection({ ctx }: { ctx: Ctx }) {
+  const { state, update } = ctx;
+  const list = Object.values(state.reports).sort((a, b) => b.at - a.at);
+  const checked = Object.keys(state.checks).length;
+  const [msg, setMsg] = useState('');
+  const [confirm, setConfirm] = useState(false);
+  const name = (c: string) => BASES.find((b) => b.code === c)?.name ?? c;
+  const text = () => reportsText(state, name);
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(text()); setMsg('Meldungen kopiert.'); }
+    catch { setMsg('Kopieren nicht erlaubt – nutze „Teilen“ oder markiere den Text unten.'); setShowText(true); }
+  };
+  const [showText, setShowText] = useState(false);
+  const share = async () => {
+    try { await (navigator as any).share({ title: 'Polyglot AI – Fehlermeldungen', text: text() }); }
+    catch { /* abgebrochen */ }
+  };
+  const kind = (k: string) => REPORT_KINDS.find((x) => x.k === k)?.label ?? k;
+  return (
+    <section className="card">
+      <h2>Fehlermeldungen</h2>
+      <p className="small muted">{list.length ? `${list.length} gemeldet` : 'Noch nichts gemeldet.'}{checked ? ` · ${checked} Einträge im Prüfmodus bestätigt` : ''}. Melden kannst du über das Fähnchen bei jedem Wort oder im Prüfmodus eines Kursmoduls.</p>
+      {list.length > 0 && (
+        <>
+          <ul className="list">
+            {list.slice(0, 50).map((r) => (
+              <li key={r.id} className="word-row">
+                <div className="grow small">
+                  <b lang={r.lang}>{r.t}</b> <span className="muted">– {r.de}</span>
+                  <div className="muted">{name(r.lang)} · {kind(r.kind)}{r.note ? ` · „${r.note}“` : ''}</div>
+                </div>
+                <button className="icon-btn" aria-label={`Meldung löschen: ${r.t}`} onClick={() => update((s) => { const x = { ...s.reports }; delete x[r.id]; return { ...s, reports: x }; })}>
+                  <Icon name="xmark" size={16} />
+                </button>
+              </li>
+            ))}
+          </ul>
+          {list.length > 50 && <p className="fine">… und {list.length - 50} weitere (alle im kopierten Text).</p>}
+          <div className="row wrap">
+            <button className="btn" onClick={copy}><Icon name="copy" size={18} /> Als Text kopieren</button>
+            {'share' in navigator && <button className="btn" onClick={share}><Icon name="clipboard" size={18} /> Teilen</button>}
+            {!confirm ? <button className="btn danger" onClick={() => setConfirm(true)}>Alle löschen …</button>
+              : <button className="btn danger" onClick={() => { update((s) => ({ ...s, reports: {} })); setConfirm(false); setMsg('Alle Meldungen gelöscht.'); }}>Wirklich alle löschen</button>}
+          </div>
+          {showText && <textarea className="input" rows={6} readOnly value={text()} aria-label="Meldungen als Text" />}
+        </>
+      )}
+      {msg && <p className="ok-text small" role="status">{msg}</p>}
+    </section>
   );
 }

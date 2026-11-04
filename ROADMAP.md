@@ -22,14 +22,14 @@
 | 0 | Werkzeuge & Doku aufräumen | hoch | 1 Runde | ✅ 01.11. |
 | 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | ✅ 01.11. (Start 1,5 s → 0,47 s) |
 | 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | ✅ 04.11. (5.002 / 5.055 / 5.069) |
-| 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ⏳ |
+| 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ✅ 04.11. |
 | 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ⏳ |
 | 5 | Datensicherheit für iOS (Sicherungs-Erinnerung) | mittel | 1 Runde | ⏳ |
 | 6 | Englisch & Spanisch ausbauen | niedrig | ~10 Runden | ⏳ |
 | 7 | Aussprache-Training (nur Pages) | niedrig/optional | 2 Runden | ⏳ |
 | 8 | Abschluss-QA & Release-Doku | hoch (am Ende) | 1–2 Runden | ⏳ |
 
-Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 → 4/5 → 6/7 → 8.
+Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 ✅ → 4/5 → 6/7 → 8.
 
 ---
 
@@ -88,9 +88,9 @@ Ursprünglicher Plan:
 8. **Abnahme je Runde:** `vitest` 107/107 (inkl. Betonung, Dubletten, Beispielsatz-Pflicht), E2E grün, `npm run report` zeigt Zuwachs; Stichprobe 5 Sätze je Sprache gelesen.
 9. **Ergebnis:** 5.000 Einträge × 3 Sprachen, 100 % mit Beispielsatz.
 
-## Phase 3 – Qualität: Fehler melden & Prüfmodus ⏳ (D-012)
+## Phase 3 – Qualität: Fehler melden & Prüfmodus ✅ (04.11.2026, D-012)
 
-> Vor Start (04.11.2026): Coach-Redesign nach Auswahl des Nutzers (Entwurf A, B oder C) umsetzen, dann diese Phase. Die Datenprüfung aus dem Audit (`migrate()` prüft jedes Feld) ist Grundlage für die Schema-Migration 1→2.
+> Erledigt nach Audit, Design-Transformation und Coach-Redesign (Entwurf A). Abnahme erfüllt: Migrationstest Schema 1→2, Meldung übersteht Neustart (Unit + E2E), Export-Text enthält Eintrag + Meldung, gemeldete Karte nicht in `todayQueue`, Prüfmodus per E2E geprüft. **Nächste Phase: 4 (Lernerlebnis Runde 2).** Hinweis: Die Startseite hat seit dem Redesign schon einen Aktivitätsring mit Serie/fällig/Lektionen – in Phase 4 darauf aufbauen, nicht doppelt bauen.
 
 1. **Ziel:** echte Qualitätsprüfung ohne Kosten ermöglichen.
 2. **Aufgaben:** Knopf „Fehler melden“ (Wortkarte, Wörterbuch, Beispielsatz-Block) mit Auswahl (Übersetzung / Schreibweise / Betonung / Satz unnatürlich / Sonstiges) + Freitext; Speicherung in `AppState.reports` (Schema 2 mit Migration); Liste in Einstellungen mit „als Text kopieren/teilen“; gemeldete Einträge werden in Übungen nicht abgefragt, bis Meldung gelöscht; optionaler **Prüfmodus** (Muttersprachler blättert Einträge eines Moduls durch, tippt ✓/✗).

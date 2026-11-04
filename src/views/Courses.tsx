@@ -4,7 +4,7 @@ import type { Level, Module } from '../data/types';
 import { LEVELS } from '../data/types';
 import { LEVEL_INFO, TOPICS, topicIcon } from '../data/curriculum';
 import { itemsOf, moduleLessons } from '../lib/course';
-import { ExampleBlock, ProgressBar, RegBadge, SpeakBtn, WordHead, Icon } from './ui';
+import { ExampleBlock, ProgressBar, RegBadge, SpeakBtn, WordHead, Icon, ReportBtn, ReportSheet, ResultBadge } from './ui';
 import { abcFor } from '../data/alphabet';
 
 export function moduleProgress(ctx: Ctx, m: Module): { done: number; total: number } {
@@ -81,7 +81,12 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
   const lessons = useMemo(() => moduleLessons(pack, mod), [pack, mod]);
   const { words, slang } = useMemo(() => itemsOf(pack, mod), [pack, mod]);
   const [show, setShow] = useState(false);
+  const [checking, setChecking] = useState(false);
   const next = lessons.find((l) => !state.lessons[l.id]) ?? lessons[0];
+  if (checking) {
+    const entries = [...words.map((w) => ({ id: w.id, t: w.t, tr: w.tr, de: w.de, ex: w.ex })), ...slang.map((s) => ({ id: s.id, t: s.t, tr: s.tr, de: s.de, ex: s.ex }))];
+    return <CheckMode ctx={ctx} title={mod.title} entries={entries} onExit={() => setChecking(false)} />;
+  }
   return (
     <div className="stack">
       <button className="back" onClick={() => go('courses')}>Alle Kurse</button>
@@ -103,19 +108,22 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
           );
         })}
       </ul>
-      <button className="btn" onClick={() => setShow(!show)}>{show ? 'Wortliste ausblenden' : 'Wortliste anzeigen'}</button>
+      <div className="row wrap">
+        <button className="btn" onClick={() => setShow(!show)}>{show ? 'Wortliste ausblenden' : 'Wortliste anzeigen'}</button>
+        <button className="btn" onClick={() => setChecking(true)}><Icon name="check" size={18} /> Prüfmodus</button>
+      </div>
       {show && (
         <ul className="list card">
           {words.map((w) => (
             <li key={w.id} className="word-row">
               <div className="grow"><WordHead t={w.t} de={w.de} tr={w.tr} lang={pack.code} /><div className="small"><RegBadge reg={w.reg} /></div><ExampleBlock ex={w.ex} lang={pack.code} pack={pack} /></div>
-              <SpeakBtn text={w.t} pack={pack} />
+              <div className="word-actions"><SpeakBtn text={w.t} pack={pack} /><ReportBtn ctx={ctx} target={{ id: w.id, lang: pack.code, t: w.t, de: w.de, ex: w.ex?.t }} /></div>
             </li>
           ))}
           {slang.map((s) => (
             <li key={s.id} className="word-row">
               <div className="grow"><WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">{pack.city}</span>}<div className="small muted">{s.situation} · {s.effect}</div><ExampleBlock ex={s.ex} lang={pack.code} pack={pack} /></div>
-              <SpeakBtn text={s.t} pack={pack} />
+              <div className="word-actions"><SpeakBtn text={s.t} pack={pack} /><ReportBtn ctx={ctx} target={{ id: s.id, lang: pack.code, t: s.t, de: s.de, ex: s.ex?.t }} /></div>
             </li>
           ))}
         </ul>
@@ -134,5 +142,60 @@ function AbcCard({ ctx }: { ctx: Ctx }) {
       <span className="small muted">{done === c.units.length ? 'Erledigt – jederzeit wiederholbar' : c.forBeginners ? 'Buchstaben → Laute → Silben → Wörter → erste Sätze' : 'Einstufungstest und Wiederholung beider Schriften'}</span>
       <ProgressBar value={done} max={c.units.length} />
     </button>
+  );
+}
+
+/**
+ * Prüfmodus (Phase 3): Ein Muttersprachler blättert die Einträge eines Moduls durch und tippt
+ * „Stimmt“ oder „Fehler“. Bestätigungen landen in state.checks, Fehler als Meldung in state.reports.
+ */
+function CheckMode({ ctx, title, entries, onExit }: { ctx: Ctx; title: string; entries: { id: string; t: string; tr?: string; de: string; ex?: { t: string; de: string; tr?: string } }[]; onExit: () => void }) {
+  const { pack, state, update } = ctx;
+  const [pos, setPos] = useState(() => Math.max(0, entries.findIndex((e) => !state.checks[e.id] && !state.reports[e.id])));
+  const [sheet, setSheet] = useState(false);
+  const e = entries[pos];
+  const checked = entries.filter((x) => state.checks[x.id]).length;
+  const reported = entries.filter((x) => state.reports[x.id]).length;
+  if (!e) {
+    return (
+      <div className="stack center">
+        <ResultBadge score={100} />
+        <h1>Modul geprüft</h1>
+        <p className="muted">{checked} bestätigt · {reported} gemeldet</p>
+        <button className="btn primary big-btn" onClick={onExit}>Fertig</button>
+      </div>
+    );
+  }
+  const ok = () => {
+    update((s) => { const r = { ...s.reports }; delete r[e.id]; return { ...s, reports: r, checks: { ...s.checks, [e.id]: Date.now() } }; });
+    setPos(pos + 1);
+  };
+  const status = state.reports[e.id] ? 'gemeldet' : state.checks[e.id] ? 'bestätigt' : '';
+  return (
+    <div className="stack">
+      <div className="row between">
+        <button className="back close" onClick={onExit} aria-label="Prüfmodus beenden"><Icon name="xmark" size={22} /></button>
+        <span className="muted small">Prüfmodus · {pos + 1} / {entries.length}</span>
+      </div>
+      <ProgressBar value={pos} max={entries.length} />
+      <p className="muted small">{title} · Stimmt der Eintrag so, wie Muttersprachler ihn sagen würden?</p>
+      <section className="card check-card">
+        {status && <span className={`badge ${status === 'gemeldet' ? 'local' : 'level'}`}>{status}</span>}
+        <div className="prompt" lang={pack.code}>{e.t} <SpeakBtn text={e.t} pack={pack} /></div>
+        {e.tr && <div className="muted">{e.tr}</div>}
+        <div className="big" style={{ fontSize: '1.25rem' }}>{e.de}</div>
+        <ExampleBlock ex={e.ex} lang={pack.code} pack={pack} />
+      </section>
+      <div className="grid2">
+        <button className="btn big-btn danger" onClick={() => setSheet(true)}><Icon name="flag" size={18} /> Fehler</button>
+        <button className="btn big-btn primary" onClick={ok}><Icon name="check" size={18} /> Stimmt</button>
+      </div>
+      <div className="row between">
+        <button className="btn" disabled={pos === 0} onClick={() => setPos(pos - 1)}>Zurück</button>
+        <span className="muted small">{checked} bestätigt · {reported} gemeldet</span>
+        <button className="btn" onClick={() => setPos(pos + 1)}>Überspringen</button>
+      </div>
+      {sheet && <ReportSheet ctx={ctx} target={{ id: e.id, lang: pack.code, t: e.t, de: e.de, ex: e.ex?.t }} onClose={() => setSheet(false)} onSaved={() => setPos(pos + 1)} />}
+    </div>
   );
 }
