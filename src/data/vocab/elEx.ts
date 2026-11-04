@@ -1559,4 +1559,44 @@ export default `
 η μεγάλη πυρκαγιά του 1917 | Η μεγάλη πυρκαγιά του 1917 κατέστρεψε το κέντρο. | Der große Brand von 1917 zerstörte das Zentrum.
 το μετρό Θεσσαλονίκης | Το μετρό Θεσσαλονίκης άνοιξε το 2024. | Die U-Bahn Thessaloniki wurde 2024 eröffnet.
 ο εξευγενισμός | Ο εξευγενισμός ανεβάζει τα ενοίκια. | Die Gentrifizierung treibt die Mieten hoch.
+η αστικοποίηση | Η αστικοποίηση άδειασε τα χωριά. | Die Verstädterung hat die Dörfer geleert.
+το διατηρητέο | Το σπίτι είναι διατηρητέο και δεν γκρεμίζεται. | Das Haus ist denkmalgeschützt und darf nicht abgerissen werden.
+το οδοιπορικό | Διάβασα ένα οδοιπορικό για την Ήπειρο. | Ich habe einen Reisebericht über Epirus gelesen.
+περιπλανιέμαι | Περιπλανιέμαι στα στενά της Άνω Πόλης. | Ich streife durch die Gassen der Oberstadt.
+η ξενιτιά | Ο παππούς έζησε χρόνια στην ξενιτιά. | Der Opa lebte jahrelang in der Fremde.
+ο μετανάστης | Ο μετανάστης στέλνει χρήματα στην οικογένειά του. | Der Auswanderer schickt Geld an seine Familie.
+ο γυρισμός | Ο γυρισμός στο χωριό ήταν συγκινητικός. | Die Heimkehr ins Dorf war bewegend.
+η ναυτία | Στο καράβι με έπιασε ναυτία. | Auf dem Schiff wurde mir übel.
+ο ταξιδιωτικός οδηγός | Ο ταξιδιωτικός οδηγός προτείνει αυτή την ταβέρνα. | Der Reiseführer empfiehlt diese Taverne.
+η ομογένεια | Η ομογένεια της Γερμανίας είναι μεγάλη. | Die griechische Gemeinde in Deutschland ist groß.
+οι πρόσφυγες του 1922 | Οι πρόσφυγες του 1922 έχτισαν νέες γειτονιές. | Die Flüchtlinge von 1922 bauten neue Stadtviertel.
+ο μεταβολισμός | Ο μεταβολισμός επιβραδύνεται με την ηλικία. | Der Stoffwechsel wird mit dem Alter langsamer.
+η φυσικοθεραπεία | Μετά τον τραυματισμό έκανα φυσικοθεραπεία. | Nach der Verletzung habe ich Physiotherapie gemacht.
+ο σύνδεσμος | Τραυμάτισε τον σύνδεσμο του γονάτου. | Er hat sich das Knieband verletzt.
+ο χόνδρος | Ο χόνδρος στο γόνατο έχει φθαρεί. | Der Knorpel im Knie ist abgenutzt.
+η ευλυγισία | Η γιόγκα βελτιώνει την ευλυγισία. | Yoga verbessert die Beweglichkeit.
+ο καρδιακός ρυθμός | Το ρολόι μετράει τον καρδιακό ρυθμό. | Die Uhr misst die Herzfrequenz.
+η υπερκόπωση | Η υπερκόπωση οδηγεί σε τραυματισμούς. | Übertraining führt zu Verletzungen.
+ο έλεγχος ταυτότητας δύο βημάτων | Ενεργοποίησε τον έλεγχο ταυτότητας δύο βημάτων. | Aktiviere die Zwei-Faktor-Authentifizierung.
+η κρυπτογράφηση | Τα μηνύματα έχουν κρυπτογράφηση. | Die Nachrichten sind verschlüsselt.
+η διαρροή δεδομένων | Η εταιρεία είχε διαρροή δεδομένων. | Die Firma hatte ein Datenleck.
+η ψηφιακή υπογραφή | Υπέγραψα το έγγραφο με ψηφιακή υπογραφή. | Ich habe das Dokument digital signiert.
+η συγκατάθεση | Χρειάζεται η συγκατάθεσή σας για τα δεδομένα. | Für die Daten braucht es Ihre Einwilligung.
+το ηλεκτρονικό ψάρεμα | Το email ήταν ηλεκτρονικό ψάρεμα. | Die E-Mail war Phishing.
+ο εθισμός στο κινητό | Ο εθισμός στο κινητό επηρεάζει τον ύπνο. | Handysucht beeinträchtigt den Schlaf.
+ο κεραυνοβόλος έρωτας | Ήταν ο κεραυνοβόλος έρωτας της ζωής του. | Es war die Liebe auf den ersten Blick seines Lebens.
+η ερωτική απογοήτευση | Μετά την ερωτική απογοήτευση δεν έτρωγε. | Nach dem Liebeskummer aß er nichts.
+η λατρεία | Τον κοιτάζει με λατρεία. | Sie sieht ihn voller Anbetung an.
+ο ανεκπλήρωτος έρωτας | Το τραγούδι μιλάει για ανεκπλήρωτο έρωτα. | Das Lied handelt von unerfüllter Liebe.
+η απιστία | Η απιστία κατέστρεψε τον γάμο τους. | Die Untreue hat ihre Ehe zerstört.
+η συμφιλίωση | Μετά από χρόνια ήρθε η συμφιλίωση. | Nach Jahren kam die Versöhnung.
+μαγεμένος | Έμεινε μαγεμένος από τη φωνή της. | Er war von ihrer Stimme verzaubert.
+το ερωτικό γράμμα | Βρήκα ένα παλιό ερωτικό γράμμα του παππού. | Ich habe einen alten Liebesbrief vom Opa gefunden.
+λιώνω για σένα | Δεν το καταλαβαίνεις; Λιώνω για σένα. | Verstehst du nicht? Ich vergehe nach dir.
+η διαμεσολάβηση | Η διαμεσολάβηση έλυσε τη διαφορά. | Die Mediation hat den Streit gelöst.
+η κλιμάκωση | Πρέπει να αποφύγουμε την κλιμάκωση. | Wir müssen eine Eskalation vermeiden.
+η αποκλιμάκωση | Η αποκλιμάκωση χρειάζεται ήρεμη φωνή. | Deeskalation braucht eine ruhige Stimme.
+κατανοώ τη θέση σας, ωστόσο … | Κατανοώ τη θέση σας, ωστόσο ο κανόνας ισχύει για όλους. | Ich verstehe Ihre Position, dennoch gilt die Regel für alle.
+ας κρατήσουμε χαμηλούς τόνους | Ας κρατήσουμε χαμηλούς τόνους και ας μιλήσουμε. | Bleiben wir sachlich und reden wir.
+θίγομαι | Θίγομαι όταν με διακόπτεις. | Ich fühle mich gekränkt, wenn du mich unterbrichst.
 `;

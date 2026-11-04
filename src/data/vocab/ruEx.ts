@@ -1558,4 +1558,44 @@ export default `
 нело́вкость | Пови́сла нело́вкость. | Es entstand eine peinliche Situation.
 за́висть | За́висть не даёт ему́ поко́я. | Der Neid lässt ihm keine Ruhe.
 е́сли позво́лите | Е́сли позво́лите, я доба́влю. | Wenn Sie gestatten, füge ich etwas hinzu.
+надры́в | Он говори́л с надры́вом в го́лосе. | Er sprach mit einem Aufschrei in der Stimme.
+не сочти́те за гру́бость, но … | Не сочти́те за гру́бость, но мне пора́. | Halten Sie es nicht für unhöflich, aber ich muss gehen.
+как ни крути́ | Как ни крути́, э́то до́рого. | Wie man's auch dreht, es ist teuer.
+я не со зла | Я не со зла, но ты опя́ть опозда́л. | Ich mein's nicht böse, aber du bist schon wieder zu spät.
+су́дя по всему́ | Су́дя по всему́, бу́дет дождь. | Allem Anschein nach wird es regnen.
+что́бы не сказа́ть | Бы́ло утоми́тельно, что́бы не сказа́ть ску́чно. | Es war anstrengend, um nicht zu sagen langweilig.
+без оби́д | Без оби́д, но я не согла́сен. | Nichts für ungut, aber ich bin nicht einverstanden.
+к сло́ву | К сло́ву, ты получи́л моё письмо́? | Apropos, hast du meinen Brief bekommen?
+стороны́ догово́ра | Стороны́ догово́ра подписа́ли докуме́нт. | Die Vertragsparteien haben das Dokument unterzeichnet.
+пункт догово́ра | Пункт догово́ра о неразглаше́нии де́йствует два го́да. | Die Geheimhaltungsklausel gilt zwei Jahre.
+наруше́ние | Наруше́ние пра́вил влечёт штраф. | Ein Regelverstoß zieht eine Strafe nach sich.
+отве́тственность | Фи́рма несёт отве́тственность за уще́рб. | Die Firma haftet für den Schaden.
+в дальне́йшем | В дальне́йшем опла́та бу́дет электро́нной. | Künftig erfolgt die Zahlung elektronisch.
+в соотве́тствии с зако́ном | В соотве́тствии с зако́ном вам положе́н о́тпуск. | Gemäß dem Gesetz steht Ihnen Urlaub zu.
+неразглаше́ние | Я подписа́л соглаше́ние о неразглаше́нии. | Ich habe eine Geheimhaltungsvereinbarung unterschrieben.
+измене́ние | Любо́е измене́ние догово́ра – то́лько пи́сьменно. | Jede Vertragsänderung nur schriftlich.
+нижеподписа́вшийся | Я, нижеподписа́вшийся, подтвержда́ю да́нные. | Ich, der Unterzeichnende, bestätige die Angaben.
+арбитра́ж | Спор рассмо́трит арбитра́ж. | Den Streit wird ein Schiedsgericht prüfen.
+печа́ть | Поста́вьте, пожа́луйста, печа́ть на спра́вке. | Setzen Sie bitte einen Stempel auf die Bescheinigung.
+официа́льное письмо́ | Мы получи́ли официа́льное письмо́ из администра́ции. | Wir haben ein amtliches Schreiben von der Verwaltung bekommen.
+уведомле́ние | Уведомле́ние пришло́ по по́чте. | Die Benachrichtigung kam per Post.
+по заявле́нию | Спра́вку выдаю́т по заявле́нию. | Die Bescheinigung wird auf Antrag ausgestellt.
+реше́ние | Реше́ние суда́ вступи́ло в си́лу. | Das Gerichtsurteil ist rechtskräftig geworden.
+в устано́вленный срок | Деклара́ция по́дана в устано́вленный срок. | Die Erklärung wurde fristgerecht eingereicht.
+отве́тственный сотру́дник | Отве́тственный сотру́дник сего́дня отсу́тствует. | Der zuständige Mitarbeiter ist heute abwesend.
+госпо́шлина | Снача́ла опла́тите госпо́шлину. | Zahlen Sie zuerst die staatliche Gebühr.
+заве́ренная ко́пия | Мне нужна́ заве́ренная ко́пия дипло́ма. | Ich brauche eine beglaubigte Kopie des Diploms.
+де́ло | Ва́ше де́ло нахо́дится в архи́ве. | Ihre Akte befindet sich im Archiv.
+предоста́вить | Предоста́вьте все докуме́нты до пя́тницы. | Legen Sie alle Unterlagen bis Freitag vor.
+ли́чно | Заявле́ние на́до пода́ть ли́чно. | Den Antrag muss man persönlich einreichen.
+Уважа́емый господи́н | Уважа́емый господи́н Ивано́в, пишу́ вам по по́воду заявле́ния. | Sehr geehrter Herr Iwanow, ich schreibe Ihnen wegen des Antrags.
+Многоуважа́емый | Многоуважа́емый Пётр Ильи́ч, благодарю́ вас! | Hochverehrter Pjotr Iljitsch, ich danke Ihnen!
+И́скренне Ваш | И́скренне Ваш, Алекса́ндр. | Ihr ergebener Alexander.
+Ва́ше превосходи́тельство | Ва́ше превосходи́тельство, благодари́м за визи́т. | Exzellenz, wir danken für Ihren Besuch.
+Влады́ка | Влады́ка, прихо́д приве́тствует вас. | Eminenz, die Gemeinde begrüßt Sie.
+Приношу́ свои́ соболе́знования | Приношу́ свои́ соболе́знования ва́шей семье́. | Ich spreche Ihrer Familie mein Beileid aus.
+Позво́льте предста́виться | Позво́льте предста́виться: Никола́й, ваш но́вый колле́га. | Gestatten Sie, dass ich mich vorstelle: Nikolai, Ihr neuer Kollege.
+Честь име́ю | Честь име́ю, господа́! | Habe die Ehre, meine Herren!
+бре́нность | Стихотворе́ние о бре́нности жи́зни. | Ein Gedicht über die Vergänglichkeit des Lebens.
+ве́чность | Я ждал це́лую ве́чность. | Ich habe eine Ewigkeit gewartet.
 `;

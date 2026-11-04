@@ -1570,4 +1570,44 @@ prolaznost | Pesma govori o prolaznosti života. | Das Gedicht handelt von der V
 večnost | Čekao sam čitavu večnost. | Ich habe eine Ewigkeit gewartet.
 otkad je sveta i veka | Otkad je sveta i veka, ljudi pričaju priče. | Seit Menschengedenken erzählen Menschen Geschichten.
 privremen | Ovo rešenje je samo privremeno. | Diese Lösung ist nur vorübergehend.
+osvrt | Na kraju godine pravimo osvrt. | Am Jahresende machen wir einen Rückblick.
+doveka | Biću ti doveka zahvalan. | Ich werde dir auf ewig dankbar sein.
+nekada davno | Nekada davno ovde je bila šuma. | Vor langer Zeit war hier ein Wald.
+naslednik | Jedini naslednik je njegov sin. | Der einzige Erbe ist sein Sohn.
+starateljstvo | Majka je dobila starateljstvo nad decom. | Die Mutter hat das Sorgerecht für die Kinder bekommen.
+alimentacija | Otac plaća alimentaciju svakog meseca. | Der Vater zahlt jeden Monat Unterhalt.
+usvojenje | Usvojenje je trajalo dve godine. | Die Adoption dauerte zwei Jahre.
+miraz | Nekada je nevesta morala da ima miraz. | Früher musste die Braut eine Mitgift haben.
+zadruga | U staroj zadruzi je živelo trideset ljudi. | In der alten Großfamilie lebten dreißig Menschen.
+preci | Moji preci su došli iz Hercegovine. | Meine Vorfahren kamen aus der Herzegowina.
+poreklo | On je po poreklu iz Like. | Er stammt ursprünglich aus der Lika.
+loza | Porodična loza seže do osamnaestog veka. | Die Familienlinie reicht bis ins achtzehnte Jahrhundert zurück.
+enologija | Pohađa kurs enologije. | Er besucht einen Kurs in Weinkunde.
+pikantan | Ajvar je malo pikantan. | Der Ajvar ist etwas pikant.
+tekstura | Tekstura hleba je mekana. | Die Textur des Brotes ist weich.
+nepce | Vino ostavlja voćni ukus na nepcu. | Der Wein hinterlässt einen fruchtigen Geschmack am Gaumen.
+berba | Na berbi pomaže celo selo. | Bei der Weinlese hilft das ganze Dorf.
+zreo | Paradajz je zreo. | Die Tomaten sind reif.
+odležan | Ovaj sir je odležan dve godine. | Dieser Käse ist zwei Jahre gereift.
+gurman | Moj ujak je veliki gurman. | Mein Onkel ist ein großer Feinschmecker.
+potrošač | Potrošač ima pravo na reklamaciju. | Der Verbraucher hat ein Recht auf Reklamation.
+neispravan | Uređaj je bio neispravan. | Das Gerät war defekt.
+odšteta | Dobio je odštetu za oštećeni paket. | Er bekam eine Entschädigung für das beschädigte Paket.
+odustanak od ugovora | Odustanak od ugovora je moguć u roku od četrnaest dana. | Der Rücktritt vom Vertrag ist innerhalb von vierzehn Tagen möglich.
+prevara | Poruka je bila prevara. | Die Nachricht war Betrug.
+zaštita potrošača | Žalio sam se zaštiti potrošača. | Ich habe mich beim Verbraucherschutz beschwert.
+obmanjujući | Reklama je bila obmanjujuća. | Die Werbung war irreführend.
+garantni list | Sačuvaj garantni list. | Bewahr den Garantieschein auf.
+naplatiti previše | Naplatili su mi previše za kafu. | Sie haben mir zu viel für den Kaffee berechnet.
+revitalizacija | Revitalizacija starog kvarta je u toku. | Die Revitalisierung des alten Viertels läuft.
+Beograd na vodi | Beograd na vodi je izgrađen na obali Save. | Belgrade Waterfront wurde am Ufer der Save gebaut.
+Savamala | Savamala je poznata po klubovima. | Savamala ist für seine Clubs bekannt.
+Genex kula | Genex kula je simbol Novog Beograda. | Der Genex-Turm ist ein Symbol von Neu-Belgrad.
+gentrifikacija | Gentrifikacija podiže kirije. | Die Gentrifizierung treibt die Mieten hoch.
+spomenik kulture | Zgrada je spomenik kulture. | Das Gebäude ist ein Kulturdenkmal.
+bespravna gradnja | Bespravna gradnja je veliki problem. | Schwarzbauten sind ein großes Problem.
+urbanizacija | Urbanizacija je ispraznila sela. | Die Verstädterung hat die Dörfer geleert.
+napor | Put je bio pravi napor. | Die Reise war eine echte Strapaze.
+putopis | Čitam putopis o Indiji. | Ich lese einen Reisebericht über Indien.
+tuđina | Deda je godinama živeo u tuđini. | Der Opa lebte jahrelang in der Fremde.
 `;
