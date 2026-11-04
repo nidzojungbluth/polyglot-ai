@@ -210,6 +210,16 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await d.screenshot({ path: '../shots/7-dark-se.png' });
   const of2 = await d.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
   assert(!of2, 'iPhone SE (kleiner Bildschirm) ohne Überlauf, Dark Mode');
+  // Audit 04.11.2026: Die Dateiauswahl in den Einstellungen war breiter als der Bildschirm – jetzt alle Seiten prüfen
+  const wide = [];
+  for (const v of ['home', 'courses', 'coach', 'vocab', 'more', 'dict', 'progress', 'settings', 'langs', 'roleplay']) {
+    await d.goto(URL + '#' + v); await d.waitForSelector('.tabbar'); await d.waitForTimeout(250);
+    if (await d.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)) wide.push(v);
+  }
+  assert(!wide.length, 'keine Seite breiter als das iPhone SE' + (wide.length ? ': ' + wide.join(', ') : ''));
+  // Tipp-Flächen der Haupt-Navigation mindestens 44 pt hoch
+  const smallTabs = await d.evaluate(() => [...document.querySelectorAll('.tab, .langchip, .back')].filter((e) => e.getBoundingClientRect().height < 40).length);
+  assert(smallTabs === 0, 'Navigation: Tippflächen groß genug');
 
   assert(errors.length === 0, 'keine JavaScript-Fehler' + (errors.length ? ': ' + errors.join(' | ') : ''));
   await b.close();

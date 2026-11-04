@@ -49,24 +49,53 @@ export function migrate(raw: unknown): AppState {
   if (typeof r.schema !== 'number') throw new Error('Die Datei enthält keine Polyglot-Sicherung (Versionsnummer fehlt).');
   if (r.schema > SCHEMA_VERSION) throw new Error('Diese Sicherung stammt aus einer neueren App-Version.');
   const d = defaultState();
-  const obj = (v: unknown) => (v && typeof v === 'object' && !Array.isArray(v) ? v : {});
+  const obj = (v: unknown) => (v && typeof v === 'object' && !Array.isArray(v) ? v : {}) as Record<string, any>;
+  const num = (v: unknown): v is number => typeof v === 'number' && Number.isFinite(v);
   const cards: Record<string, Card> = {};
-  for (const [k, c] of Object.entries(obj(r.cards) as Record<string, Card>)) {
-    if (c && typeof c.due === 'number' && typeof c.ease === 'number' && typeof c.interval === 'number') {
+  for (const [k, c] of Object.entries(obj(r.cards))) {
+    if (c && num(c.due) && num(c.ease) && num(c.interval)) {
       cards[k] = { id: k, ease: c.ease, interval: c.interval, reps: c.reps | 0, lapses: c.lapses | 0, due: c.due };
     }
   }
+  // Nur Einträge mit dem richtigen Aufbau übernehmen – eine beschädigte oder fremde Sicherung darf die App nicht lahmlegen.
+  const pick = <T,>(src: unknown, ok: (v: any) => T | undefined): Record<string, T> => {
+    const out: Record<string, T> = {};
+    for (const [k, v] of Object.entries(obj(src))) { const x = ok(v); if (x !== undefined) out[k] = x; }
+    return out;
+  };
+  const coach = pick(r.coach, (list) => Array.isArray(list)
+    ? list.filter((m) => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+      .slice(-40).map((m): CoachMsg => ({ role: m.role, content: m.content.slice(0, 8000), ...(m.source === 'ki' || m.source === 'regel' ? { source: m.source } : {}) }))
+    : undefined);
   return {
     schema: SCHEMA_VERSION,
-    settings: { ...d.settings, ...(obj(r.settings) as AppState['settings']) },
+    settings: cleanSettings(obj(r.settings), d.settings),
     cards,
-    newDone: r.newDone && typeof r.newDone.day === 'string' && typeof r.newDone.n === 'number' ? { day: r.newDone.day, n: r.newDone.n } : undefined,
-    lessons: obj(r.lessons) as AppState['lessons'],
-    roleplays: obj(r.roleplays) as AppState['roleplays'],
-    daily: obj(r.daily) as AppState['daily'],
-    mistakes: obj(r.mistakes) as AppState['mistakes'],
-    coach: obj(r.coach) as AppState['coach'],
-    updatedAt: typeof r.updatedAt === 'number' ? r.updatedAt : Date.now(),
+    newDone: r.newDone && typeof r.newDone.day === 'string' && num(r.newDone.n) ? { day: r.newDone.day, n: r.newDone.n } : undefined,
+    lessons: pick(r.lessons, (v) => (v && num(v.best) && num(v.doneAt) ? { best: v.best, doneAt: v.doneAt, ...(v.via === 'test' || v.via === 'skip' ? { via: v.via } : {}) } : undefined)),
+    roleplays: pick(r.roleplays, (v) => (num(v) ? v : undefined)),
+    daily: pick(r.daily, (v) => (num(v) ? v : undefined)),
+    mistakes: pick(r.mistakes, (v) => (v && typeof v.why === 'string' && num(v.count) && typeof v.lang === 'string' ? { why: v.why.slice(0, 500), count: v.count, lang: v.lang } : undefined)),
+    coach,
+    updatedAt: num(r.updatedAt) ? r.updatedAt : Date.now(),
+  };
+}
+
+/** Einstellungen einzeln prüfen; Unbekanntes oder Ungültiges fällt auf den Standardwert zurück. */
+function cleanSettings(s: Record<string, any>, d: AppState['settings']): AppState['settings'] {
+  const oneOf = <T,>(v: unknown, list: readonly T[], def: T): T => (list.includes(v as T) ? (v as T) : def);
+  const int = (v: unknown, min: number, max: number, def: number) => (typeof v === 'number' && Number.isFinite(v) ? Math.min(max, Math.max(min, Math.round(v))) : def);
+  return {
+    lang: typeof s.lang === 'string' && /^[a-z]{2,3}$/.test(s.lang) ? s.lang : d.lang,
+    theme: oneOf(s.theme, ['auto', 'hell', 'dunkel'] as const, d.theme),
+    dailyGoal: int(s.dailyGoal, 5, 100, d.dailyGoal),
+    coachMode: oneOf(s.coachMode, ['lernen', 'alltag', 'immersion'] as const, d.coachMode),
+    slang: int(s.slang, 0, 2, d.slang),
+    interests: typeof s.interests === 'string' ? s.interests.slice(0, 200) : d.interests,
+    aiEnabled: typeof s.aiEnabled === 'boolean' ? s.aiEnabled : d.aiEnabled,
+    srScript: oneOf(s.srScript, ['beide', 'latein', 'kyrillisch'] as const, d.srScript),
+    cardDir: oneOf(s.cardDir, ['gemischt', 'zu-de', 'zu-ziel'] as const, d.cardDir),
+    newPerDay: int(s.newPerDay, 0, 500, d.newPerDay),
   };
 }
 
@@ -74,15 +103,31 @@ const DB_NAME = 'polyglot-ai';
 const STORE = 'kv';
 const KEY = 'state';
 
+// Eine geöffnete Verbindung wiederverwenden (vorher wurde bei jedem Speichern neu geöffnet).
+let dbPromise: Promise<IDBDatabase> | null = null;
 function openDb(): Promise<IDBDatabase> {
-  return new Promise((resolve, reject) => {
+  if (dbPromise) return dbPromise;
+  dbPromise = new Promise<IDBDatabase>((resolve, reject) => {
     try {
       const req = indexedDB.open(DB_NAME, 1);
       req.onupgradeneeded = () => { if (!req.result.objectStoreNames.contains(STORE)) req.result.createObjectStore(STORE); };
-      req.onsuccess = () => resolve(req.result);
+      req.onsuccess = () => {
+        const db = req.result;
+        // Wird die Verbindung geschlossen (anderer Tab, iOS im Hintergrund), beim nächsten Mal neu öffnen.
+        db.onversionchange = () => { db.close(); dbPromise = null; };
+        (db as any).onclose = () => { dbPromise = null; };
+        resolve(db);
+      };
       req.onerror = () => reject(req.error);
     } catch (e) { reject(e); }
-  });
+  }).catch((e) => { dbPromise = null; throw e; });
+  return dbPromise;
+}
+
+/** Einmal neu verbinden, falls die gespeicherte Verbindung inzwischen ungültig ist. */
+async function withDb<T>(fn: (db: IDBDatabase) => Promise<T>): Promise<T> {
+  try { return await fn(await openDb()); }
+  catch (e) { dbPromise = null; return fn(await openDb()); }
 }
 
 export type StorageKind = 'indexeddb' | 'localstorage' | 'memory';
@@ -90,13 +135,12 @@ let memory: AppState | null = null;
 
 export async function loadState(): Promise<{ state: AppState; kind: StorageKind }> {
   try {
-    const db = await openDb();
-    const raw = await new Promise<unknown>((res, rej) => {
+    const raw = await withDb((db) => new Promise<unknown>((res, rej) => {
       const tx = db.transaction(STORE, 'readonly');
       const r = tx.objectStore(STORE).get(KEY);
       r.onsuccess = () => res(r.result);
       r.onerror = () => rej(r.error);
-    });
+    }));
     return { state: raw ? migrate(raw) : defaultState(), kind: 'indexeddb' };
   } catch { /* weiter mit Fallback */ }
   try {
@@ -108,13 +152,13 @@ export async function loadState(): Promise<{ state: AppState; kind: StorageKind 
 
 export async function saveState(state: AppState, kind: StorageKind): Promise<void> {
   if (kind === 'indexeddb') {
-    const db = await openDb();
-    await new Promise<void>((res, rej) => {
+    await withDb((db) => new Promise<void>((res, rej) => {
       const tx = db.transaction(STORE, 'readwrite');
       tx.objectStore(STORE).put(state, KEY);
       tx.oncomplete = () => res();
       tx.onerror = () => rej(tx.error);
-    });
+      tx.onabort = () => rej(tx.error);
+    }));
     return;
   }
   if (kind === 'localstorage') { localStorage.setItem(DB_NAME, JSON.stringify(state)); return; }

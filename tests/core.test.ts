@@ -69,6 +69,32 @@ describe('Speicher, Sicherung, Migration', () => {
     expect(Object.keys(m.cards)).toEqual(['b']);
     expect(m.lessons).toEqual({});
   });
+  it('beschädigte Sicherung kann die App nicht lahmlegen (Audit 04.11.2026)', () => {
+    const m = migrate({
+      schema: 1,
+      settings: { lang: '<script>', theme: 'pink', dailyGoal: 1e9, slang: 7, aiEnabled: 'ja', newPerDay: -5, interests: 42 },
+      coach: { el: [{ role: 'user', content: { evil: 1 } }, { role: 'system', content: 'x' }, { role: 'assistant', content: 'ok', source: 'ki' }], sr: 'kaputt' },
+      mistakes: { a: { why: 'x', count: 'viele', lang: 'el' }, b: { why: 'y', count: 2, lang: 'el' } },
+      daily: { '2026-11-01': 3, '2026-11-02': 'drei' },
+      lessons: { l1: { best: 90, doneAt: 1 }, l2: { best: 'gut' } },
+    });
+    expect(m.settings.lang).toBe('en');
+    expect(m.settings.theme).toBe('auto');
+    expect(m.settings.dailyGoal).toBe(100);
+    expect(m.settings.slang).toBe(2);
+    expect(m.settings.aiEnabled).toBe(true);
+    expect(m.settings.newPerDay).toBe(0);
+    expect(m.settings.interests).toBe('');
+    expect(m.coach).toEqual({ el: [{ role: 'assistant', content: 'ok', source: 'ki' }] });
+    expect(Object.keys(m.mistakes)).toEqual(['b']);
+    expect(m.daily).toEqual({ '2026-11-01': 3 });
+    expect(Object.keys(m.lessons)).toEqual(['l1']);
+  });
+  it('speichert mehrfach hintereinander über dieselbe Verbindung', async () => {
+    const { state, kind } = await loadState();
+    for (let i = 0; i < 5; i++) { state.settings.dailyGoal = 10 + i * 5; await saveState(state, kind); }
+    expect((await loadState()).state.settings.dailyGoal).toBe(30);
+  });
   it('speichert und lädt über IndexedDB', async () => {
     const { state, kind } = await loadState();
     expect(kind).toBe('indexeddb');

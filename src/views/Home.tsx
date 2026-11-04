@@ -2,7 +2,7 @@ import type { Ctx } from '../App';
 import { knownIn, todayQueue } from '../lib/srs';
 import { newDoneToday, newLimit } from '../lib/store';
 import { streak, today } from '../lib/store';
-import { AiNotice, ProgressBar } from './ui';
+import { AiNotice, Ring } from './ui';
 import { moduleLessons } from '../lib/course';
 import { LEVELS } from '../data/types';
 import { abcFor } from '../data/alphabet';
@@ -34,14 +34,18 @@ export function Home({ ctx }: { ctx: Ctx }) {
     <div className="stack">
       <section className="card hero">
         <div className="row between">
-          <div>
-            <div className="muted small">Heute</div>
+          <div className="grow">
+            <div className="hero-label">Heute</div>
             <div className="big">{done} / {goal} Übungen</div>
+            <p className="muted small">{done >= goal ? 'Tagesziel geschafft! 🎉' : `Noch ${goal - done} bis zum Tagesziel.`}</p>
           </div>
-          <div className="streak" title="Tage in Folge gelernt">🔥 {st}</div>
+          <Ring value={done} max={goal}>{done >= goal ? '✓' : ''}</Ring>
         </div>
-        <ProgressBar value={done} max={goal} />
-        <p className="muted small">{done >= goal ? 'Tagesziel geschafft! 🎉' : `Noch ${goal - done} bis zum Tagesziel.`}</p>
+        <div className="hero-meta">
+          <div title="Tage in Folge gelernt"><b className="streak">🔥 {st}</b><span>Tage in Folge</span></div>
+          <div><b>{due}</b><span>Karten fällig</span></div>
+          <div><b>{Object.keys(state.lessons).filter((k) => k.startsWith(`${pack.code}-`)).length}</b><span>Lektionen fertig</span></div>
+        </div>
       </section>
 
       <div className="grid2">

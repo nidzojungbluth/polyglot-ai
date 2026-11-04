@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import type { Ctx } from '../App';
 import { withScript } from '../data';
 import { useAllPacks } from '../lib/usePacks';
@@ -11,6 +11,8 @@ interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: st
 
 export function Dictionary({ ctx }: { ctx: Ctx }) {
   const [q, setQ] = useState('');
+  // Tippen bleibt flüssig, auch wenn in allen Sprachen (~25.000 Einträge) gesucht wird
+  const dq = useDeferredValue(q);
   const [all, setAll] = useState(false);
   const [level, setLevel] = useState('');
   const [reg, setReg] = useState('');
@@ -30,10 +32,10 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
   }, [all, allPacks, ctx.pack, ctx.state.settings.srScript]);
 
   const results = useMemo(() => {
-    const n = normalize(q);
+    const n = normalize(dq);
     const filtered = index.filter((e) => (!level || e.level === level) && (!reg || e.reg === reg) && (!n || e.search.includes(n)));
     return { total: filtered.length, list: n.length >= 1 || level || reg ? filtered.slice(0, 80) : [] };
-  }, [q, index, level, reg]);
+  }, [dq, index, level, reg]);
 
   return (
     <div className="stack">
@@ -54,7 +56,7 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
       <label className="row small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> In allen Sprachen suchen</label>
       {results.list.length > 0 && <p className="muted small">{results.total} Treffer{results.total > 80 ? ' (die ersten 80)' : ''}</p>}
       {(q || level || reg) && !results.total && <p className="muted">Nichts gefunden.</p>}
-      <ul className="list card">
+      {results.list.length > 0 && <ul className="list card">
         {results.list.map((r) => (
           <li key={r.pack.code + r.id} className="word-row">
             <div className="grow">
@@ -66,7 +68,7 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
             <SpeakBtn text={r.t} pack={r.pack} />
           </li>
         ))}
-      </ul>
+      </ul>}
     </div>
   );
 }

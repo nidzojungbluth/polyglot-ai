@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
 import { withScript } from './data';
 import { usePack } from './lib/usePacks';
 import type { LanguagePack } from './data/types';
@@ -47,6 +48,8 @@ export default function App() {
   const [toast, setToast] = useState('');
   const saveTimer = useRef<number>();
   const cloudTimer = useRef<number>();
+  const stateRef = useRef<AppState | null>(null);
+  stateRef.current = state;
 
   // Laden + optional aus der Cloud wiederherstellen, falls der Browser die Daten gelöscht hat
   useEffect(() => {
@@ -59,8 +62,9 @@ export default function App() {
       setClaudeReady(ready);
       if (!ready) { setCloud('nicht verfügbar'); return; }
       const remote = await cloudLoad().catch(() => null);
-      const isEmpty = !Object.keys(s.cards).length && !Object.keys(s.lessons).length;
-      if (remote && isEmpty && (Object.keys(remote.state.cards).length || Object.keys(remote.state.lessons).length)) {
+      const isEmpty = (x: AppState | null) => !!x && !Object.keys(x.cards).length && !Object.keys(x.lessons).length;
+      // Aktuellen Stand prüfen (nicht den beim Start): Wer in den ersten Sekunden schon gelernt hat, verliert nichts.
+      if (remote && isEmpty(stateRef.current) && !isEmpty(remote.state)) {
         setState(remote.state);
         setToast('Lernfortschritt aus der Cloud-Sicherung wiederhergestellt.');
       }
@@ -132,12 +136,12 @@ export default function App() {
   if (!state || !pack) return <div className="loading">{state ? 'Sprache wird geladen …' : 'Polyglot AI lädt …'}</div>;
   const ctx: Ctx = { state, pack, update, addActivity, go, storage, cloud, sw, claudeReady };
 
-  const tabs: { v: View; icon: string; label: string }[] = [
-    { v: 'home', icon: '🏠', label: 'Start' },
-    { v: 'courses', icon: '📚', label: 'Kurse' },
-    { v: 'coach', icon: '💬', label: 'Coach' },
-    { v: 'vocab', icon: '🃏', label: 'Vokabeln' },
-    { v: 'more', icon: '☰', label: 'Mehr' },
+  const tabs: { v: View; icon: keyof typeof TAB_ICONS; label: string }[] = [
+    { v: 'home', icon: 'home', label: 'Start' },
+    { v: 'courses', icon: 'courses', label: 'Kurse' },
+    { v: 'coach', icon: 'coach', label: 'Coach' },
+    { v: 'vocab', icon: 'vocab', label: 'Vokabeln' },
+    { v: 'more', icon: 'more', label: 'Mehr' },
   ];
   const moreViews: View[] = ['more', 'dict', 'progress', 'settings', 'langs', 'roleplay'];
 
@@ -146,7 +150,7 @@ export default function App() {
       <header className="topbar">
         <button className="brand" onClick={() => go('home')} aria-label="Zum Start">Polyglot <span>AI</span></button>
         <button className="langchip" onClick={() => go('langs')} aria-label="Sprache wechseln">
-          {pack.flag} {pack.native} ▾
+          {pack.flag} {pack.native} <span aria-hidden="true" style={{ opacity: 0.5, fontSize: '0.8em' }}>⌄</span>
         </button>
       </header>
       <main className="content">
@@ -170,8 +174,8 @@ export default function App() {
         {tabs.map((t) => {
           const active = t.v === view || (t.v === 'more' && moreViews.includes(view)) || (t.v === 'courses' && (view === 'lesson' || view === 'abc'));
           return (
-            <button key={t.v} className={`tab ${active ? 'active' : ''} ${t.v === 'coach' ? 'tab-coach' : ''}`} onClick={() => go(t.v)}>
-              <span className="tab-icon">{t.icon}</span>
+            <button key={t.v} className={`tab ${active ? 'active' : ''} ${t.v === 'coach' ? 'tab-coach' : ''}`} onClick={() => go(t.v)} aria-current={active ? 'page' : undefined}>
+              <span className="tab-icon" aria-hidden="true">{TAB_ICONS[t.icon](active)}</span>
               <span className="tab-label">{t.label}</span>
             </button>
           );
@@ -180,3 +184,15 @@ export default function App() {
     </div>
   );
 }
+
+/* Linien-Symbole für die Tab-Leiste (eigene SVGs, keine Bibliothek). Aktiv = gefüllt wie bei iOS. */
+const sv = (active: boolean, d: ReactNode) => (
+  <svg viewBox="0 0 24 24" fill={active ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">{d}</svg>
+);
+const TAB_ICONS = {
+  home: (a: boolean) => sv(a, <path d="M3.5 10.6 12 3.8l8.5 6.8V19a1.5 1.5 0 0 1-1.5 1.5h-4.2v-5.6H9.2v5.6H5A1.5 1.5 0 0 1 3.5 19z" />),
+  courses: (a: boolean) => sv(a, <><path d="M4 5.2c2.6-1 5.3-.9 8 .6v14c-2.7-1.5-5.4-1.6-8-.6z" /><path d="M20 5.2c-2.6-1-5.3-.9-8 .6v14c2.7-1.5 5.4-1.6 8-.6z" /></>),
+  coach: (a: boolean) => sv(a, <path d="M12 3.8c4.8 0 8.5 3.1 8.5 7.1S16.8 18 12 18c-.9 0-1.8-.1-2.6-.3L5 20l.9-3.6C4.4 15 3.5 13.1 3.5 10.9c0-4 3.7-7.1 8.5-7.1z" />),
+  vocab: (a: boolean) => sv(a, <><rect x="6.5" y="3.5" width="13" height="16" rx="2.5" /><path d="M4 7.2v11.3A2.5 2.5 0 0 0 6.5 21h9" fill="none" /></>),
+  more: (a: boolean) => sv(false, <><circle cx="5.5" cy="12" r="1.6" fill="currentColor" /><circle cx="12" cy="12" r="1.6" fill="currentColor" /><circle cx="18.5" cy="12" r="1.6" fill="currentColor" />{a && <circle cx="12" cy="12" r="9" fill="none" />}</>),
+};

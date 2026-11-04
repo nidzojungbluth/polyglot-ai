@@ -1,3 +1,4 @@
+import type React from 'react';
 import type { Register } from '../data/types';
 import { REGISTER_INFO } from '../data/types';
 import { sayFor } from '../lib/platform';
@@ -51,6 +52,24 @@ export function SpeakBtn({ text, pack, label = '🔊' }: { text: string; pack: L
 export function ProgressBar({ value, max }: { value: number; max: number }) {
   const pct = max > 0 ? Math.min(100, Math.round((value / max) * 100)) : 0;
   return <div className="bar" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}><div style={{ width: `${pct}%` }} /></div>;
+}
+
+/** Aktivitätsring wie bei Apple Fitness: zeigt den Anteil am Tagesziel. */
+export function Ring({ value, max, size = 76, children }: { value: number; max: number; size?: number; children?: React.ReactNode }) {
+  const r = 32; const c = 2 * Math.PI * r;
+  const pct = max > 0 ? Math.min(1, value / max) : 0;
+  return (
+    <div style={{ position: 'relative', width: size, height: size, flex: 'none' }} role="img" aria-label={`${Math.round(pct * 100)} Prozent des Tagesziels`}>
+      <svg className="ring" viewBox="0 0 80 80" style={{ width: size, height: size, transform: 'rotate(-90deg)' }}>
+        <defs>
+          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#5e5ce6" /><stop offset="1" stopColor="#bf5af2" /></linearGradient>
+        </defs>
+        <circle className="track" cx="40" cy="40" r={r} />
+        {pct > 0 && <circle className="value" cx="40" cy="40" r={r} strokeDasharray={c} strokeDashoffset={c * (1 - pct)} />}
+      </svg>
+      {children && <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', fontSize: '1.25rem' }}>{children}</div>}
+    </div>
+  );
 }
 
 export function LevelBadge({ level }: { level?: string }) {
