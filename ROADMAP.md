@@ -90,6 +90,8 @@ Ursprünglicher Plan:
 
 ## Phase 3 – Qualität: Fehler melden & Prüfmodus ⏳ (D-012)
 
+> Vor Start (04.11.2026): Coach-Redesign nach Auswahl des Nutzers (Entwurf A, B oder C) umsetzen, dann diese Phase. Die Datenprüfung aus dem Audit (`migrate()` prüft jedes Feld) ist Grundlage für die Schema-Migration 1→2.
+
 1. **Ziel:** echte Qualitätsprüfung ohne Kosten ermöglichen.
 2. **Aufgaben:** Knopf „Fehler melden“ (Wortkarte, Wörterbuch, Beispielsatz-Block) mit Auswahl (Übersetzung / Schreibweise / Betonung / Satz unnatürlich / Sonstiges) + Freitext; Speicherung in `AppState.reports` (Schema 2 mit Migration); Liste in Einstellungen mit „als Text kopieren/teilen“; gemeldete Einträge werden in Übungen nicht abgefragt, bis Meldung gelöscht; optionaler **Prüfmodus** (Muttersprachler blättert Einträge eines Moduls durch, tippt ✓/✗).
 3. **Technik:** `lib/store.ts` (Schema-Migration 1→2), `views/ui.tsx` (Knopf-Komponente), `Settings.tsx`, `lib/srs.ts` (Filter).
