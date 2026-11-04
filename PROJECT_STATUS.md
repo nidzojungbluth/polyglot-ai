@@ -24,7 +24,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 
 ## 3. Implementierte Funktionen (geprüft im Code)
 
-- **Sprachen:** Griechisch, Serbisch (Latein/Kyrillisch/beide, automatische Umwandlung), Russisch (Betonungszeichen), Englisch und Spanisch als kleine Pakete (je ~30–40 Einträge); 21 weitere Sprachen nur als „geplant“ im Katalog (`Languages.tsx`).
+- **Sprachen:** Griechisch, Serbisch (Latein/Kyrillisch/beide, automatische Umwandlung), Russisch (Betonungszeichen), Englisch und Spanisch im Ausbau (Phase 6: je 5 A1-Kursmodule, 151 / 137 Einträge); 21 weitere Sprachen nur als „geplant“ im Katalog (`Languages.tsx`).
 - **Schriftkurs** (`Alphabet.tsx`, `lib/abc.ts`, `data/alphabet/`): Griechisch, Russisch, Serbisch Latinica↔Ćirilica; Einstufungstest, viele Übungstypen.
 - **Kurse** (`Courses.tsx`, `Lesson.tsx`, `lib/course.ts`, `data/curriculum.ts`): 20 Themen × 6 Niveaus + Vertiefungsteile = 241 Module pro Schwerpunktsprache, ~800 Lektionen; Grammatikhinweise je Modul.
 - **Vokabeltrainer** (`Vocab.tsx`, `lib/srs.ts`): SM-2, Tageswarteschlange, Tageslimit neue Karten (Standard 20, einstellbar), „morgen fällig“, schwierige Wörter; Lernkarten mit Beispielsatz-Block (Satz → Umschrift → Übersetzung).
@@ -59,7 +59,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 |---|---|---|
 | Erster Download (Pages) | 366 KB (Kern + gewählte Sprache) | ✅ (vorher ~1,8 MB) |
 | Start iPhone-13-Simulation, CPU ×4 (`npm run perf`) | **0,43–0,50 s** (04.11.2026) | ✅ (vorher 1,5 s) – wächst nur noch mit der gewählten Sprache |
-| Unit-Tests | 122/122 grün (04.11.2026) | ✅ |
+| Unit-Tests | 124/124 grün (05.11.2026) | ✅ |
 | E2E | 43/43 grün (inkl. Sprachwechsel offline, Fehler melden, Prüfmodus, alle Seiten ohne Überlauf, alle Tippflächen ≥ 44 pt) | ✅ |
 | GitHub Pages Deploy | grün | ✅ |
 
@@ -99,6 +99,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 04.11.2026 spät: Nutzer wählt **Coach-Entwurf A** und gibt die vollständige Design-Transformation frei. Umgesetzt: Coach A; alle Seiten mit eigenen SVG-Symbolen statt Emojis in Bedienelementen, iOS-Zurück-Chevron, Schließen-Knöpfe, Auswahllisten, Ladeanzeige, Ergebnis-Abzeichen, Verläufe auf leichten Glanz reduziert, keine Randstreifen. Danach **Phase 3 abgeschlossen** (Fehler melden, Prüfmodus, Schema 2). E2E-Fehler im Test selbst behoben (Service-Worker-Prüfung hätte auch bei „nicht aktiv“ bestanden). Tests: vitest 114/114, E2E 40/40, Start 0,43–0,50 s. Nächste Phase: 4.
 - 04.11.2026 nachts: **Phase 4 abgeschlossen** – „Los“-Knopf auf der Startseite, 30-Tage-Statistik (SVG), Fortschritt je Niveau, Lückentext für gebeugte Formen (+~400–700 Lückentexte je Sprache), „Treffer üben“ im Wörterbuch, Tippflächen ≥ 44 pt. Tests: vitest 118/118, E2E 41/41. Start-Messung schwankt auf dem Testrechner (0,52–0,79 s, auch ohne Änderung) – kein Rückschritt nachweisbar.
 - 04.11.2026 nachts: **Phase 5 abgeschlossen** – Sicherungs-Erinnerung (14 Tage, abschaltbar), „Letzte Sicherung“, Bitte um dauerhafte Speicherung mit Statusanzeige. vitest 122/122, E2E 43/43. Nächste Phase: 6 (Englisch & Spanisch).
+- 05.11.2026: **Phase 6, Runde 1** – Englisch und Spanisch bekommen den Kursbereich: je 5 A1-Module (Begrüßen, Zeit & Wetter, Café/Bar, Einkaufen, Stadt), jedes Wort mit Beispielsatz; `add-stage.py` kann jetzt beliebige Sprachen. Englisch 151, Spanisch 137 Einträge. vitest 124/124, E2E 43/43.
 - 04.11.2026: Beispielsatz-Runde 25 – letzte Runde B: A2 bis C2 in allen drei Sprachen 100 %; offen nur A1-Grundwörter (Artikel, Pronomen, Zahlen).
 - 04.11.2026: Etappe 47 – +97/+102/+102 Einträge (Fischerei & Fischmarkt, Zoo & Tierpflege, Bibliothek & Archiv, Schuhmacher & Sattler, Bestattung).
 - 04.11.2026: Etappe 46 – +107/+108/+107 Einträge (Imkerei & Hofladen, Bergbau & Steinbruch, Schiff & Hafen, Fotostudio, Juwelier & Uhrmacher).

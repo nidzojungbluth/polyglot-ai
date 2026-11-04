@@ -26,7 +26,7 @@ export function Languages({ ctx }: { ctx: Ctx }) {
           ); })}
         </ul>
         <p className="fine">{BASES.find((p) => p.code === state.settings.lang)?.note}</p>
-        <p className="fine">Griechisch, Serbisch und Russisch haben den großen Kursbereich (A1–C2). Englisch und Spanisch haben vorerst nur die Einstiegslektionen.</p>
+        <p className="fine">Griechisch, Serbisch und Russisch haben den großen Kursbereich (A1–C2). Englisch und Spanisch wachsen gerade (Ziel: A1–B1 mit je 1.000 Einträgen).</p>
       </section>
       <section className="card">
         <h2>Geplant – noch kein Kurs</h2>

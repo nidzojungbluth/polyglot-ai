@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Bindet src/data/vocab/{el,sr,ru}<N>.ts in src/data/packs/<code>.ts ein, markiert bereits vorhandene Wörter mit '@'
 (sie bleiben im Modul, zählen aber nicht doppelt) und zeigt, wie viele Einträge wirklich neu sind.
-Aufruf: python3 scripts/add-stage.py 16"""
+Aufruf: python3 scripts/add-stage.py 16            (Griechisch, Serbisch, Russisch)
+        python3 scripts/add-stage.py 2 en es       (andere Sprachen, Phase 6)"""
 import json, re, subprocess, sys
 
 n = int(sys.argv[1])
-for c in ['el', 'sr', 'ru']:
+LANGS = sys.argv[2:] or ['el', 'sr', 'ru']
+for c in LANGS:
     f = f'src/data/packs/{c}.ts'; s = open(f).read()
     if f"{c}Vocab{n} from" in s: continue
-    last = sorted(int(x) for x in re.findall(rf"import {c}Vocab(\d+) from", s))[-1]
+    nums = sorted(int(x) for x in re.findall(rf"import {c}Vocab(\d+) from", s))
+    last = str(nums[-1]) if nums else ''   # erste Datei heißt nur {c}.ts (import {c}Vocab)
     s = s.replace(f"import {c}Vocab{last} from '../vocab/{c}{last}';", f"import {c}Vocab{last} from '../vocab/{c}{last}';\nimport {c}Vocab{n} from '../vocab/{c}{n}';")
     s = s.replace(f"{c}Vocab{last},\n].join", f"{c}Vocab{last}, {c}Vocab{n},\n].join")
     open(f, 'w').write(s)
@@ -24,7 +27,7 @@ for line in out.splitlines():
     if line.startswith('ERR') and line.split(' ', 2)[2] != '[]': print(line)
     if not line.startswith('DUP'): continue
     _, c, j = line.split(' ', 2)
-    if c not in ('el', 'sr', 'ru'): continue
+    if c not in LANGS: continue
     d = set(json.loads(j)); p = f'src/data/vocab/{c}{n}.ts'; rows = []; cur = None; stats = []; new = tot = 0
     for x in open(p).read().split('\n'):
         if x.startswith('## '):

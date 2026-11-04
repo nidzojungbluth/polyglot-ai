@@ -141,7 +141,8 @@ describe('Regel: neue Vokabeln immer mit Beispielsatz', () => {
     const missing: string[] = [];
     for (const [path, src] of Object.entries(files)) {
       const m = path.match(/\/(el|sr|ru)(\d+)\.ts$/);
-      if (!m || Number(m[2]) < 19) continue;
+      const small = /\/(en|es)\d*\.ts$/.test(path);   // Phase 6: Englisch/Spanisch von Anfang an mit Beispielsatz
+      if (!small && (!m || Number(m[2]) < 19)) continue;
       let kind = 'word';
       for (const raw of src.split('\n')) {
         const line = raw.trim();
@@ -191,4 +192,22 @@ describe('Umschrift der Beispielsätze', () => {
     expect(/[Ѐ-ӿ]/.test(w.ex!.t)).toBe(true);
     expect(/[Ѐ-ӿ]/.test(w.ex!.tr!)).toBe(false);
   });
+});
+
+describe('Englisch & Spanisch (Phase 6)', () => {
+  for (const code of ['en', 'es']) {
+    it(`${code}: Wortliste fehlerfrei, Kursmodule A1 vorhanden und spielbar`, () => {
+      const p = packByCode(code)!;
+      expect(p.parseErrors).toEqual([]);
+      expect(p.duplicates).toEqual([]);
+      const ids = [...p.words, ...p.slang].map((x) => x.id);
+      expect(new Set(ids).size).toBe(ids.length);
+      const a1 = p.modules!.filter((m) => m.level === 'A1');
+      expect(a1.length).toBeGreaterThanOrEqual(5);
+      for (const m of a1) {
+        expect(m.words.length).toBeGreaterThan(15);
+        for (const l of moduleLessons(p, m)) expect(buildExercises(p, lessonItems(p, l), l.cloze, l.order, [], () => 0.37).length).toBeGreaterThan(4);
+      }
+    });
+  }
 });
