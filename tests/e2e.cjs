@@ -243,6 +243,18 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   // Tipp-Flächen der Haupt-Navigation mindestens 44 pt hoch
   const smallTabs = await d.evaluate(() => [...document.querySelectorAll('.tab, .langchip, .back')].filter((e) => e.getBoundingClientRect().height < 40).length);
   assert(smallTabs === 0, 'Navigation: Tippflächen groß genug');
+  // Phase 4: alle Bedienelemente auf allen Hauptseiten mindestens 44 pt (Checkboxen sitzen in großen Beschriftungen, Textlinks im Fließtext)
+  const tiny = [];
+  for (const v of ['home', 'courses', 'coach', 'vocab', 'more', 'dict', 'progress', 'settings', 'langs', 'roleplay']) {
+    await d.goto(URL + '#' + v); await d.waitForSelector('.tabbar'); await d.waitForTimeout(900);
+    if (v === 'dict') { await d.fill('input[type=search]', 'danke'); await d.waitForTimeout(300); }
+    const r = await d.evaluate(() => [...document.querySelectorAll('button, a, select, input:not([type=file]):not([type=checkbox])')]
+      .filter((e) => e.offsetParent && !e.classList.contains('link'))
+      .filter((e) => { const b = e.getBoundingClientRect(); return b.height < 43.5 || b.width < 43.5; })
+      .map((e) => (e.getAttribute('aria-label') || e.textContent || e.className).trim().slice(0, 20)));
+    if (r.length) tiny.push(v + ': ' + r.join(' | '));
+  }
+  assert(!tiny.length, 'alle Tippflächen ≥ 44 pt' + (tiny.length ? ' – ' + tiny.join(' ; ') : ''));
 
   assert(errors.length === 0, 'keine JavaScript-Fehler' + (errors.length ? ': ' + errors.join(' | ') : ''));
   await b.close();

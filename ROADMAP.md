@@ -23,13 +23,13 @@
 | 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | ✅ 01.11. (Start 1,5 s → 0,47 s) |
 | 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | ✅ 04.11. (5.002 / 5.055 / 5.069) |
 | 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ✅ 04.11. |
-| 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ⏳ |
+| 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ✅ 04.11. |
 | 5 | Datensicherheit für iOS (Sicherungs-Erinnerung) | mittel | 1 Runde | ⏳ |
 | 6 | Englisch & Spanisch ausbauen | niedrig | ~10 Runden | ⏳ |
 | 7 | Aussprache-Training (nur Pages) | niedrig/optional | 2 Runden | ⏳ |
 | 8 | Abschluss-QA & Release-Doku | hoch (am Ende) | 1–2 Runden | ⏳ |
 
-Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 ✅ → 4/5 → 6/7 → 8.
+Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 ✅ → 4 ✅/5 → 6/7 → 8.
 
 ---
 
@@ -100,7 +100,9 @@ Ursprünglicher Plan:
 6. **Abnahme:** Migration-Test (alte Sicherung lädt), Meldung überlebt Neustart, Export-Text enthält Eintrag + Meldung, gemeldete Karte erscheint nicht in `todayQueue`.
 7. **Ergebnis:** Fehler können gesammelt und gezielt korrigiert werden.
 
-## Phase 4 – Lernerlebnis Runde 2 ⏳
+## Phase 4 – Lernerlebnis Runde 2 ✅ (04.11.2026)
+
+> Erledigt: „Los“-Knopf in der Heute-Karte (fällige Karten zuerst, sonst nächste Lektion/Schrift), 30-Tage-Balken als SVG, Fortschritt je Niveau als Balken, Lückentext für gebeugte Formen (`inflectedCloze`, eindeutiger Wortstamm, Hinweis „passende Form von …“), Wörterbuch „Treffer üben“, alle Tippflächen ≥ 44 pt (E2E prüft alle Hauptseiten). Lückentext möglich: 4.089→4.457 / 3.207→3.833 / 3.260→3.971. **Nächste Phase: 5.**
 
 1. **Ziel:** tägliches Lernen motivierender und klarer.
 2. **Aufgaben:** Startseite: „Heute“-Karte (fällig/neu/Serie, ein Knopf „Los“); Statistik: 30-Tage-Balken (reines SVG, keine Bibliothek), Fortschritt je Niveau; Lückentext für gebeugte Formen (Wortstamm-Abgleich mit Mindestlänge, nur wenn eindeutig); Wiederholungen auch im Wörterbuch startbar.

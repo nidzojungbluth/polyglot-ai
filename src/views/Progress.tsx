@@ -12,8 +12,7 @@ import { ProgressBar, Icon } from './ui';
 export function Progress({ ctx }: { ctx: Ctx }) {
   const { state } = ctx;
   const loaded = useAllPacks();
-  const days = Array.from({ length: 7 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
-  const max = Math.max(state.settings.dailyGoal, ...days.map((d) => state.daily[today(d)] ?? 0));
+  const days30 = Array.from({ length: 30 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() - (29 - i)); return d; });
   const total = Object.values(state.daily).reduce((a, b) => a + b, 0);
   const mistakes = Object.values(state.mistakes).sort((a, b) => b.count - a.count).slice(0, 5);
 
@@ -26,19 +25,9 @@ export function Progress({ ctx }: { ctx: Ctx }) {
         <div className="card center"><div className="big">{total}</div><div className="muted small">Übungen gesamt</div></div>
       </div>
       <section className="card">
-        <h2>Letzte 7 Tage</h2>
-        <div className="chart" role="img" aria-label="Übungen pro Tag der letzten 7 Tage">
-          {days.map((d) => {
-            const v = state.daily[today(d)] ?? 0;
-            return (
-              <div key={today(d)} className="col">
-                <span className="small">{v || ''}</span>
-                <div className={`colbar ${v >= state.settings.dailyGoal ? 'goal' : ''}`} style={{ height: `${Math.max(2, (v / max) * 100)}%` }} />
-                <span className="small muted">{d.toLocaleDateString('de-DE', { weekday: 'short' }).slice(0, 2)}</span>
-              </div>
-            );
-          })}
-        </div>
+        <div className="row between"><h2 style={{ margin: 0 }}>Letzte 30 Tage</h2><span className="muted small">{days30.filter((d) => (state.daily[today(d)] ?? 0) > 0).length} Lerntage</span></div>
+        <MonthChart days={days30} values={days30.map((d) => state.daily[today(d)] ?? 0)} goal={state.settings.dailyGoal} />
+        <p className="fine">Volle Balken: Tagesziel ({state.settings.dailyGoal} Übungen) erreicht. Gestrichelte Linie: Tagesziel.</p>
       </section>
       <section className="card">
         <h2>Sprachen</h2>
@@ -61,15 +50,20 @@ export function Progress({ ctx }: { ctx: Ctx }) {
       {(ctx.pack.modules?.length ?? 0) > 0 && (
         <section className="card">
           <h2>{ctx.pack.flag} Kurse nach Niveau</h2>
-          <table className="status">
-            <tbody>
-              {LEVELS.map((lv) => {
-                const mods = (ctx.pack.modules ?? []).filter((m) => m.level === lv);
-                const done = mods.filter((m) => moduleLessons(ctx.pack, m).every((l) => state.lessons[l.id])).length;
-                return <tr key={lv}><td><b>{lv}</b></td><td>{mods.length ? `${done} / ${mods.length} Module fertig` : 'noch keine Inhalte'}</td></tr>;
-              })}
-            </tbody>
-          </table>
+          <ul className="list">
+            {LEVELS.map((lv) => {
+              const mods = (ctx.pack.modules ?? []).filter((m) => m.level === lv);
+              const done = mods.filter((m) => moduleLessons(ctx.pack, m).every((l) => state.lessons[l.id])).length;
+              const lessonsAll = mods.flatMap((m) => moduleLessons(ctx.pack, m));
+              const lessonsDone = lessonsAll.filter((l) => state.lessons[l.id]).length;
+              return (
+                <li key={lv} className="topic-row">
+                  <div className="row between small"><b>{lv}</b><span className="muted">{mods.length ? `${done}/${mods.length} Module · ${lessonsDone}/${lessonsAll.length} Lektionen` : 'noch keine Inhalte'}</span></div>
+                  <ProgressBar value={lessonsDone} max={lessonsAll.length} />
+                </li>
+              );
+            })}
+          </ul>
           <h2>{ctx.pack.flag} Wortschatz nach Thema</h2>
           <ul className="list">
             {TOPICS.map((t) => {
@@ -94,5 +88,25 @@ export function Progress({ ctx }: { ctx: Ctx }) {
         )}
       </section>
     </div>
+  );
+}
+
+/** 30-Tage-Balken als reines SVG (keine Bibliothek). Ziel erreicht = voller Akzent, sonst gedämpft. */
+function MonthChart({ days, values, goal }: { days: Date[]; values: number[]; goal: number }) {
+  const W = 320, H = 120, gap = 3, bw = (W - gap * (days.length - 1)) / days.length;
+  const max = Math.max(goal, ...values, 1);
+  const y = (v: number) => H - (v / max) * H;
+  const label = `Übungen pro Tag der letzten 30 Tage: ${values.reduce((a, b) => a + b, 0)} insgesamt, Ziel an ${values.filter((v) => v >= goal).length} Tagen erreicht`;
+  return (
+    <svg className="month-chart" viewBox={`0 0 ${W} ${H + 18}`} role="img" aria-label={label}>
+      <line x1="0" x2={W} y1={y(goal)} y2={y(goal)} className="goal-line" />
+      {values.map((v, i) => {
+        const h = v ? Math.max(3, H - y(v)) : 2;
+        return <rect key={i} x={i * (bw + gap)} y={H - h} width={bw} height={h} rx={Math.min(3, bw / 2)} className={v >= goal ? 'bar-goal' : v ? 'bar-some' : 'bar-none'}><title>{`${days[i].toLocaleDateString('de-DE')}: ${v}`}</title></rect>;
+      })}
+      {[0, 14, 29].map((i) => (
+        <text key={i} x={i * (bw + gap) + (i === 29 ? bw : 0)} y={H + 14} textAnchor={i === 29 ? 'end' : 'start'} className="axis">{i === 29 ? 'heute' : days[i].toLocaleDateString('de-DE', { day: 'numeric', month: 'numeric' })}</text>
+      ))}
+    </svg>
   );
 }

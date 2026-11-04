@@ -41,6 +41,9 @@ export function Home({ ctx }: { ctx: Ctx }) {
           </div>
           <Ring value={done} max={goal}>{done >= goal ? <Icon name="check" size={26} /> : null}</Ring>
         </div>
+        <button className="btn primary big-btn hero-go" onClick={() => (due > 0 ? go('vocab', 'today') : startAbc ? go('abc', abcUnit!.id) : go('lesson', nextLesson.id))}>
+          {due > 0 ? `Los: ${Math.min(30, due)} Karten wiederholen` : startAbc ? `Los: ${abcUnit!.title}` : `Los: ${nextLesson.title}`}
+        </button>
         <div className="hero-meta">
           <div title="Tage in Folge gelernt"><b className="streak"><Icon name="flame" size={17} className="flame" /> {st}</b><span>Tage in Folge</span></div>
           <div><b>{due}</b><span>Karten fällig</span></div>

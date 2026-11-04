@@ -181,6 +181,7 @@ export function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx:
         <div className="muted small">{ex.kind === 'cloze' ? 'Ergänze die Lücke' : 'Übersetze in die Zielsprache'}</div>
         <div className="prompt" lang={ex.kind === 'cloze' ? pack.code : 'de'}>{ex.kind === 'cloze' ? ex.prompt : ex.de}</div>
         {ex.kind === 'cloze' && <div className="muted">{ex.de}</div>}
+        {ex.kind === 'cloze' && ex.base && <div className="small muted">Setze die passende Form von <b lang={pack.code}>{ex.base}</b> ein.</div>}
         <input className="input" value={text} onChange={(e) => setText(e.target.value)} disabled={locked}
           autoCapitalize="off" autoCorrect="off" spellCheck={false} lang={pack.code} placeholder="Deine Antwort" aria-label="Antwort" />
         {ex.kind === 'translate' && ex.hint && !locked && <div className="muted small">Tipp: beginnt mit „{ex.hint}“{pack.scripts === 'sr' ? ' (Latein oder Kyrillisch)' : ''}</div>}

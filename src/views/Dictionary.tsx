@@ -5,6 +5,7 @@ import { useAllPacks } from '../lib/usePacks';
 import type { LanguagePack, Register } from '../data/types';
 import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
+import { newCard } from '../lib/srs';
 import { LevelBadge, RegBadge, SpeakBtn, WordHead, ExampleBlock, Icon, ReportBtn } from './ui';
 
 interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: { t: string; de: string }; extra?: string; local?: boolean; search: string }
@@ -37,6 +38,17 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
     return { total: filtered.length, list: n.length >= 1 || level || reg ? filtered.slice(0, 80) : [] };
   }, [dq, index, level, reg]);
 
+  // Phase 4: Wiederholung direkt aus dem Wörterbuch (nur Treffer der aktuellen Sprache, höchstens 20)
+  const practiceIds = results.list.filter((r) => r.pack.code === ctx.pack.code && !ctx.state.reports[r.id]).slice(0, 20).map((r) => r.id);
+  const practice = () => {
+    ctx.update((s) => {
+      const cards = { ...s.cards };
+      for (const id of practiceIds) if (!cards[id]) cards[id] = newCard(id);
+      return { ...s, cards };
+    });
+    ctx.go('vocab', 'pick:' + practiceIds.join(','));
+  };
+
   return (
     <div className="stack">
       <button className="back" onClick={() => ctx.go('more')}>Mehr</button>
@@ -54,7 +66,12 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
         </select>
       </div>
       <label className="row small"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> In allen Sprachen suchen</label>
-      {results.list.length > 0 && <p className="muted small">{results.total} Treffer{results.total > 80 ? ' (die ersten 80)' : ''}</p>}
+      {results.list.length > 0 && (
+        <div className="row between wrap">
+          <p className="muted small" style={{ margin: 0 }}>{results.total} Treffer{results.total > 80 ? ' (die ersten 80)' : ''}</p>
+          {practiceIds.length > 0 && <button className="btn" onClick={practice}><Icon name="cards" size={18} /> {practiceIds.length} Treffer üben</button>}
+        </div>
+      )}
       {(q || level || reg) && !results.total && <p className="muted">Nichts gefunden.</p>}
       {results.list.length > 0 && <ul className="list card">
         {results.list.map((r) => (

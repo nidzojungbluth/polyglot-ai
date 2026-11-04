@@ -5,7 +5,7 @@ export type Exercise = (
   | { kind: 'mc'; prompt: string; sub?: string; options: string[]; answer: string; wordId: string; speak?: string; explain?: string; dir: 'zu-de' | 'zu-ziel'; q?: string; big?: boolean }
   | { kind: 'listen'; speak: string; options: string[]; answer: string; wordId: string; q?: string; explain?: string }
   | { kind: 'build'; q: string; prompt: string; sub?: string; speak?: string; tiles: string[]; answer: string; joiner: string; explain?: string }
-  | { kind: 'cloze'; prompt: string; de: string; answer: string }
+  | { kind: 'cloze'; prompt: string; de: string; answer: string; base?: string }
   | { kind: 'order'; de: string; tiles: string[]; answer: string }
   | { kind: 'translate'; de: string; answer: string; wordId: string; hint?: string }
   | { kind: 'register'; prompt: string; options: string[]; answer: string; explain: string; wordId: string }
@@ -57,7 +57,7 @@ export function buildExercises(pack: LanguagePack, words: Word[], cloze: Cloze[]
         explain: `„${s.t}“ ist ${s.politeness}. Neutral/höflich: ${s.formal}` });
     }
   }
-  for (const c of cloze) out.push({ kind: 'cloze', prompt: c.t, de: c.de, answer: c.answer });
+  for (const c of cloze) out.push({ kind: 'cloze', prompt: c.t, de: c.de, answer: c.answer, base: c.base });
   for (const o of order) out.push({ kind: 'order', de: o.de, answer: o.answer, tiles: shuffle(o.answer.split(' '), rnd) });
   for (const w of pick(words.filter((x) => x.t.length < 30 && !x.t.includes('…')), small(2), rnd)) {
     out.push({ kind: 'translate', de: w.de, answer: w.t, wordId: w.id, hint: Array.from(w.t.normalize('NFC')).slice(0, 2).join('') + '…' });
@@ -100,7 +100,28 @@ export function clozeFromExample(w: Word): Cloze | null {
       return { t: src.slice(0, start) + '___' + src.slice(end), answer: src.slice(start, end), de: w.ex.de };
     }
   }
-  return null;
+  return inflectedCloze(src, target, w.ex.de);
+}
+
+/**
+ * Gebeugte Form (Phase 4): Steht das Wort nicht in der Grundform im Satz, suchen wir ein Wort mit
+ * demselben Wortstamm (Grundform ohne die letzten 2 Buchstaben, mindestens 4 Buchstaben).
+ * Nur wenn genau EIN Wort passt und es nicht zu stark abweicht – sonst lieber kein Lückentext.
+ */
+const MIN_STEM = 4;
+export function inflectedCloze(sentence: string, target: string, de: string): Cloze | null {
+  if (/\s/.test(target)) return null;                 // nur Einzelwörter
+  const ft = Array.from(target).map(fold).join('');
+  if (ft.length < MIN_STEM + 2) return null;
+  const stem = ft.slice(0, ft.length - 2);
+  const tokens = Array.from(sentence.matchAll(/[\p{L}\p{M}]+/gu));
+  const hits = tokens.filter((m) => {
+    const f = Array.from(m[0]).map(fold).join('');
+    return f.startsWith(stem) && f !== ft && Math.abs(f.length - ft.length) <= 3;
+  });
+  if (hits.length !== 1) return null;
+  const m = hits[0]; const start = m.index ?? 0; const end = start + m[0].length;
+  return { t: sentence.slice(0, start) + '___' + sentence.slice(end), answer: m[0], de, base: target };
 }
 
 /** Satzbau aus dem Beispielsatz (3–8 Wörter). */

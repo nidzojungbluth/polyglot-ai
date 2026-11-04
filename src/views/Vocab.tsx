@@ -50,6 +50,10 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
   // Direkt aus „Schwierige Wörter“ auf der Startseite
   useEffect(() => {
     if (mode === 'hard' && hard.length) start(hard.slice(0, 20).map((c) => c.id), 'Schwierige Wörter');
+    // „Los“ auf der Startseite: direkt mit den heute fälligen Karten beginnen
+    if (mode === 'today' && due.length) start(due.slice(0, 30).map((c) => c.id), 'Wiederholung');
+    // Aus dem Wörterbuch: ausgewählte Treffer üben (Karten wurden dort schon angelegt)
+    if (mode?.startsWith('pick:')) start(mode.slice(5).split(',').filter(Boolean), 'Aus dem Wörterbuch');
     // nur beim Öffnen
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode]);

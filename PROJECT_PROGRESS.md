@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-04 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 5002 | 100 % | 4954 | 4089 | 348 | 1227 |
-| 🇷🇸 Serbisch | 5055 | 101 % | 5011 | 3207 | 348 | 1228 |
-| 🇷🇺 Russisch | 5069 | 101 % | 5026 | 3260 | 348 | 1230 |
+| 🇬🇷 Griechisch | 5002 | 100 % | 4954 | 4457 | 348 | 1227 |
+| 🇷🇸 Serbisch | 5055 | 101 % | 5011 | 3833 | 348 | 1228 |
+| 🇷🇺 Russisch | 5069 | 101 % | 5026 | 3971 | 348 | 1230 |
 
 ## Einträge pro Niveau
 
@@ -34,7 +34,7 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 
 ## Ladezeit
 
-App-Dateien (GitHub Pages): Kern 352 KB, Sprachpakete el 964 KB, sr 676 KB, ru 938 KB (jede Sprache wird erst bei Bedarf geladen).
+App-Dateien (GitHub Pages): Kern 377 KB, Sprachpakete el 990 KB, sr 693 KB, ru 963 KB (jede Sprache wird erst bei Bedarf geladen).
 
 ## Prüfstatus
 

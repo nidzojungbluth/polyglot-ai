@@ -64,7 +64,7 @@ export interface Module {
   slang: string[];      // Slang-IDs
 }
 
-export interface Cloze { t: string; answer: string; de: string }   // t enthält "___"
+export interface Cloze { t: string; answer: string; de: string; base?: string }   // t enthält "___"; base = Grundform, wenn die Lücke eine gebeugte Form ist
 export interface OrderTask { answer: string; de: string }          // Wörter werden gemischt
 
 export interface Lesson {

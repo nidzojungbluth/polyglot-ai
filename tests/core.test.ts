@@ -6,7 +6,7 @@ import { newCard, review, dueCards, isLearned, todayQueue, knownIn } from '../sr
 import { matches, normalize } from '../src/lib/text';
 import { defaultState, exportBackup, importBackup, migrate, loadState, saveState, streak, today, reportsText, reportedIds } from '../src/lib/store';
 import { checkRules, ruleReply, findSlang, buildAiMessages, buildAiInstructions } from '../src/lib/coach';
-import { buildLessonExercises } from '../src/lib/exercises';
+import { buildLessonExercises, clozeFromExample, inflectedCloze } from '../src/lib/exercises';
 
 describe('Spaced Repetition', () => {
   const t0 = Date.UTC(2026, 0, 1);
@@ -322,5 +322,25 @@ describe('Fehler melden & Prüfmodus (Phase 3)', () => {
     s.reports['el-w1'] = report;
     const q = todayQueue(s.cards, knownIn(pack, reportedIds(s)), { newLimit: 99, newDoneToday: 0, now: 10 });
     expect(q.map((c) => c.id)).toEqual(['el-w2']);
+  });
+});
+
+describe('Lückentext für gebeugte Formen (Phase 4)', () => {
+  it('findet eine eindeutig gebeugte Form über den Wortstamm', () => {
+    const c = clozeFromExample({ id: 'ru-x', t: 'маши́на', de: 'Auto', reg: 'neutral', ex: { t: 'Я ви́жу маши́ну во дворе́.', de: 'Ich sehe das Auto im Hof.' } } as any);
+    expect(c).toEqual({ t: 'Я ви́жу ___ во дворе́.', answer: 'маши́ну', de: 'Ich sehe das Auto im Hof.', base: 'маши́на' });
+  });
+  it('Grundform im Satz hat weiterhin Vorrang (kein Hinweis nötig)', () => {
+    const c = clozeFromExample({ id: 'ru-y', t: 'маши́на', de: 'Auto', reg: 'neutral', ex: { t: 'Э́та маши́на но́вая.', de: 'Dieses Auto ist neu.' } } as any);
+    expect(c?.answer).toBe('маши́на');
+    expect(c?.base).toBeUndefined();
+  });
+  it('mehrdeutig oder zu kurz → kein Lückentext', () => {
+    expect(inflectedCloze('Маши́ну и маши́ны ви́дно.', 'маши́на', 'x')).toBeNull();
+    expect(inflectedCloze('Θέλω έναν καφέ.', 'καφές', 'x')).toBeNull();
+    expect(inflectedCloze('Ich gehe nach Hause.', 'zwei Wörter', 'x')).toBeNull();
+  });
+  it('Serbisch: Akkusativ wird erkannt', () => {
+    expect(inflectedCloze('Volim tvoju kuhinju.', 'kuhinja', 'Ich mag deine Küche.')?.answer).toBe('kuhinju');
   });
 });

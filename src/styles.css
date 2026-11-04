@@ -485,3 +485,16 @@ input[type=checkbox] { width: 24px; height: 24px; accent-color: var(--primary); 
 }
 .choice + .choice { box-shadow: inset 0 0.5px 0 var(--line); }
 .choice.on { color: var(--primary-ink); font-weight: 600; }
+
+/* ---------- Lernerlebnis Runde 2 (Phase 4) ---------- */
+.hero-go { margin-top: 14px; }
+.month-chart { width: 100%; height: auto; display: block; margin-top: 12px; overflow: visible; }
+.month-chart .bar-goal { fill: var(--primary); }
+.month-chart .bar-some { fill: color-mix(in srgb, var(--primary) 45%, var(--card)); }
+.month-chart .bar-none { fill: var(--fill); }
+.month-chart .goal-line { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.6; }
+.month-chart .axis { fill: var(--muted); font-size: 10px; }
+/* Tippflächen mindestens 44 pt (Apple HIG) – Abnahme Phase 4 */
+.langchip, .chip, .select, .seg button, .back { min-height: 44px; }
+.ex-head .icon-btn { width: 44px; height: 44px; min-width: 44px; min-height: 44px; margin: -6px -8px -6px 0; }
+input[type=range] { min-height: 44px; }
