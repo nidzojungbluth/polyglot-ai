@@ -34,7 +34,10 @@ export interface AppState {
     srScript: 'beide' | 'latein' | 'kyrillisch';  // Serbisch: Schriftwahl
     cardDir: 'gemischt' | 'zu-de' | 'zu-ziel';    // Richtung der Karteikarten
     newPerDay: number;          // Tageslimit für neue Karten (0 = kein Limit)
+    backupReminder: boolean;    // Phase 5: an Sicherung erinnern (nach 14 Tagen)
   };
+  /** Phase 5: Zeitpunkt der letzten Sicherung (Datei oder Kopieren), optional. */
+  lastBackupAt?: number;
   cards: Record<string, Card>;
   /** Wie viele neue Karten heute schon gelernt wurden (für das Tageslimit). */
   newDone?: { day: string; n: number };
@@ -51,7 +54,7 @@ export interface AppState {
 export function defaultState(): AppState {
   return {
     schema: SCHEMA_VERSION,
-    settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true, srScript: 'beide', cardDir: 'gemischt', newPerDay: 20 },
+    settings: { lang: 'en', theme: 'auto', dailyGoal: 20, coachMode: 'alltag', slang: 1, interests: '', aiEnabled: true, srScript: 'beide', cardDir: 'gemischt', newPerDay: 20, backupReminder: true },
     cards: {}, lessons: {}, roleplays: {}, daily: {}, mistakes: {}, coach: {}, reports: {}, checks: {}, updatedAt: Date.now(),
   };
 }
@@ -98,6 +101,7 @@ export function migrate(raw: unknown): AppState {
         at: num(v.at) ? v.at : Date.now(), t: v.t.slice(0, 300), de: v.de.slice(0, 300), ...(typeof v.ex === 'string' ? { ex: v.ex.slice(0, 600) } : {}),
       } : undefined)),
     checks: pick((r as any).checks, (v) => (num(v) ? v : undefined)),
+    ...(num((r as any).lastBackupAt) ? { lastBackupAt: (r as any).lastBackupAt as number } : {}),
     updatedAt: num(r.updatedAt) ? r.updatedAt : Date.now(),
   };
 }
@@ -117,6 +121,7 @@ function cleanSettings(s: Record<string, any>, d: AppState['settings']): AppStat
     srScript: oneOf(s.srScript, ['beide', 'latein', 'kyrillisch'] as const, d.srScript),
     cardDir: oneOf(s.cardDir, ['gemischt', 'zu-de', 'zu-ziel'] as const, d.cardDir),
     newPerDay: int(s.newPerDay, 0, 500, d.newPerDay),
+    backupReminder: typeof s.backupReminder === 'boolean' ? s.backupReminder : d.backupReminder,
   };
 }
 
@@ -230,4 +235,28 @@ export function reportsText(s: AppState, langName: (code: string) => string = (c
     r.ex ? `   Beispielsatz: ${r.ex}` : '',
   ].filter(Boolean).join('\n'));
   return [head, '', ...rows].join('\n');
+}
+
+// ---------- Sicherungs-Erinnerung (Phase 5) ----------
+export const BACKUP_REMIND_DAYS = 14;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+/**
+ * Wie viele Tage seit der letzten Sicherung – aber nur, wenn erinnert werden soll:
+ * Erinnerung an, es gibt Lernfortschritt, und es ist mindestens 14 Tage her
+ * (ohne bisherige Sicherung zählt der erste Lerntag). Sonst null.
+ */
+export function backupDueDays(s: AppState, now = Date.now()): number | null {
+  if (!s.settings.backupReminder) return null;
+  const hasProgress = Object.keys(s.cards).length > 0 || Object.keys(s.lessons).length > 0;
+  if (!hasProgress) return null;
+  let since = s.lastBackupAt;
+  if (since === undefined) {
+    const first = Object.keys(s.daily).filter((d) => s.daily[d] > 0).sort()[0];
+    if (!first) return null;
+    const [y, m, d] = first.split('-').map(Number);
+    since = new Date(y, m - 1, d).getTime();
+  }
+  const days = Math.floor((now - since) / DAY_MS);
+  return days >= BACKUP_REMIND_DAYS ? days : null;
 }

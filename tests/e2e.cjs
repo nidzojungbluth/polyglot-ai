@@ -183,6 +183,21 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   assert(await p.locator('.err-text').count() === 1, 'Kaputte Sicherung → verständliche Fehlermeldung');
   await p.screenshot({ path: '../shots/6-settings.png' });
 
+  // Phase 5: Sicherungs-Erinnerung – alte Sicherung ohne „letzte Sicherung“, erster Lerntag vor 30 Tagen
+  const old = JSON.parse(backup); delete old.lastBackupAt;
+  const d30 = new Date(Date.now() - 30 * 864e5); const key = `${d30.getFullYear()}-${String(d30.getMonth() + 1).padStart(2, '0')}-${String(d30.getDate()).padStart(2, '0')}`;
+  old.daily = { ...old.daily, [key]: 5 };
+  await p.fill('textarea', JSON.stringify(old));
+  await p.click('button:has-text("Wiederherstellen")');
+  await p.click('.tab:has-text("Start")');
+  assert(await p.locator('text=Tagen nicht gesichert').count() === 1, 'Erinnerung: „Seit X Tagen nicht gesichert“ erscheint');
+  await p.click('.backup-note button:has-text("Jetzt sichern")');
+  await p.click('button:has-text("Als Datei sichern")');
+  await p.waitForTimeout(400);
+  await p.click('.tab:has-text("Start")');
+  assert(await p.locator('text=Tagen nicht gesichert').count() === 0, 'Erinnerung verschwindet nach dem Sichern');
+  await p.click('.tab:has-text("Mehr")'); await p.click('text=Einstellungen');
+
   // Phase 3: Fehler melden (Wörterbuch) – bleibt nach Neuladen gespeichert, erscheint in den Einstellungen
   await p.click('.tab:has-text("Mehr")'); await p.click('text=Wörterbuch');
   await p.fill('input[type=search]', 'danke');

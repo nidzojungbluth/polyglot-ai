@@ -59,8 +59,8 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 |---|---|---|
 | Erster Download (Pages) | 366 KB (Kern + gewählte Sprache) | ✅ (vorher ~1,8 MB) |
 | Start iPhone-13-Simulation, CPU ×4 (`npm run perf`) | **0,43–0,50 s** (04.11.2026) | ✅ (vorher 1,5 s) – wächst nur noch mit der gewählten Sprache |
-| Unit-Tests | 118/118 grün (04.11.2026) | ✅ |
-| E2E | 41/41 grün (inkl. Sprachwechsel offline, Fehler melden, Prüfmodus, alle Seiten ohne Überlauf, alle Tippflächen ≥ 44 pt) | ✅ |
+| Unit-Tests | 122/122 grün (04.11.2026) | ✅ |
+| E2E | 43/43 grün (inkl. Sprachwechsel offline, Fehler melden, Prüfmodus, alle Seiten ohne Überlauf, alle Tippflächen ≥ 44 pt) | ✅ |
 | GitHub Pages Deploy | grün | ✅ |
 
 ## 6. Offene Probleme und technische Schulden
@@ -74,7 +74,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 7. ~~Lückentext bei gebeugten Formen~~ ✅ Phase 4 (Wortstamm-Abgleich, nur wenn eindeutig).
 8. **Englisch/Spanisch** nur Mini-Pakete.
 9. **Inhaltsqualität** nicht durch Muttersprachler geprüft. ✅ Seit Phase 3 kann man Fehler melden und Module im Prüfmodus durchgehen – die Prüfung selbst braucht weiterhin Muttersprachler.
-10. iOS kann Browserdaten löschen → Nutzer muss sichern (Hinweis vorhanden, keine Erinnerung).
+10. ~~Keine Sicherungs-Erinnerung~~ ✅ Phase 5 (Erinnerung nach 14 Tagen, Bitte um dauerhafte Speicherung). iOS kann trotzdem löschen, wenn der Browser die Bitte ablehnt.
 
 ## 7. Sicherheit und Datenschutz
 
@@ -98,6 +98,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 04.11.2026 abends: **Audit + Redesign** (Master-Prompt des Nutzers). Wiederherstellungspunkt: Zweig `backup/vor-audit-2026-11-04` (Commit `1e89d7c`). Behoben: (1) `migrate()` prüft jetzt jedes Feld einer Sicherung einzeln – eine kaputte Datei konnte vorher die App lahmlegen (z. B. Coach-Verlauf mit falschem Aufbau); (2) IndexedDB-Verbindung wird wiederverwendet; (3) Cloud-Wiederherstellung prüft den aktuellen Stand; (4) Service Worker speichert keine Fehlerseiten mehr; (5) Dateiauswahl in den Einstellungen machte die Seite breiter als das iPhone; (6) Wörterbuch ohne leere Karte, flüssiges Tippen. Neues Designsystem im iOS-Stil (Farben, Typografie, Karten, SVG-Tab-Leiste, Aktivitätsring auf der Startseite, dezente Animationen, Hell/Dunkel). Tests: vitest 109/109, E2E 36/36, Start 0,43 s. **Coach-Design wartet auf Auswahl A/B/C** (Entwürfe: https://claude.ai/artifact/SnPnAfJgihgeNgohAcS4h4). Danach weiter mit Phase 3.
 - 04.11.2026 spät: Nutzer wählt **Coach-Entwurf A** und gibt die vollständige Design-Transformation frei. Umgesetzt: Coach A; alle Seiten mit eigenen SVG-Symbolen statt Emojis in Bedienelementen, iOS-Zurück-Chevron, Schließen-Knöpfe, Auswahllisten, Ladeanzeige, Ergebnis-Abzeichen, Verläufe auf leichten Glanz reduziert, keine Randstreifen. Danach **Phase 3 abgeschlossen** (Fehler melden, Prüfmodus, Schema 2). E2E-Fehler im Test selbst behoben (Service-Worker-Prüfung hätte auch bei „nicht aktiv“ bestanden). Tests: vitest 114/114, E2E 40/40, Start 0,43–0,50 s. Nächste Phase: 4.
 - 04.11.2026 nachts: **Phase 4 abgeschlossen** – „Los“-Knopf auf der Startseite, 30-Tage-Statistik (SVG), Fortschritt je Niveau, Lückentext für gebeugte Formen (+~400–700 Lückentexte je Sprache), „Treffer üben“ im Wörterbuch, Tippflächen ≥ 44 pt. Tests: vitest 118/118, E2E 41/41. Start-Messung schwankt auf dem Testrechner (0,52–0,79 s, auch ohne Änderung) – kein Rückschritt nachweisbar.
+- 04.11.2026 nachts: **Phase 5 abgeschlossen** – Sicherungs-Erinnerung (14 Tage, abschaltbar), „Letzte Sicherung“, Bitte um dauerhafte Speicherung mit Statusanzeige. vitest 122/122, E2E 43/43. Nächste Phase: 6 (Englisch & Spanisch).
 - 04.11.2026: Beispielsatz-Runde 25 – letzte Runde B: A2 bis C2 in allen drei Sprachen 100 %; offen nur A1-Grundwörter (Artikel, Pronomen, Zahlen).
 - 04.11.2026: Etappe 47 – +97/+102/+102 Einträge (Fischerei & Fischmarkt, Zoo & Tierpflege, Bibliothek & Archiv, Schuhmacher & Sattler, Bestattung).
 - 04.11.2026: Etappe 46 – +107/+108/+107 Einträge (Imkerei & Hofladen, Bergbau & Steinbruch, Schiff & Hafen, Fotostudio, Juwelier & Uhrmacher).

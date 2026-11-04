@@ -4,7 +4,7 @@ import { PACKS } from '../src/data/all';
 import { REGISTER_INFO } from '../src/data/types';
 import { newCard, review, dueCards, isLearned, todayQueue, knownIn } from '../src/lib/srs';
 import { matches, normalize } from '../src/lib/text';
-import { defaultState, exportBackup, importBackup, migrate, loadState, saveState, streak, today, reportsText, reportedIds } from '../src/lib/store';
+import { defaultState, exportBackup, importBackup, migrate, loadState, saveState, streak, today, reportsText, reportedIds, backupDueDays } from '../src/lib/store';
 import { checkRules, ruleReply, findSlang, buildAiMessages, buildAiInstructions } from '../src/lib/coach';
 import { buildLessonExercises, clozeFromExample, inflectedCloze } from '../src/lib/exercises';
 
@@ -342,5 +342,33 @@ describe('Lückentext für gebeugte Formen (Phase 4)', () => {
   });
   it('Serbisch: Akkusativ wird erkannt', () => {
     expect(inflectedCloze('Volim tvoju kuhinju.', 'kuhinja', 'Ich mag deine Küche.')?.answer).toBe('kuhinju');
+  });
+});
+
+describe('Sicherungs-Erinnerung (Phase 5)', () => {
+  const now = new Date(2026, 10, 30, 12).getTime();
+  const withProgress = () => { const s = defaultState(); s.cards['el-w1'] = newCard('el-w1', 0); return s; };
+  it('ohne Lernfortschritt keine Erinnerung', () => {
+    const s = defaultState(); s.daily['2026-10-01'] = 3;
+    expect(backupDueDays(s, now)).toBeNull();
+  });
+  it('ohne bisherige Sicherung zählt der erste Lerntag', () => {
+    const s = withProgress(); s.daily['2026-11-01'] = 3; s.daily['2026-11-20'] = 2;
+    expect(backupDueDays(s, now)).toBe(29);
+    s.daily = { '2026-11-25': 1 };
+    expect(backupDueDays(s, now)).toBeNull();
+  });
+  it('nach einer Sicherung erst wieder nach 14 Tagen', () => {
+    const s = withProgress(); s.daily['2026-10-01'] = 3;
+    s.lastBackupAt = now - 13 * 864e5; expect(backupDueDays(s, now)).toBeNull();
+    s.lastBackupAt = now - 15 * 864e5; expect(backupDueDays(s, now)).toBe(15);
+  });
+  it('abschaltbar, und alte Sicherungen bekommen die Erinnerung eingeschaltet', () => {
+    const s = withProgress(); s.daily['2026-10-01'] = 3; s.settings.backupReminder = false;
+    expect(backupDueDays(s, now)).toBeNull();
+    const m = migrate({ schema: 2, settings: { lang: 'el' } });
+    expect(m.settings.backupReminder).toBe(true);
+    expect(m.lastBackupAt).toBeUndefined();
+    expect(migrate({ schema: 2, lastBackupAt: 123 }).lastBackupAt).toBe(123);
   });
 });

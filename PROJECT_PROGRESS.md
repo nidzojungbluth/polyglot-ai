@@ -34,7 +34,7 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 
 ## Ladezeit
 
-App-Dateien (GitHub Pages): Kern 377 KB, Sprachpakete el 990 KB, sr 693 KB, ru 963 KB (jede Sprache wird erst bei Bedarf geladen).
+App-Dateien (GitHub Pages): Kern 379 KB, Sprachpakete el 990 KB, sr 693 KB, ru 963 KB (jede Sprache wird erst bei Bedarf geladen).
 
 ## Prüfstatus
 

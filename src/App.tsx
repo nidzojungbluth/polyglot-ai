@@ -6,7 +6,7 @@ import type { LanguagePack } from './data/types';
 import type { AppState, StorageKind } from './lib/store';
 import { loadState, saveState, today } from './lib/store';
 import { cloudLoad, cloudSave } from './lib/cloud';
-import { registerServiceWorker, waitForClaude } from './lib/platform';
+import { registerServiceWorker, requestPersistentStorage, waitForClaude } from './lib/platform';
 import { Home, MorePage } from './views/Home';
 import { LessonPlayer } from './views/Lesson';
 import { Coach } from './views/Coach';
@@ -31,6 +31,7 @@ export interface Ctx {
   storage: StorageKind;
   cloud: 'prüfe' | 'aktiv' | 'nicht verfügbar';
   sw: 'aktiv' | 'nicht verfügbar';
+  persist: 'prüfe' | 'ja' | 'nein' | 'nicht verfügbar';
   claudeReady: boolean;
 }
 
@@ -44,6 +45,7 @@ export default function App() {
   const [arg, setArg] = useState<string | undefined>();
   const [cloud, setCloud] = useState<Ctx['cloud']>('prüfe');
   const [sw, setSw] = useState<Ctx['sw']>('nicht verfügbar');
+  const [persist, setPersist] = useState<Ctx['persist']>('prüfe');
   const [claudeReady, setClaudeReady] = useState(false);
   const [toast, setToast] = useState('');
   const saveTimer = useRef<number>();
@@ -58,6 +60,7 @@ export default function App() {
       setStorage(kind);
       setState(s);
       registerServiceWorker().then(setSw);
+      requestPersistentStorage().then(setPersist);
       const ready = await waitForClaude(4000);
       setClaudeReady(ready);
       if (!ready) { setCloud('nicht verfügbar'); return; }
@@ -134,7 +137,7 @@ export default function App() {
   const pack = useMemo(() => (rawPack ? withScript(rawPack, state?.settings.srScript ?? 'beide') : undefined), [rawPack, state?.settings.srScript]);
 
   if (!state || !pack) return <div className="loading">{state ? 'Sprache wird geladen …' : 'Polyglot AI lädt …'}</div>;
-  const ctx: Ctx = { state, pack, update, addActivity, go, storage, cloud, sw, claudeReady };
+  const ctx: Ctx = { state, pack, update, addActivity, go, storage, cloud, sw, persist, claudeReady };
 
   const tabs: { v: View; icon: keyof typeof TAB_ICONS; label: string }[] = [
     { v: 'home', icon: 'home', label: 'Start' },

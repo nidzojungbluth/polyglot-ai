@@ -1,6 +1,7 @@
 import type { Ctx } from '../App';
 import { knownIn, todayQueue } from '../lib/srs';
-import { newDoneToday, newLimit, reportedIds } from '../lib/store';
+import { useState } from 'react';
+import { backupDueDays, newDoneToday, newLimit, reportedIds } from '../lib/store';
 import { streak, today } from '../lib/store';
 import { AiNotice, Icon, Ring, type IconName } from './ui';
 import { moduleLessons } from '../lib/course';
@@ -29,6 +30,9 @@ export function Home({ ctx }: { ctx: Ctx }) {
   const startAbc = !!abc && abc.forBeginners && !!abcUnit;
   const hard = Object.values(state.cards).filter((c) => c.id.startsWith(`${pack.code}-`) && (c.lapses >= 2 || (c.reps > 0 && c.ease < 2.1))).length;
   const modCount = pack.modules?.length ?? 0;
+  // Phase 5: Erinnerung, nicht auf claude.ai mit aktiver Cloud-Sicherung (dort wird automatisch gesichert)
+  const backupDays = ctx.cloud === 'aktiv' ? null : backupDueDays(state);
+  const [hideBackup, setHideBackup] = useState(false);
 
   return (
     <div className="stack">
@@ -50,6 +54,22 @@ export function Home({ ctx }: { ctx: Ctx }) {
           <div><b>{Object.keys(state.lessons).filter((k) => k.startsWith(`${pack.code}-`)).length}</b><span>Lektionen fertig</span></div>
         </div>
       </section>
+
+      {backupDays !== null && !hideBackup && (
+        <section className="card backup-note" role="status">
+          <div className="row" style={{ alignItems: 'flex-start' }}>
+            <span className="num"><Icon name="download" size={18} /></span>
+            <div className="grow">
+              <b>Seit {backupDays} Tagen nicht gesichert</b>
+              <p className="small muted">Safari kann Website-Daten löschen. Eine Sicherung dauert nur ein paar Sekunden.</p>
+            </div>
+          </div>
+          <div className="row">
+            <button className="btn" onClick={() => setHideBackup(true)}>Später</button>
+            <button className="btn primary grow" onClick={() => go('settings')}>Jetzt sichern</button>
+          </div>
+        </section>
+      )}
 
       <div className="grid2">
         <button className="tile" onClick={() => (startAbc ? go('abc', abcUnit!.id) : go('lesson', nextLesson.id))}>

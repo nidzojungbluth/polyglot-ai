@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Ctx } from '../App';
-import { defaultState, exportBackup, importBackup, reportsText, REPORT_KINDS, type Theme } from '../lib/store';
+import { BACKUP_REMIND_DAYS, defaultState, exportBackup, importBackup, reportsText, REPORT_KINDS, type Theme } from '../lib/store';
 import { BASES } from '../data';
 import { cloudSave } from '../lib/cloud';
 import { isStandalone, speechAvailable, useCapability } from '../lib/platform';
@@ -14,25 +14,28 @@ export function Settings({ ctx }: { ctx: Ctx }) {
   const [confirmReset, setConfirmReset] = useState(false);
   const set = (patch: Partial<typeof s>) => update((st) => ({ ...st, settings: { ...st.settings, ...patch } }));
 
+  // Dateiname mit Datum (Phase 5 – war schon so umgesetzt)
   const filename = `polyglot-sicherung-${new Date().toISOString().slice(0, 10)}.json`;
+  const markBackup = () => update((st) => ({ ...st, lastBackupAt: Date.now() }));
 
   const download = async () => {
     const data = exportBackup(state);
     const dl = await useCapability('downloads');
     if (dl) {
-      try { await dl.save({ filename, data }); setMsg({ ok: true, text: 'Sicherungsdatei gespeichert.' }); return; }
+      try { await dl.save({ filename, data }); markBackup(); setMsg({ ok: true, text: 'Sicherungsdatei gespeichert.' }); return; }
       catch { setMsg({ ok: false, text: 'Download abgebrochen oder nicht erlaubt. Nutze „Kopieren“.' }); return; }
     }
     try {
       const url = URL.createObjectURL(new Blob([data], { type: 'application/json' }));
       const a = document.createElement('a'); a.href = url; a.download = filename; a.click();
       setTimeout(() => URL.revokeObjectURL(url), 2000);
+      markBackup();
       setMsg({ ok: true, text: 'Download gestartet.' });
     } catch { setMsg({ ok: false, text: 'Download nicht möglich. Nutze „Kopieren“.' }); }
   };
 
   const copy = async () => {
-    try { await navigator.clipboard.writeText(exportBackup(state)); setMsg({ ok: true, text: 'Sicherung kopiert. Füge sie z. B. in eine Notiz ein.' }); }
+    try { await navigator.clipboard.writeText(exportBackup(state)); markBackup(); setMsg({ ok: true, text: 'Sicherung kopiert. Füge sie z. B. in eine Notiz ein.' }); }
     catch { setImportText(exportBackup(state)); setMsg({ ok: false, text: 'Kopieren nicht erlaubt – der Text steht unten im Feld, du kannst ihn markieren und kopieren.' }); }
   };
 
@@ -95,6 +98,11 @@ export function Settings({ ctx }: { ctx: Ctx }) {
       <section className="card">
         <h2>Sicherung & Wiederherstellung</h2>
         <p className="small">Browserdaten können auf dem iPhone gelöscht werden (z. B. bei wenig Speicher oder wenn eine Seite lange nicht geöffnet wurde). Sichere deinen Fortschritt regelmäßig.</p>
+        <p className="small muted">Letzte Sicherung: {state.lastBackupAt ? new Date(state.lastBackupAt).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }) : 'noch keine'}</p>
+        <label className="row between field">
+          <span>An Sicherung erinnern (nach {BACKUP_REMIND_DAYS} Tagen)</span>
+          <input type="checkbox" checked={s.backupReminder} onChange={(e) => set({ backupReminder: e.target.checked })} />
+        </label>
         <div className="row wrap">
           <button className="btn" onClick={download}><Icon name="download" size={18} /> Als Datei sichern</button>
           <button className="btn" onClick={copy}><Icon name="copy" size={18} /> Kopieren</button>
@@ -131,6 +139,7 @@ export function Settings({ ctx }: { ctx: Ctx }) {
             <tr><td>Speicherort</td><td>{{ indexeddb: 'IndexedDB (Browser)', localstorage: 'localStorage (Browser)', memory: 'Achtung: nur Arbeitsspeicher – geht beim Schließen verloren!' }[ctx.storage]}</td></tr>
             <tr><td>Cloud-Sicherung</td><td>{ctx.cloud === 'aktiv' ? 'aktiv (automatisch)' : ctx.cloud === 'prüfe' ? 'prüfe …' : 'nicht verfügbar'}</td></tr>
             <tr><td>Offline-Modus (Service Worker)</td><td>{ctx.sw === 'aktiv' ? 'aktiv' : 'nicht aktiv auf dieser Adresse'}</td></tr>
+            <tr><td>Daten dauerhaft behalten</td><td>{{ prüfe: 'prüfe …', ja: 'ja – Safari löscht sie nicht automatisch', nein: 'nein – bitte regelmäßig sichern', 'nicht verfügbar': 'nicht verfügbar – bitte regelmäßig sichern' }[ctx.persist]}</td></tr>
             <tr><td>Als App installiert</td><td>{isStandalone() ? 'ja' : 'nein'}</td></tr>
           </tbody>
         </table>

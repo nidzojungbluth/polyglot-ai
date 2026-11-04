@@ -24,12 +24,12 @@
 | 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | ✅ 04.11. (5.002 / 5.055 / 5.069) |
 | 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ✅ 04.11. |
 | 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ✅ 04.11. |
-| 5 | Datensicherheit für iOS (Sicherungs-Erinnerung) | mittel | 1 Runde | ⏳ |
+| 5 | Datensicherheit für iOS (Sicherungs-Erinnerung) | mittel | 1 Runde | ✅ 04.11. |
 | 6 | Englisch & Spanisch ausbauen | niedrig | ~10 Runden | ⏳ |
 | 7 | Aussprache-Training (nur Pages) | niedrig/optional | 2 Runden | ⏳ |
 | 8 | Abschluss-QA & Release-Doku | hoch (am Ende) | 1–2 Runden | ⏳ |
 
-Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 ✅ → 4 ✅/5 → 6/7 → 8.
+Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 ✅ → 4 ✅ → 5 ✅ → 6/7 → 8.
 
 ---
 
@@ -110,7 +110,9 @@ Ursprünglicher Plan:
 4. **Abhängigkeiten:** Phase 1. **Priorität:** mittel. **Aufwand:** 3 Runden.
 5. **Abnahme:** Screenshot-Prüfung iPhone SE/13 hell/dunkel, keine Tippfläche < 44 pt (E2E-Messung), neue Lückentext-Fälle in `core.test.ts`, Lückentext-Quote im Report steigt.
 
-## Phase 5 – Datensicherheit iOS ⏳
+## Phase 5 – Datensicherheit iOS ✅ (04.11.2026)
+
+> Erledigt: Karte „Seit X Tagen nicht gesichert“ auf der Startseite (ab 14 Tagen, abschaltbar in den Einstellungen, nicht bei aktiver Cloud-Sicherung), `lastBackupAt` wird beim Sichern (Datei/Kopieren) gesetzt, „Letzte Sicherung“ in den Einstellungen, `navigator.storage.persist()` mit Anzeige „Daten dauerhaft behalten“; Dateiname mit Datum gab es schon. Tests: 4 Unit, 2 E2E. **Nächste Phase: 6.**
 
 1. **Ziel:** kein Lernstand geht verloren.
 2. **Aufgaben:** Erinnerung „Seit X Tagen nicht gesichert“ (nach 14 Tagen, abschaltbar); Sicherungsdatei mit Datum im Namen; `navigator.storage.persist()` anfragen (Pages).

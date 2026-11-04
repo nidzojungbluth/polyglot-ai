@@ -64,6 +64,19 @@ export async function registerServiceWorker(): Promise<'aktiv' | 'nicht verfügb
   } catch { return 'nicht verfügbar'; }
 }
 
+/**
+ * Phase 5: Safari darf Website-Daten bei Speichermangel oder nach längerer Nichtnutzung löschen.
+ * Mit persist() bitten wir den Browser, die Lerndaten dauerhaft zu behalten (wirkt auf GitHub Pages, nicht auf claude.ai).
+ */
+export async function requestPersistentStorage(): Promise<'ja' | 'nein' | 'nicht verfügbar'> {
+  try {
+    const st = (navigator as any).storage;
+    if (!st?.persist || !st?.persisted) return 'nicht verfügbar';
+    if (await st.persisted()) return 'ja';
+    return (await st.persist()) ? 'ja' : 'nein';
+  } catch { return 'nicht verfügbar'; }
+}
+
 export function isStandalone(): boolean {
   try { return window.matchMedia('(display-mode: standalone)').matches || (navigator as unknown as { standalone?: boolean }).standalone === true; } catch { return false; }
 }
