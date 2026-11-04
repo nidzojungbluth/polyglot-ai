@@ -38,17 +38,17 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - **Sprachausgabe** über Gerätestimmen (`lib/platform.ts`), Serbisch über kroatische/serbische Stimme in Latein.
 - **Barrierefreiheit:** Tippflächen ≥ 44 pt, sichtbarer Fokus, „Bewegung reduzieren“ beachtet, Dark Mode.
 
-## 4. Inhaltsstand (04.11.2026, nach Etappe 49)
+## 4. Inhaltsstand (04.11.2026, nach Etappe 50)
 
 | | Griechisch | Serbisch | Russisch |
 |---|---|---|---|
-| Einträge (Wörter + Slang) | 4.463 | 4.515 | 4.534 |
-| Ziel 5.000 erreicht | 89 % | 90 % | 91 % |
+| Einträge (Wörter + Slang) | 4.560 | 4.616 | 4.631 |
+| Ziel 5.000 erreicht | 91 % | 92 % | 93 % |
 | Wörter mit Beispielsatz | 99 % | 99 % | 99 % |
 | davon A1 / A2 / B1 / B2 / C1 / C2 | 95 / 100 / 100 / 100 / 100 / 100 % | 96 / 100 / 100 / 100 / 100 / 100 % | 96 / 100 / 100 / 100 / 100 / 100 % |
-| Module / Lektionen | 321 / 1.118 | 321 / 1.119 | 321 / 1.121 |
+| Module / Lektionen | 326 / 1.138 | 326 / 1.139 | 326 / 1.141 |
 
-- Wortlisten: `src/data/vocab/{el,sr,ru}{,2..46}.ts` (141 Dateien, ~1,6 MB Text) + Nachtragslisten `{el,sr,ru}Ex.ts` (Beispielsätze).
+- Wortlisten: `src/data/vocab/{el,sr,ru}{,2..47}.ts` (144 Dateien, ~1,6 MB Text) + Nachtragslisten `{el,sr,ru}Ex.ts` (Beispielsätze).
 - Seit Etappe 22 hat **jedes neue Wort** einen Beispielsatz (per Test erzwungen ab Datei 19).
 - **Kein Inhalt ist von Muttersprachlern geprüft.** Automatisch geprüft: Dubletten, fehlende Übersetzung, russische Betonung (Wort + Satz), serbische Schriftmischung, Beispielsatz-Zuordnung, Umschrift.
 
@@ -89,6 +89,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 03.11.2026: Etappe 34 (Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik) – ~95 neue Einträge je Sprache (beste Quote bisher, spezifische Themen wirken).
 - 04.11.2026: Etappe 48 – +96/+99/+100 Einträge (Kellerei & Weinherstellung, Feuerwehr & Rettungsdienst, Zirkus & Jahrmarkt, Bühnentechnik, Heilpflanzen & Kräuter).
 - 04.11.2026: Etappe 49 – +94/+98/+92 Einträge (Astronomie & Weltraum, Wetterdienst & Meteorologie, Töpferei & Kunsthandwerk, Schneiderei & Nähen, Bergsteigen & Klettern).
+- 04.11.2026: Etappe 50 – +97/+101/+97 Einträge (Instrumentenbau, Tierheim & Tierschutz, Reitstall & Pferdepflege, Schifffahrt & Navigation, Archäologie & Ausgrabung).
 - 04.11.2026: Beispielsatz-Runde 25 – letzte Runde B: A2 bis C2 in allen drei Sprachen 100 %; offen nur A1-Grundwörter (Artikel, Pronomen, Zahlen).
 - 04.11.2026: Etappe 47 – +97/+102/+102 Einträge (Fischerei & Fischmarkt, Zoo & Tierpflege, Bibliothek & Archiv, Schuhmacher & Sattler, Bestattung).
 - 04.11.2026: Etappe 46 – +107/+108/+107 Einträge (Imkerei & Hofladen, Bergbau & Steinbruch, Schiff & Hafen, Fotostudio, Juwelier & Uhrmacher).
