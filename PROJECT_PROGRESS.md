@@ -6,9 +6,9 @@ Automatisch erzeugt am 2026-11-04 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 41 | 1 % | 17 | 4 | 0 | 0 |
 | 🇪🇸 Spanisch (Spanien) | 39 | 1 % | 13 | 3 | 0 | 0 |
-| 🇬🇷 Griechisch | 4858 | 97 % | 4810 | 3960 | 341 | 1198 |
-| 🇷🇸 Serbisch | 4914 | 98 % | 4870 | 3098 | 341 | 1199 |
-| 🇷🇺 Russisch | 4930 | 99 % | 4887 | 3163 | 341 | 1201 |
+| 🇬🇷 Griechisch | 5002 | 100 % | 4954 | 4089 | 348 | 1227 |
+| 🇷🇸 Serbisch | 5055 | 101 % | 5011 | 3207 | 348 | 1228 |
+| 🇷🇺 Russisch | 5069 | 101 % | 5026 | 3260 | 348 | 1230 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-04 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 0 | 0 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 0 | 0 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 1352 | 1496 | 762 | 231 | 40 |
-| Serbisch | 441 | 546 | 1374 | 1503 | 780 | 231 | 39 |
-| Russisch | 451 | 549 | 1376 | 1500 | 776 | 236 | 42 |
+| Griechisch | 435 | 542 | 1388 | 1583 | 783 | 231 | 40 |
+| Serbisch | 441 | 546 | 1411 | 1586 | 801 | 231 | 39 |
+| Russisch | 451 | 549 | 1412 | 1584 | 795 | 236 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -28,9 +28,9 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 6 / 30 (20 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
 | Spanisch (Spanien) | 3 / 29 (10 %) | 0 % | 0 % | 0 % | 0 % | 0 % | 0 % |
-| Griechisch | 4697 / 4745 (99 %) | 95 % | 100 % | 100 % | 100 % | 100 % | 100 % |
-| Serbisch | 4754 / 4798 (99 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 100 % |
-| Russisch | 4767 / 4810 (99 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 100 % |
+| Griechisch | 4841 / 4889 (99 %) | 95 % | 100 % | 100 % | 100 % | 100 % | 100 % |
+| Serbisch | 4895 / 4939 (99 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 100 % |
+| Russisch | 4906 / 4949 (99 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 100 % |
 
 ## Ladezeit
 

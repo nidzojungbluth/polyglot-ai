@@ -21,7 +21,7 @@
 |---|---|---|---|---|
 | 0 | Werkzeuge & Doku aufräumen | hoch | 1 Runde | ✅ 01.11. |
 | 1 | Performance: Sprachen getrennt laden | **sehr hoch** | 3–4 Runden | ✅ 01.11. (Start 1,5 s → 0,47 s) |
-| 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | 🔄 (laufend seit Etappe 19) |
+| 2 | Inhalte auf 5.000 + Beispielsatz für alle | hoch | ~30 Runden | ✅ 04.11. (5.002 / 5.055 / 5.069) |
 | 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ⏳ |
 | 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ⏳ |
 | 5 | Datensicherheit für iOS (Sicherungs-Erinnerung) | mittel | 1 Runde | ⏳ |
@@ -29,7 +29,7 @@
 | 7 | Aussprache-Training (nur Pages) | niedrig/optional | 2 Runden | ⏳ |
 | 8 | Abschluss-QA & Release-Doku | hoch (am Ende) | 1–2 Runden | ⏳ |
 
-Abhängigkeiten: 0 ✅ → 1 ✅ → 2 (läuft) → 3 → 4/5 → 6/7 → 8.
+Abhängigkeiten: 0 ✅ → 1 ✅ → 2 ✅ → 3 → 4/5 → 6/7 → 8.
 
 ---
 
@@ -72,12 +72,12 @@ Ursprünglicher Plan:
 8. **Abnahme:** Kennzahlen aus 1.1 erreicht; E2E inkl. „App startet OFFLINE neu“ und „Lektion offline“ für alle drei Sprachen grün; vorhandener Lernstand (Export vor Umbau) lädt unverändert (Test mit Sicherungsdatei); Sprachwechsel < 300 ms nach Cache.
 9. **Ergebnis:** App bleibt schnell, egal wie groß die Wortschätze werden.
 
-## Phase 2 – Inhalte vervollständigen 🔄
+## Phase 2 – Inhalte vervollständigen ✅ (04.11.2026, Etappe 54: 5.002 / 5.055 / 5.069 Einträge)
 
 1. **Ziel:** je Sprache 5.000 Einträge; jeder Eintrag mit Beispielsatz (+ automatische Umschrift).
 2. **Aufgaben (abwechselnd, wie bisher bewährt):**
    - **Stand 04.11.2026:** Beispielsätze für A2–C2 komplett; ab jetzt nur noch Runde A bis 5.000.
-   - **Runde A – neue Etappe:** Dateien `src/data/vocab/{el,sr,ru}<N>.ts` (nächstes N = 51), 5 Module × ~22 **spezifische** Wörter (Erfahrung: allgemeine Themen bringen nur ~40 % neue Wörter, spezifische ~70–80 %). Part-Nummern vorher prüfen: `grep -ho "topic=X level=Y\( part=[0-9]*\)\?" src/data/vocab/el*.ts | sort -u`. Danach `python3 scripts/add-stage.py <N>`.
+   - **Runde A – neue Etappe:** Dateien `src/data/vocab/{el,sr,ru}<N>.ts` (nächstes N = 52, nur falls später weitere Wörter gewünscht), 5 Module × ~22 **spezifische** Wörter (Erfahrung: allgemeine Themen bringen nur ~40 % neue Wörter, spezifische ~70–80 %). Part-Nummern vorher prüfen: `grep -ho "topic=X level=Y\( part=[0-9]*\)\?" src/data/vocab/el*.ts | sort -u`. Danach `python3 scripts/add-stage.py <N>`.
    - **Runde B – Beispielsätze nachtragen:** `npm run missing <Niveau> 80`, Sätze an `src/data/vocab/{el,sr,ru}Ex.ts` anhängen (vor dem schließenden Backtick). Reihenfolge: B2-Rest → A1-Rest (ohne Artikel/Pronomen/Zahlen) → C1 → C2.
    - Themenvorrat für Runden A (erledigt: Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik, Versicherungen, Immobilien, Gesundheitssystem, Medien, Lager/Produktion, Umweltpolitik, Wissenschaft, Reisen & Behörden, Ironie, Amtssprache, Recht, Finanzen, Technik, Kfz, Landwirtschaft – Etappe 37 brachte nur ~50 % neue Wörter, daher nur noch sehr enge Themen; erledigt außerdem Profiküche, Wildtiere, Spiele & Hobbys, Elektriker, Notfälle): Redewendungen C2 (je Sprache eigene), Sportverein & Training B2, Medizinische Fachbegriffe C1, Politik & Wahlen C1, Kino & Konzertkarten B1, Wahlen & Parteien C1, Kosmetikstudio B1, Tattoo- & Piercingstudio B2, Klavierstimmer C1, Glasbläserei B2, Tischtennis & Badminton B1 (erledigt außerdem: Steinmetz, Spinnerei, Vermessung, Skigebiet, Brauerei, Käserei, Dachdecker, Sattlerei, Uhrmacher, Floristik, Segelfliegen, Glaserei, Kirchenmusik, Schmiede, Forstwirtschaft, Instrumentenbau, Tierheim, Reitstall, Schifffahrt, Archäologie, Astronomie, Meteorologie, Töpferei, Schneiderei, Bergsteigen (Meteorologie brachte nur ~50 % Neues), Kellerei, Feuerwehr, Zirkus, Bühnentechnik, Kräuter, Fischerei, Zoo, Bibliothek, Schuhmacher, Bestattung, Imkerei, Bergbau, Hafen, Fotostudio, Juwelier, Straßenbau, Gärtnerei, Flughafen, Fahrradwerkstatt, Textilreinigung, Umzug, Druckerei, Elektronikmontage, Tankstelle, Recycling, Chemie, Kunststoff, Lebensmittelproduktion, Callcenter, Hotel-Personal, Pflege, Metallbau, Kantine, Paketzustellung, Sicherheitsdienst, Supermarkt, Gebäudereinigung, Maler, Schreinerei, Bus-Personal, Friseur, Post, Zahnarzt, Bahn, Bäckerei, Optiker, Babys, Haustiere, Wassersport, Maße – Grundwortschatz-Themen wie Maße bringen kaum Neues).
 3. **Technik:** bestehendes Format (D-004), Regeln D-006.

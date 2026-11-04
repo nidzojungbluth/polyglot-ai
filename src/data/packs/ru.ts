@@ -52,8 +52,9 @@ import ruVocab47 from '../vocab/ru47';
 import ruVocab48 from '../vocab/ru48';
 import ruVocab49 from '../vocab/ru49';
 import ruVocab50 from '../vocab/ru50';
+import ruVocab51 from '../vocab/ru51';
 import ruEx from '../vocab/ruEx';
 
 export default enrich(ru, [
-  ruVocab, ruVocab2, ruVocab3, ruVocab4, ruVocab5, ruVocab6, ruVocab7, ruVocab8, ruVocab9, ruVocab10, ruVocab11, ruVocab12, ruVocab13, ruVocab14, ruVocab15, ruVocab16, ruVocab17, ruVocab18, ruVocab19, ruVocab20, ruVocab21, ruVocab22, ruVocab23, ruVocab24, ruVocab25, ruVocab26, ruVocab27, ruVocab28, ruVocab29, ruVocab30, ruVocab31, ruVocab32, ruVocab33, ruVocab34, ruVocab35, ruVocab36, ruVocab37, ruVocab38, ruVocab39, ruVocab40, ruVocab41, ruVocab42, ruVocab43, ruVocab44, ruVocab45, ruVocab46, ruVocab47, ruVocab48, ruVocab49, ruVocab50,
+  ruVocab, ruVocab2, ruVocab3, ruVocab4, ruVocab5, ruVocab6, ruVocab7, ruVocab8, ruVocab9, ruVocab10, ruVocab11, ruVocab12, ruVocab13, ruVocab14, ruVocab15, ruVocab16, ruVocab17, ruVocab18, ruVocab19, ruVocab20, ruVocab21, ruVocab22, ruVocab23, ruVocab24, ruVocab25, ruVocab26, ruVocab27, ruVocab28, ruVocab29, ruVocab30, ruVocab31, ruVocab32, ruVocab33, ruVocab34, ruVocab35, ruVocab36, ruVocab37, ruVocab38, ruVocab39, ruVocab40, ruVocab41, ruVocab42, ruVocab43, ruVocab44, ruVocab45, ruVocab46, ruVocab47, ruVocab48, ruVocab49, ruVocab50, ruVocab51,
 ].join(''), ruEx);
