@@ -38,14 +38,14 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - **Sprachausgabe** über Gerätestimmen (`lib/platform.ts`), Serbisch über kroatische/serbische Stimme in Latein.
 - **Barrierefreiheit:** Tippflächen ≥ 44 pt, sichtbarer Fokus, „Bewegung reduzieren“ beachtet, Dark Mode.
 
-## 4. Inhaltsstand (04.11.2026, nach Etappe 47)
+## 4. Inhaltsstand (04.11.2026, nach Beispielsatz-Runde 25)
 
 | | Griechisch | Serbisch | Russisch |
 |---|---|---|---|
 | Einträge (Wörter + Slang) | 4.273 | 4.318 | 4.342 |
 | Ziel 5.000 erreicht | 85 % | 86 % | 87 % |
-| Wörter mit Beispielsatz | 99 % | 98 % | 98 % |
-| davon A1 / A2 / B1 / B2 / C1 / C2 | 95 / 100 / 100 / 100 / 100 / 100 % | 96 / 100 / 100 / 100 / 96 / 100 % | 96 / 100 / 100 / 100 / 100 / 79 % |
+| Wörter mit Beispielsatz | 99 % | 99 % | 99 % |
+| davon A1 / A2 / B1 / B2 / C1 / C2 | 95 / 100 / 100 / 100 / 100 / 100 % | 96 / 100 / 100 / 100 / 100 / 100 % | 96 / 100 / 100 / 100 / 100 / 100 % |
 | Module / Lektionen | 311 / 1.078 | 311 / 1.079 | 311 / 1.081 |
 
 - Wortlisten: `src/data/vocab/{el,sr,ru}{,2..31}.ts` (96 Dateien, ~1,6 MB Text) + Nachtragslisten `{el,sr,ru}Ex.ts` (Beispielsätze).
@@ -87,6 +87,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 01.11.2026: Etappen 24–33 (je ~70–90 neue Einträge pro Sprache, alle mit Beispielsatz), Beispielsatz-Runden 3–12 (B1 und A2 vollständig, B2 auf ~80 %), 3.000-Marke überschritten, Messung Ladezeit; danach **Planungsauftrag**: diese drei Steuerdateien angelegt. Keine Code-Änderungen in dieser Sitzung nach Runde 12.
 - 01.11.2026 nachmittags: Nutzer gibt autonomes Weiterarbeiten frei (inkl. D-010). Phase 0 und Phase 1 erledigt (Start 1,5 s → 0,47 s). Weiter mit Phase 2 (Inhalte).
 - 03.11.2026: Etappe 34 (Heimwerken, Drogerie, Wetter & Klima, Theater & Film, Logistik) – ~95 neue Einträge je Sprache (beste Quote bisher, spezifische Themen wirken).
+- 04.11.2026: Beispielsatz-Runde 25 – letzte Runde B: A2 bis C2 in allen drei Sprachen 100 %; offen nur A1-Grundwörter (Artikel, Pronomen, Zahlen).
 - 04.11.2026: Etappe 47 – +97/+102/+102 Einträge (Fischerei & Fischmarkt, Zoo & Tierpflege, Bibliothek & Archiv, Schuhmacher & Sattler, Bestattung).
 - 04.11.2026: Etappe 46 – +107/+108/+107 Einträge (Imkerei & Hofladen, Bergbau & Steinbruch, Schiff & Hafen, Fotostudio, Juwelier & Uhrmacher).
 - 04.11.2026: Beispielsatz-Runde 24 – Griechisch A2–C2 komplett, Serbisch C2 komplett, Russisch C2 79 %.

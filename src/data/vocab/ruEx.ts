@@ -1638,4 +1638,53 @@ export default `
 урбаниза́ция | Урбаниза́ция опустоши́ла дере́вни. | Die Verstädterung hat die Dörfer entvölkert.
 па́мятник архитекту́ры | Э́то зда́ние – па́мятник архитекту́ры. | Dieses Gebäude ist ein Baudenkmal.
 чужби́на | Дед мно́го лет жил на чужби́не. | Der Opa lebte viele Jahre in der Fremde.
+хрони́ческий | У него́ хрони́ческий гастри́т. | Er hat eine chronische Gastritis.
+терапе́вт | Терапе́вт при́нял меня́ без о́череди. | Der Hausarzt hat mich ohne Wartezeit drangenommen.
+ахаха | Аха́ха, како́й ты смешно́й! | Hahaha, wie lustig du bist!
+Моско́вское центра́льное кольцо́ | Моско́вское центра́льное кольцо́ соединя́ет ли́нии метро́. | Der Moskauer Zentralring verbindet die Metrolinien.
+джентрифика́ция | Джентрифика́ция поднима́ет аре́ндную пла́ту. | Die Gentrifizierung treibt die Mieten hoch.
+тя́готы пути́ | Тя́готы пути́ его́ не пуга́ли. | Die Strapazen der Reise schreckten ihn nicht ab.
+путевы́е заме́тки | Я чита́ю путевы́е заме́тки о Сиби́ри. | Ich lese Reisenotizen über Sibirien.
+стра́нствовать | Он всю жизнь стра́нствовал по ми́ру. | Er ist sein Leben lang durch die Welt gewandert.
+эмигра́нт | Эмигра́нт пи́шет пи́сьма на ро́дину. | Der Emigrant schreibt Briefe in die Heimat.
+возвраще́ние | Возвраще́ние домо́й бы́ло ра́достным. | Die Rückkehr nach Hause war freudig.
+морска́я боле́знь | На корабле́ у меня́ морска́я боле́знь. | Auf dem Schiff werde ich seekrank.
+Транссиби́рская магистра́ль | По Транссиби́рской магистра́ли е́хать неде́лю. | Auf der Transsibirischen Eisenbahn fährt man eine Woche.
+путеводи́тель | Путеводи́тель сове́тует э́тот музе́й. | Der Reiseführer empfiehlt dieses Museum.
+ру́сское зарубе́жье | Набо́ков – писа́тель ру́сского зарубе́жья. | Nabokov ist ein Schriftsteller der russischen Emigration.
+обме́н веще́ств | С во́зрастом обме́н веще́ств замедля́ется. | Mit dem Alter verlangsamt sich der Stoffwechsel.
+реабилита́ция | Реабилита́ция по́сле опера́ции занима́ет ме́сяц. | Die Reha nach der Operation dauert einen Monat.
+физиотерапи́я | По́сле тра́вмы я ходи́л на физиотерапи́ю. | Nach der Verletzung ging ich zur Physiotherapie.
+свя́зка | Он порва́л свя́зку на коле́не. | Er hat sich ein Band im Knie gerissen.
+хрящ | Хрящ в коле́не изно́шен. | Der Knorpel im Knie ist abgenutzt.
+ги́бкость | Йо́га улучша́ет ги́бкость. | Yoga verbessert die Beweglichkeit.
+частота́ серде́чных сокраще́ний | Часы́ измеря́ют частоту́ серде́чных сокраще́ний. | Die Uhr misst die Herzfrequenz.
+перетрениро́ванность | Перетрениро́ванность ведёт к тра́вмам. | Übertraining führt zu Verletzungen.
+вы́вих | У него́ вы́вих плеча́. | Er hat sich die Schulter ausgerenkt.
+двухфа́кторная аутентифика́ция | Включи́ двухфа́кторную аутентифика́цию. | Schalte die Zwei-Faktor-Authentifizierung ein.
+ку́ки | Сайт про́сит приня́ть ку́ки. | Die Website bittet, Cookies zu akzeptieren.
+цифрово́й след | Ка́ждый по́иск оставля́ет цифрово́й след. | Jede Suche hinterlässt einen digitalen Fußabdruck.
+шифрова́ние | Сообще́ния защищены́ шифрова́нием. | Die Nachrichten sind verschlüsselt.
+уте́чка да́нных | В компа́нии произошла́ уте́чка да́нных. | In der Firma gab es ein Datenleck.
+электро́нная по́дпись | Я подписа́л догово́р электро́нной по́дписью. | Ich habe den Vertrag elektronisch signiert.
+согла́сие | Для обрабо́тки да́нных ну́жно ва́ше согла́сие. | Für die Datenverarbeitung ist Ihre Einwilligung nötig.
+фи́шинг | Э́то письмо́ – фи́шинг. | Diese E-Mail ist Phishing.
+зави́симость от телефо́на | Зави́симость от телефо́на меша́ет спать. | Handysucht stört den Schlaf.
+обожа́ние | Она́ смо́трит на него́ с обожа́нием. | Sie sieht ihn voller Anbetung an.
+томле́ние | В его́ стиха́х слы́шится томле́ние. | In seinen Gedichten hört man Sehnsucht.
+неразделённая любо́вь | Пе́сня о неразделённой любви́. | Ein Lied über unerwiderte Liebe.
+неве́рность | Неве́рность разру́шила их брак. | Die Untreue hat ihre Ehe zerstört.
+примире́ние | Че́рез мно́го лет наступи́ло примире́ние. | Nach vielen Jahren kam die Versöhnung.
+очаро́ванный | Он слу́шал её, очаро́ванный. | Er hörte ihr verzaubert zu.
+любо́вное письмо́ | Я нашёл ста́рое любо́вное письмо́ де́да. | Ich habe einen alten Liebesbrief vom Großvater gefunden.
+сходи́ть с ума́ по кому́-то | Он схо́дит с ума́ по ней. | Er ist verrückt nach ihr.
+посре́дничество | Посре́дничество помогло́ реши́ть спор. | Die Vermittlung hat geholfen, den Streit zu lösen.
+эскала́ция | Нам ну́жно избежа́ть эскала́ции. | Wir müssen eine Eskalation vermeiden.
+деэскала́ция | Деэскала́ция тре́бует споко́йного го́лоса. | Deeskalation erfordert eine ruhige Stimme.
+я понима́ю ва́шу пози́цию, одна́ко … | Я понима́ю ва́шу пози́цию, одна́ко пра́вило одно́ для всех. | Ich verstehe Ihre Position, dennoch gilt die Regel für alle.
+дава́йте без эмо́ций | Дава́йте без эмо́ций обсу́дим пробле́му. | Lassen Sie uns das Problem ohne Emotionen besprechen.
+злопа́мятность | Злопа́мятность меша́ет жить. | Nachtragendheit macht das Leben schwer.
+возмеще́ние уще́рба | Суд присуди́л возмеще́ние уще́рба. | Das Gericht hat Schadenersatz zugesprochen.
+забу́дем | Что бы́ло, то прошло́ – забу́дем. | Was war, ist vorbei – vergessen wir's.
+держа́ть зло на кого́-то | Я не держу́ на тебя́ зла. | Ich trage dir nichts nach.
 `;

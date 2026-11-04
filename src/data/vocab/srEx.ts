@@ -1650,4 +1650,24 @@ hajde da se smirimo | Hajde da se smirimo i razgovaramo. | Beruhigen wir uns und
 uvrediti se | Nemoj da se uvrediš, nisam tako mislio. | Sei nicht gekränkt, ich habe es nicht so gemeint.
 zlopamćenje | Zlopamćenje ti ne da da ideš dalje. | Nachtragendheit hindert dich daran, weiterzumachen.
 zaboravimo to | Bilo pa prošlo – zaboravimo to. | Vorbei ist vorbei – vergessen wir's.
+bombardovanje | Bombardovanje 1999. godine je oštetilo mnoge zgrade. | Die Bombardierung 1999 hat viele Gebäude beschädigt.
+renoviranje | Renoviranje kupatila je trajalo mesec dana. | Die Renovierung des Bades dauerte einen Monat.
+socijalistička arhitektura | Novi Beograd je pun socijalističke arhitekture. | Neu-Belgrad ist voller sozialistischer Architektur.
+Hram Svetog Save | Hram Svetog Save je jedan od najvećih pravoslavnih hramova. | Der Sankt-Sava-Tempel ist eine der größten orthodoxen Kirchen.
+urbanizam | Urbanizam u Beogradu je često haotičan. | Die Stadtplanung in Belgrad ist oft chaotisch.
+divlja gradnja | Divlja gradnja je zauzela obalu reke. | Wilde Bebauung hat das Flussufer eingenommen.
+fasada | Fasada zgrade je obnovljena. | Die Fassade des Gebäudes wurde erneuert.
+kvart | Dorćol je moj omiljeni kvart. | Dorćol ist mein Lieblingsviertel.
+arhitektura | Arhitektura Zemuna je austrougarska. | Die Architektur von Zemun ist österreichisch-ungarisch.
+dijagnoza | Lekar je postavio dijagnozu. | Der Arzt hat eine Diagnose gestellt.
+analiza krvi | Analiza krvi se radi natašte. | Eine Blutuntersuchung macht man nüchtern.
+operacija | Operacija je prošla dobro. | Die Operation ist gut verlaufen.
+nuspojave | Lek ima malo nuspojava. | Das Medikament hat wenige Nebenwirkungen.
+hroničan | Ima hroničan bol u leđima. | Er hat chronische Rückenschmerzen.
+vakcina | Vakcina protiv gripa se prima na jesen. | Die Grippeimpfung bekommt man im Herbst.
+alergija | Imam alergiju na polen. | Ich habe eine Pollenallergie.
+izabrani lekar | Izabrani lekar mi je dao uput. | Der Hausarzt hat mir eine Überweisung gegeben.
+rendgen | Rendgen je pokazao prelom. | Das Röntgenbild zeigte einen Bruch.
+uput | Bez uputa ne možeš kod specijaliste. | Ohne Überweisung kannst du nicht zum Facharzt.
+hahaha | Hahaha, kako si smešan! | Hahaha, wie lustig du bist!
 `;
