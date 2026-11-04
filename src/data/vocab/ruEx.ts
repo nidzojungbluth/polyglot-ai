@@ -1598,4 +1598,44 @@ export default `
 Честь име́ю | Честь име́ю, господа́! | Habe die Ehre, meine Herren!
 бре́нность | Стихотворе́ние о бре́нности жи́зни. | Ein Gedicht über die Vergänglichkeit des Lebens.
 ве́чность | Я ждал це́лую ве́чность. | Ich habe eine Ewigkeit gewartet.
+Ми́лостивый госуда́рь | «Ми́лостивый госуда́рь», – так начина́ли пи́сьма в девятна́дцатом ве́ке. | „Gnädiger Herr“ – so begann man Briefe im neunzehnten Jahrhundert.
+с незапа́мятных времён | С незапа́мятных времён лю́ди расска́зывают ска́зки. | Seit Menschengedenken erzählen Menschen Märchen.
+вре́менный | Э́то вре́менное реше́ние. | Das ist eine vorübergehende Lösung.
+ностальги́я | У него́ ностальги́я по де́тству. | Er hat Nostalgie nach seiner Kindheit.
+ретроспекти́ва | В кинотеа́тре идёт ретроспекти́ва Тарко́вского. | Im Kino läuft eine Tarkowski-Retrospektive.
+наве́ки | Я тебе́ наве́ки благода́рен. | Ich bin dir auf ewig dankbar.
+давны́м-давно́ | Давны́м-давно́ здесь был лес. | Vor langer, langer Zeit war hier ein Wald.
+насле́дник | Еди́нственный насле́дник – его́ сын. | Der einzige Erbe ist sein Sohn.
+опе́ка | Мать получи́ла опе́ку над детьми́. | Die Mutter hat das Sorgerecht für die Kinder bekommen.
+алиме́нты | Оте́ц пла́тит алиме́нты ка́ждый ме́сяц. | Der Vater zahlt jeden Monat Unterhalt.
+усыновле́ние | Усыновле́ние заняло́ два го́да. | Die Adoption dauerte zwei Jahre.
+пре́дки | Мои́ пре́дки бы́ли казака́ми. | Meine Vorfahren waren Kosaken.
+родосло́вная | Ба́бушка соста́вила родосло́вную семьи́. | Die Oma hat den Stammbaum der Familie erstellt.
+прида́ное | Ра́ньше у неве́сты должно́ бы́ло быть прида́ное. | Früher musste eine Braut eine Mitgift haben.
+ро́дственники по му́жу | Ро́дственники по му́жу прие́хали на пра́здник. | Die Verwandten des Mannes kamen zum Fest.
+пика́нтный | Со́ус немно́го пика́нтный. | Die Soße ist etwas pikant.
+консисте́нция | Консисте́нция те́ста должна́ быть густо́й. | Die Konsistenz des Teigs muss dick sein.
+нёбо | Вино́ оставля́ет на нёбе фрукто́вый вкус. | Der Wein hinterlässt am Gaumen einen fruchtigen Geschmack.
+сбор виногра́да | На сбор виногра́да приезжа́ет вся семья́. | Zur Weinlese kommt die ganze Familie.
+спе́лый | Помидо́ры уже́ спе́лые. | Die Tomaten sind schon reif.
+вы́держанный | Э́то вы́держанный сыр. | Das ist ein gereifter Käse.
+гурма́н | Мой дя́дя – настоя́щий гурма́н. | Mein Onkel ist ein echter Feinschmecker.
+Елисе́евский магази́н | Елисе́евский магази́н нахо́дится на Тверско́й. | Der Jelissejew-Laden liegt an der Twerskaja.
+потреби́тель | Потреби́тель име́ет пра́во на возвра́т. | Der Verbraucher hat ein Rückgaberecht.
+брако́ванный | Мне прода́ли брако́ванный телефо́н. | Man hat mir ein mangelhaftes Handy verkauft.
+возмеще́ние | Я получи́л возмеще́ние за поврежде́нную посы́лку. | Ich habe eine Erstattung für das beschädigte Paket bekommen.
+отка́з от поку́пки | Отка́з от поку́пки возмо́жен в тече́ние двух неде́ль. | Der Rücktritt vom Kauf ist innerhalb von zwei Wochen möglich.
+моше́нничество | Э́то сообще́ние – моше́нничество. | Diese Nachricht ist Betrug.
+защи́та прав потреби́телей | Я пожа́ловался в о́бщество защи́ты прав потреби́телей. | Ich habe mich beim Verbraucherschutz beschwert.
+вводя́щий в заблужде́ние | Рекла́ма была́ вводя́щей в заблужде́ние. | Die Werbung war irreführend.
+обсчита́ть | В кафе́ меня́ обсчита́ли. | Im Café hat man mir zu viel berechnet.
+гаранти́йный тало́н | Сохрани́ гаранти́йный тало́н. | Bewahr den Garantieschein auf.
+прете́нзия | Я написа́л прете́нзию в магази́н. | Ich habe dem Laden eine Reklamation geschrieben.
+Бульва́рное кольцо́ | Мы гуля́ли по Бульва́рному кольцу́. | Wir sind den Boulevardring entlang spaziert.
+реконстру́кция | Реконстру́кция пло́щади заняла́ год. | Der Umbau des Platzes dauerte ein Jahr.
+ста́линские высо́тки | В Москве́ семь ста́линских высо́ток. | In Moskau gibt es sieben Stalin-Hochhäuser.
+пешехо́дная зо́на | Арба́т – пешехо́дная зо́на. | Der Arbat ist eine Fußgängerzone.
+урбаниза́ция | Урбаниза́ция опустоши́ла дере́вни. | Die Verstädterung hat die Dörfer entvölkert.
+па́мятник архитекту́ры | Э́то зда́ние – па́мятник архитекту́ры. | Dieses Gebäude ist ein Baudenkmal.
+чужби́на | Дед мно́го лет жил на чужби́не. | Der Opa lebte viele Jahre in der Fremde.
 `;

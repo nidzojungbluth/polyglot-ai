@@ -1610,4 +1610,44 @@ urbanizacija | Urbanizacija je ispraznila sela. | Die Verstädterung hat die Dö
 napor | Put je bio pravi napor. | Die Reise war eine echte Strapaze.
 putopis | Čitam putopis o Indiji. | Ich lese einen Reisebericht über Indien.
 tuđina | Deda je godinama živeo u tuđini. | Der Opa lebte jahrelang in der Fremde.
+lutati | Satima smo lutali po starom gradu. | Wir sind stundenlang durch die Altstadt gestreift.
+iseljenik | Iseljenik šalje novac porodici. | Der Auswanderer schickt Geld an die Familie.
+povratak | Povratak u selo je bio dirljiv. | Die Heimkehr ins Dorf war bewegend.
+mučnina | Na brodu me je uhvatila mučnina. | Auf dem Schiff wurde mir übel.
+gastarbajter | Deda je bio gastarbajter u Nemačkoj. | Der Opa war Gastarbeiter in Deutschland.
+vodič kroz grad | Kupili smo vodič kroz grad. | Wir haben einen Stadtführer gekauft.
+metabolizam | Metabolizam se usporava sa godinama. | Der Stoffwechsel wird mit dem Alter langsamer.
+rehabilitacija | Rehabilitacija posle operacije traje mesec dana. | Die Reha nach der Operation dauert einen Monat.
+fizioterapija | Posle povrede sam išao na fizioterapiju. | Nach der Verletzung bin ich zur Physiotherapie gegangen.
+ligament | Povredio je ligament kolena. | Er hat sich das Knieband verletzt.
+hrskavica | Hrskavica u kolenu je istrošena. | Der Knorpel im Knie ist abgenutzt.
+gipkost | Joga poboljšava gipkost. | Yoga verbessert die Beweglichkeit.
+srčana frekvencija | Sat meri srčanu frekvenciju. | Die Uhr misst die Herzfrequenz.
+pretreniranost | Pretreniranost dovodi do povreda. | Übertraining führt zu Verletzungen.
+istegnuće | Na treningu sam dobio istegnuće. | Beim Training habe ich mir eine Zerrung geholt.
+dvofaktorska autentifikacija | Uključi dvofaktorsku autentifikaciju. | Schalte die Zwei-Faktor-Authentifizierung ein.
+digitalni trag | Svaka pretraga ostavlja digitalni trag. | Jede Suche hinterlässt einen digitalen Fußabdruck.
+šifrovanje | Poruke imaju šifrovanje. | Die Nachrichten sind verschlüsselt.
+curenje podataka | Firma je imala curenje podataka. | Die Firma hatte ein Datenleck.
+elektronski potpis | Ugovor sam potpisao elektronskim potpisom. | Ich habe den Vertrag elektronisch signiert.
+saglasnost | Potrebna je vaša saglasnost za obradu podataka. | Für die Datenverarbeitung ist Ihre Einwilligung nötig.
+fišing | Taj mejl je bio fišing. | Diese E-Mail war Phishing.
+zavisnost od telefona | Zavisnost od telefona utiče na san. | Handysucht beeinträchtigt den Schlaf.
+obožavanje | Gleda ga sa obožavanjem. | Sie sieht ihn voller Anbetung an.
+odanost | Odanost psa je dirljiva. | Die Treue des Hundes ist rührend.
+neuzvraćena ljubav | Pesma govori o neuzvraćenoj ljubavi. | Das Lied handelt von unerwiderter Liebe.
+neverstvo | Neverstvo je uništilo njihov brak. | Die Untreue hat ihre Ehe zerstört.
+pomirenje | Posle mnogo godina došlo je do pomirenja. | Nach vielen Jahren kam es zur Versöhnung.
+opčinjen | Bio je opčinjen njenim glasom. | Er war von ihrer Stimme verzaubert.
+ljubavno pismo | Našao sam dedino staro ljubavno pismo. | Ich habe einen alten Liebesbrief vom Opa gefunden.
+ludo zaljubljen | On je ludo zaljubljen u nju. | Er ist wahnsinnig in sie verliebt.
+sevdah | Sevdalinke su pune sevdaha. | Sevdalinkas sind voller Liebessehnsucht.
+medijacija | Medijacija je rešila spor. | Die Mediation hat den Streit gelöst.
+eskalacija | Moramo da izbegnemo eskalaciju. | Wir müssen eine Eskalation vermeiden.
+deeskalacija | Deeskalacija traži miran glas. | Deeskalation braucht eine ruhige Stimme.
+razumem vaš stav, ali … | Razumem vaš stav, ali pravilo važi za sve. | Ich verstehe Ihre Position, aber die Regel gilt für alle.
+hajde da se smirimo | Hajde da se smirimo i razgovaramo. | Beruhigen wir uns und reden wir.
+uvrediti se | Nemoj da se uvrediš, nisam tako mislio. | Sei nicht gekränkt, ich habe es nicht so gemeint.
+zlopamćenje | Zlopamćenje ti ne da da ideš dalje. | Nachtragendheit hindert dich daran, weiterzumachen.
+zaboravimo to | Bilo pa prošlo – zaboravimo to. | Vorbei ist vorbei – vergessen wir's.
 `;

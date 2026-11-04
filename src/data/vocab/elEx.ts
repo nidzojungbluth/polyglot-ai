@@ -1599,4 +1599,21 @@ export default `
 κατανοώ τη θέση σας, ωστόσο … | Κατανοώ τη θέση σας, ωστόσο ο κανόνας ισχύει για όλους. | Ich verstehe Ihre Position, dennoch gilt die Regel für alle.
 ας κρατήσουμε χαμηλούς τόνους | Ας κρατήσουμε χαμηλούς τόνους και ας μιλήσουμε. | Bleiben wir sachlich und reden wir.
 θίγομαι | Θίγομαι όταν με διακόπτεις. | Ich fühle mich gekränkt, wenn du mich unterbrichst.
+η μνησικακία | Η μνησικακία δεν σε αφήνει να προχωρήσεις. | Groll hindert dich daran, weiterzumachen.
+η επανόρθωση | Ζήτησε επανόρθωση για τη ζημιά. | Er forderte Wiedergutmachung für den Schaden.
+ας τα ξεχάσουμε | Έγινε ό,τι έγινε· ας τα ξεχάσουμε. | Was passiert ist, ist passiert; vergessen wir's.
+ο σεφ | Ο σεφ ετοίμασε ειδικό μενού για τον γάμο. | Der Küchenchef hat ein besonderes Menü für die Hochzeit zubereitet.
+η αντιπαροχή | Πολλές πολυκατοικίες χτίστηκαν με αντιπαροχή. | Viele Wohnhäuser wurden im Tausch Grundstück gegen Wohnungen gebaut.
+η επέμβαση | Η επέμβαση κράτησε δύο ώρες. | Die Operation dauerte zwei Stunden.
+χρόνιος | Έχει χρόνιο πόνο στη μέση. | Er hat chronische Rückenschmerzen.
+το εμβόλιο | Το εμβόλιο γίνεται κάθε φθινόπωρο. | Die Impfung erfolgt jeden Herbst.
+η αλλεργία | Έχω αλλεργία στη γύρη. | Ich habe eine Pollenallergie.
+ο παθολόγος | Ο παθολόγος μου έγραψε εξετάσεις. | Der Internist hat mir Untersuchungen verschrieben.
+η ακτινογραφία | Η ακτινογραφία έδειξε κάταγμα. | Das Röntgenbild zeigte einen Bruch.
+η ανάρρωση | Σου εύχομαι γρήγορη ανάρρωση. | Ich wünsche dir eine schnelle Genesung.
+μου είπε | Μου είπε ότι θα αργήσει. | Er hat mir gesagt, dass er sich verspätet.
+με είπε | Στη Θεσσαλονίκη ακούς «με είπε» αντί για «μου είπε». | In Thessaloniki hört man „με είπε“ statt „μου είπε“.
+σου δίνω | Σου δίνω το κλειδί, πρόσεχέ το. | Ich gebe dir den Schlüssel, pass darauf auf.
+σε δίνω | Στον Βορρά λένε «σε δίνω» αντί για «σου δίνω». | Im Norden sagt man „σε δίνω“ statt „σου δίνω“.
+χαχαχα | Χαχαχα, τι αστείο που είσαι! | Hahaha, wie lustig du bist!
 `;
