@@ -7,7 +7,7 @@ import { streak, today } from '../lib/store';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
 import { moduleLessons } from '../lib/course';
-import { ProgressBar } from './ui';
+import { ProgressBar, Icon } from './ui';
 
 export function Progress({ ctx }: { ctx: Ctx }) {
   const { state } = ctx;
@@ -19,10 +19,10 @@ export function Progress({ ctx }: { ctx: Ctx }) {
 
   return (
     <div className="stack">
-      <button className="back" onClick={() => ctx.go('more')}>‹ Mehr</button>
+      <button className="back" onClick={() => ctx.go('more')}>Mehr</button>
       <h1>Fortschritt</h1>
       <div className="grid2">
-        <div className="card center"><div className="big">🔥 {streak(state.daily)}</div><div className="muted small">Tage in Folge</div></div>
+        <div className="card center"><div className="big streak"><Icon name="flame" size={22} className="flame" /> {streak(state.daily)}</div><div className="muted small">Tage in Folge</div></div>
         <div className="card center"><div className="big">{total}</div><div className="muted small">Übungen gesamt</div></div>
       </div>
       <section className="card">

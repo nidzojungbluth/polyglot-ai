@@ -14,6 +14,7 @@ export function Coach({ ctx }: { ctx: Ctx }) {
   const [busy, setBusy] = useState(false);
   const [streaming, setStreaming] = useState('');
   const [ai, setAi] = useState<AiStatus>('prüfe');
+  const [panel, setPanel] = useState(false);
   const sampleRef = useRef<any>(null);
   const abortRef = useRef<AbortController | null>(null);
   const endRef = useRef<HTMLDivElement>(null);
@@ -81,59 +82,115 @@ export function Coach({ ctx }: { ctx: Ctx }) {
   };
 
   const quick = ai === 'bereit'
-    ? [`Lass uns ein Rollenspiel im Café in ${pack.city} machen!`, 'Bring mir 3 Slang-Ausdrücke bei', 'Stell mir eine Frage zum Üben', 'Erklär mir den Unterschied zwischen formell und locker']
-    : ['hilfe', 'slang', `was heißt danke`];
+    ? [`Rollenspiel im Café in ${pack.city}`, 'Bring mir 3 Slang-Ausdrücke bei', 'Stell mir eine Übungsfrage', 'Formell oder locker?']
+    : ['hilfe', 'slang', 'was heißt danke'];
+  const modeLabel = { lernen: 'Lernen', alltag: 'Alltag', immersion: 'Immersion' }[mode];
+  const slangLabel = ['kein Slang', 'etwas Slang', 'viel Slang'][slang] ?? '';
 
   return (
     <div className="coach">
-      <div className={`coach-status ${ai === 'bereit' ? 'ai' : 'rules'}`}>
-        {ai === 'bereit' && <>🤖 <b>Echte KI</b> (Claude) · online · nutzt dein bestehendes Claude-Konto, keine Zusatzkosten</>}
-        {ai === 'prüfe' && <>⏳ Prüfe, ob die KI verfügbar ist …</>}
-        {(ai === 'nicht verfügbar' || ai === 'aus') && <>📏 <b>Regel-Coach</b> · offline · <u>keine KI</u>: erkennt nur bekannte Fehler, Wörter und Slang aus dem Sprachpaket{ai === 'aus' ? ' (KI in den Einstellungen ausgeschaltet)' : ''}</>}
+      <header className="coach-head">
+        <div className="coach-title">
+          <span className="coach-sub">{pack.name} · {pack.city}</span>
+          <h1>Coach</h1>
+        </div>
+        <button type="button" className="coach-gear" aria-label="Coach-Einstellungen" aria-expanded={panel} onClick={() => setPanel(!panel)}>
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8" /><circle cx="16" cy="7" r="2" /><circle cx="10" cy="17" r="2" /></svg>
+        </button>
+      </header>
+
+      <div className={`coach-status ${ai === 'bereit' ? 'ai' : 'rules'}`} role="status">
+        <span className="dot" aria-hidden="true" />
+        {ai === 'bereit' && <span><b>Echte KI</b> (Claude) · online · {modeLabel} · {slangLabel}</span>}
+        {ai === 'prüfe' && <span>Prüfe, ob die KI verfügbar ist …</span>}
+        {(ai === 'nicht verfügbar' || ai === 'aus') && <span><b>Regel-Coach</b> · offline · <u>keine KI</u>{ai === 'aus' ? ' (in den Einstellungen ausgeschaltet)' : ''} · erkennt nur bekannte Fehler, Wörter und Slang</span>}
       </div>
 
-      <div className="coach-controls">
-        <div className="seg" role="radiogroup" aria-label="Gesprächsmodus">
-          {([['lernen', 'Lernen'], ['alltag', 'Alltag'], ['immersion', 'Immersion']] as [CoachMode, string][]).map(([m, l]) => (
-            <button key={m} role="radio" aria-checked={mode === m} className={mode === m ? 'on' : ''} onClick={() => setSettings({ coachMode: m })}>{l}</button>
-          ))}
-        </div>
-        <label className="slider">
-          <span className="small">Slang: <b>{['keiner', 'etwas', 'viel'][slang]}</b></span>
-          <input type="range" min={0} max={2} step={1} value={slang} onChange={(e) => setSettings({ slang: Number(e.target.value) })} aria-label="Slang-Menge" />
-        </label>
+      <div className="seg" role="radiogroup" aria-label="Gesprächsmodus">
+        {([['lernen', 'Lernen'], ['alltag', 'Alltag'], ['immersion', 'Immersion']] as [CoachMode, string][]).map(([m, l]) => (
+          <button key={m} role="radio" aria-checked={mode === m} className={mode === m ? 'on' : ''} onClick={() => setSettings({ coachMode: m })}>{l}</button>
+        ))}
       </div>
+
+      {panel && (
+        <section className="card coach-panel" aria-label="Coach-Einstellungen">
+          <div className="field">Slang-Menge
+            <div className="seg" role="radiogroup" aria-label="Slang-Menge">
+              {['Keiner', 'Etwas', 'Viel'].map((l, i) => (
+                <button key={l} role="radio" aria-checked={slang === i} className={slang === i ? 'on' : ''} onClick={() => setSettings({ slang: i })}>{l}</button>
+              ))}
+            </div>
+          </div>
+          <p className="fine">Lernen: einfache Sätze mit Erklärung auf Deutsch · Alltag: locker wie unter Freunden · Immersion: nur Zielsprache.</p>
+          <div className="row wrap">
+            <button className="btn" disabled={!history.length} onClick={() => { update((s) => ({ ...s, coach: { ...s.coach, [pack.code]: [] } })); setPanel(false); }}>Verlauf leeren</button>
+            <button className="btn" onClick={() => ctx.go('settings')}>KI & Interessen …</button>
+          </div>
+        </section>
+      )}
 
       <div className="chat" aria-live="polite">
         {!history.length && (
-          <div className="bubble assistant">
-            {ai === 'bereit'
-              ? `Hey! Ich bin dein Coach für ${pack.native}. Schreib mir einfach – auf ${pack.native} oder Deutsch. Ich korrigiere dich locker und zeig dir, wie man in ${pack.city} wirklich redet.`
-              : `Hallo! Ich bin der Offline-Regel-Coach für ${pack.native}. Schreib einen Satz, ein Slang-Wort oder „hilfe“.`}
+          <div className="msg assistant">
+            <div className="bubble assistant">
+              {ai === 'bereit'
+                ? `Hey! Ich bin dein Coach für ${pack.native}. Schreib mir einfach – auf ${pack.native} oder Deutsch. Ich korrigiere dich locker und zeig dir, wie man in ${pack.city} wirklich redet.`
+                : `Hallo! Ich bin der Offline-Regel-Coach für ${pack.native}. Schreib einen Satz, ein Slang-Wort oder „hilfe“.`}
+            </div>
           </div>
         )}
         {history.map((m, idx) => (
-          <div key={idx} className={`bubble ${m.role}`}>
-            {m.content}
+          <div key={idx} className={`msg ${m.role}`}>
+            {m.role === 'assistant' ? <AssistantBubble text={m.content} /> : <div className="bubble user">{m.content}</div>}
             {m.role === 'assistant' && <div className="src">{m.source === 'ki' ? 'KI-Antwort – kann Fehler enthalten' : 'Regel-Coach'}</div>}
           </div>
         ))}
-        {streaming && <div className="bubble assistant">{streaming}</div>}
+        {streaming && <div className="msg assistant"><div className="bubble assistant">{streaming}</div></div>}
         <div ref={endRef} />
       </div>
 
-      <div className="quick">
-        {quick.map((q) => <button key={q} className="chip" onClick={() => send(q)} disabled={busy}>{q}</button>)}
-        {history.length > 0 && <button className="chip" onClick={() => update((s) => ({ ...s, coach: { ...s.coach, [pack.code]: [] } }))}>🗑 Verlauf leeren</button>}
+      <div className="coach-bottom">
+        <div className="quick">
+          {quick.map((q) => <button key={q} className="chip" onClick={() => send(q)} disabled={busy}>{q}</button>)}
+        </div>
+        <form className="composer" onSubmit={(e) => { e.preventDefault(); send(); }}>
+          <input className="input" value={input} onChange={(e) => setInput(e.target.value)} placeholder={`Nachricht auf ${pack.native} oder Deutsch`}
+            lang={pack.code} autoCorrect="off" maxLength={1000} aria-label="Nachricht an den Coach" enterKeyHint="send" />
+          {busy
+            ? <button type="button" className="send stop" aria-label="Stopp" onClick={() => abortRef.current?.abort()}>
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2.5" /></svg>
+              </button>
+            : <button type="submit" className="send" aria-label="Senden" disabled={!input.trim()}>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+              </button>}
+        </form>
       </div>
+    </div>
+  );
+}
 
-      <form className="composer" onSubmit={(e) => { e.preventDefault(); send(); }}>
-        <input className="input" value={input} onChange={(e) => setInput(e.target.value)} placeholder={`Schreib auf ${pack.native} oder Deutsch …`}
-          lang={pack.code} autoCorrect="off" maxLength={1000} aria-label="Nachricht an den Coach" />
-        {busy
-          ? <button type="button" className="btn" onClick={() => abortRef.current?.abort()}>Stopp</button>
-          : <button type="submit" className="btn primary" disabled={!input.trim()}>Senden</button>}
-      </form>
+/**
+ * Antwort des Coachs. Absätze, die mit ✏️ beginnen (Korrekturen von KI und Regel-Coach),
+ * werden als eigener Bereich „Besser so“ oben in der Blase gezeigt – wie im Entwurf A.
+ */
+function AssistantBubble({ text }: { text: string }) {
+  const parts = text.split(/\n\s*\n/);
+  const fixes = parts.filter((p) => p.trim().startsWith('✏️')).map((p) => p.trim().replace(/^✏️\s*(Besser:\s*)?/, ''));
+  const rest = parts.filter((p) => !p.trim().startsWith('✏️')).join('\n\n').trim();
+  if (!fixes.length) return <div className="bubble assistant">{text}</div>;
+  return (
+    <div className="bubble assistant has-fix">
+      {fixes.map((f, i) => {
+        const [first, ...more] = f.split('\n');
+        return (
+          <div key={i} className="fix">
+            <span className="fix-label">Besser so</span>
+            <b className="fix-main">{first}</b>
+            {more.length > 0 && <span className="fix-why">{more.join('\n')}</span>}
+          </div>
+        );
+      })}
+      {rest && <div className="fix-rest">{rest}</div>}
     </div>
   );
 }

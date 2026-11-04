@@ -6,7 +6,7 @@ import { masteredUnits, placementTest, unitExercises } from '../lib/abc';
 import type { Exercise } from '../lib/exercises';
 import { sayFor } from '../lib/platform';
 import { ExerciseView } from './Lesson';
-import { ProgressBar, SpeakBtn } from './ui';
+import { ProgressBar, SpeakBtn, Icon, ResultBadge } from './ui';
 
 export const abcDone = (ctx: Ctx, u: AbcUnit) => !!ctx.state.lessons[u.id];
 
@@ -41,12 +41,12 @@ function Overview({ ctx, course }: { ctx: Ctx; course: AbcCourse }) {
   });
   return (
     <div className="stack">
-      <button className="back" onClick={() => go('courses')}>‹ Kurse</button>
-      <h1>🔤 {course.title}</h1>
+      <button className="back" onClick={() => go('courses')}>Kurse</button>
+      <h1>{course.title}</h1>
       <p className="small">{course.intro}</p>
       <ProgressBar value={done} max={course.units.length} />
       <p className="muted small">{done} von {course.units.length} Schritten erledigt</p>
-      <button className={`btn big-btn ${course.forBeginners ? '' : 'primary'}`} onClick={() => go('abc', 'test')}>📝 Einstufungstest – Bekanntes abhaken</button>
+      <button className={`btn big-btn ${course.forBeginners ? '' : 'primary'}`} onClick={() => go('abc', 'test')}>Einstufungstest – Bekanntes abhaken</button>
       <ul className="list card">
         {course.units.map((u, i) => {
           const r = state.lessons[u.id];
@@ -56,7 +56,7 @@ function Overview({ ctx, course }: { ctx: Ctx; course: AbcCourse }) {
                 <span className="num">{r ? (r.via === 'skip' ? '⏭' : '✓') : i + 1}</span>
                 <span className="grow"><b>{u.title}</b><br />
                   <span className="muted small">{r ? (r.via === 'skip' ? 'übersprungen' : r.via === 'test' ? 'im Test beherrscht' : `${r.best}% richtig`) : unitInfo(u)}</span></span>
-                <span className="muted">›</span>
+                <span className="chev"><Icon name="chevron" size={16} /></span>
               </button>
             </li>
           );
@@ -107,7 +107,7 @@ function UnitView({ ctx, course, unit }: { ctx: Ctx; course: AbcCourse; unit: Ab
 
   return (
     <div className="stack">
-      <button className="back" onClick={() => go('abc')}>‹ {course.title}</button>
+      <button className="back" onClick={() => go('abc')}>{course.title}</button>
       <h1>{unit.title}</h1>
       <p>{unit.intro}</p>
       {unit.explain?.map((e) => (
@@ -119,12 +119,12 @@ function UnitView({ ctx, course, unit }: { ctx: Ctx; course: AbcCourse; unit: Ab
             <section key={l.up} className="card letter-card">
               <div className="row between">
                 <div className="glyph-big" lang={pack.code}>{l.up} {l.low}</div>
-                <button className="icon-btn" aria-label={`Beispiel vorlesen: ${l.ex.t}`} onClick={() => sayFor(pack, l.ex.t)}>🔊</button>
+                <button className="icon-btn" aria-label={`Beispiel vorlesen: ${l.ex.t}`} onClick={() => sayFor(pack, l.ex.t)}><Icon name="speaker" size={18} /></button>
               </div>
               <div className="small"><b>{sr ? `Latein: ${l.lat}` : l.name}</b> · Laut: <b>{l.sound}</b></div>
               <div className="small">{l.hint}</div>
               <div className="small example"><b lang={pack.code}>{l.ex.t}</b> <span className="muted">({l.ex.tr})</span> = {l.ex.de}</div>
-              {l.trap && <div className="small trap">⚠️ {l.trap}</div>}
+              {l.trap && <div className="small trap"><Icon name="warning" size={15} /> {l.trap}</div>}
             </section>
           ))}
         </div>
@@ -180,7 +180,7 @@ function Placement({ ctx, course }: { ctx: Ctx; course: AbcCourse }) {
             <h2>Ergebnis</h2>
             <ul className="list">
               {course.units.map((u) => (
-                <li key={u.id} className="small topic-row">{mastered?.includes(u.id) ? '✅' : '📘'} {u.title} – {mastered?.includes(u.id) ? 'beherrscht, abgehakt' : 'noch üben'}</li>
+                <li key={u.id} className="small topic-row"><span className={mastered?.includes(u.id) ? 'ok-text' : 'muted'}><Icon name={mastered?.includes(u.id) ? 'check' : 'book'} size={16} /></span> {u.title} – {mastered?.includes(u.id) ? 'beherrscht, abgehakt' : 'noch üben'}</li>
               ))}
             </ul>
           </section>
@@ -204,7 +204,7 @@ function Player({ ctx, title, exercises, onFinish, onExit, doneActions }: {
     const score = Math.round((res.filter((r) => r.ok).length / Math.max(1, res.length)) * 100);
     return (
       <div className="stack center">
-        <div className="huge">{score >= 80 ? '🎉' : score >= 50 ? '👍' : '💪'}</div>
+        <ResultBadge score={score} />
         <h1>{res.filter((r) => r.ok).length} von {res.length} richtig</h1>
         {doneActions(score)}
       </div>
@@ -224,14 +224,14 @@ function Player({ ctx, title, exercises, onFinish, onExit, doneActions }: {
   };
   return (
     <div className="stack">
-      <div className="row between"><button className="back" onClick={onExit}>✕</button><span className="muted small">{title} · {i + 1} / {exercises.length}</span></div>
+      <div className="row between"><button className="back close" onClick={onExit} aria-label="Beenden"><Icon name="xmark" size={22} /></button><span className="muted small">{title} · {i + 1} / {exercises.length}</span></div>
       <ProgressBar value={i} max={exercises.length} />
       <ExerciseView key={i} ex={ex} ctx={ctx} onAnswer={answer} locked={!!fb} />
       {fb && (
         <div className={`feedback ${fb.ok ? 'ok' : 'bad'}`} role="status">
-          <b>{fb.ok ? 'Richtig! ✅' : 'Nicht ganz.'}</b>
+          <b className="fb-title"><Icon name={fb.ok ? 'check' : 'xmark'} size={18} />{fb.ok ? 'Richtig!' : 'Nicht ganz.'}</b>
           {!fb.ok && <div>Richtig wäre: <b lang={ctx.pack.code}>{fb.answer}</b></div>}
-          {fb.explain && <div className="small">💡 {fb.explain}</div>}
+          {fb.explain && <div className="small"><Icon name="bulb" size={15} /> {fb.explain}</div>}
           <button className="btn primary big-btn" onClick={next}>Weiter</button>
         </div>
       )}

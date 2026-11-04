@@ -5,7 +5,7 @@ import { useAllPacks } from '../lib/usePacks';
 import type { LanguagePack, Register } from '../data/types';
 import { LEVELS, REGISTER_INFO } from '../data/types';
 import { normalize } from '../lib/text';
-import { LevelBadge, RegBadge, SpeakBtn, WordHead, ExampleBlock } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn, WordHead, ExampleBlock, Icon } from './ui';
 
 interface Entry { pack: LanguagePack; id: string; t: string; tr?: string; de: string; reg: Register; level?: string; ex?: { t: string; de: string }; extra?: string; local?: boolean; search: string }
 
@@ -39,7 +39,7 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
 
   return (
     <div className="stack">
-      <button className="back" onClick={() => ctx.go('more')}>‹ Mehr</button>
+      <button className="back" onClick={() => ctx.go('more')}>Mehr</button>
       <h1>Wörterbuch</h1>
       <p className="muted small">{index.length} Einträge {all ? 'in allen Sprachen' : `in ${ctx.pack.name}`}</p>
       <input className="input" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Deutsch, Zielsprache oder Umschrift …" aria-label="Suche" autoCapitalize="off" />
@@ -61,9 +61,9 @@ export function Dictionary({ ctx }: { ctx: Ctx }) {
           <li key={r.pack.code + r.id} className="word-row">
             <div className="grow">
               <span>{r.pack.flag}</span> <WordHead t={r.t} de={r.de} tr={r.tr} lang={r.pack.code} /> <RegBadge reg={r.reg} /> <LevelBadge level={r.level} />
-              {r.local && <span className="badge local">📍 {r.pack.city}</span>}
+              {r.local && <span className="badge local">{r.pack.city}</span>}
               <ExampleBlock ex={r.ex} lang={r.pack.code} pack={r.pack} />
-              {r.extra && <div className="small note">💡 {r.extra}</div>}
+              {r.extra && <div className="small note"><Icon name="bulb" size={15} /> {r.extra}</div>}
             </div>
             <SpeakBtn text={r.t} pack={r.pack} />
           </li>

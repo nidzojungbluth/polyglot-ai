@@ -1,6 +1,7 @@
 import type { Ctx } from '../App';
 import { BASES, PLANNED } from '../data';
 import { useAllPacks } from '../lib/usePacks';
+import { Icon } from './ui';
 
 export function Languages({ ctx }: { ctx: Ctx }) {
   const { state, update, go } = ctx;
@@ -8,6 +9,7 @@ export function Languages({ ctx }: { ctx: Ctx }) {
   const choose = (code: string) => { update((s) => ({ ...s, settings: { ...s.settings, lang: code } })); go('home'); };
   return (
     <div className="stack">
+      <button className="back" onClick={() => go('more')}>Mehr</button>
       <h1>Sprachen</h1>
       <section className="card">
         <h2>Verfügbare Kurse</h2>
@@ -18,7 +20,7 @@ export function Languages({ ctx }: { ctx: Ctx }) {
                 <span className="num">{p.flag}</span>
                 <span className="grow"><b>{p.name}</b> <span className="muted">· {p.native}</span><br />
                   <span className="small muted">{full ? `${p.words.length} Wörter` : 'Wortschatz wird gezählt …'} · {p.slang.length} Slang · {(p.modules?.length ?? 0) ? `${p.modules!.length} Kursmodule · ` : `${p.lessons.length} Lektionen · `}{p.roleplays.length} Dialoge · {p.city}</span></span>
-                {state.settings.lang === p.code && <span>✓</span>}
+                {state.settings.lang === p.code && <span className="selected-check"><Icon name="check" label="ausgewählt" /></span>}
               </button>
             </li>
           ); })}

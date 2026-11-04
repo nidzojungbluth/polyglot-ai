@@ -2,7 +2,7 @@ import type { Ctx } from '../App';
 import { knownIn, todayQueue } from '../lib/srs';
 import { newDoneToday, newLimit } from '../lib/store';
 import { streak, today } from '../lib/store';
-import { AiNotice, Ring } from './ui';
+import { AiNotice, Icon, Ring, type IconName } from './ui';
 import { moduleLessons } from '../lib/course';
 import { LEVELS } from '../data/types';
 import { abcFor } from '../data/alphabet';
@@ -37,12 +37,12 @@ export function Home({ ctx }: { ctx: Ctx }) {
           <div className="grow">
             <div className="hero-label">Heute</div>
             <div className="big">{done} / {goal} Übungen</div>
-            <p className="muted small">{done >= goal ? 'Tagesziel geschafft! 🎉' : `Noch ${goal - done} bis zum Tagesziel.`}</p>
+            <p className="muted small">{done >= goal ? 'Tagesziel geschafft.' : `Noch ${goal - done} bis zum Tagesziel.`}</p>
           </div>
-          <Ring value={done} max={goal}>{done >= goal ? '✓' : ''}</Ring>
+          <Ring value={done} max={goal}>{done >= goal ? <Icon name="check" size={26} /> : null}</Ring>
         </div>
         <div className="hero-meta">
-          <div title="Tage in Folge gelernt"><b className="streak">🔥 {st}</b><span>Tage in Folge</span></div>
+          <div title="Tage in Folge gelernt"><b className="streak"><Icon name="flame" size={17} className="flame" /> {st}</b><span>Tage in Folge</span></div>
           <div><b>{due}</b><span>Karten fällig</span></div>
           <div><b>{Object.keys(state.lessons).filter((k) => k.startsWith(`${pack.code}-`)).length}</b><span>Lektionen fertig</span></div>
         </div>
@@ -50,37 +50,37 @@ export function Home({ ctx }: { ctx: Ctx }) {
 
       <div className="grid2">
         <button className="tile" onClick={() => (startAbc ? go('abc', abcUnit!.id) : go('lesson', nextLesson.id))}>
-          <span className="tile-icon">{startAbc ? '🔤' : '📘'}</span><b>Weiterlernen</b><span className="muted small">{startAbc ? `Schrift: ${abcUnit!.title}` : nextLesson.title}</span>
+          <span className="tile-icon"><Icon name={startAbc ? 'letters' : 'book'} /></span><b>Weiterlernen</b><span className="muted small">{startAbc ? `Schrift: ${abcUnit!.title}` : nextLesson.title}</span>
         </button>
         <button className="tile" onClick={() => go('vocab')}>
-          <span className="tile-icon">🃏</span><b>Wiederholen</b><span className="muted small">{due} Karten fällig</span>
+          <span className="tile-icon"><Icon name="cards" /></span><b>Wiederholen</b><span className="muted small">{due} Karten fällig</span>
         </button>
         <button className="tile accent" onClick={() => go('coach')}>
-          <span className="tile-icon">💬</span><b>Mit dem Coach reden</b><span className="small">Fehler, Slang, Gespräche</span>
+          <span className="tile-icon"><Icon name="chat" /></span><b>Mit dem Coach reden</b><span className="small">Fehler, Slang, Gespräche</span>
         </button>
         <button className="tile" onClick={() => go('roleplay')}>
-          <span className="tile-icon">🎭</span><b>Dialoge</b><span className="muted small">{pack.roleplays.length} Szenen in {pack.city}</span>
+          <span className="tile-icon"><Icon name="dialog" /></span><b>Dialoge</b><span className="muted small">{pack.roleplays.length} Szenen in {pack.city}</span>
         </button>
         {abc && abcUnit && !abc.forBeginners && (
           <button className="tile" onClick={() => go('abc')}>
-            <span className="tile-icon">🔤</span><b>Schrift-Check</b><span className="muted small">Latinica & Ćirilica – Einstufungstest</span>
+            <span className="tile-icon"><Icon name="letters" /></span><b>Schrift-Check</b><span className="muted small">Latinica & Ćirilica – Einstufungstest</span>
           </button>
         )}
         {modCount > 0 && (
           <button className="tile" onClick={() => go('courses')}>
-            <span className="tile-icon">📚</span><b>Kurse A1–C2</b><span className="muted small">{modCount} Module · {pack.words.length + pack.slang.length} Einträge</span>
+            <span className="tile-icon"><Icon name="book" /></span><b>Kurse A1–C2</b><span className="muted small">{modCount} Module · {pack.words.length + pack.slang.length} Einträge</span>
           </button>
         )}
         {hard > 0 && (
           <button className="tile" onClick={() => go('vocab', 'hard')}>
-            <span className="tile-icon">🎯</span><b>Schwierige Wörter</b><span className="muted small">{hard} gezielt üben</span>
+            <span className="tile-icon"><Icon name="target" /></span><b>Schwierige Wörter</b><span className="muted small">{hard} gezielt üben</span>
           </button>
         )}
       </div>
 
       {pack.focus && (
         <section className="card focus">
-          <h2>📍 Schwerpunkt {pack.city}</h2>
+          <h2 className="row" style={{ gap: 8 }}><Icon name="pin" className="accent-ink" /> Schwerpunkt {pack.city}</h2>
           <p className="small">{pack.focus}</p>
         </section>
       )}
@@ -101,7 +101,7 @@ export function Home({ ctx }: { ctx: Ctx }) {
             );
           })}
         </ul>
-        {modCount > 0 && <button className="btn big-btn" onClick={() => go('courses')}>📚 Alle Kurse ansehen</button>}
+        {modCount > 0 && <button className="btn big-btn" onClick={() => go('courses')}>Alle Kurse ansehen</button>}
         <AiNotice />
       </section>
     </div>
@@ -109,12 +109,12 @@ export function Home({ ctx }: { ctx: Ctx }) {
 }
 
 export function MorePage({ ctx }: { ctx: Ctx }) {
-  const items: { v: Parameters<Ctx['go']>[0]; icon: string; label: string; sub: string }[] = [
-    { v: 'roleplay', icon: '🎭', label: 'Dialoge & Rollenspiele', sub: 'Echte Gesprächssituationen' },
-    { v: 'langs', icon: '🌍', label: 'Sprachen', sub: 'Sprache wechseln, Katalog' },
-    { v: 'dict', icon: '📖', label: 'Wörterbuch', sub: 'Alle Wörter und Slang durchsuchen' },
-    { v: 'progress', icon: '📈', label: 'Fortschritt', sub: 'Statistiken, Serie, häufige Fehler' },
-    { v: 'settings', icon: '⚙️', label: 'Einstellungen', sub: 'Darstellung, Coach, Sicherung' },
+  const items: { v: Parameters<Ctx['go']>[0]; icon: IconName; label: string; sub: string }[] = [
+    { v: 'roleplay', icon: 'dialog', label: 'Dialoge & Rollenspiele', sub: 'Echte Gesprächssituationen' },
+    { v: 'langs', icon: 'globe', label: 'Sprachen', sub: 'Sprache wechseln, Katalog' },
+    { v: 'dict', icon: 'search', label: 'Wörterbuch', sub: 'Alle Wörter und Slang durchsuchen' },
+    { v: 'progress', icon: 'chart', label: 'Fortschritt', sub: 'Statistiken, Serie, häufige Fehler' },
+    { v: 'settings', icon: 'gear', label: 'Einstellungen', sub: 'Darstellung, Coach, Sicherung' },
   ];
   return (
     <div className="stack">
@@ -123,9 +123,9 @@ export function MorePage({ ctx }: { ctx: Ctx }) {
         {items.map((i) => (
           <li key={i.v}>
             <button className="list-btn" onClick={() => ctx.go(i.v)}>
-              <span className="num">{i.icon}</span>
+              <span className="num"><Icon name={i.icon} size={19} /></span>
               <span className="grow"><b>{i.label}</b><br /><span className="muted small">{i.sub}</span></span>
-              <span className="muted">›</span>
+              <span className="chev"><Icon name="chevron" size={16} /></span>
             </button>
           </li>
         ))}

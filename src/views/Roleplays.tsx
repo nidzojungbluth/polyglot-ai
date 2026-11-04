@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { Ctx } from '../App';
 import type { RoleOption, Roleplay } from '../data/types';
-import { LevelBadge, RegBadge, SpeakBtn } from './ui';
+import { LevelBadge, RegBadge, SpeakBtn, Icon, ResultBadge } from './ui';
 
 interface Turn { npc: string; npcDe: string; pick?: RoleOption }
 
@@ -18,7 +18,7 @@ export function Roleplays({ ctx }: { ctx: Ctx }) {
         {[...pack.roleplays].sort((a, b) => (a.level ?? 'A1').localeCompare(b.level ?? 'A1')).map((r) => (
           <li key={r.id}>
             <button className="list-btn" onClick={() => setActive(r)}>
-              <span className="num">🎭</span>
+              <span className="num"><Icon name="dialog" size={18} /></span>
               <span className="grow"><b>{r.title}</b> <LevelBadge level={r.level ?? 'A1'} /><br /><span className="muted small">{r.scene}</span></span>
               {state.roleplays[r.id] ? <span className="muted small">{state.roleplays[r.id]}×</span> : null}
             </button>
@@ -51,7 +51,7 @@ function Player({ ctx, rp, onExit }: { ctx: Ctx; rp: Roleplay; onExit: () => voi
 
   return (
     <div className="stack">
-      <button className="back" onClick={onExit}>‹ Alle Rollenspiele</button>
+      <button className="back" onClick={onExit}>Alle Rollenspiele</button>
       <h1>{rp.title}</h1>
       <p className="muted small">{rp.scene}</p>
       <div className="chat">
@@ -61,7 +61,7 @@ function Player({ ctx, rp, onExit }: { ctx: Ctx; rp: Roleplay; onExit: () => voi
             {t.pick && (
               <>
                 <div className="bubble user" lang={pack.code}>{t.pick.t}<div className="src"><RegBadge reg={t.pick.reg} /> {t.pick.de}</div></div>
-                {t.pick.note && <div className="coach-note">🧑‍🏫 {t.pick.note}</div>}
+                {t.pick.note && <div className="coach-note"><Icon name="bulb" size={15} /> {t.pick.note}</div>}
               </>
             )}
           </div>
@@ -79,7 +79,7 @@ function Player({ ctx, rp, onExit }: { ctx: Ctx; rp: Roleplay; onExit: () => voi
         </div>
       ) : (
         <div className="card center">
-          <div className="huge">🎬</div>
+          <ResultBadge score={100} />
           <b>Szene geschafft!</b>
           <div className="row">
             <button className="btn" onClick={() => { setTurns([]); setNodeId(rp.start); setReveal({}); }}>Andere Antworten probieren</button>

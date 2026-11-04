@@ -5,7 +5,7 @@ import { newDoneToday, newLimit, today } from '../lib/store';
 import { explainSlang } from '../lib/coach';
 import { LEVELS } from '../data/types';
 import { TOPICS } from '../data/curriculum';
-import { ExampleBlock, LevelBadge, RegBadge, SpeakBtn, WordHead } from './ui';
+import { ExampleBlock, LevelBadge, RegBadge, SpeakBtn, WordHead, Icon, ResultBadge } from './ui';
 
 interface Item { t: string; tr?: string; de: string; reg: any; level?: string; cat?: string; ex?: { t: string; de: string }; extra?: string }
 
@@ -59,7 +59,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
     if (!item) {
       return (
         <div className="stack center">
-          <div className="huge">✅</div>
+          <ResultBadge score={100} />
           <h1>{session.title}: fertig!</h1>
           <p className="muted">{session.ids.length} Karten wiederholt.</p>
           <button className="btn primary big-btn" onClick={() => { setSession(null); setPos(0); }}>Zurück</button>
@@ -81,7 +81,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
     };
     return (
       <div className="stack">
-        <div className="row between"><button className="back" onClick={() => setSession(null)}>✕</button><span className="muted small">{session.title} · {pos + 1} / {session.ids.length}</span></div>
+        <div className="row between"><button className="back close" onClick={() => setSession(null)} aria-label="Wiederholung beenden"><Icon name="xmark" size={22} /></button><span className="muted small">{session.title} · {pos + 1} / {session.ids.length}</span></div>
         <button className="flashcard" onClick={() => setFlipped(true)} aria-label="Karte umdrehen">
           <div className="muted small">{dir === 'zu-de' ? 'Was bedeutet das?' : 'Wie heißt das in der Zielsprache?'}</div>
           <div className="prompt" lang={dir === 'zu-de' ? pack.code : 'de'}>{front}</div>
@@ -92,11 +92,11 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
               {dir === 'zu-ziel' && item.tr && <div className="muted">{item.tr}</div>}
               <div><RegBadge reg={item.reg} /> <LevelBadge level={item.level} /></div>
               <ExampleBlock ex={item.ex} lang={pack.code} />
-              {item.extra && <div className="small muted pre">💡 {item.extra}</div>}
+              {item.extra && <div className="small muted pre"><Icon name="bulb" size={15} /> {item.extra}</div>}
             </div>
           ) : <div className="muted small">Tippen zum Umdrehen</div>}
         </button>
-        {(flipped || dir === 'zu-de') && <SpeakBtn text={item.t} pack={pack} label="🔊 Anhören" />}
+        {(flipped || dir === 'zu-de') && <SpeakBtn text={item.t} pack={pack} label="Anhören" />}
         {flipped && (
           <div className="grades">
             <button className="btn g0" onClick={() => grade(0)}>Nochmal</button>
@@ -128,7 +128,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
           {due.length ? `Jetzt wiederholen (${Math.min(30, due.length)})` : 'Nichts fällig – super!'}
         </button>
         <p className="muted small">Morgen fällig: {tomorrow} · Neue Karten heute: {newDoneToday(state)}{state.settings.newPerDay > 0 ? ` / ${state.settings.newPerDay}` : ''}{newWaiting > 0 ? ` · ${newWaiting} neue warten` : ''}</p>
-        {hard.length > 0 && <button className="btn big-btn" onClick={() => start(hard.slice(0, 20).map((c) => c.id), 'Schwierige Wörter')}>🎯 Schwierige Wörter üben ({Math.min(20, hard.length)})</button>}
+        {hard.length > 0 && <button className="btn big-btn" onClick={() => start(hard.slice(0, 20).map((c) => c.id), 'Schwierige Wörter')}><Icon name="target" /> Schwierige Wörter üben ({Math.min(20, hard.length)})</button>}
         <label className="field small">Abfragerichtung
           <div className="seg">
             {([['gemischt', 'Gemischt'], ['zu-de', 'Ziel → DE'], ['zu-ziel', 'DE → Ziel']] as const).map(([k, l]) => (
@@ -159,7 +159,7 @@ export function Vocab({ ctx, mode }: { ctx: Ctx; mode?: string }) {
             {slangAllowed.map((s) => (
               <li key={s.id} className="word-row">
                 <div className="grow">
-                  <WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>} {s.status === 'älter' && <span className="badge">älter</span>}
+                  <WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">{pack.city}</span>} {s.status === 'älter' && <span className="badge">älter</span>}
                   <div className="small pre">{explainSlang(s).split('\n').slice(1).filter((l) => !l.startsWith('• Beispiel')).join('\n')}</div>
                   <ExampleBlock ex={s.ex} lang={pack.code} pack={pack} />
                 </div>

@@ -3,6 +3,7 @@ import type { Ctx } from '../App';
 import { defaultState, exportBackup, importBackup, type Theme } from '../lib/store';
 import { cloudSave } from '../lib/cloud';
 import { isStandalone, speechAvailable, useCapability } from '../lib/platform';
+import { Icon } from './ui';
 
 export function Settings({ ctx }: { ctx: Ctx }) {
   const { state, update } = ctx;
@@ -51,7 +52,7 @@ export function Settings({ ctx }: { ctx: Ctx }) {
 
   return (
     <div className="stack">
-      <button className="back" onClick={() => ctx.go('more')}>‹ Mehr</button>
+      <button className="back" onClick={() => ctx.go('more')}>Mehr</button>
       <h1>Einstellungen</h1>
 
       <section className="card">
@@ -92,9 +93,9 @@ export function Settings({ ctx }: { ctx: Ctx }) {
         <h2>Sicherung & Wiederherstellung</h2>
         <p className="small">Browserdaten können auf dem iPhone gelöscht werden (z. B. bei wenig Speicher oder wenn eine Seite lange nicht geöffnet wurde). Sichere deinen Fortschritt regelmäßig.</p>
         <div className="row wrap">
-          <button className="btn" onClick={download}>⬇︎ Als Datei sichern</button>
-          <button className="btn" onClick={copy}>📋 Kopieren</button>
-          {ctx.cloud === 'aktiv' && <button className="btn" onClick={async () => setMsg(await cloudSave(state) ? { ok: true, text: 'In der Cloud gesichert.' } : { ok: false, text: 'Cloud-Sicherung fehlgeschlagen.' })}>☁️ Jetzt in Cloud sichern</button>}
+          <button className="btn" onClick={download}><Icon name="download" size={18} /> Als Datei sichern</button>
+          <button className="btn" onClick={copy}><Icon name="copy" size={18} /> Kopieren</button>
+          {ctx.cloud === 'aktiv' && <button className="btn" onClick={async () => setMsg(await cloudSave(state) ? { ok: true, text: 'In der Cloud gesichert.' } : { ok: false, text: 'Cloud-Sicherung fehlgeschlagen.' })}><Icon name="cloud" size={18} /> Jetzt in Cloud sichern</button>}
         </div>
         <label className="field">Sicherung wiederherstellen (Datei)
           <input type="file" accept="application/json,.json,text/plain" onChange={(e) => onFile(e.target.files?.[0])} />
@@ -110,24 +111,24 @@ export function Settings({ ctx }: { ctx: Ctx }) {
         <h2>Was funktioniert offline?</h2>
         <table className="status">
           <tbody>
-            <tr><td>Lektionen, Übungen, Rollenspiele</td><td>✅ offline</td></tr>
-            <tr><td>Vokabelkarten & Wiederholung</td><td>✅ offline</td></tr>
-            <tr><td>Wörterbuch, Slang-Erklärungen</td><td>✅ offline</td></tr>
-            <tr><td>Regel-Coach</td><td>✅ offline</td></tr>
-            <tr><td>Echter KI-Coach</td><td>🌐 nur online, nur auf claude.ai</td></tr>
-            <tr><td>Cloud-Sicherung</td><td>🌐 nur online, nur auf claude.ai</td></tr>
-            <tr><td>Sprachausgabe</td><td>{speechAvailable() ? '✅ Stimmen des iPhones' : '❌ nicht verfügbar'}</td></tr>
-            <tr><td>Kurse, Wörterbuch, Dialoge (alle Sprachen)</td><td>✅ offline</td></tr>
-            <tr><td>Aussprache prüfen (Mikrofon)</td><td>❌ nicht möglich – nachsprechen und mit 🐢 vergleichen</td></tr>
+            <tr><td>Lektionen, Übungen, Rollenspiele</td><td><span className="st ok"><Icon name="check" size={15} /> offline</span></td></tr>
+            <tr><td>Vokabelkarten & Wiederholung</td><td><span className="st ok"><Icon name="check" size={15} /> offline</span></td></tr>
+            <tr><td>Wörterbuch, Slang-Erklärungen</td><td><span className="st ok"><Icon name="check" size={15} /> offline</span></td></tr>
+            <tr><td>Regel-Coach</td><td><span className="st ok"><Icon name="check" size={15} /> offline</span></td></tr>
+            <tr><td>Echter KI-Coach</td><td><span className="st web"><Icon name="globe" size={15} /> nur online, nur auf claude.ai</span></td></tr>
+            <tr><td>Cloud-Sicherung</td><td><span className="st web"><Icon name="globe" size={15} /> nur online, nur auf claude.ai</span></td></tr>
+            <tr><td>Sprachausgabe</td><td>{speechAvailable() ? <><span className="st ok"><Icon name="check" size={15} /> Stimmen des iPhones</span></> : <><span className="st no"><Icon name="xmark" size={15} /> nicht verfügbar</span></>}</td></tr>
+            <tr><td>Kurse, Wörterbuch, Dialoge (alle Sprachen)</td><td><span className="st ok"><Icon name="check" size={15} /> offline</span></td></tr>
+            <tr><td>Aussprache prüfen (Mikrofon)</td><td><span className="st no"><Icon name="xmark" size={15} /> nicht möglich – nachsprechen und mit „Langsamer“ vergleichen</span></td></tr>
           </tbody>
         </table>
         <h2>Status dieses Geräts</h2>
         <table className="status">
           <tbody>
-            <tr><td>Speicherort</td><td>{{ indexeddb: 'IndexedDB (Browser)', localstorage: 'localStorage (Browser)', memory: '⚠️ nur Arbeitsspeicher – geht beim Schließen verloren!' }[ctx.storage]}</td></tr>
-            <tr><td>Cloud-Sicherung</td><td>{ctx.cloud === 'aktiv' ? '✅ aktiv (automatisch)' : ctx.cloud === 'prüfe' ? '⏳ prüfe …' : '— nicht verfügbar'}</td></tr>
-            <tr><td>Offline-Modus (Service Worker)</td><td>{ctx.sw === 'aktiv' ? '✅ aktiv' : '— nicht aktiv auf dieser Adresse'}</td></tr>
-            <tr><td>Als App installiert</td><td>{isStandalone() ? '✅ ja' : 'nein'}</td></tr>
+            <tr><td>Speicherort</td><td>{{ indexeddb: 'IndexedDB (Browser)', localstorage: 'localStorage (Browser)', memory: 'Achtung: nur Arbeitsspeicher – geht beim Schließen verloren!' }[ctx.storage]}</td></tr>
+            <tr><td>Cloud-Sicherung</td><td>{ctx.cloud === 'aktiv' ? 'aktiv (automatisch)' : ctx.cloud === 'prüfe' ? 'prüfe …' : 'nicht verfügbar'}</td></tr>
+            <tr><td>Offline-Modus (Service Worker)</td><td>{ctx.sw === 'aktiv' ? 'aktiv' : 'nicht aktiv auf dieser Adresse'}</td></tr>
+            <tr><td>Als App installiert</td><td>{isStandalone() ? 'ja' : 'nein'}</td></tr>
           </tbody>
         </table>
       </section>

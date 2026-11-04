@@ -5,7 +5,7 @@ import { findLesson, lessonItems } from '../lib/course';
 import { newCard, review } from '../lib/srs';
 import { matches, sameAnswer } from '../lib/text';
 import { sayFor } from '../lib/platform';
-import { LevelBadge, ProgressBar, RegBadge, SpeakBtn } from './ui';
+import { LevelBadge, ProgressBar, RegBadge, SpeakBtn, Icon, ResultBadge } from './ui';
 
 export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) {
   const { pack, update, addActivity, go } = ctx;
@@ -53,7 +53,7 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
   if (phase === 'intro') {
     return (
       <div className="stack">
-        <button className="back" onClick={back}>‹ Zurück</button>
+        <button className="back" onClick={back}>Zurück</button>
         <h1>{lesson.title}</h1>
         <p className="muted">{lesson.goal}</p>
         {lesson.grammar.text && (
@@ -71,7 +71,7 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
                   <b lang={pack.code}>{w.t}</b>{w.tr && <span className="muted"> · {w.tr}</span>}
                   <div className="small">{w.de} <RegBadge reg={w.reg} /> <LevelBadge level={w.level} /></div>
                   {w.ex && <div className="small muted"><i lang={pack.code}>{w.ex.t}</i> – {w.ex.de}</div>}
-                  {w.note && <div className="small note">💡 {w.note}</div>}
+                  {w.note && <div className="small note"><Icon name="bulb" size={15} /> {w.note}</div>}
                 </div>
                 <SpeakBtn text={w.t} pack={pack} />
               </li>
@@ -87,7 +87,7 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
     const score = Math.round((correct / exercises.length) * 100);
     return (
       <div className="stack center">
-        <div className="huge">{score >= 80 ? '🎉' : score >= 50 ? '👍' : '💪'}</div>
+        <ResultBadge score={score} />
         <h1>{correct} von {exercises.length} richtig</h1>
         <p className="muted">Die Einträge sind jetzt in deinen Vokabelkarten. {wrongIds.length > 0 && `${new Set(wrongIds).size} schwierige Einträge kommen schon bald wieder.`}</p>
         <button className="btn primary big-btn" onClick={back}>Fertig</button>
@@ -100,16 +100,16 @@ export function LessonPlayer({ ctx, lessonId }: { ctx: Ctx; lessonId: string }) 
   return (
     <div className="stack">
       <div className="row between">
-        <button className="back" onClick={back}>✕</button>
+        <button className="back close" onClick={back} aria-label="Lektion beenden"><Icon name="xmark" size={22} /></button>
         <span className="muted small">{i + 1} / {exercises.length}</span>
       </div>
       <ProgressBar value={i} max={exercises.length} />
       <ExerciseView key={`${seed}-${i}`} ex={ex} ctx={ctx} onAnswer={(ok, right) => answer(ok, right, ex)} locked={!!feedback} />
       {feedback && (
         <div className={`feedback ${feedback.ok ? 'ok' : 'bad'}`} role="status">
-          <b>{feedback.ok ? 'Richtig! ✅' : 'Nicht ganz.'}</b>
+          <b className="fb-title"><Icon name={feedback.ok ? 'check' : 'xmark'} size={18} />{feedback.ok ? 'Richtig!' : 'Nicht ganz.'}</b>
           {!feedback.ok && <div>Richtig wäre: <b lang={pack.code}>{feedback.answer}</b></div>}
-          {feedback.explain && <div className="small">💡 {feedback.explain}</div>}
+          {feedback.explain && <div className="small"><Icon name="bulb" size={15} /> {feedback.explain}</div>}
           <button className="btn primary big-btn" onClick={next}>Weiter</button>
         </div>
       )}
@@ -147,8 +147,8 @@ export function ExerciseView({ ex, ctx, onAnswer, locked }: { ex: Exercise; ctx:
     return (
       <section className="card">
         <div className="muted small">{ex.q ?? 'Hör zu und wähle, was du hörst'}</div>
-        <button className="btn big-btn" onClick={() => sayFor(pack, ex.speak)}>🔊 Abspielen</button>
-        <button className="btn small-btn" onClick={() => sayFor(pack, ex.speak, 0.6)}>🐢 Langsam</button>
+        <button className="btn big-btn" onClick={() => sayFor(pack, ex.speak)}><Icon name="speaker" /> Abspielen</button>
+        <button className="btn small-btn" onClick={() => sayFor(pack, ex.speak, 0.6)}><Icon name="slow" /> Langsamer</button>
         {options(ex.options, ex.answer, true)}
       </section>
     );

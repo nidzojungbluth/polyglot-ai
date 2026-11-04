@@ -56,7 +56,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.click('.tab:has-text("Coach")');
   await p.waitForSelector('text=Regel-Coach');
   await p.fill('input[aria-label="Nachricht an den Coach"]', 'I want a coffee, I am knackered');
-  await p.click('button:has-text("Senden")');
+  await p.click('button[aria-label="Senden"]');
   await p.waitForSelector('text=Besser');
   assert(await p.locator('text=Slang erkannt').count() > 0, 'Coach korrigiert Fehler und erklärt Slang');
   assert(await p.locator('text=keine KI').count() > 0, 'Regel-Coach ist klar als „keine KI“ gekennzeichnet');
@@ -185,7 +185,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
 
   // Offline (Service Worker)
   const swState = await p.locator('tr:has-text("Service Worker") td').nth(1).innerText();
-  assert(swState.includes('aktiv'), 'Service Worker aktiv: ' + swState);
+  assert(swState.trim().startsWith('aktiv'), 'Service Worker aktiv: ' + swState);
   await ctx.setOffline(true);
   await p.reload();
   await p.waitForSelector('.tabbar', { timeout: 8000 }); await p.click('.tab:has-text("Start")'); await p.waitForSelector('text=Weiterlernen');

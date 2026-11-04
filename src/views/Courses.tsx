@@ -4,7 +4,7 @@ import type { Level, Module } from '../data/types';
 import { LEVELS } from '../data/types';
 import { LEVEL_INFO, TOPICS, topicIcon } from '../data/curriculum';
 import { itemsOf, moduleLessons } from '../lib/course';
-import { ExampleBlock, ProgressBar, RegBadge, SpeakBtn, WordHead } from './ui';
+import { ExampleBlock, ProgressBar, RegBadge, SpeakBtn, WordHead, Icon } from './ui';
 import { abcFor } from '../data/alphabet';
 
 export function moduleProgress(ctx: Ctx, m: Module): { done: number; total: number } {
@@ -84,7 +84,7 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
   const next = lessons.find((l) => !state.lessons[l.id]) ?? lessons[0];
   return (
     <div className="stack">
-      <button className="back" onClick={() => go('courses')}>‹ Alle Kurse</button>
+      <button className="back" onClick={() => go('courses')}>Alle Kurse</button>
       <h1>{topicIcon(mod.topic)} {mod.title}</h1>
       <p className="muted">{mod.level} · {LEVEL_INFO[mod.level]} · {words.length + slang.length} Einträge</p>
       {mod.grammar && <section className="card"><h2>{mod.grammar.title}</h2><p>{mod.grammar.text}</p></section>}
@@ -95,7 +95,7 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
           return (
             <li key={l.id}>
               <button className="list-btn" onClick={() => go('lesson', l.id)}>
-                <span className="num">{r ? '✓' : l.review ? '🔁' : i + 1}</span>
+                <span className="num">{r ? '✓' : l.review ? <Icon name="repeat" size={17} label="Wiederholung" /> : i + 1}</span>
                 <span className="grow"><b>{l.title.split(' · ')[1]}</b><br /><span className="muted small">{l.words.length} Einträge</span></span>
                 {r && <span className="muted small">{r.best}%</span>}
               </button>
@@ -114,7 +114,7 @@ function ModuleView({ ctx, mod }: { ctx: Ctx; mod: Module }) {
           ))}
           {slang.map((s) => (
             <li key={s.id} className="word-row">
-              <div className="grow"><WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">📍 {pack.city}</span>}<div className="small muted">{s.situation} · {s.effect}</div><ExampleBlock ex={s.ex} lang={pack.code} pack={pack} /></div>
+              <div className="grow"><WordHead t={s.t} de={s.de} tr={s.tr} lang={pack.code} /> <RegBadge reg={s.reg} /> {s.local && <span className="badge local">{pack.city}</span>}<div className="small muted">{s.situation} · {s.effect}</div><ExampleBlock ex={s.ex} lang={pack.code} pack={pack} /></div>
               <SpeakBtn text={s.t} pack={pack} />
             </li>
           ))}
@@ -130,7 +130,7 @@ function AbcCard({ ctx }: { ctx: Ctx }) {
   const done = c.units.filter((u) => ctx.state.lessons[u.id]).length;
   return (
     <button className="card abc-card" onClick={() => ctx.go('abc')}>
-      <div className="row between"><b>🔤 Schritt 1: {c.title}</b><span className="muted small">{done}/{c.units.length}</span></div>
+      <div className="row between"><b className="row" style={{ gap: 8 }}><span className="num sm"><Icon name="letters" size={17} /></span>Schritt 1: {c.title}</b><span className="muted small">{done}/{c.units.length}</span></div>
       <span className="small muted">{done === c.units.length ? 'Erledigt – jederzeit wiederholbar' : c.forBeginners ? 'Buchstaben → Laute → Silben → Wörter → erste Sätze' : 'Einstufungstest und Wiederholung beider Schriften'}</span>
       <ProgressBar value={done} max={c.units.length} />
     </button>
