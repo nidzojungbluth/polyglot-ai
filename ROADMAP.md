@@ -25,7 +25,7 @@
 | 3 | Qualität: Fehler melden & Prüfmodus | mittel-hoch | 2 Runden | ✅ 04.11. |
 | 4 | Lernerlebnis Runde 2 (Startseite, Statistik, Lückentext gebeugt) | mittel | 3 Runden | ✅ 04.11. |
 | 5 | Datensicherheit für iOS (Sicherungs-Erinnerung) | mittel | 1 Runde | ✅ 04.11. |
-| 6 | Englisch & Spanisch ausbauen | niedrig | ~10 Runden | 🔄 (Runde 1: 151 / 137 Einträge) |
+| 6 | Englisch & Spanisch ausbauen | niedrig | ~10 Runden | 🔄 (Runde 2: 270 / 256 Einträge) |
 | 7 | Aussprache-Training (nur Pages) | niedrig/optional | 2 Runden | ⏳ |
 | 8 | Abschluss-QA & Release-Doku | hoch (am Ende) | 1–2 Runden | ⏳ |
 
@@ -122,9 +122,10 @@ Ursprünglicher Plan:
 
 Erst nach Phase 2. Gleiche Werkzeugkette; Ziel zunächst A1–B1 je 1.000 Einträge mit Beispielsatz. ~10 Runden. Abnahme wie Phase 2.
 
-- **Werkzeug:** `python3 scripts/add-stage.py <N> en es` (Sprachen als Zusatzargumente; ohne Angabe wie bisher el sr ru). Erste Dateien heißen `src/data/vocab/en.ts` / `es.ts`, danach `en2.ts`, `es2.ts` …; **nächstes N = 2**. Beispielsatz-Pflicht gilt für en/es von Anfang an (Test).
+- **Werkzeug:** `python3 scripts/add-stage.py <N> en es` (Sprachen als Zusatzargumente; ohne Angabe wie bisher el sr ru). Erste Dateien heißen `src/data/vocab/en.ts` / `es.ts`, danach `en2.ts`, `es2.ts` …; **nächstes N = 3**. Beispielsatz-Pflicht gilt für en/es von Anfang an (Test).
 - **Runde 1 (05.11.2026):** je 5 A1-Module (greet, time, food, shop, city) mit ~22 Wörtern → Englisch 151, Spanisch 137 Einträge. Belegt: A1 greet/time/food/shop/city ohne part.
-- **Themenvorrat:** A1 family, smalltalk, home, fitness, phone; A2 alle 20 Themen; B1 work, travel, feelings, news, culture. Britisches Englisch (London), Spanisch aus Spanien (Madrid).
+- **Runde 2 (05.11.2026):** A1 family, smalltalk, home, fitness, phone + je ein Slang-Modul (youth A2, kind=slang, 9 Ausdrücke) → Englisch 270, Spanisch 256 Einträge. Belegt außerdem: A1 family/smalltalk/home/fitness/phone, A2 youth (slang).
+- **Themenvorrat:** A2 alle Themen außer youth; B1 work, travel, feelings, news, culture. Britisches Englisch (London), Spanisch aus Spanien (Madrid).
 
 ## Phase 7 – Aussprache-Training (optional) ⏳
 

@@ -3,7 +3,8 @@
 import { enrich } from '../core';
 import { en } from '../en';
 import enVocab from '../vocab/en';
+import enVocab2 from '../vocab/en2';
 
 export default enrich(en, [
-  enVocab,
+  enVocab, enVocab2,
 ].join(''));
