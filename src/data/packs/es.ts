@@ -4,7 +4,8 @@ import { enrich } from '../core';
 import { es } from '../es';
 import esVocab from '../vocab/es';
 import esVocab2 from '../vocab/es2';
+import esVocab3 from '../vocab/es3';
 
 export default enrich(es, [
-  esVocab, esVocab2,
+  esVocab, esVocab2, esVocab3,
 ].join(''));
