@@ -24,7 +24,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 
 ## 3. Implementierte Funktionen (geprüft im Code)
 
-- **Sprachen:** Griechisch, Serbisch (Latein/Kyrillisch/beide, automatische Umwandlung), Russisch (Betonungszeichen), Englisch und Spanisch im Ausbau (Phase 6: je 10 A1- und 5 A2-Kursmodule + 1 Slang-Modul, 380 / 366 Einträge); 21 weitere Sprachen nur als „geplant“ im Katalog (`Languages.tsx`).
+- **Sprachen:** Griechisch, Serbisch (Latein/Kyrillisch/beide, automatische Umwandlung), Russisch (Betonungszeichen), Englisch und Spanisch im Ausbau (Phase 6: je 10 A1- und 10 A2-Kursmodule + 1 Slang-Modul, 489 / 475 Einträge); 21 weitere Sprachen nur als „geplant“ im Katalog (`Languages.tsx`).
 - **Schriftkurs** (`Alphabet.tsx`, `lib/abc.ts`, `data/alphabet/`): Griechisch, Russisch, Serbisch Latinica↔Ćirilica; Einstufungstest, viele Übungstypen.
 - **Kurse** (`Courses.tsx`, `Lesson.tsx`, `lib/course.ts`, `data/curriculum.ts`): 20 Themen × 6 Niveaus + Vertiefungsteile = 241 Module pro Schwerpunktsprache, ~800 Lektionen; Grammatikhinweise je Modul.
 - **Vokabeltrainer** (`Vocab.tsx`, `lib/srs.ts`): SM-2, Tageswarteschlange, Tageslimit neue Karten (Standard 20, einstellbar), „morgen fällig“, schwierige Wörter; Lernkarten mit Beispielsatz-Block (Satz → Umschrift → Übersetzung).
@@ -102,6 +102,7 @@ Kostenlose (0 €), offline-fähige Sprachlern-PWA fürs iPhone für deutschspra
 - 05.11.2026: **Phase 6, Runde 1** – Englisch und Spanisch bekommen den Kursbereich: je 5 A1-Module (Begrüßen, Zeit & Wetter, Café/Bar, Einkaufen, Stadt), jedes Wort mit Beispielsatz; `add-stage.py` kann jetzt beliebige Sprachen. Englisch 151, Spanisch 137 Einträge. vitest 124/124, E2E 43/43.
 - 05.11.2026 früh: **Phase 6, Runde 2** – je 5 weitere A1-Module (Familie, Smalltalk, Wohnung, Fitness & Gesundheit, Telefon & Nachrichten) und je 9 echte Slang-Ausdrücke (UK: cheeky, gobsmacked, faff, sorted … / Spanien: estar hecho polvo, majo, cutre, mogollón …). Englisch 270, Spanisch 256 Einträge. vitest 124/124, E2E 43/43. **Nutzer hat nach dieser Runde „Stopp“ gesagt – keine weitere Runde geplant.** Nächster Schritt bei Fortsetzung: Phase 6 Runde 3 (N = 3, A2).
 - 09.11.2026: Nutzer sagt „weiter“ → **Phase 6, Runde 3**: erste A2-Module (Reisen, Arbeit, Gefühle, Einkaufen & Reklamieren, Kochen & Essen gehen) für Englisch und Spanisch, je 110 neue Einträge → 380 / 366. vitest 124/124, E2E 43/43, Start 0,52 s.
+- 09.11.2026: **Phase 6, Runde 4** – A2: Stadt & Behörden, Mieten & Reparaturen, Training, Telefon & online, Landestypisches (British Habits / Costumbres de España). Englisch 489, Spanisch 475. vitest 124/124, E2E 43/43, Start 0,55 s.
 - 04.11.2026: Beispielsatz-Runde 25 – letzte Runde B: A2 bis C2 in allen drei Sprachen 100 %; offen nur A1-Grundwörter (Artikel, Pronomen, Zahlen).
 - 04.11.2026: Etappe 47 – +97/+102/+102 Einträge (Fischerei & Fischmarkt, Zoo & Tierpflege, Bibliothek & Archiv, Schuhmacher & Sattler, Bestattung).
 - 04.11.2026: Etappe 46 – +107/+108/+107 Einträge (Imkerei & Hofladen, Bergbau & Steinbruch, Schiff & Hafen, Fotostudio, Juwelier & Uhrmacher).

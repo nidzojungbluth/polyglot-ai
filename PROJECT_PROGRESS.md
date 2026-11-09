@@ -4,8 +4,8 @@ Automatisch erzeugt am 2026-11-09 mit `npm run report`. Ziel: 5000 Einträge pro
 
 | Sprache | Einträge (Wörter + Slang) | Ziel erreicht | mit Beispielsatz | Lückentext möglich | Module | Lektionen |
 |---|---|---|---|---|---|---|
-| 🇬🇧 Englisch (UK) | 380 | 8 % | 356 | 232 | 16 | 63 |
-| 🇪🇸 Spanisch (Spanien) | 366 | 7 % | 340 | 197 | 16 | 63 |
+| 🇬🇧 Englisch (UK) | 489 | 10 % | 465 | 288 | 21 | 83 |
+| 🇪🇸 Spanisch (Spanien) | 475 | 10 % | 449 | 253 | 21 | 83 |
 | 🇬🇷 Griechisch | 5002 | 100 % | 4954 | 4457 | 348 | 1227 |
 | 🇷🇸 Serbisch | 5055 | 101 % | 5011 | 3833 | 348 | 1228 |
 | 🇷🇺 Russisch | 5069 | 101 % | 5026 | 3971 | 348 | 1230 |
@@ -14,8 +14,8 @@ Automatisch erzeugt am 2026-11-09 mit `npm run report`. Ziel: 5000 Einträge pro
 
 | Sprache | A1 | A2 | B1 | B2 | C1 | C2 | ohne Niveau |
 |---|---|---|---|---|---|---|---|
-| Englisch (UK) | 220 | 119 | 0 | 0 | 0 | 0 | 41 |
-| Spanisch (Spanien) | 208 | 119 | 0 | 0 | 0 | 0 | 39 |
+| Englisch (UK) | 220 | 228 | 0 | 0 | 0 | 0 | 41 |
+| Spanisch (Spanien) | 208 | 228 | 0 | 0 | 0 | 0 | 39 |
 | Griechisch | 435 | 542 | 1388 | 1583 | 783 | 231 | 40 |
 | Serbisch | 441 | 546 | 1411 | 1586 | 801 | 231 | 39 |
 | Russisch | 451 | 549 | 1412 | 1584 | 795 | 236 | 42 |
@@ -26,8 +26,8 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 
 | Sprache | Wörter mit Beispiel | A1 | A2 | B1 | B2 | C1 | C2 |
 |---|---|---|---|---|---|---|---|
-| Englisch (UK) | 336 / 360 (93 %) | 100 % | 100 % | 0 % | 0 % | 0 % | 0 % |
-| Spanisch (Spanien) | 321 / 347 (93 %) | 100 % | 100 % | 0 % | 0 % | 0 % | 0 % |
+| Englisch (UK) | 445 / 469 (95 %) | 100 % | 100 % | 0 % | 0 % | 0 % | 0 % |
+| Spanisch (Spanien) | 430 / 456 (94 %) | 100 % | 100 % | 0 % | 0 % | 0 % | 0 % |
 | Griechisch | 4841 / 4889 (99 %) | 95 % | 100 % | 100 % | 100 % | 100 % | 100 % |
 | Serbisch | 4895 / 4939 (99 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 100 % |
 | Russisch | 4906 / 4949 (99 %) | 96 % | 100 % | 100 % | 100 % | 100 % | 100 % |
