@@ -15,7 +15,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   assert(!overflow, 'kein seitliches Scrollen (Layout passt)');
 
   // Lektion durchspielen
-  await p.click('text=Weiterlernen');
+  await p.click('.tile:has-text("Weiterlernen")');
   await p.click('text=Übungen starten');
   let n = 0;
   while (await p.locator('text=Weiter').count() === 0 || n === 0) {
@@ -228,7 +228,7 @@ const assert = (c, m) => { if (!c) throw new Error('FEHLER: ' + m); console.log(
   await p.reload();
   await p.waitForSelector('.tabbar', { timeout: 8000 }); await p.click('.tab:has-text("Start")'); await p.waitForSelector('text=Weiterlernen');
   assert(true, 'App startet OFFLINE neu');
-  await p.click('text=Weiterlernen'); await p.locator('button:has-text("Üben ("), button:has-text("Übungen starten")').first().click();
+  await p.click('.tile:has-text("Weiterlernen")'); await p.locator('button:has-text("Üben ("), button:has-text("Übungen starten")').first().click();
   assert(await p.locator('.card').count() > 0, 'Lektion funktioniert offline');
   // Getrennt geladene Sprachpakete müssen offline aus dem Cache kommen
   for (const name of ['Serbisch', 'Russisch', 'Griechisch']) {

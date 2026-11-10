@@ -150,6 +150,14 @@ export default function App() {
 
   return (
     <div className="app" dir={pack.rtl ? 'rtl' : 'ltr'}>
+      {/* Markenverlauf für Symbole und den Tagesring (einmal definiert, per CSS verwendet) */}
+      <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" className="grad-stop-1" /><stop offset="0.5" className="grad-stop-2" /><stop offset="1" className="grad-stop-3" />
+          </linearGradient>
+        </defs>
+      </svg>
       <header className="topbar">
         <button className="brand" onClick={() => go('home')} aria-label="Zum Start">Polyglot <span>AI</span></button>
         <button className="langchip" onClick={() => go('langs')} aria-label="Sprache wechseln">

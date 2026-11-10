@@ -37,22 +37,27 @@ export function Home({ ctx }: { ctx: Ctx }) {
   return (
     <div className="stack">
       <section className="card hero">
-        <div className="row between">
+        <div className="hero-top">
+          <Ring value={done} max={goal} size={92}>{done >= goal ? <Icon name="check" size={28} /> : null}</Ring>
           <div className="grow">
             <div className="hero-label">Heute</div>
             <div className="big">{done} / {goal} Übungen</div>
             <p className="muted small">{done >= goal ? 'Tagesziel geschafft.' : `Noch ${goal - done} bis zum Tagesziel.`}</p>
           </div>
-          <Ring value={done} max={goal}>{done >= goal ? <Icon name="check" size={26} /> : null}</Ring>
         </div>
-        <button className="btn primary big-btn hero-go" onClick={() => (due > 0 ? go('vocab', 'today') : startAbc ? go('abc', abcUnit!.id) : go('lesson', nextLesson.id))}>
-          {due > 0 ? `Los: ${Math.min(30, due)} Karten wiederholen` : startAbc ? `Los: ${abcUnit!.title}` : `Los: ${nextLesson.title}`}
-        </button>
         <div className="hero-meta">
           <div title="Tage in Folge gelernt"><b className="streak"><Icon name="flame" size={17} className="flame" /> {st}</b><span>Tage in Folge</span></div>
           <div><b>{due}</b><span>Karten fällig</span></div>
           <div><b>{Object.keys(state.lessons).filter((k) => k.startsWith(`${pack.code}-`)).length}</b><span>Lektionen fertig</span></div>
         </div>
+      </section>
+
+      <section className="next-card">
+        <div className="next-label">{due > 0 ? 'Wiederholen' : startAbc ? 'Weiterlernen · Schrift' : 'Weiterlernen'}</div>
+        <div className="next-title">{due > 0 ? `${Math.min(30, due)} Karten sind fällig` : startAbc ? abcUnit!.title : nextLesson.title}</div>
+        <button className="btn big-btn hero-go" onClick={() => (due > 0 ? go('vocab', 'today') : startAbc ? go('abc', abcUnit!.id) : go('lesson', nextLesson.id))}>
+          {due > 0 ? 'Jetzt wiederholen' : startAbc ? 'Los geht’s' : 'Lektion starten'}
+        </button>
       </section>
 
       {backupDays !== null && !hideBackup && (
@@ -78,8 +83,8 @@ export function Home({ ctx }: { ctx: Ctx }) {
         <button className="tile" onClick={() => go('vocab')}>
           <span className="tile-icon"><Icon name="cards" /></span><b>Wiederholen</b><span className="muted small">{due} Karten fällig</span>
         </button>
-        <button className="tile accent" onClick={() => go('coach')}>
-          <span className="tile-icon"><Icon name="chat" /></span><b>Mit dem Coach reden</b><span className="small">Fehler, Slang, Gespräche</span>
+        <button className="tile" onClick={() => go('coach')}>
+          <span className="tile-icon"><Icon name="chat" /></span><b>Mit dem Coach reden</b><span className="muted small">Fehler, Slang, Gespräche</span>
         </button>
         <button className="tile" onClick={() => go('roleplay')}>
           <span className="tile-icon"><Icon name="dialog" /></span><b>Dialoge</b><span className="muted small">{pack.roleplays.length} Szenen in {pack.city}</span>
@@ -142,7 +147,7 @@ export function MorePage({ ctx }: { ctx: Ctx }) {
   return (
     <div className="stack">
       <h1>Mehr</h1>
-      <ul className="list card">
+      <ul className="list card more-list">
         {items.map((i) => (
           <li key={i.v}>
             <button className="list-btn" onClick={() => ctx.go(i.v)}>

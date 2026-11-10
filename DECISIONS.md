@@ -72,3 +72,9 @@ Eigene Linien-Symbole (SVG) statt Emojis in Bedienelementen, Systemschrift, grup
 - Jede Funktion muss offline und ohne Konto nutzbar sein; Online-Extras nur zusätzlich.
 - Lernfortschritt darf durch Datenänderungen nie verloren gehen (stabile IDs, Migrationen mit Test).
 - Lieber weniger Funktionen, die zuverlässig sind, als viele halbe.
+
+## D-014 · Farbverlauf Blau → Lila → Pink (10.11.2026)
+- **Entscheidung:** Der Nutzer wünscht eine Kombination aus Blau, Lila und Pink mit hochwertigem Farbverlauf. Entwurf auf der Design-Leinwand „Polyglot AI – Apple-Design“ freigegeben („sieht gut aus“).
+- **Umsetzung:** Farbwerte `--c1/--c2/--c3`, Verlauf `--grad` aus drei Schichten (Glanz, weiche Farbflächen, Grundverlauf), heller Schimmer oben (`--glow`). Startseite: Tagesziel-Karte mit drei Kennzahlen, darunter Verlaufskarte „Weiterlernen“. Niveaus A1–C2 als iOS-Umschalter, „Mehr“ mit farbigen Symbolkästchen, aktive Tab-Symbole und Tagesring im Verlauf. Grün bleibt nur für „richtig/fertig“.
+- **Ersetzt:** D-013 „keine bunten Übergänge“ (Farbgebung); Aufbau aus D-013 bleibt.
+- **Sicherung vorher:** Zweig `backup/vor-verlauf-design-2026-11-10`.
