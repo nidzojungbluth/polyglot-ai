@@ -53,8 +53,9 @@ import srVocab48 from '../vocab/sr48';
 import srVocab49 from '../vocab/sr49';
 import srVocab50 from '../vocab/sr50';
 import srVocab51 from '../vocab/sr51';
+import srVocab52 from '../vocab/sr52';
 import srEx from '../vocab/srEx';
 
 export default enrich(sr, [
-  srVocab, srVocab2, srVocab3, srVocab4, srVocab5, srVocab6, srVocab7, srVocab8, srVocab9, srVocab10, srVocab11, srVocab12, srVocab13, srVocab14, srVocab15, srVocab16, srVocab17, srVocab18, srVocab19, srVocab20, srVocab21, srVocab22, srVocab23, srVocab24, srVocab25, srVocab26, srVocab27, srVocab28, srVocab29, srVocab30, srVocab31, srVocab32, srVocab33, srVocab34, srVocab35, srVocab36, srVocab37, srVocab38, srVocab39, srVocab40, srVocab41, srVocab42, srVocab43, srVocab44, srVocab45, srVocab46, srVocab47, srVocab48, srVocab49, srVocab50, srVocab51,
+  srVocab, srVocab2, srVocab3, srVocab4, srVocab5, srVocab6, srVocab7, srVocab8, srVocab9, srVocab10, srVocab11, srVocab12, srVocab13, srVocab14, srVocab15, srVocab16, srVocab17, srVocab18, srVocab19, srVocab20, srVocab21, srVocab22, srVocab23, srVocab24, srVocab25, srVocab26, srVocab27, srVocab28, srVocab29, srVocab30, srVocab31, srVocab32, srVocab33, srVocab34, srVocab35, srVocab36, srVocab37, srVocab38, srVocab39, srVocab40, srVocab41, srVocab42, srVocab43, srVocab44, srVocab45, srVocab46, srVocab47, srVocab48, srVocab49, srVocab50, srVocab51, srVocab52,
 ].join(''), srEx);

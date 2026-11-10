@@ -1,14 +1,14 @@
 # Polyglot AI – PROJECT PROGRESS
 
-Automatisch erzeugt am 2026-11-09 mit `npm run report`. Ziel: 5000 Einträge pro Sprache.
+Automatisch erzeugt am 2026-11-10 mit `npm run report`. Ziel: 5000 Einträge pro Sprache.
 
 | Sprache | Einträge (Wörter + Slang) | Ziel erreicht | mit Beispielsatz | Lückentext möglich | Module | Lektionen |
 |---|---|---|---|---|---|---|
 | 🇬🇧 Englisch (UK) | 595 | 12 % | 571 | 341 | 26 | 103 |
 | 🇪🇸 Spanisch (Spanien) | 582 | 12 % | 556 | 317 | 26 | 103 |
-| 🇬🇷 Griechisch | 5002 | 100 % | 4954 | 4457 | 348 | 1227 |
-| 🇷🇸 Serbisch | 5055 | 101 % | 5011 | 3833 | 348 | 1228 |
-| 🇷🇺 Russisch | 5069 | 101 % | 5026 | 3971 | 348 | 1230 |
+| 🇬🇷 Griechisch | 5097 | 102 % | 5049 | 4457 | 353 | 1247 |
+| 🇷🇸 Serbisch | 5140 | 103 % | 5096 | 3833 | 353 | 1247 |
+| 🇷🇺 Russisch | 5152 | 103 % | 5109 | 3971 | 353 | 1250 |
 
 ## Einträge pro Niveau
 
@@ -16,9 +16,9 @@ Automatisch erzeugt am 2026-11-09 mit `npm run report`. Ziel: 5000 Einträge pro
 |---|---|---|---|---|---|---|---|
 | Englisch (UK) | 220 | 334 | 0 | 0 | 0 | 0 | 41 |
 | Spanisch (Spanien) | 208 | 335 | 0 | 0 | 0 | 0 | 39 |
-| Griechisch | 435 | 542 | 1388 | 1583 | 783 | 231 | 40 |
-| Serbisch | 441 | 546 | 1411 | 1586 | 801 | 231 | 39 |
-| Russisch | 451 | 549 | 1412 | 1584 | 795 | 236 | 42 |
+| Griechisch | 435 | 542 | 1446 | 1620 | 783 | 231 | 40 |
+| Serbisch | 441 | 546 | 1464 | 1618 | 801 | 231 | 39 |
+| Russisch | 451 | 549 | 1464 | 1615 | 795 | 236 | 42 |
 
 ## Zwischenauftrag: Beispielsatz für jede Vokabel
 
@@ -34,7 +34,7 @@ Anteil der Wörter mit Beispielsatz und deutscher Übersetzung (Slang hat immer 
 
 ## Ladezeit
 
-App-Dateien (GitHub Pages): Kern 379 KB, Sprachpakete el 990 KB, sr 693 KB, ru 963 KB (jede Sprache wird erst bei Bedarf geladen).
+App-Dateien (GitHub Pages): Kern 380 KB, Sprachpakete el 1018 KB, sr 713 KB, ru 987 KB (jede Sprache wird erst bei Bedarf geladen).
 
 ## Prüfstatus
 
